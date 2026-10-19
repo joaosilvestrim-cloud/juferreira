@@ -107,7 +107,7 @@ export function OrgFuturosAplicados() {
         </Container>
         <div className="relative mt-10 min-h-[320px] lg:mt-0">
           <Photo
-            src="/images/ph/organizacoes/wtf.webp"
+            src="/images/ju/quadro.webp"
             alt="Ju Ferreira apresentando possibilidades de futuro em um quadro com imagens"
             sizes="(min-width:1024px) 56vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -425,7 +425,7 @@ export function OrgMundoReal() {
         </Container>
         <div className="relative mt-10 min-h-[320px] lg:mt-0">
           <Photo
-            src="/images/ph/organizacoes/mundo-real.webp"
+            src="/images/ju/quadro.webp"
             alt="Ju Ferreira refletindo durante uma reunião de trabalho"
             sizes="(min-width:1024px) 30vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -654,7 +654,7 @@ export function OrgDepois() {
         </Container>
         <div className="relative mt-10 min-h-[320px] lg:mt-0">
           <Photo
-            src="/images/ph/organizacoes/depois.webp"
+            src="/images/ju/conversa.webp"
             alt="Ju Ferreira pensativa ao fim de uma conversa"
             sizes="(min-width:1024px) 30vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -758,7 +758,7 @@ export function OrgFechamento() {
             </Pull>
             <div className="relative mt-10 aspect-[4/3] max-w-[560px] overflow-hidden rounded-[var(--jf-radius-sm)]">
               <Photo
-                src="/images/ph/organizacoes/fechamento.webp"
+                src="/images/ju/poltrona-v.webp"
                 alt="Ju Ferreira pensativa diante do notebook"
                 sizes="(min-width:1024px) 40vw, 100vw"
                 className="absolute inset-0"

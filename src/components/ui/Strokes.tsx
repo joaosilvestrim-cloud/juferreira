@@ -67,6 +67,7 @@ export function Stroke({
       className={`pointer-events-none text-red-brand ${draw ? "jf-draw" : ""} ${className}`}
       fill="none"
       aria-hidden="true"
+      data-stroke=""
       preserveAspectRatio="none"
     >
       <defs>
@@ -93,7 +94,16 @@ export function Stroke({
 }
 
 /** Espiral aprovada (referência PNG transparente). Substituir pelo SVG canônico quando existir. */
-export function SpiralMark({ className = "", priority = false }: { className?: string; priority?: boolean }) {
+export function SpiralMark({
+  className = "",
+  priority = false,
+  vortex = true,
+}: {
+  className?: string;
+  priority?: boolean;
+  /** gira e se abre conforme a rolagem */
+  vortex?: boolean;
+}) {
   return (
     <Image
       src="/spiral/spiral.webp"
@@ -101,7 +111,7 @@ export function SpiralMark({ className = "", priority = false }: { className?: s
       width={1448}
       height={1086}
       priority={priority}
-      className={`pointer-events-none select-none ${className}`}
+      className={`pointer-events-none select-none ${vortex ? "jf-vortex" : ""} ${className}`}
       aria-hidden="true"
     />
   );

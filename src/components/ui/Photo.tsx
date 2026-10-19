@@ -49,6 +49,7 @@ export function Photo({
   return (
     <div
       className={`${/\babsolute\b/.test(className) ? "" : "relative"} overflow-hidden ${className}`}
+      data-photo=""
       data-placeholder={placeholder ? "foto" : undefined}
     >
       <Image src={src} alt={alt} fill sizes={sizes} quality={quality} priority={priority} className={`object-cover ${imgClassName}`} />

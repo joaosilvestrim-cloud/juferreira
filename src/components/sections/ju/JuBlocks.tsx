@@ -180,7 +180,7 @@ export function JuTrajetoria() {
           <div className="sticky top-[calc(var(--jf-header-h)+24px)] grid grid-cols-[1fr_auto] items-center gap-6">
             <div className="relative aspect-[3/5] w-full">
               <Photo
-                src="/images/ph/ju/trajetoria.webp"
+                src="/images/ju/retrato-biblioteca.webp"
                 alt="Ju Ferreira sorrindo, sentada à mesa"
                 sizes="28vw"
                 className="absolute inset-0 jf-paper-edge"
@@ -230,7 +230,7 @@ export function JuTecnologia() {
         </Container>
         <div className="relative min-h-[420px]">
           <Photo
-            src="/images/ph/ju/tecnologia.webp"
+            src="/images/ju/conversa.webp"
             alt="Ju Ferreira conversando em uma reunião de negócios"
             sizes="(min-width:1024px) 42vw, 100vw"
             className="absolute inset-0"
@@ -252,12 +252,12 @@ export function JuTecnologia() {
             <dl className="mt-8 grid grid-cols-2 gap-6 sm:divide-x sm:divide-cream-50/20">
               <div>
                 <dt className="sr-only">Meta anual alcançada</dt>
-                <dd className="jf-display text-[clamp(44px,4.6vw,72px)] text-red-bright">486%</dd>
+                <dd className="jf-display text-[clamp(44px,4.6vw,72px)] text-red-bright"><span data-count="486">486</span>%</dd>
                 <dd className="mt-2 text-[15px] text-cream-50/80">da meta anual</dd>
               </div>
               <div className="sm:pl-6">
                 <dt className="sr-only">Receita gerada</dt>
-                <dd className="jf-display text-[clamp(36px,3.8vw,60px)] text-red-bright">+ US$ 20 milhões</dd>
+                <dd className="jf-display text-[clamp(36px,3.8vw,60px)] text-red-bright">+ US$ <span data-count="20">20</span> milhões</dd>
                 <dd className="mt-2 text-[15px] text-cream-50/80">em receita</dd>
               </div>
             </dl>
@@ -362,7 +362,7 @@ export function JuConstruir() {
         </Container>
         <div className="relative min-h-[460px]">
           <Photo
-            src="/images/ph/ju/construir.webp"
+            src="/images/ju/conversa.webp"
             alt="Ju Ferreira pensativa diante do notebook em seu espaço de trabalho"
             sizes="(min-width:1024px) 44vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -370,7 +370,7 @@ export function JuConstruir() {
           />
           <div className="absolute -left-6 bottom-10 hidden w-[42%] max-w-[240px] rotate-[-3deg] border-[6px] border-cream-50 shadow-[0_14px_30px_-16px_rgba(0,0,0,.55)] lg:block">
             <Image
-              src="/images/ph/ju/construir-pb.webp"
+              src="/images/ju/quadro.webp"
               alt=""
               width={400}
               height={340}
@@ -623,7 +623,7 @@ export function JuFuturos() {
         </div>
         <div className="relative aspect-[4/4.2] w-full">
           <Photo
-            src="/images/ph/ju/transformacao.webp"
+            src="/images/ju/escrevendo.webp"
             alt="Ju Ferreira pensativa em seu espaço de estudo"
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-paper-edge"
@@ -775,7 +775,7 @@ const FRONTS: Front[] = [
     key: "futuros",
     name: "Futuros Humanos",
     tagline: "Meu principal território intelectual contemporâneo.",
-    img: "/images/ph/ju/frente-futuros.webp",
+    img: "/images/ju/palco.webp",
     alt: "Ju Ferreira palestrando",
     body: (
       <>
@@ -795,7 +795,7 @@ const FRONTS: Front[] = [
     key: "palestras",
     name: "Palestras, workshops e experiências",
     tagline: "Quando as ideias precisam entrar em uma sala.",
-    img: "/images/ph/ju/frente-palestras.webp",
+    img: "/images/ju/palco.webp",
     alt: "Ju Ferreira com microfone em um workshop",
     body: (
       <>
@@ -930,7 +930,7 @@ export function JuHoje() {
             </li>
           ))}
           <li className="relative min-h-[420px] overflow-hidden" aria-hidden>
-            <Photo src="/images/ph/ju/hoje.webp" alt="" sizes="(min-width:768px) 30vw, 100vw" className="absolute inset-0" imgClassName="object-[50%_70%]" />
+            <Photo src="/images/ju/rua.webp" alt="" sizes="(min-width:768px) 30vw, 100vw" className="absolute inset-0" imgClassName="object-[50%_70%]" />
             <Stroke shape="circle" className="absolute inset-[6%] h-[88%] w-[88%]" width={2.5} />
           </li>
         </ul>
@@ -1025,7 +1025,7 @@ export function JuTensoes() {
     <Section tone="dark" padded={false} label="O que atravessa tudo isso">
       <div className="absolute inset-y-0 right-0 hidden w-[30%] xl:block">
         <Photo
-          src="/images/ph/ju/tensoes.webp"
+          src="/images/ju/poltrona-v.webp"
           alt="Ju Ferreira pensativa, olhando para o alto"
           sizes="30vw"
           className="jf-fade-left absolute inset-0"
@@ -1071,7 +1071,7 @@ export function JuTensoes() {
         </div>
 
         <div className="relative mt-14 h-[320px] sm:h-[420px] xl:hidden">
-          <Photo src="/images/ph/ju/tensoes.webp" alt="" sizes="100vw" className="absolute inset-0" imgClassName="object-[40%_30%]" />
+          <Photo src="/images/ju/poltrona-v.webp" alt="" sizes="100vw" className="absolute inset-0" imgClassName="object-[40%_30%]" />
         </div>
 
         <div className="mt-16 grid gap-10 border-t border-cream-50/20 pt-12 lg:grid-cols-[1.3fr_1fr_auto] lg:items-center lg:gap-12">
@@ -1187,7 +1187,7 @@ export function JuEncerramento() {
         </Container>
         <div className="relative min-h-[480px]">
           <Photo
-            src="/images/ph/ju/encerramento.webp"
+            src="/images/ju/retrato-biblioteca.webp"
             alt="Ju Ferreira sorrindo à mesa, com café, caderno e notebook"
             sizes="(min-width:1024px) 40vw, 100vw"
             className="absolute inset-0 jf-fade-left"

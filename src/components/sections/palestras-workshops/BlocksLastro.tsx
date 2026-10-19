@@ -80,9 +80,9 @@ export function PalestrasLastro() {
             projetos, clientes e decisões que precisavam funcionar fora do PowerPoint.
           </p>
           <p className="mt-4 font-semibold text-red-brand">
-            486% da meta anual
+            <span data-count="486">486</span>% da meta anual
             <br />
-            +US$ 20 milhões em receita
+            +US$ <span data-count="20">20</span> milhões em receita
           </p>
         </>
       ),
@@ -165,7 +165,7 @@ export function PalestrasLastro() {
         </Container>
         <div className="relative min-h-[420px] bg-ink-900">
           <Photo
-            src="/images/ph/palestras-workshops/lastro.webp"
+            src="/images/ju/palco.webp"
             alt="Ju Ferreira no palco, em palestra"
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -375,7 +375,7 @@ export function PalestrasProcesso() {
         </Container>
         <div className="relative min-h-[400px]">
           <Photo
-            src="/images/ph/palestras-workshops/escuta.webp"
+            src="/images/ju/conversa.webp"
             alt="Ju Ferreira escutando atentamente em uma reunião"
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -429,7 +429,7 @@ export function PalestrasConversao() {
     <Section tone="dark" label="Contratação" id="contratar">
       <div className="absolute inset-y-0 right-0 hidden w-[42%] lg:block" aria-hidden>
         <Photo
-          src="/images/ph/palestras-workshops/conversa.webp"
+          src="/images/ju/conversa.webp"
           alt=""
           sizes="42vw"
           className="absolute inset-0 jf-fade-left opacity-70"

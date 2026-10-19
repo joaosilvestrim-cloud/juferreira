@@ -47,7 +47,7 @@ export function Body({ className = "", children }: { className?: string; childre
 /** Linha curta vermelha usada antes de títulos de coluna. */
 export function Dash({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 60 6" className={`h-1.5 w-12 text-red-brand ${className}`} aria-hidden="true">
+    <svg viewBox="0 0 60 6" className={`h-1.5 w-12 text-red-brand ${className}`} aria-hidden="true" data-stroke="">
       <path d="M2 3.5C14 2 30 2.2 58 3" stroke="currentColor" strokeWidth="3" strokeLinecap="round" fill="none" />
     </svg>
   );

@@ -148,7 +148,7 @@ export function FHFerramentas() {
         </Container>
         <div className="relative min-h-[460px]">
           <Photo
-            src="/images/ph/futuros-humanos/ferramentas.webp"
+            src="/images/ju/retrato-biblioteca.webp"
             alt="Ju Ferreira pensativa à mesa de trabalho, com café e livros"
             sizes="(min-width:1024px) 36vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -407,7 +407,7 @@ export function FHAgencia() {
         </Container>
         <div className="relative mt-12 min-h-[480px] lg:mt-0">
           <Photo
-            src="/images/ph/futuros-humanos/agencia.webp"
+            src="/images/ju/poltrona-v.webp"
             alt="Ju Ferreira apoiada à mesa, olhando para fora pela janela"
             sizes="(min-width:1024px) 32vw, 100vw"
             className="absolute inset-0 jf-fade-left"

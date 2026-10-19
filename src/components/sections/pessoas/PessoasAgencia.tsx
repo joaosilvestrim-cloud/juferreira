@@ -92,7 +92,7 @@ export function PessoasAgencia() {
           </div>
           <div className="relative">
             <Photo
-              src="/images/ph/pessoas/agencia.webp"
+              src="/images/ju/poltrona-h.webp"
               alt="Ju Ferreira pensativa diante do notebook"
               sizes="(min-width:1024px) 45vw, 100vw"
               className="aspect-[4/3] w-full rounded-[var(--jf-radius-sm)]"

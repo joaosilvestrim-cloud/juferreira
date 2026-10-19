@@ -87,7 +87,7 @@ export function PessoasEpic() {
 
           <div className="relative">
             <Photo
-              src="/images/ph/pessoas/epic.webp"
+              src="/images/ju/rua.webp"
               alt="Ju Ferreira pensativa, com a mão no queixo"
               sizes="(min-width:1024px) 28vw, 100vw"
               className="aspect-[4/5] w-full rounded-[var(--jf-radius-sm)] lg:aspect-[3/4]"

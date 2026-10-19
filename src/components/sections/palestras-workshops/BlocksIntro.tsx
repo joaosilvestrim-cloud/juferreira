@@ -202,7 +202,7 @@ export function PalestrasPorQue() {
         </Container>
         <div className="relative min-h-[380px]">
           <Photo
-            src="/images/ph/palestras-workshops/palco.webp"
+            src="/images/ju/palco.webp"
             alt="Ju Ferreira falando para uma plateia em um auditório"
             sizes="(min-width:1024px) 48vw, 100vw"
             className="absolute inset-0"
@@ -428,7 +428,7 @@ export function PalestrasFuturosHumanos() {
         <div>
           <div className="relative mx-auto aspect-[6/5] max-w-[560px]">
             <Photo
-              src="/images/ph/palestras-workshops/tese.webp"
+              src="/images/ju/palco.webp"
               alt="Ju Ferreira apresentando Futuros Humanos"
               sizes="(min-width:1024px) 40vw, 100vw"
               className="absolute inset-[6%] rounded-full"
@@ -625,7 +625,7 @@ export function PalestrasOutrasConversas() {
         </Container>
         <div className="relative min-h-[380px]">
           <Photo
-            src="/images/ph/palestras-workshops/contexto.webp"
+            src="/images/ju/poltrona-v.webp"
             alt="Ju Ferreira conversando com a plateia"
             sizes="(min-width:1024px) 40vw, 100vw"
             className="absolute inset-0 jf-fade-left"

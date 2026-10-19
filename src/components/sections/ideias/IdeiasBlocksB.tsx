@@ -49,7 +49,7 @@ export function IdeiasTerca() {
         </div>
         <div className="relative min-h-[380px] overflow-hidden rounded-sm">
           <Photo
-            src="/images/ph/ideias/terca.webp"
+            src="/images/ju/poltrona-h.webp"
             alt="Ju Ferreira escrevendo em um caderno, com a cidade ao fundo"
             sizes="(min-width:1024px) 32vw, 100vw"
             className="absolute inset-0"
@@ -206,7 +206,7 @@ export function IdeiasRepertorio() {
           </p>
         </div>
         <div className="relative min-h-[340px] overflow-hidden rounded-sm">
-          <Photo src="/images/ph/ideias/repertorio.webp" alt="Ju Ferreira lendo e anotando entre pilhas de livros" sizes="(min-width:1024px) 32vw, 100vw" className="absolute inset-0" imgClassName="object-[40%_30%]" />
+          <Photo src="/images/ju/escrevendo.webp" alt="Ju Ferreira lendo e anotando entre pilhas de livros" sizes="(min-width:1024px) 32vw, 100vw" className="absolute inset-0" imgClassName="object-[40%_30%]" />
         </div>
         <div className="rounded-[var(--jf-radius-md)] bg-blush-100/70 p-7">
           <Body className="text-ink-700 [&_p+p]:mt-2">
@@ -365,7 +365,7 @@ export function IdeiasRepertorio() {
 const ARENAS = [
   {
     t: "No trabalho",
-    img: "/images/ph/ideias/no-trabalho.webp",
+    img: "/images/ju/equipe.webp",
     d: "Estratégia, tecnologia, vendas, liderança, clientes, decisões e consequências. É onde conceitos como transformação, capacidade e direção deixam rapidamente de ser abstratos.",
   },
   {
@@ -375,7 +375,7 @@ const ARENAS = [
   },
   {
     t: "No palco",
-    img: "/images/ph/ideias/no-palco.webp",
+    img: "/images/ju/palco.webp",
     d: "Quando uma ideia precisa ser clara o suficiente para ser compreendida sem perder aquilo que a torna complexa.",
   },
   {
@@ -410,7 +410,7 @@ export function IdeiasMundoReal() {
           </Body>
         </div>
         <div className="relative min-h-[360px] overflow-hidden rounded-sm">
-          <Photo src="/images/ph/ideias/mundo-real.webp" alt="Ju Ferreira escrevendo à mesa de trabalho" sizes="(min-width:1024px) 32vw, 100vw" className="absolute inset-0" imgClassName="object-[35%_30%]" />
+          <Photo src="/images/ju/quadro.webp" alt="Ju Ferreira escrevendo à mesa de trabalho" sizes="(min-width:1024px) 32vw, 100vw" className="absolute inset-0" imgClassName="object-[35%_30%]" />
         </div>
         <QuoteCard className="self-start">
           Não me interessa uma ideia que só funciona enquanto ninguém precisa viver com as consequências dela.

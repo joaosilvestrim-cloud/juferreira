@@ -18,10 +18,32 @@ export function SiteHeader() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
+  // recolhe ao descer, reaparece ao subir
+  const [hidden, setHidden] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    let last = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled(y > 8);
+      if (Math.abs(y - last) > 6) {
+        setHidden(y > last && y > 240);
+        last = y;
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-ink-900/5 bg-cream-50/90 backdrop-blur-md">
+    <header
+      className="jf-header sticky top-0 z-50 border-b border-ink-900/5 bg-cream-50/90 backdrop-blur-md"
+      data-hidden={hidden && !open}
+      data-scrolled={scrolled}
+    >
+      <span className="jf-progress absolute inset-x-0 bottom-0 h-[2px] origin-left bg-red-brand" aria-hidden />
       <div className="mx-auto flex h-[var(--jf-header-h)] max-w-[calc(var(--jf-container)+2*var(--jf-gutter))] items-center justify-between gap-6 px-[var(--jf-gutter)]">
         <Logo />
 

@@ -202,7 +202,7 @@ export function FHAutoria() {
         </Container>
         <div className="relative min-h-[460px]">
           <Photo
-            src="/images/ph/futuros-humanos/autoria.webp"
+            src="/images/ju/quadro.webp"
             alt="Ju Ferreira pensativa em seu escritório, à noite, diante do notebook"
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -553,7 +553,7 @@ export function FHEncerramento() {
         </Container>
         <div className="relative min-h-[480px]">
           <Photo
-            src="/images/ph/futuros-humanos/encerramento.webp"
+            src="/images/ju/rua.webp"
             alt="Retrato de Ju Ferreira sorrindo, com o queixo apoiado na mão"
             sizes="(min-width:1024px) 40vw, 100vw"
             className="absolute inset-0 jf-fade-left"

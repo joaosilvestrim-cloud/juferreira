@@ -125,7 +125,7 @@ export function PalestrasWorkshops() {
         </Container>
         <div className="relative min-h-[400px]">
           <Photo
-            src="/images/ph/palestras-workshops/workshop.webp"
+            src="/images/ju/quadro.webp"
             alt="Ju Ferreira conduzindo um workshop com um grupo à mesa"
             sizes="(min-width:1024px) 44vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -309,7 +309,7 @@ export function PalestrasExperiencias() {
         </Container>
         <div className="relative min-h-[400px]">
           <Photo
-            src="/images/ph/palestras-workshops/experiencias.webp"
+            src="/images/ju/equipe.webp"
             alt="Ju Ferreira em uma mesa de trabalho com lideranças"
             sizes="(min-width:1024px) 50vw, 100vw"
             className="absolute inset-0 jf-fade-left"

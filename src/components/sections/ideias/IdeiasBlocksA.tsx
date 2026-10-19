@@ -171,7 +171,7 @@ export function IdeiasPergunta() {
         <div className="grid grid-cols-[1.5fr_1fr] gap-3 self-start">
           <div className="relative row-span-2 min-h-[340px] overflow-hidden rounded-sm">
             <Photo
-              src="/images/ph/ideias/pergunta.webp"
+              src="/images/ju/poltrona-v.webp"
               alt="Ju Ferreira pensativa diante do notebook"
               sizes="(min-width:1024px) 32vw, 60vw"
               className="absolute inset-0"
@@ -655,7 +655,7 @@ export function IdeiasInvestigacao() {
           </Body>
         </div>
         <div className="relative min-h-[340px] overflow-hidden rounded-sm">
-          <Photo src="/images/ph/ideias/investigacao.webp" alt="Ju Ferreira lendo e fazendo anotações à mesa" sizes="(min-width:1024px) 30vw, 100vw" className="absolute inset-0" imgClassName="object-[40%_30%]" />
+          <Photo src="/images/ju/escrevendo.webp" alt="Ju Ferreira lendo e fazendo anotações à mesa" sizes="(min-width:1024px) 30vw, 100vw" className="absolute inset-0" imgClassName="object-[40%_30%]" />
           <StickyNote className="absolute left-4 top-4" rotate={-5} tone="paper">
             Ainda não sei exatamente onde elas terminam.
           </StickyNote>

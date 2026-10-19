@@ -24,7 +24,7 @@ const MOVES: Move[] = [
     name: "Imaginar",
     q: "E se pudesse ser diferente?",
     icon: "bulb",
-    img: "/images/ph/pessoas/imaginar.webp",
+    img: "/images/ju/poltrona-v.webp",
     alt: "Ju Ferreira pensativa, com a caneta junto ao rosto",
     order: "order-1",
     body: (
@@ -74,7 +74,7 @@ const MOVES: Move[] = [
     name: "Tornar-se",
     q: "Do que eu preciso me tornar capaz?",
     icon: "growth",
-    img: "/images/ph/pessoas/tornar-se.webp",
+    img: "/images/ju/quadro.webp",
     alt: "Ju Ferreira concentrada, com fones de ouvido",
     order: "order-3 lg:order-4",
     body: (
@@ -104,7 +104,7 @@ const MOVES: Move[] = [
     name: "Construir",
     q: "O que eu consigo fazer agora?",
     icon: "plane",
-    img: "/images/ph/pessoas/construir.webp",
+    img: "/images/ju/rua.webp",
     alt: "Ju Ferreira caminhando na rua",
     order: "order-4 lg:order-3",
     body: (

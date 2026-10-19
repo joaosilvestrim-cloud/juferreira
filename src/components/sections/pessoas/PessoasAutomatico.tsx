@@ -91,7 +91,7 @@ export function PessoasAutomatico() {
 
           <div className="relative grid gap-6 sm:grid-cols-[1.25fr_1fr] sm:items-start">
             <Photo
-              src="/images/ph/pessoas/automatico.webp"
+              src="/images/ju/escrevendo.webp"
               alt="Ju Ferreira escrevendo num caderno à mesa da cozinha"
               sizes="(min-width:1024px) 28vw, 100vw"
               className="aspect-[4/5] w-full rounded-[var(--jf-radius-sm)]"
@@ -106,7 +106,7 @@ export function PessoasAutomatico() {
                 </p>
               </Paper>
               <Snapshot
-                src="/images/ph/pessoas/automatico-cafe.webp"
+                src="/images/ju/escrevendo.webp"
                 alt="Ju Ferreira segurando uma xícara de café"
                 frameClassName="aspect-square"
                 sizes="(min-width:1024px) 20vw, 60vw"

@@ -54,7 +54,7 @@ export function ButtonLink({ variant = "primary", size = "md", className = "", c
   return (
     <Link
       {...rest}
-      className={`group inline-flex items-center justify-between rounded-full py-2 text-left leading-tight transition-colors duration-300 ${sizes[size]} ${styles[variant]} ${className}`}
+      className={`jf-btn group inline-flex items-center justify-between rounded-full py-2 text-left leading-tight transition-colors duration-300 ${sizes[size]} ${styles[variant]} ${className}`}
     >
       <span>{children}</span>
       <ArrowIcon />

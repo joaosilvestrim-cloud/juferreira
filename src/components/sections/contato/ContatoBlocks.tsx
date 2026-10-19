@@ -355,7 +355,7 @@ export function ContatoContexto() {
           </StickyNote>
           <div className="relative mt-10 hidden min-h-[300px] flex-1 lg:block">
             <Photo
-              src="/images/ph/contato/contexto.webp"
+              src="/images/ju/escrevendo.webp"
               alt="Ju Ferreira à mesa, com caderno e notebook"
               sizes="38vw"
               className="absolute inset-0 rounded-[12px]"
@@ -418,7 +418,7 @@ export function ContatoAtalhos() {
             </Body>
             <div className="relative mt-10 min-h-[340px] flex-1 overflow-visible">
               <Photo
-                src="/images/ph/contato/atalhos.webp"
+                src="/images/ju/conversa.webp"
                 alt="Ju Ferreira pensativa, diante do notebook"
                 sizes="(min-width:1024px) 34vw, 100vw"
                 className="absolute inset-0 rounded-[12px]"
@@ -610,7 +610,7 @@ export function ContatoCanais() {
         </Container>
         <div className="relative min-h-[360px]">
           <Photo
-            src="/images/ph/contato/canais.webp"
+            src="/images/ju/poltrona-h.webp"
             alt="Ju Ferreira sorrindo em seu escritório"
             sizes="(min-width:1024px) 50vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -746,7 +746,7 @@ export function ContatoFechamento() {
         </Container>
         <div className="relative min-h-[420px]">
           <Photo
-            src="/images/ph/contato/fechamento.webp"
+            src="/images/ju/retrato-biblioteca.webp"
             alt="Ju Ferreira à mesa, em luz baixa e quente"
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"

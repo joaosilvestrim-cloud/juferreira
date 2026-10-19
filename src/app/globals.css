@@ -225,3 +225,266 @@ body {
     transform: translateY(14px);
   }
 }
+
+/* ==========================================================================
+   MOVIMENTO — revelação ao rolar, 100% CSS (scroll-driven animations).
+   Sem JS no caminho: não interfere na hidratação do React. Navegadores sem suporte
+   mostram tudo estático. html.jf-motion é aplicado no <head> (respeita reduced-motion).
+   ========================================================================== */
+@supports (animation-timeline: view()) {
+  .jf-motion
+    main
+    section
+    :is(h2, h3, .jf-lead, .jf-eyebrow, .jf-body > *, p, li, figure, form, a.rounded-full, [data-card]):not(
+      :is(h2, h3, .jf-lead, .jf-eyebrow, .jf-body > *, p, li, figure, form, a.rounded-full, [data-card], [data-photo]) *
+    ):not([data-no-reveal], [data-no-reveal] *) {
+    animation: jf-rise linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 55%;
+  }
+  /* títulos: sobem desfocados, como uma ideia ganhando nitidez */
+  .jf-motion main section :is(h2):not(:is(p, li, figure, [data-card]) *) {
+    animation-name: jf-rise-blur;
+    animation-range: entry 0% entry 70%;
+  }
+  /* cards entram um pouco depois (efeito cascata natural pela posição) */
+  .jf-motion main section [data-card] {
+    animation-range: entry 10% entry 80%;
+  }
+  /* fotos: cortina que abre */
+  .jf-motion main section [data-photo] {
+    animation: jf-curtain linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+  /* traços vermelhos: desenham da esquerda para a direita */
+  .jf-motion main [data-stroke] {
+    animation: jf-draw-in linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 45%;
+  }
+}
+@keyframes jf-rise {
+  from {
+    opacity: 0;
+    translate: 0 34px;
+  }
+}
+@keyframes jf-rise-blur {
+  from {
+    opacity: 0;
+    translate: 0 0.4em;
+    filter: blur(10px);
+  }
+}
+@keyframes jf-curtain {
+  from {
+    clip-path: inset(16% 10% 16% 10%);
+    opacity: 0.2;
+  }
+}
+@keyframes jf-draw-in {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 -2% 0 0);
+  }
+}
+
+/* abertura de cada página: entrada em cascata ao carregar (tempo, não rolagem) */
+.jf-motion main section:first-of-type :is(h1, .jf-lead, .jf-body, p, a.rounded-full, [data-photo]) {
+  animation: jf-rise 1s var(--jf-ease) both;
+}
+.jf-motion main section:first-of-type h1 {
+  animation: jf-rise-blur 1.2s var(--jf-ease) both;
+}
+.jf-motion main section:first-of-type :is(.jf-lead, .jf-body, p) {
+  animation-delay: 0.25s;
+}
+.jf-motion main section:first-of-type a.rounded-full {
+  animation-delay: 0.45s;
+}
+.jf-motion main section:first-of-type [data-photo] {
+  animation: jf-curtain 1.4s var(--jf-ease) 0.1s both;
+}
+.jf-motion main section:first-of-type [data-stroke] {
+  animation: jf-draw-in 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.5s both;
+}
+
+/* parallax suave das fotos (scroll-driven, sem JS) */
+@supports (animation-timeline: view()) {
+  .jf-motion main [data-photo] > img {
+    animation: jf-parallax linear both;
+    animation-timeline: view();
+  }
+  @keyframes jf-parallax {
+    from {
+      translate: 0 -4%;
+      scale: 1.1;
+    }
+    to {
+      translate: 0 4%;
+      scale: 1.1;
+    }
+  }
+
+  /* VÓRTICE — a espiral gira e se abre conforme a rolagem */
+  .jf-vortex {
+    animation: jf-vortex linear both;
+    animation-timeline: view();
+  }
+  @keyframes jf-vortex {
+    from {
+      rotate: -110deg;
+      scale: 0.55;
+      opacity: 0;
+    }
+    35% {
+      opacity: 1;
+    }
+    to {
+      rotate: 70deg;
+      scale: 1.08;
+      opacity: 1;
+    }
+  }
+
+  /* barra de progresso de leitura */
+  .jf-progress {
+    animation: jf-progress linear both;
+    animation-timeline: scroll(root);
+  }
+  @keyframes jf-progress {
+    from {
+      scale: 0 1;
+    }
+    to {
+      scale: 1 1;
+    }
+  }
+}
+@supports not (animation-timeline: view()) {
+  .jf-progress {
+    display: none;
+  }
+  .jf-vortex {
+    animation: jf-spin 60s linear infinite;
+  }
+}
+@keyframes jf-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* respiração contínua e sutil da espiral central */
+.jf-breathe {
+  animation: jf-breathe 9s ease-in-out infinite;
+}
+@keyframes jf-breathe {
+  50% {
+    scale: 1.035;
+    filter: drop-shadow(0 0 22px rgb(184 12 16 / 0.18));
+  }
+}
+
+/* ==========================================================================
+   Interações
+   ========================================================================== */
+/* header recolhe ao descer e volta ao subir */
+.jf-header {
+  transition:
+    translate 0.5s var(--jf-ease),
+    box-shadow 0.4s var(--jf-ease),
+    background-color 0.4s;
+}
+.jf-header[data-hidden="true"] {
+  translate: 0 -100%;
+}
+.jf-header[data-scrolled="true"] {
+  box-shadow: 0 10px 30px -22px rgb(24 20 17 / 0.45);
+}
+
+/* botões: brilho que atravessa + leve pressão */
+.jf-btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    translate 0.3s var(--jf-ease),
+    box-shadow 0.3s;
+}
+.jf-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(110deg, transparent 30%, rgb(255 255 255 / 0.28) 50%, transparent 70%);
+  translate: -120% 0;
+  transition: translate 0.8s var(--jf-ease);
+}
+.jf-btn:hover {
+  translate: 0 -2px;
+  box-shadow: 0 14px 28px -16px rgb(143 8 8 / 0.55);
+}
+.jf-btn:hover::after {
+  translate: 120% 0;
+}
+.jf-btn:active {
+  translate: 0 0;
+  scale: 0.98;
+}
+
+/* links de texto: sublinhado que cresce */
+main a:not(.rounded-full):not([class*="block"]) {
+  text-underline-offset: 4px;
+}
+
+/* cards: elevação suave no hover */
+[data-card] {
+  transition:
+    translate 0.5s var(--jf-ease),
+    box-shadow 0.5s var(--jf-ease);
+}
+[data-card]:hover {
+  box-shadow: 0 24px 50px -32px rgb(24 20 17 / 0.45);
+}
+
+/* ==========================================================================
+   Transição entre páginas (React <ViewTransition> em app/template.tsx)
+   ========================================================================== */
+::view-transition-old(.jf-page-exit) {
+  animation: jf-page-out 0.35s var(--jf-ease) both;
+}
+::view-transition-new(.jf-page-enter) {
+  animation: jf-page-in 0.7s var(--jf-ease) both;
+}
+@keyframes jf-page-out {
+  to {
+    opacity: 0;
+    translate: 0 -24px;
+    filter: blur(6px);
+  }
+}
+@keyframes jf-page-in {
+  from {
+    opacity: 0;
+    translate: 0 36px;
+    clip-path: inset(6% 0 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jf-vortex,
+  .jf-breathe,
+  .jf-progress,
+  [data-photo] > img {
+    animation: none !important;
+  }
+  .jf-btn:hover {
+    translate: none;
+  }
+}

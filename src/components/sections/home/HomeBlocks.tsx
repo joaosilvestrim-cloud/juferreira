@@ -21,8 +21,9 @@ export function HomeHero() {
           imgClassName="object-[85%_30%]"
         />
       </div>
-            <Container className="z-10 flex min-h-[calc(100svh-var(--jf-header-h))] flex-col justify-center py-16 lg:py-24">
-        <div className="jf-reveal max-w-[860px]">
+            <Stroke shape="orbit" className="absolute -right-6 top-4 z-[1] hidden h-[105%] w-[50%] lg:block" width={3} />
+      <Container className="z-10 flex min-h-[calc(100svh-var(--jf-header-h))] flex-col justify-center py-16 lg:py-24">
+        <div className="max-w-[860px]">
           <Display as="h1" size="xl" caps>
             E se pudesse
             <br />
@@ -109,7 +110,9 @@ export function SpiralDiagram({ className = "" }: { className?: string }) {
   return (
     <div className={className}>
       <div className="relative hidden aspect-[1/1] w-full md:block">
-        <SpiralMark className="absolute left-1/2 top-1/2 w-[92%] -translate-x-1/2 -translate-y-1/2 rotate-[8deg] opacity-90" />
+        <div className="jf-breathe absolute inset-0">
+          <SpiralMark className="absolute left-1/2 top-1/2 w-[92%] -translate-x-1/2 -translate-y-1/2 opacity-90" />
+        </div>
         {MOVES.map((m, i) => (
           <div key={m.name} className={`absolute max-w-[220px] rounded-md bg-cream-50/85 p-2 backdrop-blur-[2px] ${pos[i]}`}>
             <p className="flex items-center gap-2 font-serif text-[22px] uppercase tracking-[0.14em] text-red-brand">
@@ -348,12 +351,12 @@ export function HomeProva() {
       t: "Tecnologia e mercado",
       body: (
         <>
-          Na Oracle, alcancei <strong className="text-red-brand">486% da meta anual</strong> e gerei mais de{" "}
-          <strong className="text-red-brand">US$ 20 milhões em receita</strong>.
+          Na Oracle, alcancei <strong className="text-red-brand"><span data-count="486">486</span>% da meta anual</strong> e gerei mais de{" "}
+          <strong className="text-red-brand">US$ <span data-count="20">20</span> milhões em receita</strong>.
         </>
       ),
     },
-    { t: "Empreendedorismo e construção", body: <>Cofundei e liderei a A2F por <strong className="text-red-brand">mais de 13 anos</strong>.</> },
+    { t: "Empreendedorismo e construção", body: <>Cofundei e liderei a A2F por <strong className="text-red-brand">mais de <span data-count="13">13</span> anos</strong>.</> },
     {
       t: "Negócios no presente",
       body: (
@@ -644,7 +647,9 @@ export function HomeIdeias() {
 export function HomeEncerramento() {
   return (
     <Section tone="wine" label="Encerramento">
-      <Stroke shape="orbit" className="absolute -right-24 top-10 h-[95%] w-[60%] opacity-90" width={3} color="var(--jf-red-400)" />
+      <div className="pointer-events-none absolute -right-[18%] top-1/2 w-[85%] max-w-[1100px] -translate-y-1/2 opacity-80 mix-blend-screen max-md:-right-1/2 max-md:w-[140%] max-md:opacity-40" aria-hidden>
+        <SpiralMark className="h-auto w-full" />
+      </div>
       <Container className="relative">
         <Display size="xl" className="max-w-[900px]">
           Temos futuros para <Em>construir.</Em>

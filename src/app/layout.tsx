@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Caveat, Cormorant_Garamond, Jost } from "next/font/google";
 import { SiteFooter } from "@/components/global/SiteFooter";
+import { Motion } from "@/components/global/Motion";
 import { SiteHeader } from "@/components/global/SiteHeader";
 import "./globals.css";
 
@@ -37,8 +38,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
+      suppressHydrationWarning
       className={`${display.variable} ${body.variable} ${hand.variable} antialiased`}
     >
+      <head>
+        {/* ativa o modo de movimento antes da primeira pintura (evita "piscar" o conteúdo) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('jf-motion')",
+          }}
+        />
+      </head>
       <body className="flex min-h-dvh flex-col">
         <a
           href="#conteudo"
@@ -51,6 +62,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <SiteFooter />
+        <Motion />
       </body>
     </html>
   );

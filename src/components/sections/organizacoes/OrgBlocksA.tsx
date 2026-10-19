@@ -164,7 +164,7 @@ export function OrgMudanca() {
         </Container>
         <div className="relative min-h-[360px]">
           <Photo
-            src="/images/ph/organizacoes/mudanca.webp"
+            src="/images/ju/retrato-biblioteca.webp"
             alt="Ju Ferreira pensativa em uma reunião"
             sizes="(min-width:1024px) 48vw, 100vw"
             className="absolute inset-0"
@@ -456,7 +456,7 @@ export function OrgPerguntas() {
         </Container>
         <div className="relative mt-10 min-h-[300px] lg:mt-0">
           <Photo
-            src="/images/ph/organizacoes/perguntas.webp"
+            src="/images/ju/quadro.webp"
             alt="Ju Ferreira escrevendo em um quadro branco"
             sizes="(min-width:1024px) 32vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -656,7 +656,7 @@ export function OrgTerritorios() {
         </Container>
         <div className="relative mt-10 min-h-[300px] lg:mt-0">
           <Photo
-            src="/images/ph/organizacoes/territorios.webp"
+            src="/images/ju/equipe.webp"
             alt="Ju Ferreira ouvindo atentamente em uma reunião"
             sizes="(min-width:1024px) 30vw, 100vw"
             className="absolute inset-0 jf-fade-left"

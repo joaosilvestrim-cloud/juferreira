@@ -46,7 +46,7 @@ export function PessoasJu() {
 
           <div className="relative">
             <Photo
-              src="/images/ph/pessoas/ju.webp"
+              src="/images/ju/retrato-biblioteca.webp"
               alt="Retrato de Ju Ferreira à mesa de trabalho"
               sizes="(min-width:1024px) 50vw, 100vw"
               className="aspect-[5/4] w-full rounded-[var(--jf-radius-sm)]"
