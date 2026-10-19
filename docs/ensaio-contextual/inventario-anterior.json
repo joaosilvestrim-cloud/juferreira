@@ -1,0 +1,1250 @@
+[
+  {
+    "file": "images/ju/conversa.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 121514,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ju/equipe.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 139646,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ju/escrevendo.webp",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 188086,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ju/palco.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 77010,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ju/poltrona-h.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 190456,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ju/poltrona-v.webp",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 204888,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ju/quadro.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 114370,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ju/retrato-biblioteca.webp",
+    "width": 1086,
+    "height": 1448,
+    "bytes": 192296,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ju/retrato-estante.webp",
+    "width": 511,
+    "height": 481,
+    "bytes": 37784,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ju/rua.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 142008,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/contato/atalhos.webp",
+    "width": 615,
+    "height": 564,
+    "bytes": 39100,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/contato/canais.webp",
+    "width": 877,
+    "height": 532,
+    "bytes": 49804,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/contato/contexto.webp",
+    "width": 997,
+    "height": 511,
+    "bytes": 48218,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/contato/fechamento.webp",
+    "width": 855,
+    "height": 960,
+    "bytes": 53730,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/contato/hero.webp",
+    "width": 892,
+    "height": 1261,
+    "bytes": 97022,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/contato/porta-epic.webp",
+    "width": 400,
+    "height": 176,
+    "bytes": 4998,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/contato/porta-futuros-r.webp",
+    "width": 596,
+    "height": 176,
+    "bytes": 8354,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/contato/porta-futuros.webp",
+    "width": 596,
+    "height": 176,
+    "bytes": 8354,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/contato/porta-nao-sei.webp",
+    "width": 744,
+    "height": 168,
+    "bytes": 11720,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/contato/porta-organizacoes.webp",
+    "width": 756,
+    "height": 164,
+    "bytes": 16130,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/contato/porta-palestras.webp",
+    "width": 744,
+    "height": 168,
+    "bytes": 9800,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/contato/porta-parcerias.webp",
+    "width": 744,
+    "height": 172,
+    "bytes": 16094,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/futuros-humanos/agencia.webp",
+    "width": 708,
+    "height": 832,
+    "bytes": 46608,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/futuros-humanos/auto-caderno.webp",
+    "width": 350,
+    "height": 340,
+    "bytes": 12150,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/futuros-humanos/auto-celular.webp",
+    "width": 448,
+    "height": 384,
+    "bytes": 9234,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/futuros-humanos/auto-ju-r.webp",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 188086,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/futuros-humanos/auto-ju.webp",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 188086,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/futuros-humanos/auto-laptop.webp",
+    "width": 300,
+    "height": 400,
+    "bytes": 8242,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/futuros-humanos/auto-rua.webp",
+    "width": 396,
+    "height": 364,
+    "bytes": 8792,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/futuros-humanos/autoria.webp",
+    "width": 855,
+    "height": 720,
+    "bytes": 46864,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/futuros-humanos/encerramento.webp",
+    "width": 705,
+    "height": 915,
+    "bytes": 49564,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/futuros-humanos/ferramentas.webp",
+    "width": 720,
+    "height": 1000,
+    "bytes": 40830,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/futuros-humanos/hero.webp",
+    "width": 870,
+    "height": 1186,
+    "bytes": 76070,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/futuros-humanos/liderancas-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 139646,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/futuros-humanos/liderancas.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 139646,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/futuros-humanos/organizacoes-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 114370,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/futuros-humanos/organizacoes.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 114370,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/futuros-humanos/pessoas-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 190456,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/futuros-humanos/pessoas.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 190456,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/home/artigo-1.webp",
+    "width": 532,
+    "height": 222,
+    "bytes": 8622,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/home/artigo-2.webp",
+    "width": 530,
+    "height": 222,
+    "bytes": 17810,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/home/artigo-3.webp",
+    "width": 532,
+    "height": 222,
+    "bytes": 11300,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/home/hero.webp",
+    "width": 895,
+    "height": 1207,
+    "bytes": 35218,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/home/ideias.webp",
+    "width": 870,
+    "height": 520,
+    "bytes": 38002,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/home/ju.webp",
+    "width": 1066,
+    "height": 1264,
+    "bytes": 74932,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/home/palco.webp",
+    "width": 1158,
+    "height": 1261,
+    "bytes": 66334,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/home/pessoas.webp",
+    "width": 900,
+    "height": 1276,
+    "bytes": 56098,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/home/porta-epic.webp",
+    "width": 344,
+    "height": 188,
+    "bytes": 6098,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/home/porta-ideias.webp",
+    "width": 344,
+    "height": 190,
+    "bytes": 4366,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/home/porta-terca.webp",
+    "width": 344,
+    "height": 190,
+    "bytes": 6468,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/home/prova-1.webp",
+    "width": 750,
+    "height": 552,
+    "bytes": 31532,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/home/prova-2.webp",
+    "width": 450,
+    "height": 582,
+    "bytes": 19774,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/home/prova-3.webp",
+    "width": 592,
+    "height": 517,
+    "bytes": 22122,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/home/prova-4.webp",
+    "width": 525,
+    "height": 561,
+    "bytes": 21094,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/home/tensao.webp",
+    "width": 1323,
+    "height": 1264,
+    "bytes": 107084,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/artigo-agencia.webp",
+    "width": 172,
+    "height": 206,
+    "bytes": 2542,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/artigo-automatico.webp",
+    "width": 590,
+    "height": 206,
+    "bytes": 19772,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/artigo-possibilidade.webp",
+    "width": 596,
+    "height": 206,
+    "bytes": 13330,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/artigo-tecnologia.webp",
+    "width": 640,
+    "height": 206,
+    "bytes": 10900,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/artigo-tornar-se.webp",
+    "width": 592,
+    "height": 206,
+    "bytes": 16682,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/caderno.webp",
+    "width": 340,
+    "height": 310,
+    "bytes": 13308,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/cidade.webp",
+    "width": 650,
+    "height": 412,
+    "bytes": 26310,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/destaque-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 142008,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/destaque.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 142008,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/hero.webp",
+    "width": 720,
+    "height": 690,
+    "bytes": 52294,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/inv-capacidade.webp",
+    "width": 604,
+    "height": 206,
+    "bytes": 14358,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/inv-capacidades.webp",
+    "width": 346,
+    "height": 220,
+    "bytes": 6008,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/inv-humano.webp",
+    "width": 358,
+    "height": 200,
+    "bytes": 11594,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/inv-soberania-r.webp",
+    "width": 596,
+    "height": 176,
+    "bytes": 8354,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/inv-soberania.webp",
+    "width": 596,
+    "height": 176,
+    "bytes": 8354,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/inv-terceirizando.webp",
+    "width": 592,
+    "height": 214,
+    "bytes": 17392,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/investigacao.webp",
+    "width": 727,
+    "height": 498,
+    "bytes": 48150,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/mesa-1.webp",
+    "width": 400,
+    "height": 240,
+    "bytes": 9812,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/mesa-2.webp",
+    "width": 412,
+    "height": 240,
+    "bytes": 12214,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/mesa-3.webp",
+    "width": 400,
+    "height": 240,
+    "bytes": 11056,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/mundo-real.webp",
+    "width": 735,
+    "height": 540,
+    "bytes": 45758,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/na-vida.webp",
+    "width": 606,
+    "height": 176,
+    "bytes": 13748,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/nas-organizacoes.webp",
+    "width": 594,
+    "height": 174,
+    "bytes": 11818,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/no-palco.webp",
+    "width": 650,
+    "height": 174,
+    "bytes": 8304,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/no-trabalho.webp",
+    "width": 668,
+    "height": 174,
+    "bytes": 11666,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/pergunta.webp",
+    "width": 667,
+    "height": 570,
+    "bytes": 55760,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/porta-futuros-r.webp",
+    "width": 596,
+    "height": 176,
+    "bytes": 8354,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/porta-futuros.webp",
+    "width": 596,
+    "height": 176,
+    "bytes": 8354,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/porta-ideias.webp",
+    "width": 736,
+    "height": 158,
+    "bytes": 13032,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/porta-terca.webp",
+    "width": 772,
+    "height": 158,
+    "bytes": 14476,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/repertorio.webp",
+    "width": 778,
+    "height": 550,
+    "bytes": 61210,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/terca.webp",
+    "width": 765,
+    "height": 682,
+    "bytes": 70910,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ideias/territorio-escolhas.webp",
+    "width": 596,
+    "height": 176,
+    "bytes": 12514,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/territorio-futuros.webp",
+    "width": 596,
+    "height": 176,
+    "bytes": 8354,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/territorio-lideranca.webp",
+    "width": 626,
+    "height": 176,
+    "bytes": 16138,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/territorio-tecnologia.webp",
+    "width": 636,
+    "height": 176,
+    "bytes": 15254,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/territorio-vida-real.webp",
+    "width": 594,
+    "height": 176,
+    "bytes": 13062,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/territorios-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 190456,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ideias/territorios.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 190456,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/construir-pb.webp",
+    "width": 400,
+    "height": 340,
+    "bytes": 12604,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/construir.webp",
+    "width": 712,
+    "height": 840,
+    "bytes": 42272,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/encerramento.webp",
+    "width": 975,
+    "height": 900,
+    "bytes": 66786,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/frente-empresas.webp",
+    "width": 312,
+    "height": 208,
+    "bytes": 5942,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ju/frente-epic.webp",
+    "width": 240,
+    "height": 148,
+    "bytes": 2760,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ju/frente-futuros.webp",
+    "width": 352,
+    "height": 260,
+    "bytes": 7162,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/frente-palestras.webp",
+    "width": 280,
+    "height": 256,
+    "bytes": 5558,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/frente-wtf.webp",
+    "width": 268,
+    "height": 294,
+    "bytes": 6974,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ju/hero.webp",
+    "width": 1248,
+    "height": 1284,
+    "bytes": 96472,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/hoje.webp",
+    "width": 415,
+    "height": 1027,
+    "bytes": 37564,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/maternidade.webp",
+    "width": 1005,
+    "height": 1035,
+    "bytes": 90294,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/ju/tecnologia.webp",
+    "width": 675,
+    "height": 912,
+    "bytes": 35684,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/tensoes.webp",
+    "width": 693,
+    "height": 780,
+    "bytes": 34300,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/trajetoria.webp",
+    "width": 697,
+    "height": 1261,
+    "bytes": 53578,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/ju/transformacao.webp",
+    "width": 630,
+    "height": 667,
+    "bytes": 40814,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/depois.webp",
+    "width": 750,
+    "height": 375,
+    "bytes": 29014,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/fechamento.webp",
+    "width": 487,
+    "height": 667,
+    "bytes": 36578,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/formato-experiencia.webp",
+    "width": 474,
+    "height": 266,
+    "bytes": 13858,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/organizacoes/formato-futuros-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 114370,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/organizacoes/formato-futuros.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 114370,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/formato-jornada-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 121514,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/organizacoes/formato-jornada.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 121514,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/formato-palestra-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 77010,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/organizacoes/formato-palestra.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 77010,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/formato-workshop-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 139646,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/organizacoes/formato-workshop.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 139646,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/hero.webp",
+    "width": 795,
+    "height": 675,
+    "bytes": 52366,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/mudanca.webp",
+    "width": 720,
+    "height": 532,
+    "bytes": 31988,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/mundo-real.webp",
+    "width": 750,
+    "height": 337,
+    "bytes": 25624,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/perguntas.webp",
+    "width": 750,
+    "height": 337,
+    "bytes": 23092,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/territorios.webp",
+    "width": 735,
+    "height": 375,
+    "bytes": 30656,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/organizacoes/wtf.webp",
+    "width": 945,
+    "height": 397,
+    "bytes": 39918,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/palestras-workshops/contexto.webp",
+    "width": 412,
+    "height": 438,
+    "bytes": 22412,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/palestras-workshops/conversa.webp",
+    "width": 397,
+    "height": 600,
+    "bytes": 25722,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/palestras-workshops/escuta.webp",
+    "width": 630,
+    "height": 495,
+    "bytes": 35118,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/palestras-workshops/experiencias.webp",
+    "width": 750,
+    "height": 567,
+    "bytes": 38504,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/palestras-workshops/hero.webp",
+    "width": 630,
+    "height": 1012,
+    "bytes": 46832,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/palestras-workshops/lastro.webp",
+    "width": 705,
+    "height": 480,
+    "bytes": 30254,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/palestras-workshops/palco.webp",
+    "width": 832,
+    "height": 607,
+    "bytes": 35918,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/palestras-workshops/tese.webp",
+    "width": 585,
+    "height": 487,
+    "bytes": 32162,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/palestras-workshops/workshop.webp",
+    "width": 375,
+    "height": 472,
+    "bytes": 22134,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/agencia.webp",
+    "width": 847,
+    "height": 502,
+    "bytes": 42060,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/automatico-cafe.webp",
+    "width": 492,
+    "height": 460,
+    "bytes": 24138,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/automatico.webp",
+    "width": 592,
+    "height": 757,
+    "bytes": 58034,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/comecar-1.webp",
+    "width": 496,
+    "height": 312,
+    "bytes": 18364,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/comecar-2.webp",
+    "width": 420,
+    "height": 324,
+    "bytes": 10544,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/comecar-3.webp",
+    "width": 360,
+    "height": 260,
+    "bytes": 9228,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/comecar-4.webp",
+    "width": 360,
+    "height": 350,
+    "bytes": 14760,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/construir.webp",
+    "width": 296,
+    "height": 614,
+    "bytes": 17914,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/epic.webp",
+    "width": 528,
+    "height": 465,
+    "bytes": 35428,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/escolher.webp",
+    "width": 370,
+    "height": 374,
+    "bytes": 11206,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/fechamento-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 142008,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/fechamento.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 142008,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/hero.webp",
+    "width": 847,
+    "height": 1269,
+    "bytes": 98614,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/imaginar.webp",
+    "width": 350,
+    "height": 436,
+    "bytes": 21366,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/ju-filhas.webp",
+    "width": 450,
+    "height": 474,
+    "bytes": 20542,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/ju.webp",
+    "width": 590,
+    "height": 488,
+    "bytes": 27782,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/porta-futuros-r.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 142008,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/porta-futuros.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 142008,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  },
+  {
+    "file": "images/ph/pessoas/porta-ideias.webp",
+    "width": 404,
+    "height": 390,
+    "bytes": 15958,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/porta-terca.webp",
+    "width": 550,
+    "height": 314,
+    "bytes": 22336,
+    "observedInPublicPages": true,
+    "recommendation": "Consultar seleção por posição no mapa."
+  },
+  {
+    "file": "images/ph/pessoas/tornar-se.webp",
+    "width": 216,
+    "height": 460,
+    "bytes": 9812,
+    "observedInPublicPages": false,
+    "recommendation": "Não observado nas oito páginas renderizadas; manter como arquivo legado até revisão de referências externas."
+  }
+]

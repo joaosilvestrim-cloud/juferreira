@@ -125,11 +125,11 @@ export function PalestrasWorkshops() {
         </Container>
         <div className="relative min-h-[400px]">
           <Photo
-            src="/images/ju/quadro.webp"
-            alt="Ju Ferreira conduzindo um workshop com um grupo à mesa"
+            src="/images/ensaio/palestras-workshop-02.webp"
+            alt="Cena ilustrativa de Juliana facilitando uma atividade com post-its."
             sizes="(min-width:1024px) 44vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>
@@ -309,11 +309,11 @@ export function PalestrasExperiencias() {
         </Container>
         <div className="relative min-h-[400px]">
           <Photo
-            src="/images/ju/equipe.webp"
-            alt="Ju Ferreira em uma mesa de trabalho com lideranças"
+            src="/images/ensaio/palestras-workshop-01.webp"
+            alt="Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa."
             sizes="(min-width:1024px) 50vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[45%_30%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>

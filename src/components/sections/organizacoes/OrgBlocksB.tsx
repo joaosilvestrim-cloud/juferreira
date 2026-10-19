@@ -107,11 +107,11 @@ export function OrgFuturosAplicados() {
         </Container>
         <div className="relative mt-10 min-h-[320px] lg:mt-0">
           <Photo
-            src="/images/ju/quadro.webp"
-            alt="Ju Ferreira apresentando possibilidades de futuro em um quadro com imagens"
+            src="/images/ensaio/home-04c-quadro-post-its.webp"
+            alt="Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its."
             sizes="(min-width:1024px) 56vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[45%_30%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>
@@ -425,11 +425,11 @@ export function OrgMundoReal() {
         </Container>
         <div className="relative mt-10 min-h-[320px] lg:mt-0">
           <Photo
-            src="/images/ju/quadro.webp"
-            alt="Ju Ferreira refletindo durante uma reunião de trabalho"
+            src="/images/ensaio/ju-trabalho-tecnologia.webp"
+            alt="Juliana concentrada no trabalho em um notebook."
             sizes="(min-width:1024px) 30vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>
@@ -654,11 +654,11 @@ export function OrgDepois() {
         </Container>
         <div className="relative mt-10 min-h-[320px] lg:mt-0">
           <Photo
-            src="/images/ju/conversa.webp"
-            alt="Ju Ferreira pensativa ao fim de uma conversa"
+            src="/images/ensaio/organizacoes-conversa-lideranca.webp"
+            alt="Cena ilustrativa de Juliana em conversa individual com uma liderança."
             sizes="(min-width:1024px) 30vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>
@@ -758,11 +758,11 @@ export function OrgFechamento() {
             </Pull>
             <div className="relative mt-10 aspect-[4/3] max-w-[560px] overflow-hidden rounded-[var(--jf-radius-sm)]">
               <Photo
-                src="/images/ju/poltrona-v.webp"
-                alt="Ju Ferreira pensativa diante do notebook"
+                src="/images/ensaio/contato-sorriso-horizontal.webp"
+                alt="Juliana sorrindo para a câmera à mesa, com notebook aberto."
                 sizes="(min-width:1024px) 40vw, 100vw"
                 className="absolute inset-0"
-                imgClassName="object-[50%_25%]"
+                imgClassName="object-[50%_40%]"
               />
             </div>
             <div className="mt-10 max-w-[600px]">

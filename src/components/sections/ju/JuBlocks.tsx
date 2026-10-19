@@ -1,3 +1,4 @@
+import { photoPosition } from "@/lib/photo-position";
 import type { ReactNode } from "react";
 import Image from "next/image";
 import { ButtonLink, ButtonRow } from "@/components/ui/Button";
@@ -27,12 +28,12 @@ export function JuHero() {
     <Section padded={false} className="min-h-[calc(100svh-var(--jf-header-h))]" label="Primeiro de tudo, eu sou a Ju">
       <div className="absolute inset-y-0 right-0 hidden w-[50%] lg:block">
         <Photo
-          src="/images/ju/poltrona-v.webp"
-          alt="Ju Ferreira sentada em uma poltrona diante da estante de livros"
+          src="/images/ensaio/home-02-biblioteca-vertical.webp"
+          alt="Retrato de Juliana em uma poltrona na biblioteca."
           priority
           sizes="50vw"
           className="jf-fade-left absolute inset-0"
-          imgClassName="object-[45%_25%]"
+          imgClassName="object-[50%_40%]"
         />
       </div>
       <Stroke shape="loop" draw className="absolute right-[4%] top-[4%] hidden h-[92%] w-[44%] lg:block" width={2.5} />
@@ -76,7 +77,7 @@ export function JuHero() {
         </div>
       </Container>
       <div className="relative h-[90vw] max-h-[560px] lg:hidden">
-        <Photo src="/images/ju/poltrona-v.webp" alt="" sizes="100vw" className="absolute inset-0 jf-paper-edge" imgClassName="object-[45%_25%]" />
+        <Photo src="/images/ensaio/home-02-biblioteca-horizontal.webp" alt="Juliana sentada em uma poltrona na biblioteca." sizes="100vw" className="absolute inset-0 jf-paper-edge" imgClassName="object-[50%_40%]" />
       </div>
     </Section>
   );
@@ -181,10 +182,10 @@ export function JuTrajetoria() {
             <div className="relative aspect-[3/5] w-full">
               <Photo
                 src="/images/ju/retrato-biblioteca.webp"
-                alt="Ju Ferreira sorrindo, sentada à mesa"
+                alt="Juliana sorrindo diante de sua biblioteca."
                 sizes="28vw"
                 className="absolute inset-0 jf-paper-edge"
-                imgClassName="object-[50%_30%]"
+                imgClassName="object-[50%_40%]"
               />
               <Stroke shape="loop" className="absolute -left-8 top-[18%] h-[78%] w-[110%]" width={2.2} />
             </div>
@@ -230,11 +231,11 @@ export function JuTecnologia() {
         </Container>
         <div className="relative min-h-[420px]">
           <Photo
-            src="/images/ju/conversa.webp"
-            alt="Ju Ferreira conversando em uma reunião de negócios"
+            src="/images/ensaio/ju-trabalho-tecnologia.webp"
+            alt="Juliana concentrada no trabalho em um notebook."
             sizes="(min-width:1024px) 42vw, 100vw"
             className="absolute inset-0"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-ink-900 via-ink-900/10 to-transparent max-lg:bg-gradient-to-b" aria-hidden />
           <Stroke shape="circle" className="absolute left-[8%] top-[6%] h-[80%] w-[80%] opacity-90" width={2.5} color="var(--jf-red-400)" />
@@ -360,24 +361,24 @@ export function JuConstruir() {
             <p>E talvez uma das coisas mais importantes que aprendi seja esta:</p>
           </Body>
         </Container>
-        <div className="relative min-h-[460px]">
+        <div className="relative min-h-[460px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ju/conversa.webp"
-            alt="Ju Ferreira pensativa diante do notebook em seu espaço de trabalho"
+            src="/images/ensaio/ju-estudo-fones.webp"
+            alt="Juliana estudando com fones de ouvido, livro e notebook."
             sizes="(min-width:1024px) 44vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[55%_30%]"
+            imgClassName="object-[50%_40%]"
           />
           <div className="absolute -left-6 bottom-10 hidden w-[42%] max-w-[240px] rotate-[-3deg] border-[6px] border-cream-50 shadow-[0_14px_30px_-16px_rgba(0,0,0,.55)] lg:block">
             <Image
-              src="/images/ju/quadro.webp"
-              alt=""
+              src="/images/ensaio/home-04c-quadro-post-its.webp"
+              alt="Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its."
               width={400}
               height={340}
               sizes="240px"
               className="h-auto w-full"
-              data-placeholder="foto"
-            />
+              data-photo-origin="generated-ai"
+            style={{ objectPosition: photoPosition("/images/ensaio/home-04c-quadro-post-its.webp") }} />
           </div>
           <HandNote className="absolute right-6 top-8 hidden max-w-[200px] text-ink-900 xl:block" rotate={-5}>
             Acertei. Errei. Perdi. Recomecei.
@@ -488,14 +489,14 @@ export function JuMaternidade() {
             ))}
           </ul>
         </Container>
-        <div className="relative min-h-[520px]">
+        <div className="relative min-h-[520px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           {/* PENDENTE: foto real da Ju com as filhas (placeholder recortado do mockup, gerado por IA). */}
           <Photo
-            src="/images/ph/ju/maternidade.webp"
-            alt="Ju Ferreira abraçando as duas filhas no sofá"
+            src="/images/ensaio/maternidade-vertical.webp"
+            alt="Cena ilustrativa vertical de uma mulher e duas meninas fictícias, vistas de costas no parque."
             sizes="(min-width:1024px) 48vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_30%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="underline" className="absolute bottom-8 left-[10%] h-5 w-[50%]" width={4} />
         </div>
@@ -623,11 +624,11 @@ export function JuFuturos() {
         </div>
         <div className="relative aspect-[4/4.2] w-full">
           <Photo
-            src="/images/ju/escrevendo.webp"
-            alt="Ju Ferreira pensativa em seu espaço de estudo"
+            src="/images/ensaio/ju-leitura-anotacoes.webp"
+            alt="Juliana lendo um livro e fazendo anotações em um caderno."
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-paper-edge"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </Container>
@@ -775,8 +776,8 @@ const FRONTS: Front[] = [
     key: "futuros",
     name: "Futuros Humanos",
     tagline: "Meu principal território intelectual contemporâneo.",
-    img: "/images/ju/palco.webp",
-    alt: "Ju Ferreira palestrando",
+    img: "/images/ensaio/palestras-palco-frente.webp",
+    alt: "Cena ilustrativa de Juliana falando no palco, vista de frente.",
     body: (
       <>
         <p>
@@ -795,8 +796,8 @@ const FRONTS: Front[] = [
     key: "palestras",
     name: "Palestras, workshops e experiências",
     tagline: "Quando as ideias precisam entrar em uma sala.",
-    img: "/images/ju/palco.webp",
-    alt: "Ju Ferreira com microfone em um workshop",
+    img: "/images/ensaio/palestras-workshop-01.webp",
+    alt: "Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa.",
     body: (
       <>
         <p>
@@ -815,8 +816,8 @@ const FRONTS: Front[] = [
     key: "wtf",
     name: "What The Future?!",
     tagline: "Futuros aplicados em coletivo.",
-    img: "/images/ph/ju/frente-wtf.webp",
-    alt: "Encontro do coletivo What The Future?!",
+    img: "/images/ensaio/contexto-planejamento-equipe.webp",
+    alt: "Mãos organizando post-its e ideias em uma mesa de trabalho.",
     body: (
       <>
         <p>
@@ -841,8 +842,8 @@ const FRONTS: Front[] = [
       </>
     ),
     tagline: "Transformação pessoal em movimento.",
-    img: "/images/ph/ju/frente-epic.webp",
-    alt: "Pessoa de braços abertos diante do pôr do sol",
+    img: "/images/ensaio/ju-caminhada-movimento.webp",
+    alt: "Juliana caminhando na calçada, em enquadramento de corpo inteiro.",
     body: (
       <>
         <p>EPIC247 nasce de outra parte da minha história.</p>
@@ -860,8 +861,8 @@ const FRONTS: Front[] = [
     key: "empresas",
     name: "Empresas, negócios e mercado",
     tagline: "Porque eu continuo construindo.",
-    img: "/images/ph/ju/frente-empresas.webp",
-    alt: "Mãos sobre a mesa de trabalho com notebook e café",
+    img: "/images/ensaio/contexto-tecnologia-humana.webp",
+    alt: "Mãos usando um notebook ao lado de caderno e café.",
     body: (
       <>
         <p>Continuo próxima de clientes, vendas, tecnologia, estratégia e operação.</p>
@@ -921,7 +922,7 @@ export function JuHoje() {
                     <Dash className="mt-3" />
                   </div>
                   <div className="relative h-20 w-24 shrink-0 overflow-hidden shadow-[0_8px_18px_-12px_rgba(0,0,0,.6)] sm:h-24 sm:w-28">
-                    <Image src={f.img} alt={f.alt} fill sizes="112px" className="object-cover" data-placeholder="foto" />
+                    <Image src={f.img} alt={f.alt} fill sizes="112px" className="object-cover" data-photo-origin="generated-ai" style={{ objectPosition: photoPosition(f.img) }} />
                   </div>
                 </div>
                 <p className="mt-4 font-semibold text-ink-900">{f.tagline}</p>
@@ -930,7 +931,7 @@ export function JuHoje() {
             </li>
           ))}
           <li className="relative min-h-[420px] overflow-hidden" aria-hidden>
-            <Photo src="/images/ju/rua.webp" alt="" sizes="(min-width:768px) 30vw, 100vw" className="absolute inset-0" imgClassName="object-[50%_70%]" />
+            <Photo src="/images/ensaio/ju-caminhada-movimento.webp" alt="Juliana caminhando na calçada, em enquadramento de corpo inteiro." sizes="(min-width:768px) 30vw, 100vw" className="absolute inset-0" imgClassName="object-[50%_40%]" />
             <Stroke shape="circle" className="absolute inset-[6%] h-[88%] w-[88%]" width={2.5} />
           </li>
         </ul>
@@ -1023,13 +1024,13 @@ const TENSIONS: { a: string; b: string; body: ReactNode }[] = [
 export function JuTensoes() {
   return (
     <Section tone="dark" padded={false} label="O que atravessa tudo isso">
-      <div className="absolute inset-y-0 right-0 hidden w-[30%] xl:block">
+      <div className="absolute top-[var(--jf-section-y)] right-0 hidden w-[30%] xl:block aspect-[2/3]">
         <Photo
-          src="/images/ju/poltrona-v.webp"
-          alt="Ju Ferreira pensativa, olhando para o alto"
+          src="/images/ensaio/pessoas-janela.webp"
+          alt="Juliana olhando pela janela, com expressão contemplativa."
           sizes="30vw"
           className="jf-fade-left absolute inset-0"
-          imgClassName="object-[40%_30%]"
+          imgClassName="object-[50%_40%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink-900 via-ink-900/20 to-transparent" aria-hidden />
       </div>
@@ -1070,8 +1071,8 @@ export function JuTensoes() {
           </ul>
         </div>
 
-        <div className="relative mt-14 h-[320px] sm:h-[420px] xl:hidden">
-          <Photo src="/images/ju/poltrona-v.webp" alt="" sizes="100vw" className="absolute inset-0" imgClassName="object-[40%_30%]" />
+        <div className="relative mt-14 h-[320px] sm:h-[420px] xl:hidden lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
+          <Photo src="/images/ensaio/pessoas-janela.webp" alt="Juliana olhando pela janela, com expressão contemplativa." sizes="100vw" className="absolute inset-0" imgClassName="object-[50%_40%]" />
         </div>
 
         <div className="mt-16 grid gap-10 border-t border-cream-50/20 pt-12 lg:grid-cols-[1.3fr_1fr_auto] lg:items-center lg:gap-12">
@@ -1185,13 +1186,13 @@ export function JuEncerramento() {
             </ButtonLink>
           </ButtonRow>
         </Container>
-        <div className="relative min-h-[480px]">
+        <div className="relative min-h-[480px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ju/retrato-biblioteca.webp"
-            alt="Ju Ferreira sorrindo à mesa, com café, caderno e notebook"
+            src="/images/ensaio/contato-sorriso-vertical.webp"
+            alt="Retrato acolhedor de Juliana com notebook à mesa."
             sizes="(min-width:1024px) 40vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="loop" className="absolute -left-6 top-[6%] h-[70%] w-[95%]" width={2.5} />
           <HandNote className="absolute bottom-8 right-6 max-w-[180px] text-ink-900 md:right-10" rotate={-8}>

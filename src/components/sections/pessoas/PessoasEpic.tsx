@@ -87,13 +87,13 @@ export function PessoasEpic() {
 
           <div className="relative">
             <Photo
-              src="/images/ju/rua.webp"
-              alt="Ju Ferreira pensativa, com a mão no queixo"
+              src="/images/ensaio/pessoas-janela.webp"
+              alt="Juliana olhando pela janela, com expressão contemplativa."
               sizes="(min-width:1024px) 28vw, 100vw"
               className="aspect-[4/5] w-full rounded-[var(--jf-radius-sm)] lg:aspect-[3/4]"
-              imgClassName="object-[45%_30%]"
+              imgClassName="object-[50%_40%]"
             />
-            <Paper className="-mt-10 ml-auto w-fit max-w-[240px] md:rotate-[4deg] lg:absolute lg:-right-6 lg:-top-6 lg:mt-0">
+            <Paper className="-mt-10 ml-auto w-fit max-w-[240px] md:rotate-[4deg]">
               <p className="jf-hand text-[28px]">Saber não muda sozinho.</p>
             </Paper>
           </div>

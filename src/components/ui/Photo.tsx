@@ -1,9 +1,7 @@
 import Image from "next/image";
+import { photoPosition } from "@/lib/photo-position";
 
-/**
- * Foto editorial. As imagens em /images/ph/ são PLACEHOLDERS recortados dos mockups (geradas por IA)
- * e devem ser trocadas por fotografias reais aprovadas antes do go-live.
- */
+/** Fotografia editorial, com origem explícita para as cenas do ensaio ilustrativo. */
 export function Photo({
   src,
   alt,
@@ -26,11 +24,9 @@ export function Photo({
   height?: number;
 }) {
   const placeholder = src.includes("/images/ph/");
-  // Fotos reais aparecem em colunas altas com object-cover (a imagem é renderizada bem maior que a coluna):
-  // pedir a versão de largura total evita servir uma variante pequena ampliada (borrada).
-  const real = src.startsWith("/images/ju/");
-  if (real) sizes = "(min-width: 1024px) 100vw, 200vw";
-  const quality = real ? 90 : 75;
+  const generated = src.startsWith("/images/ensaio/");
+  const scene = generated && /palco|palestras|reuniao|conversa|equipe|lideranca|quadro|maternidade/.test(src);
+  const quality = placeholder ? 75 : 90;
   if (!fill && width && height) {
     return (
       <Image
@@ -43,6 +39,7 @@ export function Photo({
         priority={priority}
         className={`h-auto w-full object-cover ${imgClassName} ${className}`}
         data-placeholder={placeholder ? "foto" : undefined}
+        data-photo-origin={generated ? "generated-ai" : undefined}
       />
     );
   }
@@ -51,8 +48,14 @@ export function Photo({
       className={`${/\babsolute\b/.test(className) ? "" : "relative"} overflow-hidden ${className}`}
       data-photo=""
       data-placeholder={placeholder ? "foto" : undefined}
+      data-photo-origin={generated ? "generated-ai" : undefined}
     >
-      <Image src={src} alt={alt} fill sizes={sizes} quality={quality} priority={priority} className={`object-cover ${imgClassName}`} />
+      <Image src={src} alt={alt} fill sizes={sizes} quality={quality} priority={priority} className={`object-cover ${imgClassName}`} style={{ objectPosition: photoPosition(src) }} />
+      {scene && (
+        <span className="absolute bottom-3 right-3 z-10 rounded-sm bg-ink-900/75 px-2 py-1 text-[10px] leading-tight tracking-wide text-cream-50">
+          Cena ilustrativa
+        </span>
+      )}
     </div>
   );
 }

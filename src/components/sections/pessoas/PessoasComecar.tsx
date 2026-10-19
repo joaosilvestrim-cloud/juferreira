@@ -13,8 +13,8 @@ const STARTS: Start[] = [
     n: 1,
     t: "Eu preciso perceber melhor",
     s: "Ainda não sei exatamente o que está acontecendo.",
-    img: "/images/ph/pessoas/comecar-1.webp",
-    alt: "Caderno de anotações e xícara de café",
+    img: "/images/ensaio/home-06-ideias-horizontal.webp",
+    alt: "Livros, caderno aberto, caneta e café sobre uma mesa de madeira.",
     rot: "lg:-rotate-[1.2deg]",
     body: (
       <>
@@ -33,8 +33,8 @@ const STARTS: Start[] = [
     n: 2,
     t: "Eu sei o que quero, mas não consigo escolher",
     s: "Existem possibilidades, mas nenhuma decisão se sustenta.",
-    img: "/images/ph/pessoas/comecar-2.webp",
-    alt: "Placa de direção numa estrada ao pôr do sol",
+    img: "/images/ensaio/contexto-caminhos-escolhas.webp",
+    alt: "Uma trilha se divide em dois caminhos na paisagem.",
     rot: "lg:rotate-[1deg]",
     body: (
       <>
@@ -53,8 +53,8 @@ const STARTS: Start[] = [
     n: 3,
     t: "Eu já escolhi, mas ainda não me sinto capaz",
     s: "Eu sei para onde quero ir, mas existe um espaço entre querer e conseguir.",
-    img: "/images/ph/pessoas/comecar-3.webp",
-    alt: "Caneca sobre uma pilha de livros",
+    img: "/images/ensaio/contexto-livros-janela.webp",
+    alt: "Livros próximos à janela, com a cidade ao entardecer ao fundo.",
     rot: "lg:-rotate-[0.8deg]",
     body: (
       <>
@@ -75,8 +75,8 @@ const STARTS: Start[] = [
     n: 4,
     t: "Eu sei o que preciso fazer. Só não comecei.",
     s: "A questão agora é movimento.",
-    img: "/images/ph/pessoas/comecar-4.webp",
-    alt: "Pés de tênis subindo uma escada",
+    img: "/images/ensaio/ju-caminhada-movimento.webp",
+    alt: "Juliana caminhando na calçada, em enquadramento de corpo inteiro.",
     rot: "lg:rotate-[1.2deg]",
     body: (
       <>

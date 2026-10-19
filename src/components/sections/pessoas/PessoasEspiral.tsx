@@ -24,8 +24,8 @@ const MOVES: Move[] = [
     name: "Imaginar",
     q: "E se pudesse ser diferente?",
     icon: "bulb",
-    img: "/images/ju/poltrona-v.webp",
-    alt: "Ju Ferreira pensativa, com a caneta junto ao rosto",
+    img: "/images/ensaio/pessoas-janela.webp",
+    alt: "Juliana olhando pela janela, com expressão contemplativa.",
     order: "order-1",
     body: (
       <>
@@ -52,8 +52,8 @@ const MOVES: Move[] = [
     name: "Escolher",
     q: "O que eu quero ajudar a tornar possível?",
     icon: "sign",
-    img: "/images/ph/pessoas/escolher.webp",
-    alt: "Mão escrevendo uma lista num caderno",
+    img: "/images/ensaio/contexto-caderno-escolhas.webp",
+    alt: "Mãos fazendo anotações e marcando escolhas em um caderno.",
     order: "order-2",
     body: (
       <>
@@ -74,8 +74,8 @@ const MOVES: Move[] = [
     name: "Tornar-se",
     q: "Do que eu preciso me tornar capaz?",
     icon: "growth",
-    img: "/images/ju/quadro.webp",
-    alt: "Ju Ferreira concentrada, com fones de ouvido",
+    img: "/images/ensaio/ju-estudo-fones.webp",
+    alt: "Juliana estudando com fones de ouvido, livro e notebook.",
     order: "order-3 lg:order-4",
     body: (
       <>
@@ -104,8 +104,8 @@ const MOVES: Move[] = [
     name: "Construir",
     q: "O que eu consigo fazer agora?",
     icon: "plane",
-    img: "/images/ju/rua.webp",
-    alt: "Ju Ferreira caminhando na rua",
+    img: "/images/ensaio/ju-caminhada-movimento.webp",
+    alt: "Juliana caminhando na calçada, em enquadramento de corpo inteiro.",
     order: "order-4 lg:order-3",
     body: (
       <>

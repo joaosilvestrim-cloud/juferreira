@@ -40,15 +40,15 @@ export function FHHero() {
     <Section padded={false} className="min-h-[calc(100svh-var(--jf-header-h))]" label="Abertura">
       <div className="absolute inset-y-0 right-0 hidden w-[46%] lg:block">
         <Photo
-          src="/images/ju/quadro.webp"
-          alt="Ju Ferreira desenhando um diagrama no quadro"
+          src="/images/ensaio/home-01-abertura-vertical.webp"
+          alt="Juliana no mirante, em enquadramento vertical ao entardecer."
           priority
           sizes="46vw"
           className="jf-fade-left absolute inset-0"
-          imgClassName="object-[50%_25%]"
+          imgClassName="object-[50%_40%]"
         />
       </div>
-      <Stroke shape="orbit" draw className="absolute -right-6 top-0 hidden h-[100%] w-[46%] lg:block" width={3} />
+      <Stroke shape="loop" draw className="absolute -right-6 top-0 hidden h-[100%] w-[46%] lg:block" width={3} />
       <Container className="flex min-h-[calc(100svh-var(--jf-header-h))] flex-col justify-center py-16 lg:py-20">
         <div className="jf-reveal max-w-[760px]">
           <Display as="h1" size="lg" caps>
@@ -80,7 +80,7 @@ export function FHHero() {
         </div>
       </Container>
       <div className="relative h-[90vw] max-h-[560px] lg:hidden">
-        <Photo src="/images/ju/quadro.webp" alt="" sizes="100vw" className="absolute inset-0 jf-paper-edge" imgClassName="object-[50%_25%]" />
+        <Photo src="/images/ensaio/home-01-abertura-horizontal.webp" alt="Juliana de preto diante de uma paisagem ampla ao entardecer." sizes="100vw" className="absolute inset-0 jf-paper-edge" imgClassName="object-[74%_44%]" />
       </div>
     </Section>
   );
@@ -146,13 +146,13 @@ export function FHFerramentas() {
             </div>
           </div>
         </Container>
-        <div className="relative min-h-[460px]">
+        <div className="relative min-h-[460px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ju/retrato-biblioteca.webp"
-            alt="Ju Ferreira pensativa à mesa de trabalho, com café e livros"
+            src="/images/ensaio/ju-estudo-fones.webp"
+            alt="Juliana estudando com fones de ouvido, livro e notebook."
             sizes="(min-width:1024px) 36vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_20%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="circle" className="absolute left-[6%] top-[6%] h-[70%] w-[90%] opacity-90" width={2.5} color="var(--jf-red-400)" />
         </div>
@@ -405,13 +405,13 @@ export function FHAgencia() {
             </div>
           </div>
         </Container>
-        <div className="relative mt-12 min-h-[480px] lg:mt-0">
+        <div className="relative mt-12 min-h-[480px] lg:mt-0 lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ju/poltrona-v.webp"
-            alt="Ju Ferreira apoiada à mesa, olhando para fora pela janela"
+            src="/images/ensaio/pessoas-janela.webp"
+            alt="Juliana olhando pela janela, com expressão contemplativa."
             sizes="(min-width:1024px) 32vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[40%_30%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="loop" className="absolute -left-8 top-4 h-[70%] w-[90%]" width={2.5} />
         </div>
@@ -446,11 +446,11 @@ export function FHAutomatico() {
     { t: "Consequência", d: "O futuro que nossas práticas ajudam a tornar mais provável.", icon: "chart" },
   ] as const;
   const collage = [
-    { src: "auto-laptop.webp", alt: "Notebook e xícara de café sobre a mesa", c: "col-span-4 row-span-4 -rotate-2" },
-    { src: "auto-ju-r.webp", alt: "Ju Ferreira pensativa diante do notebook", c: "col-span-4 row-span-7 rotate-1" },
-    { src: "auto-rua.webp", alt: "Pessoas caminhando apressadas na rua", c: "col-span-4 row-span-4 rotate-2" },
-    { src: "auto-caderno.webp", alt: "Caderno com anotações e caneta", c: "col-span-4 row-span-4 rotate-1" },
-    { src: "auto-celular.webp", alt: "Mão segurando um celular", c: "col-span-4 row-span-4 -rotate-1" },
+    { src: "/images/ensaio/contexto-tecnologia-humana.webp", alt: "Mãos usando um notebook ao lado de caderno e café.", c: "col-span-4 row-span-4 -rotate-2" },
+    { src: "/images/ensaio/ju-trabalho-tecnologia.webp", alt: "Juliana concentrada no trabalho em um notebook.", c: "col-span-4 row-span-7 rotate-1" },
+    { src: "/images/ensaio/contexto-cidade-movimento.webp", alt: "Pessoas caminhando pela cidade, com movimento suavemente desfocado.", c: "col-span-4 row-span-4 rotate-2" },
+    { src: "/images/ensaio/contexto-caderno-escolhas.webp", alt: "Mãos fazendo anotações e marcando escolhas em um caderno.", c: "col-span-4 row-span-4 rotate-1" },
+    { src: "/images/ensaio/contexto-celular-cotidiano.webp", alt: "Mão segurando um celular próximo a um caderno sobre a mesa.", c: "col-span-4 row-span-4 -rotate-1" },
   ];
   return (
     <Section label="O automático também constrói futuros">
@@ -482,10 +482,10 @@ export function FHAutomatico() {
               <div
                 key={p.src}
                 className={`relative overflow-hidden border-[6px] border-cream-50 bg-cream-50 shadow-[0_12px_30px_-18px_rgba(0,0,0,.55)] ${p.c} ${
-                  p.src === "auto-ju-r.webp" ? "row-start-1 col-start-5" : ""
+                  p.src === "/images/ensaio/ju-trabalho-tecnologia.webp" ? "row-start-1 col-start-5" : ""
                 }`}
               >
-                <Photo src={`/images/ph/futuros-humanos/${p.src}`} alt={p.alt} sizes="(min-width:1024px) 20vw, 33vw" className="absolute inset-0" />
+                <Photo src={p.src} alt={p.alt} sizes="(min-width:1024px) 20vw, 33vw" className="absolute inset-0" />
               </div>
             ))}
           </div>

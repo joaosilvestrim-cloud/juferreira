@@ -165,11 +165,11 @@ export function PalestrasLastro() {
         </Container>
         <div className="relative min-h-[420px] bg-ink-900">
           <Photo
-            src="/images/ju/palco.webp"
-            alt="Ju Ferreira no palco, em palestra"
+            src="/images/ensaio/home-03-palco-vertical.webp"
+            alt="Cena ilustrativa de Juliana no palco, em enquadramento vertical."
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_20%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="loop" className="absolute -left-8 top-8 h-[80%] w-[70%]" width={2.5} />
         </div>
@@ -375,11 +375,11 @@ export function PalestrasProcesso() {
         </Container>
         <div className="relative min-h-[400px]">
           <Photo
-            src="/images/ju/conversa.webp"
-            alt="Ju Ferreira escutando atentamente em uma reunião"
+            src="/images/ensaio/organizacoes-conversa-lideranca.webp"
+            alt="Cena ilustrativa de Juliana em conversa individual com uma liderança."
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>
@@ -427,13 +427,13 @@ export function PalestrasConversao() {
   const hasDirect = Boolean(EXTERNAL.email || EXTERNAL.whatsapp);
   return (
     <Section tone="dark" label="Contratação" id="contratar">
-      <div className="absolute inset-y-0 right-0 hidden w-[42%] lg:block" aria-hidden>
+      <div className="absolute top-[var(--jf-section-y)] right-0 hidden w-[42%] lg:block aspect-[2/3]" aria-hidden>
         <Photo
-          src="/images/ju/conversa.webp"
-          alt=""
+          src="/images/ensaio/contato-sorriso-vertical.webp"
+          alt="Retrato acolhedor de Juliana com notebook à mesa."
           sizes="42vw"
           className="absolute inset-0 jf-fade-left opacity-70"
-          imgClassName="object-[50%_25%]"
+          imgClassName="object-[50%_40%]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-transparent to-ink-900/40" />
       </div>

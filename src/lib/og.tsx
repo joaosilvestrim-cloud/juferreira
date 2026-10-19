@@ -4,7 +4,7 @@ import { ImageResponse } from "next/og";
 
 export const ogSize = { width: 1200, height: 630 };
 
-type Opts = { eyebrow: string; title: string; em?: string; photo?: "rua" | "retrato-biblioteca" | "palco" };
+type Opts = { eyebrow: string; title: string; em?: string; photo?: "rua" | "retrato-biblioteca" | "palco" | "lideranca" | "contato" | "escrita" };
 
 /** Cartão de compartilhamento (LinkedIn/WhatsApp) no visual do site. */
 export async function ogCard({ eyebrow, title, em, photo = "rua" }: Opts) {
@@ -37,6 +37,11 @@ export async function ogCard({ eyebrow, title, em, photo = "rua" }: Opts) {
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={src} alt="" width={460} height={630} style={{ objectFit: "cover", width: "38%", height: "100%" }} />
+        {photo !== "retrato-biblioteca" && (
+          <span style={{ position: "absolute", right: 20, bottom: 20, padding: "6px 10px", background: "#181411cc", color: "#FAF7F2", fontFamily: "Jost", fontSize: 14 }}>
+            Imagem ilustrativa
+          </span>
+        )}
       </div>
     ),
     {

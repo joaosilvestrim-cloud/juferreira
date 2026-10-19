@@ -52,6 +52,9 @@ export function SiteFooter() {
         </ul>
         <p>© 2026 Ju Ferreira.</p>
       </div>
+      <p className="mx-auto max-w-[calc(var(--jf-container)+2*var(--jf-gutter))] px-[var(--jf-gutter)] pb-6 text-xs leading-relaxed text-ink-500">
+        Este site combina retratos de referência e imagens ilustrativas geradas com IA. Cenas de eventos, equipes e família são ilustrativas.
+      </p>
     </footer>
   );
 }

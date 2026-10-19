@@ -1,3 +1,4 @@
+import { photoPosition } from "@/lib/photo-position";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowIcon, ButtonLink, ButtonRow } from "@/components/ui/Button";
@@ -13,15 +14,15 @@ export function HomeHero() {
     <Section padded={false} className="min-h-[calc(100svh-var(--jf-header-h))]" label="Abertura">
       <div className="absolute inset-y-0 right-0 hidden w-[52%] lg:block">
         <Photo
-          src="/images/ju/rua.webp"
-          alt="Ju Ferreira caminhando pela cidade, sorrindo"
+          src="/images/ensaio/home-01-abertura-vertical.webp"
+          alt="Juliana no mirante, em enquadramento vertical ao entardecer."
           priority
           sizes="52vw"
           className="jf-fade-left absolute inset-0"
-          imgClassName="object-[85%_30%]"
+          imgClassName="object-[50%_40%]"
         />
       </div>
-            <Stroke shape="orbit" className="absolute -right-6 top-4 z-[1] hidden h-[105%] w-[50%] lg:block" width={3} />
+      <Stroke shape="loop" className="absolute -right-6 top-4 z-[1] hidden h-[105%] w-[50%] lg:block" width={3} />
       <Container className="z-10 flex min-h-[calc(100svh-var(--jf-header-h))] flex-col justify-center py-16 lg:py-24">
         <div className="max-w-[860px]">
           <Display as="h1" size="xl" caps>
@@ -46,7 +47,7 @@ export function HomeHero() {
         </div>
       </Container>
       <div className="relative h-[60vw] max-h-[460px] lg:hidden">
-        <Photo src="/images/ju/rua.webp" alt="" sizes="100vw" className="absolute inset-0 jf-paper-edge" />
+        <Photo src="/images/ensaio/home-01-abertura-horizontal.webp" alt="Juliana de preto diante de uma paisagem ampla ao entardecer." sizes="100vw" className="absolute inset-0 jf-paper-edge" />
       </div>
     </Section>
   );
@@ -79,8 +80,8 @@ export function HomeTensao() {
         </Container>
         <div className="relative min-h-[380px] lg:min-h-full">
           <Photo
-            src="/images/ph/home/tensao.webp"
-            alt="Luz atravessando um espaço escuro de concreto"
+            src="/images/ensaio/contexto-luz-direcao.webp"
+            alt="Luz natural atravessando um ambiente escuro de concreto."
             sizes="(min-width:1024px) 54vw, 100vw"
             className="absolute inset-0"
           />
@@ -267,10 +268,10 @@ export function HomeJu() {
         <div className="relative min-h-[520px]">
           <Photo
             src="/images/ju/retrato-biblioteca.webp"
-            alt="Ju Ferreira sorrindo diante de sua biblioteca"
+            alt="Juliana sorrindo diante de sua biblioteca."
             sizes="(min-width:1024px) 44vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[55%_25%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="loop" className="absolute -left-10 top-6 h-[85%] w-[80%]" width={2.5} />
         </div>
@@ -329,13 +330,13 @@ export function HomeOrganizacoes() {
             </ButtonRow>
           </div>
         </Container>
-        <div className="relative min-h-[480px]">
+        <div className="relative min-h-[480px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ju/palco.webp"
-            alt="Ju Ferreira palestrando para uma plateia"
+            src="/images/ensaio/home-03-palco-vertical.webp"
+            alt="Cena ilustrativa de Juliana no palco, em enquadramento vertical."
             sizes="(min-width:1024px) 42vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[60%_30%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="orbit" className="absolute -left-16 top-0 h-full w-[90%]" width={2.5} />
         </div>
@@ -368,10 +369,10 @@ export function HomeProva() {
     },
   ];
   const collage = [
-    { src: "/images/ju/palco.webp", alt: "Ju Ferreira em palestra", c: "col-span-7 row-span-5 rotate-[-1.5deg]" },
-    { src: "/images/ju/conversa.webp", alt: "Ju Ferreira em reunião de estratégia", c: "col-span-5 row-span-5 rotate-[1deg]" },
-    { src: "/images/ju/quadro.webp", alt: "Ju Ferreira construindo soluções no quadro", c: "col-span-6 row-span-5 rotate-[1.2deg]" },
-    { src: "/images/ju/equipe.webp", alt: "Ju Ferreira em diálogo com equipe", c: "col-span-6 row-span-5 -rotate-1" },
+    { src: "/images/ensaio/palestras-palco-frente.webp", alt: "Cena ilustrativa de Juliana falando no palco, vista de frente.", c: "col-span-7 row-span-5 rotate-[-1.5deg]" },
+    { src: "/images/ensaio/home-04b-reuniao-notebook.webp", alt: "Cena ilustrativa de Juliana em conversa de trabalho, ao lado do notebook.", c: "col-span-5 row-span-5 rotate-[1deg]" },
+    { src: "/images/ensaio/home-04c-quadro-post-its.webp", alt: "Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its.", c: "col-span-6 row-span-5 rotate-[1.2deg]" },
+    { src: "/images/ensaio/home-04d-conversa-equipe.webp", alt: "Cena ilustrativa de Juliana conversando com uma equipe à mesa.", c: "col-span-6 row-span-5 -rotate-1" },
   ];
   return (
     <Section label="Prova">
@@ -405,8 +406,8 @@ export function HomeProva() {
           </Body>
         </div>
         <div className="relative">
-          <Stroke shape="loop" className="absolute -inset-6 z-10 h-[calc(100%+48px)] w-[calc(100%+48px)]" width={2.5} />
-          <div className="grid auto-rows-[44px] grid-cols-12 gap-3 sm:auto-rows-[60px]">
+          <Stroke shape="loop" className="absolute -inset-6 h-[calc(100%+48px)] w-[calc(100%+48px)]" width={2.5} />
+          <div className="relative grid auto-rows-[44px] grid-cols-12 gap-3 sm:auto-rows-[60px]">
             {collage.map((p) => (
               <div key={p.src} className={`relative overflow-hidden shadow-[0_10px_30px_-18px_rgba(0,0,0,.5)] ${p.c}`}>
                 <Photo src={p.src} alt={p.alt} sizes="(min-width:1024px) 25vw, 50vw" className="absolute inset-0" />
@@ -455,7 +456,7 @@ export function HomeProva() {
 export function HomePessoas() {
   const doors = [
     {
-      img: "/images/ph/home/porta-epic.webp",
+      img: "/images/ensaio/contexto-caminhos-escolhas.webp",
       t: (
         <>
           EPIC<Em>247</Em>
@@ -467,7 +468,7 @@ export function HomePessoas() {
       href: LINKS.epic247,
     },
     {
-      img: "/images/ph/home/porta-terca.webp",
+      img: "/images/ensaio/home-06-ideias-horizontal.webp",
       t: (
         <>
           Uma Terça-feira <Em>Qualquer</Em>
@@ -479,7 +480,7 @@ export function HomePessoas() {
       href: LINKS.newsletter,
     },
     {
-      img: "/images/ph/home/porta-ideias.webp",
+      img: "/images/ensaio/contexto-livros-janela.webp",
       t: <Em>Ideias</Em>,
       s: "Para continuar pensando.",
       d: "Artigos e reflexões para enxergar possibilidades, questionar o automático e aprofundar as perguntas que importam.",
@@ -490,13 +491,13 @@ export function HomePessoas() {
   return (
     <Section padded={false} label="Para pessoas">
       <div className="grid lg:grid-cols-[38%_62%]">
-        <div className="relative min-h-[460px] lg:order-none">
+        <div className="relative min-h-[460px] lg:order-none lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ju/escrevendo.webp"
-            alt="Ju Ferreira escrevendo em um caderno à mesa, sorrindo"
+            src="/images/ensaio/home-05-escrita-vertical.webp"
+            alt="Juliana com caderno, caneta e café à mesa, em retrato vertical."
             sizes="(min-width:1024px) 38vw, 100vw"
             className="absolute inset-0 jf-fade-right"
-            imgClassName="object-[40%_30%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
         <Container className="py-[var(--jf-section-y)] lg:ml-0 lg:max-w-[900px] lg:pl-12">
@@ -530,7 +531,7 @@ export function HomePessoas() {
             {doors.map((d) => (
               <li key={d.cta} className="grid gap-5 py-6 sm:grid-cols-[150px_1fr] md:grid-cols-[150px_1fr_auto] md:items-center">
                 <div className="relative hidden aspect-[16/9] overflow-hidden rounded-sm sm:block">
-                  <Image src={d.img} alt="" fill sizes="150px" className="object-cover" />
+                  <Image src={d.img} alt="" fill sizes="150px" className="object-cover" style={{ objectPosition: photoPosition(d.img) }} />
                 </div>
                 <div>
                   <p className="font-serif text-[26px] uppercase leading-none">{d.t}</p>
@@ -556,9 +557,9 @@ export function HomePessoas() {
 export function HomeIdeias() {
   // ATENÇÃO: artigos ilustrativos (títulos do mockup). Exibir apenas artigos reais publicados antes do go-live.
   const articles = [
-    { img: "/images/ph/home/artigo-1.webp", tag: "Tecnologia", t: "Qual futuro estamos construindo quando tudo fica mais fácil?" },
-    { img: "/images/ph/home/artigo-2.webp", tag: "Humanidade", t: "O que a vida real nos ensina sobre transformação?" },
-    { img: "/images/ph/home/artigo-3.webp", tag: "Escolhas", t: "Disciplina não é rigidez. É cuidado com o futuro que importa." },
+    { img: "/images/ensaio/contexto-tecnologia-humana.webp", tag: "Tecnologia", t: "Qual futuro estamos construindo quando tudo fica mais fácil?" },
+    { img: "/images/ensaio/ju-caminhada-movimento.webp", tag: "Humanidade", t: "O que a vida real nos ensina sobre transformação?" },
+    { img: "/images/ensaio/contexto-caderno-escolhas.webp", tag: "Escolhas", t: "Disciplina não é rigidez. É cuidado com o futuro que importa." },
   ];
   return (
     <Section label="Ideias" className="pt-0 lg:pt-0">
@@ -579,8 +580,8 @@ export function HomeIdeias() {
         </Container>
         <div className="relative mt-10 min-h-[300px] lg:mt-0">
           <Photo
-            src="/images/ph/home/ideias.webp"
-            alt="Livros, caderno e café sobre a mesa"
+            src="/images/ensaio/home-06-ideias-horizontal.webp"
+            alt="Livros, caderno aberto, caneta e café sobre uma mesa de madeira."
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"
           />
@@ -604,7 +605,7 @@ export function HomeIdeias() {
               <li key={a.t}>
                 <Link href="/ideias" className="group block">
                   <div className="relative aspect-[12/5] overflow-hidden rounded-sm">
-                    <Image src={a.img} alt="" fill sizes="(min-width:640px) 20vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src={a.img} alt="" fill sizes="(min-width:640px) 20vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" style={{ objectPosition: photoPosition(a.img) }} />
                   </div>
                   <p className="jf-eyebrow mt-4 text-[11px] text-ink-500">{a.tag}</p>
                   <p className="mt-2 font-serif text-[21px] leading-snug group-hover:text-red-brand">{a.t}</p>

@@ -56,14 +56,14 @@ export function PalestrasHero() {
             </ButtonRow>
           </div>
         </Container>
-        <div className="relative min-h-[440px] bg-ink-900 lg:min-h-full">
+        <div className="relative min-h-[440px] bg-ink-900 lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ju/palco.webp"
-            alt="Ju Ferreira palestrando para uma plateia"
+            src="/images/ensaio/home-03-palco-vertical.webp"
+            alt="Cena ilustrativa de Juliana no palco, em enquadramento vertical."
             priority
             sizes="(min-width:1024px) 42vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[70%_25%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="orbit" draw className="absolute -left-10 top-0 h-full w-[85%]" width={3} />
         </div>
@@ -202,11 +202,11 @@ export function PalestrasPorQue() {
         </Container>
         <div className="relative min-h-[380px]">
           <Photo
-            src="/images/ju/palco.webp"
-            alt="Ju Ferreira falando para uma plateia em um auditório"
+            src="/images/ensaio/palestras-interacao-plateia.webp"
+            alt="Cena ilustrativa de Juliana interagindo com participantes de uma palestra."
             sizes="(min-width:1024px) 48vw, 100vw"
             className="absolute inset-0"
-            imgClassName="object-[50%_20%]"
+            imgClassName="object-[50%_40%]"
           />
           <div
             className="absolute inset-0 bg-gradient-to-r from-ink-900 via-ink-900/20 to-transparent max-lg:bg-gradient-to-b"
@@ -428,11 +428,11 @@ export function PalestrasFuturosHumanos() {
         <div>
           <div className="relative mx-auto aspect-[6/5] max-w-[560px]">
             <Photo
-              src="/images/ju/palco.webp"
-              alt="Ju Ferreira apresentando Futuros Humanos"
+              src="/images/ensaio/palestras-palco-frente.webp"
+              alt="Cena ilustrativa de Juliana falando no palco, vista de frente."
               sizes="(min-width:1024px) 40vw, 100vw"
               className="absolute inset-[6%] rounded-full"
-              imgClassName="object-[50%_20%]"
+              imgClassName="object-[50%_40%]"
             />
             <Stroke shape="circle" className="absolute inset-0 h-full w-full" width={3} />
           </div>
@@ -625,11 +625,11 @@ export function PalestrasOutrasConversas() {
         </Container>
         <div className="relative min-h-[380px]">
           <Photo
-            src="/images/ju/poltrona-v.webp"
-            alt="Ju Ferreira conversando com a plateia"
+            src="/images/ensaio/palestras-interacao-plateia.webp"
+            alt="Cena ilustrativa de Juliana interagindo com participantes de uma palestra."
             sizes="(min-width:1024px) 40vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>

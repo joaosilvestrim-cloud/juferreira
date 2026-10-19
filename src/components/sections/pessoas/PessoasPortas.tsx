@@ -27,8 +27,8 @@ const DOORS: Door[] = [
     n: 1,
     t: "Uma Terça-feira Qualquer",
     s: "Porque futuro também se constrói no meio da vida real.",
-    img: "/images/ph/pessoas/porta-terca.webp",
-    alt: "Caderno aberto e caneca de café sobre a mesa",
+    img: "/images/ensaio/home-06-ideias-horizontal.webp",
+    alt: "Livros, caderno aberto, caneta e café sobre uma mesa de madeira.",
     note: "Uma vez por semana, uma pausa no automático.",
     body: (
       <>
@@ -48,8 +48,8 @@ const DOORS: Door[] = [
     n: 2,
     t: "Ideias",
     s: "Para quando uma pergunta merece mais tempo.",
-    img: "/images/ph/pessoas/porta-ideias.webp",
-    alt: "Pilha de livros e óculos sobre a mesa",
+    img: "/images/ensaio/contexto-livros-janela.webp",
+    alt: "Livros próximos à janela, com a cidade ao entardecer ao fundo.",
     note: "Primeiro vem a pergunta. Depois vem o conteúdo.",
     body: (
       <>
@@ -70,8 +70,8 @@ const DOORS: Door[] = [
     n: 3,
     t: "Futuros Humanos",
     s: "Para aprofundar a lente.",
-    img: "/images/ph/pessoas/porta-futuros-r.webp",
-    alt: "Ju Ferreira olhando a cidade ao entardecer",
+    img: "/images/ensaio/home-01-abertura-horizontal.webp",
+    alt: "Juliana de preto diante de uma paisagem ampla ao entardecer.",
     note: "Futuros Humanos não é um programa de desenvolvimento pessoal.",
     body: (
       <>
@@ -138,7 +138,7 @@ export function PessoasPortas() {
                   <Photo src={d.img} alt={d.alt} sizes="(min-width:768px) 32vw, 100vw" className="aspect-[16/10] w-full" />
                 </div>
                 <NumberBadge n={d.n} className="absolute -bottom-5 left-4 bg-cream-50" />
-                <div className="absolute -top-6 right-3 max-w-[200px]">
+                <div className="relative -mt-4 ml-auto mr-3 max-w-[200px]">
                   <Paper compact className="md:rotate-[3deg]">
                     <p className="jf-hand text-[20px] leading-tight">{d.note}</p>
                   </Paper>

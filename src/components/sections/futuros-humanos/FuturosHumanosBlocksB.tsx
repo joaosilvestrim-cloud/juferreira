@@ -202,14 +202,14 @@ export function FHAutoria() {
         </Container>
         <div className="relative min-h-[460px]">
           <Photo
-            src="/images/ju/quadro.webp"
-            alt="Ju Ferreira pensativa em seu escritório, à noite, diante do notebook"
+            src="/images/ensaio/contato-noite-abajur.webp"
+            alt="Juliana à mesa à noite, iluminada por um abajur de luz quente."
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[45%_30%]"
+            imgClassName="object-[50%_40%]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-ink-900 via-ink-900/10 to-transparent max-lg:bg-gradient-to-b" aria-hidden />
-          <ul className="absolute right-8 top-10 hidden w-[220px] space-y-3 lg:block" aria-label="Perguntas que nenhuma eficiência resolve por nós">
+          <ul className="absolute right-8 bottom-10 hidden w-[220px] space-y-3 lg:block" aria-label="Perguntas que nenhuma eficiência resolve por nós">
             {questions.map((q, i) => (
               <li
                 key={q}
@@ -346,8 +346,8 @@ export function FHProvoca() {
     {
       t: "Para pessoas",
       lead: "Pode ajudar alguém a perguntar:",
-      img: "pessoas-r.webp",
-      alt: "Ju Ferreira pensativa, de perfil",
+      img: "/images/ensaio/pessoas-janela.webp",
+      alt: "Juliana olhando pela janela, com expressão contemplativa.",
       items: [
         "Que futuro estou ajudando a tornar mais provável com aquilo que repito hoje?",
         "O que ainda pode ser diferente?",
@@ -360,8 +360,8 @@ export function FHProvoca() {
     {
       t: "Para lideranças",
       lead: "Pode provocar perguntas como:",
-      img: "liderancas-r.webp",
-      alt: "Ju Ferreira em conversa com uma liderança",
+      img: "/images/ensaio/organizacoes-conversa-lideranca.webp",
+      alt: "Cena ilustrativa de Juliana em conversa individual com uma liderança.",
       items: [
         "Que comportamentos estamos recompensando?",
         "Que decisões estamos automatizando sem revisar seus critérios?",
@@ -373,8 +373,8 @@ export function FHProvoca() {
     {
       t: "Para organizações",
       lead: "Pode ajudar a enxergar:",
-      img: "organizacoes-r.webp",
-      alt: "Ju Ferreira organizando ideias em post-its numa parede de vidro",
+      img: "/images/ensaio/home-04c-quadro-post-its.webp",
+      alt: "Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its.",
       items: [
         "tensões antes de virarem crise;",
         "possibilidades antes de virarem tendência dominante;",
@@ -418,8 +418,8 @@ export function FHProvoca() {
         <ul className="grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-ink-900/15">
           {audiences.map((a, i) => (
             <li key={a.t} className={i === 0 ? "md:pr-8" : i === 1 ? "md:px-8" : "md:pl-8"}>
-              <div className="relative aspect-[16/6] overflow-hidden rounded-sm">
-                <Photo src={`/images/ph/futuros-humanos/${a.img}`} alt={a.alt} sizes="(min-width:768px) 30vw, 100vw" className="absolute inset-0" />
+              <div className="relative aspect-[16/9] overflow-hidden rounded-sm">
+                <Photo src={a.img} alt={a.alt} sizes="(min-width:768px) 30vw, 100vw" className="absolute inset-0" />
               </div>
               <h3 className="mt-6 font-serif text-[clamp(28px,2.4vw,36px)] leading-none">{a.t}</h3>
               <Dash className="mt-3" />
@@ -551,13 +551,13 @@ export function FHEncerramento() {
             </ButtonRow>
           </div>
         </Container>
-        <div className="relative min-h-[480px]">
+        <div className="relative min-h-[480px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ju/rua.webp"
-            alt="Retrato de Ju Ferreira sorrindo, com o queixo apoiado na mão"
+            src="/images/ensaio/contato-sorriso-vertical.webp"
+            alt="Retrato acolhedor de Juliana com notebook à mesa."
             sizes="(min-width:1024px) 40vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_30%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>

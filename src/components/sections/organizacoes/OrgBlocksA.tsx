@@ -63,12 +63,12 @@ export function OrgHero() {
         </Container>
         <div className="relative flex min-h-[460px] flex-col justify-end lg:min-h-full">
           <Photo
-            src="/images/ju/equipe.webp"
-            alt="Ju Ferreira conversando com uma equipe em volta da mesa"
+            src="/images/ensaio/palestras-workshop-02.webp"
+            alt="Cena ilustrativa de Juliana facilitando uma atividade com post-its."
             priority
             sizes="(min-width:1024px) 46vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[60%_25%]"
+            imgClassName="object-[50%_40%]"
           />
           <QuoteCard className="relative m-[var(--jf-gutter)] max-w-[440px] shadow-[0_18px_40px_-24px_rgba(0,0,0,.45)] lg:mb-12 lg:ml-auto lg:mr-10">
             <strong className="font-medium">
@@ -164,11 +164,11 @@ export function OrgMudanca() {
         </Container>
         <div className="relative min-h-[360px]">
           <Photo
-            src="/images/ju/retrato-biblioteca.webp"
-            alt="Ju Ferreira pensativa em uma reunião"
+            src="/images/ensaio/organizacoes-conversa-lideranca.webp"
+            alt="Cena ilustrativa de Juliana em conversa individual com uma liderança."
             sizes="(min-width:1024px) 48vw, 100vw"
             className="absolute inset-0"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-ink-900 via-ink-900/10 to-transparent max-lg:bg-gradient-to-b" aria-hidden />
         </div>
@@ -456,11 +456,11 @@ export function OrgPerguntas() {
         </Container>
         <div className="relative mt-10 min-h-[300px] lg:mt-0">
           <Photo
-            src="/images/ju/quadro.webp"
-            alt="Ju Ferreira escrevendo em um quadro branco"
+            src="/images/ensaio/home-04c-quadro-post-its.webp"
+            alt="Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its."
             sizes="(min-width:1024px) 32vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[60%_30%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>
@@ -656,11 +656,11 @@ export function OrgTerritorios() {
         </Container>
         <div className="relative mt-10 min-h-[300px] lg:mt-0">
           <Photo
-            src="/images/ju/equipe.webp"
-            alt="Ju Ferreira ouvindo atentamente em uma reunião"
+            src="/images/ensaio/palestras-workshop-01.webp"
+            alt="Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa."
             sizes="(min-width:1024px) 30vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[55%_30%]"
+            imgClassName="object-[50%_40%]"
           />
         </div>
       </div>
@@ -759,8 +759,8 @@ export function OrgFormatos() {
     {
       verb: "Abrir",
       legend: "palestra",
-      img: "formato-palestra-r",
-      alt: "Ju Ferreira palestrando",
+      img: "/images/ensaio/palestras-palco-frente.webp",
+      alt: "Cena ilustrativa de Juliana falando no palco, vista de frente.",
       icon: "people",
       t: "Palestras",
       s: "Para abrir campo.",
@@ -798,8 +798,8 @@ export function OrgFormatos() {
     {
       verb: "Trabalhar",
       legend: "workshop",
-      img: "formato-workshop-r",
-      alt: "Ju Ferreira conduzindo um workshop em grupo",
+      img: "/images/ensaio/palestras-workshop-01.webp",
+      alt: "Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa.",
       icon: "gear",
       t: "Workshops",
       s: "Para transformar reflexão em participação.",
@@ -827,8 +827,8 @@ export function OrgFormatos() {
     {
       verb: "Aprofundar",
       legend: "experiência customizada",
-      img: "formato-experiencia",
-      alt: "Equipe trabalhando sobre post-its em uma mesa",
+      img: "/images/ensaio/contexto-planejamento-equipe.webp",
+      alt: "Mãos organizando post-its e ideias em uma mesa de trabalho.",
       icon: "pen",
       t: "Experiências customizadas",
       s: "Para perguntas que não cabem num formato pronto.",
@@ -854,8 +854,8 @@ export function OrgFormatos() {
     {
       verb: "Explorar",
       legend: "futuros aplicados",
-      img: "formato-futuros-r",
-      alt: "Ju Ferreira diante de um quadro com anotações",
+      img: "/images/ensaio/home-04c-quadro-post-its.webp",
+      alt: "Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its.",
       icon: "eye",
       t: "Futuros aplicados",
       s: "Quando a organização precisa explorar possibilidades com mais profundidade.",
@@ -886,8 +886,8 @@ export function OrgFormatos() {
     {
       verb: "Sustentar",
       legend: "jornada / programa",
-      img: "formato-jornada-r",
-      alt: "Ju Ferreira em conversa com lideranças",
+      img: "/images/ensaio/organizacoes-conversa-lideranca.webp",
+      alt: "Cena ilustrativa de Juliana em conversa individual com uma liderança.",
       icon: "chart",
       t: "Jornadas e programas",
       s: "Quando o problema não termina num encontro.",
@@ -945,7 +945,7 @@ export function OrgFormatos() {
             <li key={f.t} className="flex flex-col">
               <p className="jf-hand text-[24px] leading-none text-red-brand">{f.verb}</p>
               <div className="relative mt-3 aspect-[16/9] overflow-hidden rounded-[var(--jf-radius-sm)]">
-                <Photo src={`/images/ph/organizacoes/${f.img}.webp`} alt={f.alt} sizes="(min-width:1280px) 20vw, (min-width:768px) 50vw, 100vw" className="absolute inset-0" />
+                <Photo src={f.img} alt={f.alt} sizes="(min-width:1280px) 20vw, (min-width:768px) 50vw, 100vw" className="absolute inset-0" />
               </div>
               <div className="-mt-7 ml-4 flex items-end gap-3">
                 <IconBubble name={f.icon} className="relative ring-4 ring-cream-50" />

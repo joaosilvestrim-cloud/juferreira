@@ -1,3 +1,4 @@
+import { photoPosition } from "@/lib/photo-position";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/Button";
@@ -46,12 +47,12 @@ export function IdeiasHero() {
         </Container>
         <div className="relative min-h-[420px] lg:min-h-[640px]">
           <Photo
-            src="/images/ju/escrevendo.webp"
-            alt="Ju Ferreira escrevendo em um caderno à mesa"
+            src="/images/ensaio/home-05-escrita-vertical.webp"
+            alt="Juliana com caderno, caneta e café à mesa, em retrato vertical."
             priority
             sizes="(min-width:1024px) 54vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[50%_40%]"
           />
           <StickyNote className="absolute left-4 top-6 hidden sm:block lg:left-[8%] lg:top-10" rotate={-6}>
             Nem tudo aqui está resolvido.
@@ -171,17 +172,17 @@ export function IdeiasPergunta() {
         <div className="grid grid-cols-[1.5fr_1fr] gap-3 self-start">
           <div className="relative row-span-2 min-h-[340px] overflow-hidden rounded-sm">
             <Photo
-              src="/images/ju/poltrona-v.webp"
-              alt="Ju Ferreira pensativa diante do notebook"
+              src="/images/ensaio/ju-trabalho-tecnologia.webp"
+              alt="Juliana concentrada no trabalho em um notebook."
               sizes="(min-width:1024px) 32vw, 60vw"
               className="absolute inset-0"
             />
           </div>
           <div className="relative min-h-[160px] overflow-hidden rounded-sm">
-            <Photo src="/images/ph/ideias/caderno.webp" alt="Caderno aberto com anotações e caneta" sizes="20vw" className="absolute inset-0" />
+            <Photo src="/images/ensaio/contexto-caderno-escolhas.webp" alt="Mãos fazendo anotações e marcando escolhas em um caderno." sizes="20vw" className="absolute inset-0" />
           </div>
           <div className="relative min-h-[160px] overflow-hidden rounded-sm">
-            <Photo src="/images/ph/ideias/cidade.webp" alt="Livros na janela com a cidade ao entardecer" sizes="20vw" className="absolute inset-0" />
+            <Photo src="/images/ensaio/contexto-livros-janela.webp" alt="Livros próximos à janela, com a cidade ao entardecer ao fundo." sizes="20vw" className="absolute inset-0" />
           </div>
           <HandNote className="col-span-2 mt-2 text-red-brand" rotate={-2}>
             Por que isso está me incomodando?
@@ -281,8 +282,8 @@ export function IdeiasPergunta() {
 function ArticleCard({ a }: { a: Artigo }) {
   return (
     <li className="flex flex-col" data-status={a.status}>
-      <div className="relative aspect-[3/1] overflow-hidden rounded-sm">
-        <Image src={a.img} alt="" fill sizes="(min-width:1024px) 20vw, 100vw" className="object-cover" />
+      <div className="relative aspect-[16/9] overflow-hidden rounded-sm">
+        <Image src={a.img} alt="" fill sizes="(min-width:1024px) 20vw, 100vw" className="object-cover" style={{ objectPosition: photoPosition(a.img) }} />
       </div>
       <p className="jf-eyebrow mt-4 text-[10px] text-red-brand">{a.kicker}</p>
       <h4 className="mt-2 font-serif text-[22px] font-medium leading-[1.12]">{a.title}</h4>
@@ -413,7 +414,7 @@ export function IdeiasTerritorios() {
           </p>
         </Body>
         <div className="relative min-h-[260px] overflow-hidden rounded-sm">
-          <Photo src="/images/ph/ideias/territorios-r.webp" alt="Mulher de costas olhando a cidade do alto" sizes="(min-width:1024px) 28vw, 100vw" className="absolute inset-0" />
+          <Photo src="/images/ensaio/home-01-abertura-horizontal.webp" alt="Juliana de preto diante de uma paisagem ampla ao entardecer." sizes="(min-width:1024px) 28vw, 100vw" className="absolute inset-0" />
         </div>
       </Container>
 
@@ -421,8 +422,8 @@ export function IdeiasTerritorios() {
         <ul className="grid gap-12 md:grid-cols-2 lg:grid-cols-5 lg:gap-6">
           {TERRITORIOS.map((t) => (
             <li key={t.id} id={`territorio-${t.id}`} className="flex scroll-mt-[calc(var(--jf-header-h)+16px)] flex-col">
-              <div className="relative aspect-[3/1] overflow-hidden rounded-sm">
-                <Image src={t.img} alt="" fill sizes="(min-width:1024px) 20vw, 100vw" className="object-cover" />
+              <div className="relative aspect-[16/9] overflow-hidden rounded-sm">
+                <Image src={t.img} alt="" fill sizes="(min-width:1024px) 20vw, 100vw" className="object-cover" style={{ objectPosition: photoPosition(t.img) }} />
               </div>
               <div className="mt-4 flex items-center gap-3">
                 <NumberBadge n={t.n} className="h-10 w-10 shrink-0 text-[20px]" />
@@ -655,7 +656,7 @@ export function IdeiasInvestigacao() {
           </Body>
         </div>
         <div className="relative min-h-[340px] overflow-hidden rounded-sm">
-          <Photo src="/images/ju/escrevendo.webp" alt="Ju Ferreira lendo e fazendo anotações à mesa" sizes="(min-width:1024px) 30vw, 100vw" className="absolute inset-0" imgClassName="object-[40%_30%]" />
+          <Photo src="/images/ensaio/ju-leitura-anotacoes.webp" alt="Juliana lendo um livro e fazendo anotações em um caderno." sizes="(min-width:1024px) 30vw, 100vw" className="absolute inset-0" imgClassName="object-[50%_40%]" />
           <StickyNote className="absolute left-4 top-4" rotate={-5} tone="paper">
             Ainda não sei exatamente onde elas terminam.
           </StickyNote>
@@ -684,8 +685,8 @@ export function IdeiasInvestigacao() {
         <ol className="grid gap-12 md:grid-cols-2 lg:grid-cols-5 lg:gap-6">
           {INVESTIGACOES.map((inv) => (
             <li key={inv.id} id={`investigacao-${inv.id}`} className="flex flex-col">
-              <div className="relative aspect-[3/1] overflow-hidden rounded-sm">
-                <Image src={inv.img} alt="" fill sizes="(min-width:1024px) 20vw, 100vw" className="object-cover" />
+              <div className="relative aspect-[16/9] overflow-hidden rounded-sm">
+                <Image src={inv.img} alt="" fill sizes="(min-width:1024px) 20vw, 100vw" className="object-cover" style={{ objectPosition: photoPosition(inv.img) }} />
               </div>
               <EpistemicTag kind={inv.label} className="mt-4 w-fit" />
               <Title className="mt-3 text-[22px]">

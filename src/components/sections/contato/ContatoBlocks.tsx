@@ -1,3 +1,4 @@
+import { photoPosition } from "@/lib/photo-position";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -89,12 +90,12 @@ export function ContatoHero() {
         </Container>
         <div className="relative min-h-[420px] lg:min-h-full">
           <Photo
-            src="/images/ju/conversa.webp"
-            alt="Ju Ferreira em uma conversa à mesa, ouvindo e sorrindo"
+            src="/images/ensaio/contato-sorriso-vertical.webp"
+            alt="Retrato acolhedor de Juliana com notebook à mesa."
             priority
             sizes="(min-width:1024px) 48vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[55%_30%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="orbit" draw className="absolute -left-10 top-8 hidden h-[70%] w-[85%] lg:block" width={2.5} />
           <div aria-hidden className="absolute right-5 top-6 lg:right-10 lg:top-12">
@@ -125,7 +126,7 @@ const DOORS: Door[] = [
   {
     n: 1,
     icon: "mic",
-    img: "porta-palestras",
+    img: "/images/ensaio/contexto-microfone-palco.webp",
     title: "Palestras & Workshops",
     sub: "Quero levar a Ju para uma conversa, evento ou experiência.",
     lead: "Para:",
@@ -142,7 +143,7 @@ const DOORS: Door[] = [
   {
     n: 2,
     icon: "people",
-    img: "porta-organizacoes",
+    img: "/images/ensaio/contexto-planejamento-equipe.webp",
     title: "Organizações & Projetos",
     sub: "Existe um desafio na organização que queremos pensar de outro jeito.",
     lead: "Talvez envolva:",
@@ -165,7 +166,7 @@ const DOORS: Door[] = [
   {
     n: 3,
     icon: "telescope",
-    img: "porta-futuros-r",
+    img: "/images/ensaio/home-01-abertura-horizontal.webp",
     title: "Futuros Aplicados / What The Future?!",
     sub: "Quero explorar futuros com mais profundidade.",
     lead: "Quando a questão pede:",
@@ -188,7 +189,7 @@ const DOORS: Door[] = [
   {
     n: 4,
     icon: "chat",
-    img: "porta-parcerias",
+    img: "/images/ensaio/organizacoes-conversa-lideranca.webp",
     title: "Parcerias, Imprensa & Convites",
     sub: "Quero propor alguma coisa.",
     lead: "Para:",
@@ -210,7 +211,7 @@ const DOORS: Door[] = [
   {
     n: 5,
     icon: "heart",
-    img: "porta-epic",
+    img: "/images/ensaio/pessoas-cafe-manha.webp",
     title: "EPIC247 & Pessoas",
     sub: "Minha conversa é sobre uma experiência ou produto para pessoas.",
     body: (
@@ -230,7 +231,7 @@ const DOORS: Door[] = [
   {
     n: 6,
     icon: "question",
-    img: "porta-nao-sei",
+    img: "/images/ensaio/pessoas-janela.webp",
     title: "Ainda não sei",
     sub: "Eu cheguei até aqui, mas não sei em qual dessas opções minha conversa cabe.",
     body: (
@@ -274,14 +275,14 @@ export function ContatoPortas() {
               key={d.n}
               className="group relative flex flex-col overflow-hidden rounded-[14px] border border-ink-900/10 bg-cream-50 shadow-[0_18px_50px_-40px_rgba(24,20,17,0.6)] transition-shadow duration-300 focus-within:shadow-[0_24px_60px_-34px_rgba(24,20,17,0.6)] hover:shadow-[0_24px_60px_-34px_rgba(24,20,17,0.6)]"
             >
-              <div className="relative aspect-[9/2] overflow-hidden" data-placeholder="foto">
+              <div className="relative aspect-[16/9] overflow-hidden" data-photo-origin="generated-ai">
                 <Image
-                  src={`/images/ph/contato/${d.img}.webp`}
+                  src={d.img}
                   alt=""
                   fill
                   sizes="(min-width:1280px) 30vw, (min-width:768px) 45vw, 100vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                style={{ objectPosition: photoPosition(d.img) }} />
               </div>
               <div className="flex flex-1 flex-col px-6 pb-6 sm:px-7">
                 <IconDisc name={d.icon} className="-mt-8 border-4 border-cream-50" />
@@ -355,11 +356,11 @@ export function ContatoContexto() {
           </StickyNote>
           <div className="relative mt-10 hidden min-h-[300px] flex-1 lg:block">
             <Photo
-              src="/images/ju/escrevendo.webp"
-              alt="Ju Ferreira à mesa, com caderno e notebook"
+              src="/images/ensaio/ju-trabalho-tecnologia.webp"
+              alt="Juliana concentrada no trabalho em um notebook."
               sizes="38vw"
               className="absolute inset-0 rounded-[12px]"
-              imgClassName="object-[60%_30%]"
+              imgClassName="object-[50%_40%]"
             />
           </div>
         </div>
@@ -418,11 +419,11 @@ export function ContatoAtalhos() {
             </Body>
             <div className="relative mt-10 min-h-[340px] flex-1 overflow-visible">
               <Photo
-                src="/images/ju/conversa.webp"
-                alt="Ju Ferreira pensativa, diante do notebook"
+                src="/images/ensaio/home-04b-reuniao-notebook.webp"
+                alt="Cena ilustrativa de Juliana em conversa de trabalho, ao lado do notebook."
                 sizes="(min-width:1024px) 34vw, 100vw"
                 className="absolute inset-0 rounded-[12px]"
-                imgClassName="object-[50%_25%]"
+                imgClassName="object-[50%_40%]"
               />
               <div aria-hidden className="absolute -left-2 -top-6 sm:-left-4">
                 <StickyNote rotate={-8} tone="paper">
@@ -610,14 +611,14 @@ export function ContatoCanais() {
         </Container>
         <div className="relative min-h-[360px]">
           <Photo
-            src="/images/ju/poltrona-h.webp"
-            alt="Ju Ferreira sorrindo em seu escritório"
+            src="/images/ensaio/contato-sorriso-horizontal.webp"
+            alt="Juliana sorrindo para a câmera à mesa, com notebook aberto."
             sizes="(min-width:1024px) 50vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[55%_30%]"
+            imgClassName="object-[50%_40%]"
           />
           <Stroke shape="orbit" className="absolute -left-12 top-4 hidden h-[80%] w-[70%] lg:block" width={2.5} />
-          <div aria-hidden className="absolute right-5 top-6 lg:right-10">
+          <div aria-hidden className="absolute right-5 bottom-6 lg:right-10">
             <StickyNote rotate={-5}>O canal muda. A conversa continua sendo entre pessoas.</StickyNote>
           </div>
         </div>
@@ -746,11 +747,11 @@ export function ContatoFechamento() {
         </Container>
         <div className="relative min-h-[420px]">
           <Photo
-            src="/images/ju/retrato-biblioteca.webp"
-            alt="Ju Ferreira à mesa, em luz baixa e quente"
+            src="/images/ensaio/contato-noite-abajur.webp"
+            alt="Juliana à mesa à noite, iluminada por um abajur de luz quente."
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_30%]"
+            imgClassName="object-[50%_40%]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-wine-800/70 to-transparent lg:bg-gradient-to-r lg:from-wine-800/60" aria-hidden />
           <div aria-hidden className="absolute right-5 top-6 lg:right-10 lg:top-14">

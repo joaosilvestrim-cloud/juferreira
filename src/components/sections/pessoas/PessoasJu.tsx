@@ -47,10 +47,10 @@ export function PessoasJu() {
           <div className="relative">
             <Photo
               src="/images/ju/retrato-biblioteca.webp"
-              alt="Retrato de Ju Ferreira à mesa de trabalho"
+              alt="Juliana sorrindo diante de sua biblioteca."
               sizes="(min-width:1024px) 50vw, 100vw"
               className="aspect-[5/4] w-full rounded-[var(--jf-radius-sm)]"
-              imgClassName="object-[50%_30%]"
+              imgClassName="object-[50%_40%]"
             />
             <Paper className="-mt-12 ml-auto w-fit max-w-[340px] md:rotate-[-3deg] lg:absolute lg:-bottom-10 lg:-right-4 lg:mt-0">
               <h3 className="jf-hand text-[clamp(32px,3vw,42px)]">
@@ -85,8 +85,8 @@ export function PessoasJu() {
         {/* C — mãe + construindo */}
         <div className="mt-16 grid gap-12 lg:mt-20 lg:grid-cols-[0.8fr_1fr_0.8fr] lg:gap-10">
           <Snapshot
-            src="/images/ph/pessoas/ju-filhas.webp"
-            alt="Ju Ferreira abraçando as filhas"
+            src="/images/ensaio/maternidade-maos-dadas.webp"
+            alt="Cena ilustrativa de uma mulher e duas meninas fictícias caminhando de mãos dadas, vistas de costas."
             frameClassName="aspect-square"
             sizes="(min-width:1024px) 28vw, 100vw"
             className="h-fit md:rotate-[-2deg]"

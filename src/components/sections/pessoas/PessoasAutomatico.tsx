@@ -91,11 +91,11 @@ export function PessoasAutomatico() {
 
           <div className="relative grid gap-6 sm:grid-cols-[1.25fr_1fr] sm:items-start">
             <Photo
-              src="/images/ju/escrevendo.webp"
-              alt="Ju Ferreira escrevendo num caderno à mesa da cozinha"
+              src="/images/ensaio/home-05-escrita-vertical.webp"
+              alt="Juliana com caderno, caneta e café à mesa, em retrato vertical."
               sizes="(min-width:1024px) 28vw, 100vw"
               className="aspect-[4/5] w-full rounded-[var(--jf-radius-sm)]"
-              imgClassName="object-[50%_25%]"
+              imgClassName="object-[50%_40%]"
             />
             <div className="space-y-8 sm:pt-10">
               <Paper tone="paper" className="sm:rotate-[-2deg]">
@@ -106,8 +106,8 @@ export function PessoasAutomatico() {
                 </p>
               </Paper>
               <Snapshot
-                src="/images/ju/escrevendo.webp"
-                alt="Ju Ferreira segurando uma xícara de café"
+                src="/images/ensaio/pessoas-cafe-manha.webp"
+                alt="Juliana segurando uma caneca de café à mesa da cozinha."
                 frameClassName="aspect-square"
                 sizes="(min-width:1024px) 20vw, 60vw"
                 className="mx-auto w-[75%] sm:w-full sm:rotate-[3deg]"

@@ -1,0 +1,141 @@
+{
+  "stage": "after-implementation",
+  "auditedFiles": 156,
+  "newAssets": 41,
+  "photoSlots": 136,
+  "selectedNewAssets": 35,
+  "lint": "passed",
+  "productionBuild": "passed",
+  "sourceMap": "136 positions match in both viewports",
+  "checks": [
+    {
+      "route": "/",
+      "viewport": 1440,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/ju",
+      "viewport": 1440,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/futuros-humanos",
+      "viewport": 1440,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/palestras",
+      "viewport": 1440,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/organizacoes",
+      "viewport": 1440,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/pessoas",
+      "viewport": 1440,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/ideias",
+      "viewport": 1440,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/contato",
+      "viewport": 1440,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "viewport": 390,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/ju",
+      "viewport": 390,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/futuros-humanos",
+      "viewport": 390,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/palestras",
+      "viewport": 390,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/organizacoes",
+      "viewport": 390,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/pessoas",
+      "viewport": 390,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/ideias",
+      "viewport": 390,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    },
+    {
+      "route": "/contato",
+      "viewport": 390,
+      "status": 200,
+      "missing": 0,
+      "pageerrors": [],
+      "overflow": false
+    }
+  ],
+  "scope": "Public pages and image rendering; no form submissions, database or authenticated admin tests."
+}

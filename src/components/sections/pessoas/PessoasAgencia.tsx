@@ -92,11 +92,11 @@ export function PessoasAgencia() {
           </div>
           <div className="relative">
             <Photo
-              src="/images/ju/poltrona-h.webp"
-              alt="Ju Ferreira pensativa diante do notebook"
+              src="/images/ensaio/ju-trabalho-tecnologia.webp"
+              alt="Juliana concentrada no trabalho em um notebook."
               sizes="(min-width:1024px) 45vw, 100vw"
               className="aspect-[4/3] w-full rounded-[var(--jf-radius-sm)]"
-              imgClassName="object-[40%_30%]"
+              imgClassName="object-[50%_40%]"
             />
             <HandNote className="mt-6 text-red-brand md:absolute md:-top-10 md:right-2 md:mt-0 md:max-w-[240px] md:rounded-md md:bg-cream-100/85 md:p-3">
               o que ainda está ao meu alcance?

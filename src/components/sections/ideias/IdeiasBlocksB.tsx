@@ -1,3 +1,4 @@
+import { photoPosition } from "@/lib/photo-position";
 import Image from "next/image";
 import { ButtonLink } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
@@ -47,15 +48,15 @@ export function IdeiasTerca() {
             </p>
           </Body>
         </div>
-        <div className="relative min-h-[380px] overflow-hidden rounded-sm">
+        <div className="relative min-h-[380px] overflow-hidden rounded-sm lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ju/poltrona-h.webp"
-            alt="Ju Ferreira escrevendo em um caderno, com a cidade ao fundo"
+            src="/images/ensaio/home-05-escrita-vertical.webp"
+            alt="Juliana com caderno, caneta e café à mesa, em retrato vertical."
             sizes="(min-width:1024px) 32vw, 100vw"
             className="absolute inset-0"
-            imgClassName="object-[35%_30%]"
+            imgClassName="object-[50%_40%]"
           />
-          <StickyNote className="absolute left-4 top-4" rotate={-5} tone="paper">
+          <StickyNote className="absolute left-4 bottom-4" rotate={-5} tone="paper">
             Porque futuro também se constrói no meio da vida real.
           </StickyNote>
         </div>
@@ -206,7 +207,7 @@ export function IdeiasRepertorio() {
           </p>
         </div>
         <div className="relative min-h-[340px] overflow-hidden rounded-sm">
-          <Photo src="/images/ju/escrevendo.webp" alt="Ju Ferreira lendo e anotando entre pilhas de livros" sizes="(min-width:1024px) 32vw, 100vw" className="absolute inset-0" imgClassName="object-[40%_30%]" />
+          <Photo src="/images/ensaio/ju-leitura-anotacoes.webp" alt="Juliana lendo um livro e fazendo anotações em um caderno." sizes="(min-width:1024px) 32vw, 100vw" className="absolute inset-0" imgClassName="object-[50%_40%]" />
         </div>
         <div className="rounded-[var(--jf-radius-md)] bg-blush-100/70 p-7">
           <Body className="text-ink-700 [&_p+p]:mt-2">
@@ -232,7 +233,7 @@ export function IdeiasRepertorio() {
               <li key={r.id} className="overflow-hidden rounded-[var(--jf-radius-sm)] border border-dashed border-ink-900/30 bg-cream-50">
                 {r.img && (
                   <div className="relative aspect-[5/3]">
-                    <Image src={r.img} alt="" fill sizes="(min-width:640px) 14vw, 100vw" className="object-cover opacity-80 grayscale-[30%]" />
+                    <Image src={r.img} alt="" fill sizes="(min-width:640px) 14vw, 100vw" className="object-cover opacity-80 grayscale-[30%]" style={{ objectPosition: photoPosition(r.img) }} />
                   </div>
                 )}
                 <div className="p-4">
@@ -365,22 +366,22 @@ export function IdeiasRepertorio() {
 const ARENAS = [
   {
     t: "No trabalho",
-    img: "/images/ju/equipe.webp",
+    img: "/images/ensaio/home-04d-conversa-equipe.webp",
     d: "Estratégia, tecnologia, vendas, liderança, clientes, decisões e consequências. É onde conceitos como transformação, capacidade e direção deixam rapidamente de ser abstratos.",
   },
   {
     t: "Nas organizações",
-    img: "/images/ph/ideias/nas-organizacoes.webp",
+    img: "/images/ensaio/palestras-workshop-01.webp",
     d: "Uma pergunta pode parecer interessante intelectualmente e ganhar outra dimensão quando vinte pessoas precisam tomar uma decisão a partir dela.",
   },
   {
     t: "No palco",
-    img: "/images/ju/palco.webp",
+    img: "/images/ensaio/palestras-palco-frente.webp",
     d: "Quando uma ideia precisa ser clara o suficiente para ser compreendida sem perder aquilo que a torna complexa.",
   },
   {
     t: "Na vida",
-    img: "/images/ph/ideias/na-vida.webp",
+    img: "/images/ensaio/pessoas-cafe-manha.webp",
     d: "Maternidade. Relacionamentos. Rotina. Cansaço. Escolhas. Recomeços. A terça-feira qualquer onde qualquer ideia sobre humanidade precisa continuar fazendo sentido.",
   },
 ];
@@ -410,7 +411,7 @@ export function IdeiasMundoReal() {
           </Body>
         </div>
         <div className="relative min-h-[360px] overflow-hidden rounded-sm">
-          <Photo src="/images/ju/quadro.webp" alt="Ju Ferreira escrevendo à mesa de trabalho" sizes="(min-width:1024px) 32vw, 100vw" className="absolute inset-0" imgClassName="object-[35%_30%]" />
+          <Photo src="/images/ensaio/home-05-escrita-vertical.webp" alt="Juliana com caderno, caneta e café à mesa, em retrato vertical." sizes="(min-width:1024px) 32vw, 100vw" className="absolute inset-0" imgClassName="object-[50%_40%]" />
         </div>
         <QuoteCard className="self-start">
           Não me interessa uma ideia que só funciona enquanto ninguém precisa viver com as consequências dela.
@@ -459,8 +460,8 @@ export function IdeiasMundoReal() {
         <ul className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           {ARENAS.map((a) => (
             <li key={a.t}>
-              <div className="relative aspect-[4/1.1] overflow-hidden rounded-sm">
-                <Image src={a.img} alt="" fill sizes="(min-width:1024px) 24vw, 100vw" className="object-cover" />
+              <div className="relative aspect-[16/9] overflow-hidden rounded-sm">
+                <Image src={a.img} alt="" fill sizes="(min-width:1024px) 24vw, 100vw" className="object-cover" style={{ objectPosition: photoPosition(a.img) }} />
               </div>
               <h3 className="jf-hand mt-4 text-[26px] uppercase leading-none">{a.t}</h3>
               <p className="mt-2 text-[15px] leading-relaxed text-ink-700">{a.d}</p>
@@ -570,7 +571,7 @@ const DOORS = [
     d: "Para artigos, ensaios, investigações e perguntas que merecem mais tempo.",
     cta: "Explore todas as ideias",
     href: ANCHORS.destaque,
-    img: "/images/ph/ideias/porta-ideias.webp",
+    img: "/images/ensaio/ju-leitura-anotacoes.webp",
   },
   {
     k: "Quero continuar essa conversa",
@@ -578,7 +579,7 @@ const DOORS = [
     d: "Uma conversa semanal, mais próxima e cotidiana, sobre aquilo que estamos construindo enquanto a vida acontece.",
     cta: "Assine a newsletter",
     href: LINKS.newsletter,
-    img: "/images/ph/ideias/porta-terca.webp",
+    img: "/images/ensaio/home-06-ideias-horizontal.webp",
   },
   {
     k: "Quero entender a tese por trás de muitas dessas perguntas",
@@ -586,7 +587,7 @@ const DOORS = [
     d: "O território onde possibilidade, agência, tecnologia, humanidade, direção e construção de futuros se encontram de maneira mais estruturada.",
     cta: "Conheça Futuros Humanos",
     href: "/futuros-humanos",
-    img: "/images/ph/ideias/porta-futuros-r.webp",
+    img: "/images/ensaio/home-01-abertura-horizontal.webp",
   },
 ];
 
@@ -650,8 +651,8 @@ export function IdeiasConversa() {
         <ul className="grid gap-6 md:grid-cols-3">
           {DOORS.map((d) => (
             <li key={d.t} className="flex flex-col overflow-hidden rounded-[var(--jf-radius-md)] border border-cream-50/15 bg-ink-800">
-              <div className="relative aspect-[5/1.4]">
-                <Image src={d.img} alt="" fill sizes="(min-width:768px) 33vw, 100vw" className="object-cover" />
+              <div className="relative aspect-[16/9]">
+                <Image src={d.img} alt="" fill sizes="(min-width:768px) 33vw, 100vw" className="object-cover" style={{ objectPosition: photoPosition(d.img) }} />
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <p className="jf-eyebrow text-[11px] text-red-bright">{d.k}</p>

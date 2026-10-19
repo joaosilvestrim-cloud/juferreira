@@ -74,8 +74,8 @@ export function PessoasFechamento() {
 
             <div className="relative">
               <Photo
-                src="/images/ph/pessoas/fechamento-r.webp"
-                alt="Mulher sentada no alto de uma colina, olhando a cidade ao entardecer"
+                src="/images/ensaio/home-01-abertura-horizontal.webp"
+                alt="Juliana de preto diante de uma paisagem ampla ao entardecer."
                 sizes="(min-width:1024px) 45vw, 100vw"
                 className="jf-paper-edge aspect-[4/3] w-full"
               />

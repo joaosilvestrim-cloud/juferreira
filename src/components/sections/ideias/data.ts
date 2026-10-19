@@ -1,6 +1,6 @@
 /**
  * Dados editoriais da página /ideias (copy: docs/01_COPY/ideias.md).
- * Fotos em /images/ph/ideias são PLACEHOLDERS recortados dos mockups (IA) — trocar antes do go-live.
+ * Imagens do ensaio ilustrativo; origem e prompts em docs/ensaio-contextual/catalogo.json.
  */
 
 /* ───────────── Rótulos epistêmicos (Site Master: 4 rótulos oficiais) ───────────── */
@@ -43,8 +43,8 @@ export const TERRITORIOS: Territorio[] = [
     n: 1,
     name: "Futuros",
     sub: "Não para adivinhar amanhã. Para ampliar o que conseguimos enxergar hoje.",
-    img: "/images/ph/ideias/territorio-futuros.webp",
-    alt: "Cidade ao entardecer vista do alto",
+    img: "/images/ensaio/home-01-abertura-horizontal.webp",
+    alt: "Juliana de preto diante de uma paisagem ampla ao entardecer.",
     themesLead: "Aqui entram perguntas sobre:",
     themes: [
       "futuros possíveis",
@@ -72,8 +72,8 @@ export const TERRITORIOS: Territorio[] = [
     n: 2,
     name: "Tecnologia & Humanidade",
     sub: "Quanto mais podemos fazer, mais importante se torna perguntar para quê.",
-    img: "/images/ph/ideias/territorio-tecnologia.webp",
-    alt: "Mãos sobre um notebook com a imagem de um cérebro digital",
+    img: "/images/ensaio/contexto-tecnologia-humana.webp",
+    alt: "Mãos usando um notebook ao lado de caderno e café.",
     intro: ["Tecnologia aparece muito por aqui."],
     themes: [
       "IA",
@@ -100,8 +100,8 @@ export const TERRITORIOS: Territorio[] = [
     n: 3,
     name: "Escolhas & Agência",
     sub: "O espaço entre controlar tudo e simplesmente aceitar.",
-    img: "/images/ph/ideias/territorio-escolhas.webp",
-    alt: "Caderno aberto com anotações ao lado de uma xícara de café",
+    img: "/images/ensaio/contexto-caderno-escolhas.webp",
+    alt: "Mãos fazendo anotações e marcando escolhas em um caderno.",
     intro: ["Grande parte das nossas decisões acontece dentro de limites."],
     themes: ["Outras pessoas", "Contexto", "História", "Recursos", "Estruturas", "Acaso", "Corpo", "Mercado", "Tempo"],
     outro: [
@@ -120,8 +120,8 @@ export const TERRITORIOS: Territorio[] = [
     n: 4,
     name: "Liderança & Organizações",
     sub: "Porque organizações também transformam possibilidades em realidade.",
-    img: "/images/ph/ideias/territorio-lideranca.webp",
-    alt: "Pessoas reunidas em uma sala com vista para a cidade",
+    img: "/images/ensaio/contexto-planejamento-equipe.webp",
+    alt: "Mãos organizando post-its e ideias em uma mesa de trabalho.",
     intro: ["Empresas não apenas reagem ao futuro."],
     themesLead: "Elas",
     themes: [
@@ -150,8 +150,8 @@ export const TERRITORIOS: Territorio[] = [
     n: 5,
     name: "Transformação & Vida Real",
     sub: "Porque perceber não é a mesma coisa que conseguir mudar.",
-    img: "/images/ph/ideias/territorio-vida-real.webp",
-    alt: "Caneca sobre a mesa, entre plantas e cadernos",
+    img: "/images/ensaio/pessoas-cafe-manha.webp",
+    alt: "Juliana segurando uma caneca de café à mesa da cozinha.",
     intro: ["Esse território começa muito perto."],
     themes: [
       "Na rotina",
@@ -218,8 +218,8 @@ export const ARTIGO_PROTAGONISTA: Artigo = {
     "O problema começa quando aquilo que parece mais provável passa a ser tratado como aquilo que necessariamente vai acontecer.",
   ],
   highlight: "Pensar futuros também é preservar espaço para aquilo que ainda pode ser diferente.",
-  img: "/images/ph/ideias/destaque-r.webp",
-  alt: "Mulher sentada de costas observando a cidade ao entardecer",
+  img: "/images/ensaio/home-01-abertura-vertical.webp",
+  alt: "Juliana no mirante, em enquadramento vertical ao entardecer.",
 };
 
 export const ARTIGOS: Artigo[] = [
@@ -237,8 +237,8 @@ export const ARTIGOS: Artigo[] = [
     ],
     questionLead: "Pergunta de entrada",
     question: "O que vale a pena fazer com aquilo que agora conseguimos fazer?",
-    img: "/images/ph/ideias/artigo-tecnologia.webp",
-    alt: "Mão humana e mão robótica quase se tocando",
+    img: "/images/ensaio/contexto-tecnologia-humana.webp",
+    alt: "Mãos usando um notebook ao lado de caderno e café.",
   },
   {
     slug: "agencia-nao-e-controle",
@@ -256,8 +256,8 @@ export const ARTIGOS: Artigo[] = [
     ],
     questionLead: "Pergunta de entrada",
     question: "Diante daquilo que eu não controlo, onde ainda existe espaço para participar?",
-    img: "/images/ph/ideias/artigo-agencia.webp",
-    alt: "Xícara de café sobre a mesa",
+    img: "/images/ensaio/contexto-caderno-escolhas.webp",
+    alt: "Mãos fazendo anotações e marcando escolhas em um caderno.",
   },
   {
     slug: "o-automatico-tambem-constroi-futuros",
@@ -279,8 +279,8 @@ export const ARTIGOS: Artigo[] = [
     ],
     questionLead: "Pergunta de entrada",
     question: "O que estamos construindo sem perceber que estamos construindo?",
-    img: "/images/ph/ideias/artigo-automatico.webp",
-    alt: "Pessoas atravessando uma rua movimentada ao pôr do sol",
+    img: "/images/ensaio/contexto-cidade-movimento.webp",
+    alt: "Pessoas caminhando pela cidade, com movimento suavemente desfocado.",
   },
   {
     slug: "possibilidade-e-realidade",
@@ -297,8 +297,8 @@ export const ARTIGOS: Artigo[] = [
     questionLead: "Pergunta de entrada",
     question:
       "Como continuar imaginando sem fugir da realidade — e continuar realista sem desistir da possibilidade?",
-    img: "/images/ph/ideias/artigo-possibilidade.webp",
-    alt: "Trilha sinuosa subindo uma montanha ao entardecer",
+    img: "/images/ensaio/contexto-caminhos-escolhas.webp",
+    alt: "Uma trilha se divide em dois caminhos na paisagem.",
   },
   {
     slug: "tornar-se",
@@ -314,8 +314,8 @@ export const ARTIGOS: Artigo[] = [
     ],
     questionLead: "Pergunta",
     question: "Quem estamos nos tornando enquanto construímos aquilo que queremos tornar possível?",
-    img: "/images/ph/ideias/artigo-tornar-se.webp",
-    alt: "Pilha de livros ao lado de uma planta",
+    img: "/images/ensaio/ju-estudo-fones.webp",
+    alt: "Juliana estudando com fones de ouvido, livro e notebook.",
   },
 ];
 
@@ -335,40 +335,40 @@ export const INVESTIGACOES: Investigacao[] = [
     id: "soberania-humana",
     label: "investigacao",
     title: "Soberania Humana",
-    img: "/images/ph/ideias/inv-soberania-r.webp",
-    alt: "Mulher de costas observando a cidade",
+    img: "/images/ensaio/home-01-abertura-horizontal.webp",
+    alt: "Juliana de preto diante de uma paisagem ampla ao entardecer.",
   },
   {
     n: 2,
     id: "capacidades-humanas",
     label: "sintese",
     title: "Que capacidades humanas ganham importância?",
-    img: "/images/ph/ideias/inv-capacidades.webp",
-    alt: "Pedras empilhadas em equilíbrio",
+    img: "/images/ensaio/ju-estudo-fones.webp",
+    alt: "Juliana estudando com fones de ouvido, livro e notebook.",
   },
   {
     n: 3,
     id: "terceirizando",
     label: "investigacao",
     title: "O que estamos terceirizando sem perceber?",
-    img: "/images/ph/ideias/inv-terceirizando.webp",
-    alt: "Multidão em movimento numa rua da cidade",
+    img: "/images/ensaio/contexto-celular-cotidiano.webp",
+    alt: "Mão segurando um celular próximo a um caderno sobre a mesa.",
   },
   {
     n: 4,
     id: "capacidade-responsabilidade",
     label: "hipotese",
     title: "Quanto mais capacidade, mais responsabilidade?",
-    img: "/images/ph/ideias/inv-capacidade.webp",
-    alt: "Mão se aproximando de uma rede digital luminosa",
+    img: "/images/ensaio/contexto-tecnologia-humana.webp",
+    alt: "Mãos usando um notebook ao lado de caderno e café.",
   },
   {
     n: 5,
     id: "continuar-humano",
     label: "investigacao",
     title: "Como continuar humano sem romantizar o humano?",
-    img: "/images/ph/ideias/inv-humano.webp",
-    alt: "Mesa de trabalho com cadernos ao entardecer",
+    img: "/images/ensaio/home-06-ideias-horizontal.webp",
+    alt: "Livros, caderno aberto, caneta e café sobre uma mesa de madeira.",
   },
 ];
 
@@ -399,13 +399,17 @@ export type Referencia = {
   img?: string;
 };
 
-export const NA_MESA_AGORA: Referencia[] = [1, 2, 3].map((n) => ({
-  id: `mesa-${n}`,
+export const NA_MESA_AGORA: Referencia[] = [
+  "/images/ensaio/home-06-ideias-horizontal.webp",
+  "/images/ensaio/contexto-caderno-escolhas.webp",
+  "/images/ensaio/contexto-livros-janela.webp",
+].map((img, i) => ({
+  id: `mesa-${i + 1}`,
   placeholder: true,
   title: "Referência a definir",
   author: "Autor a definir",
   note: "Nota curta da Ju: por que isso está na minha mesa agora?",
-  img: `/images/ph/ideias/mesa-${n}.webp`,
+  img,
 }));
 
 export const REFERENCIAS_QUE_VOLTAM: Referencia[] = [1, 2, 3, 4, 5].map((n) => ({
