@@ -13,12 +13,12 @@ export function HomeHero() {
     <Section padded={false} className="min-h-[calc(100svh-var(--jf-header-h))]" label="Abertura">
       <div className="absolute inset-y-0 right-0 hidden w-[52%] lg:block">
         <Photo
-          src="/images/ph/home/hero.webp"
-          alt="Ju Ferreira de costas, olhando montanhas ao amanhecer"
+          src="/images/ju/rua.webp"
+          alt="Ju Ferreira caminhando pela cidade, sorrindo"
           priority
           sizes="52vw"
           className="jf-fade-left absolute inset-0"
-          imgClassName="object-[70%_40%]"
+          imgClassName="object-[85%_30%]"
         />
       </div>
             <Container className="z-10 flex min-h-[calc(100svh-var(--jf-header-h))] flex-col justify-center py-16 lg:py-24">
@@ -45,7 +45,7 @@ export function HomeHero() {
         </div>
       </Container>
       <div className="relative h-[60vw] max-h-[460px] lg:hidden">
-        <Photo src="/images/ph/home/hero.webp" alt="" sizes="100vw" className="absolute inset-0 jf-paper-edge" />
+        <Photo src="/images/ju/rua.webp" alt="" sizes="100vw" className="absolute inset-0 jf-paper-edge" />
       </div>
     </Section>
   );
@@ -328,7 +328,7 @@ export function HomeOrganizacoes() {
         </Container>
         <div className="relative min-h-[480px]">
           <Photo
-            src="/images/ph/home/palco.webp"
+            src="/images/ju/palco.webp"
             alt="Ju Ferreira palestrando para uma plateia"
             sizes="(min-width:1024px) 42vw, 100vw"
             className="absolute inset-0 jf-fade-left"
@@ -365,10 +365,10 @@ export function HomeProva() {
     },
   ];
   const collage = [
-    { src: "/images/ph/home/prova-1.webp", alt: "Ju Ferreira em palestra", c: "col-span-7 row-span-5 rotate-[-1.5deg]" },
-    { src: "/images/ph/home/prova-2.webp", alt: "Ju Ferreira em reunião de estratégia", c: "col-span-5 row-span-5 rotate-[1deg]" },
-    { src: "/images/ph/home/prova-3.webp", alt: "Ju Ferreira construindo soluções no quadro", c: "col-span-6 row-span-5 rotate-[1.2deg]" },
-    { src: "/images/ph/home/prova-4.webp", alt: "Ju Ferreira em diálogo com equipe", c: "col-span-6 row-span-5 -rotate-1" },
+    { src: "/images/ju/palco.webp", alt: "Ju Ferreira em palestra", c: "col-span-7 row-span-5 rotate-[-1.5deg]" },
+    { src: "/images/ju/conversa.webp", alt: "Ju Ferreira em reunião de estratégia", c: "col-span-5 row-span-5 rotate-[1deg]" },
+    { src: "/images/ju/quadro.webp", alt: "Ju Ferreira construindo soluções no quadro", c: "col-span-6 row-span-5 rotate-[1.2deg]" },
+    { src: "/images/ju/equipe.webp", alt: "Ju Ferreira em diálogo com equipe", c: "col-span-6 row-span-5 -rotate-1" },
   ];
   return (
     <Section label="Prova">
@@ -489,8 +489,8 @@ export function HomePessoas() {
       <div className="grid lg:grid-cols-[38%_62%]">
         <div className="relative min-h-[460px] lg:order-none">
           <Photo
-            src="/images/ph/home/pessoas.webp"
-            alt="Ju Ferreira escrevendo em um caderno à mesa"
+            src="/images/ju/escrevendo.webp"
+            alt="Ju Ferreira escrevendo em um caderno à mesa, sorrindo"
             sizes="(min-width:1024px) 38vw, 100vw"
             className="absolute inset-0 jf-fade-right"
             imgClassName="object-[40%_30%]"

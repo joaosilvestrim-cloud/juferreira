@@ -63,8 +63,8 @@ export function OrgHero() {
         </Container>
         <div className="relative flex min-h-[460px] flex-col justify-end lg:min-h-full">
           <Photo
-            src="/images/ph/organizacoes/hero.webp"
-            alt="Ju Ferreira conversando com uma equipe em uma mesa de trabalho"
+            src="/images/ju/equipe.webp"
+            alt="Ju Ferreira conversando com uma equipe em volta da mesa"
             priority
             sizes="(min-width:1024px) 46vw, 100vw"
             className="absolute inset-0 jf-fade-left"

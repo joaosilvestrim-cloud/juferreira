@@ -46,8 +46,8 @@ export function IdeiasHero() {
         </Container>
         <div className="relative min-h-[420px] lg:min-h-[640px]">
           <Photo
-            src="/images/ph/ideias/hero.webp"
-            alt="Ju Ferreira pensativa à mesa, escrevendo em um caderno entre livros"
+            src="/images/ju/escrevendo.webp"
+            alt="Ju Ferreira escrevendo em um caderno à mesa"
             priority
             sizes="(min-width:1024px) 54vw, 100vw"
             className="absolute inset-0 jf-fade-left"

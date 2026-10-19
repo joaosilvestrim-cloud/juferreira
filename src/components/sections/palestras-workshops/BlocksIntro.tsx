@@ -58,12 +58,12 @@ export function PalestrasHero() {
         </Container>
         <div className="relative min-h-[440px] bg-ink-900 lg:min-h-full">
           <Photo
-            src="/images/ph/palestras-workshops/hero.webp"
-            alt="Ju Ferreira palestrando no palco, diante da plateia"
+            src="/images/ju/palco.webp"
+            alt="Ju Ferreira palestrando para uma plateia"
             priority
             sizes="(min-width:1024px) 42vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_25%]"
+            imgClassName="object-[70%_25%]"
           />
           <Stroke shape="orbit" draw className="absolute -left-10 top-0 h-full w-[85%]" width={3} />
         </div>

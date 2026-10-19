@@ -89,8 +89,8 @@ export function ContatoHero() {
         </Container>
         <div className="relative min-h-[420px] lg:min-h-full">
           <Photo
-            src="/images/ph/contato/hero.webp"
-            alt="Ju Ferreira sorrindo, apoiada à mesa de trabalho"
+            src="/images/ju/conversa.webp"
+            alt="Ju Ferreira em uma conversa à mesa, ouvindo e sorrindo"
             priority
             sizes="(min-width:1024px) 48vw, 100vw"
             className="absolute inset-0 jf-fade-left"

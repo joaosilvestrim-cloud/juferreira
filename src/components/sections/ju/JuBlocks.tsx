@@ -27,8 +27,8 @@ export function JuHero() {
     <Section padded={false} className="min-h-[calc(100svh-var(--jf-header-h))]" label="Primeiro de tudo, eu sou a Ju">
       <div className="absolute inset-y-0 right-0 hidden w-[50%] lg:block">
         <Photo
-          src="/images/ph/ju/hero.webp"
-          alt="Retrato de Ju Ferreira sorrindo, com a mão apoiada no rosto, em sua biblioteca"
+          src="/images/ju/poltrona-v.webp"
+          alt="Ju Ferreira sentada em uma poltrona diante da estante de livros"
           priority
           sizes="50vw"
           className="jf-fade-left absolute inset-0"
@@ -76,7 +76,7 @@ export function JuHero() {
         </div>
       </Container>
       <div className="relative h-[90vw] max-h-[560px] lg:hidden">
-        <Photo src="/images/ph/ju/hero.webp" alt="" sizes="100vw" className="absolute inset-0 jf-paper-edge" imgClassName="object-[45%_25%]" />
+        <Photo src="/images/ju/poltrona-v.webp" alt="" sizes="100vw" className="absolute inset-0 jf-paper-edge" imgClassName="object-[45%_25%]" />
       </div>
     </Section>
   );

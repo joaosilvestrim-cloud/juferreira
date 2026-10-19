@@ -40,8 +40,8 @@ export function FHHero() {
     <Section padded={false} className="min-h-[calc(100svh-var(--jf-header-h))]" label="Abertura">
       <div className="absolute inset-y-0 right-0 hidden w-[46%] lg:block">
         <Photo
-          src="/images/ph/futuros-humanos/hero.webp"
-          alt="Ju Ferreira sentada em um mirante, olhando para o horizonte da cidade"
+          src="/images/ju/quadro.webp"
+          alt="Ju Ferreira desenhando um diagrama no quadro"
           priority
           sizes="46vw"
           className="jf-fade-left absolute inset-0"
@@ -80,7 +80,7 @@ export function FHHero() {
         </div>
       </Container>
       <div className="relative h-[90vw] max-h-[560px] lg:hidden">
-        <Photo src="/images/ph/futuros-humanos/hero.webp" alt="" sizes="100vw" className="absolute inset-0 jf-paper-edge" imgClassName="object-[50%_25%]" />
+        <Photo src="/images/ju/quadro.webp" alt="" sizes="100vw" className="absolute inset-0 jf-paper-edge" imgClassName="object-[50%_25%]" />
       </div>
     </Section>
   );

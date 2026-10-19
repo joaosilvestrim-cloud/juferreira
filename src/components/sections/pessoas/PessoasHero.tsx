@@ -11,8 +11,8 @@ export function PessoasHero() {
     <Section padded={false} className="lg:min-h-[calc(100svh-var(--jf-header-h))]" label="Abertura">
       <div className="absolute inset-y-0 right-0 hidden w-[46%] lg:block">
         <Photo
-          src="/images/ph/pessoas/hero.webp"
-          alt="Ju Ferreira à mesa, com caderno e café, pensativa"
+          src="/images/ju/poltrona-h.webp"
+          alt="Ju Ferreira sentada em uma poltrona em casa, sorrindo"
           priority
           sizes="46vw"
           className="jf-fade-left absolute inset-0"
@@ -73,7 +73,7 @@ export function PessoasHero() {
 
       {/* mobile: foto abaixo do texto, nota manuscrita como papel */}
       <div className="relative h-[110vw] max-h-[560px] lg:hidden">
-        <Photo src="/images/ph/pessoas/hero.webp" alt="" sizes="100vw" className="absolute inset-0" imgClassName="object-[50%_20%]" />
+        <Photo src="/images/ju/poltrona-h.webp" alt="" sizes="100vw" className="absolute inset-0" imgClassName="object-[50%_20%]" />
         <div className="absolute bottom-6 right-5 max-w-[220px]">
           <Paper>
             <p className="jf-hand text-[24px]">
