@@ -263,11 +263,11 @@ export function HomeJu() {
         </Container>
         <div className="relative min-h-[520px]">
           <Photo
-            src="/images/ph/home/ju.webp"
-            alt="Retrato de Ju Ferreira em sua biblioteca"
+            src="/images/ju/retrato-biblioteca.webp"
+            alt="Ju Ferreira sorrindo diante de sua biblioteca"
             sizes="(min-width:1024px) 44vw, 100vw"
             className="absolute inset-0 jf-fade-left"
-            imgClassName="object-[50%_20%]"
+            imgClassName="object-[55%_25%]"
           />
           <Stroke shape="loop" className="absolute -left-10 top-6 h-[85%] w-[80%]" width={2.5} />
         </div>
