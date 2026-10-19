@@ -241,14 +241,14 @@ body {
     ):not(:where([data-no-reveal], [data-no-reveal] *)) {
     animation: jf-rise linear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 32%;
+    animation-range: entry 0% entry 85%;
   }
 
   /* títulos grandes: sobem desfocados e "assentam" — como uma ideia ganhando nitidez */
   .jf-motion main section h2 {
     animation: jf-title linear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 38%;
+    animation-range: entry 0% entry 90%;
   }
 
   /* palavras em vermelho acendem conforme a frase chega ao centro da tela */
@@ -256,7 +256,7 @@ body {
   .jf-motion main section .jf-display .jf-em {
     animation: jf-ignite linear both;
     animation-timeline: view();
-    animation-range: entry 40% cover 50%;
+    animation-range: entry 45% entry 100%;
   }
   .jf-motion main section.on-dark h2 .jf-em,
   .jf-motion main .on-dark .jf-display .jf-em {
@@ -265,16 +265,16 @@ body {
 
   /* cards e itens de lista: cascata pela posição na grade */
   .jf-motion main section :where([data-card], li):nth-child(2) {
-    animation-range: entry 6% cover 38%;
+    animation-range: entry 8% entry 88%;
   }
   .jf-motion main section :where([data-card], li):nth-child(3) {
-    animation-range: entry 12% cover 44%;
+    animation-range: entry 14% entry 92%;
   }
   .jf-motion main section :where([data-card], li):nth-child(4) {
-    animation-range: entry 18% cover 50%;
+    animation-range: entry 20% entry 96%;
   }
   .jf-motion main section :where([data-card], li):nth-child(n + 5) {
-    animation-range: entry 24% cover 56%;
+    animation-range: entry 26% entry 100%;
   }
   .jf-motion main section [data-card] {
     animation-name: jf-card;
@@ -284,7 +284,7 @@ body {
   .jf-motion main section [data-photo] {
     animation: jf-wipe linear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 45%;
+    animation-range: entry 0% entry 95%;
   }
   .jf-motion main [data-photo] > img {
     animation:
@@ -292,7 +292,7 @@ body {
       jf-parallax linear both;
     animation-timeline: view(), view();
     animation-range:
-      entry 0% cover 60%,
+      entry 0% entry 100%,
       cover 0% cover 100%;
   }
 
@@ -300,7 +300,24 @@ body {
   .jf-motion main [data-stroke] {
     animation: jf-draw-in linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 50%;
+    animation-range: entry 15% entry 100%;
+  }
+
+  /* traços desenhados (preparados por Motion.tsx): a linha percorre o caminho ao entrar na tela */
+  .jf-motion main svg[data-drawn] {
+    view-timeline-name: --jf-draw;
+  }
+  .jf-motion main svg[data-drawn] [pathLength] {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: jf-dash linear both;
+    animation-timeline: --jf-draw;
+    animation-range: entry 10% entry 100%;
+  }
+  /* se o svg também tinha o efeito de cortina, o desenho substitui a cortina */
+  .jf-motion main svg[data-drawn][data-stroke] {
+    animation: none;
+    clip-path: none;
   }
 
   /* citações em caixa rosa: entram com leve rotação de papel */
@@ -363,6 +380,11 @@ body {
   }
   to {
     scale: 1.05;
+  }
+}
+@keyframes jf-dash {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 @keyframes jf-draw-in {

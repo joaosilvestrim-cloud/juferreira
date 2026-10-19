@@ -37,3 +37,13 @@ create unique index if not exists newsletter_subscribers_email_uidx on public.ne
 -- O site grava pelo servidor com o usuário do banco (que ignora RLS).
 alter table public.contact_submissions   enable row level security;
 alter table public.newsletter_subscribers enable row level security;
+
+-- Tentativas de login no /admin (bloqueio após muitas falhas por IP)
+create table if not exists public.admin_login_attempts (
+  id         bigint generated always as identity primary key,
+  created_at timestamptz not null default now(),
+  ip_hash    text,
+  ok         boolean not null
+);
+create index if not exists admin_login_attempts_ip_idx on public.admin_login_attempts (ip_hash, created_at);
+alter table public.admin_login_attempts enable row level security;

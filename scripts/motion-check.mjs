@@ -21,12 +21,13 @@ for (const r of routes) {
     const out = [];
     document.querySelectorAll("main *").forEach((el) => {
       const cs = getComputedStyle(el);
-      if (cs.opacity === "0" && el.getBoundingClientRect().height > 0 && !el.closest('[aria-hidden="true"]')) out.push(el.tagName + "." + (el.className?.baseVal ?? el.className).toString().slice(0, 40));
+      if (parseFloat(cs.opacity) < 0.95 && el.getBoundingClientRect().height > 0 && !el.closest('[aria-hidden="true"]')) out.push(el.tagName + "." + (el.className?.baseVal ?? el.className).toString().slice(0, 40));
     });
     return out;
   });
+  const drawn = await page.evaluate(() => [...document.querySelectorAll("main [pathLength]")].filter((p) => parseFloat(getComputedStyle(p).strokeDashoffset) > 0.02).length + "/" + document.querySelectorAll("main [pathLength]").length);
   const count = await page.evaluate(() => [...document.querySelectorAll("[data-count]")].map((e) => e.textContent));
-  console.log(r, "invisíveis:", stuck.length, stuck.slice(0, 4).join(" | "), count.length ? "contadores: " + count.join(",") : "");
+  console.log(r, "traços não desenhados:", drawn, "invisíveis:", stuck.length, stuck.slice(0, 4).join(" | "), count.length ? "contadores: " + count.join(",") : "");
 }
 console.log("erros:", errs.slice(0, 5));
 await browser.close();

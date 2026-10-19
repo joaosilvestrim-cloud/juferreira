@@ -3,6 +3,7 @@ import { Caveat, Cormorant_Garamond, Jost } from "next/font/google";
 import { SiteFooter } from "@/components/global/SiteFooter";
 import { Analytics } from "@vercel/analytics/next";
 import { Motion } from "@/components/global/Motion";
+import { PublicChrome } from "@/components/global/PublicChrome";
 import { SiteHeader } from "@/components/global/SiteHeader";
 import { EXTERNAL, SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -50,7 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('jf-motion')",
+              "if(!location.pathname.startsWith('/admin')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('jf-motion')",
           }}
         />
       </head>
@@ -61,11 +62,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Pular para o conteúdo
         </a>
-        <SiteHeader />
+        <PublicChrome>
+          <SiteHeader />
+        </PublicChrome>
         <main id="conteudo" className="flex-1">
           {children}
         </main>
-        <SiteFooter />
+        <PublicChrome>
+          <SiteFooter />
+        </PublicChrome>
         <Motion />
         <Analytics />
         <script
