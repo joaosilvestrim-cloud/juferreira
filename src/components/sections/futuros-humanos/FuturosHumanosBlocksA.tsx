@@ -447,7 +447,7 @@ export function FHAutomatico() {
   ] as const;
   const collage = [
     { src: "auto-laptop.webp", alt: "Notebook e xícara de café sobre a mesa", c: "col-span-4 row-span-4 -rotate-2" },
-    { src: "auto-ju.webp", alt: "Ju Ferreira pensativa diante do notebook", c: "col-span-4 row-span-7 rotate-1" },
+    { src: "auto-ju-r.webp", alt: "Ju Ferreira pensativa diante do notebook", c: "col-span-4 row-span-7 rotate-1" },
     { src: "auto-rua.webp", alt: "Pessoas caminhando apressadas na rua", c: "col-span-4 row-span-4 rotate-2" },
     { src: "auto-caderno.webp", alt: "Caderno com anotações e caneta", c: "col-span-4 row-span-4 rotate-1" },
     { src: "auto-celular.webp", alt: "Mão segurando um celular", c: "col-span-4 row-span-4 -rotate-1" },
@@ -482,7 +482,7 @@ export function FHAutomatico() {
               <div
                 key={p.src}
                 className={`relative overflow-hidden border-[6px] border-cream-50 bg-cream-50 shadow-[0_12px_30px_-18px_rgba(0,0,0,.55)] ${p.c} ${
-                  p.src === "auto-ju.webp" ? "row-start-1 col-start-5" : ""
+                  p.src === "auto-ju-r.webp" ? "row-start-1 col-start-5" : ""
                 }`}
               >
                 <Photo src={`/images/ph/futuros-humanos/${p.src}`} alt={p.alt} sizes="(min-width:1024px) 20vw, 33vw" className="absolute inset-0" />

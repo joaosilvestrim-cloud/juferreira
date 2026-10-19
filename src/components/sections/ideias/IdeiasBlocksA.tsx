@@ -413,7 +413,7 @@ export function IdeiasTerritorios() {
           </p>
         </Body>
         <div className="relative min-h-[260px] overflow-hidden rounded-sm">
-          <Photo src="/images/ph/ideias/territorios.webp" alt="Mulher de costas olhando a cidade do alto" sizes="(min-width:1024px) 28vw, 100vw" className="absolute inset-0" />
+          <Photo src="/images/ph/ideias/territorios-r.webp" alt="Mulher de costas olhando a cidade do alto" sizes="(min-width:1024px) 28vw, 100vw" className="absolute inset-0" />
         </div>
       </Container>
 

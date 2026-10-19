@@ -70,7 +70,7 @@ const DOORS: Door[] = [
     n: 3,
     t: "Futuros Humanos",
     s: "Para aprofundar a lente.",
-    img: "/images/ph/pessoas/porta-futuros.webp",
+    img: "/images/ph/pessoas/porta-futuros-r.webp",
     alt: "Ju Ferreira olhando a cidade ao entardecer",
     note: "Futuros Humanos não é um programa de desenvolvimento pessoal.",
     body: (

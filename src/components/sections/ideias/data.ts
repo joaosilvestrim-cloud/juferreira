@@ -218,7 +218,7 @@ export const ARTIGO_PROTAGONISTA: Artigo = {
     "O problema começa quando aquilo que parece mais provável passa a ser tratado como aquilo que necessariamente vai acontecer.",
   ],
   highlight: "Pensar futuros também é preservar espaço para aquilo que ainda pode ser diferente.",
-  img: "/images/ph/ideias/destaque.webp",
+  img: "/images/ph/ideias/destaque-r.webp",
   alt: "Mulher sentada de costas observando a cidade ao entardecer",
 };
 
@@ -335,7 +335,7 @@ export const INVESTIGACOES: Investigacao[] = [
     id: "soberania-humana",
     label: "investigacao",
     title: "Soberania Humana",
-    img: "/images/ph/ideias/inv-soberania.webp",
+    img: "/images/ph/ideias/inv-soberania-r.webp",
     alt: "Mulher de costas observando a cidade",
   },
   {

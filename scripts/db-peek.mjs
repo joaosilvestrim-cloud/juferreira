@@ -6,7 +6,7 @@ const b = await c.query("select id, email, source, status from public.newsletter
 console.log(a.rows, b.rows);
 if (process.argv[2] === "--limpar-testes") {
   await c.query("delete from public.contact_submissions where name like 'TESTE AUTOMATICO%'");
-  await c.query("delete from public.newsletter_subscribers where email like 'teste-%@example.com'");
+  await c.query("delete from public.newsletter_subscribers where email like 'teste%@example.com'");
   console.log("testes removidos");
 }
 await c.end();

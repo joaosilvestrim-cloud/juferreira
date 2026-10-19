@@ -346,7 +346,7 @@ export function FHProvoca() {
     {
       t: "Para pessoas",
       lead: "Pode ajudar alguém a perguntar:",
-      img: "pessoas.webp",
+      img: "pessoas-r.webp",
       alt: "Ju Ferreira pensativa, de perfil",
       items: [
         "Que futuro estou ajudando a tornar mais provável com aquilo que repito hoje?",
@@ -360,7 +360,7 @@ export function FHProvoca() {
     {
       t: "Para lideranças",
       lead: "Pode provocar perguntas como:",
-      img: "liderancas.webp",
+      img: "liderancas-r.webp",
       alt: "Ju Ferreira em conversa com uma liderança",
       items: [
         "Que comportamentos estamos recompensando?",
@@ -373,7 +373,7 @@ export function FHProvoca() {
     {
       t: "Para organizações",
       lead: "Pode ajudar a enxergar:",
-      img: "organizacoes.webp",
+      img: "organizacoes-r.webp",
       alt: "Ju Ferreira organizando ideias em post-its numa parede de vidro",
       items: [
         "tensões antes de virarem crise;",

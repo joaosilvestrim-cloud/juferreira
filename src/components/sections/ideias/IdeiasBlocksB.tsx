@@ -586,7 +586,7 @@ const DOORS = [
     d: "O território onde possibilidade, agência, tecnologia, humanidade, direção e construção de futuros se encontram de maneira mais estruturada.",
     cta: "Conheça Futuros Humanos",
     href: "/futuros-humanos",
-    img: "/images/ph/ideias/porta-futuros.webp",
+    img: "/images/ph/ideias/porta-futuros-r.webp",
   },
 ];
 

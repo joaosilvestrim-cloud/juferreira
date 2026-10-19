@@ -232,55 +232,137 @@ body {
    mostram tudo estático. html.jf-motion é aplicado no <head> (respeita reduced-motion).
    ========================================================================== */
 @supports (animation-timeline: view()) {
+  /* base: tudo que é editorial sobe e aparece enquanto entra na tela (especificidade baixa via :where) */
   .jf-motion
     main
     section
-    :is(h2, h3, .jf-lead, .jf-eyebrow, .jf-body > *, p, li, figure, form, a.rounded-full, [data-card]):not(
-      :is(h2, h3, .jf-lead, .jf-eyebrow, .jf-body > *, p, li, figure, form, a.rounded-full, [data-card], [data-photo]) *
-    ):not([data-no-reveal], [data-no-reveal] *) {
+    :where(h2, h3, .jf-lead, .jf-eyebrow, .jf-body > *, p, li, figure, form, a.rounded-full, [data-card], blockquote):not(
+      :where(h2, h3, .jf-lead, .jf-eyebrow, .jf-body > *, p, li, figure, form, a.rounded-full, [data-card], [data-photo], blockquote) *
+    ):not(:where([data-no-reveal], [data-no-reveal] *)) {
     animation: jf-rise linear both;
     animation-timeline: view();
-    animation-range: entry 0% entry 55%;
+    animation-range: entry 0% cover 32%;
   }
-  /* títulos: sobem desfocados, como uma ideia ganhando nitidez */
-  .jf-motion main section :is(h2):not(:is(p, li, figure, [data-card]) *) {
-    animation-name: jf-rise-blur;
-    animation-range: entry 0% entry 70%;
-  }
-  /* cards entram um pouco depois (efeito cascata natural pela posição) */
-  .jf-motion main section [data-card] {
-    animation-range: entry 10% entry 80%;
-  }
-  /* fotos: cortina que abre */
-  .jf-motion main section [data-photo] {
-    animation: jf-curtain linear both;
+
+  /* títulos grandes: sobem desfocados e "assentam" — como uma ideia ganhando nitidez */
+  .jf-motion main section h2 {
+    animation: jf-title linear both;
     animation-timeline: view();
-    animation-range: entry 0% entry 75%;
+    animation-range: entry 0% cover 38%;
   }
+
+  /* palavras em vermelho acendem conforme a frase chega ao centro da tela */
+  .jf-motion main section h2 .jf-em,
+  .jf-motion main section .jf-display .jf-em {
+    animation: jf-ignite linear both;
+    animation-timeline: view();
+    animation-range: entry 40% cover 50%;
+  }
+  .jf-motion main section.on-dark h2 .jf-em,
+  .jf-motion main .on-dark .jf-display .jf-em {
+    animation-name: jf-ignite-dark;
+  }
+
+  /* cards e itens de lista: cascata pela posição na grade */
+  .jf-motion main section :where([data-card], li):nth-child(2) {
+    animation-range: entry 6% cover 38%;
+  }
+  .jf-motion main section :where([data-card], li):nth-child(3) {
+    animation-range: entry 12% cover 44%;
+  }
+  .jf-motion main section :where([data-card], li):nth-child(4) {
+    animation-range: entry 18% cover 50%;
+  }
+  .jf-motion main section :where([data-card], li):nth-child(n + 5) {
+    animation-range: entry 24% cover 56%;
+  }
+  .jf-motion main section [data-card] {
+    animation-name: jf-card;
+  }
+
+  /* fotos: cortina lateral + zoom que desacelera; depois, parallax contínuo */
+  .jf-motion main section [data-photo] {
+    animation: jf-wipe linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+  }
+  .jf-motion main [data-photo] > img {
+    animation:
+      jf-zoom linear both,
+      jf-parallax linear both;
+    animation-timeline: view(), view();
+    animation-range:
+      entry 0% cover 60%,
+      cover 0% cover 100%;
+  }
+
   /* traços vermelhos: desenham da esquerda para a direita */
   .jf-motion main [data-stroke] {
     animation: jf-draw-in linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 45%;
+    animation-range: entry 10% cover 50%;
+  }
+
+  /* citações em caixa rosa: entram com leve rotação de papel */
+  .jf-motion main section figure {
+    animation-name: jf-paper;
   }
 }
 @keyframes jf-rise {
   from {
     opacity: 0;
-    translate: 0 34px;
+    translate: 0 70px;
   }
 }
-@keyframes jf-rise-blur {
+@keyframes jf-title {
   from {
     opacity: 0;
-    translate: 0 0.4em;
-    filter: blur(10px);
+    translate: 0 0.55em;
+    filter: blur(14px);
+    letter-spacing: 0.02em;
+  }
+  60% {
+    filter: blur(0);
   }
 }
-@keyframes jf-curtain {
+@keyframes jf-ignite {
   from {
-    clip-path: inset(16% 10% 16% 10%);
-    opacity: 0.2;
+    color: var(--jf-ink-900);
+  }
+}
+@keyframes jf-ignite-dark {
+  from {
+    color: var(--jf-cream-50);
+  }
+}
+@keyframes jf-card {
+  from {
+    opacity: 0;
+    translate: 0 110px;
+    scale: 0.94;
+  }
+}
+@keyframes jf-paper {
+  from {
+    opacity: 0;
+    translate: 0 60px;
+    rotate: -3deg;
+  }
+}
+@keyframes jf-wipe {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes jf-zoom {
+  from {
+    scale: 1.16;
+  }
+  to {
+    scale: 1.05;
   }
 }
 @keyframes jf-draw-in {
@@ -314,18 +396,12 @@ body {
 
 /* parallax suave das fotos (scroll-driven, sem JS) */
 @supports (animation-timeline: view()) {
-  .jf-motion main [data-photo] > img {
-    animation: jf-parallax linear both;
-    animation-timeline: view();
-  }
   @keyframes jf-parallax {
     from {
-      translate: 0 -4%;
-      scale: 1.1;
+      translate: 0 -5%;
     }
     to {
-      translate: 0 4%;
-      scale: 1.1;
+      translate: 0 5%;
     }
   }
 

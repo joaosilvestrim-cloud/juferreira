@@ -165,7 +165,7 @@ const DOORS: Door[] = [
   {
     n: 3,
     icon: "telescope",
-    img: "porta-futuros",
+    img: "porta-futuros-r",
     title: "Futuros Aplicados / What The Future?!",
     sub: "Quero explorar futuros com mais profundidade.",
     lead: "Quando a questão pede:",

@@ -759,7 +759,7 @@ export function OrgFormatos() {
     {
       verb: "Abrir",
       legend: "palestra",
-      img: "formato-palestra",
+      img: "formato-palestra-r",
       alt: "Ju Ferreira palestrando",
       icon: "people",
       t: "Palestras",
@@ -798,7 +798,7 @@ export function OrgFormatos() {
     {
       verb: "Trabalhar",
       legend: "workshop",
-      img: "formato-workshop",
+      img: "formato-workshop-r",
       alt: "Ju Ferreira conduzindo um workshop em grupo",
       icon: "gear",
       t: "Workshops",
@@ -854,7 +854,7 @@ export function OrgFormatos() {
     {
       verb: "Explorar",
       legend: "futuros aplicados",
-      img: "formato-futuros",
+      img: "formato-futuros-r",
       alt: "Ju Ferreira diante de um quadro com anotações",
       icon: "eye",
       t: "Futuros aplicados",
@@ -886,7 +886,7 @@ export function OrgFormatos() {
     {
       verb: "Sustentar",
       legend: "jornada / programa",
-      img: "formato-jornada",
+      img: "formato-jornada-r",
       alt: "Ju Ferreira em conversa com lideranças",
       icon: "chart",
       t: "Jornadas e programas",
