@@ -1,26 +1,227 @@
 @import "tailwindcss";
 
+/* ==========================================================================
+   JU FERREIRA — tokens (Design System v0.1, docs/04_DESIGN_SYSTEM)
+   ========================================================================== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --jf-cream-50: #faf7f2;
+  --jf-cream-100: #f6f0e7;
+  --jf-cream-200: #eee4d9;
+
+  --jf-ink-900: #181411;
+  --jf-ink-800: #221d19;
+  --jf-ink-700: #332925;
+  --jf-ink-500: #5c524c;
+
+  --jf-red-500: #b80c10;
+  --jf-red-400: #d3191c; /* vermelho vivo para fundos escuros */
+  --jf-red-600: #a00808;
+  --jf-red-700: #8f0808;
+
+  --jf-wine-900: #2e0503;
+  --jf-wine-800: #3b0302;
+  --jf-wine-700: #4b0807;
+
+  --jf-blush-100: #f5ddd7;
+  --jf-blush-200: #edcdc5;
+
+  --jf-radius-sm: 12px;
+  --jf-radius-md: 18px;
+  --jf-radius-lg: 24px;
+
+  --jf-container: 1280px;
+  --jf-gutter: clamp(20px, 4vw, 48px);
+  --jf-section-y: clamp(72px, 9vw, 136px);
+  --jf-header-h: 80px;
+
+  --jf-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream-50: var(--jf-cream-50);
+  --color-cream-100: var(--jf-cream-100);
+  --color-cream-200: var(--jf-cream-200);
+  --color-ink-900: var(--jf-ink-900);
+  --color-ink-800: var(--jf-ink-800);
+  --color-ink-700: var(--jf-ink-700);
+  --color-ink-500: var(--jf-ink-500);
+  --color-red-brand: var(--jf-red-500);
+  --color-red-bright: var(--jf-red-400);
+  --color-red-deep: var(--jf-red-700);
+  --color-wine-900: var(--jf-wine-900);
+  --color-wine-800: var(--jf-wine-800);
+  --color-wine-700: var(--jf-wine-700);
+  --color-blush-100: var(--jf-blush-100);
+  --color-blush-200: var(--jf-blush-200);
+
+  /* FONTES PROVISÓRIAS — substituir pelas licenciadas (PENDING_ASSETS P0) */
+  --font-serif: var(--font-display), "Times New Roman", serif;
+  --font-sans: var(--font-body), system-ui, sans-serif;
+  --font-hand: var(--font-handwritten), cursive;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ==========================================================================
+   Base
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--jf-header-h);
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--jf-cream-50);
+  color: var(--jf-ink-900);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--jf-red-500);
+  color: var(--jf-cream-50);
+}
+
+:focus-visible {
+  outline: 2px solid var(--jf-red-500);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.on-dark :focus-visible {
+  outline-color: var(--jf-cream-50);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ==========================================================================
+   Tipografia editorial
+   ========================================================================== */
+.jf-display {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+.jf-display-xl {
+  font-size: clamp(48px, 7.2vw, 112px);
+}
+.jf-display-lg {
+  font-size: clamp(42px, 5.6vw, 88px);
+}
+.jf-display-md {
+  font-size: clamp(36px, 4.4vw, 68px);
+}
+.jf-display-sm {
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.08;
+}
+.jf-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(22px, 1.9vw, 28px);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+.jf-lead {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 2.4vw, 38px);
+  line-height: 1.2;
+  text-wrap: balance;
+}
+.jf-body {
+  font-size: clamp(16px, 1.15vw, 18px);
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+}
+.jf-body p + p {
+  margin-top: 1em;
+}
+.jf-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+.jf-hand {
+  font-family: var(--font-hand);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+/* palavra em vermelho de ênfase */
+.jf-em {
+  color: var(--jf-red-500);
+}
+.on-dark .jf-em {
+  color: var(--jf-red-400);
+}
+
+/* ==========================================================================
+   Superfícies
+   ========================================================================== */
+.on-dark {
+  color: var(--jf-cream-50);
+}
+.jf-paper-edge {
+  /* borda de papel rasgado no rodapé de uma imagem */
+  -webkit-mask-image: url("/brand/torn-edge.svg"), linear-gradient(#000, #000);
+  -webkit-mask-size: 100% 28px, 100% calc(100% - 26px);
+  -webkit-mask-position: bottom, top;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url("/brand/torn-edge.svg"), linear-gradient(#000, #000);
+  mask-size: 100% 28px, 100% calc(100% - 26px);
+  mask-position: bottom, top;
+  mask-repeat: no-repeat;
+}
+.jf-fade-left {
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 28%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 28%);
+}
+.jf-fade-right {
+  -webkit-mask-image: linear-gradient(to left, transparent 0%, #000 28%);
+  mask-image: linear-gradient(to left, transparent 0%, #000 28%);
+}
+@media (max-width: 767px) {
+  .jf-fade-left,
+  .jf-fade-right {
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, #000 18%);
+    mask-image: linear-gradient(to top, transparent 0%, #000 18%);
+  }
+}
+
+/* ==========================================================================
+   Movimento — traço que se desenha ao entrar na tela
+   ========================================================================== */
+.jf-draw path {
+  stroke-dasharray: var(--len, 2000);
+  stroke-dashoffset: var(--len, 2000);
+  animation: jf-draw 1.6s var(--jf-ease) 0.2s forwards;
+}
+@keyframes jf-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.jf-reveal {
+  animation: jf-reveal 0.8s var(--jf-ease) both;
+}
+@keyframes jf-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
 }

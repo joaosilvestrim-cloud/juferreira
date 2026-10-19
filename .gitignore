@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# referências pesadas (fonte: pacote travado em D:/JU)
+/references/mockups
+/test-results
+/playwright-report
+/screenshots

@@ -1,0 +1,15 @@
+[
+  {"src": "03-futuros-humanos/block-01.png", "box": [880, 150, 1460, 941], "out": "futuros-humanos/hero.webp"},
+  {"src": "03-futuros-humanos/block-02.png", "box": [1060, 300, 1420, 800], "out": "futuros-humanos/ferramentas.webp", "scale": 2},
+  {"src": "03-futuros-humanos/block-04.png", "box": [1200, 250, 1672, 805], "out": "futuros-humanos/agencia.webp"},
+  {"src": "03-futuros-humanos/block-05.png", "box": [568, 108, 718, 308], "out": "futuros-humanos/auto-laptop.webp", "scale": 2},
+  {"src": "03-futuros-humanos/block-05.png", "box": [880, 84, 1095, 425], "out": "futuros-humanos/auto-ju.webp", "scale": 2},
+  {"src": "03-futuros-humanos/block-05.png", "box": [1280, 90, 1478, 272], "out": "futuros-humanos/auto-rua.webp", "scale": 2},
+  {"src": "03-futuros-humanos/block-05.png", "box": [1268, 292, 1492, 484], "out": "futuros-humanos/auto-celular.webp", "scale": 2},
+  {"src": "03-futuros-humanos/block-05.png", "box": [700, 325, 875, 495], "out": "futuros-humanos/auto-caderno.webp", "scale": 2},
+  {"src": "03-futuros-humanos/block-07.png", "box": [880, 60, 1450, 540], "out": "futuros-humanos/autoria.webp"},
+  {"src": "03-futuros-humanos/block-08.png", "box": [650, 347, 903, 438], "out": "futuros-humanos/pessoas.webp", "scale": 2},
+  {"src": "03-futuros-humanos/block-08.png", "box": [920, 347, 1276, 438], "out": "futuros-humanos/liderancas.webp", "scale": 2},
+  {"src": "03-futuros-humanos/block-08.png", "box": [1292, 347, 1635, 438], "out": "futuros-humanos/organizacoes.webp", "scale": 2},
+  {"src": "03-futuros-humanos/block-09.png", "box": [1000, 190, 1470, 800], "out": "futuros-humanos/encerramento.webp"}
+]

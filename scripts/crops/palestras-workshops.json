@@ -1,0 +1,11 @@
+[
+  {"src": "04-palestras-workshops/block-01.png", "box": [1070, 95, 1490, 770], "out": "palestras-workshops/hero.webp"},
+  {"src": "04-palestras-workshops/block-02.png", "box": [940, 70, 1495, 475], "out": "palestras-workshops/palco.webp"},
+  {"src": "04-palestras-workshops/block-03.png", "box": [930, 100, 1320, 425], "out": "palestras-workshops/tese.webp"},
+  {"src": "04-palestras-workshops/block-04.png", "box": [1215, 70, 1490, 362], "out": "palestras-workshops/contexto.webp"},
+  {"src": "04-palestras-workshops/block-05.png", "box": [1065, 90, 1315, 405], "out": "palestras-workshops/workshop.webp"},
+  {"src": "04-palestras-workshops/block-06.png", "box": [840, 80, 1340, 458], "out": "palestras-workshops/experiencias.webp"},
+  {"src": "04-palestras-workshops/block-07.png", "box": [1030, 70, 1500, 390], "out": "palestras-workshops/lastro.webp"},
+  {"src": "04-palestras-workshops/block-08.png", "box": [1060, 70, 1480, 400], "out": "palestras-workshops/escuta.webp"},
+  {"src": "04-palestras-workshops/block-09.png", "box": [815, 100, 1080, 500], "out": "palestras-workshops/conversa.webp"}
+]

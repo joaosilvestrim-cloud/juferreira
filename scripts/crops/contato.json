@@ -1,0 +1,13 @@
+[
+  {"src": "08-contato/block-01.png", "box": [800, 100, 1395, 941], "out": "contato/hero.webp"},
+  {"src": "08-contato/block-02.png", "box": [190, 286, 562, 370], "out": "contato/porta-palestras.webp", "scale": 2},
+  {"src": "08-contato/block-02.png", "box": [700, 288, 1078, 370], "out": "contato/porta-organizacoes.webp", "scale": 2},
+  {"src": "08-contato/block-02.png", "box": [1220, 288, 1592, 370], "out": "contato/porta-futuros.webp", "scale": 2},
+  {"src": "08-contato/block-02.png", "box": [190, 568, 562, 654], "out": "contato/porta-parcerias.webp", "scale": 2},
+  {"src": "08-contato/block-02.png", "box": [700, 570, 900, 658], "out": "contato/porta-epic.webp", "scale": 2},
+  {"src": "08-contato/block-02.png", "box": [1220, 570, 1592, 654], "out": "contato/porta-nao-sei.webp", "scale": 2},
+  {"src": "08-contato/block-03.png", "box": [0, 600, 665, 941], "out": "contato/contexto.webp"},
+  {"src": "08-contato/block-04.png", "box": [250, 565, 660, 941], "out": "contato/atalhos.webp"},
+  {"src": "08-contato/block-05.png", "box": [800, 85, 1385, 440], "out": "contato/canais.webp"},
+  {"src": "08-contato/block-06.png", "box": [740, 90, 1310, 730], "out": "contato/fechamento.webp"}
+]

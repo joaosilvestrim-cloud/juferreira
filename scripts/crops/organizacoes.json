@@ -1,0 +1,15 @@
+[
+  {"src": "05-organizacoes/block-01.png", "box": [790, 95, 1320, 545], "out": "organizacoes/hero.webp"},
+  {"src": "05-organizacoes/block-02.png", "box": [860, 95, 1340, 450], "out": "organizacoes/mudanca.webp"},
+  {"src": "05-organizacoes/block-03.png", "box": [1000, 95, 1500, 320], "out": "organizacoes/perguntas.webp"},
+  {"src": "05-organizacoes/block-04.png", "box": [960, 95, 1450, 345], "out": "organizacoes/territorios.webp"},
+  {"src": "05-organizacoes/block-05.png", "box": [100, 322, 352, 458], "out": "organizacoes/formato-palestra.webp", "scale": 2},
+  {"src": "05-organizacoes/block-05.png", "box": [432, 325, 677, 458], "out": "organizacoes/formato-workshop.webp", "scale": 2},
+  {"src": "05-organizacoes/block-05.png", "box": [760, 325, 997, 458], "out": "organizacoes/formato-experiencia.webp", "scale": 2},
+  {"src": "05-organizacoes/block-05.png", "box": [1080, 325, 1210, 458], "out": "organizacoes/formato-futuros.webp", "scale": 2},
+  {"src": "05-organizacoes/block-05.png", "box": [1405, 300, 1644, 458], "out": "organizacoes/formato-jornada.webp", "scale": 2},
+  {"src": "05-organizacoes/block-06.png", "box": [620, 95, 1250, 360], "out": "organizacoes/wtf.webp"},
+  {"src": "05-organizacoes/block-07.png", "box": [1000, 95, 1500, 320], "out": "organizacoes/mundo-real.webp"},
+  {"src": "05-organizacoes/block-08.png", "box": [960, 95, 1460, 345], "out": "organizacoes/depois.webp"},
+  {"src": "05-organizacoes/block-09.png", "box": [475, 225, 800, 670], "out": "organizacoes/fechamento.webp"}
+]

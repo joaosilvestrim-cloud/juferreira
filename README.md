@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ju Ferreira — site v1
 
-## Getting Started
+Site institucional de Ju Ferreira. Next.js 16 (App Router) + TypeScript + Tailwind v4.
 
-First, run the development server:
+## Rodar
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev          # http://localhost:3000
+npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+QA visual (usa o Microsoft Edge instalado): `node scripts/shots.mjs` → `screenshots/desktop|mobile/*.png`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `docs/` — pacote canônico (Site Master, copies, Design System, briefs). **A copy `.md` é a fonte do texto.**
+- `references/mockups/` — mockups aprovados (ignorados no git; fonte: pacote travado em `D:\JU`).
+- `src/app/<rota>/page.tsx` — páginas: `/`, `/ju`, `/futuros-humanos`, `/palestras`, `/organizacoes`, `/pessoas`, `/ideias`, `/contato`.
+- `src/components/ui` — primitivos do Design System (botões, tipografia, traços, foto, seção).
+- `src/components/global` — header, footer, logo.
+- `src/components/sections/<pagina>` — blocos de cada página.
+- `src/lib/site.ts` — navegação, rotas do formulário de contato e **links externos pendentes**.
 
-## Learn More
+## Provisório (trocar antes do go-live)
 
-To learn more about Next.js, take a look at the following resources:
+| Item | Onde |
+|---|---|
+| Fotos (recortes dos mockups gerados por IA) | `public/images/ph/**` — gerados por `scripts/crop-placeholders.py` |
+| Fontes (Cormorant Garamond, Jost, Caveat) | `src/app/layout.tsx` |
+| Logo (reconstrução) | `src/components/global/Logo.tsx` |
+| Espiral (PNG de referência) e traços SVG | `public/spiral`, `src/components/ui/Strokes.tsx` |
+| E-mail, WhatsApp, LinkedIn, Instagram, EPIC247, WTF | `src/lib/site.ts` → `EXTERNAL` |
+| Artigos, referências, newsletter, envio de formulários | páginas Ideias / Contato |
+| Política de Privacidade | `src/app/privacidade` |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Elementos provisórios carregam `data-placeholder` no HTML.

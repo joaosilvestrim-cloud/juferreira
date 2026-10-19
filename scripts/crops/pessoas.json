@@ -1,0 +1,21 @@
+[
+  {"src": "06-pessoas/block-01.png", "box": [740, 95, 1305, 941], "out": "pessoas/hero.webp"},
+  {"src": "06-pessoas/block-02.png", "box": [715, 95, 1280, 430], "out": "pessoas/agencia.webp"},
+  {"src": "06-pessoas/block-03.png", "box": [690, 95, 1085, 600], "out": "pessoas/automatico.webp"},
+  {"src": "06-pessoas/block-03.png", "box": [1342, 88, 1588, 318], "out": "pessoas/automatico-cafe.webp", "scale": 2},
+  {"src": "06-pessoas/block-04.png", "box": [497, 137, 672, 355], "out": "pessoas/imaginar.webp", "scale": 2},
+  {"src": "06-pessoas/block-04.png", "box": [945, 138, 1130, 325], "out": "pessoas/escolher.webp", "scale": 2},
+  {"src": "06-pessoas/block-04.png", "box": [1032, 548, 1140, 778], "out": "pessoas/tornar-se.webp", "scale": 2},
+  {"src": "06-pessoas/block-04.png", "box": [540, 478, 688, 785], "out": "pessoas/construir.webp", "scale": 2},
+  {"src": "06-pessoas/block-05.png", "box": [540, 200, 788, 356], "out": "pessoas/comecar-1.webp", "scale": 2},
+  {"src": "06-pessoas/block-05.png", "box": [835, 188, 1045, 350], "out": "pessoas/comecar-2.webp", "scale": 2},
+  {"src": "06-pessoas/block-05.png", "box": [1100, 215, 1280, 345], "out": "pessoas/comecar-3.webp", "scale": 2},
+  {"src": "06-pessoas/block-05.png", "box": [1440, 180, 1620, 355], "out": "pessoas/comecar-4.webp", "scale": 2},
+  {"src": "06-pessoas/block-06.png", "box": [610, 95, 962, 405], "out": "pessoas/epic.webp"},
+  {"src": "06-pessoas/block-07.png", "box": [570, 215, 845, 372], "out": "pessoas/porta-terca.webp", "scale": 2},
+  {"src": "06-pessoas/block-07.png", "box": [868, 130, 1070, 325], "out": "pessoas/porta-ideias.webp", "scale": 2},
+  {"src": "06-pessoas/block-07.png", "box": [1330, 240, 1605, 375], "out": "pessoas/porta-futuros.webp", "scale": 2},
+  {"src": "06-pessoas/block-08.png", "box": [640, 118, 935, 362], "out": "pessoas/ju.webp", "scale": 2},
+  {"src": "06-pessoas/block-08.png", "box": [950, 135, 1175, 372], "out": "pessoas/ju-filhas.webp", "scale": 2},
+  {"src": "06-pessoas/block-09.png", "box": [862, 100, 1275, 405], "out": "pessoas/fechamento.webp"}
+]

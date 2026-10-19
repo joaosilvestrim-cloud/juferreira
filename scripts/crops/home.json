@@ -1,0 +1,168 @@
+[
+ {
+  "src": "01-home/block-01.png",
+  "box": [
+   1075,
+   100,
+   1672,
+   905
+  ],
+  "out": "home/hero.webp"
+ },
+ {
+  "src": "01-home/block-02.png",
+  "box": [
+   790,
+   98,
+   1672,
+   941
+  ],
+  "out": "home/tensao.webp"
+ },
+ {
+  "src": "01-home/block-04.png",
+  "box": [
+   960,
+   98,
+   1671,
+   941
+  ],
+  "out": "home/ju.webp"
+ },
+ {
+  "src": "01-home/block-05.png",
+  "box": [
+   900,
+   100,
+   1672,
+   941
+  ],
+  "out": "home/palco.webp"
+ },
+ {
+  "src": "01-home/block-06.png",
+  "box": [
+   858,
+   120,
+   1358,
+   488
+  ],
+  "out": "home/prova-1.webp"
+ },
+ {
+  "src": "01-home/block-06.png",
+  "box": [
+   1368,
+   100,
+   1668,
+   488
+  ],
+  "out": "home/prova-2.webp"
+ },
+ {
+  "src": "01-home/block-06.png",
+  "box": [
+   910,
+   498,
+   1305,
+   843
+  ],
+  "out": "home/prova-3.webp"
+ },
+ {
+  "src": "01-home/block-06.png",
+  "box": [
+   1318,
+   498,
+   1668,
+   872
+  ],
+  "out": "home/prova-4.webp"
+ },
+ {
+  "src": "01-home/block-07.png",
+  "box": [
+   0,
+   90,
+   600,
+   941
+  ],
+  "out": "home/pessoas.webp"
+ },
+ {
+  "src": "01-home/block-07.png",
+  "box": [
+   666,
+   488,
+   838,
+   582
+  ],
+  "out": "home/porta-epic.webp",
+  "scale": 2
+ },
+ {
+  "src": "01-home/block-07.png",
+  "box": [
+   666,
+   609,
+   838,
+   704
+  ],
+  "out": "home/porta-terca.webp",
+  "scale": 2
+ },
+ {
+  "src": "01-home/block-07.png",
+  "box": [
+   666,
+   732,
+   838,
+   827
+  ],
+  "out": "home/porta-ideias.webp",
+  "scale": 2
+ },
+ {
+  "src": "01-home/block-08.png",
+  "box": [
+   880,
+   100,
+   1460,
+   447
+  ],
+  "out": "home/ideias.webp"
+ },
+ {
+  "src": "01-home/block-08.png",
+  "box": [
+   88,
+   562,
+   354,
+   673
+  ],
+  "out": "home/artigo-1.webp",
+  "scale": 2
+ },
+ {
+  "src": "01-home/block-08.png",
+  "box": [
+   382,
+   562,
+   647,
+   673
+  ],
+  "out": "home/artigo-2.webp",
+  "scale": 2
+ },
+ {
+  "src": "01-home/block-08.png",
+  "box": [
+   672,
+   562,
+   938,
+   673
+  ],
+  "out": "home/artigo-3.webp",
+  "scale": 2
+ }
+]

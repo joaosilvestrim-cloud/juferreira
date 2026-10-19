@@ -1,0 +1,17 @@
+[
+  {"src": "02-ju/block-01.png", "box": [840, 85, 1672, 941], "out": "ju/hero.webp"},
+  {"src": "02-ju/block-02.png", "box": [835, 100, 1300, 941], "out": "ju/trajetoria.webp"},
+  {"src": "02-ju/block-03.png", "box": [1030, 82, 1480, 690], "out": "ju/tecnologia.webp"},
+  {"src": "02-ju/block-04.png", "box": [975, 80, 1450, 640], "out": "ju/construir.webp"},
+  {"src": "02-ju/block-04.png", "box": [765, 395, 965, 565], "out": "ju/construir-pb.webp", "scale": 2},
+  {"src": "02-ju/block-05.png", "box": [790, 80, 1460, 770], "out": "ju/maternidade.webp"},
+  {"src": "02-ju/block-06.png", "box": [860, 80, 1280, 525], "out": "ju/transformacao.webp"},
+  {"src": "02-ju/block-07.png", "box": [785, 95, 1062, 780], "out": "ju/hoje.webp"},
+  {"src": "02-ju/block-07.png", "box": [692, 98, 868, 228], "out": "ju/frente-futuros.webp", "scale": 2},
+  {"src": "02-ju/block-07.png", "box": [680, 442, 820, 570], "out": "ju/frente-palestras.webp", "scale": 2},
+  {"src": "02-ju/block-07.png", "box": [1528, 88, 1662, 235], "out": "ju/frente-wtf.webp", "scale": 2},
+  {"src": "02-ju/block-07.png", "box": [1505, 352, 1625, 426], "out": "ju/frente-epic.webp", "scale": 2},
+  {"src": "02-ju/block-07.png", "box": [1482, 572, 1638, 676], "out": "ju/frente-empresas.webp", "scale": 2},
+  {"src": "02-ju/block-08.png", "box": [1210, 240, 1672, 760], "out": "ju/tensoes.webp"},
+  {"src": "02-ju/block-09.png", "box": [840, 90, 1490, 690], "out": "ju/encerramento.webp"}
+]

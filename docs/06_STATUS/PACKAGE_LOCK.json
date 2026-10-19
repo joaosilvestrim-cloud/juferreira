@@ -1,0 +1,475 @@
+{
+  "package": "Ju_Ferreira_Development_Package_v1.0",
+  "status": "LOCKED_FOR_CODEX_HANDOFF",
+  "pages": 8,
+  "approved_block_mockups": 69,
+  "page_consolidated_mockups": 6,
+  "canonical_copies": 8,
+  "files": [
+    {
+      "path": "00_MASTER/CODEX_READ_FIRST.md",
+      "bytes": 1478,
+      "sha256": "f1e249994b8afdb035eda065030b79a723c92815c06923db7a87f899868b0eaa"
+    },
+    {
+      "path": "00_MASTER/Ju_Ferreira_Site_Master_v1.0.md",
+      "bytes": 27420,
+      "sha256": "a0ba054ac6b54c3f2a3caeee3d507f79564c72ed3a224f840970755abebc4262"
+    },
+    {
+      "path": "01_COPY/contato.md",
+      "bytes": 16392,
+      "sha256": "94bffc2b86f56804586b0c940919e03399739b6fe148b80c4379ee078fd2f426"
+    },
+    {
+      "path": "01_COPY/futuros-humanos.md",
+      "bytes": 18692,
+      "sha256": "36ddbb08d4da6264273c1721f0d9a9ccbbcd79d452a4666e90f22ff7e49be638"
+    },
+    {
+      "path": "01_COPY/home.md",
+      "bytes": 8180,
+      "sha256": "567ecc3f4824efa48e44b9379c81c792fbff393df0fbfe9c6f77b0ef0349e684"
+    },
+    {
+      "path": "01_COPY/ideias.md",
+      "bytes": 36700,
+      "sha256": "103e398238fd8b3e03d7a46df835e5a50fc21ec1b578a6fbeae911c0c6bd9a44"
+    },
+    {
+      "path": "01_COPY/ju.md",
+      "bytes": 16785,
+      "sha256": "1eb689404d002247b3e17f21e4652f5ce688bd69450639437d7348e7963b5235"
+    },
+    {
+      "path": "01_COPY/organizacoes.md",
+      "bytes": 34211,
+      "sha256": "4134a102185158ebe5906f4b4a3cc656a435e9db8889c875419ac35695892a22"
+    },
+    {
+      "path": "01_COPY/palestras-workshops.md",
+      "bytes": 25956,
+      "sha256": "70dfa79aa69c8ecefc3380ebe472a5b2c3e2c1f3d559cb29efdf5e5251fd0ab4"
+    },
+    {
+      "path": "01_COPY/pessoas.md",
+      "bytes": 30972,
+      "sha256": "eb538085df3d6bba23ec4ade86f38b88fe3ca67b85a0a1db46393d54e74b5569"
+    },
+    {
+      "path": "02_MOCKUPS/01-home/block-01.png",
+      "bytes": 1428238,
+      "sha256": "f2c3c030075d9599f7f70c3ad9cc18a6f693625142b0d9cd1e3b7e67f52cacdb"
+    },
+    {
+      "path": "02_MOCKUPS/01-home/block-02.png",
+      "bytes": 1940842,
+      "sha256": "f2b1cdeec335c1c134da3655ef79bb9584344ba684227382542ac3b621bb46d4"
+    },
+    {
+      "path": "02_MOCKUPS/01-home/block-03.png",
+      "bytes": 1271350,
+      "sha256": "a5df4711537a0f69a8c506ffad5a32dddb9ff1947d11afa9ec99226518ced810"
+    },
+    {
+      "path": "02_MOCKUPS/01-home/block-04.png",
+      "bytes": 1788434,
+      "sha256": "f83faca31482307f8ca4d93c499e3eaa3a8286193305880af722244195110695"
+    },
+    {
+      "path": "02_MOCKUPS/01-home/block-05.png",
+      "bytes": 1726902,
+      "sha256": "882ef9fa263b2a8d06e525f678b36894701635b11b57bfb41866ee7a42a7ebb4"
+    },
+    {
+      "path": "02_MOCKUPS/01-home/block-06.png",
+      "bytes": 1910197,
+      "sha256": "e55d6136628d55abe867b79ec7013c737c0037621e33ed6d0634ac5a96c5ca3c"
+    },
+    {
+      "path": "02_MOCKUPS/01-home/block-07.png",
+      "bytes": 1778204,
+      "sha256": "ced060ef82da7443acd914a8f215d916be30cdf9a87e626b3f26d76db3e7e224"
+    },
+    {
+      "path": "02_MOCKUPS/01-home/block-08.png",
+      "bytes": 1731460,
+      "sha256": "3607391b2975d6d7dec6b109528f7b3d2e94014c9fdf3204e9a7c8dbffba3b94"
+    },
+    {
+      "path": "02_MOCKUPS/01-home/block-09.png",
+      "bytes": 1383711,
+      "sha256": "a226b6ceae8e86e7c8340e3dd5cb363c296e24b64addbbfbab24b9eddaf3faed"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/block-01.png",
+      "bytes": 1928241,
+      "sha256": "973d59bf15ef7334d0aea21af434db77b77d9f16b9a1cc7b124fb72e4ce2ccea"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/block-02.png",
+      "bytes": 1987042,
+      "sha256": "d26d66ea6a325d2373ecf51fb22cca9c5679e7b45d453fcf336d3641db91ecc5"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/block-03.png",
+      "bytes": 1865325,
+      "sha256": "6d434e0d6a703099ab0c0653617f52e45fc3e286d9c176c23e831de48c947961"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/block-04.png",
+      "bytes": 1918292,
+      "sha256": "e99f93d71981a515a9d49386ac730645d249512fd6e54ee9e8738628e86baef5"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/block-05.png",
+      "bytes": 2015109,
+      "sha256": "8200e192e8488ca7db5751e6501737555a2816813e07ddc46e336c30c00e6ac1"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/block-06.png",
+      "bytes": 2113242,
+      "sha256": "893b86c5766415c50fe009acb19aa39177ef4c00ae21ded5eefdb86c0cf9ab55"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/block-07.png",
+      "bytes": 2123723,
+      "sha256": "5d0645ab637389a581cfb5a55a4b960fa26645f155849be3359af80a314df00a"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/block-08.png",
+      "bytes": 1774188,
+      "sha256": "c92c220039f20f32d19ab73aa99731634e92f8a3f143889f045eb56f89a162f6"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/block-09.png",
+      "bytes": 1908031,
+      "sha256": "d7056b450d1829d201f7338f1c6564343e9a07a42a78482d77ce9d080c54a0dc"
+    },
+    {
+      "path": "02_MOCKUPS/02-ju/page-consolidated-reference.png",
+      "bytes": 17477383,
+      "sha256": "9f39d0c309d7b46a7280e3b322c9823c54fc33bb3fe874de17774358a0c1c45a"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/block-01.png",
+      "bytes": 1867394,
+      "sha256": "48a08c6d01552bd278f23740837c818a17363de155302a5021f144ba77b668f3"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/block-02.png",
+      "bytes": 1862520,
+      "sha256": "bc975dffef9787a7ed0c8d3c5be13b3e1c7441fb0db5789eb0287510ae13f119"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/block-03.png",
+      "bytes": 1882422,
+      "sha256": "77c2b755fe66b49b29567af96f4c8db37f7ae4d866be2d0326eb174f8c36b36e"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/block-04.png",
+      "bytes": 1872588,
+      "sha256": "88e7509def8a3304cc8bbcbf2d1e779b7c92ba011a4cce9f46badb668f02fc8a"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/block-05.png",
+      "bytes": 1835174,
+      "sha256": "3fabd802aa044e20939edf8d4f461c4fe424a3c87bd2768beeab73fc3dbf8e9b"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/block-06.png",
+      "bytes": 1827780,
+      "sha256": "5d9dca9993e3cbd5d59f6dfcbc3ee8dfe77cc36493e546a8623d6ddb60a40531"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/block-07.png",
+      "bytes": 1954478,
+      "sha256": "b318403005f6b289104b61518c769665ca6df145663a52d76e11cfb8f790f751"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/block-08.png",
+      "bytes": 1961423,
+      "sha256": "2158b95b2c16eca62c32ea13d29cc64b097eda57e149a00a0529ad28dd554c70"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/block-09.png",
+      "bytes": 1722450,
+      "sha256": "151f62070aed6f45f9aadd0a78707844964a5e55894c0fb078cd615b1e272563"
+    },
+    {
+      "path": "02_MOCKUPS/03-futuros-humanos/page-consolidated-reference.png",
+      "bytes": 16587234,
+      "sha256": "d076cd63da907399fea2b4144f906d4a3b4921a10dadb2cf83538043bce38953"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/block-01.png",
+      "bytes": 1738490,
+      "sha256": "cc9f38d4688ae150d82350d5e6b9f1a28952e7f106914e9c4984f48a02f43025"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/block-02.png",
+      "bytes": 1922371,
+      "sha256": "d24b6fbdeecefc6e7a36c2b8ffe27d304106479875b3cc0d8d875c8cdbdc8710"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/block-03.png",
+      "bytes": 1872772,
+      "sha256": "72fb5a12fa3b0a72f6af43fd6356b264f1fedf6b3d64f3af39b49e1b81206217"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/block-04.png",
+      "bytes": 2007325,
+      "sha256": "2618d50684a1e6aa9351b3552eefbee2408fb701e7802056c808d1b247c816b5"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/block-05.png",
+      "bytes": 1986010,
+      "sha256": "21a9e7db115839bb8fc9097e1f725a48e8ad420ed896cbdfc7a61dae5fcb32b8"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/block-06.png",
+      "bytes": 2074722,
+      "sha256": "e6ae17815464ed7439dd0a0bc3b4294c4ee56381d40a1a48094b9ffe2bca54b0"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/block-07.png",
+      "bytes": 1880220,
+      "sha256": "d11f73f34aae4f69633a27e30b5b88c78e8bcc8b5874386703be5d1bcb657a22"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/block-08.png",
+      "bytes": 2062730,
+      "sha256": "85d91821b086dfcf9e24cc768bceb5d78d1c8a1fb28867a0a3a37205265302b6"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/block-09.png",
+      "bytes": 1708599,
+      "sha256": "e2d965eeb335dede4c80f29f60f178bdaf7ff2c600520dbac4023cee9a4f18d2"
+    },
+    {
+      "path": "02_MOCKUPS/04-palestras-workshops/page-consolidated-reference.png",
+      "bytes": 17056508,
+      "sha256": "31b6d821701b199f4d7356b5ab1a22d46dbae7519d4a92e0c6ba3e86f8fee457"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/block-01.png",
+      "bytes": 1830361,
+      "sha256": "e402e44e546320a0c5b550612de7505f86cd07db1df8c6a6f20f35cf32e211c6"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/block-02.png",
+      "bytes": 1863582,
+      "sha256": "ab96c9c1d75c95d2f47fe032b9d0216d1c1da8e96a66e96f817228e3e8972042"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/block-03.png",
+      "bytes": 2014878,
+      "sha256": "96dc97c0a09a23ede7e702b9f9e7aac872d4f07fb5022dd3f7998979d5bd6fce"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/block-04.png",
+      "bytes": 1841715,
+      "sha256": "d6968d5aecfbdbb036650c785de38f6d7b68359cf31dedb533785eafd6dcb1e7"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/block-05.png",
+      "bytes": 1988956,
+      "sha256": "67eb1028ab9e55b96c3837d3ef0637e446e48b89a6aa98e4fa2f01245c81a597"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/block-06.png",
+      "bytes": 2010264,
+      "sha256": "5b780130f7ba02bcd721f8b2759458524b66f3affd56261eedfa2a12f37302be"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/block-07.png",
+      "bytes": 2179970,
+      "sha256": "cf592560b21dbfdb330f3f6a01ecfc930a34f0df24c77d3d08d623de484f3209"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/block-08.png",
+      "bytes": 2123500,
+      "sha256": "0312beff811779184a065110e7237e793a26571c16b37272f47d82eac166954a"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/block-09.png",
+      "bytes": 1892720,
+      "sha256": "46ec722dbdb807aeeb39e897b3282c89f8a6fa188fba9958bbc31015c9dda47a"
+    },
+    {
+      "path": "02_MOCKUPS/05-organizacoes/page-consolidated-reference.png",
+      "bytes": 17593298,
+      "sha256": "66d59b04a0c543e2e6c4f05881c70a6e2006568792286755695d849021fb513e"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/block-01.png",
+      "bytes": 1994118,
+      "sha256": "8f8b5e2a7ade77d1ef5e883c7dc30fa8cb867c52fec3917621c1f9ee7ab5e65a"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/block-02.png",
+      "bytes": 1906109,
+      "sha256": "780c1bd79ff4938080034d490004381c0f99d82e4ceb0bd41a73ac968d25e007"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/block-03.png",
+      "bytes": 2084692,
+      "sha256": "f9e0c1d3b4c7ee10197832924f15a918ff41a5fd2f43b53158fdfd4b342f1cdb"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/block-04.png",
+      "bytes": 1944880,
+      "sha256": "a5e3fcfc500cde0a99244098eb23c4a129f0b25e6d266f765c878bbeadc30c1f"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/block-05.png",
+      "bytes": 1987059,
+      "sha256": "fe197aa68228f8ee417784b457df8de9eb596f5ee70f32e1e77a077402fa38ed"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/block-06.png",
+      "bytes": 1925614,
+      "sha256": "d4c927f21306aae56e338bd1bbebbf66b3a528a983462863cb7eba7f4ccf476e"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/block-07.png",
+      "bytes": 1985862,
+      "sha256": "4968d0e7daf20f3d77edf98f9280597b1c8b860ea4768b5561ac30c200f155fc"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/block-08.png",
+      "bytes": 1980973,
+      "sha256": "74adc86d72c9483613f6d402bf6c8da2e7e5ec4220de8af6540f35f6ee748c81"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/block-09.png",
+      "bytes": 1904609,
+      "sha256": "6346bb36a60792079c49a7a470a9a40721d6bc88e84a8a5a81b812db27cc84a7"
+    },
+    {
+      "path": "02_MOCKUPS/06-pessoas/page-consolidated-reference.png",
+      "bytes": 17526517,
+      "sha256": "7dee0984ec7289aa9233f2a29b29a3a32fe428193fb1b28674cc4f2884a4dcdc"
+    },
+    {
+      "path": "02_MOCKUPS/07-ideias/block-01.png",
+      "bytes": 1971877,
+      "sha256": "e25b7daaa2ce63fb2b2ab5a9a49b446173ab43eb6fd24fbf23ac2dd16cf892d3"
+    },
+    {
+      "path": "02_MOCKUPS/07-ideias/block-02.png",
+      "bytes": 2159845,
+      "sha256": "084b3346e8351a8f90d3d28fcab45a48c3149f8c0e484c4af69e46a5e1da3b15"
+    },
+    {
+      "path": "02_MOCKUPS/07-ideias/block-03.png",
+      "bytes": 2157805,
+      "sha256": "07cd216c270c453a45f6eef4a0755727585d1c345a6d2bc4cab230c23d390773"
+    },
+    {
+      "path": "02_MOCKUPS/07-ideias/block-04.png",
+      "bytes": 2120992,
+      "sha256": "b9919ac0911736c92404860a264a074cce4d341d326e74b375d53e5b5c07f63d"
+    },
+    {
+      "path": "02_MOCKUPS/07-ideias/block-05.png",
+      "bytes": 2221556,
+      "sha256": "d8048da90b322bef0956a4b0218b86debdb704e5ec3fb84ce0806cfdceb731e3"
+    },
+    {
+      "path": "02_MOCKUPS/07-ideias/block-06.png",
+      "bytes": 2096755,
+      "sha256": "08055420aeb4b39a412d06f5592a8a4c4e938dc58a9c7efceeb61cfe6084e06c"
+    },
+    {
+      "path": "02_MOCKUPS/07-ideias/block-07.png",
+      "bytes": 2078580,
+      "sha256": "b6003d42199c94a63c0038a902a9ab5a978c93f01843ff6e99949167fce49d3a"
+    },
+    {
+      "path": "02_MOCKUPS/07-ideias/block-08.png",
+      "bytes": 2093615,
+      "sha256": "f06acfe8ecec1c24d53446f49d5f8a29e9178ee12bb56423e639248d1d28246a"
+    },
+    {
+      "path": "02_MOCKUPS/07-ideias/block-09.png",
+      "bytes": 2055220,
+      "sha256": "9e8da388af1ccad082b8b04125cd2473f579a95a7e97ba4cb5818b471745bb87"
+    },
+    {
+      "path": "02_MOCKUPS/08-contato/block-01.png",
+      "bytes": 1963954,
+      "sha256": "5cfa033adfc08f15a07147a74018356740c9833127abdae650b07ea13fd5543d"
+    },
+    {
+      "path": "02_MOCKUPS/08-contato/block-02.png",
+      "bytes": 1922605,
+      "sha256": "d49944ffbd4a0a6538d1b2cce77960f9401e26089ac2fd433ac971748d3fd978"
+    },
+    {
+      "path": "02_MOCKUPS/08-contato/block-03.png",
+      "bytes": 1675804,
+      "sha256": "e316977a74f8222022ec5094562f625a499de4c8a7f2d0a8154c61d6b506abd2"
+    },
+    {
+      "path": "02_MOCKUPS/08-contato/block-04.png",
+      "bytes": 1799960,
+      "sha256": "daf7084be744ea4ae982b7950011b8490c85a945d74affe3b185be68ba487eb0"
+    },
+    {
+      "path": "02_MOCKUPS/08-contato/block-05.png",
+      "bytes": 1695481,
+      "sha256": "bb162e8cbd6c68086e92b24bf265ee281f63539d6fd94e83fe9386392c8204ff"
+    },
+    {
+      "path": "02_MOCKUPS/08-contato/block-06.png",
+      "bytes": 1711032,
+      "sha256": "caeda9e3440f38a652c95bd08a2c0dcee834a928ef5a610b17cf263e68dc3450"
+    },
+    {
+      "path": "02_MOCKUPS/08-contato/page-consolidated-reference.png",
+      "bytes": 10638103,
+      "sha256": "b7f42881de3e04197ec59549972b472244f8131e0b3b6fa78e4ef06a937319d0"
+    },
+    {
+      "path": "04_DESIGN_SYSTEM/Visual_Constitution_Design_System_v0.1.md",
+      "bytes": 17263,
+      "sha256": "23ae730b8f92b8a5e83c60e39e05cee27492e86f8fc1dccc9cf9c71067c02765"
+    },
+    {
+      "path": "05_DEVELOPMENT/Development_Brief_v1.0.md",
+      "bytes": 18070,
+      "sha256": "58934e54ebe584ce739b778b96cf46eb1ce4b338bc172832509d8646e4770978"
+    },
+    {
+      "path": "05_DEVELOPMENT/Home_Mockup_Manifest_v1.0.md",
+      "bytes": 18509,
+      "sha256": "24a0e05951939a299cecd602bd00c7cc3f959db7b2e36e56c3705389b324c1e1"
+    },
+    {
+      "path": "05_DEVELOPMENT/Mockup_Manifest_Structural_v0.1.md",
+      "bytes": 14632,
+      "sha256": "9e1af061a43eabb80c80c56f0ba597113093e2de715a417a44e5c2e7c0ef2639"
+    },
+    {
+      "path": "05_DEVELOPMENT/SITE_MAP.md",
+      "bytes": 656,
+      "sha256": "f48f062e88088df8d335ef0142dd9948aa77da74dfed8255d0c069df1c8ad019"
+    },
+    {
+      "path": "06_STATUS/Checkpoint_A_Inventario_v1.0.md",
+      "bytes": 2277,
+      "sha256": "2a4d9bc6e599fe76d5ced441cdb867d51838bcceb1d9d8357a4b7fa3bf9ff96f"
+    },
+    {
+      "path": "06_STATUS/PENDING_ASSETS.md",
+      "bytes": 1738,
+      "sha256": "e98ea896687402064f851f43bef8f8b0548aeb07f5fe7ceff90a4ae775fb61a0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1443,
+      "sha256": "1c71f62d50aca7f864c00c786fe4b12bb9e6141a9aaa2c915f3deaf0139fa1ad"
+    }
+  ]
+}
