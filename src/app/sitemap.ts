@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
-
-const BASE = "https://juferreira.com.br"; // domínio final a confirmar
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return ["", "/ju", "/futuros-humanos", "/palestras", "/organizacoes", "/pessoas", "/ideias", "/contato"].map((p) => ({
-    url: `${BASE}${p}`,
+    url: `${SITE_URL}${p}`,
+    changeFrequency: "monthly",
+    priority: p === "" ? 1 : 0.8,
   }));
 }

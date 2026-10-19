@@ -1,5 +1,6 @@
 "use client";
 
+import { formToObject, postJson } from "@/lib/submit";
 import Link from "next/link";
 import { type FormEvent, useId, useState } from "react";
 import { ArrowIcon } from "@/components/ui/Button";
@@ -36,10 +37,18 @@ function Req() {
 export function OrgContactForm({ className = "" }: { className?: string }) {
   const id = useId();
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSent(true);
+    if (sending) return;
+    setSending(true);
+    setError(null);
+    const res = await postJson("/api/contato", { ...formToObject(e.currentTarget), origin: "organizacoes", rota: "organizacoes" });
+    setSending(false);
+    if (res.ok) setSent(true);
+    else setError(res.error ?? "Não conseguimos enviar agora. Tente novamente.");
   }
 
   if (sent) {
@@ -61,7 +70,7 @@ export function OrgContactForm({ className = "" }: { className?: string }) {
   }
 
   return (
-    <form onSubmit={onSubmit} className={`space-y-6 ${className}`} aria-describedby={`${id}-priv`}>
+    <form onSubmit={onSubmit} className={`relative space-y-6 ${className}`} aria-describedby={`${id}-priv`}>
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor={`${id}-nome`} className={label}>
@@ -165,6 +174,16 @@ export function OrgContactForm({ className = "" }: { className?: string }) {
         <textarea id={`${id}-prazo`} name="prazo" rows={2} aria-describedby={`${id}-prazo-h`} className={field} />
       </div>
 
+      <div className="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden>
+        <label>
+          Site <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+        </label>
+      </div>
+      {error && (
+        <p role="alert" className="rounded-[10px] border border-red-brand/40 bg-blush-100/60 px-4 py-3 text-[15px] text-red-deep">
+          {error}
+        </p>
+      )}
       <div className="flex flex-col gap-4 border-t border-ink-900/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
         <p id={`${id}-priv`} className="max-w-[300px] text-[12.5px] leading-snug text-ink-500">
           Seus dados serão usados apenas para responder a este contato. Veja a{" "}
@@ -175,9 +194,11 @@ export function OrgContactForm({ className = "" }: { className?: string }) {
         </p>
         <button
           type="submit"
-          className="group inline-flex min-h-[52px] items-center justify-between gap-4 rounded-full bg-red-brand px-7 text-[16px] text-cream-50 transition-colors hover:bg-red-deep"
+          disabled={sending}
+          aria-busy={sending}
+          className="jf-btn group inline-flex min-h-[52px] items-center justify-between gap-4 rounded-full bg-red-brand px-7 text-[16px] text-cream-50 transition-colors hover:bg-red-deep disabled:cursor-wait disabled:opacity-70"
         >
-          Vamos entender essa pergunta
+          {sending ? "Enviando…" : "Vamos entender essa pergunta"}
           <ArrowIcon />
         </button>
       </div>

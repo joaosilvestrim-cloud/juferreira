@@ -1,5 +1,6 @@
 "use client";
 
+import { postJson } from "@/lib/submit";
 import Link from "next/link";
 import { useId, useState, type FormEvent } from "react";
 import { ArrowIcon } from "@/components/ui/Button";
@@ -15,8 +16,9 @@ export function NewsletterForm({ className = "" }: { className?: string }) {
   const [consent, setConsent] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     if (!form.checkValidity() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
@@ -28,7 +30,19 @@ export function NewsletterForm({ className = "" }: { className?: string }) {
       return;
     }
     setError(null);
-    setDone(true);
+    if (sending) return;
+    setSending(true);
+    const consentText = form.querySelector(`label[for="${id}-consent"]`)?.textContent?.trim() ?? "consentimento newsletter";
+    const res = await postJson("/api/newsletter", {
+      email: email.trim(),
+      consent: true,
+      consentText,
+      source: "ideias",
+      website: (form.elements.namedItem("website") as HTMLInputElement | null)?.value ?? "",
+    });
+    setSending(false);
+    if (res.ok) setDone(true);
+    else setError(res.error ?? "Não conseguimos registrar agora. Tente novamente.");
   }
 
   if (done) {
@@ -36,14 +50,14 @@ export function NewsletterForm({ className = "" }: { className?: string }) {
       <div className={`rounded-[var(--jf-radius-sm)] border border-red-brand/30 bg-cream-50 p-6 ${className}`} role="status" aria-live="polite">
         <p className="font-serif text-[22px] leading-snug">Obrigada.</p>
         <p className="mt-2 text-[15px] text-ink-700">
-          Assim que o envio estiver ativo, Uma Terça-feira Qualquer chega em <strong className="font-medium">{email.trim()}</strong>.
+          Inscrição registrada. Uma Terça-feira Qualquer vai chegar em <strong className="font-medium">{email.trim()}</strong>.
         </p>
       </div>
     );
   }
 
   return (
-    <form noValidate onSubmit={onSubmit} className={className} aria-describedby={`${id}-micro`}>
+    <form noValidate onSubmit={onSubmit} className={`relative ${className}`} aria-describedby={`${id}-micro`}>
       <label htmlFor={`${id}-email`} className="sr-only">
         Seu melhor e-mail
       </label>
@@ -84,11 +98,16 @@ export function NewsletterForm({ className = "" }: { className?: string }) {
           {error}
         </p>
       )}
+      <div className="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden>
+        <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+      </div>
       <button
         type="submit"
-        className="group mt-5 inline-flex min-h-[52px] w-full items-center justify-between gap-4 rounded-full bg-red-brand px-7 text-left text-[16px] text-cream-50 transition-colors duration-300 hover:bg-red-deep"
+        disabled={sending}
+        aria-busy={sending}
+        className="jf-btn group mt-5 disabled:cursor-wait disabled:opacity-70 inline-flex min-h-[52px] w-full items-center justify-between gap-4 rounded-full bg-red-brand px-7 text-left text-[16px] text-cream-50 transition-colors duration-300 hover:bg-red-deep"
       >
-        <span>Assine Uma Terça-feira Qualquer</span>
+        <span>{sending ? "Enviando…" : "Assine Uma Terça-feira Qualquer"}</span>
         <ArrowIcon />
       </button>
       <p id={`${id}-micro`} className="mt-3 text-center text-[13px] text-ink-500">

@@ -1,5 +1,6 @@
 "use client";
 
+import { formToObject, postJson } from "@/lib/submit";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useId, useRef, useState, type FormEvent, type ReactNode } from "react";
@@ -233,6 +234,8 @@ const COMMON: Record<"nome" | "organizacao", Field> = {
 function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: string | null }) {
   const [values, setValues] = useState<Values>({});
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const confirmRef = useRef<HTMLHeadingElement>(null);
   const uid = useId();
 
@@ -251,11 +254,16 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
     window.history.replaceState(null, "", `/contato?rota=${id}#formulario`);
   };
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // TODO(backend): enviar `effective` + rota para o destino oficial (e-mail/CRM) quando existir.
-    // Por enquanto nada é transmitido: apenas exibimos o estado de confirmação.
-    setSubmitted(true);
+    if (sending) return;
+    setSending(true);
+    setError(null);
+    // só os campos visíveis da rota atual + rota escolhida
+    const res = await postJson("/api/contato", { ...formToObject(e.currentTarget), origin: "contato", rota: route ?? "" });
+    setSending(false);
+    if (res.ok) setSubmitted(true);
+    else setError(res.error ?? "Não conseguimos enviar agora. Tente novamente.");
   };
 
   if (submitted) {
@@ -313,7 +321,7 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
     <form
       onSubmit={onSubmit}
       aria-label="Formulário de contato"
-      className="rounded-[14px] border border-ink-900/10 bg-cream-50/90 p-6 shadow-[0_20px_60px_-40px_rgba(24,20,17,0.5)] sm:p-9"
+      className="relative rounded-[14px] border border-ink-900/10 bg-cream-50/90 p-6 shadow-[0_20px_60px_-40px_rgba(24,20,17,0.5)] sm:p-9"
     >
       {/* Seletor de rota (alimentado também pelos cards do Bloco 2 e atalhos do Bloco 4) */}
       <fieldset>
@@ -405,12 +413,27 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
         </div>
       )}
 
+      {/* honeypot anti-spam: invisível para pessoas */}
+      <div className="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden>
+        <label>
+          Site <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+        </label>
+      </div>
+
+      {error && (
+        <p role="alert" className="mt-8 rounded-[10px] border border-red-brand/40 bg-blush-100/60 px-4 py-3 text-[15px] text-red-deep">
+          {error}
+        </p>
+      )}
+
       <div className="mt-9 flex flex-col gap-5 border-t border-ink-900/10 pt-8 md:flex-row md:items-center md:gap-8">
         <button
           type="submit"
-          className="group inline-flex min-h-[56px] shrink-0 items-center justify-between gap-5 rounded-full bg-red-brand px-8 text-[17px] text-cream-50 transition-colors duration-300 hover:bg-red-deep"
+          disabled={sending}
+          aria-busy={sending}
+          className="jf-btn group inline-flex min-h-[56px] shrink-0 items-center justify-between gap-5 rounded-full bg-red-brand px-8 text-[17px] text-cream-50 transition-colors duration-300 hover:bg-red-deep disabled:cursor-wait disabled:opacity-70"
         >
-          Continuar a conversa <ArrowIcon />
+          {sending ? "Enviando…" : "Continuar a conversa"} <ArrowIcon />
         </button>
         <div className="text-[14px] leading-relaxed text-ink-700">
           <p className="font-medium">Revise apenas se quiser. Não precisa estar perfeito.</p>

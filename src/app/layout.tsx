@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Caveat, Cormorant_Garamond, Jost } from "next/font/google";
 import { SiteFooter } from "@/components/global/SiteFooter";
+import { Analytics } from "@vercel/analytics/next";
 import { Motion } from "@/components/global/Motion";
 import { SiteHeader } from "@/components/global/SiteHeader";
+import { EXTERNAL, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 // FONTES PROVISÓRIAS (OFL, Google Fonts) — trocar pelas famílias licenciadas definitivas.
@@ -24,7 +26,8 @@ const hand = Caveat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://juferreira.com.br"),
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: "./" },
   title: {
     default: "Ju Ferreira — E se pudesse ser diferente?",
     template: "%s · Ju Ferreira",
@@ -32,6 +35,7 @@ export const metadata: Metadata = {
   description:
     "Futuros, tecnologia e transformação humana para quem não quer apenas assistir ao que vem depois.",
   openGraph: { locale: "pt_BR", type: "website", siteName: "Ju Ferreira" },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -63,6 +67,24 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <SiteFooter />
         <Motion />
+        <Analytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Ju Ferreira",
+              url: SITE_URL,
+              image: `${SITE_URL}/images/ju/retrato-biblioteca.webp`,
+              jobTitle: "Futurista humanista e palestrante",
+              description:
+                "Ju Ferreira investiga como pessoas e organizações podem ampliar sua capacidade de enxergar possibilidades, fazer escolhas mais conscientes e construir futuros.",
+              knowsAbout: ["Futuros", "Tecnologia e humanidade", "Estratégia", "Liderança", "Transformação humana"],
+              sameAs: [EXTERNAL.linkedin, EXTERNAL.instagram].filter(Boolean),
+            }),
+          }}
+        />
       </body>
     </html>
   );

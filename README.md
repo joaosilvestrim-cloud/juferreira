@@ -12,6 +12,25 @@ npm run build && npm start
 
 QA visual (usa o Microsoft Edge instalado): `node scripts/shots.mjs` → `screenshots/desktop|mobile/*.png`.
 
+## Banco de dados (Supabase / Postgres)
+
+Os formulários (Contato, Para Organizações, newsletter em Ideias) gravam via `/api/contato` e `/api/newsletter`
+nas tabelas `contact_submissions` e `newsletter_subscribers` (esquema em `db/schema.sql`, RLS ligado sem políticas).
+
+Variáveis de ambiente (local em `.env.local`, na Vercel em *Settings → Environment Variables*):
+
+| Variável | Valor |
+|---|---|
+| `PGHOST` | `aws-1-sa-east-1.pooler.supabase.com` (pooler — o host `db.*` é só IPv6 e não funciona na Vercel) |
+| `PGPORT` | `6543` |
+| `PGDATABASE` | `postgres` |
+| `PGUSER` | `postgres.<ref-do-projeto>` |
+| `PGPASSWORD` | senha do banco |
+| `IP_HASH_SALT` | texto aleatório (opcional) |
+| `NEXT_PUBLIC_SITE_URL` | URL pública (ex.: domínio próprio) |
+
+Scripts: `node --env-file=.env.local scripts/db-migrate.mjs` (aplica o esquema), `scripts/db-peek.mjs` (lista registros).
+
 ## Estrutura
 
 - `docs/` — pacote canônico (Site Master, copies, Design System, briefs). **A copy `.md` é a fonte do texto.**
