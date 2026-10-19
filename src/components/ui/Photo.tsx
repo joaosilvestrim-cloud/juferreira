@@ -26,6 +26,11 @@ export function Photo({
   height?: number;
 }) {
   const placeholder = src.includes("/images/ph/");
+  // Fotos reais aparecem em colunas altas com object-cover (a imagem é renderizada bem maior que a coluna):
+  // pedir a versão de largura total evita servir uma variante pequena ampliada (borrada).
+  const real = src.startsWith("/images/ju/");
+  if (real) sizes = "(min-width: 1024px) 100vw, 200vw";
+  const quality = real ? 90 : 75;
   if (!fill && width && height) {
     return (
       <Image
@@ -34,6 +39,7 @@ export function Photo({
         width={width}
         height={height}
         sizes={sizes}
+        quality={quality}
         priority={priority}
         className={`h-auto w-full object-cover ${imgClassName} ${className}`}
         data-placeholder={placeholder ? "foto" : undefined}
@@ -45,7 +51,7 @@ export function Photo({
       className={`${/\babsolute\b/.test(className) ? "" : "relative"} overflow-hidden ${className}`}
       data-placeholder={placeholder ? "foto" : undefined}
     >
-      <Image src={src} alt={alt} fill sizes={sizes} priority={priority} className={`object-cover ${imgClassName}`} />
+      <Image src={src} alt={alt} fill sizes={sizes} quality={quality} priority={priority} className={`object-cover ${imgClassName}`} />
     </div>
   );
 }
