@@ -25,7 +25,6 @@ export function Photo({
 }) {
   const placeholder = src.includes("/images/ph/");
   const generated = src.startsWith("/images/ensaio/");
-  const scene = generated && /palco|palestras|reuniao|conversa|equipe|lideranca|quadro|maternidade/.test(src);
   const quality = placeholder ? 75 : 90;
   if (!fill && width && height) {
     return (
@@ -51,11 +50,6 @@ export function Photo({
       data-photo-origin={generated ? "generated-ai" : undefined}
     >
       <Image src={src} alt={alt} fill sizes={sizes} quality={quality} priority={priority} className={`object-cover ${imgClassName}`} style={{ objectPosition: photoPosition(src) }} />
-      {scene && (
-        <span className="absolute bottom-3 right-3 z-10 rounded-sm bg-ink-900/75 px-2 py-1 text-[10px] leading-tight tracking-wide text-cream-50">
-          Cena ilustrativa
-        </span>
-      )}
     </div>
   );
 }

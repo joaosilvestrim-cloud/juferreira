@@ -18,7 +18,7 @@ O acervo legado mistura rostos dos mockups com a Juliana das referências; vári
 
 Antes da atualização, 12 posições desktop tinham altura maior que 1,9 vezes a largura. Exemplos medidos: Home / Para Pessoas 547×1388; Palestras / Contratação 605×1985; Ju / Encerramento 576×1515. As colunas receberam proporções limitadas, os cards panorâmicos foram ampliados e os retratos receberam pontos de foco. Anotações e traços que cobriam o rosto foram reposicionados. Não restam fotografias do ensaio com proporção superior a 1,9 nessas posições em desktop.
 
-O componente Photo agora registra a origem do ensaio, respeita o tamanho solicitado por cada bloco e identifica cenas profissionais/familiares como ilustrativas. As descrições foram corrigidas em conjunto com as imagens. O rodapé informa o uso de IA. As imagens de compartilhamento também foram atualizadas.
+O componente Photo registra a origem do ensaio nos metadados e respeita o tamanho solicitado por cada bloco. As descrições foram corrigidas em conjunto com as imagens. As imagens de compartilhamento também foram atualizadas. A pedido do usuário, a apresentação visual não exibe selos sobre as fotografias ou observação adicional no rodapé; a origem permanece documentada neste catálogo.
 
 ## Seleção por página
 
