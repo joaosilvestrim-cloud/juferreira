@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
@@ -6,6 +5,7 @@ import { renderIssue } from "@/lib/newsletter";
 import { deleteIssue } from "../../content-actions";
 import { IssueEditor, IssueSend } from "../IssueForms";
 import { ConfirmSubmit } from "../../_ui/ConfirmSubmit";
+import { PageHeader } from "../../_ui/PageHeader";
 
 export default async function IssuePage({ params }: { params: Promise<{ id: string }> }) {
   await requireAdminPage();
@@ -22,11 +22,8 @@ export default async function IssuePage({ params }: { params: Promise<{ id: stri
   const locked = issue && issue.status !== "rascunho";
 
   return (
-    <div className="mx-auto max-w-[1200px] px-5 py-10 sm:px-8">
-      <Link href="/admin/newsletter" className="text-[14px] text-ink-500 hover:underline">
-        ← Newsletter
-      </Link>
-      <h1 className="jf-display mt-3 text-[40px]">{isNew ? "Nova edição" : locked ? "Edição enviada" : "Editar edição"}</h1>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader back={{ href: "/admin/newsletter", label: "Newsletter" }} title={isNew ? "Nova edição" : locked ? "Edição enviada" : "Editar edição"} />
 
       <div className="mt-8 grid gap-10 lg:grid-cols-2">
         <div>

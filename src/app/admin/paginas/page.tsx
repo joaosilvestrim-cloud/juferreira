@@ -2,6 +2,7 @@ import Link from "next/link";
 import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
 import { PAGES, REGISTRY, sectionLabel } from "@/lib/page-registry";
+import { PageHeader } from "../_ui/PageHeader";
 
 type Search = Promise<Record<string, string | string[] | undefined>>;
 
@@ -16,11 +17,8 @@ export default async function PagesAdmin({ searchParams }: { searchParams: Searc
     : [];
 
   return (
-    <div className="mx-auto max-w-[1000px] px-5 py-10 sm:px-8">
-      <h1 className="jf-display text-[44px]">Páginas</h1>
-      <p className="mt-1 max-w-[680px] text-[15px] text-ink-500">
-        Todos os textos e fotos das 8 páginas. Edite qualquer frase ou troque qualquer imagem; dá sempre para voltar ao original.
-      </p>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader title="Páginas" description="Todos os textos e fotos das 8 páginas. Edite qualquer frase, troque fotos ou oculte blocos inteiros; dá sempre para voltar ao original pelo histórico." />
 
       <form className="mt-8 flex gap-3">
         <input

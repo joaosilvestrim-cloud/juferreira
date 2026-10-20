@@ -6,6 +6,7 @@ import { MediaPlayer } from "@/components/ui/MediaPlayer";
 import { deleteMediaItem, toggleMediaVisible } from "../more-actions";
 import { ConfirmSubmit } from "../_ui/ConfirmSubmit";
 import { MediaForm } from "./MediaForm";
+import { AddPanel } from "../_ui/AddPanel";
 
 type Row = {
   id: string;
@@ -45,10 +46,9 @@ export default async function VideosAdmin() {
         ))}
       </ul>
 
-      <section className="mt-8 rounded-[14px] border border-dashed border-ink-900/25 p-5">
-        <h2 className="mb-4 text-[17px] font-medium">Adicionar vídeo ou áudio</h2>
+      <AddPanel label="Adicionar vídeo ou áudio" defaultOpen={rows.length === 0}>
         <MediaForm d={{ placements: [] }} provider={provider} />
-      </section>
+      </AddPanel>
 
       {rows.length > 0 && (
         <section className="mt-12">

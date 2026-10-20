@@ -4,6 +4,8 @@ import { db } from "@/lib/db";
 import { deleteProof } from "../content-actions";
 import { ConfirmSubmit } from "../_ui/ConfirmSubmit";
 import { ProofForm, type ProofData } from "./ProofForm";
+import { PageHeader } from "../_ui/PageHeader";
+import { AddPanel } from "../_ui/AddPanel";
 
 const KINDS = [
   { id: "depoimento", title: "Depoimentos", hint: "2 ou 3 depoimentos verificáveis (contratante, liderança, participante)." },
@@ -15,11 +17,8 @@ export default async function ProofAdmin() {
   await requireAdminPage();
   const { rows } = await db.query("select * from public.proof_items order by kind, sort, id");
   return (
-    <div className="mx-auto max-w-[1000px] px-5 py-10 sm:px-8">
-      <h1 className="jf-display text-[44px]">Provas</h1>
-      <p className="mt-1 max-w-[680px] text-[15px] text-ink-500">
-        Seção “Ouça e veja a Ju” da página Palestras. Depoimentos, fotos de palco e organizações. Vídeos agora ficam em “Vídeos e áudios”. Só aparece no site o que for cadastrado aqui; sem itens, a seção fica oculta.
-      </p>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader title="Provas" description="Seção “Ouça e veja a Ju” da página Palestras: depoimentos, fotos de palco e organizações. Vídeos ficam em “Vídeos e áudios”. Só aparece no site o que for cadastrado aqui; sem itens, a seção fica oculta." />
       {KINDS.map((k) => {
         const list = rows.filter((r) => r.kind === k.id);
         return (
@@ -51,10 +50,9 @@ export default async function ProofAdmin() {
                 );
               })}
             </ul>
-            <div className="mt-5 rounded-[14px] border border-dashed border-ink-900/25 p-5">
-              <p className="mb-4 text-[15px] font-medium">Adicionar em “{k.title}”</p>
+            <AddPanel label={`Adicionar em “${k.title}”`}>
               <ProofForm d={{ kind: k.id }} />
-            </div>
+            </AddPanel>
           </section>
         );
       })}

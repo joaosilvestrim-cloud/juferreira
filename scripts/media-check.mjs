@@ -4,6 +4,18 @@ import { chromium } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import pg from "pg";
 
+// abre o painel "+ Adicionar …" (recolhido quando já há itens) e devolve o container
+async function addPanel(p, label) {
+  const panel = p.locator(`[data-add-panel="${label}"]`);
+  // o clique pode chegar antes da página terminar de carregar os scripts: tenta até o formulário abrir
+  for (let i = 0; i < 10 && !(await panel.locator("form").count()); i++) {
+    const btn = p.getByRole("button", { name: label, exact: true });
+    if (await btn.count()) await btn.first().click();
+    await p.waitForTimeout(400);
+  }
+  return panel;
+}
+
 const B = process.env.BASE_URL ?? "http://localhost:3000";
 const pwd = readFileSync(".env.local", "utf8").match(/^ADMIN_PASSWORD=(.*)$/m)[1];
 const reg = JSON.parse(readFileSync("src/content/editable-registry.json", "utf8"));
@@ -25,7 +37,7 @@ try {
 
   // 1. vídeo do YouTube em todas as páginas
   await page.goto(`${B}/admin/videos`);
-  const add = page.locator("section.border-dashed");
+  let add = await addPanel(page, "Adicionar vídeo ou áudio");
   await add.locator('input[name="url"]').fill("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
   await add.locator('select[name="format"]').selectOption("entrevista");
   await add.locator('input[name="title"]').fill(`${T} entrevista`);
@@ -43,6 +55,7 @@ try {
 
   // 2. podcast do Spotify só em Ideias
   await page.goto(`${B}/admin/videos`);
+  add = await addPanel(page, "Adicionar vídeo ou áudio");
   await add.locator('input[name="url"]').fill("https://open.spotify.com/episode/4rOoJ6Egrf8K2IrywzwOMk");
   await add.locator('select[name="format"]').selectOption("podcast");
   await add.locator('input[name="title"]').fill(`${T} podcast`);

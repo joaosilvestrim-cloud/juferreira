@@ -70,9 +70,49 @@ for (const file of walk(SECTIONS)) {
     }
     return name ?? "dados";
   };
+  // papel do texto na página (para o painel mostrar "Título", "Botão"…) e grupo (frase dividida em partes)
+  const INLINE = new Set(["Em", "em", "strong", "b", "i", "span", "br", "a"]);
+  const TAG_ROLE = [
+    [/^(h1|h2|Display)$/, "Título"],
+    [/^(h3|h4|Title)$/, "Subtítulo"],
+    [/^(Lead)$/, "Frase de destaque"],
+    [/^(ButtonLink|Link|a|button)$/, "Botão ou link"],
+    [/^(Eyebrow|BrushLabel)$/, "Rótulo"],
+    [/^(HandNote|StickyNote)$/, "Nota manuscrita"],
+    [/^(QuoteCard|blockquote)$/, "Citação"],
+    [/^(figcaption)$/, "Legenda"],
+    [/^(dt)$/, "Termo"],
+    [/^(li|dd)$/, "Item de lista"],
+    [/^(label)$/, "Rótulo de campo"],
+    [/^(p|Body|div|span)$/, "Texto"],
+  ];
+  const PROP_ROLE = { alt: "Descrição da imagem", label: "Nome do bloco (leitores de tela)", "aria-label": "Nome (leitores de tela)", placeholder: "Texto de exemplo do campo", title: "Título", t: "Título", name: "Título", q: "Pergunta", cta: "Botão ou link", s: "Texto", d: "Texto", desc: "Texto", body: "Texto", tag: "Rótulo" };
+  const tagName = (el) => (ts.isJsxElement(el) ? el.openingElement.tagName : el.tagName).getText();
+  const roleOf = (node) => {
+    let n = node.parent;
+    let em = false;
+    while (n && !ts.isSourceFile(n)) {
+      if (ts.isJsxAttribute(n)) return { role: PROP_ROLE[n.name.getText()] ?? "Texto", group: null, em };
+      if (ts.isPropertyAssignment(n) && n.name && (ts.isIdentifier(n.name) || ts.isStringLiteral(n.name)) && !ts.isJsxExpression(n.parent)) {
+        const r = PROP_ROLE[n.name.text];
+        if (r) return { role: r, group: null, em };
+      }
+      if (ts.isJsxElement(n) || ts.isJsxSelfClosingElement(n)) {
+        const t = tagName(n);
+        if (t === "Em" || t === "em" || t === "strong") em = true;
+        if (!INLINE.has(t) || t === "a") {
+          const r = TAG_ROLE.find(([re]) => re.test(t));
+          return { role: r ? r[1] : "Texto", group: `${rel}:${n.getStart()}`, em };
+        }
+      }
+      n = n.parent;
+    }
+    return { role: "Texto", group: null, em };
+  };
   const register = (node, kind, text) => {
     const key = keyFor(text);
-    registry.push({ key, page, block: blockOf(node), kind, text, file: rel, line: sf.getLineAndCharacterOfPosition(node.getStart()).line + 1 });
+    const r = kind === "image" ? { role: "Imagem", group: null, em: false } : roleOf(node);
+    registry.push({ key, page, block: blockOf(node), kind, text, file: rel, line: sf.getLineAndCharacterOfPosition(node.getStart()).line + 1, ...r });
     total++;
     return key;
   };
@@ -86,7 +126,9 @@ for (const file of walk(SECTIONS)) {
       if (k && v && ts.isStringLiteral(k) && ts.isStringLiteral(v)) {
         const text = v.text;
         seen.set(text, (seen.get(text) ?? 0) + 1);
-        registry.push({ key: k.text, page, block: blockOf(node), kind: node.expression.text === "img" ? "image" : "text", text, file: rel, line: sf.getLineAndCharacterOfPosition(node.getStart()).line + 1 });
+        const kind = node.expression.text === "img" ? "image" : "text";
+        const r = kind === "image" ? { role: "Imagem", group: null, em: false } : roleOf(node);
+        registry.push({ key: k.text, page, block: blockOf(node), kind, text, file: rel, line: sf.getLineAndCharacterOfPosition(node.getStart()).line + 1, ...r });
         total++;
       }
       return;

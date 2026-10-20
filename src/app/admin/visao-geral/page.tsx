@@ -71,7 +71,7 @@ export default async function Overview() {
       <h1 className="jf-display text-[44px]">Olá{user.name ? `, ${user.name.split(" ")[0]}` : ""}.</h1>
       <p className="mt-1 text-[15px] text-ink-500">Como o site está agora e o que ainda falta.</p>
 
-      <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         {[
           { n: newContacts, t: "Contatos novos", sub: `${totalContacts} no total`, href: "/admin" },
           { n: subs, t: "Inscritos na newsletter", sub: `${sent} edição(ões) enviada(s)`, href: "/admin/newsletter" },

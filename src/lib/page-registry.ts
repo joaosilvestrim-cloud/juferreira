@@ -10,6 +10,12 @@ export type RegistryItem = {
   text: string;
   file: string;
   line: number;
+  /** Papel na página (Título, Texto, Botão ou link, Descrição da imagem…), gerado pelo codemod. */
+  role?: string;
+  /** Partes de uma mesma frase/título compartilham o grupo. */
+  group?: string | null;
+  /** Parte em destaque (itálico/vermelho) dentro da frase. */
+  em?: boolean;
 };
 
 export const REGISTRY = registry as RegistryItem[];

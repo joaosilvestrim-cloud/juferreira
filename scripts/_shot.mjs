@@ -1,0 +1,11 @@
+import { chromium } from "@playwright/test";
+import { readFileSync } from "node:fs";
+const B = "http://localhost:3210";
+const pwd = readFileSync(".env.local", "utf8").match(/^ADMIN_PASSWORD=(.*)$/m)[1];
+const [path, out, w = "1440", sel] = process.argv.slice(2);
+const b = await chromium.launch({ channel: "msedge" });
+const p = await b.newPage({ viewport: { width: Number(w), height: 1000 } });
+await p.goto(`${B}/admin/login`); await p.fill("#password", pwd); await p.click("button[type=submit]"); await p.waitForURL(`${B}/admin`);
+await p.goto(B + path, { waitUntil: "networkidle" });
+if (sel) await p.locator(sel).first().screenshot({ path: out }); else await p.screenshot({ path: out, fullPage: true });
+await b.close();

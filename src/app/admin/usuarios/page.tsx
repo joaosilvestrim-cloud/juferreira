@@ -3,6 +3,8 @@ import { db } from "@/lib/db";
 import { deleteUser, toggleUser } from "../content-actions";
 import { UserForm } from "./UserForm";
 import { ConfirmSubmit } from "../_ui/ConfirmSubmit";
+import { PageHeader } from "../_ui/PageHeader";
+import { AddPanel } from "../_ui/AddPanel";
 
 export default async function UsersPage() {
   const me = await requireAdminPage();
@@ -11,12 +13,16 @@ export default async function UsersPage() {
   );
   const fmt = (d: Date) => new Intl.DateTimeFormat("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" }).format(d);
   return (
-    <div className="mx-auto max-w-[900px] px-5 py-10 sm:px-8">
-      <h1 className="jf-display text-[44px]">Usuários</h1>
-      <p className="mt-1 max-w-[640px] text-[15px] text-ink-500">
-        Quem pode entrar no painel. Cada pessoa entra com o próprio e-mail e senha. A senha mestra continua funcionando para
-        recuperação (login sem e-mail). Você está como <strong className="text-ink-900">{me.email}</strong>.
-      </p>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader
+        title="Usuários"
+        description={
+          <>
+            Quem pode entrar no painel. Cada pessoa entra com o próprio e-mail e senha. A senha mestra continua funcionando para recuperação (login sem
+            e-mail). Você está como <strong className="text-ink-900">{me.email}</strong>.
+          </>
+        }
+      />
 
       <ul className="mt-8 space-y-3">
         {rows.map((u) => (
@@ -53,10 +59,9 @@ export default async function UsersPage() {
         ))}
       </ul>
 
-      <div className="mt-8 rounded-[14px] border border-dashed border-ink-900/25 p-6">
-        <p className="mb-4 font-serif text-[22px]">Novo usuário</p>
+      <AddPanel label="Novo usuário">
         <UserForm u={{}} />
-      </div>
+      </AddPanel>
     </div>
   );
 }

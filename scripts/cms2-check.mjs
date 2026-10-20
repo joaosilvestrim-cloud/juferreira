@@ -3,6 +3,18 @@ import { chromium } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import pg from "pg";
 
+// abre o painel "+ Adicionar …" (recolhido quando já há itens) e devolve o container
+async function addPanel(p, label) {
+  const panel = p.locator(`[data-add-panel="${label}"]`);
+  // o clique pode chegar antes da página terminar de carregar os scripts: tenta até o formulário abrir
+  for (let i = 0; i < 10 && !(await panel.locator("form").count()); i++) {
+    const btn = p.getByRole("button", { name: label, exact: true });
+    if (await btn.count()) await btn.first().click();
+    await p.waitForTimeout(400);
+  }
+  return panel;
+}
+
 const B = process.env.BASE_URL ?? "http://localhost:3000";
 const env = readFileSync(".env.local", "utf8");
 const pwd = env.match(/^ADMIN_PASSWORD=(.*)$/m)[1];
@@ -58,14 +70,14 @@ try {
 
   // provas
   await page.goto(`${B}/admin/provas`);
-  const dep = page.locator("div.border-dashed", { hasText: "Adicionar em “Depoimentos”" });
+  const dep = await addPanel(page, "Adicionar em “Depoimentos”");
   await dep.locator('textarea[name="quote"]').fill("TESTE PAINEL depoimento verificável.");
   await dep.locator('input[name="title"]').fill("Pessoa Teste");
   await dep.locator('input[name="role"]').fill("Diretora — Empresa Teste");
   await dep.getByRole("button", { name: "Adicionar" }).click();
   await dep.getByText(/Palestras já foi atualizada/).waitFor();
   await page.goto(`${B}/admin/videos`);
-  const vid = page.locator("section.border-dashed");
+  const vid = await addPanel(page, "Adicionar vídeo ou áudio");
   await vid.locator('input[name="url"]').fill("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
   await vid.locator('input[name="title"]').fill("TESTE PAINEL vídeo");
   await vid.locator('input[name="placements"][value="palestras"]').check();
@@ -91,7 +103,7 @@ try {
 
   // usuários
   await page.goto(`${B}/admin/usuarios`);
-  const nu = page.locator("div.border-dashed", { hasText: "Novo usuário" });
+  const nu = await addPanel(page, "Novo usuário");
   await nu.locator('input[name="name"]').fill("Teste Painel");
   await nu.locator('input[name="email"]').fill("teste-painel@juferreira.com.br");
   await nu.locator('input[name="password"]').fill("senha-de-teste-123");
@@ -152,6 +164,10 @@ try {
   await db.query("delete from public.content_overrides where key like 'home/%' and value like '/midia/%' and updated_at > now() - interval '1 hour'");
   await db.query("delete from public.proof_items where title in ('Pessoa Teste','TESTE PAINEL vídeo')");
   await db.query("delete from public.media_items where title like 'TESTE PAINEL%'");
+  // fotos de teste que o painel guardou ao trocar a imagem (ficam sem uso depois da restauração)
+  await db.query(
+    "delete from public.media m where m.filename = 'palco.webp' and m.created_at > now() - interval '2 hours' and not exists (select 1 from public.content_overrides o where o.value = '/midia/' || m.id)",
+  );
   await db.query("delete from public.page_seo where path = '/ju' and coalesce(title,'') in ('', 'TESTE PAINEL título SEO')");
   await db.query("delete from public.admin_users where email = 'teste-painel@juferreira.com.br'");
   await db.end();

@@ -3,6 +3,7 @@ import { mediaUrl, SEO_PAGES } from "@/lib/content";
 import { db } from "@/lib/db";
 import { SITE_URL } from "@/lib/site";
 import { SeoForm } from "./SeoForm";
+import { PageHeader } from "../_ui/PageHeader";
 
 export default async function SeoPage() {
   await requireAdminPage();
@@ -11,11 +12,8 @@ export default async function SeoPage() {
   );
   const byPath = Object.fromEntries(rows.map((r) => [r.path, r]));
   return (
-    <div className="mx-auto max-w-[900px] px-5 py-10 sm:px-8">
-      <h1 className="jf-display text-[44px]">SEO</h1>
-      <p className="mt-1 max-w-[640px] text-[15px] text-ink-500">
-        Como cada página aparece no Google e quando é compartilhada (LinkedIn, WhatsApp). Clique numa página para editar título, descrição e imagem de compartilhamento. Campos vazios usam o padrão do site.
-      </p>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader title="SEO" description="Como cada página aparece no Google e quando é compartilhada (LinkedIn, WhatsApp). Clique numa página para editar título, descrição e imagem de compartilhamento. Campos vazios usam o padrão do site." />
       <div className="mt-8 space-y-4">
         {SEO_PAGES.map((p) => {
           const s = byPath[p.path];

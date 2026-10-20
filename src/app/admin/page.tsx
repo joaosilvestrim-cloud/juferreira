@@ -5,6 +5,7 @@ import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
 import { setContactStatus, setNewsletterStatus } from "./actions";
 import { StatusSelect } from "./StatusSelect";
+import { EmptyState, PageHeader } from "./_ui/PageHeader";
 
 type Search = Promise<Record<string, string | string[] | undefined>>;
 const PAGE_SIZE = 40;
@@ -61,22 +62,21 @@ async function Dashboard({ searchParams }: { searchParams: Search }) {
   };
 
   return (
-    <div className="mx-auto max-w-[1200px] px-5 py-8 sm:px-8 sm:py-12">
-      <header>
-        <h1 className="jf-display text-[44px]">Conversas</h1>
-        <p className="mt-1 text-[15px] text-ink-500">Contatos recebidos pelo site e inscritos da newsletter.</p>
-      </header>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader title="Conversas" description="Contatos recebidos pelo site e inscritos da newsletter. Clique num contato para ver a mensagem e marcar o andamento." />
 
       <dl className="mt-8 grid gap-4 sm:grid-cols-3">
-        {[
-          ["Contatos novos", c.novos],
-          ["Contatos no total", c.contatos],
-          ["Inscritos ativos", c.inscritos],
-        ].map(([k, v]) => (
-          <div key={k} className="rounded-[14px] border border-ink-900/10 bg-cream-50 p-5">
-            <dt className="text-[13px] uppercase tracking-[0.14em] text-ink-500">{k}</dt>
-            <dd className="mt-1 font-sans text-[38px] font-light tabular-nums text-red-brand">{v}</dd>
-          </div>
+        {(
+          [
+            ["Contatos novos", c.novos, "/admin?tab=contatos&status=novo"],
+            ["Contatos no total", c.contatos, "/admin?tab=contatos"],
+            ["Inscritos ativos", c.inscritos, "/admin?tab=newsletter&status=ativo"],
+          ] as const
+        ).map(([k, v, href]) => (
+          <Link key={k} href={href} className="block rounded-[14px] border border-ink-900/10 bg-cream-50 p-5 transition hover:border-red-brand">
+            <dt className="text-[12px] uppercase tracking-[0.14em] text-ink-500">{k}</dt>
+            <dd className="mt-2 font-serif text-[40px] leading-none tabular-nums text-red-brand">{v}</dd>
+          </Link>
         ))}
       </dl>
 
@@ -134,8 +134,8 @@ function Filters({
         ))}
       </select>
       {showRoute && (
-        <select name="rota" defaultValue={rota} className={field} aria-label="Rota">
-          <option value="">Todas as rotas</option>
+        <select name="rota" defaultValue={rota} className={field} aria-label="Assunto">
+          <option value="">Todos os assuntos</option>
           {Object.entries(ROUTE_LABEL).map(([k, v]) => (
             <option key={k} value={k}>
               {v}
@@ -212,7 +212,11 @@ async function Contacts({
     <section aria-label="Contatos">
       <Filters tab="contatos" status={status} rota={rota} q={q} statusOptions={CONTACT_STATUS} showRoute />
       {rows.length === 0 ? (
-        <p className="mt-12 text-center text-ink-500">Nenhum contato por aqui ainda.</p>
+        <EmptyState title={q || status || rota ? "Nada encontrado com esses filtros" : "Nenhum contato ainda"}>
+          {q || status || rota
+            ? "Tente limpar a busca ou escolher outro status."
+            : "Quando alguém escrever pelo site, a mensagem aparece aqui e um aviso chega por e-mail."}
+        </EmptyState>
       ) : (
         <ul className="mt-6 space-y-4">
           {rows.map((r) => {
@@ -228,7 +232,7 @@ async function Contacts({
                       <span>{fmt(r.created_at)}</span>
                       <span aria-hidden>·</span>
                       <span className="rounded-full bg-blush-100 px-2.5 py-0.5 text-red-deep">
-                        {r.route ? ROUTE_LABEL[r.route] ?? r.route : "Sem rota"}
+                        {r.route ? ROUTE_LABEL[r.route] ?? r.route : "Sem assunto"}
                       </span>
                       <span className="rounded-full bg-cream-200 px-2.5 py-0.5">
                         {r.origin === "organizacoes" ? "Página Organizações" : "Página Contato"}
@@ -253,6 +257,24 @@ async function Contacts({
                   </form>
                 </div>
                 {r.message && <p className="mt-4 whitespace-pre-line text-[15px] leading-relaxed text-ink-800">{r.message}</p>}
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <a
+                    href={`mailto:${r.email}?subject=${encodeURIComponent("Sua mensagem pelo site Ju Ferreira")}`}
+                    className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-4 py-2 text-[13px] text-cream-50 hover:bg-red-brand"
+                  >
+                    Responder por e-mail
+                  </a>
+                  {r.phone && r.phone.replace(/\D/g, "").length >= 10 && (
+                    <a
+                      href={`https://wa.me/${(r.phone.replace(/\D/g, "").length <= 11 ? "55" : "") + r.phone.replace(/\D/g, "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full border border-ink-900/25 px-4 py-2 text-[13px] hover:border-red-brand hover:text-red-brand"
+                    >
+                      WhatsApp
+                    </a>
+                  )}
+                </div>
                 {extra.length > 0 && (
                   <details className="mt-4 rounded-[10px] bg-cream-100 p-4 text-[14px]">
                     <summary className="cursor-pointer font-medium">Mais respostas ({extra.length})</summary>

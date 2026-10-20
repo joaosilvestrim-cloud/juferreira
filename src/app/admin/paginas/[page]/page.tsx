@@ -1,10 +1,10 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
 import { PAGES, REGISTRY, sectionLabel } from "@/lib/page-registry";
 import { restoreHistory, toggleBlock } from "../../more-actions";
 import { BlockEditor } from "./BlockEditor";
+import { AdminButton, PageHeader } from "../../_ui/PageHeader";
 
 export default async function PageEditor({ params }: { params: Promise<{ page: string }> }) {
   await requireAdminPage();
@@ -39,20 +39,17 @@ export default async function PageEditor({ params }: { params: Promise<{ page: s
   const sections = [...new Map(items.map((i) => [i.section, i.order])).entries()].sort((a, b) => a[1] - b[1]);
 
   return (
-    <div className="mx-auto max-w-[1000px] px-5 py-10 sm:px-8">
-      <Link href="/admin/paginas" className="text-[14px] text-ink-500 hover:underline">
-        ← Páginas
-      </Link>
-      <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-        <h1 className="jf-display text-[44px]">{meta.name}</h1>
-        <Link href={meta.path} target="_blank" className="text-[14px] text-red-brand hover:underline">
-          Ver página no site
-        </Link>
-      </div>
-      <p className="mt-1 max-w-[700px] text-[15px] text-ink-500">
-        Os textos aparecem na ordem da página, bloco a bloco. Altere o que quiser e clique em “Salvar bloco”. Deixar um campo
-        igual ao original (ou vazio) mantém o texto original.
-      </p>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader
+        back={{ href: "/admin/paginas", label: "Páginas" }}
+        title={meta.name}
+        description="Os textos aparecem na ordem da página, bloco a bloco. Altere o que quiser e clique em “Salvar bloco” (ou Ctrl+S). Deixar um campo igual ao original, ou vazio, mantém o texto original."
+        actions={
+          <AdminButton href={meta.path} variant="secondary">
+            Ver página no site ↗
+          </AdminButton>
+        }
+      />
 
       <nav className="mt-6 flex flex-wrap gap-2" aria-label="Blocos da página">
         {sections.map(([s, o]) => (
@@ -91,7 +88,7 @@ export default async function PageEditor({ params }: { params: Promise<{ page: s
               items={items
                 .filter((i) => i.section === s)
                 .sort((a, b) => a.file.localeCompare(b.file) || a.line - b.line)
-                .map((i) => ({ key: i.key, kind: i.kind, original: i.text, value: ov[i.key] ?? null }))}
+                .map((i) => ({ key: i.key, kind: i.kind, original: i.text, value: ov[i.key] ?? null, role: i.role, group: i.group, em: i.em }))}
             />
             {(() => {
               const h = hist.filter((x) => (x.key.startsWith("hide:") ? x.key.slice(5) === s : sectionOf.get(x.key) === s)).slice(0, 10);

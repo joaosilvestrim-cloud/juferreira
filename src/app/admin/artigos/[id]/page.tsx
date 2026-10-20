@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireAdminPage } from "@/lib/admin-guard";
 import { mediaUrl } from "@/lib/content";
@@ -6,6 +5,7 @@ import { db } from "@/lib/db";
 import { deleteArticle } from "../../content-actions";
 import { ArticleForm, type ArticleData } from "../ArticleForm";
 import { ConfirmSubmit } from "../../_ui/ConfirmSubmit";
+import { AdminButton, PageHeader } from "../../_ui/PageHeader";
 
 export default async function EditArticle({ params }: { params: Promise<{ id: string }> }) {
   await requireAdminPage();
@@ -31,18 +31,18 @@ export default async function EditArticle({ params }: { params: Promise<{ id: st
     };
   }
   return (
-    <div className="mx-auto max-w-[900px] px-5 py-10 sm:px-8">
-      <Link href="/admin/artigos" className="text-[14px] text-ink-500 hover:underline">
-        ← Artigos
-      </Link>
-      <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-        <h1 className="jf-display text-[40px]">{a.id ? "Editar artigo" : "Novo artigo"}</h1>
-        {a.id && a.status === "publicado" && (
-          <Link href={`/ideias/${a.slug}`} target="_blank" className="text-[14px] text-red-brand hover:underline">
-            Ver no site
-          </Link>
-        )}
-      </div>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader
+        back={{ href: "/admin/artigos", label: "Artigos" }}
+        title={a.id ? "Editar artigo" : "Novo artigo"}
+        actions={
+          a.id && a.status === "publicado" ? (
+            <AdminButton href={`/ideias/${a.slug}`} variant="secondary">
+              Ver no site ↗
+            </AdminButton>
+          ) : undefined
+        }
+      />
       <div className="mt-8">
         <ArticleForm key={a.id ?? "novo"} a={a} />
       </div>

@@ -4,6 +4,18 @@ import { chromium } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import pg from "pg";
 
+// abre o painel "+ Adicionar …" (recolhido quando já há itens) e devolve o container
+async function addPanel(p, label) {
+  const panel = p.locator(`[data-add-panel="${label}"]`);
+  // o clique pode chegar antes da página terminar de carregar os scripts: tenta até o formulário abrir
+  for (let i = 0; i < 10 && !(await panel.locator("form").count()); i++) {
+    const btn = p.getByRole("button", { name: label, exact: true });
+    if (await btn.count()) await btn.first().click();
+    await p.waitForTimeout(400);
+  }
+  return panel;
+}
+
 const B = process.env.BASE_URL ?? "http://localhost:3000";
 const env = readFileSync(".env.local", "utf8");
 const pwd = env.match(/^ADMIN_PASSWORD=(.*)$/m)[1].replace(/^'|'$/g, "");
@@ -84,7 +96,7 @@ try {
 
   // Referência
   await page.goto(`${B}/admin/referencias`);
-  const add = page.locator("div", { hasText: "Adicionar em “Na mesa agora”" }).last();
+  const add = await addPanel(page, "Adicionar em “Na mesa agora”");
   await add.locator('input[name="title"]').fill("TESTE CMS Livro");
   await add.locator('input[name="author"]').fill("Autora Teste");
   await add.locator("button", { hasText: "Adicionar" }).click();

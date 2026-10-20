@@ -4,6 +4,8 @@ import { db } from "@/lib/db";
 import { deleteRef } from "../content-actions";
 import { RefForm } from "./RefForm";
 import { ConfirmSubmit } from "../_ui/ConfirmSubmit";
+import { PageHeader } from "../_ui/PageHeader";
+import { AddPanel } from "../_ui/AddPanel";
 
 type Row = {
   id: string;
@@ -25,11 +27,8 @@ export default async function RefsAdmin() {
     { id: "voltam", title: "Referências que voltam", hint: "4 a 6 referências estáveis (livro e autor)." },
   ] as const;
   return (
-    <div className="mx-auto max-w-[1000px] px-5 py-10 sm:px-8">
-      <h1 className="jf-display text-[44px]">Referências</h1>
-      <p className="mt-1 max-w-[640px] text-[15px] text-ink-500">
-        Repertório da página Ideias. Só aparece no site o que for cadastrado aqui; sem referências, a lista fica oculta.
-      </p>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader title="Referências" description="Repertório da página Ideias. Só aparece no site o que for cadastrado aqui; sem referências, a lista fica oculta." />
 
       {groups.map((g) => {
         const list = rows.filter((r) => r.section === g.id);
@@ -60,10 +59,9 @@ export default async function RefsAdmin() {
                 </li>
               ))}
             </ul>
-            <div className="mt-5 rounded-[14px] border border-dashed border-ink-900/25 p-5">
-              <p className="mb-4 text-[15px] font-medium">Adicionar em “{g.title}”</p>
+            <AddPanel label={`Adicionar em “${g.title}”`} defaultOpen={list.length === 0}>
               <RefForm r={{ section: g.id }} />
-            </div>
+            </AddPanel>
           </section>
         );
       })}

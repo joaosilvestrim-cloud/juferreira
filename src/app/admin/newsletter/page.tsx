@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
+import { AdminButton, EmptyState, PageHeader } from "../_ui/PageHeader";
 
 export default async function IssuesAdmin() {
   await requireAdminPage();
@@ -12,23 +13,21 @@ export default async function IssuesAdmin() {
   ]);
   const fmt = (d: Date) => new Intl.DateTimeFormat("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" }).format(d);
   return (
-    <div className="mx-auto max-w-[1000px] px-5 py-10 sm:px-8">
-      <div className="flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <h1 className="jf-display text-[44px]">Newsletter</h1>
-          <p className="mt-1 text-[15px] text-ink-500">
-            Edições de Uma Terça-feira Qualquer · <strong className="text-ink-900">{c[0]?.n ?? 0}</strong> inscritos ativos
-          </p>
-        </div>
-        <Link
-          href="/admin/newsletter/nova"
-          className="min-h-11 content-center rounded-full bg-red-brand px-6 text-[15px] text-cream-50 hover:bg-red-deep"
-        >
-          Nova edição
-        </Link>
-      </div>
+    <div className="mx-auto max-w-[1100px] px-5 py-8 sm:px-10 sm:py-10">
+      <PageHeader
+        title="Newsletter"
+        description={
+          <>
+            Edições de Uma Terça-feira Qualquer · <strong className="text-ink-900">{c[0]?.n ?? 0}</strong> inscrito(s) ativo(s). A lista de inscritos
+            fica em Conversas → Newsletter.
+          </>
+        }
+        actions={<AdminButton href="/admin/newsletter/nova">+ Nova edição</AdminButton>}
+      />
       {rows.length === 0 ? (
-        <p className="mt-16 text-center text-ink-500">Nenhuma edição ainda.</p>
+        <EmptyState title="Nenhuma edição ainda" action={<AdminButton href="/admin/newsletter/nova">+ Escrever a primeira edição</AdminButton>}>
+          Escreva, veja a prévia do e-mail, mande um teste para você e só depois envie para todos os inscritos.
+        </EmptyState>
       ) : (
         <ul className="mt-8 divide-y divide-ink-900/10 rounded-[14px] border border-ink-900/10 bg-cream-50">
           {rows.map((i) => (

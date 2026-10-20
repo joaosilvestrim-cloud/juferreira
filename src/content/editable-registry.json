@@ -7,6 +7,9 @@
   "text": "Vamos conversar",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 22,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "ContatoConversa",
   "order": 0
  },
@@ -18,6 +21,9 @@
   "text": "Contato",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 25,
+  "role": "Rótulo",
+  "group": "src/components/sections/contato/ContatoBlocks.tsx:1211",
+  "em": false,
   "section": "ContatoConversa",
   "order": 0
  },
@@ -29,6 +35,9 @@
   "text": "Vamos",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 27,
+  "role": "Título",
+  "group": "src/components/sections/contato/ContatoBlocks.tsx:1279",
+  "em": false,
   "section": "ContatoConversa",
   "order": 0
  },
@@ -40,6 +49,9 @@
   "text": "conversar.",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 27,
+  "role": "Título",
+  "group": "src/components/sections/contato/ContatoBlocks.tsx:1279",
+  "em": true,
   "section": "ContatoConversa",
   "order": 0
  },
@@ -51,6 +63,9 @@
   "text": "Conte o que você está tentando construir, resolver ou compreender. Se ainda não souber o formato, comece pelo contexto.",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 31,
+  "role": "Frase de destaque",
+  "group": "src/components/sections/contato/ContatoBlocks.tsx:1546",
+  "em": false,
   "section": "ContatoConversa",
   "order": 0
  },
@@ -62,6 +77,9 @@
   "text": "/images/ensaio/contato-sorriso-vertical.webp",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 34,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "ContatoConversa",
   "order": 0
  },
@@ -73,6 +91,9 @@
   "text": "Retrato acolhedor de Juliana com notebook à mesa.",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 35,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "ContatoConversa",
   "order": 0
  },
@@ -84,6 +105,9 @@
   "text": "(abre em nova aba)",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 66,
+  "role": "Botão ou link",
+  "group": "src/components/sections/contato/ContatoBlocks.tsx:2913",
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -95,6 +119,9 @@
   "text": "E-mail",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 76,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -106,6 +133,9 @@
   "text": "Abrir conversa no WhatsApp",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 77,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -117,6 +147,9 @@
   "text": "LinkedIn",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 78,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -128,6 +161,9 @@
   "text": "Perfil da Ju no LinkedIn",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 78,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -139,6 +175,9 @@
   "text": "Página Ju Ferreira no LinkedIn",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 79,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -150,6 +189,9 @@
   "text": "Instagram",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 80,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -161,6 +203,9 @@
   "text": "Ju Ferreira no Instagram",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 80,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -172,6 +217,9 @@
   "text": "Outros canais",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 84,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -183,6 +231,9 @@
   "text": "Fechamento",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 84,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -194,6 +245,9 @@
   "text": "Prefere outro",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 89,
+  "role": "Título",
+  "group": "src/components/sections/contato/ContatoBlocks.tsx:4769",
+  "em": false,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -205,6 +259,9 @@
   "text": "caminho?",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 89,
+  "role": "Título",
+  "group": "src/components/sections/contato/ContatoBlocks.tsx:4769",
+  "em": true,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -216,6 +273,9 @@
   "text": "Temos futuros para construir.",
   "file": "src/components/sections/contato/ContatoBlocks.tsx",
   "line": 101,
+  "role": "Texto",
+  "group": "src/components/sections/contato/ContatoBlocks.tsx:5254",
+  "em": true,
   "section": "ContatoCanais",
   "order": 1
  },
@@ -227,6 +287,9 @@
   "text": "Prováveis, plausíveis, possíveis, preferíveis",
   "file": "src/components/sections/futuros-humanos/FuturesDiagram.tsx",
   "line": 16,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturesDiagram.tsx:609",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -238,6 +301,9 @@
   "text": "Círculos encaixados: o possível contém o plausível, que contém o provável. O preferível aparece como um círculo tracejado que se sobrepõe às três regiões, inclusive a parte do provável, sem coincidir com nenhuma delas. As áreas não representam probabilidades medidas.",
   "file": "src/components/sections/futuros-humanos/FuturesDiagram.tsx",
   "line": 18,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturesDiagram.tsx:739",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -249,6 +315,9 @@
   "text": "POSSÍVEL",
   "file": "src/components/sections/futuros-humanos/FuturesDiagram.tsx",
   "line": 51,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturesDiagram.tsx:2450",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -260,6 +329,9 @@
   "text": "PLAUSÍVEL",
   "file": "src/components/sections/futuros-humanos/FuturesDiagram.tsx",
   "line": 53,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturesDiagram.tsx:2585",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -271,6 +343,9 @@
   "text": "PROVÁVEL",
   "file": "src/components/sections/futuros-humanos/FuturesDiagram.tsx",
   "line": 55,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturesDiagram.tsx:2722",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -282,6 +357,9 @@
   "text": "PREFERÍVEL",
   "file": "src/components/sections/futuros-humanos/FuturesDiagram.tsx",
   "line": 57,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturesDiagram.tsx:2859",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -293,6 +371,9 @@
   "text": "Abertura",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 40,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -304,6 +385,9 @@
   "text": "/images/ensaio/home-01-abertura-vertical.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 43,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -315,6 +399,9 @@
   "text": "Juliana no mirante, em enquadramento vertical ao entardecer.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 44,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -326,6 +413,9 @@
   "text": "Futuros Humanos",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 54,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:2414",
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -337,6 +427,9 @@
   "text": "O futuro mais provável não é",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 56,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:2524",
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -348,6 +441,9 @@
   "text": "o único futuro possível.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 56,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:2524",
+  "em": true,
   "section": "FHHero",
   "order": 0
  },
@@ -359,6 +455,9 @@
   "text": "Futuros Humanos reúne as perguntas que atravessam meu trabalho: o que ainda pode existir, o que vale a pena construir e do que precisamos nos tornar capazes para participar dessa construção.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 60,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:2835",
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -370,6 +469,9 @@
   "text": "Explore a Espiral",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 63,
+  "role": "Botão ou link",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:3191",
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -381,6 +483,9 @@
   "text": "Conheça a palestra",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 65,
+  "role": "Botão ou link",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:3327",
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -392,6 +497,9 @@
   "text": "/images/ensaio/home-01-abertura-horizontal.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 70,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -403,6 +511,9 @@
   "text": "Juliana de preto diante de uma paisagem ampla ao entardecer.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 70,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "FHHero",
   "order": 0
  },
@@ -414,6 +525,9 @@
   "text": "/images/ensaio/contexto-tecnologia-humana.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 79,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -425,6 +539,9 @@
   "text": "Mãos usando um notebook ao lado de caderno e café.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 79,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -436,6 +553,9 @@
   "text": "/images/ensaio/contexto-cidade-movimento.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 80,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -447,6 +567,9 @@
   "text": "Pessoas caminhando pela cidade, com movimento suavemente desfocado.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 80,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -458,6 +581,9 @@
   "text": "/images/ensaio/contexto-celular-cotidiano.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 81,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -469,6 +595,9 @@
   "text": "Mão segurando um celular próximo a um caderno sobre a mesa.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 81,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -480,6 +609,9 @@
   "text": "O automático também constrói futuros",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 84,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -491,6 +623,9 @@
   "text": "O automático também",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 88,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:5031",
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -502,6 +637,9 @@
   "text": "constrói futuros.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 88,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:5031",
+  "em": true,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -513,6 +651,9 @@
   "text": "Uma meta recompensa um comportamento. Uma decisão adiada mantém uma situação. Uma rotina ocupa o espaço que seria de outra coisa.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 92,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:5361",
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -524,6 +665,9 @@
   "text": "Enquanto damos conta do presente, ajudamos alguns caminhos a ganhar força.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 93,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:5549",
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -535,6 +679,9 @@
   "text": "Nem toda repetição é um problema. Há hábitos que sustentam cuidado, confiança e competência. A questão é perceber quais ainda servem ao que queremos construir.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 95,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:5682",
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -546,6 +693,9 @@
   "text": "Se continuarmos assim,",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 98,
+  "role": "Subtítulo",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:5933",
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -557,6 +707,9 @@
   "text": "o que estamos ajudando a tornar mais provável?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 98,
+  "role": "Subtítulo",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:5933",
+  "em": true,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -568,6 +721,9 @@
   "text": "Uma terça-feira qualquer.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 113,
+  "role": "Nota manuscrita",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:6822",
+  "em": false,
   "section": "FHAutomatico",
   "order": 1
  },
@@ -579,6 +735,9 @@
   "text": "Prováveis",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 124,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -590,6 +749,9 @@
   "text": "Futuros considerados mais propensos a acontecer, segundo as evidências e premissas adotadas.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 125,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -601,6 +763,9 @@
   "text": "Plausíveis",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 129,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -612,6 +777,9 @@
   "text": "Futuros para os quais conseguimos descrever caminhos coerentes com o conhecimento disponível.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 130,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -623,6 +791,9 @@
   "text": "Possíveis",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 134,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -634,6 +805,9 @@
   "text": "Um campo mais amplo do que consideramos capaz de acontecer, incluindo mudanças e descobertas que ainda não compreendemos por inteiro.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 135,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -645,6 +819,9 @@
   "text": "Preferíveis",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 139,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -656,6 +833,9 @@
   "text": "Futuros que pessoas ou grupos consideram desejáveis, segundo valores e contextos que podem divergir.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 140,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -667,6 +847,9 @@
   "text": "Abrir o campo dos futuros",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 145,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -678,6 +861,9 @@
   "text": "Aquilo que existe não esgota aquilo que pode existir.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 149,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:8486",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -689,6 +875,9 @@
   "text": "Pensar futuros amplia o campo antes da escolha. O que parece provável merece atenção, mas não encerra a investigação.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 153,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:8785",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -700,6 +889,9 @@
   "text": "Quando imaginamos apenas continuidade, procuramos no presente aquilo que confirma esse caminho. Considerar outras possibilidades pode nos ajudar a perceber perguntas e escolhas que antes passavam despercebidas.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 155,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:8961",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -711,6 +903,9 @@
   "text": "Possível, plausível e provável organizam diferentes avaliações sobre o que pode acontecer. Preferível expressa o que desejamos: pode se sobrepor a essas regiões, inclusive ao provável. O desenho é uma simplificação para apoiar a conversa.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 160,
+  "role": "Legenda",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:9366",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -722,6 +917,9 @@
   "text": "Quatro maneiras de olhar para futuros",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 165,
+  "role": "Subtítulo",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:9807",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -733,6 +931,9 @@
   "text": "Preferível para quem? Com quais consequências?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 178,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:10554",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -744,6 +945,9 @@
   "text": "Pensar possibilidades também exige discutir valores.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 179,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:10770",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -755,6 +959,9 @@
   "text": "Essas categorias não são criação minha. São referências dos Estudos de Futuros, muitas vezes representadas no desenho conhecido como cone de futuros. Uso essas distinções para organizar a conversa.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 181,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:10917",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -766,6 +973,9 @@
   "text": "Fonte:",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 182,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:10917",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -777,6 +987,9 @@
   "text": "Joseph Voros, “The Futures Cone, use and history”",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 189,
+  "role": "Botão ou link",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:11356",
+  "em": false,
   "section": "FHTese",
   "order": 2
  },
@@ -788,6 +1001,9 @@
   "text": "O que queremos ampliar?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 200,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -799,6 +1015,9 @@
   "text": "O que precisamos preservar?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 200,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -810,6 +1029,9 @@
   "text": "Quem será afetado?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 200,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -821,6 +1043,9 @@
   "text": "Capacidade, direção e autoria",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 202,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -832,6 +1057,9 @@
   "text": "Quanto mais podemos fazer,",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 206,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:12440",
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -843,6 +1071,9 @@
   "text": "mais importa perguntar para quê.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 206,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:12440",
+  "em": true,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -854,6 +1085,9 @@
   "text": "Eu gosto de tecnologia. Ela amplia nossa capacidade de criar, compreender e colocar ideias no mundo.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 210,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:12822",
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -865,6 +1099,9 @@
   "text": "Mas fazer algo com mais rapidez não resolve a escolha do objetivo. Automatizar uma decisão não elimina a responsabilidade pelos critérios e pelas consequências.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 212,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:12981",
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -876,6 +1113,9 @@
   "text": "Quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 223,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:13615",
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -887,6 +1127,9 @@
   "text": "Autoria, para mim, é",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 227,
+  "role": "Subtítulo",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:13971",
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -898,6 +1141,9 @@
   "text": "permanecer presente naquilo que ajudamos a construir.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 227,
+  "role": "Subtítulo",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:13971",
+  "em": true,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -909,6 +1155,9 @@
   "text": "Podemos delegar trabalho e contar com outras pessoas e ferramentas, mantendo atenção à direção, ao julgamento e à responsabilidade.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 230,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx:14249",
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -920,6 +1169,9 @@
   "text": "/images/ensaio/ju-estudo-fones.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 235,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -931,6 +1183,9 @@
   "text": "Juliana estudando com fones de ouvido, livro e notebook.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 236,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -942,6 +1197,9 @@
   "text": "numa conversa;",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 14,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -953,6 +1211,9 @@
   "text": "num pedido de ajuda;",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 14,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -964,6 +1225,9 @@
   "text": "numa mudança de regra;",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 14,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -975,6 +1239,9 @@
   "text": "na organização de pessoas em torno de um problema comum.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 14,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -986,6 +1253,9 @@
   "text": "Agência",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 16,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -997,6 +1267,9 @@
   "text": "Limites existem.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 20,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:1154",
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1008,6 +1281,9 @@
   "text": "Potência também.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 20,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:1154",
+  "em": true,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1019,6 +1295,9 @@
   "text": "Participamos a partir de condições reais: tempo, recursos, corpo, história, relações e estruturas. Algumas margens de escolha estão disponíveis. Outras precisam ser construídas com apoio e ação coletiva.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 25,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:1480",
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1030,6 +1309,9 @@
   "text": "Agência pode começar:",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 26,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:1758",
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1041,6 +1323,9 @@
   "text": "Agência não é controle.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 35,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:2151",
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1052,6 +1337,9 @@
   "text": "É participação.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 35,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:2151",
+  "em": true,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1063,6 +1351,9 @@
   "text": "Onde existe margem para agir",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 39,
+  "role": "Subtítulo",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:2408",
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1074,6 +1365,9 @@
   "text": "e de que precisamos para ampliá-la?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 39,
+  "role": "Subtítulo",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:2408",
+  "em": true,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1085,6 +1379,9 @@
   "text": "/images/ensaio/pessoas-janela.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 44,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1096,6 +1393,9 @@
   "text": "Juliana olhando pela janela, com expressão contemplativa.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 45,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "FHAgencia",
   "order": 4
  },
@@ -1107,6 +1407,9 @@
   "text": "Imaginar",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 60,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1118,6 +1421,9 @@
   "text": "E se pudesse ser diferente?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 61,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1129,6 +1435,9 @@
   "text": "Ampliar o campo e investigar alternativas ao caminho que parece inevitável.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 62,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1140,6 +1449,9 @@
   "text": "Escolher",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 65,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1151,6 +1463,9 @@
   "text": "O que queremos ajudar a tornar possível?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 66,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1162,6 +1477,9 @@
   "text": "Discutir valores, consequências e onde vale colocar esforço.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 67,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1173,6 +1491,9 @@
   "text": "Tornar-se",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 70,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1184,6 +1505,9 @@
   "text": "Do que precisamos nos tornar capazes?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 71,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1195,6 +1519,9 @@
   "text": "Aprender, pedir ajuda e aceitar ainda não saber. Desenvolver capacidades e condições para sustentar essa direção. A escolha pode chegar antes da capacidade.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 72,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1206,6 +1533,9 @@
   "text": "Construir",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 75,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1217,6 +1547,9 @@
   "text": "O que podemos fazer agora para tornar esse futuro um pouco mais possível?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 76,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1228,6 +1561,9 @@
   "text": "Fazer um movimento que permita à realidade responder.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 77,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1239,6 +1575,9 @@
   "text": "Imaginar",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 82,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1250,6 +1589,9 @@
   "text": "Considerar que nem toda decisão precisa subir para a liderança.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 82,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1261,6 +1603,9 @@
   "text": "Escolher",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 83,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1272,6 +1617,9 @@
   "text": "Definir quais decisões podem ser tomadas pela equipe e sob quais critérios.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 83,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1283,6 +1631,9 @@
   "text": "Tornar-se",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 84,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1294,6 +1645,9 @@
   "text": "Desenvolver repertório, acesso à informação e capacidade de delegar.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 84,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1305,6 +1659,9 @@
   "text": "Construir",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 85,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1316,6 +1673,9 @@
   "text": "Experimentar essa autonomia numa decisão recorrente.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 85,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1327,6 +1687,9 @@
   "text": "Olhar de novo",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 86,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1338,6 +1701,9 @@
   "text": "Observar o resultado e ajustar apoio, critérios e responsabilidades.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 86,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1349,6 +1715,9 @@
   "text": "A Espiral",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 91,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1360,6 +1729,9 @@
   "text": "Imaginar. Escolher.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 95,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:5710",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1371,6 +1743,9 @@
   "text": "Tornar",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 95,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:5710",
+  "em": true,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1382,6 +1757,9 @@
   "text": "se. Construir.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 95,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:5710",
+  "em": true,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1393,6 +1771,9 @@
   "text": "Imaginar já muda o que conseguimos perceber. Escolher dá direção. Desenvolver capacidades permite sustentar escolhas. Construir coloca alguma coisa em contato com a realidade.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 100,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:6086",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1404,6 +1785,9 @@
   "text": "A Espiral não fecha.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 123,
+  "role": "Subtítulo",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:7252",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1415,6 +1799,9 @@
   "text": "O mundo responde. Algumas hipóteses se sustentam, outras precisam mudar. Nós aprendemos e voltamos à pergunta com novas condições e outro olhar.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 127,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:7479",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1426,6 +1813,9 @@
   "text": "Nós construímos futuros e somos construídos enquanto os construímos.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 129,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:7721",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1437,6 +1827,9 @@
   "text": "A Espiral precisa sobreviver a uma terça-feira qualquer.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 131,
+  "role": "Nota manuscrita",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:7871",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1448,6 +1841,9 @@
   "text": "Uma situação hipotética: uma equipe que deseja mais autonomia",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 136,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:8164",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1459,6 +1855,9 @@
   "text": "Movimento",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 139,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:8450",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1470,6 +1869,9 @@
   "text": "O que acontece",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 140,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:8538",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1481,6 +1883,9 @@
   "text": "Uma escolha pode revelar uma capacidade que falta. Uma experiência pode mudar a direção. Os movimentos se encontram e voltam a acontecer.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 155,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:9240",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1492,6 +1897,9 @@
   "text": "A Espiral organiza meu modo de pensar e trabalhar sobre essas perguntas. Não oferece garantia de resultado.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 159,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:9520",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1503,6 +1911,9 @@
   "text": "A pergunta muda de escala",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 168,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "FHEscalas",
   "order": 6
  },
@@ -1514,6 +1925,9 @@
   "text": "A pergunta muda",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 172,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:10166",
+  "em": false,
   "section": "FHEscalas",
   "order": 6
  },
@@ -1525,6 +1939,9 @@
   "text": "de escala.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 172,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:10166",
+  "em": true,
   "section": "FHEscalas",
   "order": 6
  },
@@ -1536,6 +1953,9 @@
   "text": "Na vida pessoal, pode aparecer numa escolha que deixou de parecer escolha. Numa organização, nos incentivos, tecnologias e prioridades que moldam o trabalho.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 179,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:10496",
+  "em": false,
   "section": "FHEscalas",
   "order": 6
  },
@@ -1547,6 +1967,9 @@
   "text": "Na sua vida",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 183,
+  "role": "Botão ou link",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:10787",
+  "em": false,
   "section": "FHEscalas",
   "order": 6
  },
@@ -1558,6 +1981,9 @@
   "text": "Na sua organização",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 185,
+  "role": "Botão ou link",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:10927",
+  "em": false,
   "section": "FHEscalas",
   "order": 6
  },
@@ -1569,6 +1995,9 @@
   "text": "Encerramento",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 196,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "FHEncerramento",
   "order": 7
  },
@@ -1580,6 +2009,9 @@
   "text": "O que queremos ajudar a tornar possível?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 200,
+  "role": "Título",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:11574",
+  "em": false,
   "section": "FHEncerramento",
   "order": 7
  },
@@ -1591,6 +2023,9 @@
   "text": "É sobre não desistir",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 204,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:11821",
+  "em": false,
   "section": "FHEncerramento",
   "order": 7
  },
@@ -1602,6 +2037,9 @@
   "text": "da vida que ainda pode existir.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 204,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:11821",
+  "em": true,
   "section": "FHEncerramento",
   "order": 7
  },
@@ -1613,6 +2051,9 @@
   "text": "Leve essa conversa para sua organização",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 208,
+  "role": "Botão ou link",
+  "group": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx:12089",
+  "em": false,
   "section": "FHEncerramento",
   "order": 7
  },
@@ -1624,6 +2065,9 @@
   "text": "/images/ensaio/contato-sorriso-vertical.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 213,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "FHEncerramento",
   "order": 7
  },
@@ -1635,6 +2079,9 @@
   "text": "Retrato acolhedor de Juliana com notebook à mesa.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 214,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "FHEncerramento",
   "order": 7
  },
@@ -1646,6 +2093,9 @@
   "text": "Imaginar",
   "file": "src/components/sections/futuros-humanos/SpiralDiagram.tsx",
   "line": 4,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1657,6 +2107,9 @@
   "text": "Escolher",
   "file": "src/components/sections/futuros-humanos/SpiralDiagram.tsx",
   "line": 4,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1668,6 +2121,9 @@
   "text": "Tornar-se",
   "file": "src/components/sections/futuros-humanos/SpiralDiagram.tsx",
   "line": 4,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1679,6 +2135,9 @@
   "text": "Construir",
   "file": "src/components/sections/futuros-humanos/SpiralDiagram.tsx",
   "line": 4,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1690,6 +2149,9 @@
   "text": "↻ e a pergunta volta, de outro lugar",
   "file": "src/components/sections/futuros-humanos/SpiralDiagram.tsx",
   "line": 29,
+  "role": "Texto",
+  "group": "src/components/sections/futuros-humanos/SpiralDiagram.tsx:1548",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1701,6 +2163,9 @@
   "text": "↻ e a pergunta volta, de outro lugar",
   "file": "src/components/sections/futuros-humanos/SpiralDiagram.tsx",
   "line": 38,
+  "role": "Item de lista",
+  "group": "src/components/sections/futuros-humanos/SpiralDiagram.tsx:2161",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1712,6 +2177,9 @@
   "text": "Desenho da Espiral: imaginar, escolher, tornar-se e construir. Depois de construir, a linha não volta ao ponto de partida; a pergunta retorna de outro lugar.",
   "file": "src/components/sections/futuros-humanos/SpiralDiagram.tsx",
   "line": 41,
+  "role": "Legenda",
+  "group": "src/components/sections/futuros-humanos/SpiralDiagram.tsx:2310",
+  "em": false,
   "section": "FHEspiral",
   "order": 5
  },
@@ -1723,6 +2191,9 @@
   "text": "Abertura",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 18,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1734,6 +2205,9 @@
   "text": "/images/ensaio/home-01-abertura-vertical.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 21,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1745,6 +2219,9 @@
   "text": "Juliana no mirante, em enquadramento vertical ao entardecer.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 22,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1756,6 +2233,9 @@
   "text": "E se pudesse",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 33,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:1717",
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1767,6 +2247,9 @@
   "text": "ser",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 34,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:1717",
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1778,6 +2261,9 @@
   "text": "diferente?",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 34,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:1717",
+  "em": true,
   "section": "HomeHero",
   "order": 0
  },
@@ -1789,6 +2275,9 @@
   "text": "Aquilo que existe não esgota aquilo que pode existir.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 37,
+  "role": "Frase de destaque",
+  "group": "src/components/sections/home/HomeBlocks.tsx:1933",
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1800,6 +2289,9 @@
   "text": "Sou Ju Ferreira. Investigo futuros, tecnologia e transformação humana e levo essas perguntas para palestras, organizações e a vida de todos os dias.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 39,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:2113",
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1811,6 +2303,9 @@
   "text": "Leve a Ju para sua organização",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 42,
+  "role": "Botão ou link",
+  "group": "src/components/sections/home/HomeBlocks.tsx:2416",
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1822,6 +2317,9 @@
   "text": "Conheça Futuros Humanos",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 44,
+  "role": "Botão ou link",
+  "group": "src/components/sections/home/HomeBlocks.tsx:2573",
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1833,6 +2331,9 @@
   "text": "/images/ensaio/home-01-abertura-horizontal.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 49,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1844,6 +2345,9 @@
   "text": "Juliana de preto diante de uma paisagem ampla ao entardecer.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 49,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "HomeHero",
   "order": 0
  },
@@ -1855,6 +2359,9 @@
   "text": "A tensão",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 58,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1866,6 +2373,9 @@
   "text": "O mundo está mudando.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 62,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:3517",
+  "em": false,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1877,6 +2387,9 @@
   "text": "Mas",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 63,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:3517",
+  "em": false,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1888,6 +2401,9 @@
   "text": "mudança",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 63,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:3517",
+  "em": true,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1899,6 +2415,9 @@
   "text": "não é",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 63,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:3517",
+  "em": false,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1910,6 +2429,9 @@
   "text": "direção.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 63,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:3517",
+  "em": true,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1921,6 +2443,9 @@
   "text": "Uma equipe pode adotar IA e continuar premiando os mesmos comportamentos. Uma pessoa pode entregar tudo o que esperam dela e passar meses sem tocar no que deseja construir.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 67,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:3886",
+  "em": false,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1932,6 +2457,9 @@
   "text": "Estamos fazendo mais. A pergunta é para onde isso nos leva.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 68,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:4122",
+  "em": false,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1943,6 +2471,9 @@
   "text": "O que estamos ajudando a tornar mais provável",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 72,
+  "role": "Frase de destaque",
+  "group": "src/components/sections/home/HomeBlocks.tsx:4326",
+  "em": false,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1954,6 +2485,9 @@
   "text": "com aquilo que repetimos hoje?",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 72,
+  "role": "Frase de destaque",
+  "group": "src/components/sections/home/HomeBlocks.tsx:4326",
+  "em": true,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1965,6 +2499,9 @@
   "text": "/images/ensaio/contexto-luz-direcao.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 77,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1976,6 +2513,9 @@
   "text": "Luz natural atravessando um ambiente escuro de concreto.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 78,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1987,6 +2527,9 @@
   "text": "Imaginar",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 91,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -1998,6 +2541,9 @@
   "text": "Escolher",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 91,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2009,6 +2555,9 @@
   "text": "Tornar-se",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 91,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2020,6 +2569,9 @@
   "text": "Construir",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 91,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2031,6 +2583,9 @@
   "text": "Futuros Humanos",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 93,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2042,6 +2597,9 @@
   "text": "Futuros",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 97,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:5656",
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2053,6 +2611,9 @@
   "text": "Humanos",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 97,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:5656",
+  "em": true,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2064,6 +2625,9 @@
   "text": "O futuro mais provável não é o único possível. Entre aquilo que existe e aquilo que ainda pode existir, há espaço para imaginar, escolher, desenvolver capacidades e construir.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 101,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:5903",
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2075,6 +2639,9 @@
   "text": "Não controlamos o resultado inteiro. Podemos participar das escolhas e condições que ajudam a produzi-lo.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 102,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:6142",
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2086,6 +2653,9 @@
   "text": "Explore essa visão",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 105,
+  "role": "Botão ou link",
+  "group": "src/components/sections/home/HomeBlocks.tsx:6312",
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2097,6 +2667,9 @@
   "text": "O mundo responde. A gente aprende. E volta à pergunta de outro lugar.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 121,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:7140",
+  "em": false,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2108,6 +2681,9 @@
   "text": "Ju Ferreira",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 134,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "HomeJu",
   "order": 3
  },
@@ -2119,6 +2695,9 @@
   "text": "Essa pergunta também atravessa",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 138,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:7946",
+  "em": false,
   "section": "HomeJu",
   "order": 3
  },
@@ -2130,6 +2709,9 @@
   "text": "a minha vida.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 138,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:7946",
+  "em": true,
   "section": "HomeJu",
   "order": 3
  },
@@ -2141,6 +2723,9 @@
   "text": "Sou engenheira, trabalhei com tecnologia, liderei e construí empresas. Acertei, errei e precisei mudar de direção. A maternidade ampliou a pergunta: o futuro passou a ser também o mundo onde minhas filhas vão viver.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 142,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:8192",
+  "em": false,
   "section": "HomeJu",
   "order": 3
  },
@@ -2152,6 +2737,9 @@
   "text": "Continuo trabalhando, construindo e tentando fazer essas ideias sobreviverem a uma terça-feira qualquer.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 143,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:8471",
+  "em": false,
   "section": "HomeJu",
   "order": 3
  },
@@ -2163,6 +2751,9 @@
   "text": "Conheça minha trajetória",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 146,
+  "role": "Botão ou link",
+  "group": "src/components/sections/home/HomeBlocks.tsx:8640",
+  "em": false,
   "section": "HomeJu",
   "order": 3
  },
@@ -2174,6 +2765,9 @@
   "text": "/images/ju/retrato-biblioteca.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 155,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "HomeJu",
   "order": 3
  },
@@ -2185,6 +2779,9 @@
   "text": "Juliana sorrindo diante de sua biblioteca.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 156,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "HomeJu",
   "order": 3
  },
@@ -2196,6 +2793,9 @@
   "text": "Palestras",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 171,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2207,6 +2807,9 @@
   "text": "Uma provocação para abrir perspectivas e colocar uma questão em comum.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 171,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2218,6 +2821,9 @@
   "text": "Workshops",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 172,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2229,6 +2835,9 @@
   "text": "Tempo de trabalho conjunto para examinar escolhas e definir movimentos possíveis.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 172,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2240,6 +2849,9 @@
   "text": "Projetos e experiências",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 173,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2251,6 +2863,9 @@
   "text": "Uma construção a partir de um desafio que pede continuidade ou outras competências.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 173,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2262,6 +2877,9 @@
   "text": "Para organizações",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 176,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2273,6 +2891,9 @@
   "text": "Algumas perguntas precisam",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 180,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:10373",
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2284,6 +2905,9 @@
   "text": "entrar na sala.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 180,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:10373",
+  "em": true,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2295,6 +2919,9 @@
   "text": "Levo essa conversa para eventos, lideranças e equipes que estão decidindo como trabalhar, usar tecnologia e construir o que vem depois.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 184,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:10617",
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2306,6 +2933,9 @@
   "text": "Conheça as palestras",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 196,
+  "role": "Botão ou link",
+  "group": "src/components/sections/home/HomeBlocks.tsx:11245",
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2317,6 +2947,9 @@
   "text": "Conheça o trabalho com organizações",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 198,
+  "role": "Botão ou link",
+  "group": "src/components/sections/home/HomeBlocks.tsx:11349",
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2328,6 +2961,9 @@
   "text": "/images/ensaio/home-03-palco-vertical.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 203,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2339,6 +2975,9 @@
   "text": "Cena ilustrativa de Juliana no palco, em enquadramento vertical.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 204,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2350,6 +2989,9 @@
   "text": "Para pessoas",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 219,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2361,6 +3003,9 @@
   "text": "/images/ensaio/home-05-escrita-vertical.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 223,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2372,6 +3017,9 @@
   "text": "Juliana com caderno, caneta e café à mesa, em retrato vertical.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 224,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2383,6 +3031,9 @@
   "text": "E se essa conversa for sobre a",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 232,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:13072",
+  "em": false,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2394,6 +3045,9 @@
   "text": "sua própria vida?",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 232,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:13072",
+  "em": true,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2405,6 +3059,9 @@
   "text": "Há coisas que continuamos fazendo porque importam. Outras permanecem porque ainda não as revimos ou não encontramos condições para mudar.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 235,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:13322",
+  "em": false,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2416,6 +3073,9 @@
   "text": "Você pode começar por uma pergunta, uma leitura ou uma prática que caiba na vida de hoje.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 236,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:13507",
+  "em": false,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2427,6 +3087,9 @@
   "text": "Encontre um começo",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 239,
+  "role": "Botão ou link",
+  "group": "src/components/sections/home/HomeBlocks.tsx:13661",
+  "em": false,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2438,6 +3101,9 @@
   "text": "Ideias",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 251,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2449,6 +3115,9 @@
   "text": "Para continuar",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 254,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:14233",
+  "em": false,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2460,6 +3129,9 @@
   "text": "pensando.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 254,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:14233",
+  "em": true,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2471,6 +3143,9 @@
   "text": "Ensaio",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 268,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:15307",
+  "em": false,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2482,6 +3157,9 @@
   "text": "Explore as ideias",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 276,
+  "role": "Botão ou link",
+  "group": "src/components/sections/home/HomeBlocks.tsx:15744",
+  "em": false,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2493,6 +3171,9 @@
   "text": "/images/ensaio/home-06-ideias-horizontal.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 281,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2504,6 +3185,9 @@
   "text": "Livros, caderno aberto, caneta e café sobre uma mesa de madeira.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 282,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2515,6 +3199,9 @@
   "text": "Uma Terça-feira Qualquer",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 291,
+  "role": "Subtítulo",
+  "group": "src/components/sections/home/HomeBlocks.tsx:16526",
+  "em": false,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2526,6 +3213,9 @@
   "text": "Uma carta por semana sobre futuros, tecnologia e aquilo que estamos construindo enquanto damos conta da vida.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 293,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:16669",
+  "em": false,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2537,6 +3227,9 @@
   "text": "Encerramento",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 305,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2548,6 +3241,9 @@
   "text": "Temos futuros para",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 311,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:17552",
+  "em": false,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2559,6 +3255,9 @@
   "text": "construir.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 311,
+  "role": "Título",
+  "group": "src/components/sections/home/HomeBlocks.tsx:17552",
+  "em": true,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2570,6 +3269,9 @@
   "text": "Qual conversa merece começar agora?",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 313,
+  "role": "Texto",
+  "group": "src/components/sections/home/HomeBlocks.tsx:17739",
+  "em": false,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2581,6 +3283,9 @@
   "text": "Vamos conversar",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 315,
+  "role": "Botão ou link",
+  "group": "src/components/sections/home/HomeBlocks.tsx:17875",
+  "em": false,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2592,6 +3297,9 @@
   "text": "TESE",
   "file": "src/components/sections/ideias/data.ts",
   "line": 12,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -2603,6 +3311,9 @@
   "text": "Ideia já bastante estruturada dentro do trabalho da Ju.",
   "file": "src/components/sections/ideias/data.ts",
   "line": 12,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -2614,6 +3325,9 @@
   "text": "SÍNTESE PROVISÓRIA",
   "file": "src/components/sections/ideias/data.ts",
   "line": 13,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -2625,6 +3339,9 @@
   "text": "Articulação atual entre diferentes fontes, experiências e campos.",
   "file": "src/components/sections/ideias/data.ts",
   "line": 13,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -2636,6 +3353,9 @@
   "text": "HIPÓTESE",
   "file": "src/components/sections/ideias/data.ts",
   "line": 14,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -2647,6 +3367,9 @@
   "text": "Possibilidade sendo testada.",
   "file": "src/components/sections/ideias/data.ts",
   "line": 14,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -2658,6 +3381,9 @@
   "text": "EM INVESTIGAÇÃO",
   "file": "src/components/sections/ideias/data.ts",
   "line": 15,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -2669,6 +3395,9 @@
   "text": "Pergunta ainda deliberadamente aberta.",
   "file": "src/components/sections/ideias/data.ts",
   "line": 15,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -2680,6 +3409,9 @@
   "text": "Futuros",
   "file": "src/components/sections/ideias/data.ts",
   "line": 28,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2691,6 +3423,9 @@
   "text": "Tecnologia e humanidade",
   "file": "src/components/sections/ideias/data.ts",
   "line": 29,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2702,6 +3437,9 @@
   "text": "Escolhas",
   "file": "src/components/sections/ideias/data.ts",
   "line": 30,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2713,6 +3451,9 @@
   "text": "Liderança",
   "file": "src/components/sections/ideias/data.ts",
   "line": 31,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2724,6 +3465,9 @@
   "text": "Vida real",
   "file": "src/components/sections/ideias/data.ts",
   "line": 32,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2735,6 +3479,9 @@
   "text": "Ideias",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 26,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2746,6 +3493,9 @@
   "text": "Ideias",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 30,
+  "role": "Rótulo",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:1381",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2757,6 +3507,9 @@
   "text": "Algumas ideias",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 32,
+  "role": "Título",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:1455",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2768,6 +3521,9 @@
   "text": "merecem mais tempo.",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 32,
+  "role": "Título",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:1455",
+  "em": true,
   "section": "Outros",
   "order": 999
  },
@@ -2779,6 +3535,9 @@
   "text": "Textos e conversas sobre futuros, tecnologia, escolhas e aquilo que estamos construindo enquanto a vida acontece.",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 36,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:1815",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2790,6 +3549,9 @@
   "text": "Comece a ler",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 39,
+  "role": "Botão ou link",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:2060",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2801,6 +3563,9 @@
   "text": "Assine Uma Terça-feira Qualquer",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 41,
+  "role": "Botão ou link",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:2165",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2812,6 +3577,9 @@
   "text": "/images/ensaio/home-05-escrita-vertical.webp",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 48,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2823,6 +3591,9 @@
   "text": "Juliana com caderno, caneta e café à mesa, em retrato vertical.",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 49,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2834,6 +3605,9 @@
   "text": "Nem tudo aqui está resolvido.",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 56,
+  "role": "Nota manuscrita",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:2909",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2845,6 +3619,9 @@
   "text": "America/Sao_Paulo",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 65,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2856,6 +3633,9 @@
   "text": "Acervo",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 88,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2867,6 +3647,9 @@
   "text": "Por onde você quer",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 92,
+  "role": "Título",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:4491",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2878,6 +3661,9 @@
   "text": "entrar?",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 92,
+  "role": "Título",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:4491",
+  "em": true,
   "section": "Outros",
   "order": 999
  },
@@ -2889,6 +3675,9 @@
   "text": "Para ouvir e assistir",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
   "line": 102,
+  "role": "Subtítulo",
+  "group": "src/components/sections/ideias/IdeiasBlocksA.tsx:4984",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -2900,6 +3689,9 @@
   "text": "Uma ideia",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 16,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -2911,6 +3703,9 @@
   "text": "Alguma coisa que estou tentando compreender melhor.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 16,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -2922,6 +3717,9 @@
   "text": "Uma história",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 18,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -2933,6 +3731,9 @@
   "text": "Algo vivido, observado, ouvido ou lembrado que mudou a forma como estou enxergando uma pergunta.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 19,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -2944,6 +3745,9 @@
   "text": "Uma pergunta",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 22,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -2955,6 +3759,9 @@
   "text": "Não necessariamente para responder naquele momento. Talvez apenas para carregar durante alguns dias.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 23,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -2966,6 +3773,9 @@
   "text": "Uma Terça-feira Qualquer",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 29,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -2977,6 +3787,9 @@
   "text": "Uma Terça-feira Qualquer",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 32,
+  "role": "Título",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:1544",
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -2988,6 +3801,9 @@
   "text": "Uma conversa semanal sobre aquilo que estamos construindo enquanto trabalhamos, escolhemos, erramos e recomeçamos.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 35,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:1792",
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -2999,6 +3815,9 @@
   "text": "Uma ideia, uma história ou uma pergunta para continuar pensando depois.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 36,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:1956",
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -3010,6 +3829,9 @@
   "text": "/images/ensaio/home-06-ideias-horizontal.webp",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 52,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -3021,6 +3843,9 @@
   "text": "Livros, caderno aberto, caneta e café sobre uma mesa de madeira.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 53,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -3032,6 +3857,9 @@
   "text": "Receber por e-mail",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 59,
+  "role": "Subtítulo",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:3088",
+  "em": false,
   "section": "IdeiasTerca",
   "order": 0
  },
@@ -3043,6 +3871,9 @@
   "text": "Soberania Humana",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 72,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3054,6 +3885,9 @@
   "text": "Quanto mais capacidade, mais responsabilidade?",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 73,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3065,6 +3899,9 @@
   "text": "Como continuar humano sem romantizar o humano?",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 74,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3076,6 +3913,9 @@
   "text": "Uma escolha pode parecer nossa e ainda ser organizada por medo, aprovação, hábito ou conveniência. Tenho usado provisoriamente essa expressão para investigar como percebemos essas influências e continuamos presentes nas escolhas. Tecnologia participa dessa questão, mas não a esgota.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 84,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:4193",
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3087,6 +3927,9 @@
   "text": "A ferramenta responde:",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 91,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:4652",
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3098,6 +3941,9 @@
   "text": "“É possível.”",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 91,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:4652",
+  "em": true,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3109,6 +3955,9 @@
   "text": "Mas alguém ainda precisa responder",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 93,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3120,6 +3969,9 @@
   "text": "“Devemos?” “Para quê?” “Sob quais critérios?” “Com quais consequências?” “Quem responde por isso?”",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 94,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:4847",
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3131,6 +3983,9 @@
   "text": "“Humanidade” pode facilmente virar um slogan vazio.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 101,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:5181",
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3142,6 +3997,9 @@
   "text": "A pergunta é",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 102,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3153,6 +4011,9 @@
   "text": "Que partes da nossa humanidade queremos cultivar deliberadamente quando nossas ferramentas ampliam tanto nossa capacidade de agir?",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 103,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:5317",
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3164,6 +4025,9 @@
   "text": "Em investigação",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 112,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3175,6 +4039,9 @@
   "text": "Em investigação",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 115,
+  "role": "Rótulo",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:5860",
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3186,6 +4053,9 @@
   "text": "Perguntas que continuam",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 117,
+  "role": "Título",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:5941",
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3197,6 +4067,9 @@
   "text": "abertas.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 117,
+  "role": "Título",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:5941",
+  "em": true,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3208,6 +4081,9 @@
   "text": "Algumas ideias ainda estão em construção. Estas são perguntas que estou tentando compreender melhor.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 121,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:6188",
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3219,6 +4095,9 @@
   "text": "/images/ensaio/ju-leitura-anotacoes.webp",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 126,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3230,6 +4109,9 @@
   "text": "Juliana lendo um livro e fazendo anotações em um caderno.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 127,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3241,6 +4123,9 @@
   "text": "Ainda não sei exatamente onde elas terminam.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 133,
+  "role": "Nota manuscrita",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:6844",
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3252,6 +4137,9 @@
   "text": "Na mesa agora",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 159,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -3263,6 +4151,9 @@
   "text": "Referências que voltam",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 160,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -3274,6 +4165,9 @@
   "text": "Nota editorial",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 164,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -3285,6 +4179,9 @@
   "text": "Pensar também é",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 168,
+  "role": "Título",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:8502",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -3296,6 +4193,9 @@
   "text": "mudar de ideia.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 168,
+  "role": "Título",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:8502",
+  "em": true,
   "section": "Outros",
   "order": 999
  },
@@ -3307,6 +4207,9 @@
   "text": "Algumas ideias vêm da experiência. Outras, de autores e campos que estudo. Procuro tornar essa origem visível e distinguir o que proponho do que continuo investigando.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 172,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:8731",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -3318,6 +4221,9 @@
   "text": "Uma boa pergunta pode sobreviver por bastante tempo. Uma boa ideia também precisa poder ser contrariada.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 175,
+  "role": "Texto",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:8981",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -3329,6 +4235,9 @@
   "text": "Conheça Futuros Humanos",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 177,
+  "role": "Botão ou link",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:9278",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -3340,6 +4249,9 @@
   "text": "(abre em nova aba)",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 195,
+  "role": "Botão ou link",
+  "group": "src/components/sections/ideias/IdeiasBlocksB.tsx:10149",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -3351,6 +4263,9 @@
   "text": "polygon(1% 8%, 99% 0, 100% 88%, 3% 100%)",
   "file": "src/components/sections/ideias/Parts.tsx",
   "line": 10,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "IdeiasInvestigacao",
   "order": 1
  },
@@ -3362,6 +4277,9 @@
   "text": "Primeiro de tudo, eu sou a Ju",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 28,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3373,6 +4291,9 @@
   "text": "/images/ensaio/home-02-biblioteca-vertical.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 31,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3384,6 +4305,9 @@
   "text": "Retrato de Juliana em uma poltrona na biblioteca.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 32,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3395,6 +4319,9 @@
   "text": "Primeiro de tudo,",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 43,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:2042",
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3406,6 +4333,9 @@
   "text": "eu sou a Ju.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 43,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:2042",
+  "em": true,
   "section": "JuHero",
   "order": 0
  },
@@ -3417,6 +4347,9 @@
   "text": "Sou engenheira, empreendedora, mãe e futurista. Mas os títulos explicam menos do que uma inquietação que atravessa minha vida:",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 48,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:2377",
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3428,6 +4361,9 @@
   "text": "o que ainda pode existir quando a gente deixa de tratar o caminho mais provável como o único disponível?",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 51,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:2582",
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3439,6 +4375,9 @@
   "text": "Passei por tecnologia, vendas, liderança e construção de empresas. Hoje, essas experiências encontram os Estudos de Futuros e as perguntas sobre transformação humana que continuo perseguindo.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 54,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:2908",
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3450,6 +4389,9 @@
   "text": "Conheça essa trajetória",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 58,
+  "role": "Botão ou link",
+  "group": "src/components/sections/ju/JuBlocks.tsx:3221",
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3461,6 +4403,9 @@
   "text": "/images/ensaio/home-02-biblioteca-horizontal.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 63,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3472,6 +4417,9 @@
   "text": "Juliana sentada em uma poltrona na biblioteca.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 63,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "JuHero",
   "order": 0
  },
@@ -3483,6 +4431,9 @@
   "text": "Tecnologia e construção",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 72,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3494,6 +4445,9 @@
   "text": "A tecnologia sempre chegou",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 76,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:4187",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3505,6 +4459,9 @@
   "text": "acompanhada de gente.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 76,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:4187",
+  "em": true,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3516,6 +4473,9 @@
   "text": "Na minha trajetória em empresas como EMC e Oracle, tecnologia vinha com",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 81,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:4546",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3527,6 +4487,9 @@
   "text": "cliente, orçamento, pressão, negociação, risco e consequência.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 82,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:4546",
+  "em": true,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3538,6 +4501,9 @@
   "text": "Ao cofundar e liderar a A2F, passei a lidar também com o que é preciso para uma empresa existir: vender, entregar, contratar, decidir, corrigir e sustentar escolhas quando a realidade muda.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 85,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:4858",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3549,6 +4515,9 @@
   "text": "Nesse caminho, acertei, errei, perdi dinheiro, recomecei e mudei de direção.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 86,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:5109",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3560,6 +4529,9 @@
   "text": "Foi nesse percurso que uma ideia ganhou força para mim:",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 87,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:5231",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3571,6 +4543,9 @@
   "text": "nenhuma transformação tecnológica é apenas tecnológica.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 90,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:5349",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3582,6 +4557,9 @@
   "text": "Ela muda como pessoas trabalham, decidem e se relacionam.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 92,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:5524",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3593,6 +4571,9 @@
   "text": "Por isso, diante de uma nova ferramenta, minha pergunta raramente é apenas:",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 94,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:5766",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3604,6 +4585,9 @@
   "text": "“O que essa ferramenta será capaz de fazer?”",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 96,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:5924",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3615,6 +4599,9 @@
   "text": "O que acontece com a gente quando ela consegue?",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 98,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:6125",
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3626,6 +4613,9 @@
   "text": "/images/ensaio/ju-trabalho-tecnologia.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 103,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3637,6 +4627,9 @@
   "text": "Juliana concentrada no trabalho em um notebook.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 104,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3648,6 +4641,9 @@
   "text": "Capacidade e direção",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 122,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3659,6 +4655,9 @@
   "text": "Ser boa num caminho não decide",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 126,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:7582",
+  "em": false,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3670,6 +4669,9 @@
   "text": "se quero continuar nele.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 126,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:7582",
+  "em": true,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3681,6 +4683,9 @@
   "text": "Na escola, um professor chamado Wilker me disse que eu seria boa em qualquer coisa que escolhesse. Guardei a frase. Demorei mais para escutar uma palavra dentro dela: escolher.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 131,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:7930",
+  "em": false,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3692,6 +4697,9 @@
   "text": "Gostar de muitas coisas e encontrar portas abertas pode ser maravilhoso. Também pode nos manter entrando na próxima oportunidade sem perguntar para onde o conjunto das escolhas está levando.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 133,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:8168",
+  "em": false,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3703,6 +4711,9 @@
   "text": "Essa pergunta continua comigo:",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 134,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:8420",
+  "em": false,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3714,6 +4725,9 @@
   "text": "onde estou colocando minha potência?",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 137,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:8513",
+  "em": false,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3725,6 +4739,9 @@
   "text": "escolher.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 141,
+  "role": "Nota manuscrita",
+  "group": "src/components/sections/ju/JuBlocks.tsx:8784",
+  "em": false,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3736,6 +4753,9 @@
   "text": "Maternidade",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 151,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3747,6 +4767,9 @@
   "text": "Quando virei mãe, o futuro",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 155,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:9349",
+  "em": false,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3758,6 +4781,9 @@
   "text": "mudou de escala.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 155,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:9349",
+  "em": true,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3769,6 +4795,9 @@
   "text": "O futuro passou a ser também o mundo onde minhas filhas vão viver. Isso tornou algumas perguntas muito próximas: o que ensino, o que sustento, o que questiono e o que ajudo a construir?",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 160,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:9684",
+  "em": false,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3780,6 +4809,9 @@
   "text": "eu não controlo o futuro delas.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 163,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:9948",
+  "em": true,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3791,6 +4823,9 @@
   "text": "Posso participar do presente e ajudar a criar condições para que elas também façam suas escolhas.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 166,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:10120",
+  "em": false,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3802,6 +4837,9 @@
   "text": "/images/ju/retrato-sorriso-tijolos.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 170,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3813,6 +4851,9 @@
   "text": "Retrato de Juliana sorrindo diante de uma parede de tijolos brancos.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 171,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3824,6 +4865,9 @@
   "text": "A lente atual",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 186,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3835,6 +4879,9 @@
   "text": "As perguntas sobre transformação",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 190,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:11245",
+  "em": false,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3846,6 +4893,9 @@
   "text": "ficaram maiores.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 190,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:11245",
+  "em": true,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3857,6 +4907,9 @@
   "text": "Meu interesse por escolhas, capacidades e mudança encontrou nos Estudos de Futuros um campo mais amplo. Pessoas se transformam dentro de famílias, organizações, culturas e tecnologias. Esses mundos também podem mudar.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 195,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:11586",
+  "em": false,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3868,6 +4921,9 @@
   "text": "Futuros Humanos nasceu nesse encontro. É onde organizo perguntas sobre possibilidade, direção, humanidade e aquilo que podemos começar a construir.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 197,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:11865",
+  "em": false,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3879,6 +4935,9 @@
   "text": "Eu estudo futuros porque me interesso profundamente por",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 200,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:12091",
+  "em": false,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3890,6 +4949,9 @@
   "text": "pessoas.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 200,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:12091",
+  "em": true,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3901,6 +4963,9 @@
   "text": "Conheça Futuros Humanos",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 203,
+  "role": "Botão ou link",
+  "group": "src/components/sections/ju/JuBlocks.tsx:12305",
+  "em": false,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3912,6 +4977,9 @@
   "text": "/images/ensaio/ju-leitura-anotacoes.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 207,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3923,6 +4991,9 @@
   "text": "Juliana lendo um livro e fazendo anotações em um caderno.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 208,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3934,6 +5005,9 @@
   "text": "Conversas com eventos, lideranças e equipes sobre futuros, tecnologia e transformação.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 237,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -3945,6 +5019,9 @@
   "text": "Conheça as palestras",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 238,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -3956,6 +5033,9 @@
   "text": "Coletivo de futuristas do qual participo, com trabalhos de futuros aplicados.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 243,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -3967,6 +5047,9 @@
   "text": "Conheça a WTF",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 245,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -3978,6 +5061,9 @@
   "text": "Converse sobre futuros aplicados",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 246,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -3989,6 +5075,9 @@
   "text": "EPIC",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 252,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -4000,6 +5089,9 @@
   "text": "247",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 252,
+  "role": "Título",
+  "group": null,
+  "em": true,
   "section": "JuHoje",
   "order": 6
  },
@@ -4011,6 +5103,9 @@
   "text": "Experiências de transformação pessoal para aproximar o que você quer mudar daquilo que consegue praticar no cotidiano.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 255,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -4022,6 +5117,9 @@
   "text": "Conheça o EPIC247",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 257,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -4033,6 +5131,9 @@
   "text": "Tire uma dúvida sobre o EPIC247",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 258,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -4044,6 +5145,9 @@
   "text": "O que construo hoje",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 262,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -4055,6 +5159,9 @@
   "text": "Essa visão encontra",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 265,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:14956",
+  "em": false,
   "section": "JuHoje",
   "order": 6
  },
@@ -4066,6 +5173,9 @@
   "text": "trabalhos diferentes.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 265,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:14956",
+  "em": true,
   "section": "JuHoje",
   "order": 6
  },
@@ -4077,6 +5187,9 @@
   "text": "Ouça a Ju",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 296,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuMidia",
   "order": 5
  },
@@ -4088,6 +5201,9 @@
   "text": "Para ouvir a Ju",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 299,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:16397",
+  "em": false,
   "section": "JuMidia",
   "order": 5
  },
@@ -4099,6 +5215,9 @@
   "text": "pensando em voz alta.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 299,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:16397",
+  "em": true,
   "section": "JuMidia",
   "order": 5
  },
@@ -4110,6 +5229,9 @@
   "text": "Encerramento",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 316,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "JuEncerramento",
   "order": 7
  },
@@ -4121,6 +5243,9 @@
   "text": "Eu não quero menos vida.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 320,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:17237",
+  "em": false,
   "section": "JuEncerramento",
   "order": 7
  },
@@ -4132,6 +5257,9 @@
   "text": "Eu quero mais vida.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 320,
+  "role": "Título",
+  "group": "src/components/sections/ju/JuBlocks.tsx:17237",
+  "em": true,
   "section": "JuEncerramento",
   "order": 7
  },
@@ -4143,6 +5271,9 @@
   "text": "Quero construir, aprender, criar e continuar encontrando coisas que me façam mudar de ideia. Quero estar presente na vida enquanto isso acontece.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 325,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:17574",
+  "em": false,
   "section": "JuEncerramento",
   "order": 7
  },
@@ -4154,6 +5285,9 @@
   "text": "Não terminei de me tornar.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 328,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:17798",
+  "em": false,
   "section": "JuEncerramento",
   "order": 7
  },
@@ -4165,6 +5299,9 @@
   "text": "Não terminei de construir.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 329,
+  "role": "Texto",
+  "group": "src/components/sections/ju/JuBlocks.tsx:17798",
+  "em": false,
   "section": "JuEncerramento",
   "order": 7
  },
@@ -4176,6 +5313,9 @@
   "text": "Vamos conversar",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 332,
+  "role": "Botão ou link",
+  "group": "src/components/sections/ju/JuBlocks.tsx:18028",
+  "em": false,
   "section": "JuEncerramento",
   "order": 7
  },
@@ -4187,6 +5327,9 @@
   "text": "/images/ensaio/ju-caminhada-movimento.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 337,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "JuEncerramento",
   "order": 7
  },
@@ -4198,6 +5341,9 @@
   "text": "Juliana caminhando na calçada, em enquadramento de corpo inteiro.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 338,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "JuEncerramento",
   "order": 7
  },
@@ -4209,6 +5355,9 @@
   "text": "Abertura",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 16,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "OrgHero",
   "order": 0
  },
@@ -4220,6 +5369,9 @@
   "text": "Para Organizações",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 20,
+  "role": "Rótulo",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:898",
+  "em": false,
   "section": "OrgHero",
   "order": 0
  },
@@ -4231,6 +5383,9 @@
   "text": "Sua organização já está construindo futuros.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 22,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:983",
+  "em": false,
   "section": "OrgHero",
   "order": 0
  },
@@ -4242,6 +5397,9 @@
   "text": "A questão é: quais?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 24,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:983",
+  "em": true,
   "section": "OrgHero",
   "order": 0
  },
@@ -4253,6 +5411,9 @@
   "text": "Nas tecnologias que adota, nas pessoas que promove e nos comportamentos que recompensa, a organização ajuda alguns caminhos a ganhar força.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 30,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:1507",
+  "em": false,
   "section": "OrgHero",
   "order": 0
  },
@@ -4264,6 +5425,9 @@
   "text": "Trabalho com lideranças e equipes para examinar essas escolhas, ampliar possibilidades e identificar o que pode começar a mudar no presente.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 32,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:1722",
+  "em": false,
   "section": "OrgHero",
   "order": 0
  },
@@ -4275,6 +5439,9 @@
   "text": "Conte o desafio",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 36,
+  "role": "Botão ou link",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:2002",
+  "em": false,
   "section": "OrgHero",
   "order": 0
  },
@@ -4286,6 +5453,9 @@
   "text": "Conheça as formas de trabalhar juntos",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 38,
+  "role": "Botão ou link",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:2156",
+  "em": false,
   "section": "OrgHero",
   "order": 0
  },
@@ -4297,6 +5467,9 @@
   "text": "/images/ensaio/palestras-workshop-02.webp",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 45,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "OrgHero",
   "order": 0
  },
@@ -4308,6 +5481,9 @@
   "text": "Cena ilustrativa de Juliana facilitando uma atividade com post-its.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 46,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "OrgHero",
   "order": 0
  },
@@ -4319,6 +5495,9 @@
   "text": "Tecnologia e humanidade",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 64,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4330,6 +5509,9 @@
   "text": "“Precisamos usar IA.”",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 65,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4341,6 +5523,9 @@
   "text": "Que problema queremos resolver?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 67,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4352,6 +5537,9 @@
   "text": "Que critérios precisam continuar sob responsabilidade das pessoas?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 68,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4363,6 +5551,9 @@
   "text": "O que muda no trabalho?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 69,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4374,6 +5565,9 @@
   "text": "Transformação e capacidades",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 74,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4385,6 +5579,9 @@
   "text": "“Precisamos mudar a cultura.”",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 75,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4396,6 +5593,9 @@
   "text": "Quais comportamentos a organização diz querer?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 77,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4407,6 +5607,9 @@
   "text": "Quais ela efetivamente recompensa?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 78,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4418,6 +5621,9 @@
   "text": "Que condições tornam a mudança possível?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 79,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4429,6 +5635,9 @@
   "text": "Futuros e estratégia",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 84,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4440,6 +5649,9 @@
   "text": "“Precisamos revisar a estratégia.”",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 85,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4451,6 +5663,9 @@
   "text": "Que futuro estamos assumindo?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 87,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4462,6 +5677,9 @@
   "text": "Que alternativas merecem ser consideradas?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 88,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4473,6 +5691,9 @@
   "text": "Que capacidades a direção escolhida exige?",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 89,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4484,6 +5705,9 @@
   "text": "Situações de entrada",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 94,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4495,6 +5719,9 @@
   "text": "Talvez a pergunta tenha chegado",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 98,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:4941",
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4506,6 +5733,9 @@
   "text": "de outro jeito.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 98,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:4941",
+  "em": true,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4517,6 +5747,9 @@
   "text": "Organizações mudam o tempo inteiro. Adotam tecnologias, redesenham processos, revisam estratégias. Tudo isso pode ser necessário.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 102,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:5203",
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4528,6 +5761,9 @@
   "text": "Mas mudança não é direção. E a pergunta que importa costuma chegar como um pedido urgente.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 104,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:5404",
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4539,6 +5775,9 @@
   "text": "/images/ensaio/organizacoes-conversa-lideranca.webp",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 109,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4550,6 +5789,9 @@
   "text": "Cena ilustrativa de Juliana em conversa individual com uma liderança.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 110,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4561,6 +5803,9 @@
   "text": "Situações ilustrativas.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 132,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:6989",
+  "em": false,
   "section": "OrgSituacoes",
   "order": 1
  },
@@ -4572,6 +5817,9 @@
   "text": "Abrir uma discussão com um grupo",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 142,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4583,6 +5831,9 @@
   "text": "Palestra",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 143,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4594,6 +5845,9 @@
   "text": "Perspectivas e perguntas compartilhadas para uma conversa posterior.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 144,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4605,6 +5859,9 @@
   "text": "Trabalhar uma questão em conjunto",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 147,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4616,6 +5873,9 @@
   "text": "Workshop",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 148,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4627,6 +5887,9 @@
   "text": "Suposições colocadas em discussão, escolhas examinadas e próximos movimentos a testar.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 149,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4638,6 +5901,9 @@
   "text": "Explorar incertezas e possibilidades",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 152,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4649,6 +5915,9 @@
   "text": "Projeto de futuros aplicados",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 153,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4660,6 +5929,9 @@
   "text": "Cenários e suas implicações para apoiar decisões, conforme o escopo.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 154,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4671,6 +5943,9 @@
   "text": "Sustentar desenvolvimento ao longo do tempo",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 157,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4682,6 +5957,9 @@
   "text": "Jornada customizada",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 158,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4693,6 +5971,9 @@
   "text": "Uma sequência de encontros e experiências, com espaço para testar, aprender e rever o caminho.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 159,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4704,6 +5985,9 @@
   "text": "Formatos e profundidade",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 164,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4715,6 +5999,9 @@
   "text": "O trabalho depende",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 167,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:8725",
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4726,6 +6013,9 @@
   "text": "da pergunta.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 167,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:8725",
+  "em": true,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4737,6 +6027,9 @@
   "text": "Necessidade",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 172,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:8933",
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4748,6 +6041,9 @@
   "text": "Formato possível",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 173,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:8933",
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4759,6 +6055,9 @@
   "text": "O que pode ser produzido, conforme escopo",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 174,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:8933",
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4770,6 +6069,9 @@
   "text": "Necessidade",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 181,
+  "role": "Termo",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:9625",
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4781,6 +6083,9 @@
   "text": "Formato possível",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 185,
+  "role": "Termo",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:9888",
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4792,6 +6097,9 @@
   "text": "O que pode ser produzido",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 189,
+  "role": "Termo",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:10188",
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4803,6 +6111,9 @@
   "text": "O trabalho é construído com as lideranças e equipes. Escopo, condições internas e continuidade fazem parte do resultado.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 200,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:10622",
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4814,6 +6125,9 @@
   "text": "Conheça a palestra Futuros Humanos",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 203,
+  "role": "Botão ou link",
+  "group": "src/components/sections/organizacoes/OrgBlocksA.tsx:10928",
+  "em": false,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4825,6 +6139,9 @@
   "text": "Trabalho em coletivo",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 20,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4836,6 +6153,9 @@
   "text": "Algumas perguntas pedem",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 24,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:1193",
+  "em": false,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4847,6 +6167,9 @@
   "text": "mais gente à mesa.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 24,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:1193",
+  "em": true,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4858,6 +6181,9 @@
   "text": "Integro a",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 28,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:1445",
+  "em": false,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4869,6 +6195,9 @@
   "text": "What The Future?!",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 28,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:1445",
+  "em": true,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4880,6 +6209,9 @@
   "text": ", um coletivo de futuristas. Quando o desafio pede outras competências e perspectivas, essa colaboração pode ampliar o trabalho.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 28,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:1445",
+  "em": false,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4891,6 +6223,9 @@
   "text": "Projetos, abordagens e parceiros são definidos conforme a necessidade.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 29,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:1798",
+  "em": false,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4902,6 +6237,9 @@
   "text": "Conheça a What The Future?!",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 33,
+  "role": "Botão ou link",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:1966",
+  "em": false,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4913,6 +6251,9 @@
   "text": "Converse sobre futuros aplicados",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 36,
+  "role": "Botão ou link",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:2197",
+  "em": false,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4924,6 +6265,9 @@
   "text": "/images/ensaio/home-04c-quadro-post-its.webp",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 41,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4935,6 +6279,9 @@
   "text": "Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 42,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "OrgColetivo",
   "order": 3
  },
@@ -4946,6 +6293,9 @@
   "text": "Experiência",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 56,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "OrgExperiencia",
   "order": 4
  },
@@ -4957,6 +6307,9 @@
   "text": "As ideias precisam sobreviver",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 60,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:3329",
+  "em": false,
   "section": "OrgExperiencia",
   "order": 4
  },
@@ -4968,6 +6321,9 @@
   "text": "ao trabalho real.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 60,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:3329",
+  "em": true,
   "section": "OrgExperiencia",
   "order": 4
  },
@@ -4979,6 +6335,9 @@
   "text": "Minha trajetória em tecnologia, vendas, liderança e construção de empresas me mantém próxima de orçamento, cliente, equipe e consequência. Esse encontro ajuda a testar as perguntas que levo para as organizações.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 64,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:3586",
+  "em": false,
   "section": "OrgExperiencia",
   "order": 4
  },
@@ -4990,6 +6349,9 @@
   "text": "Possibilidade sem realidade vira fantasia.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 68,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:3970",
+  "em": false,
   "section": "OrgExperiencia",
   "order": 4
  },
@@ -5001,6 +6363,9 @@
   "text": "Realidade sem possibilidade vira resignação.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 70,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:3970",
+  "em": false,
   "section": "OrgExperiencia",
   "order": 4
  },
@@ -5012,6 +6377,9 @@
   "text": "Conheça minha trajetória",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 75,
+  "role": "Botão ou link",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:4375",
+  "em": false,
   "section": "OrgExperiencia",
   "order": 4
  },
@@ -5023,6 +6391,9 @@
   "text": "/images/ensaio/ju-trabalho-tecnologia.webp",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 79,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "OrgExperiencia",
   "order": 4
  },
@@ -5034,6 +6405,9 @@
   "text": "Juliana concentrada no trabalho em um notebook.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 80,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "OrgExperiencia",
   "order": 4
  },
@@ -5045,6 +6419,9 @@
   "text": "Contato",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 96,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "OrgContato",
   "order": 5
  },
@@ -5056,6 +6433,9 @@
   "text": "O que sua organização",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 102,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:5733",
+  "em": false,
   "section": "OrgContato",
   "order": 5
  },
@@ -5067,6 +6447,9 @@
   "text": "está tentando construir?",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 102,
+  "role": "Título",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:5733",
+  "em": true,
   "section": "OrgContato",
   "order": 5
  },
@@ -5078,6 +6461,9 @@
   "text": "Conte o que está acontecendo, quem está envolvido e por que essa conversa importa agora.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 105,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:6001",
+  "em": false,
   "section": "OrgContato",
   "order": 5
  },
@@ -5089,6 +6475,9 @@
   "text": "Conversar sobre o desafio",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 108,
+  "role": "Botão ou link",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:6166",
+  "em": false,
   "section": "OrgContato",
   "order": 5
  },
@@ -5100,6 +6489,9 @@
   "text": "Prefere começar por e-mail?",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 113,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:6586",
+  "em": false,
   "section": "OrgContato",
   "order": 5
  },
@@ -5111,6 +6503,9 @@
   "text": "WhatsApp",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 122,
+  "role": "Botão ou link",
+  "group": "src/components/sections/organizacoes/OrgBlocksB.tsx:7053",
+  "em": false,
   "section": "OrgContato",
   "order": 5
  },
@@ -5122,6 +6517,9 @@
   "text": "/images/ensaio/contato-sorriso-horizontal.webp",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 130,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "OrgContato",
   "order": 5
  },
@@ -5133,6 +6531,9 @@
   "text": "Juliana sorrindo para a câmera à mesa, com notebook aberto.",
   "file": "src/components/sections/organizacoes/OrgBlocksB.tsx",
   "line": 131,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "OrgContato",
   "order": 5
  },
@@ -5144,6 +6545,9 @@
   "text": "Ler menos",
   "file": "src/components/sections/organizacoes/parts.tsx",
   "line": 141,
+  "role": "Texto",
+  "group": "src/components/sections/organizacoes/parts.tsx:3930",
+  "em": false,
   "section": "Outros",
   "order": 999
  },
@@ -5155,6 +6559,9 @@
   "text": "Uma liderança diante da IA",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 16,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5166,6 +6573,9 @@
   "text": "pode precisar discutir o que delegar e que critérios preservar.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 17,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5177,6 +6587,9 @@
   "text": "Uma equipe em transformação",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 21,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5188,6 +6601,9 @@
   "text": "pode precisar enxergar a distância entre o comportamento desejado e o que a organização recompensa.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 22,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5199,6 +6615,9 @@
   "text": "Contexto",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 26,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5210,6 +6629,9 @@
   "text": "A tese dá direção.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 30,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:1410",
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5221,6 +6643,9 @@
   "text": "O contexto define a conversa.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 32,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:1410",
+  "em": true,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5232,6 +6657,9 @@
   "text": "Essas tensões orientam exemplos e ênfases da conversa, conforme o público e o momento.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 44,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:2219",
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5243,6 +6671,9 @@
   "text": "Customizar não é trocar o logo na apresentação. É compreender por que essa conversa precisa acontecer para aquelas pessoas, naquele momento.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 47,
+  "role": "Citação",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:2385",
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5254,6 +6685,9 @@
   "text": "/images/ensaio/palestras-palco-frente.webp",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 55,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5265,6 +6699,9 @@
   "text": "Cena ilustrativa de Juliana falando no palco, vista de frente.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 56,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "PalestrasContexto",
   "order": 3
  },
@@ -5276,6 +6713,9 @@
   "text": "Aprofundamento",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 71,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5287,6 +6727,9 @@
   "text": "Quando a pergunta pede",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 75,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:3782",
+  "em": false,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5298,6 +6741,9 @@
   "text": "trabalho conjunto.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 75,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:3782",
+  "em": true,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5309,6 +6755,9 @@
   "text": "Às vezes, a palestra abre uma conversa",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 78,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:3983",
+  "em": false,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5320,6 +6769,9 @@
   "text": "que pede continuidade.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 78,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:3983",
+  "em": true,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5331,6 +6783,9 @@
   "text": "Em workshops, o grupo examina uma questão e desenha movimentos possíveis. Eles podem acontecer de forma independente ou depois da palestra.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 82,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:4329",
+  "em": false,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5342,6 +6797,9 @@
   "text": "Veja o trabalho com organizações",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 85,
+  "role": "Botão ou link",
+  "group": "src/components/sections/palestras-workshops/BlocksFormatos.tsx:4564",
+  "em": false,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5353,6 +6811,9 @@
   "text": "/images/ensaio/palestras-workshop-01.webp",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 89,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5364,6 +6825,9 @@
   "text": "Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 90,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5375,6 +6839,9 @@
   "text": "Abertura",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 17,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5386,6 +6853,9 @@
   "text": "Futuros Humanos | Palestra com Ju Ferreira",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 21,
+  "role": "Rótulo",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:1076",
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5397,6 +6867,9 @@
   "text": "Estamos ficando mais capazes.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 23,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:1193",
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5408,6 +6881,9 @@
   "text": "Para construir o quê?",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 23,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:1193",
+  "em": true,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5419,6 +6895,9 @@
   "text": "Uma palestra sobre as escolhas que fazemos quando tecnologia, trabalho e vida abrem novas possibilidades.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 27,
+  "role": "Frase de destaque",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:1532",
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5430,6 +6909,9 @@
   "text": "Futuros Humanos conecta essas mudanças às capacidades humanas necessárias para participar do que vem depois.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 29,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:1781",
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5441,6 +6923,9 @@
   "text": "Conversar sobre meu evento",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 32,
+  "role": "Botão ou link",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:2065",
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5452,6 +6937,9 @@
   "text": "Ouça e veja a Ju",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 35,
+  "role": "Botão ou link",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:2265",
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5463,6 +6951,9 @@
   "text": "Conheça Futuros Humanos",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 38,
+  "role": "Botão ou link",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:2456",
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5474,6 +6965,9 @@
   "text": "/images/ensaio/home-03-palco-vertical.webp",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 46,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5485,6 +6979,9 @@
   "text": "Cena ilustrativa de Juliana no palco, em enquadramento vertical.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 47,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "PalestrasHero",
   "order": 0
  },
@@ -5496,6 +6993,9 @@
   "text": "Que futuro nossas escolhas de hoje ajudam a tornar mais provável?",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 63,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5507,6 +7007,9 @@
   "text": "O que vale a pena fazer com as capacidades que estamos ampliando?",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 64,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5518,6 +7021,9 @@
   "text": "Do que precisamos nos tornar capazes para sustentar essa direção?",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 65,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5529,6 +7035,9 @@
   "text": "Encontros de liderança",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 67,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5540,6 +7049,9 @@
   "text": "Eventos de tecnologia e inovação",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 67,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5551,6 +7063,9 @@
   "text": "Convenções e momentos de transformação",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 67,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5562,6 +7077,9 @@
   "text": "A experiência",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 69,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5573,6 +7091,9 @@
   "text": "Uma pergunta para levar",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 73,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:4451",
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5584,6 +7105,9 @@
   "text": "além do evento.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 73,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:4451",
+  "em": true,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5595,6 +7119,9 @@
   "text": "Histórias da vida, experiência em tecnologia e Estudos de Futuros se encontram para tornar visíveis escolhas que passam por inevitáveis.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 77,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:4719",
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5606,6 +7133,9 @@
   "text": "A proposta é ampliar perspectivas, reconhecer critérios que orientam decisões e encontrar um primeiro movimento possível no contexto de cada pessoa ou equipe.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 79,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:4934",
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5617,6 +7147,9 @@
   "text": "Três perguntas atravessam a palestra",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 81,
+  "role": "Subtítulo",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:5188",
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5628,6 +7161,9 @@
   "text": "No caminho, a conversa passa por imaginar, escolher, tornar-se e construir. Não como etapas a cumprir: depois de construir, a pergunta volta, mas de outro lugar.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 93,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:5816",
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5639,6 +7175,9 @@
   "text": "Conheça a tese em profundidade",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 95,
+  "role": "Botão ou link",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:6109",
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5650,6 +7189,9 @@
   "text": "/images/ensaio/palestras-interacao-plateia.webp",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 99,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5661,6 +7203,9 @@
   "text": "Cena ilustrativa de Juliana interagindo com participantes de uma palestra.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 100,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5672,6 +7217,9 @@
   "text": "Onde essa conversa costuma fazer sentido",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 114,
+  "role": "Subtítulo",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:7170",
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5683,6 +7231,9 @@
   "text": "Cada público pede ênfases próprias. Por isso a adequação é conversada a partir do briefing de cada evento.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 125,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksIntro.tsx:7706",
+  "em": false,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5694,6 +7245,9 @@
   "text": "Ouça e veja Ju",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 26,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PalestrasOucaVeja",
   "order": 2
  },
@@ -5705,6 +7259,9 @@
   "text": "Conheça a conversa",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 29,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:1443",
+  "em": false,
   "section": "PalestrasOucaVeja",
   "order": 2
  },
@@ -5716,6 +7273,9 @@
   "text": "antes de levá-la ao seu evento.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 29,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:1443",
+  "em": true,
   "section": "PalestrasOucaVeja",
   "order": 2
  },
@@ -5727,6 +7287,9 @@
   "text": "Organizações e eventos",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 72,
+  "role": "Nome (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PalestrasOucaVeja",
   "order": 2
  },
@@ -5738,6 +7301,9 @@
   "text": "Conversa inicial",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 102,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5749,6 +7315,9 @@
   "text": "Público, momento do evento e a pergunta que merece entrar na sala.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 102,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5760,6 +7329,9 @@
   "text": "Proposta",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 103,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5771,6 +7343,9 @@
   "text": "Formato, escopo e condições adequados à necessidade.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 103,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5782,6 +7357,9 @@
   "text": "Preparação",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 104,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5793,6 +7371,9 @@
   "text": "Alinhamento de exemplos, linguagem e organização da experiência.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 104,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5804,6 +7385,9 @@
   "text": "Como começa",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 107,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5815,6 +7399,9 @@
   "text": "Começamos",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 110,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:5059",
+  "em": false,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5826,6 +7413,9 @@
   "text": "pelo contexto.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 110,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:5059",
+  "em": true,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5837,6 +7427,9 @@
   "text": "Contratação",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 133,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5848,6 +7441,9 @@
   "text": "/images/ensaio/contato-sorriso-vertical.webp",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 136,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5859,6 +7455,9 @@
   "text": "Qual conversa precisa acontecer",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 148,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:6940",
+  "em": false,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5870,6 +7469,9 @@
   "text": "no seu evento?",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 148,
+  "role": "Título",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:6940",
+  "em": true,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5881,6 +7483,9 @@
   "text": "Conte o público, a data se já existir e o que motivou o encontro. A partir daí, podemos avaliar o formato.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 151,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:7215",
+  "em": false,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5892,6 +7497,9 @@
   "text": "Falar sobre uma palestra",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 154,
+  "role": "Botão ou link",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:7401",
+  "em": false,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5903,6 +7511,9 @@
   "text": "Prefere falar direto?",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 157,
+  "role": "Texto",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:7691",
+  "em": false,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5914,6 +7525,9 @@
   "text": "WhatsApp comercial",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
   "line": 169,
+  "role": "Botão ou link",
+  "group": "src/components/sections/palestras-workshops/BlocksLastro.tsx:8210",
+  "em": false,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5925,6 +7539,9 @@
   "text": "Fechamento",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 11,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -5936,6 +7553,9 @@
   "text": "Eu também preciso",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 16,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasFechamento.tsx:755",
+  "em": false,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -5947,6 +7567,9 @@
   "text": "voltar à pergunta.",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 16,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasFechamento.tsx:755",
+  "em": true,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -5958,6 +7581,9 @@
   "text": "Não transformei minha vida numa sequência impecável de escolhas conscientes. Continuo trabalhando, criando minhas filhas, construindo e revendo o que faço com o tempo e a potência que tenho.",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 21,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasFechamento.tsx:1118",
+  "em": false,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -5969,6 +7595,9 @@
   "text": "Essas perguntas fazem parte da minha vida porque eu também preciso delas.",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 22,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasFechamento.tsx:1375",
+  "em": false,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -5980,6 +7609,9 @@
   "text": "Você pode começar de onde está.",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 25,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasFechamento.tsx:1515",
+  "em": false,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -5991,6 +7623,9 @@
   "text": "E pode precisar de companhia para isso.",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 25,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasFechamento.tsx:1515",
+  "em": false,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -6002,6 +7637,9 @@
   "text": "O futuro não pode custar o presente.",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 28,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasFechamento.tsx:1867",
+  "em": false,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -6013,6 +7651,9 @@
   "text": "/images/ensaio/pessoas-janela.webp",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 32,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -6024,6 +7665,9 @@
   "text": "Juliana olhando pela janela, com expressão contemplativa.",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 33,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -6035,6 +7679,9 @@
   "text": "Abertura",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 18,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6046,6 +7693,9 @@
   "text": "/images/ensaio/home-02-biblioteca-vertical.webp",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 21,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6057,6 +7707,9 @@
   "text": "Retrato de Juliana em uma poltrona na biblioteca.",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 22,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6068,6 +7721,9 @@
   "text": "E se essa conversa for sobre a",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 33,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasHero.tsx:1387",
+  "em": false,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6079,6 +7735,9 @@
   "text": "sua própria vida?",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 33,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasHero.tsx:1387",
+  "em": true,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6090,6 +7749,9 @@
   "text": "Há coisas que você continua sustentando porque importam. Outras permanecem porque você dá conta, porque sempre foi assim ou porque ainda não encontrou condições para mudar.",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 39,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasHero.tsx:1677",
+  "em": false,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6101,6 +7763,9 @@
   "text": "Talvez o primeiro passo seja perceber a diferença.",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 43,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasHero.tsx:1934",
+  "em": false,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6112,6 +7777,9 @@
   "text": "Comece por uma pergunta",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 47,
+  "role": "Botão ou link",
+  "group": "src/components/sections/pessoas/PessoasHero.tsx:2193",
+  "em": false,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6123,6 +7791,9 @@
   "text": "/images/ensaio/home-02-biblioteca-horizontal.webp",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 55,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6134,6 +7805,9 @@
   "text": "Juliana sentada em uma poltrona na biblioteca.",
   "file": "src/components/sections/pessoas/PessoasHero.tsx",
   "line": 56,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasHero",
   "order": 0
  },
@@ -6145,6 +7819,9 @@
   "text": "O que você sustenta",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 10,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6156,6 +7833,9 @@
   "text": "Às vezes, aquilo que permanece não é aquilo que você escolheu.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 12,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6167,6 +7847,9 @@
   "text": "É aquilo que nunca parou para rever.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 13,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6178,6 +7861,9 @@
   "text": "O que eu continuo sustentando apenas porque já está aí?",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 15,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6189,6 +7875,9 @@
   "text": "O que você adia",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 19,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6200,6 +7889,9 @@
   "text": "Nem toda decisão adiada desaparece.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 21,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6211,6 +7903,9 @@
   "text": "Algumas continuam decidindo por você.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 22,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6222,6 +7917,9 @@
   "text": "O que está sendo decidido enquanto eu continuo adiando?",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 24,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6233,6 +7931,9 @@
   "text": "O que você normalizou",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 28,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6244,6 +7945,9 @@
   "text": "Coisas que incomodavam no início podem, com o tempo, deixar de chamar atenção.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 29,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6255,6 +7959,9 @@
   "text": "O que se tornou normal sem necessariamente ter se tornado bom?",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 30,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6266,6 +7973,9 @@
   "text": "Margem",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 38,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6277,6 +7987,9 @@
   "text": "Limites existem.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 42,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasMargem.tsx:1728",
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6288,6 +8001,9 @@
   "text": "Potência também.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 42,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasMargem.tsx:1728",
+  "em": true,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6299,6 +8015,9 @@
   "text": "Nem toda circunstância foi escolhida. Nem toda mudança está disponível agora. Tempo, recursos, apoio e outras pessoas participam do que podemos fazer.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 47,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasMargem.tsx:1993",
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6310,6 +8029,9 @@
   "text": "Ainda assim, vale investigar: o que posso rever? De que ajuda preciso? Que condição precisa mudar para que outra escolha se torne possível?",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 49,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasMargem.tsx:2210",
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6321,6 +8043,9 @@
   "text": "Há hábitos que sustentam cuidado e confiança. E há repetições que merecem voltar à nossa atenção.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 50,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasMargem.tsx:2416",
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6332,6 +8057,9 @@
   "text": "O que você continua fazendo que já não escolheria da mesma forma hoje?",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 52,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasMargem.tsx:2580",
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6343,6 +8071,9 @@
   "text": "/images/ensaio/pessoas-cafe-manha.webp",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 56,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6354,6 +8085,9 @@
   "text": "Juliana segurando uma caneca de café à mesa da cozinha.",
   "file": "src/components/sections/pessoas/PessoasMargem.tsx",
   "line": 57,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasMargem",
   "order": 1
  },
@@ -6365,6 +8099,9 @@
   "text": "Imaginar",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 13,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6376,6 +8113,9 @@
   "text": "o que poderia ser diferente nessa situação?",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 13,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6387,6 +8127,9 @@
   "text": "Escolher",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 14,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6398,6 +8141,9 @@
   "text": "qual mudança importa e por quê?",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 14,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6409,6 +8155,9 @@
   "text": "Tornar-se",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 15,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6420,6 +8169,9 @@
   "text": "que capacidade, apoio ou condição essa mudança pede?",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 15,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6431,6 +8183,9 @@
   "text": "Construir",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 16,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6442,6 +8197,9 @@
   "text": "qual movimento cabe agora, ou que ajuda pode tornar um movimento possível?",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 16,
+  "role": "Pergunta",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6453,6 +8211,9 @@
   "text": "Uma pergunta para a sua terça-feira",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 22,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6464,6 +8225,9 @@
   "text": "Uma pergunta para a",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 26,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasPergunta.tsx:1408",
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6475,6 +8239,9 @@
   "text": "sua terça-feira.",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 26,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasPergunta.tsx:1408",
+  "em": true,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6486,6 +8253,9 @@
   "text": "Pense numa situação que vem se repetindo. Pode ser pequena. Você não precisa registrar sua resposta aqui.",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 29,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasPergunta.tsx:1651",
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6497,6 +8267,9 @@
   "text": "/images/ensaio/contexto-caderno-escolhas.webp",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 32,
+  "role": "Imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6508,6 +8281,9 @@
   "text": "Mãos fazendo anotações e marcando escolhas em um caderno.",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 33,
+  "role": "Descrição da imagem",
+  "group": null,
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6519,6 +8295,9 @@
   "text": "Depois de tentar, olhe de novo. O que aconteceu pode mudar a pergunta.",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 62,
+  "role": "Texto",
+  "group": "src/components/sections/pessoas/PessoasPergunta.tsx:3248",
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6530,6 +8309,9 @@
   "text": "Entenda a Espiral",
   "file": "src/components/sections/pessoas/PessoasPergunta.tsx",
   "line": 66,
+  "role": "Botão ou link",
+  "group": "src/components/sections/pessoas/PessoasPergunta.tsx:3482",
+  "em": false,
   "section": "PessoasPergunta",
   "order": 2
  },
@@ -6541,6 +8323,9 @@
   "text": "Quero continuar pensando",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 24,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6552,6 +8337,9 @@
   "text": "Ideias",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 25,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6563,6 +8351,9 @@
   "text": "Perguntas em investigação e textos sobre futuros, tecnologia e escolhas, conforme são publicados.",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 26,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6574,6 +8365,9 @@
   "text": "Explore as ideias",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 27,
+  "role": "Botão ou link",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6585,6 +8379,9 @@
   "text": "Quero acompanhar essa conversa",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 31,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6596,6 +8393,9 @@
   "text": "Uma Terça-feira Qualquer",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 32,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6607,6 +8407,9 @@
   "text": "Uma conversa semanal, por e-mail, sobre aquilo que estamos construindo enquanto a vida acontece.",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 33,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6618,6 +8421,9 @@
   "text": "Conheça a newsletter",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 34,
+  "role": "Botão ou link",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6629,6 +8435,9 @@
   "text": "Quero colocar mudança em prática",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 38,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6640,6 +8449,9 @@
   "text": "EPIC247",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 39,
+  "role": "Título",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6651,6 +8463,9 @@
   "text": "Experiências de transformação pessoal para aproximar o que você quer mudar daquilo que consegue praticar no cotidiano.",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 40,
+  "role": "Texto",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6662,6 +8477,9 @@
   "text": "Conheça o EPIC247",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 41,
+  "role": "Botão ou link",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6673,6 +8491,9 @@
   "text": "Tire uma dúvida sobre o EPIC247",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 43,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6684,6 +8505,9 @@
   "text": "Próximo passo",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 50,
+  "role": "Nome do bloco (leitores de tela)",
+  "group": null,
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6695,6 +8519,9 @@
   "text": "O próximo passo depende do",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 53,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasPortas.tsx:2136",
+  "em": false,
   "section": "PessoasPortas",
   "order": 3
  },
@@ -6706,6 +8533,9 @@
   "text": "que você precisa.",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 53,
+  "role": "Título",
+  "group": "src/components/sections/pessoas/PessoasPortas.tsx:2136",
+  "em": true,
   "section": "PessoasPortas",
   "order": 3
  }
