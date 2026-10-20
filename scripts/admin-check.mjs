@@ -1,7 +1,7 @@
 // Testa o fluxo do /admin (login errado, login certo, status, CSV, sair). Lê a senha do .env.local sem imprimir.
 import { chromium } from "@playwright/test";
 import { readFileSync } from "node:fs";
-const B = process.env.BASE_URL ?? "http://localhost:3210";
+const B = process.env.BASE_URL ?? "http://localhost:3000";
 const pwd = readFileSync(".env.local", "utf8").match(/^ADMIN_PASSWORD=(.*)$/m)[1].replace(/^'|'$/g, "");
 const browser = await chromium.launch({ channel: "msedge" });
 const ctx = await browser.newContext({ acceptDownloads: true, viewport: { width: 1280, height: 900 } });

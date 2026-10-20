@@ -1,6 +1,6 @@
 // Preenche e envia os 3 formulários no navegador e confere a confirmação.
 import { chromium } from "@playwright/test";
-const B = process.env.BASE_URL ?? "http://localhost:3210";
+const B = process.env.BASE_URL ?? "http://localhost:3000";
 const browser = await chromium.launch({ channel: "msedge" });
 const page = await browser.newPage();
 const errs = [];

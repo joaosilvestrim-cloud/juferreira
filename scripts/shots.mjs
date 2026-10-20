@@ -4,7 +4,7 @@
 import { chromium } from "@playwright/test";
 import { mkdirSync } from "node:fs";
 
-const BASE = process.env.BASE_URL ?? "http://localhost:3210";
+const BASE = process.env.BASE_URL ?? "http://localhost:3000";
 const ROUTES = process.argv.slice(2).length
   ? process.argv.slice(2)
   : ["/", "/ju", "/futuros-humanos", "/palestras", "/organizacoes", "/pessoas", "/ideias", "/contato"];
@@ -25,6 +25,8 @@ for (const vp of VIEWPORTS) {
   mkdirSync(`screenshots/${vp}`, { recursive: true });
   for (const route of ROUTES) {
     await page.goto(BASE + route, { waitUntil: "networkidle" });
+    // captura de página inteira: renderiza todas as seções (content-visibility pularia as fora da tela)
+    await page.addStyleTag({ content: "main section{content-visibility:visible!important}" });
     // força carregar imagens lazy
     await page.evaluate(async () => {
       for (let y = 0; y < document.body.scrollHeight; y += 700) {

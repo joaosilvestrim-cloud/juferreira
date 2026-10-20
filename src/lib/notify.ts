@@ -24,6 +24,9 @@ async function send(payload: Record<string, unknown>) {
   if (!res.ok) console.error("[notify] Resend", res.status, (await res.text()).slice(0, 300));
 }
 
+/** Endereços reservados para teste (RFC 2606) — nunca recebem e-mail. */
+const isTestAddress = (email: string) => /@(example\.(com|org|net)|[^@]+\.(test|example|invalid))$/i.test(email);
+
 const from = () => process.env.CONTACT_NOTIFY_FROM || "Site Ju Ferreira <site@juferreira.com.br>";
 
 type Contact = {
@@ -39,6 +42,7 @@ type Contact = {
 
 /** Avisa a equipe que chegou um contato novo (com resposta direta para a pessoa). */
 export async function notifyNewContact(c: Contact) {
+  if (isTestAddress(c.email)) return;
   const to = (process.env.CONTACT_NOTIFY_TO ?? "").split(",").map((s) => s.trim()).filter(Boolean);
   if (!to.length) return;
   const rota = c.route ? ROUTE_LABEL[c.route] ?? c.route : "Sem rota";
@@ -74,7 +78,7 @@ export async function notifyNewContact(c: Contact) {
 
 /** Confirmação para quem escreveu (texto da copy de Contato). Ativada com CONTACT_AUTOREPLY=1. */
 export async function confirmToSender(c: Pick<Contact, "name" | "email">) {
-  if (process.env.CONTACT_AUTOREPLY !== "1") return;
+  if (process.env.CONTACT_AUTOREPLY !== "1" || isTestAddress(c.email)) return;
   const first = c.name.split(" ")[0];
   await send({
     from: from(),

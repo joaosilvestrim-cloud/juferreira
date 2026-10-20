@@ -1,6 +1,6 @@
 // Captura quadros durante a rolagem para ver as animações (sem reduced-motion).
 import { chromium } from "@playwright/test";
-const B = process.env.BASE_URL ?? "http://localhost:3210";
+const B = process.env.BASE_URL ?? "http://localhost:3000";
 const route = process.argv[2] ?? "/";
 const browser = await chromium.launch({ channel: "msedge" });
 const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });

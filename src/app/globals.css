@@ -588,9 +588,3 @@ main a:not(.rounded-full):not([class*="block"]) {
     translate: none;
   }
 }
-
-/* Desempenho: seções fora da tela só são renderizadas quando se aproximam (menos trabalho no carregamento). */
-main section:not(:first-of-type) {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 900px;
-}
