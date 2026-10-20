@@ -1,6 +1,6 @@
 import { ogCard, ogSize } from "@/lib/og";
 
-export const alt = "Para Pessoas — Ju Ferreira";
+export const alt = "Para Pessoas | Ju Ferreira";
 export const size = ogSize;
 export const contentType = "image/png";
 

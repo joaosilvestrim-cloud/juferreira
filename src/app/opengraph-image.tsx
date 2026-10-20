@@ -1,6 +1,6 @@
 import { ogCard, ogSize } from "@/lib/og";
 
-export const alt = "Futuros, tecnologia e humanidade — Ju Ferreira";
+export const alt = "Futuros, tecnologia e humanidade | Ju Ferreira";
 export const size = ogSize;
 export const contentType = "image/png";
 
