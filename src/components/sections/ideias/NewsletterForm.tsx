@@ -6,11 +6,18 @@ import { useId, useState, type FormEvent } from "react";
 import { ArrowIcon } from "@/components/ui/Button";
 
 /**
- * Inscrição em "Uma Terça-feira Qualquer".
- * SEM BACKEND: a confirmação é apenas estado local. TODO: conectar ao provedor de e-mail
- * (double opt-in) e registrar data/versão do consentimento LGPD.
+ * Inscrição em "Uma Terça-feira Qualquer" (grava em newsletter_subscribers via /api/newsletter,
+ * com texto do consentimento). `source` registra de qual página veio a inscrição.
  */
-export function NewsletterForm({ className = "" }: { className?: string }) {
+export function NewsletterForm({
+  className = "",
+  source = "ideias",
+  submitLabel = "Assine Uma Terça-feira Qualquer",
+}: {
+  className?: string;
+  source?: string;
+  submitLabel?: string;
+}) {
   const id = useId();
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
@@ -37,7 +44,7 @@ export function NewsletterForm({ className = "" }: { className?: string }) {
       email: email.trim(),
       consent: true,
       consentText,
-      source: "ideias",
+      source,
       website: (form.elements.namedItem("website") as HTMLInputElement | null)?.value ?? "",
     });
     setSending(false);
@@ -48,7 +55,7 @@ export function NewsletterForm({ className = "" }: { className?: string }) {
   if (done) {
     return (
       <div className={`rounded-[var(--jf-radius-sm)] border border-red-brand/30 bg-cream-50 p-6 ${className}`} role="status" aria-live="polite">
-        <p className="font-serif text-[22px] leading-snug">Obrigada.</p>
+        <p className="font-serif text-[22px] leading-snug">Inscrição feita.</p>
         <p className="mt-2 text-[15px] text-ink-700">
           Inscrição registrada. Uma Terça-feira Qualquer vai chegar em <strong className="font-medium">{email.trim()}</strong>.
         </p>
@@ -107,7 +114,7 @@ export function NewsletterForm({ className = "" }: { className?: string }) {
         aria-busy={sending}
         className="jf-btn group mt-5 disabled:cursor-wait disabled:opacity-70 inline-flex min-h-[52px] w-full items-center justify-between gap-4 rounded-full bg-red-brand px-7 text-left text-[16px] text-cream-50 transition-colors duration-300 hover:bg-red-deep"
       >
-        <span>{sending ? "Enviando…" : "Assine Uma Terça-feira Qualquer"}</span>
+        <span>{sending ? "Enviando…" : submitLabel}</span>
         <ArrowIcon />
       </button>
       <p id={`${id}-micro`} className="mt-3 text-center text-[13px] text-ink-500">

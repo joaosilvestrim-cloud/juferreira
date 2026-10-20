@@ -9,11 +9,11 @@ export const CONTACT_STATUS_LABEL: Record<(typeof CONTACT_STATUS)[number], strin
 };
 
 export const ROUTE_LABEL: Record<string, string> = {
-  palestras: "Palestras & Workshops",
-  organizacoes: "Organizações & Projetos",
-  "futuros-aplicados": "Futuros Aplicados / WTF",
-  parcerias: "Parcerias, Imprensa & Convites",
-  epic247: "EPIC247 & Pessoas",
+  palestras: "Palestras e workshops",
+  organizacoes: "Organizações e projetos",
+  "futuros-aplicados": "Futuros aplicados",
+  parcerias: "Parcerias e imprensa",
+  epic247: "EPIC247",
   "nao-sei": "Ainda não sei",
 };
 

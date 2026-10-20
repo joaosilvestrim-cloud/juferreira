@@ -6,9 +6,12 @@ import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useId, useRef, useState, type FormEvent, type ReactNode } from "react";
 import { ArrowIcon } from "@/components/ui/Button";
 import { ContatoIcon } from "./Icons";
-import { EPIC_TOPICS, ROUTES, isRouteId, type RouteId } from "./routes";
+import { EPIC_TOPICS, ROUTES, epicTopicLabel, isRouteId, type RouteId } from "./routes";
 
-/* ───────────────────────── Definição dos campos (copy: docs/01_COPY/contato.md, Bloco 3) ───────────────────────── */
+/* ───────────────────────── Campos (Site 2.0, Contato C02) ─────────────────────────
+ * Campos comuns a todos os assuntos + poucos campos extras, só quando mudam o encaminhamento.
+ * Os nomes (`name`) seguem os rótulos de FIELD_LABEL em src/lib/admin.ts e o schema de /api/contato.
+ */
 
 type Field = {
   name: string;
@@ -18,109 +21,48 @@ type Field = {
   options?: readonly string[];
   required?: boolean;
   optional?: boolean;
-  /** pergunta principal da rota — label em destaque editorial */
+  /** pergunta principal: label em destaque editorial */
   main?: boolean;
   wide?: boolean;
 };
 
-const ROUTE_FIELDS: Record<Exclude<RouteId, "nao-sei">, { intro?: string; fields: Field[] }> = {
-  palestras: {
-    fields: [
-      { name: "evento", label: "Nome do evento ou organização" },
-      { name: "data", label: "Data prevista", hint: "Se ainda não estiver definida, tudo bem." },
-      { name: "cidadeFormato", label: "Cidade / formato", hint: "Presencial, online ou ainda em definição." },
-      { name: "publico", label: "Público estimado" },
-      { name: "sala", label: "Quem estará na sala?", kind: "textarea", wide: true },
-      {
-        name: "diferenteDepois",
-        label: "O que você gostaria que estivesse diferente depois dessa conversa?",
-        hint: "Pode ser uma reflexão, uma pergunta nova, alinhamento, energia para uma transformação, ampliação de perspectiva ou outra coisa.",
-        kind: "textarea",
-        required: true,
-        main: true,
-        wide: true,
-      },
-      { name: "tema", label: "Existe algum tema que já está sendo considerado?", optional: true, wide: true },
-    ],
-  },
-  organizacoes: {
-    fields: [
-      { name: "acontecendo", label: "O que está acontecendo na organização?", kind: "textarea", required: true, main: true, wide: true },
-      { name: "porqueAgora", label: "Por que essa questão importa agora?", kind: "textarea" },
-      { name: "envolvidos", label: "Quem está envolvido nessa conversa?", kind: "textarea" },
-      { name: "prazo", label: "Existe algum momento importante ou prazo?", wide: true },
-      {
-        name: "diferenteDepoisOrg",
-        label: "O que você gostaria que pudesse ser diferente depois?",
-        kind: "textarea",
-        required: true,
-        main: true,
-        wide: true,
-      },
-      {
-        name: "formato",
-        label: "Você já imagina algum formato?",
-        optional: true,
-        kind: "checkbox",
-        options: ["Palestra", "Workshop", "Projeto", "Jornada", "Ainda não sei"],
-        wide: true,
-      },
-    ],
-  },
-  "futuros-aplicados": {
-    fields: [
-      {
-        name: "pergunta",
-        label: "Qual é a pergunta que vocês gostariam de explorar?",
-        kind: "textarea",
-        required: true,
-        main: true,
-        wide: true,
-      },
-      { name: "porTras", label: "Que decisão, estratégia ou contexto está por trás dela?", kind: "textarea", wide: true },
-      {
-        name: "horizonte",
-        label: "Existe algum horizonte temporal relevante?",
-        hint: "Ex.: 3 anos, 5 anos, 10 anos, ainda não definido.",
-      },
-      { name: "participantes", label: "Quem deveria participar dessa exploração?" },
-    ],
-  },
-  parcerias: {
-    intro: "Conte o que você está imaginando.",
-    fields: [
-      { name: "veiculo", label: "Empresa, veículo ou projeto", wide: true },
-      {
-        name: "tipoConvite",
-        label: "Tipo de convite",
-        kind: "radio",
-        options: ["Entrevista", "Podcast", "Evento", "Conteúdo", "Parceria", "Outro"],
-        wide: true,
-      },
-      { name: "dataPrazo", label: "Data ou prazo", hint: "Quando houver." },
-      { name: "link", label: "Link de referência", kind: "url", optional: true },
-      {
-        name: "juFizesse",
-        label: "O que você gostaria que a Ju fizesse ou construísse junto?",
-        kind: "textarea",
-        main: true,
-        wide: true,
-      },
-    ],
-  },
-  epic247: {
-    fields: [
-      {
-        name: "epicAssunto",
-        label: "Sobre o que você precisa falar?",
-        kind: "radio",
-        options: EPIC_TOPICS.map((t) => t.label),
-        required: true,
-        main: true,
-        wide: true,
-      },
-    ],
-  },
+const ROUTE_FIELDS: Partial<Record<RouteId, Field[]>> = {
+  palestras: [
+    { name: "data", label: "Data prevista", hint: "Se ainda não estiver definida, deixe em branco.", optional: true },
+    { name: "cidadeFormato", label: "Local ou formato", hint: "Presencial, online ou ainda em definição.", optional: true },
+    { name: "publico", label: "Público", hint: "Quem participa e quantas pessoas, se já souber.", optional: true, wide: true },
+  ],
+  organizacoes: [
+    {
+      name: "formato",
+      label: "Você já imagina algum formato?",
+      optional: true,
+      kind: "checkbox",
+      options: ["Palestra", "Workshop", "Projeto", "Jornada", "Ainda não sei"],
+      wide: true,
+    },
+  ],
+  parcerias: [
+    {
+      name: "tipoConvite",
+      label: "Tipo de convite",
+      kind: "radio",
+      optional: true,
+      options: ["Entrevista", "Podcast", "Evento", "Conteúdo", "Parceria", "Outro"],
+      wide: true,
+    },
+    { name: "dataPrazo", label: "Data ou prazo", hint: "Quando houver.", optional: true },
+  ],
+  epic247: [
+    {
+      name: "epicAssunto",
+      label: "O que você precisa?",
+      kind: "radio",
+      options: EPIC_TOPICS.map((t) => t.label),
+      required: true,
+      wide: true,
+    },
+  ],
 };
 
 type Values = Record<string, string | string[]>;
@@ -215,7 +157,7 @@ function FieldControl({ field, values, set }: { field: Field; values: Values; se
       <Label htmlFor={id} field={field} />
       {field.main && hint}
       {field.kind === "textarea" ? (
-        <textarea {...common} rows={field.main ? 4 : 3} className={`${common.className} resize-y`} />
+        <textarea {...common} rows={field.main ? 5 : 3} className={`${common.className} resize-y`} />
       ) : (
         <input {...common} type={field.kind === "url" ? "url" : "text"} />
       )}
@@ -224,12 +166,15 @@ function FieldControl({ field, values, set }: { field: Field; values: Values; se
   );
 }
 
-/* ───────────────────────── Formulário adaptativo ───────────────────────── */
+/* ───────────────────────── Formulário ───────────────────────── */
 
-const COMMON: Record<"nome" | "organizacao", Field> = {
+const COMMON = {
   nome: { name: "nome", label: "Nome", required: true },
   organizacao: { name: "organizacao", label: "Organização", optional: true },
-};
+} satisfies Record<string, Field>;
+
+/** Mensagem genérica da API para falha de servidor: já coberta pela frase principal do erro. */
+const GENERIC_SERVER_ERROR = /^Não conseguimos enviar agora/;
 
 function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: string | null }) {
   const [values, setValues] = useState<Values>({});
@@ -245,8 +190,8 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
 
   const set = (name: string, v: string | string[]) => setValues((prev) => ({ ...prev, [name]: v }));
 
-  // Pré-seleção do assunto EPIC247 vinda dos atalhos do Bloco 4 (sem sobrescrever a escolha da pessoa).
-  const epicDefault = EPIC_TOPICS.find((t) => t.id === assunto)?.label;
+  // Pré-seleção do assunto EPIC247 vinda de `?assunto=` (sem sobrescrever a escolha da pessoa).
+  const epicDefault = epicTopicLabel(assunto);
   const effective: Values = values.epicAssunto === undefined && epicDefault ? { ...values, epicAssunto: epicDefault } : values;
 
   const chooseRoute = (id: RouteId) => {
@@ -259,11 +204,12 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
     if (sending) return;
     setSending(true);
     setError(null);
-    // só os campos visíveis da rota atual + rota escolhida
+    // só os campos visíveis do assunto atual + assunto escolhido
     const res = await postJson("/api/contato", { ...formToObject(e.currentTarget), origin: "contato", rota: route ?? "" });
     setSending(false);
+    // sucesso só com aceite real da API (HTTP ok + { ok: true })
     if (res.ok) setSubmitted(true);
-    else setError(res.error ?? "Não conseguimos enviar agora. Tente novamente.");
+    else setError(res.error ?? "");
   };
 
   if (submitted) {
@@ -274,11 +220,11 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
             <path d="m5 12.5 4.5 4.5L19 7.5" />
           </svg>
         </span>
-        <h3 ref={confirmRef} tabIndex={-1} className="jf-display jf-display-sm outline-none">
-          Recebemos. <span className="jf-em">Obrigada por começar a conversa.</span>
-        </h3>
+        <h2 ref={confirmRef} tabIndex={-1} className="jf-display jf-display-sm outline-none">
+          Mensagem enviada.
+        </h2>
         <p className="jf-body mt-5 max-w-[520px] text-ink-700">
-          Vamos ler o contexto antes de responder para que a próxima mensagem não comece do zero.
+          Obrigado por contar o contexto. A equipe dará continuidade pelo contato informado.
         </p>
         <Link
           href="/"
@@ -291,31 +237,21 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
   }
 
   const naoSei = route === "nao-sei";
-  const routeCfg = route && route !== "nao-sei" ? ROUTE_FIELDS[route] : null;
+  const routeFields = route ? ROUTE_FIELDS[route] : undefined;
   const routeLabel = ROUTES.find((r) => r.id === route)?.label;
 
-  const universal: Field = naoSei
-    ? {
-        name: "contexto",
-        label: "Conte com suas palavras.",
-        hint: (
-          <>
-            Você não precisa saber em qual categoria isso cabe. Conte o que está acontecendo, a ideia que teve ou a pergunta
-            que trouxe você até aqui. <strong className="font-medium text-ink-700">A gente ajuda a encontrar o lugar certo depois.</strong>
-          </>
-        ),
-        kind: "textarea",
-        required: true,
-        main: true,
-      }
-    : {
-        name: "contexto",
-        label: "Conte o que trouxe você até aqui",
-        hint: "O que está acontecendo? O que você está tentando resolver, construir, compreender ou tornar possível?",
-        kind: "textarea",
-        required: true,
-        main: true,
-      };
+  const contexto: Field = {
+    name: "contexto",
+    label: "O que trouxe você até aqui?",
+    hint: naoSei
+      ? "Conte com suas palavras. Você não precisa saber em qual assunto isso se encaixa."
+      : "Pode ser uma ideia, um desafio, uma pergunta ou um projeto ainda em formação.",
+    kind: "textarea",
+    required: true,
+    main: true,
+  };
+
+  const serverDetail = error && !GENERIC_SERVER_ERROR.test(error) ? error : null;
 
   return (
     <form
@@ -323,9 +259,9 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
       aria-label="Formulário de contato"
       className="relative rounded-[14px] border border-ink-900/10 bg-cream-50/90 p-6 shadow-[0_20px_60px_-40px_rgba(24,20,17,0.5)] sm:p-9"
     >
-      {/* Seletor de rota (alimentado também pelos cards do Bloco 2 e atalhos do Bloco 4) */}
+      {/* Assunto: pré-selecionado por ?rota= */}
       <fieldset>
-        <legend className="text-[15px] font-medium text-ink-900">Escolha a opção que mais se aproxima do seu momento.</legend>
+        <legend className="text-[15px] font-medium text-ink-900">Sobre o que você quer conversar?</legend>
         <div className="mt-3 flex flex-wrap gap-2">
           {ROUTES.map((r) => {
             const active = r.id === route;
@@ -352,9 +288,12 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
         </div>
       </fieldset>
 
-      <div className="mt-8 grid gap-5 border-t border-ink-900/10 pt-8 sm:grid-cols-2">
+      <p className="mt-8 border-t border-ink-900/10 pt-6 text-[14px] text-ink-500">
+        Campos marcados com <span className="text-red-brand">*</span> são obrigatórios.
+      </p>
+
+      <div className="mt-5 grid gap-5 sm:grid-cols-2">
         <FieldControl field={COMMON.nome} values={effective} set={set} />
-        {!naoSei && <FieldControl field={COMMON.organizacao} values={effective} set={set} />}
         <div>
           <label htmlFor={`${uid}-email`} className="block text-[15px] font-medium text-ink-900">
             E-mail
@@ -374,37 +313,35 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
             className={`${inputCls} mt-2`}
           />
         </div>
-        {!naoSei && (
-          <div>
-            <label htmlFor={`${uid}-tel`} className="block text-[15px] font-medium text-ink-900">
-              Telefone / WhatsApp <span className="font-normal text-ink-500">(opcional)</span>
-            </label>
-            <input
-              id={`${uid}-tel`}
-              name="telefone"
-              type="tel"
-              autoComplete="tel"
-              value={typeof effective.telefone === "string" ? effective.telefone : ""}
-              onChange={(e) => set("telefone", e.target.value)}
-              className={`${inputCls} mt-2`}
-            />
-          </div>
-        )}
+        <FieldControl field={COMMON.organizacao} values={effective} set={set} />
+        <div>
+          <label htmlFor={`${uid}-tel`} className="block text-[15px] font-medium text-ink-900">
+            Telefone / WhatsApp <span className="font-normal text-ink-500">(opcional)</span>
+          </label>
+          <input
+            id={`${uid}-tel`}
+            name="telefone"
+            type="tel"
+            autoComplete="tel"
+            value={typeof effective.telefone === "string" ? effective.telefone : ""}
+            onChange={(e) => set("telefone", e.target.value)}
+            className={`${inputCls} mt-2`}
+          />
+        </div>
       </div>
 
       <div className="mt-8 border-t border-ink-900/10 pt-8">
-        <FieldControl field={universal} values={effective} set={set} />
+        <FieldControl field={contexto} values={effective} set={set} />
       </div>
 
-      {routeCfg && (
+      {routeFields && (
         <div className="mt-8 rounded-[12px] bg-blush-100/45 p-5 sm:p-7">
           <p className="jf-eyebrow flex items-center gap-3 text-[11px] text-red-brand">
             {routeLabel}
             <span className="h-px w-10 bg-current opacity-60" aria-hidden />
           </p>
-          {routeCfg.intro && <p className="mt-3 font-serif text-[clamp(21px,1.8vw,26px)] leading-snug">{routeCfg.intro}</p>}
           <div className="mt-5 grid gap-5 sm:grid-cols-2">
-            {routeCfg.fields.map((f) => (
+            {routeFields.map((f) => (
               <div key={`${route}-${f.name}`} className={f.wide ? "sm:col-span-2" : ""}>
                 <FieldControl field={f} values={effective} set={set} />
               </div>
@@ -420,10 +357,11 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
         </label>
       </div>
 
-      {error && (
-        <p role="alert" className="mt-8 rounded-[10px] border border-red-brand/40 bg-blush-100/60 px-4 py-3 text-[15px] text-red-deep">
-          {error}
-        </p>
+      {error !== null && (
+        <div role="alert" className="mt-8 rounded-[10px] border border-red-brand/40 bg-blush-100/60 px-4 py-3 text-[15px] text-red-deep">
+          <p className="font-medium">Não foi possível enviar agora. Seus dados continuam no formulário para você tentar novamente.</p>
+          {serverDetail && <p className="mt-1">{serverDetail}</p>}
+        </div>
       )}
 
       <div className="mt-9 flex flex-col gap-5 border-t border-ink-900/10 pt-8 md:flex-row md:items-center md:gap-8">
@@ -433,17 +371,14 @@ function AdaptiveForm({ route, assunto }: { route: RouteId | null; assunto: stri
           aria-busy={sending}
           className="jf-btn group inline-flex min-h-[56px] shrink-0 items-center justify-between gap-5 rounded-full bg-red-brand px-8 text-[17px] text-cream-50 transition-colors duration-300 hover:bg-red-deep disabled:cursor-wait disabled:opacity-70"
         >
-          {sending ? "Enviando…" : "Continuar a conversa"} <ArrowIcon />
+          {sending ? "Enviando…" : "Enviar mensagem"} <ArrowIcon />
         </button>
-        <div className="text-[14px] leading-relaxed text-ink-700">
-          <p className="font-medium">Revise apenas se quiser. Não precisa estar perfeito.</p>
-          <p>
-            Ao enviar, sua mensagem vai para a equipe responsável por essa conversa.{" "}
-            <Link href="/privacidade" className="text-red-brand underline underline-offset-2 hover:text-red-deep">
-              Política de Privacidade
-            </Link>
-          </p>
-        </div>
+        <p className="text-[14px] leading-relaxed text-ink-700">
+          Ao enviar, sua mensagem vai para a equipe responsável por essa conversa.{" "}
+          <Link href="/privacidade" className="text-red-brand underline underline-offset-2 hover:text-red-deep">
+            Como tratamos seus dados
+          </Link>
+        </p>
       </div>
     </form>
   );
@@ -456,9 +391,9 @@ function FormFromParams() {
 }
 
 /**
- * Formulário adaptativo do Bloco 3. A rota vem de `?rota=` (cards do Bloco 2 / atalhos do Bloco 4 / seletor interno).
+ * Formulário de Contato (C02). O assunto vem de `?rota=` (links de outras páginas ou o seletor interno).
  * `useSearchParams` fica dentro de <Suspense> (exigência do cacheComponents); o fallback pré-renderizado é o
- * formulário sem rota, funcional também sem JS.
+ * formulário sem assunto.
  */
 export function ContactForm() {
   return (

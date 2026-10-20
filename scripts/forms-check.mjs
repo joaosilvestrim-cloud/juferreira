@@ -16,17 +16,19 @@ for (const el of await f.locator("[required]:not([name=nome]):not([name=email]):
   if (tag.startsWith("TEXTAREA") || tag.startsWith("INPUT:text") || tag.startsWith("INPUT:")) await el.fill("teste").catch(() => {});
 }
 await f.locator('button[type="submit"]').click();
-await page.getByText("Recebemos.").waitFor({ timeout: 15000 });
+await page.getByText("Mensagem enviada.").waitFor({ timeout: 15000 });
 console.log("contato: OK");
 
-await page.goto(`${B}/organizacoes#conversa`, { waitUntil: "networkidle" });
-await page.locator('input[name="nome"]').fill("TESTE AUTOMATICO ORG");
-await page.locator('input[name="organizacao"]').fill("Empresa Teste");
-await page.locator('input[name="email"]').fill("teste-org@example.com");
-await page.locator('input[name="momento"]').first().check();
-await page.locator('textarea[name="contexto"]').fill("Teste org.");
-await page.getByRole("button", { name: /Vamos entender/ }).click();
-await page.getByText("Obrigada por contar o contexto.").waitFor({ timeout: 15000 });
+// Organizações agora usa o formulário único de Contato, com a rota pré-selecionada
+await page.goto(`${B}/organizacoes`, { waitUntil: "networkidle" });
+await page.locator('main a[href*="rota=organizacoes"]').first().click();
+await page.waitForURL(/rota=organizacoes/);
+const fo = page.locator('form[aria-label="Formulário de contato"]');
+await fo.locator('input[name="nome"]').fill("TESTE AUTOMATICO ORG");
+await fo.locator('input[name="email"]').fill("teste-org@example.com");
+await fo.locator('textarea[name="contexto"]').fill("Teste org.");
+await fo.locator('button[type="submit"]').click();
+await page.getByText("Mensagem enviada.").waitFor({ timeout: 15000 });
 console.log("organizacoes: OK");
 
 await page.goto(`${B}/ideias#uma-terca-feira-qualquer`, { waitUntil: "networkidle" });

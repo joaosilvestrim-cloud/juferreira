@@ -1,12 +1,18 @@
 import { ButtonLink, ButtonRow } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
-import { Stroke } from "@/components/ui/Strokes";
-import { Display, Em, HandNote } from "@/components/ui/Typography";
-import { Paper, Underline } from "./parts";
+import { Display, Em } from "@/components/ui/Typography";
+import { Underline } from "./parts";
 
 import { tx, img } from "@/lib/editable";
-/* ───────────────────────── BLOCO 1 — HERO ───────────────────────── */
+
+/** Âncoras desta página (B03 é o destino do CTA de abertura). */
+export const PESSOAS_ANCHORS = {
+  pergunta: "#uma-pergunta",
+  portas: "#proximo-passo",
+} as const;
+
+/* ───────────────────────── B01 — ABERTURA ───────────────────────── */
 export function PessoasHero() {
   return (
     <Section padded={false} className="lg:min-h-[calc(100svh-var(--jf-header-h))]" label={tx("pessoas/833a78e1cd", "Abertura")}>
@@ -19,10 +25,6 @@ export function PessoasHero() {
           className="jf-fade-left absolute inset-0"
           imgClassName="object-[50%_40%]"
         />
-        <HandNote className="absolute right-8 top-10 max-w-[230px] text-ink-900 xl:right-14" rotate={-6}>
-          {tx("pessoas/2706345026", "Limites existem.")}<br />
-          {tx("pessoas/02bb92733b", "Potência também.")}</HandNote>
-        <Stroke shape="underline" className="absolute right-10 top-[150px] h-4 w-48 xl:right-16" width={3} />
       </div>
 
       <Container className="flex flex-col justify-center py-14 lg:min-h-[calc(100svh-var(--jf-header-h))] lg:py-20">
@@ -32,45 +34,32 @@ export function PessoasHero() {
           </Display>
           <Underline />
 
-          <div className="jf-body mt-8 max-w-[620px] text-ink-700">
+          <div className="jf-body mt-8 max-w-[600px] text-ink-700">
             <p>
-              {tx("pessoas/41e575ebf0", "Construir futuros não é assunto apenas de empresas, governos ou futuristas. Todos os dias fazemos escolhas sobre aquilo que sustentamos, abandonamos, aprendemos, repetimos e tentamos transformar.")}</p>
-            <p>
-              {tx("pessoas/e4fe5d67b7", "Nem tudo está nas nossas mãos. Há limite. Há acaso. Há outras pessoas. Há circunstâncias que não escolhemos.")}</p>
-            <p>{tx("pessoas/012bf3ed9c", "Mas entre controlar tudo e simplesmente aceitar existe um espaço enorme.")}</p>
+              {tx("pessoas/1b6635393d", "Há coisas que você continua sustentando porque importam. Outras permanecem porque você dá conta, porque sempre foi assim ou porque ainda não encontrou condições para mudar.")}</p>
           </div>
 
-          <p className="mt-6 font-serif text-[clamp(26px,2.4vw,36px)] leading-tight text-red-brand">
-            {tx("pessoas/458e723cc2", "É nesse espaço que a gente participa.")}</p>
-
-          <div className="jf-body mt-6 max-w-[620px] text-ink-700">
-            <p>
-              {tx("pessoas/6d9e4d9994", "Talvez você não saiba exatamente onde quer chegar. Talvez alguma coisa apenas não esteja funcionando mais. Talvez você consiga perceber que algo poderia ser diferente, mas ainda não saiba como começar. Ou talvez esteja tudo aparentemente bem e, mesmo assim, exista uma pergunta insistindo.")}</p>
-          </div>
-
-          <p className="mt-6 max-w-[600px] text-[19px] font-semibold leading-snug text-ink-900">
-            {tx("pessoas/85278bc2ad", "Aquilo que existe hoje não precisa ser tratado como tudo aquilo que ainda pode existir.")}</p>
+          <p className="mt-6 max-w-[600px] font-serif text-[clamp(24px,2.2vw,32px)] leading-tight text-red-brand">
+            {tx("pessoas/8467086860", "Talvez o primeiro passo seja perceber a diferença.")}</p>
 
           <ButtonRow className="mt-10">
-            <ButtonLink href="#por-onde-comecar" size="lg">
-              {tx("pessoas/c3231c0550", "Por onde eu começo?")}</ButtonLink>
-            <ButtonLink href="/ideias" variant="secondary" size="lg">
-              {tx("pessoas/4255511cea", "Explore as ideias")}</ButtonLink>
+            <ButtonLink href={PESSOAS_ANCHORS.pergunta} size="lg">
+              {tx("pessoas/13894d9153", "Comece por uma pergunta")}</ButtonLink>
           </ButtonRow>
         </div>
       </Container>
 
-      {/* mobile: foto abaixo do texto, nota manuscrita como papel */}
+      {/* mobile: foto abaixo do texto */}
       <div className="relative h-[110vw] max-h-[560px] lg:hidden">
-        <Photo src={img("pessoas/965edb9857", "/images/ensaio/home-02-biblioteca-horizontal.webp")} alt={tx("pessoas/ace1405bdd", "Juliana sentada em uma poltrona na biblioteca.")} sizes="100vw" className="absolute inset-0" imgClassName="object-[50%_40%]" />
-        <div className="absolute bottom-6 right-5 max-w-[220px]">
-          <Paper>
-            <p className="jf-hand text-[24px]">
-              {tx("pessoas/1d590c825d", "Limites existem.")}<br />
-              {tx("pessoas/2d86ad4f3b", "Potência também.")}</p>
-          </Paper>
-        </div>
+        <Photo
+          src={img("pessoas/965edb9857", "/images/ensaio/home-02-biblioteca-horizontal.webp")}
+          alt={tx("pessoas/ace1405bdd", "Juliana sentada em uma poltrona na biblioteca.")}
+          sizes="100vw"
+          className="absolute inset-0"
+          imgClassName="object-[50%_40%]"
+        />
       </div>
     </Section>
   );
 }
+

@@ -1,18 +1,11 @@
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
-import {
-  ContatoAtalhos,
-  ContatoCanais,
-  ContatoContexto,
-  ContatoFechamento,
-  ContatoHero,
-  ContatoPortas,
-} from "@/components/sections/contato/ContatoBlocks";
+import { ContatoCanais, ContatoConversa } from "@/components/sections/contato/ContatoBlocks";
 
 const DEFAULT_META: Metadata = {
   title: "Contato",
   description:
-    "Toda conversa começa com alguma coisa. Pode ser uma ideia, um desafio, uma pergunta ou um “ainda não sei”. Você não precisa chegar com a resposta.",
+    "Conte o que você está tentando construir, resolver ou compreender. Se ainda não souber o formato, comece pelo contexto.",
 };
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -23,12 +16,8 @@ export default async function ContatoPage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
-      <ContatoHero />
-      <ContatoPortas />
-      <ContatoContexto />
-      <ContatoAtalhos />
+      <ContatoConversa />
       <ContatoCanais />
-      <ContatoFechamento />
     </>
   );
 }

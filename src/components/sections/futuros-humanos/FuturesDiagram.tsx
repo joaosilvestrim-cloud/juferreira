@@ -1,8 +1,8 @@
 import { tx } from "@/lib/editable";
 /**
  * Diagrama dos tipos de futuro (BLOCO 3).
- * Corrige o mockup: círculos concêntricos — Possível ⊃ Plausível ⊃ Provável —
- * e Preferível como recorte DENTRO do Possível (não o contrário).
+ * Possível ⊃ Plausível ⊃ Provável; Preferível como recorte DENTRO do Possível,
+ * cruzando o Plausível e sem coincidir com o Provável (F03 v2).
  * Usa apenas os termos da copy.
  */
 export function FuturesDiagram({ className = "" }: { className?: string }) {
@@ -15,7 +15,7 @@ export function FuturesDiagram({ className = "" }: { className?: string }) {
     >
       <title id="futuros-diagrama-t">{tx("futuros-humanos/c5b94a1ab0", "Prováveis, plausíveis, possíveis, preferíveis")}</title>
       <desc id="futuros-diagrama-d">
-        {tx("futuros-humanos/e1c048a990", "Círculos concêntricos: o possível contém o plausível, que contém o provável. O preferível aparece como um recorte dentro do possível.")}</desc>
+        {tx("futuros-humanos/cbff363c84", "Círculos encaixados: o possível contém o plausível, que contém o provável. O preferível aparece como um recorte tracejado dentro do possível, que cruza o plausível e não coincide com o provável.")}</desc>
       <defs>
         <radialGradient id="fh-possivel" cx="45%" cy="50%" r="60%">
           <stop offset="0%" stopColor="var(--jf-blush-100)" />

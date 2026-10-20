@@ -1,0 +1,596 @@
+# Cofre editorial · Pessoas v1 — textos da v1 (tag v1.0-site) guardados antes da reescrita; material interno
+
+Nada aqui está publicado na página v2. Gerado a partir de `src/content/editable-registry.json` (page = "pessoas"), agrupado por seção, na ordem do código. Chave = identificador do texto no painel. Tags conforme Contexto Mestre §22: [PALESTRA 2] [PALESTRA 3] [ARTIGO] [POST] [REEL] [LIVRO] [WORKSHOP] [EPIC] [PESQUISAR] [FRASE-ASSINATURA]. Valores técnicos (classes CSS, cores) foram omitidos.
+
+## PessoasHero
+
+_Tags da seção: [FRASE-ASSINATURA] base do B01_
+
+- Abertura · `pessoas/833a78e1cd`
+- [imagem] `/images/ensaio/home-02-biblioteca-vertical.webp` · `pessoas/e747a44fdb`
+- Retrato de Juliana em uma poltrona na biblioteca. · `pessoas/d393b0a5f8`
+- Limites existem. [FRASE-ASSINATURA] · `pessoas/2706345026`
+- Potência também. [FRASE-ASSINATURA] · `pessoas/02bb92733b`
+- E se essa conversa for sobre a · `pessoas/0aa67a5019`
+- sua própria vida? · `pessoas/11168cc513`
+- Construir futuros não é assunto apenas de empresas, governos ou futuristas. Todos os dias fazemos escolhas sobre aquilo que sustentamos, abandonamos, aprendemos, repetimos e tentamos transformar. · `pessoas/41e575ebf0`
+- Nem tudo está nas nossas mãos. Há limite. Há acaso. Há outras pessoas. Há circunstâncias que não escolhemos. · `pessoas/e4fe5d67b7`
+- Mas entre controlar tudo e simplesmente aceitar existe um espaço enorme. · `pessoas/012bf3ed9c`
+- É nesse espaço que a gente participa. · `pessoas/458e723cc2`
+- Talvez você não saiba exatamente onde quer chegar. Talvez alguma coisa apenas não esteja funcionando mais. Talvez você consiga perceber que algo poderia ser diferente, mas ainda não saiba como começar. Ou talvez esteja tudo aparentemente bem e, mesmo assim, exista uma pergunta insistindo. · `pessoas/6d9e4d9994`
+- Aquilo que existe hoje não precisa ser tratado como tudo aquilo que ainda pode existir. [FRASE-ASSINATURA] · `pessoas/85278bc2ad`
+- Por onde eu começo? · `pessoas/c3231c0550`
+- Explore as ideias · `pessoas/4255511cea`
+- [imagem] `/images/ensaio/home-02-biblioteca-horizontal.webp` · `pessoas/965edb9857`
+- Juliana sentada em uma poltrona na biblioteca. · `pessoas/ace1405bdd`
+
+## PessoasAgencia
+
+_Tags da seção: [POST] [ARTIGO] agência pessoal; comprimido em B02_
+
+- M4 40h40M44 40c8-14 30-16 34-4 4 12-14 20-22 10-8-10 6-24 18-20 12 4 10 22-2 24-12 2-18-12-8-20 10-8 26 0 22 12-3 9-16 10-20 2M78 38h64 · `pessoas/044756e7fd`
+- M6 42C50 40 96 41 142 39 · `pessoas/7fdc14f32f`
+- M6 52C30 50 46 36 60 32c16-4 26 10 18 20-8 10-22 2-16-10 6-12 30-18 50-22 14-3 24-10 30-20 · `pessoas/4264feb1e6`
+- M132 4l10-2-2 10 · `pessoas/470269393d`
+- Controle · `pessoas/f0e00d1acc`
+- Tentar garantir o resultado. · `pessoas/d33a043e84`
+- Aceitação passiva · `pessoas/9f97928059`
+- Tratar aquilo que existe como se não houvesse nada a fazer. · `pessoas/081496ea8c`
+- Participação · `pessoas/c21d998657`
+- Reconhecer os limites e ainda assim perguntar: · `pessoas/2410b4f73e`
+- o que ainda está ao meu alcance? · `pessoas/a4ac705638`
+- Talvez você não consiga mudar uma circunstância inteira. · `pessoas/4d68df95ad`
+- Mas pode mudar a forma como responde a ela. · `pessoas/62d972f22d`
+- Talvez não consiga controlar o comportamento de alguém. · `pessoas/8bb8fdc758`
+- Mas pode decidir o limite que coloca. · `pessoas/06ec598543`
+- Talvez não consiga escolher o que aconteceu. · `pessoas/7871282531`
+- Mas pode escolher o que faz com aquilo que aconteceu depois. · `pessoas/9dea916c28`
+- Talvez não consiga transformar sua vida inteira agora. · `pessoas/6c8779408d`
+- Mas pode fazer um movimento pequeno o suficiente para mudar aquilo que vem depois. · `pessoas/abe9ad2d1f`
+- uma conversa; · `pessoas/aff95ca7fa`
+- um limite; · `pessoas/82b6b60a54`
+- um pedido de ajuda; · `pessoas/0c92cf3cd3`
+- uma decisão adiada; · `pessoas/df27f92e5e`
+- uma habilidade que precisa ser desenvolvida; · `pessoas/daf2ce6205`
+- um hábito que precisa ser interrompido; · `pessoas/ae63397e07`
+- um ambiente que precisa ser revisto; · `pessoas/05233a371a`
+- uma escolha que precisa finalmente ser assumida. · `pessoas/caa8977e51`
+- Agência pessoal · `pessoas/25465d9d61`
+- Nem tudo está nas suas mãos. · `pessoas/3d768c0c60`
+- Mas alguma coisa está. · `pessoas/78c35efe14`
+- Você não escolheu tudo o que aconteceu. Não controla as outras pessoas. Não controla o tempo. Não controla o mercado. Não controla todas as circunstâncias. Não controla o corpo, a família, o trabalho, a economia ou o acaso como gostaria. · `pessoas/4d6a704ecf`
+- E fingir que controla seria uma mentira. · `pessoas/addefcbf50`
+- Mas existe outra mentira igualmente perigosa: · `pessoas/3cee66f195`
+- achar que, porque você não controla tudo, então não pode participar de nada. · `pessoas/0cbf2f70bc`
+- Entre uma coisa e outra existe um espaço enorme. · `pessoas/91c406ef43`
+- E é ali que a vida acontece. · `pessoas/d2b6078f05`
+- [imagem] `/images/ensaio/ju-trabalho-tecnologia.webp` · `pessoas/db368b8efd`
+- Juliana concentrada no trabalho em um notebook. · `pessoas/dbcb411305`
+- É aí que mora a participação. · `pessoas/a112ce3ed6`
+- Agência não é controle. [FRASE-ASSINATURA] · `pessoas/b50eee82b6`
+- É participação. · `pessoas/09c4f9c87e`
+- Na escala pessoal, isso significa parar de perguntar apenas: · `pessoas/aa5343a391`
+- “Como faço para tudo dar certo?” · `pessoas/a901fd800a`
+- e começar a perguntar: · `pessoas/5174726bc8`
+- “Diante do que existe, onde eu ainda posso participar?” · `pessoas/ff5bb3d9e1`
+- Pode estar ao seu alcance: · `pessoas/6831f773cd`
+- Às vezes, a potência não aparece como grande coragem. · `pessoas/f793a4f6fe`
+- Às vezes, aparece como: · `pessoas/de26da171f`
+- “isso eu consigo fazer hoje.” · `pessoas/0fcd2238d4`
+- Limites existem. [FRASE-ASSINATURA] · `pessoas/51064ea735`
+- Potência também. [FRASE-ASSINATURA] · `pessoas/c0c0da1386`
+- Maturidade não está em negar nenhum dos dois. · `pessoas/842c2ffdc4`
+- Talvez o problema não seja não ter potência. Talvez seja não conseguir enxergar onde ela ainda existe. · `pessoas/219c7aacda`
+- Porque, quando a vida parece muito grande, a pergunta “como mudo tudo?” paralisa. · `pessoas/dae5225694`
+- Mas: · `pessoas/03a8c59a3c`
+- “o que ainda está ao meu alcance?” · `pessoas/9696b12367`
+- é uma pergunta que devolve movimento. · `pessoas/dabfbdda81`
+- Você não precisa controlar o caminho inteiro. · `pessoas/53fa327562`
+- Precisa descobrir onde ainda existe espaço para escolha, capacidade e movimento. · `pessoas/2bb75d73bc`
+- Um movimento muda o que pode acontecer depois. [FRASE-ASSINATURA] · `pessoas/59aee0e094`
+
+## PessoasAutomatico
+
+_Tags da seção: [POST] [REEL] observações do automático; melhores frases em B02_
+
+- O que você sustenta · `pessoas/00db9c0362`
+- Às vezes, aquilo que permanece não é aquilo que você escolheu. · `pessoas/91d03f0868`
+- É aquilo que nunca parou para rever. · `pessoas/6d35f29714`
+- Uma rotina. · `pessoas/99601a8e37`
+- Uma relação. · `pessoas/6dd723b9bb`
+- Uma obrigação. · `pessoas/e9f2f95d70`
+- Um modo de trabalhar. · `pessoas/cfaaaef99f`
+- Uma expectativa. · `pessoas/9cec7ebc28`
+- Uma versão de você mesma. · `pessoas/e1e728268a`
+- O que eu continuo sustentando apenas porque já está aí? · `pessoas/d749624888`
+- O que você adia · `pessoas/e510b51f42`
+- Nem toda decisão adiada desaparece. · `pessoas/4e3d8dfba6`
+- Algumas continuam decidindo por você. · `pessoas/27b6b3f40a`
+- Uma conversa não feita. · `pessoas/6156c0e7e4`
+- Um limite não colocado. · `pessoas/37997767d7`
+- Uma mudança nunca iniciada. · `pessoas/df2e397248`
+- Um cuidado postergado. · `pessoas/6698995897`
+- Uma escolha que você espera ficar mais fácil. · `pessoas/dac8b4f5e5`
+- O que está sendo decidido enquanto eu continuo adiando? · `pessoas/fdb806fa37`
+- O que você repete · `pessoas/396ed74d16`
+- Nem toda repetição é ruim. · `pessoas/cb6acd350a`
+- Repetição também constrói competência. · `pessoas/99a17518dc`
+- Confiança. · `pessoas/c2a379e356`
+- Relação. · `pessoas/ea83fb0edd`
+- Disciplina. · `pessoas/eea3b89b72`
+- Cuidado. · `pessoas/cb73e658a0`
+- Mas vale perguntar: · `pessoas/efbd60f5c7`
+- Aquilo que eu repito está fortalecendo o quê? · `pessoas/39cc5d03a7`
+- Porque o automático tanto pode preservar aquilo que importa quanto manter aquilo que já perdeu sentido. · `pessoas/41305c7a89`
+- O que você normalizou · `pessoas/911903f2f6`
+- Coisas que incomodavam no início podem, com o tempo, deixar de chamar atenção. · `pessoas/5042f3ad9e`
+- Um cansaço constante. · `pessoas/eaae38650a`
+- Uma forma de falar consigo mesma. · `pessoas/8818bb5b65`
+- Uma relação que sempre exige demais. · `pessoas/7979bde13d`
+- Um trabalho que já não cabe. · `pessoas/9fb014c1a0`
+- Uma rotina que consome quase todo o espaço. · `pessoas/5f2fe95b93`
+- O que se tornou normal sem necessariamente ter se tornado bom? · `pessoas/2ba821a6bd`
+- entre uma reunião e outra; · `pessoas/279460ba3b`
+- na conversa que você evita; · `pessoas/e5c6d47a06`
+- no limite que coloca; · `pessoas/ec29e45007`
+- naquilo que faz cansada; · `pessoas/7ca20044ac`
+- na decisão pequena; · `pessoas/92aa4aa9a9`
+- no jeito como responde; · `pessoas/28de4cf389`
+- no que escolhe repetir; · `pessoas/01dce85404`
+- no que finalmente decide interromper. · `pessoas/586cf64ab4`
+- O que eu gostaria de continuar? · `pessoas/ac97b4dbe9`
+- O que precisa ser revisto? · `pessoas/7ec17cd1d7`
+- O que talvez seja hora de interromper? · `pessoas/0bb25d66a3`
+- E qual pequena escolha merece deixar de ser automática? · `pessoas/6ffcd16a15`
+- O automático · `pessoas/5561aa22e3`
+- O automático também constrói · `pessoas/b96dc02c03`
+- a sua vida. · `pessoas/3c2cd9aab5`
+- A maior parte da vida não acontece quando você está tomando uma grande decisão. · `pessoas/7aaf94152d`
+- Acontece numa terça-feira qualquer. · `pessoas/be7072b399`
+- Quando você acorda cansada. Responde mensagens. Corre para uma reunião. Cuida dos filhos. Adia uma conversa. Aceita mais uma coisa que não queria aceitar. Diz “depois eu vejo isso”. Volta para um hábito que já conhece. Repete uma reação antiga porque não teve energia para inventar outra. · `pessoas/ef232ffc6c`
+- E segue. · `pessoas/688428b9d3`
+- [imagem] `/images/ensaio/home-05-escrita-vertical.webp` · `pessoas/719fcce4b1`
+- Juliana com caderno, caneta e café à mesa, em retrato vertical. · `pessoas/2e8043c936`
+- Nada disso parece construir o futuro. · `pessoas/3480a1f0f3`
+- Mas constrói. · `pessoas/e6e59e690a`
+- [imagem] `/images/ensaio/pessoas-cafe-manha.webp` · `pessoas/722258e65e`
+- Juliana segurando uma caneca de café à mesa da cozinha. · `pessoas/28a7a01854`
+- Existem decisões que a gente sabe que está tomando. · `pessoas/6fe70c83a2`
+- E existem outras que começam a desaparecer dentro da rotina. · `pessoas/1a6896175b`
+- Aquilo que você aceita toda semana. · `pessoas/cbdc9c4f60`
+- Aquilo que adia todos os meses. · `pessoas/8b060052dc`
+- Aquilo que repete porque é conhecido. · `pessoas/46d9e7df3f`
+- Aquilo que continua fazendo porque funciona “mais ou menos”. · `pessoas/04dc45c755`
+- Aquilo que já não escolheria hoje, mas nunca parou para escolher de novo. · `pessoas/5cd0223208`
+- Com o tempo, repetição vira caminho. · `pessoas/6abcc19679`
+- Caminho vira padrão. · `pessoas/329c5c3343`
+- Padrão vira contexto. · `pessoas/48f1472418`
+- E contexto começa a parecer destino. · `pessoas/b93fdf2113`
+- O que você repete também vota no futuro que vai ficando · `pessoas/3393b9e19f`
+- mais provável. · `pessoas/cbaf2ac3ad`
+- A vida também se constrói numa · `pessoas/af15505e63`
+- terça-feira qualquer. · `pessoas/f24d52d25a`
+- Não no retiro. Não no planejamento anual. Não quando tudo estiver organizado. · `pessoas/602a0c59e5`
+- Mas: · `pessoas/eeab318f10`
+- Nem tudo precisa ser consciente. Automatismo, rotina e hábito são necessários. · `pessoas/fd423d601c`
+- A questão é outra: · `pessoas/1b6a4909ae`
+- Nem tudo precisa ser consciente. · `pessoas/57d5374aa1`
+- Mas aquilo que está construindo uma vida que você já não quer merece voltar para a consciência. · `pessoas/84dc1ab021`
+- Talvez você não precise mudar tudo. Talvez precise apenas voltar a perceber algumas coisas que deixaram de parecer escolha. · `pessoas/70823430be`
+- Consciência não muda automaticamente a realidade. Mas devolve possibilidade de escolha. · `pessoas/a6a5817514`
+- Antes de perguntar “o que eu quero para o futuro?”, talvez valha perguntar: · `pessoas/6841cebcf1`
+- O que estou repetindo hoje que já está construindo alguma versão dele? · `pessoas/482f9acc0c`
+- Perceber não resolve tudo. · `pessoas/317ee326e3`
+- Mas muda aquilo que pode ser escolhido depois. · `pessoas/b3bf00d4fe`
+
+## PessoasEspiral
+
+_Tags da seção: [WORKSHOP] [EPIC] Espiral pessoal; casa principal é /futuros-humanos_
+
+- E se pudesse ser diferente? [FRASE-ASSINATURA] · `pessoas/7b6dc5605b`
+- [imagem] `/images/ensaio/pessoas-janela.webp` · `pessoas/334eaba6bd`
+- Juliana olhando pela janela, com expressão contemplativa. · `pessoas/53be9c5bab`
+- Imaginar não é fingir que os limites desapareceram. · `pessoas/2624ccb847`
+- É interromper, por alguns instantes, a ideia de que aquilo que existe hoje é a única forma possível de existir. · `pessoas/af3f9a48c2`
+- Talvez seja perguntar: · `pessoas/9954cebdac`
+- Se eu não precisasse repetir exatamente este caminho, o que mais poderia existir? · `pessoas/96e9107be1`
+- O que eu ainda nem me permiti considerar? · `pessoas/33eac4858b`
+- O que parece impossível porque realmente é — e o que parece impossível apenas porque nunca experimentei outro jeito? · `pessoas/86cfc3a53f`
+- Imaginação abre campo. Não promete resultado. · `pessoas/6639b146e0`
+- Mas sem campo, não há escolha. · `pessoas/5eca425289`
+- O que eu quero ajudar a tornar possível? · `pessoas/2adf2ab2c7`
+- [imagem] `/images/ensaio/contexto-caderno-escolhas.webp` · `pessoas/7a8481c07b`
+- Mãos fazendo anotações e marcando escolhas em um caderno. · `pessoas/8af37d20ec`
+- Nem toda possibilidade merece virar projeto de vida. Nem tudo o que parece interessante merece energia. · `pessoas/b576e0e9cf`
+- Escolher significa introduzir direção. Perguntar: · `pessoas/b0b9dc9a78`
+- O que importa de verdade aqui? · `pessoas/b38ccec3a0`
+- O que estou disposta a sustentar? · `pessoas/913a67b597`
+- O que talvez precise deixar para trás? · `pessoas/e368bc7679`
+- Que futuro quero favorecer com as minhas próximas escolhas? · `pessoas/d20e91e6c4`
+- Escolher também implica renunciar. E talvez por isso seja tão difícil. · `pessoas/512660fb43`
+- Toda escolha dá força a algumas possibilidades e deixa outras para trás. · `pessoas/d1e4a8a6e8`
+- Do que eu preciso me tornar capaz? · `pessoas/06584574fd`
+- [imagem] `/images/ensaio/ju-estudo-fones.webp` · `pessoas/5e32e14095`
+- Juliana estudando com fones de ouvido, livro e notebook. · `pessoas/0bf394f221`
+- Desejar uma vida diferente não significa automaticamente ter hoje as capacidades necessárias para construí-la. · `pessoas/52655c2337`
+- Talvez você precise aprender alguma coisa. Desenvolver coragem. Aumentar repertório. Cuidar da energia. Pedir ajuda. Aprender a colocar limites. Sustentar desconforto. Melhorar uma habilidade. Mudar uma forma de pensar. Construir disciplina. Ou simplesmente parar de esperar sentir-se completamente pronta. · `pessoas/792028e83d`
+- Às vezes, o futuro que você quer exige uma versão de você que ainda está sendo construída. · `pessoas/b0515d847b`
+- Isso não significa que você não é suficiente. Significa apenas que pessoas aprendem, desenvolvem capacidades e mudam ao longo da vida. · `pessoas/e865b372a0`
+- Não precisamos transformar desenvolvimento em déficit. · `pessoas/6612bb3dff`
+- O que eu consigo fazer agora? · `pessoas/48c452dda7`
+- [imagem] `/images/ensaio/ju-caminhada-movimento.webp` · `pessoas/cabc211839`
+- Juliana caminhando na calçada, em enquadramento de corpo inteiro. · `pessoas/112c53e520`
+- Aqui a possibilidade encontra a terça-feira. · `pessoas/1d4045d8c6`
+- Não: “Qual é o plano perfeito para os próximos dez anos?” · `pessoas/60aa4e301c`
+- Mas: · `pessoas/706acef0f8`
+- Qual movimento cabe na minha vida agora? · `pessoas/a75431eeb3`
+- Uma conversa. Uma inscrição. Uma hora protegida na agenda. Um pedido. Um não. Um primeiro cliente. Uma caminhada. Uma pesquisa. Uma terapia, quando pertinente. Um currículo enviado. Uma conta feita. Um hábito interrompido. Um teste pequeno. Uma escolha real. · `pessoas/61eab425e1`
+- Porque: · `pessoas/9345b661d1`
+- o movimento não precisa garantir o resultado para mudar o que pode acontecer depois. · `pessoas/6083fd1ecc`
+- Depois de construir, a realidade responde. Às vezes funciona. Às vezes não. Às vezes você descobre que aquilo que queria já não quer mais. Às vezes aprende alguma coisa que muda completamente a pergunta. Às vezes desenvolve uma capacidade e passa a enxergar possibilidades que antes nem conseguia imaginar. · `pessoas/1291c362df`
+- A Espiral na escala pessoal · `pessoas/3c27002ac0`
+- Entre quem você é e quem · `pessoas/30b06d2854`
+- ainda pode se tornar. · `pessoas/712ae7be83`
+- Você não precisa saber exatamente quem vai se tornar. · `pessoas/cc2848baff`
+- Mas pode começar a participar dessa construção. · `pessoas/9a87f19a2f`
+- Talvez você consiga imaginar alguma coisa diferente. Uma vida com mais espaço. Um trabalho que faça mais sentido. Uma relação diferente consigo mesma. Outra forma de responder. Um limite que finalmente existe. Uma capacidade que ainda não desenvolveu. · `pessoas/3fd49a3512`
+- Mas imaginar uma possibilidade e conseguir viver de outro jeito são coisas diferentes. Entre uma e outra existe um processo. · `pessoas/1a06e8b0f2`
+- E, para mim, ele costuma passar por quatro movimentos: · `pessoas/61df38a2ca`
+- Imaginar · `pessoas/4b27b09c16`
+- Escolher · `pessoas/8c85401fc9`
+- Tornar-se · `pessoas/917ae70f97`
+- Construir · `pessoas/50c52c49aa`
+- Não como uma fórmula. Não como uma sequência que você completa uma vez. · `pessoas/e89daf34a3`
+- Como uma espiral. · `pessoas/e6d6c50b33`
+- Porque a gente imagina, escolhe, tenta, aprende, muda, constrói alguma coisa e volta a enxergar o mundo de outro lugar. · `pessoas/3cac9a1df8`
+- Você não volta · `pessoas/a908a90acb`
+- ao mesmo lugar. · `pessoas/f2efcdf307`
+- Pode voltar à mesma pergunta. Mas você já mudou. E o mundo ao redor também. · `pessoas/c9948aa0b4`
+- Essa é a Espiral. · `pessoas/4ebb110bc4`
+- Nós construímos futuros e somos construídos enquanto os construímos. · `pessoas/25739deb94`
+- Na escala pessoal: · `pessoas/b3094815f1`
+- Você vai se tornando enquanto tenta construir. · `pessoas/98d84f3d5f`
+- Tornar-se não é virar outra pessoa. · `pessoas/738855852a`
+- É desenvolver capacidades para sustentar escolhas que hoje talvez ainda sejam difíceis. Preservar coisas que importam. Abandonar outras. Experimentar formas diferentes de existir. · `pessoas/c40db30116`
+- E descobrir, no processo, o que continua fazendo sentido. · `pessoas/7c247b153d`
+- A Espiral precisa caber numa terça-feira qualquer. · `pessoas/504ab3a41d`
+- Com trabalho. Filhos. Cansaço. Dinheiro. Medo. Horário. Responsabilidade. Vida acontecendo. · `pessoas/4abac52432`
+- Você não precisa se tornar quem será para começar. · `pessoas/36e9cd95b3`
+- Você se torna também porque começa. · `pessoas/16d894a4b8`
+- Imaginar abre possibilidades. · `pessoas/ce400ea6d6`
+- Escolher dá direção. · `pessoas/0df2b1bd16`
+- Tornar-se desenvolve capacidade. · `pessoas/8c6edd361e`
+- Construir coloca alguma coisa no mundo. · `pessoas/152da6984f`
+- E então você olha de novo. · `pessoas/7efdd64a39`
+- Qual dessas quatro conversas parece mais necessária para você agora? · `pessoas/ee002db0cc`
+- Os quatro movimentos · `pessoas/7657900798`
+- Imaginar? · `pessoas/a5f330ed3e`
+- Escolher? · `pessoas/868e58f942`
+- Tornar-se? · `pessoas/78ff910108`
+- Construir? · `pessoas/f4dadd4725`
+
+## PessoasComecar
+
+_Tags da seção: [WORKSHOP] [POST] perguntas de começo; substituído pelo exercício B03_
+
+- Eu preciso perceber melhor · `pessoas/dee855c52b`
+- Ainda não sei exatamente o que está acontecendo. · `pessoas/3d33af117d`
+- [imagem] `/images/ensaio/home-06-ideias-horizontal.webp` · `pessoas/0e24f666d8`
+- Livros, caderno aberto, caneta e café sobre uma mesa de madeira. · `pessoas/d3724daf0f`
+- Talvez você só saiba que alguma coisa não encaixa. Está cansada. Irritada. Desmotivada. Sem espaço. Funcionando no automático. · `pessoas/4d2ca268c2`
+- Mas ainda não consegue transformar essa sensação numa pergunta clara. · `pessoas/3f9089275a`
+- Nesse caso, talvez o começo seja: observar; escrever; conversar; investigar; desacelerar o suficiente para perceber. · `pessoas/b2e7788029`
+- O que eu ainda não estou conseguindo enxergar? · `pessoas/b5b1d140da`
+- Eu sei o que quero, mas não consigo escolher · `pessoas/7da51e8e3b`
+- Existem possibilidades, mas nenhuma decisão se sustenta. · `pessoas/7b0a2ae87d`
+- [imagem] `/images/ensaio/contexto-caminhos-escolhas.webp` · `pessoas/e2e7697bf2`
+- Uma trilha se divide em dois caminhos na paisagem. · `pessoas/8c36848cd4`
+- Talvez você esteja dividida. Entre ficar e sair. Dizer sim ou não. Continuar ou interromper. Arriscar ou preservar. · `pessoas/74d9f3621b`
+- Escolher quase sempre significa perder alguma possibilidade. E isso pesa. · `pessoas/901a4b6cfb`
+- Talvez o começo seja menos: “qual é a escolha perfeita?” · `pessoas/d0e57ddc42`
+- e mais: · `pessoas/9a263b8b4c`
+- “qual direção eu estou disposta a sustentar?” · `pessoas/480684b46f`
+- Eu já escolhi, mas ainda não me sinto capaz · `pessoas/8befa7af7d`
+- Eu sei para onde quero ir, mas existe um espaço entre querer e conseguir. · `pessoas/57dab47e16`
+- [imagem] `/images/ensaio/contexto-livros-janela.webp` · `pessoas/b22999f925`
+- Livros próximos à janela, com a cidade ao entardecer ao fundo. · `pessoas/23ccff803c`
+- Talvez falte: energia; conhecimento; coragem; dinheiro; estrutura; apoio; habilidade; tempo; disciplina; ou confiança construída pela prática. · `pessoas/9f3bb763ae`
+- Esse é o território do · `pessoas/7dcb481f8d`
+- Não como inadequação. Mas como desenvolvimento. · `pessoas/6fb1d2a277`
+- Do que eu preciso me tornar capaz para sustentar aquilo que escolhi? · `pessoas/564c66f6aa`
+- Eu sei o que preciso fazer. Só não comecei. · `pessoas/dc679802bd`
+- A questão agora é movimento. · `pessoas/fc18d7d6aa`
+- [imagem] `/images/ensaio/ju-caminhada-movimento.webp` · `pessoas/2ae226955b`
+- Juliana caminhando na calçada, em enquadramento de corpo inteiro. · `pessoas/2057c9b223`
+- Às vezes, você já pensou bastante. Já entendeu. Já decidiu. Já leu. Já planejou. · `pessoas/34037c8abe`
+- Só falta alguma coisa atravessar a distância entre intenção e ação. · `pessoas/7335b1e1df`
+- E talvez o próximo movimento seja pequeno. Enviar a mensagem. Fazer a ligação. Separar uma hora. Pesquisar. Pedir ajuda. Dizer não. Testar. Começar mal mesmo. · `pessoas/fa66884587`
+- Qual é o menor movimento real que muda o que pode acontecer depois? · `pessoas/1d2f13975f`
+- Por onde começar · `pessoas/51a10de2ab`
+- Você não precisa mudar tudo. · `pessoas/58dd82bd06`
+- Precisa descobrir por onde começar. · `pessoas/65241e577c`
+- Quando alguma coisa não está funcionando, a tendência é olhar para a vida inteira de uma vez. · `pessoas/61b69c6d44`
+- Trabalho. Relacionamentos. Dinheiro. Energia. Corpo. Rotina. Família. Planos. Quem você é. Quem deveria ser. · `pessoas/b125c95d02`
+- Tudo parece conectado. E, muitas vezes, está. Mas tentar mexer em tudo ao mesmo tempo pode transformar desejo de mudança em paralisia. · `pessoas/a993ed6785`
+- Talvez você esteja cansada. Talvez tenha muitas coisas funcionando “mais ou menos”. Talvez saiba exatamente o que incomoda, mas não consiga sair do lugar. Ou talvez nem saiba direito o que está errado. Só perceba que alguma coisa ficou apertada. · `pessoas/245941266a`
+- Às vezes, o primeiro movimento não é tomar uma grande decisão. É conseguir nomear: · `pessoas/6f4ba56539`
+- o que está pedindo atenção agora? · `pessoas/f94c623439`
+- Porque problemas diferentes pedem começos diferentes. · `pessoas/6e38f10445`
+- Por onde eu começo? · `pessoas/e62e2da0a7`
+- Pergunta: · `pessoas/d50ad112bd`
+- O começo certo não é necessariamente o maior movimento. · `pessoas/791610d23c`
+- É aquele que torna o próximo movimento possível. · `pessoas/ba0aa7fa09`
+- Você não precisa saber resolver a vida inteira. · `pessoas/119fdfabf5`
+- Precisa encontrar a próxima pergunta verdadeira. · `pessoas/4b5dce9112`
+- Alguns começos pedem apenas uma boa pergunta. Outros pedem estrutura. Outros pedem acompanhamento. Outros pedem uma experiência capaz de transformar intenção em prática. · `pessoas/f7f4e6f6f3`
+- Começar também é escolher a ajuda certa para o momento certo. · `pessoas/c6b4fffddf`
+- A Espiral não deve ser usada como sistema de classificação. As quatro conversas podem coexistir. Uma pessoa pode estar construindo em uma área e imaginando em outra. Pode ter escolhido uma coisa e ainda estar tentando perceber outra. · `pessoas/26b0cd7efa`
+- A vida não cabe numa etapa. · `pessoas/9132d1cf6b`
+- Talvez você precise perceber. Talvez escolher. Talvez desenvolver capacidade. Talvez simplesmente começar. · `pessoas/afd6e25cab`
+- Por onde você precisa começar agora? · `pessoas/b2a3f34a95`
+- Perceber · `pessoas/5be4e81bd5`
+- Escolher · `pessoas/a6dfd651f1`
+- Tornar-me capaz · `pessoas/01a9db0b58`
+- Começar a mover · `pessoas/29d6bd27da`
+
+## PessoasEpic
+
+_Tags da seção: [EPIC] descrição do EPIC247 na v1; verificar com fonte atual antes de reutilizar_
+
+- EPIC [EPIC] · `pessoas/1198bc35bf`
+- 247 · `pessoas/b9b208b63d`
+- Energia · `pessoas/65908bb0d2`
+- Porque movimento exige combustível. · `pessoas/c240f59a13`
+- Não no sentido de produtividade infinita. Mas de perceber: · `pessoas/2eab558f77`
+- onde sua energia está indo; o que a consome; o que a sustenta; e como construir condições mínimas para agir. · `pessoas/ec8f5a8236`
+- Capacidade · `pessoas/1c0b69f7a8`
+- Porque intenção sozinha não produz mudança. · `pessoas/e8d647f8af`
+- Algumas coisas precisam ser: · `pessoas/daec7e4b68`
+- aprendidas; praticadas; fortalecidas; repetidas; reorganizadas. · `pessoas/af7fceb924`
+- Transformação pessoal também é desenvolvimento. · `pessoas/ce14edc57a`
+- Ação · `pessoas/4088ce3ab7`
+- Porque, em algum momento, alguma coisa precisa sair da cabeça e entrar no mundo. · `pessoas/ceb73781d8`
+- Uma escolha. Um comportamento. Uma prática. Um teste. Um movimento. · `pessoas/a25e61035f`
+- Não precisa ser enorme. Precisa ser real. · `pessoas/6ead26cdfd`
+- EPIC247 [EPIC] · `pessoas/32cb3a6537`
+- Às vezes, perceber não basta. · `pessoas/40a3e2d5f1`
+- Você precisa começar a se mover. · `pessoas/f9ea82a127`
+- Existe uma diferença enorme entre: entender o que está acontecendo; saber o que gostaria de mudar; e conseguir transformar isso em prática. · `pessoas/f6015be5c4`
+- Você pode ter clareza. Pode ter lido. Pode ter refletido. Pode até saber exatamente o que precisa fazer. E ainda assim continuar parada. · `pessoas/54dc433fd7`
+- Não porque “não quer o suficiente”. Mas porque mudança também exige: energia; estrutura; repetição; capacidade; escolhas; e ação sustentada no mundo real. · `pessoas/f7b75c47f0`
+- É nesse espaço que entra o · `pessoas/e8358e352d`
+- [imagem] `/images/ensaio/pessoas-janela.webp` · `pessoas/8a0ead7c10`
+- Juliana olhando pela janela, com expressão contemplativa. · `pessoas/8b6d5cfcaf`
+- Saber não muda sozinho. · `pessoas/7cb1002a8b`
+- é uma experiência prática de transformação pessoal. · `pessoas/8a6caf24a4`
+- Foi construído para quem percebe que alguma coisa precisa mudar, mas não quer ficar apenas na reflexão. · `pessoas/d51342e04d`
+- O objetivo não é criar uma versão perfeita de você. Nem prometer uma vida sem limites. Nem dizer que basta “querer muito”. · `pessoas/f52c03f015`
+- É trabalhar, de forma prática, elementos que influenciam nossa capacidade de sair da intenção e entrar em movimento. · `pessoas/b5f4779902`
+- Você não precisa de mais uma ideia bonita sobre mudança. · `pessoas/baff5d00a8`
+- Talvez precise de estrutura para conseguir praticá-la. · `pessoas/ee62ee0d7f`
+- Você percebe. Decide que quer mudar alguma coisa. Faz planos. Começa. · `pessoas/82f9719358`
+- A rotina entra. · `pessoas/dd7242e9e9`
+- O cansaço entra. · `pessoas/49f0dc820a`
+- As urgências entram. · `pessoas/306e7fb14a`
+- Um dia ruim entra. · `pessoas/92aef954c9`
+- O comportamento antigo volta. · `pessoas/0aa0cdc351`
+- E, pouco a pouco, aquilo que parecia uma escolha vira novamente intenção. · `pessoas/c18f69befd`
+- Não porque você seja incapaz. Mas porque: · `pessoas/0bb597e1ac`
+- Transformação precisa sobreviver · `pessoas/88592eadbd`
+- ao cotidiano. · `pessoas/d347513e21`
+- não é Futuros Humanos em formato de programa. · `pessoas/e4e739b22b`
+- São construções diferentes dentro do universo Ju Ferreira. · `pessoas/784732b480`
+- Futuros Humanos · `pessoas/e912f51847`
+- investiga possibilidades, agência, tecnologia, humanidade, direção e construção de futuros. · `pessoas/8a249c2d9f`
+- trabalha transformação pessoal de maneira prática, ajudando a colocar mudança em movimento no cotidiano. · `pessoas/6fc3dc4cb3`
+- Eles podem conversar. Mas não são a mesma coisa. · `pessoas/8d167a6869`
+- Talvez · `pessoas/3e335dadd5`
+- faça sentido se o seu problema já não for apenas perceber. · `pessoas/1965423468`
+- Você já entendeu algumas coisas. Sabe que quer mudar alguma coisa. Talvez até saiba por onde deveria começar. · `pessoas/03bd8e50c4`
+- Mas existe uma distância entre: · `pessoas/287c569ecc`
+- “eu sei” · `pessoas/584779e37a`
+- e · `pessoas/bfa1502b91`
+- “eu faço”. · `pessoas/f4f418be7e`
+- É essa distância que o produto procura trabalhar. · `pessoas/9420ec4a2f`
+- Entender muda a forma como você enxerga. · `pessoas/7b69cdd9ae`
+- Praticar muda aquilo que você se torna capaz de fazer. · `pessoas/c1e7835fbf`
+- — uma experiência prática para transformar percepção em movimento no cotidiano real. · `pessoas/5b225692d3`
+- Conheça o EPIC247 [EPIC] · `pessoas/26a4218c1f`
+- Ainda não é isso? Continue explorando · `pessoas/315662cfc6`
+- Precisa funcionar quando a segunda-feira chega. · `pessoas/d4f0fadb9a`
+- Você não precisa esperar se sentir completamente pronta. · `pessoas/80ca6872ac`
+- Às vezes, capacidade também é construída depois que o movimento começa. · `pessoas/c16bbb899c`
+- Perceber importa. Escolher importa. Mas algumas mudanças só começam a existir quando encontram prática. · `pessoas/2493983df4`
+
+## PessoasPortas
+
+_Tags da seção: [POST] portas editoriais; fundidas em B04_
+
+- Portas editoriais · `pessoas/d2cf138f4d`
+- Nem toda pergunta precisa virar um programa. · `pessoas/99ad37d593`
+- Algumas precisam de tempo. · `pessoas/984939f98a`
+- De leitura. De silêncio. De uma história. De uma pergunta nova. De encontrar palavras para alguma coisa que você ainda não sabe explicar. · `pessoas/58e80e4434`
+- Às vezes, o próximo movimento não é comprar nada. É continuar pensando. · `pessoas/6dd0550a12`
+- Talvez você tenha chegado até aqui sem querer mudar nada imediatamente. Talvez alguma frase tenha incomodado. Talvez uma pergunta tenha ficado. Talvez você apenas queira continuar acompanhando essa conversa. · `pessoas/449fe6f764`
+- Tudo bem. Nem toda reflexão precisa virar meta. Nem toda inquietação precisa virar plano. Nem toda possibilidade precisa imediatamente virar projeto. Algumas ideias precisam apenas encontrar espaço suficiente para amadurecer. · `pessoas/6e04b4a216`
+- Às vezes, perceber melhor já é parte do movimento. · `pessoas/f20076655e`
+- Você não precisa transformar toda inquietação em uma tarefa. · `pessoas/92f547f5dd`
+- Vivemos cercados por lógica de otimização: · `pessoas/6f0d360254`
+- leia para aplicar; aprenda para produzir; reflita para melhorar; descubra para agir. · `pessoas/c8942039c5`
+- Mas algumas coisas precisam existir antes de sabermos o que fazer com elas. · `pessoas/0f0b04f757`
+- Uma pergunta pode ficar conosco. Uma ideia pode amadurecer. Uma história pode mudar de significado meses depois. · `pessoas/0ba07ed575`
+- Nem todo movimento é imediatamente visível. · `pessoas/ced6d1d2e1`
+- Se você percebe que precisa de estrutura para colocar mudança em prática, o · `pessoas/5f51e9ba1f`
+- EPIC247 [EPIC] · `pessoas/9e7917c07f`
+- pode ser uma boa porta. · `pessoas/79d3e0eac0`
+- Se não é isso agora, não precisamos transformar sua curiosidade em necessidade. · `pessoas/8b804b685e`
+- A porta certa depende do momento. · `pessoas/0859aa3028`
+- Às vezes, o próximo passo é fazer alguma coisa. · `pessoas/5573b80a21`
+- Às vezes, é continuar prestando atenção. · `pessoas/d45a35679c`
+- Talvez hoje você precise se mover. · `pessoas/36adeb9766`
+- Talvez precise entender. · `pessoas/5cd47f3873`
+- Talvez queira ler. · `pessoas/8a173e7633`
+- Talvez queira apenas continuar por perto. · `pessoas/bf50c44506`
+- Escolha a porta que faz sentido agora. · `pessoas/05373cb68d`
+- Uma Terça-feira Qualquer · `pessoas/ae3dd5acb9`
+- Ideias · `pessoas/057601214b`
+- Futuros Humanos · `pessoas/ea0a3d41a5`
+
+## PessoasJu
+
+_Tags da seção: [POST] [LIVRO] passagem pessoal; resumida em B05_
+
+- cliente; · `pessoas/1c5b58def5`
+- reunião; · `pessoas/f15d28c4e6`
+- dinheiro; · `pessoas/91fc5e2250`
+- prazo; · `pessoas/b784cf26f8`
+- cansaço; · `pessoas/99bb1bbd2b`
+- responsabilidade; · `pessoas/fb20a611c1`
+- filhas; · `pessoas/f4515a9fd0`
+- casa; · `pessoas/6a1fc98c83`
+- medo; · `pessoas/286c85a354`
+- entusiasmo; · `pessoas/373e293a1c`
+- e uma terça-feira qualquer no meio do caminho. · `pessoas/f636bd5571`
+- Continuo imaginando. · `pessoas/c80e74d4d0`
+- Escolhendo. · `pessoas/4a66a80c85`
+- Tentando me tornar capaz. · `pessoas/b8a3624431`
+- Construindo. · `pessoas/95133176cc`
+- Errando. · `pessoas/b618b7a4ac`
+- Olhando de novo. · `pessoas/6aeefd2bef`
+- A Ju também continua tentando · `pessoas/05404080fc`
+- Eu também continuo · `pessoas/39b7dc7859`
+- tentando. · `pessoas/3407bbc6b1`
+- Não descobri uma fórmula para viver. Não consegui eliminar a incerteza. Não acordo todos os dias sabendo exatamente o que quero. Não faço sempre aquilo que sei que deveria fazer. Não transformei minha vida numa sequência impecável de escolhas conscientes. · `pessoas/f62905f61a`
+- Eu também adio. Erro. Canso. Mudo de ideia. Começo coisas que não funcionam. Insisto tempo demais em algumas. Desisto cedo demais de outras. E, às vezes, simplesmente tento chegar ao fim do dia. · `pessoas/3a3e34cb11`
+- Porque nenhuma das ideias desta página me coloca fora daquilo sobre o que estou falando. · `pessoas/a5c5dd59a4`
+- [imagem] `/images/ju/retrato-biblioteca.webp` · `pessoas/4ce8ad8827`
+- Juliana sorrindo diante de sua biblioteca. · `pessoas/b310cf2599`
+- Eu também estou dentro · `pessoas/c618f6c1b3`
+- da pergunta. · `pessoas/716dc667ca`
+- Quando falamos sobre possibilidade, é fácil parecer que existe alguém do outro lado dizendo: · `pessoas/64a7816ce4`
+- “Olha como você deveria viver.” · `pessoas/221ae78685`
+- Não é isso que quero fazer. · `pessoas/cb2fce2250`
+- Meu interesse por transformação nasceu justamente porque · `pessoas/371749450a`
+- eu também precisei dela muitas vezes · `pessoas/a19fdb71fe`
+- Porque construí. Perdi. Recomecei. Mudei de direção. Tentei sustentar coisas demais. Tive certezas que depois deixaram de fazer sentido. · `pessoas/ebf720bd81`
+- E continuo fazendo escolhas sem saber exatamente como elas vão terminar. · `pessoas/7272ec647d`
+- [imagem] `/images/ensaio/maternidade-maos-dadas.webp` · `pessoas/e5fa2bf116`
+- Cena ilustrativa de uma mulher e duas meninas fictícias caminhando de mãos dadas, vistas de costas. · `pessoas/adcb668557`
+- Eu sou · `pessoas/ac3fd5cfa9`
+- mãe. · `pessoas/d8e2b55581`
+- A maternidade alterou profundamente minha relação com o futuro. · `pessoas/5725691933`
+- Não apenas porque comecei a pensar no mundo onde minhas filhas vão viver. Mas porque ela desmontou qualquer fantasia de controle que eu ainda pudesse ter. · `pessoas/9eb0f9e364`
+- Filhos têm vontade. O mundo acontece. Planos quebram. A vida não respeita nossa agenda. E, ainda assim, continuamos escolhendo, cuidando, tentando construir alguma coisa. · `pessoas/4fea857f79`
+- Essa tensão entre: · `pessoas/e34243e9d0`
+- não controlar · `pessoas/784bae1413`
+- e · `pessoas/d09d21a85c`
+- continuar participando · `pessoas/8591e06095`
+- deixou de ser apenas uma ideia para mim. · `pessoas/08c62815a9`
+- Virou vida. · `pessoas/2c407a7983`
+- Eu também continuo construindo. · `pessoas/6f2319fe3b`
+- Empresas. Projetos. Produtos. Relacionamentos. Uma carreira que continua mudando. Uma forma de trabalhar que ainda está sendo construída. · `pessoas/ec9878e633`
+- E tudo isso acontece com: · `pessoas/4f632208cb`
+- Eu não escrevo sobre a vida depois de ter descoberto como vivê-la. · `pessoas/17472a59ae`
+- Escrevo enquanto tento. · `pessoas/7ddabe95e2`
+- A posição não é: · `pessoas/cdef87a7a5`
+- “Eu passei por tudo isso e agora vou ensinar você a vencer.” · `pessoas/95a4aefbef`
+- É: · `pessoas/46d0cfe747`
+- “Eu passei e continuo passando por perguntas parecidas. Algumas coisas aprendi. Outras continuo investigando. E talvez possamos pensar sobre elas juntos.” · `pessoas/718fad686a`
+- Vulnerabilidade não é contar tudo. É não fingir que você está acima daquilo sobre o que fala. · `pessoas/0dc9c3c94f`
+- Tem dia em que eu penso sobre futuros. · `pessoas/c9454c6791`
+- Tem dia em que eu preparo uma palestra. · `pessoas/916fa620fe`
+- Tem dia em que estou negociando, tentando fazer uma empresa funcionar, resolvendo um problema, cuidando das minhas filhas ou olhando para a agenda pensando: · `pessoas/476c8c85fb`
+- “Como é que eu vou dar conta disso tudo?” · `pessoas/883116dcaf`
+- E é justamente por isso que: uma ideia sobre transformação que não sobrevive à vida real não me interessa muito. · `pessoas/7f3f9b65d8`
+- Talvez você também esteja tentando. Tentando entender. Tentando mudar alguma coisa. Tentando não repetir. Tentando sustentar uma escolha. Tentando começar. Tentando simplesmente dar conta. · `pessoas/1f171ff625`
+- Você não precisa ter resolvido a vida para começar a participar dela de outro jeito. · `pessoas/60eb60f57f`
+- Talvez seja isso que signifique continuar viva na própria história. · `pessoas/7def1f1107`
+
+## PessoasFechamento
+
+_Tags da seção: [FRASE-ASSINATURA] fechamento; fundido em B05_
+
+- Imaginar · `pessoas/8aee9b4163`
+- Talvez você precise · `pessoas/71151f30d1`
+- E se pudesse ser diferente? [FRASE-ASSINATURA] · `pessoas/7549a58d1f`
+- Permitir que outra possibilidade exista antes de descartá-la. · `pessoas/a53f85f480`
+- Escolher · `pessoas/592f21b081`
+- Talvez precise · `pessoas/bcbd1696c8`
+- O que eu quero ajudar a tornar possível? · `pessoas/97acf3758e`
+- Dar direção àquilo que está aberto. · `pessoas/bbcc1aab6b`
+- Tornar-se · `pessoas/08b1cfe497`
+- Do que eu preciso me tornar capaz? · `pessoas/429a08ac5f`
+- Construir condições para sustentar a escolha. · `pessoas/2f144151f0`
+- Construir · `pessoas/2c38a25728`
+- O que consigo fazer agora? · `pessoas/a2303e9dec`
+- Colocar um primeiro movimento no mundo. · `pessoas/19cb0d5882`
+- Quero começar a me mover · `pessoas/31d48b73b2`
+- EPIC247 [EPIC] · `pessoas/f4b2f0b844`
+- Para quando perceber já não basta e você sente que precisa transformar intenção em prática. · `pessoas/4f551d693b`
+- Conheça o EPIC247 [EPIC] · `pessoas/443904c3db`
+- Quero continuar essa conversa · `pessoas/40effc74d1`
+- Uma Terça-feira Qualquer · `pessoas/114308127d`
+- Uma pausa semanal para pensar futuros, escolhas, humanidade e vida real. · `pessoas/a3fbd7ebae`
+- Assine a newsletter · `pessoas/eeaf77d808`
+- Quero pensar com mais profundidade · `pessoas/ae7064ae3a`
+- Ideias · `pessoas/a2e040c60f`
+- Artigos, ensaios e investigações para perguntas que não cabem em respostas rápidas. · `pessoas/316277bf99`
+- Explore as ideias · `pessoas/0944926bbd`
+- Quero aprofundar essa lente · `pessoas/f948060278`
+- Futuros Humanos · `pessoas/25745be0f4`
+- O território intelectual onde possibilidade, agência, tecnologia, humanidade e construção de futuros se encontram. · `pessoas/712853bd67`
+- Conheça Futuros Humanos · `pessoas/14eae7fc5d`
+- Comece de onde você está · `pessoas/7d2fe924ed`
+- Comece de · `pessoas/96793b1cd0`
+- onde você está. · `pessoas/c3996771d8`
+- Você não precisa estar pronta. · `pessoas/18e1bc1040`
+- Precisa estar aqui. · `pessoas/0bd021adbf`
+- Com a vida que existe hoje. Com aquilo que você já sabe. Com o que ainda não sabe. Com as capacidades que já tem. Com as que ainda precisa desenvolver. Com os limites reais. Com as possibilidades que ainda consegue enxergar. · `pessoas/a4f72e0c9e`
+- Porque qualquer futuro que venha a ser construído começa inevitavelmente de algum presente. · `pessoas/8cdaadff57`
+- E este é o seu. · `pessoas/49af540f84`
+- [imagem] `/images/ensaio/home-01-abertura-horizontal.webp` · `pessoas/fab9a358e8`
+- Juliana de preto diante de uma paisagem ampla ao entardecer. · `pessoas/479458b48b`
+- Tudo isso pode ser começo. · `pessoas/e0adbb6e10`
+- Talvez você tenha chegado até aqui procurando uma resposta. Talvez tenha encontrado mais perguntas. Talvez alguma coisa tenha feito sentido. Talvez outra tenha incomodado. Talvez você tenha percebido que precisa fazer alguma coisa. Ou talvez tenha percebido que ainda precisa de tempo. · `pessoas/b921c613fb`
+- Você não precisa ter clareza sobre os próximos dez anos. Não precisa descobrir uma versão definitiva de si mesma. Não precisa reorganizar a vida inteira antes de começar. Não precisa transformar toda inquietação em projeto. · `pessoas/c1f91aa6ef`
+- Precisa apenas reconhecer: · `pessoas/70e37103fd`
+- o que está vivo para você agora? · `pessoas/5646f63bc2`
+- E qual relação você quer ter com isso. · `pessoas/cf8949cb0a`
+- Próximo passo · `pessoas/e606b78d3f`
+- Ou talvez você precise apenas continuar prestando atenção. · `pessoas/358de259b6`
+- Porque atenção também pode anteceder participação. · `pessoas/1307c42b4b`
+- Você não precisa saber todo o caminho para participar · `pessoas/588dd13c71`
+- do próximo passo. · `pessoas/9e38ce3b07`
+- São entradas diferentes para necessidades diferentes. · `pessoas/0c8964b4ca`
+- A porta certa depende do momento. · `pessoas/a4e65796c8`
+- Limites existem. [FRASE-ASSINATURA] · `pessoas/f8915927f1`
+- Potência também. [FRASE-ASSINATURA] · `pessoas/efd09733e2`
+- Você pode reconhecer o que não depende de você sem desaparecer daquilo que ainda depende. · `pessoas/500b93ec73`
+- Aquilo que existe não esgota aquilo que pode existir. [FRASE-ASSINATURA] · `pessoas/4dcc1cad4e`
+- Você não controla tudo o que vem depois. Mas isso não significa que não participa daquilo que vem depois. · `pessoas/8ca638c621`
+- Talvez o próximo futuro não comece com uma grande decisão. Talvez comece com uma pergunta. Uma escolha. Uma capacidade. Um movimento. · `pessoas/313355ee20`
+- Uma terça-feira qualquer. · `pessoas/ddeb2b36be`
+- Temos futuros para construir. [FRASE-ASSINATURA] · `pessoas/e4562062fa`
+- Porque futuro também se constrói no meio da vida real. · `pessoas/21f83eb8ef`
+- [imagem] `/images/ensaio/home-06-ideias-horizontal.webp` · `pessoas/cc3d1a3980`
+- Livros, caderno aberto, caneta e café sobre uma mesa de madeira. · `pessoas/0bfc4bf7a9`
+- Uma vez por semana, uma pausa no automático. · `pessoas/b6c758545b`
+- Uma conversa semanal sobre aquilo que estamos construindo enquanto trabalhamos, criamos filhos, tomamos decisões, erramos, recomeçamos e simplesmente tentamos dar conta. · `pessoas/fa683a6363`
+- Não é uma newsletter sobre prever o futuro. É um espaço para observar o presente com mais atenção. · `pessoas/1567ab00b2`
+- Uma ideia. Uma história. Uma tensão. Uma pergunta. Algo que talvez acompanhe você depois de fechar o e-mail. · `pessoas/3086ef091b`
+- Assine Uma Terça-feira Qualquer · `pessoas/11d00082de`
+- Para quando uma pergunta merece mais tempo. · `pessoas/17afa87afa`
+- [imagem] `/images/ensaio/contexto-livros-janela.webp` · `pessoas/c177f1232a`
+- Livros próximos à janela, com a cidade ao entardecer ao fundo. · `pessoas/2bda9f56db`
+- Primeiro vem a pergunta. Depois vem o conteúdo. · `pessoas/f208fdeecc`
+- Nem tudo cabe num post. Nem tudo precisa terminar numa resposta rápida. · `pessoas/aa184fc835`
+- Em · `pessoas/5faa82ee0d`
+- , ficam artigos, ensaios, reflexões e investigações sobre: futuros; tecnologia; humanidade; escolhas; liderança; transformação; e as contradições que aparecem no encontro entre essas coisas. · `pessoas/c805541fed`
+- É o lugar para quem gosta de ir um pouco mais fundo. Não necessariamente para concordar. Para pensar. · `pessoas/da919bc3dd`
+- Para aprofundar a lente. · `pessoas/e863041833`
+- Futuros Humanos não é um programa de desenvolvimento pessoal. · `pessoas/c21a7761f4`
+- Talvez aquilo que tenha trazido você até esta página seja uma questão maior: O futuro. Tecnologia. Agência. Possibilidade. Aquilo que estamos construindo sem perceber. O que ainda pode existir. · `pessoas/f3eaa0bd5b`
+- Nesse caso, existe um território inteiro para explorar. · `pessoas/dd86d1ead8`
+- organiza grande parte dessas perguntas e apresenta a tese contemporânea da Ju sobre possibilidade, direção, agência, capacidades e construção. · `pessoas/537868078d`
+- É uma tese e um território intelectual. Você pode entrar nele sem precisar transformar isso em produto, processo ou objetivo. · `pessoas/d9f600d099`
+

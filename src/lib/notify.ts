@@ -89,12 +89,12 @@ export async function confirmToSender(c: Pick<Contact, "name" | "email">) {
   await send({
     from: from(),
     to: [c.email],
-    subject: "Recebemos. Obrigada por começar a conversa.",
+    subject: "Mensagem recebida",
     html: `
     <div style="font-family:Georgia,serif;color:#181411;max-width:560px">
       <p style="font-size:20px">Olá, ${esc(first)}.</p>
-      <h1 style="font-weight:500;font-size:28px">Recebemos. <span style="color:#b80c10">Obrigada por começar a conversa.</span></h1>
-      <p style="font:16px/1.6 Arial,sans-serif">Vamos ler o contexto antes de responder para que a próxima mensagem não comece do zero.</p>
+      <h1 style="font-weight:500;font-size:28px">Mensagem recebida.</h1>
+      <p style="font:16px/1.6 Arial,sans-serif">Obrigado por contar o contexto. A equipe dará continuidade por este e-mail.</p>
       <p style="font:14px Arial,sans-serif;color:#5c524c;margin-top:28px">Ju Ferreira · <a href="${SITE_URL}" style="color:#b80c10">${SITE_URL.replace(/^https?:\/\//, "")}</a></p>
     </div>`,
   });

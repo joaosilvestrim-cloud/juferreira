@@ -183,7 +183,7 @@ export const SEO_PAGES = [
   { path: "/", name: "Home" },
   { path: "/ju", name: "Ju" },
   { path: "/futuros-humanos", name: "Futuros Humanos" },
-  { path: "/palestras", name: "Palestras & Workshops" },
+  { path: "/palestras", name: "Palestras" },
   { path: "/organizacoes", name: "Para Organizações" },
   { path: "/pessoas", name: "Para Pessoas" },
   { path: "/ideias", name: "Ideias" },

@@ -1,37 +1,35 @@
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
-import { PalestrasConversao, PalestrasLastro, PalestrasProcesso } from "@/components/sections/palestras-workshops/BlocksLastro";
-import { PalestrasExperiencias, PalestrasWorkshops } from "@/components/sections/palestras-workshops/BlocksFormatos";
+import { PalestrasAprofundamento, PalestrasContexto } from "@/components/sections/palestras-workshops/BlocksFormatos";
+import { PalestrasExperiencia, PalestrasHero } from "@/components/sections/palestras-workshops/BlocksIntro";
 import {
-  PalestrasFuturosHumanos,
-  PalestrasHero,
-  PalestrasOutrasConversas,
-  PalestrasPorQue,
-} from "@/components/sections/palestras-workshops/BlocksIntro";
+  PalestrasComoComeca,
+  PalestrasContratacao,
+  PalestrasOucaVeja,
+} from "@/components/sections/palestras-workshops/BlocksLastro";
 
 const DEFAULT_META: Metadata = {
-  title: "Palestras & Workshops",
+  title: "Palestras",
   description:
-    "Palestras, workshops e experiências para organizações que querem pensar futuros, tecnologia, liderança e transformação humana de forma conectada à realidade.",
+    "Futuros Humanos, palestra com Ju Ferreira: uma conversa sobre as escolhas que fazemos quando tecnologia, trabalho e vida abrem novas possibilidades.",
 };
 
 export async function generateMetadata(): Promise<Metadata> {
   return seoFor("/palestras", DEFAULT_META);
 }
 
+/** Site 2.0 · Palestras P01–P07 (docs/v2/registro-palestras.md). P03 só aparece com provas reais cadastradas no painel. */
 export default async function PalestrasPage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
       <PalestrasHero />
-      <PalestrasPorQue />
-      <PalestrasFuturosHumanos />
-      <PalestrasOutrasConversas />
-      <PalestrasWorkshops />
-      <PalestrasExperiencias />
-      <PalestrasLastro />
-      <PalestrasProcesso />
-      <PalestrasConversao />
+      <PalestrasExperiencia />
+      <PalestrasOucaVeja />
+      <PalestrasContexto />
+      <PalestrasAprofundamento />
+      <PalestrasComoComeca />
+      <PalestrasContratacao />
     </>
   );
 }

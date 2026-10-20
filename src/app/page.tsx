@@ -8,7 +8,6 @@ import {
   HomeJu,
   HomeOrganizacoes,
   HomePessoas,
-  HomeProva,
   HomeTensao,
 } from "@/components/sections/home/HomeBlocks";
 
@@ -27,7 +26,6 @@ export default async function HomePage() {
       <HomeFuturos />
       <HomeJu />
       <HomeOrganizacoes />
-      <HomeProva />
       <HomePessoas />
       <HomeIdeias />
       <HomeEncerramento />

@@ -1,0 +1,642 @@
+# Cofre editorial · Ideias v1 — textos da v1 (tag v1.0-site) guardados antes da reescrita; material interno
+
+Nada aqui está publicado na página v2. Gerado a partir de `src/content/editable-registry.json` (page = "ideias"), agrupado por seção, na ordem do código. Chave = identificador do texto no painel. Tags conforme Contexto Mestre §22: [PALESTRA 2] [PALESTRA 3] [ARTIGO] [POST] [REEL] [LIVRO] [WORKSHOP] [EPIC] [PESQUISAR] [FRASE-ASSINATURA]. Valores técnicos (classes CSS, cores) foram omitidos.
+
+## IdeiasHero
+
+_Tags da seção: abertura; comprimida em I01_
+
+- Ideias · `ideias/5512140bd7`
+- Algumas ideias · `ideias/006351547d`
+- merecem mais tempo. · `ideias/470236134c`
+- Nem toda pergunta cabe num post. · `ideias/c37fe33ad4`
+- Nem toda reflexão termina numa palestra. · `ideias/225fade13a`
+- Nem tudo que vale a pena pensar precisa produzir uma resposta imediatamente. · `ideias/b15c3a4dce`
+- Algumas ideias precisam de espaço para: amadurecer; contradizer; encontrar outras ideias; ser testadas; mudar de forma; e, às vezes, continuar abertas. · `ideias/0d3e1658f1`
+- É para isso que este espaço existe. · `ideias/a3e00dc87d`
+- [imagem] `/images/ensaio/home-05-escrita-vertical.webp` · `ideias/41a9e167ae`
+- Juliana com caderno, caneta e café à mesa, em retrato vertical. · `ideias/ad6f11a343`
+- Nem tudo aqui está resolvido. · `ideias/833899d26c`
+- Primeiro vem a pergunta. · `ideias/dcbbdf3e04`
+- Depois vem o conteúdo. · `ideias/68ff86291b`
+- Aqui escrevo sobre aquilo que continua me fazendo parar e pensar. · `ideias/ced282687e`
+- Futuros. Tecnologia. Humanidade. Escolhas. Liderança. Transformação. Possibilidade. · `ideias/6dcd4237d2`
+- E, principalmente, sobre aquilo que acontece · `ideias/e82c2bee8d`
+- no encontro entre essas coisas · `ideias/6ded25a5d6`
+- Nem todos os textos representam conclusões. Alguns são investigações. Outros são tentativas de organizar uma pergunta. · `ideias/9bd1e1c1d9`
+- Alguns começam numa experiência. Outros, num livro. Numa conversa. Num dado. Numa contradição. Ou numa terça-feira qualquer. · `ideias/9d83fd62fd`
+- Explore as ideias · `ideias/4db92200a5`
+- Assine Uma Terça-feira Qualquer · `ideias/180922d5b4`
+- polygon(1% 8%, 99% 0, 100% 88%, 3% 100%) · `ideias/2af9bc9537`
+
+## IdeiasPergunta
+
+_Tags da seção: [ARTIGO] nota sobre a pergunta antes do conteúdo; vira I05_
+
+- Alguma coisa me faz parar · `ideias/f57c9d8166`
+- Pode ser uma contradição. Uma frase. Um comportamento. Uma mudança. Uma notícia. Uma experiência. Uma pergunta que volta. · `ideias/94ef7011d7`
+- Ainda não existe artigo. Existe apenas atenção. · `ideias/c070e50f7f`
+- “Por que isso está me incomodando?” · `ideias/e858f144e7`
+- Eu tento nomear a pergunta · `ideias/6f6d2b9613`
+- Nem sempre aquilo que chama atenção é a pergunta real. · `ideias/b81fef2c54`
+- Uma conversa sobre IA pode, na verdade, ser sobre autoria. Uma conversa sobre produtividade pode ser sobre direção. Uma conversa sobre mudança pode ser sobre medo. Uma conversa sobre futuro pode ser sobre presente. · `ideias/595c057b9e`
+- Então existe um trabalho anterior à resposta: · `ideias/ccafc05b25`
+- descobrir qual é a pergunta que vale a pena investigar. · `ideias/031bf693f7`
+- Eu procuro outras lentes · `ideias/dc1107ca9b`
+- Aqui entram: livros; pesquisas; autores; dados; conversas; história; Estudos de Futuros; tecnologia; negócios; desenvolvimento humano; e, muitas vezes, experiências que contradizem aquilo que eu achava que sabia. · `ideias/fdff9dd66d`
+- Pensar não é apenas organizar aquilo em que já acreditamos. Também é permitir que alguma coisa desorganize nossa certeza. · `ideias/d89502f6b5`
+- Eu tento colocar a ideia contra o mundo real · `ideias/2440562ab8`
+- Uma ideia pode soar linda. Mas: ela sobrevive a uma empresa? a uma família? a um orçamento? a uma liderança difícil? a um dia ruim? a uma terça-feira qualquer? · `ideias/4ed51cb42d`
+- Se não sobrevive ao encontro com a vida, talvez ainda esteja incompleta. Ou talvez esteja simplesmente errada. · `ideias/a87b922557`
+- E isso também faz parte. · `ideias/026823cc35`
+- Às vezes eu escrevo. Às vezes não. · `ideias/e5a4eec758`
+- Nem toda investigação precisa virar conteúdo. · `ideias/8605baec05`
+- Algumas perguntas amadurecem durante meses. Outras mudam completamente. Algumas são abandonadas. Algumas viram palestra. Outras viram artigo. Outras aparecem numa newsletter. Outras permanecem no caderno. · `ideias/cabb1a7599`
+- Nem toda ideia precisa ser publicada para ter valido a pena pensá-la. · `ideias/cd502508f9`
+- A pergunta vem antes do conteúdo · `ideias/fe08e54083`
+- Eu não começo perguntando o que preciso publicar. · `ideias/2aab86b52b`
+- Começo perguntando o que merece ser pensado. · `ideias/f18a1d69df`
+- O conteúdo começa muito antes da página em branco. · `ideias/6fc4542128`
+- Às vezes começa numa frase que alguém disse. Num comportamento que se repete. Numa decisão que parece óbvia demais. Num dado que não combina com a narrativa. Numa tecnologia que promete resolver alguma coisa e cria outras perguntas. Numa conversa com uma das minhas filhas. Numa reunião. Num erro. Num livro. · `ideias/c82dfdf15a`
+- Ou simplesmente numa sensação: · `ideias/526579b99f`
+- “Tem alguma coisa aqui que eu ainda não entendi.” · `ideias/b35b8b13f0`
+- É daí que eu gosto de começar. · `ideias/30f685a50d`
+- [imagem] `/images/ensaio/ju-trabalho-tecnologia.webp` · `ideias/2f572af3b1`
+- Juliana concentrada no trabalho em um notebook. · `ideias/16b8e632a5`
+- [imagem] `/images/ensaio/contexto-caderno-escolhas.webp` · `ideias/a9f65ea54f`
+- Mãos fazendo anotações e marcando escolhas em um caderno. · `ideias/2f2bf9f8c2`
+- [imagem] `/images/ensaio/contexto-livros-janela.webp` · `ideias/b87a643210`
+- Livros próximos à janela, com a cidade ao entardecer ao fundo. · `ideias/b0716e0162`
+- Por que isso está me incomodando? · `ideias/f42e31de0b`
+- Conteúdo é consequência. · `ideias/2f7aa5fe53`
+- A investigação vem antes. · `ideias/fb846df9d6`
+- Nem toda ideia aqui está no mesmo lugar. · `ideias/ad5fd63912`
+- Algumas são convicções já bastante amadurecidas. · `ideias/0ca96b20e2`
+- Outras são sínteses provisórias. · `ideias/edc372a90a`
+- Algumas vêm de campos de conhecimento e autores que estou estudando. · `ideias/a443d36885`
+- Outras são hipóteses que ainda estou tentando tensionar. · `ideias/5731ac7edd`
+- E algumas estão simplesmente: · `ideias/95bda41a4b`
+- em investigação. · `ideias/401f777c29`
+- Legenda editorial · `ideias/257a7549e4`
+- Eu prefiro uma pergunta honestamente aberta a uma resposta artificialmente definitiva. · `ideias/8242ab0e38`
+- Pensar também exige reconhecer de onde as ideias vêm. · `ideias/4d6c3d2ee3`
+- Nem toda ideia que aparece aqui nasceu comigo. · `ideias/dd9aed9837`
+- Algumas pertencem a campos inteiros de estudo. Outras começaram em autores que admiro. Outras são conceitos herdados que tento reinterpretar. Outras surgem do encontro entre coisas que, para mim, ainda não tinham sido colocadas juntas. · `ideias/c79a835b69`
+- O trabalho não é fingir originalidade. É: · `ideias/fafbd73db1`
+- pensar com rigor suficiente para saber o que estou propondo, o que estou aprendendo e · `ideias/aadee4be39`
+- o que ainda não sei. · `ideias/18e97a1602`
+- Primeiro vem a pergunta. · `ideias/63943475d0`
+- Depois: · `ideias/788223f072`
+- atenção → investigação → contradição → repertório → vida real → escrita. · `ideias/9ee6e057c1`
+- E, às vezes: · `ideias/728b82de35`
+- outra pergunta. · `ideias/f4f9fe687d`
+- Talvez pensar bem seja, algumas vezes, resistir à pressa de concluir. · `ideias/718f7bb713`
+
+## IdeiasDestaque
+
+_Tags da seção: [ARTIGO] [PESQUISAR] títulos e resumos ILUSTRATIVOS da v1 (sem texto real publicado); não publicar como artigos_
+
+- Não para adivinhar amanhã. Para ampliar o que conseguimos enxergar hoje. · `ideias/7bf6783f68`
+- [imagem] `/images/ensaio/home-01-abertura-horizontal.webp` · `ideias/99821c2e08`
+- Juliana de preto diante de uma paisagem ampla ao entardecer. · `ideias/504639f141`
+- Aqui entram perguntas sobre: · `ideias/9ad3be9c9e`
+- futuros possíveis · `ideias/3dba88915a`
+- futuros prováveis · `ideias/8fe896a94b`
+- mudanças · `ideias/31df90c301`
+- imaginação · `ideias/e55eea5d7c`
+- direção · `ideias/444b0cafbf`
+- e aquilo que começamos a construir antes mesmo de perceber que estamos construindo · `ideias/64aea90414`
+- O interesse não está em dizer: “isso vai acontecer.” · `ideias/84881c2478`
+- Está em investigar: · `ideias/cd592e60c3`
+- o que pode acontecer? · `ideias/637898df00`
+- o que estamos tratando como inevitável? · `ideias/4a463863ca`
+- o que queremos ajudar a tornar possível? · `ideias/5e97c8fdff`
+- e como nossas escolhas presentes participam disso? · `ideias/f4b6c68286`
+- Futuro, para mim, é menos um lugar para prever e mais um campo de possibilidades para investigar. · `ideias/fde16b364d`
+- Quanto mais podemos fazer, mais importante se torna perguntar para quê. · `ideias/7db54d11d7`
+- [imagem] `/images/ensaio/contexto-tecnologia-humana.webp` · `ideias/2d7c775fec`
+- Mãos usando um notebook ao lado de caderno e café. · `ideias/6cf45c3b87`
+- Tecnologia aparece muito por aqui. · `ideias/6f00072646`
+- IA · `ideias/f3ea754620`
+- Automação · `ideias/ca9f1d469e`
+- Dados · `ideias/85909e81e2`
+- Plataformas · `ideias/813cf1adcc`
+- Novas formas de trabalhar · `ideias/05228efc6c`
+- Ferramentas que ampliam capacidades antes inimagináveis · `ideias/b12385d93f`
+- Mas tecnologia raramente é a pergunta final. · `ideias/29ffa492f5`
+- Ela costuma abrir outras: · `ideias/b5fc64f249`
+- O que estamos delegando? · `ideias/248961f17f`
+- O que queremos continuar decidindo? · `ideias/31258c6dab`
+- Que capacidades humanas ganham importância? · `ideias/e133bfbdce`
+- Que parte da autoria queremos preservar? · `ideias/19876c5bcc`
+- O que vale a pena fazer simplesmente porque agora conseguimos fazer? · `ideias/5e5d106db1`
+- Quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas. · `ideias/24f54fc3d5`
+- Não como oposição entre humano e tecnologia. · `ideias/75b7d0582c`
+- Como responsabilidade diante da capacidade. · `ideias/042aedd220`
+- O espaço entre controlar tudo e simplesmente aceitar. · `ideias/14d5a4fb3e`
+- [imagem] `/images/ensaio/contexto-caderno-escolhas.webp` · `ideias/5a780dfbb0`
+- Mãos fazendo anotações e marcando escolhas em um caderno. · `ideias/7ac040f05e`
+- Grande parte das nossas decisões acontece dentro de limites. · `ideias/e69dfd4077`
+- Outras pessoas · `ideias/3cb95347fe`
+- Contexto · `ideias/36bef3632e`
+- História · `ideias/30e7bc6958`
+- Recursos · `ideias/638e55135f`
+- Estruturas · `ideias/3431819e78`
+- Acaso · `ideias/bbc44acbc6`
+- Corpo · `ideias/12f1392bfa`
+- Mercado · `ideias/592551cd85`
+- Tempo · `ideias/fd7d2643e7`
+- Nenhum indivíduo ou organização controla completamente aquilo que vem depois. · `ideias/1f65093120`
+- Mas daí não decorre que nossa participação seja irrelevante. · `ideias/afb7c201a1`
+- É aqui que aparecem perguntas sobre: autonomia; responsabilidade; influência; limites; autoria; decisão; e participação. · `ideias/571d43b14d`
+- Agência não é controle. É participação. [FRASE-ASSINATURA] · `ideias/26a51ba17d`
+- Pergunta recorrente: · `ideias/f746cb7a88`
+- Diante daquilo que não depende de mim, onde ainda existe espaço para escolher, influenciar ou construir alguma coisa? · `ideias/8b15bf6c05`
+- Porque organizações também transformam possibilidades em realidade. · `ideias/401bbe2162`
+- [imagem] `/images/ensaio/contexto-planejamento-equipe.webp` · `ideias/1ad921dd78`
+- Mãos organizando post-its e ideias em uma mesa de trabalho. · `ideias/236bbd8331`
+- Empresas não apenas reagem ao futuro. · `ideias/655dd76841`
+- Elas · `ideias/ddde9f0f75`
+- premiam determinados comportamentos · `ideias/ba7ddcd69c`
+- abandonam outros · `ideias/1804f1de3b`
+- escolhem tecnologias · `ideias/a96eaaffc5`
+- definem métricas · `ideias/9c0a9748f9`
+- criam produtos · `ideias/3b8a6bea33`
+- E, com isso, ajudam a tornar alguns futuros mais prováveis. · `ideias/8c577c0de0`
+- Aqui aparecem temas como: estratégia; liderança; cultura; tecnologia; transformação; tomada de decisão; capacidades organizacionais; inovação; mercado; e construção de negócios. · `ideias/38dd90dade`
+- Mas a questão que me interessa quase sempre vai além da gestão: · `ideias/67daa646e8`
+- Que futuro essa decisão está ajudando a construir? · `ideias/62236705e3`
+- Do que essa organização precisa se tornar capaz para sustentar aquilo que diz querer construir? · `ideias/74c86229bb`
+- Porque perceber não é a mesma coisa que conseguir mudar. · `ideias/2ed5e365d8`
+- [imagem] `/images/ensaio/pessoas-cafe-manha.webp` · `ideias/e0ff252620`
+- Juliana segurando uma caneca de café à mesa da cozinha. · `ideias/10d265ca06`
+- Esse território começa muito perto. · `ideias/53ff44a60f`
+- Na rotina · `ideias/c693bbf3cc`
+- No comportamento · `ideias/2c324c6f1a`
+- Na energia · `ideias/87b539b47e`
+- Nas escolhas pequenas · `ideias/f239e3e0fd`
+- Nos hábitos · `ideias/10c3e6d260`
+- No medo · `ideias/0a127823c4`
+- Na maternidade · `ideias/ff86e0e54f`
+- No trabalho · `ideias/18263f7c6e`
+- Nos recomeços · `ideias/ab972d4018`
+- Naquilo que sabemos, mas ainda não conseguimos fazer · `ideias/57baecc52d`
+- Aqui aparecem questões sobre: mudança pessoal; capacidades; identidade; aprendizado; energia; ação; repetição; coragem; e cotidiano. · `ideias/2e1b427b3a`
+- Mas sem a promessa de: “basta querer.” · `ideias/e89f6f81c0`
+- A pergunta é: · `ideias/5de46cfc3f`
+- Como transformação sobrevive quando encontra a vida real? · `ideias/6e7b2513fa`
+- Com filhos. Boletos. Trabalho. Cansaço. Limites. · `ideias/9b71b11e60`
+- E uma terça-feira qualquer no meio do caminho. · `ideias/7eb5eb9fa7`
+- Leia o ensaio · `ideias/35a326fd89`
+- Artigo protagonista · `ideias/a8443ea182`
+- O futuro mais provável não é o único futuro possível. · `ideias/1556d86632`
+- Sobre aquilo que tratamos como inevitável — e as escolhas que desaparecem quando confundimos probabilidade com destino. · `ideias/cdf2f81a0a`
+- Observamos tendências, fazemos previsões e tentamos entender para onde as coisas estão indo. · `ideias/a60fa797fb`
+- Isso é importante. · `ideias/ee4dd51552`
+- O problema começa quando aquilo que parece mais provável passa a ser tratado como aquilo que necessariamente vai acontecer. · `ideias/0ba498f241`
+- Pensar futuros também é preservar espaço para aquilo que ainda pode ser diferente. · `ideias/55d0b391c5`
+- [imagem] `/images/ensaio/home-01-abertura-vertical.webp` · `ideias/f59ad5f2f9`
+- Juliana no mirante, em enquadramento vertical ao entardecer. · `ideias/08e84e1f57`
+- Ler · `ideias/3c105919ff`
+- Tecnologia & Humanidade · `ideias/8468241f88`
+- Capacidade não é direção. · `ideias/e29a546ba8`
+- Uma reflexão sobre IA, automação e tecnologias que ampliam rapidamente aquilo que somos capazes de fazer — e as perguntas humanas que continuam existindo depois que a ferramenta fica pronta. · `ideias/a90e38465e`
+- Pergunta de entrada · `ideias/e8ee34e68b`
+- O que vale a pena fazer com aquilo que agora conseguimos fazer? · `ideias/1e76b8032a`
+- Agência & Escolhas · `ideias/b709cf27ed`
+- O espaço entre “eu controlo tudo” e “não posso fazer nada”. · `ideias/401e62ee45`
+- Nem pessoas nem organizações controlam tudo aquilo que vem depois. · `ideias/31e99bd985`
+- Mas isso não significa ausência de participação. · `ideias/f4714657fd`
+- Um texto sobre limites, escolhas, influência, responsabilidade e movimento. · `ideias/d43022a543`
+- Diante daquilo que eu não controlo, onde ainda existe espaço para participar? · `ideias/d92d6e57f3`
+- Vida Real & Transformação · `ideias/cd8daa9162`
+- O automático também constrói futuros. · `ideias/b8b6b744d9`
+- Aquilo que repetimos enquanto simplesmente tentamos dar conta. · `ideias/bc61b61387`
+- Nem todos os futuros começam numa decisão estratégica. · `ideias/80be4a9cad`
+- Alguns começam: · `ideias/a707e86ba9`
+- num hábito · `ideias/111b442de1`
+- num processo · `ideias/bfa6a5fa49`
+- num silêncio · `ideias/e4776e0edd`
+- num comportamento recompensado · `ideias/fcfa304d0f`
+- numa decisão adiada · `ideias/06ddc58bd4`
+- numa terça-feira qualquer · `ideias/d62114bad1`
+- O que estamos construindo sem perceber que estamos construindo? · `ideias/6b7a29a3d2`
+- [imagem] `/images/ensaio/contexto-cidade-movimento.webp` · `ideias/f54fc12316`
+- Pessoas caminhando pela cidade, com movimento suavemente desfocado. · `ideias/993168e0ee`
+- Possibilidade & Realidade · `ideias/351a76d1d9`
+- Possibilidade sem realidade vira fantasia. Realidade sem possibilidade vira resignação. · `ideias/48410964b0`
+- O que acontece quando imaginar encontra limite. · `ideias/0051ff5eb5`
+- Uma reflexão sobre como preservar possibilidade sem negar circunstâncias reais — e como reconhecer limites sem transformá-los na única história possível. · `ideias/b7e7f652d5`
+- Como continuar imaginando sem fugir da realidade — e continuar realista sem desistir da possibilidade? · `ideias/8ba775b2c0`
+- [imagem] `/images/ensaio/contexto-caminhos-escolhas.webp` · `ideias/7d9271c0ff`
+- Uma trilha se divide em dois caminhos na paisagem. · `ideias/41f83b3021`
+- Tornar-se · `ideias/ab3686b9d7`
+- Nós construímos futuros e somos construídos enquanto os construímos. · `ideias/5e3ecfb60c`
+- Sobre uma ideia que atravessa a Espiral: enquanto tentamos colocar alguma coisa no mundo, alguma coisa também acontece conosco. · `ideias/590531a1dd`
+- Aprendemos. Mudamos. Desenvolvemos capacidades. Perdemos certezas. E passamos a enxergar possibilidades que antes nem conseguíamos perceber. · `ideias/ee1fe6c367`
+- Pergunta · `ideias/3571756bb0`
+- Quem estamos nos tornando enquanto construímos aquilo que queremos tornar possível? · `ideias/d196f17aa3`
+- [imagem] `/images/ensaio/ju-estudo-fones.webp` · `ideias/942a2a027e`
+- Juliana estudando com fones de ouvido, livro e notebook. · `ideias/5d6bed3e24`
+- Futuros · `ideias/7605f4d290`
+- Escolhas & Agência · `ideias/eca6844329`
+- Liderança & Organizações · `ideias/1de00b1182`
+- Transformação & Vida Real · `ideias/22c2801aa2`
+- Ideias em destaque · `ideias/94cf041f0d`
+- Se você acabou de chegar, talvez possa começar · `ideias/8358c2ccc2`
+- por aqui. · `ideias/ac16b11844`
+- Não existe uma ordem certa para entrar numa ideia. · `ideias/2eb4dcfebe`
+- Mas alguns textos funcionam como boas portas. Porque carregam perguntas que atravessam grande parte do meu trabalho. · `ideias/ca78baa6c7`
+- Possibilidade. Futuro. Tecnologia. Agência. Escolhas. Transformação. Vida real. · `ideias/cde0f6a1c5`
+- Não precisam ser lidos em sequência. Escolha a pergunta que mais chama você agora. · `ideias/c700b43fe0`
+- Você não precisa começar pelo texto mais novo. · `ideias/f14af613c0`
+- Comece pela pergunta que mais está viva para você. · `ideias/da2b0c922d`
+- Territórios de navegação · `ideias/f166ea5437`
+- Há mais perguntas por aqui. · `ideias/daaa420a22`
+- Explore todas as ideias · `ideias/d5f5e70abf`
+
+## IdeiasTerritorios
+
+_Tags da seção: [ARTIGO] territórios; viram filtros quando houver acervo_
+
+- Territórios · `ideias/e70efd6b44`
+- As perguntas mudam. · `ideias/6766ef9ac3`
+- Alguns territórios continuam voltando. · `ideias/857990358f`
+- Eu escrevo sobre assuntos diferentes. · `ideias/5eb29acd5e`
+- Mas, olhando com alguma distância, percebo que certas questões insistem. · `ideias/a9d8cd65b5`
+- O que ainda pode existir? O que fazemos com tecnologias cada vez mais poderosas? Quanto das nossas escolhas realmente nos pertence? Como organizações decidem diante de futuros incertos? Por que perceber que alguma coisa precisa mudar raramente é suficiente para conseguir mudá-la? · `ideias/1b9df4a392`
+- Essas perguntas se cruzam, se contradizem e frequentemente acabam levando umas às outras. · `ideias/3b85002aa1`
+- É por isso que prefiro pensar nelas como · `ideias/b442382d5a`
+- territórios · `ideias/c5c2b8bbad`
+- , não como gavetas. · `ideias/cba9fb070f`
+- [imagem] `/images/ensaio/home-01-abertura-horizontal.webp` · `ideias/27ad7f460d`
+- Juliana de preto diante de uma paisagem ampla ao entardecer. · `ideias/ebea568313`
+- Eles não vivem separados. · `ideias/345975c23c`
+- Um texto sobre IA pode terminar numa pergunta sobre agência. · `ideias/fe15cadf31`
+- Uma reflexão sobre liderança pode virar uma investigação sobre futuro. · `ideias/df7b97ca84`
+- Uma questão de transformação pessoal pode revelar uma tensão entre capacidade e contexto. · `ideias/0960b29350`
+- Uma discussão sobre estratégia pode acabar falando de humanidade. · `ideias/7145a29916`
+- E uma terça-feira qualquer pode abrir uma pergunta sobre os próximos dez anos. · `ideias/a76fa0d306`
+- Eu me interesso menos pelos temas isolados do que pelo que acontece quando eles se encontram. · `ideias/2fead79827`
+- Não escrevo sobre cinco assuntos. · `ideias/6b1db2898c`
+- Investigo o que acontece quando eles se encontram. · `ideias/ed0d5eb200`
+- Os cinco territórios funcionam como filtros, não gavetas exclusivas. · `ideias/ed795745b1`
+- Um mesmo texto pode pertencer a mais de um território. · `ideias/a7d04cba07`
+- Problemas interessantes raramente respeitam categorias. · `ideias/866c0e9ca7`
+- Algumas dessas ideias já estão bastante amadurecidas. · `ideias/4442a71457`
+- Outras continuam mudando. · `ideias/9c52ba362b`
+- E existem perguntas que ainda nem sei exatamente como formular. · `ideias/5490961bf2`
+- Algumas delas estão em investigação. · `ideias/bba4fabf40`
+
+## IdeiasInvestigacao
+
+_Tags da seção: [PESQUISAR] [ARTIGO] investigações; Soberania Humana segue EM INVESTIGAÇÃO_
+
+- TESE · `ideias/036ddcf6b6`
+- Ideia já bastante estruturada dentro do trabalho da Ju. · `ideias/46c814a2e5`
+- SÍNTESE PROVISÓRIA · `ideias/cbc21b8118`
+- Articulação atual entre diferentes fontes, experiências e campos. · `ideias/f30578976a`
+- HIPÓTESE · `ideias/b83907ac3d`
+- Possibilidade sendo testada. · `ideias/d1f92413a4`
+- EM INVESTIGAÇÃO · `ideias/7dfe42739e`
+- Pergunta ainda deliberadamente aberta. · `ideias/c198e102f8`
+- Soberania Humana [PESQUISAR] · `ideias/70decfed0d`
+- [imagem] `/images/ensaio/home-01-abertura-horizontal.webp` · `ideias/414fa3a47d`
+- Juliana de preto diante de uma paisagem ampla ao entardecer. · `ideias/49c14bd111`
+- Que capacidades humanas ganham importância? · `ideias/69df84110c`
+- [imagem] `/images/ensaio/ju-estudo-fones.webp` · `ideias/ab8023acd8`
+- Juliana estudando com fones de ouvido, livro e notebook. · `ideias/d6784cc060`
+- O que estamos terceirizando sem perceber? · `ideias/7278bd291e`
+- [imagem] `/images/ensaio/contexto-celular-cotidiano.webp` · `ideias/0ad9a1db1f`
+- Mão segurando um celular próximo a um caderno sobre a mesa. · `ideias/a128c74bbf`
+- Quanto mais capacidade, mais responsabilidade? · `ideias/38eebf27d2`
+- [imagem] `/images/ensaio/contexto-tecnologia-humana.webp` · `ideias/3fd836c7e4`
+- Mãos usando um notebook ao lado de caderno e café. · `ideias/d0ededecdf`
+- Como continuar humano sem romantizar o humano? · `ideias/46ae78467d`
+- [imagem] `/images/ensaio/home-06-ideias-horizontal.webp` · `ideias/c9d37ca8b9`
+- Livros, caderno aberto, caneta e café sobre uma mesa de madeira. · `ideias/42d2d9de5d`
+- perceber a si, ao contexto e aquilo que está acontecendo. · `ideias/c169c634aa`
+- conseguir considerar aquilo que ainda não existe. · `ideias/b2338b19fd`
+- escolher entre possibilidades, critérios e consequências. · `ideias/d67379bf21`
+- reconhecer capacidade de participação diante de limites reais. · `ideias/4b5cbfe61a`
+- agir mesmo sem garantia completa. · `ideias/38011885e0`
+- compreender, aprender, conectar e resolver. · `ideias/aafaa46705`
+- reconhecer valor, vínculo, cuidado e responsabilidade para além da eficiência. · `ideias/a64bdaacca`
+- permanecer presente na autoria das próprias escolhas e capacidades. · `ideias/33aeae7595`
+- O que significa continuar autor da própria humanidade num mundo de ferramentas cada vez mais poderosas? · `ideias/e0e8e18a15`
+- Quanto mais decisões conseguimos automatizar, mais perguntas aparecem. · `ideias/dd4a502dbb`
+- O que delegamos? O que terceirizamos sem perceber? Que capacidades deixamos de exercitar? Que escolhas ainda precisam permanecer conosco? Quando conveniência começa a virar dependência? E onde termina a ajuda da ferramenta e começa a abdicação de autoria? · `ideias/a335411fd9`
+- Tenho usado provisoriamente a expressão · `ideias/dc90b9d595`
+- para investigar esse território. Mas a ideia ainda está aberta. · `ideias/048e243aad`
+- Ler mais · `ideias/255cccb221`
+- Não estou falando de independência absoluta. Nem da fantasia de um indivíduo completamente autônomo. · `ideias/323d00e5c1`
+- Somos interdependentes. Vivemos dentro de sistemas. Precisamos uns dos outros. Usamos ferramentas. · `ideias/389df42502`
+- A questão que me interessa é outra: · `ideias/7ca0473c9b`
+- como continuar suficientemente presente nas escolhas que constroem aquilo que somos e aquilo que colocamos no mundo? · `ideias/711bf2425e`
+- Soberania Humana é, hoje, um território de investigação — não uma teoria fechada ou validada. [PESQUISAR] · `ideias/c1fa288b3c`
+- Se tecnologia assume partes crescentes daquilo que sabemos fazer, talvez a pergunta não seja apenas: “Quais profissões vão desaparecer?” · `ideias/f7bcf215fa`
+- Pode ser: · `ideias/1c37c17365`
+- “Do que nós, humanos, precisaremos nos tornar mais capazes?” · `ideias/df802e6e64`
+- Hoje, algumas capacidades continuam aparecendo repetidamente no meu trabalho: · `ideias/ac4daaa1a7`
+- Esta lista não é fechada. Não é um teste. Não é um modelo psicométrico. Não representa oito “competências oficiais” validadas cientificamente. · `ideias/e65ca3f85e`
+- É, hoje: um mapa de investigação. E pode mudar. · `ideias/be134afbf3`
+- A terceirização de autoria não começa com tecnologia. · `ideias/61b72a761f`
+- Também terceirizamos para: algoritmos; opiniões; cultura; família; mercado; chefes; tendências; expectativas; hábitos; medo; o “é assim mesmo”. · `ideias/68cb282092`
+- Quanto das nossas escolhas continua sendo realmente escolhido? · `ideias/1787a44c9b`
+- Quando uma recomendação vira decisão? Quando um comportamento repetido deixa de ser escolha e vira padrão? Quando conforto se transforma em dependência? Quando seguimos um caminho porque o escolhemos e quando simplesmente continuamos nele porque já estávamos lá? · `ideias/20e1276824`
+- Essa investigação nasce de uma tensão: · `ideias/6e66a5f8c3`
+- capacidade tecnológica cresce mais rapidamente do que nossa maturidade para decidir o que vale a pena fazer com ela? · `ideias/177939c352`
+- Não como afirmação moralista. Como pergunta. · `ideias/1cebc2174e`
+- Porque poder fazer algo cria novos campos de escolha. Editar genes. Automatizar decisões. Gerar conteúdo em escala. Simular pessoas. Prever comportamentos. Substituir determinadas tarefas. Ampliar vigilância. Personalizar experiências. · `ideias/e56d76699b`
+- A ferramenta responde: · `ideias/6ae824d5d7`
+- “É possível.” · `ideias/970c292b50`
+- Mas alguém ainda precisa responder · `ideias/aab8668615`
+- “Devemos?” “Para quê?” “Sob quais critérios?” “Com quais consequências?” “Quem responde por isso?” · `ideias/32b435b07b`
+- É aqui que a frase · `ideias/6efcb9524c`
+- Quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas · `ideias/a635656566`
+- deixa de ser apenas uma frase e vira · `ideias/e856a67efb`
+- programa de investigação · `ideias/f5c7500eb5`
+- “Humanidade” pode facilmente virar um slogan vazio. · `ideias/d8d949eea0`
+- Humano também é: contradição; erro; preconceito; violência; ego; irracionalidade; limite. · `ideias/2f128042f5`
+- Então “mais humanos” não pode significar: “humanos são naturalmente bons e tecnologia é ruim.” Não é isso. · `ideias/27de1f25c6`
+- A pergunta é · `ideias/9c98db4a87`
+- Que partes da nossa humanidade queremos cultivar deliberadamente quando nossas ferramentas ampliam tanto nossa capacidade de agir? · `ideias/1ad03e9d84`
+- Discernimento? Empatia? Responsabilidade? Imaginação? Cuidado? Autoria? Capacidade de conviver com ambiguidade? · `ideias/a9d3f66d20`
+- Esse é um território que ainda precisa de muita investigação. · `ideias/fc65df6b5c`
+- Em investigação · `ideias/c87d029ab6`
+- Algumas ideias ainda não estão prontas. · `ideias/f389d16de5`
+- E eu não quero apressá-las só para poder dar um nome. · `ideias/720766c4de`
+- Existem perguntas que continuam voltando. Ainda não sei exatamente onde elas terminam. Algumas talvez se tornem conceitos mais sólidos. Outras podem mudar completamente. Algumas talvez desapareçam quando encontrarem evidências melhores. · `ideias/d8dfea3f73`
+- Mas, enquanto continuam produzindo boas perguntas, quero mantê-las abertas. · `ideias/0d9be23501`
+- Este é o espaço das ideias que ainda estão sendo construídas. · `ideias/b7c51a6af1`
+- [imagem] `/images/ensaio/ju-leitura-anotacoes.webp` · `ideias/720504aa2b`
+- Juliana lendo um livro e fazendo anotações em um caderno. · `ideias/d4680cd420`
+- Ainda não sei exatamente onde elas terminam. · `ideias/4ff22283e0`
+- “Em investigação” não significa: · `ideias/55c101b430`
+- “estou inventando uma teoria”. · `ideias/6d64c355e2`
+- Nem: “isso já é uma metodologia proprietária”. · `ideias/ffd2ae9ac1`
+- Nem: “encontrei uma nova ciência sobre comportamento humano”. · `ideias/7d2508d339`
+- Significa: · `ideias/e148cc0b74`
+- há uma pergunta relevante, algum repertório acumulado, hipóteses surgindo e trabalho ainda por fazer. · `ideias/36e57ee705`
+- Leitura. Pesquisa. Conversa. Contradição. Experiência. Dados. Autores. Campos de conhecimento diferentes. E tempo. · `ideias/66c3e93f59`
+- Não quero dar a uma ideia mais certeza do que ela ainda tem. · `ideias/2c635023e3`
+- Legenda epistemológica · `ideias/a6e48f35cd`
+- Não quero transformar toda boa pergunta numa teoria só porque ela tem um nome bonito. · `ideias/c023b4e795`
+- Rigor no subsolo. · `ideias/8250e6b392`
+- Clareza no palco. · `ideias/487deef0d4`
+- No palco e no conteúdo, a experiência precisa ser clara. · `ideias/127b99b70a`
+- Mas por baixo: pesquisa; referências; contradição; checagem; questionamento; origem das ideias; limites do que sabemos. · `ideias/44154bfcf9`
+- Acompanhe as perguntas enquanto elas ainda estão abertas. · `ideias/ac47ef2df0`
+- Algumas dessas perguntas podem se tornar parte importante do meu trabalho. Outras talvez não sobrevivam à investigação. E isso está tudo bem. · `ideias/7ebdfa04ed`
+- Uma ideia não precisa estar certa para sempre. · `ideias/18728e7ea7`
+- Precisa ser honesta sobre o lugar em que está agora. · `ideias/c02ea8ac28`
+- Leia ideias em investigação · `ideias/73c3eb8c18`
+
+## IdeiasTerca
+
+_Tags da seção: [POST] newsletter Uma Terça-feira Qualquer; encurtada em I03_
+
+- Uma ideia · `ideias/fe7fca523b`
+- Alguma coisa que estou tentando compreender melhor. · `ideias/5b737af138`
+- Uma história · `ideias/49be3380a6`
+- Algo vivido, observado, ouvido ou lembrado que mudou a forma como estou enxergando uma pergunta. · `ideias/f4e68628fa`
+- Uma tensão · `ideias/708c61c52a`
+- Duas coisas que parecem contraditórias e talvez precisem permanecer em conversa. · `ideias/0c05558e3a`
+- Uma pergunta · `ideias/cb736c5a19`
+- Não necessariamente para responder naquele momento. Talvez apenas para carregar durante alguns dias. · `ideias/a92e74a189`
+- Um movimento · `ideias/ea2b0a97af`
+- E, algumas vezes: · `ideias/39d18b4e3d`
+- Algo pequeno que pode mudar aquilo que acontece depois. Não como “desafio da semana”. Só quando fizer sentido. · `ideias/74024f9292`
+- Uma Terça-feira Qualquer · `ideias/4e2442595c`
+- Uma terça-feira qualquer · `ideias/f057e78188`
+- Nem toda ideia precisa de um ensaio. · `ideias/3ccf112055`
+- Algumas cabem numa terça-feira qualquer. · `ideias/efde687bf8`
+- Há perguntas que precisam de pesquisa. Outras pedem páginas e páginas. · `ideias/1b660bca03`
+- Mas algumas aparecem no meio do dia. Numa reunião. Numa conversa. Enquanto levo minhas filhas para algum lugar. Depois de uma decisão que não saiu como eu esperava. Num comentário que ficou na cabeça. · `ideias/93373bef8f`
+- Num daqueles momentos em que a vida parece absolutamente comum e, por alguma razão, alguma coisa faz você enxergá-la de outro jeito. · `ideias/39d515f5ea`
+- Foi para essas conversas que nasceu: · `ideias/3d9c3e3585`
+- [imagem] `/images/ensaio/home-05-escrita-vertical.webp` · `ideias/efa01d71c0`
+- Juliana com caderno, caneta e café à mesa, em retrato vertical. · `ideias/cb7566b957`
+- Porque futuro também se constrói no meio da vida real. · `ideias/40d1824d30`
+- O futuro também se constrói no meio da vida real. · `ideias/ddd6debd96`
+- Talvez valha a pena prestar atenção enquanto isso acontece. · `ideias/cd26fdbbff`
+- Receba Uma Terça-feira Qualquer · `ideias/f282f85911`
+- Uma vez por semana, uma ideia, uma história, uma tensão ou uma pergunta para continuar pensando depois. · `ideias/bf54ec19f5`
+- Eu não queria criar uma newsletter para “resumir os conteúdos da semana”. · `ideias/f61c530d86`
+- Nem uma lista de tendências. Nem uma sequência de lições sobre como viver melhor. · `ideias/14a28da939`
+- Queria um espaço mais próximo. · `ideias/b640927c7a`
+- Uma conversa recorrente sobre aquilo que estamos construindo enquanto: trabalhamos; criamos filhos; lideramos; erramos; tomamos decisões; adiamos outras; mudamos de ideia; recomeçamos; e simplesmente tentamos dar conta. · `ideias/8512aa0b59`
+- Porque é fácil pensar no futuro como uma coisa distante. Mas: · `ideias/fad38e8530`
+- O futuro também está sendo construído enquanto você responde um e-mail numa · `ideias/d543cf28f1`
+- terça-feira às 16h17. · `ideias/c8b948bd19`
+- O que chega numa terça-feira qualquer? · `ideias/c5e6ab2995`
+- Ideias · `ideias/7925c4f9b8`
+- É onde uma pergunta pode ganhar profundidade. · `ideias/717659ad1c`
+- Pesquisa. Contradição. Repertório. Tempo. Ensaio. · `ideias/f942582755`
+- É onde o pensamento encontra o cotidiano. · `ideias/948845b055`
+- Mais próxima. Mais recorrente. Mais pessoal. Às vezes menos conclusiva. Às vezes mais simples. Às vezes uma história que não precisava virar artigo. · `ideias/7f7a9c9462`
+- Ideias é onde eu aprofundo. · `ideias/bde0a7bfe0`
+- Uma Terça-feira Qualquer é onde eu continuo a conversa. · `ideias/b64af219c3`
+- Algumas terças-feiras serão sobre futuros. Outras sobre tecnologia. Algumas sobre maternidade. Liderança. Trabalho. Escolhas. Empresas. Transformação. Ou alguma coisa aparentemente pequena que me fez parar. · `ideias/4655114556`
+- O assunto muda. A pergunta por baixo dele nem tanto. · `ideias/2eff6ee36b`
+- O que estamos construindo enquanto vivemos? · `ideias/9a712bfa71`
+- O que ela não é · `ideias/fc9afa3051`
+- Não é uma newsletter de tendências. · `ideias/0efc6323ff`
+- Não é uma lista de produtividade. · `ideias/0888e4ccda`
+- Não é uma aula semanal. · `ideias/9e01b28640`
+- Não é um resumo do que publiquei. · `ideias/3e528ef96d`
+- É: · `ideias/80797a0d60`
+- um espaço recorrente para perceber o presente com um pouco mais de atenção. · `ideias/b08d9065c2`
+- Por que terça-feira? · `ideias/f7a2b4edba`
+- Porque a vida raramente acontece apenas nos grandes marcos. Ela acontece no meio. · `ideias/2328bb9ff5`
+- Quando a semana já começou, mas ainda está longe de terminar. Quando há trabalho para fazer. Problemas para resolver. Gente precisando da gente. E nenhuma trilha épica tocando ao fundo. · `ideias/acf4324efc`
+- Uma terça-feira qualquer. · `ideias/d82c051fa3`
+- Às vezes, uma ideia muda alguma coisa. · `ideias/9f0d6c86ea`
+- Às vezes, ela só faz você prestar mais atenção. · `ideias/baeb950e51`
+- As duas coisas já podem valer a terça-feira. · `ideias/e76946751b`
+- Algumas das perguntas que aparecem numa terça-feira acabam crescendo. · `ideias/53d10e8ab1`
+- Quando pedem mais tempo, podem virar ensaio em · `ideias/f9d2e177b9`
+- Outras permanecem exatamente onde nasceram. · `ideias/5a8bf716a9`
+- E está tudo bem. · `ideias/b82fdb7523`
+
+## IdeiasRepertorio
+
+_Tags da seção: [PESQUISAR] referências; placeholders retirados do público_
+
+- [imagem] `/images/ensaio/home-06-ideias-horizontal.webp` · `ideias/96695b2029`
+- [imagem] `/images/ensaio/contexto-caderno-escolhas.webp` · `ideias/5910138478`
+- [imagem] `/images/ensaio/contexto-livros-janela.webp` · `ideias/9ce67e9d29`
+- Referência a definir [PESQUISAR] · `ideias/15b8bbb289`
+- Autor a definir [PESQUISAR] · `ideias/cc79048710`
+- Nota curta da Ju: por que isso está na minha mesa agora? · `ideias/e8a3501faf`
+- O que significa continuar presente nas próprias escolhas quando cada vez mais decisões podem ser delegadas? · `ideias/9f4504c30c`
+- Do que precisamos nos tornar mais capazes num mundo em rápida transformação? · `ideias/2ca4646356`
+- O que significa participar quando não controlamos o sistema inteiro? · `ideias/fe05151d0f`
+- Leituras, referências e repertório · `ideias/b04ee71dac`
+- Nenhuma ideia · `ideias/8025384cbd`
+- pensa sozinha. · `ideias/fe9a1c5e30`
+- Eu também sou feita das coisas que leio, escuto, questiono e carrego comigo. · `ideias/2799a46eed`
+- [imagem] `/images/ensaio/ju-leitura-anotacoes.webp` · `ideias/4fea4fc7a9`
+- Juliana lendo um livro e fazendo anotações em um caderno. · `ideias/9108c747fa`
+- Eu leio para aprender. Mas também para ser contrariada. · `ideias/277168abf7`
+- Para encontrar palavras para alguma coisa que eu ainda não sabia nomear. · `ideias/a254e076d1`
+- Para descobrir que uma ideia que parecia minha já estava sendo investigada há décadas. · `ideias/03a30afac1`
+- Para perceber onde minha experiência individual é pequena demais para sustentar uma conclusão. · `ideias/734cad8e95`
+- E, às vezes, para terminar um livro com mais perguntas do que quando comecei. · `ideias/23cd1b9942`
+- Pensar com rigor também é reconhecer de onde as ideias vêm. · `ideias/bca95ede92`
+- Na mesa agora · `ideias/aa89e308ba`
+- O que estou lendo, estudando ou investigando neste momento. · `ideias/e0158e845b`
+- Placeholder [PESQUISAR] · `ideias/2f243be969`
+- Não é resenha. É: · `ideias/ffb3a3dd3f`
+- “Isso está fazendo alguma coisa no meu pensamento.” · `ideias/5f2d8ab7b5`
+- Referências que voltam · `ideias/91990c16b6`
+- Algumas ideias não ficam na estante. Continuam reaparecendo. · `ideias/585a0a3707`
+- Existem livros que terminam quando fechamos a última página. E existem referências que continuam voltando. · `ideias/dc62fa131b`
+- Às vezes porque ofereceram uma linguagem. Às vezes porque abriram uma pergunta. Às vezes porque discordar delas me ajudou a pensar melhor. · `ideias/2cae36df60`
+- Uma referência não precisa virar uma crença para se tornar importante. · `ideias/f19e85375a`
+- Trilhas de investigação · `ideias/17562b265e`
+- Quando uma pergunta começa a puxar outras. · `ideias/b550f225d2`
+- Em vez de apenas listar livros, o repertório é organizado em torno de perguntas. · `ideias/eaecb9f352`
+- Ler não é colecionar confirmação. · `ideias/449b433a6e`
+- Às vezes uma referência apoia uma hipótese. Às vezes a enfraquece. Às vezes mostra que estou usando uma palavra de maneira imprecisa. Às vezes revela um campo inteiro que eu ainda preciso estudar. · `ideias/3f2f215c2d`
+- E algumas vezes me obriga a abandonar uma ideia da qual eu gostava. · `ideias/7d8be2feb9`
+- Isso também é parte do trabalho. · `ideias/35fe8aca9a`
+- Nem tudo que me influencia é meu. · `ideias/4dcca28a26`
+- Algumas ideias vêm de campos consolidados de conhecimento. Outras vêm de autores específicos. Algumas são sínteses que estou construindo a partir do encontro entre referências diferentes. Outras nascem da experiência e depois encontram linguagem em pesquisas que já existiam. · `ideias/1d405f73a3`
+- Por isso, quando uma ideia tem origem, · `ideias/a52ab4df13`
+- essa origem importa · `ideias/4bcba7e73c`
+- Meu interesse não está em parecer ter inventado tudo. Está em compreender o suficiente para saber: · `ideias/0a2a28a994`
+- o que estou herdando, o que estou reinterpretando, o que estou conectando e o que talvez esteja propondo de novo. · `ideias/ea89e0256a`
+- Repertório não serve para fazer uma ideia parecer mais inteligente. · `ideias/f4dba347bb`
+- Serve para impedir que ela fique pequena demais. · `ideias/5b9e15c8d9`
+- Explore leituras e referências · `ideias/24790e6e09`
+- Não é uma revista de resenhas. · `ideias/0382c5f357`
+- É uma janela para o repertório vivo da Ju. · `ideias/17e835e375`
+- Às vezes, uma leitura me dá uma resposta. Mais frequentemente, muda a qualidade da pergunta. · `ideias/827e2b0b2f`
+- Talvez essa seja uma das melhores coisas que um bom repertório pode fazer. · `ideias/166312f082`
+
+## IdeiasMundoReal
+
+_Tags da seção: [ARTIGO] [PALESTRA 2] pensamento e mundo real; conteúdo futuro_
+
+- No trabalho · `ideias/673cc91794`
+- [imagem] `/images/ensaio/home-04d-conversa-equipe.webp` · `ideias/27c09d4dee`
+- Estratégia, tecnologia, vendas, liderança, clientes, decisões e consequências. É onde conceitos como transformação, capacidade e direção deixam rapidamente de ser abstratos. · `ideias/85553b2bec`
+- Nas organizações · `ideias/0ec9d0271a`
+- [imagem] `/images/ensaio/palestras-workshop-01.webp` · `ideias/0e1a014b05`
+- Uma pergunta pode parecer interessante intelectualmente e ganhar outra dimensão quando vinte pessoas precisam tomar uma decisão a partir dela. · `ideias/9d8a873463`
+- No palco · `ideias/21b558e089`
+- [imagem] `/images/ensaio/palestras-palco-frente.webp` · `ideias/1f9504063e`
+- Quando uma ideia precisa ser clara o suficiente para ser compreendida sem perder aquilo que a torna complexa. · `ideias/a86e090b84`
+- Na vida · `ideias/68a6c62283`
+- [imagem] `/images/ensaio/pessoas-cafe-manha.webp` · `ideias/582822bbe3`
+- Maternidade. Relacionamentos. Rotina. Cansaço. Escolhas. Recomeços. A terça-feira qualquer onde qualquer ideia sobre humanidade precisa continuar fazendo sentido. · `ideias/42d8e57793`
+- Pensar. · `ideias/657ccbd3e9`
+- Experimentar. · `ideias/b660fd9182`
+- Encontrar limite. · `ideias/4f6a4a210d`
+- Voltar à pergunta. · `ideias/7386301fca`
+- Mudar alguma coisa. · `ideias/57c663b13d`
+- Pensar de novo. · `ideias/4d09fe281d`
+- O pensamento encontra o mundo real · `ideias/bf2e978b7b`
+- Uma ideia muda quando encontra · `ideias/c3b85f6d3a`
+- o mundo. · `ideias/fc22584668`
+- Uma ideia pode parecer impecável no caderno. Uma tese pode soar convincente numa página. Uma pergunta pode parecer muito clara enquanto ainda está protegida da realidade. · `ideias/5952051b51`
+- Até encontrar: uma pessoa que discorda; um cliente que não quer; uma equipe que não consegue executar; uma tecnologia que muda o problema; um limite que não estava previsto; um resultado inesperado; ou simplesmente a vida acontecendo de um jeito diferente do planejado. · `ideias/710e0792c3`
+- É nesse encontro que o pensamento fica mais interessante para mim. · `ideias/1bb7818ac2`
+- [imagem] `/images/ensaio/home-05-escrita-vertical.webp` · `ideias/6ce014a307`
+- Juliana com caderno, caneta e café à mesa, em retrato vertical. · `ideias/09f8679a13`
+- Não me interessa uma ideia que só funciona enquanto ninguém precisa viver com as consequências dela. · `ideias/b17c4e6576`
+- Escrever, para mim, não é ficar do lado de fora observando a vida. · `ideias/4947981842`
+- Eu continuo trabalhando. Construindo empresas e projetos. Conversando com clientes. Lidando com tecnologia. Tomando decisões. Criando minhas filhas. Errando. Mudando de opinião. Vendo algumas hipóteses funcionarem e outras desmontarem diante da realidade. · `ideias/8d0ed9b6de`
+- E isso constantemente interfere naquilo que penso. · `ideias/884ffbec56`
+- Às vezes, uma experiência confirma uma ideia. Às vezes, complica. Às vezes, mostra que eu estava olhando para a pergunta errada. · `ideias/454adac033`
+- Às vezes, o mundo devolve: · `ideias/00d6b4fd5a`
+- “não é tão simples assim.” · `ideias/beee5a4807`
+- E, para mim, essa é uma resposta extremamente útil. · `ideias/e61d31c9a3`
+- Pensamento · `ideias/39c74b3555`
+- Mundo real · `ideias/ff318f7295`
+- Uma pergunta pode nascer numa empresa e virar artigo. · `ideias/b3cb67f11a`
+- Um livro pode alterar a maneira como eu conduzo uma conversa com uma liderança. · `ideias/a8339a70c6`
+- Uma experiência com minhas filhas pode abrir uma investigação sobre futuro. · `ideias/38272fa827`
+- Uma questão que aparece numa palestra pode continuar trabalhando durante meses. · `ideias/d7484c9fb1`
+- Um problema de negócio pode desmontar uma ideia bonita sobre transformação. · `ideias/db068c2c98`
+- Um texto pode entrar numa sala e voltar cheio de novas perguntas. · `ideias/4e1f9d7217`
+- Não existe uma linha de produção. · `ideias/d061f6b02f`
+- Existe circulação. · `ideias/a39e9cf897`
+- Possibilidade sem realidade vira fantasia. Realidade sem possibilidade vira resignação. · `ideias/dd6a5144eb`
+- Não quero apenas perguntar: “O que é?” Nem apenas: “O que poderia ser?” · `ideias/8827adaba9`
+- Quero manter as duas coisas em conversa: · `ideias/6a4e569f41`
+- o que existe + o que ainda pode existir. · `ideias/0d1357dfce`
+- Porque é nesse espaço que uma ideia pode simultaneamente ser imaginativa e responsável. · `ideias/a3b2865e5f`
+- Às vezes, pesquisa muda a forma como interpreto uma experiência. Às vezes, experiência muda a forma como leio uma pesquisa. E, às vezes, as duas entram em conflito. · `ideias/8568bf1230`
+- Esse conflito também é pensamento. · `ideias/2b285a40f5`
+- A realidade é uma forma de contradição. · `ideias/07d7b51678`
+- Ela coloca limites. Introduz outras pessoas. Produz consequências. Mostra coisas que o modelo não previa. E obriga uma ideia a ganhar nuance. · `ideias/d4451146a9`
+- Uma ideia não fica menos sofisticada porque precisa sobreviver ao cotidiano. Talvez fique mais. · `ideias/59caf1e690`
+- Uma investigação pode permanecer apenas como investigação. · `ideias/79fea032df`
+- Pode virar: · `ideias/90c88fd941`
+- um ensaio em · `ideias/006696995e`
+- Ideias · `ideias/840da43886`
+- uma edição de · `ideias/a22a5dec2b`
+- Uma Terça-feira Qualquer · `ideias/d2cdaccaa5`
+- uma pergunta dentro de · `ideias/102fb3fbc5`
+- Futuros Humanos · `ideias/c657b6d542`
+- uma palestra; · `ideias/8bd1bcfbb2`
+- um workshop; · `ideias/03bd596fc6`
+- uma conversa dentro de uma organização; · `ideias/7ef187124b`
+- ou simplesmente uma mudança na maneira como entendo alguma coisa. · `ideias/40538f069e`
+- O destino não precisa ser definido antes. · `ideias/dc418c2802`
+- Nem toda ideia precisa virar produto para justificar sua existência. · `ideias/c4b17aad3d`
+- Ciclo do pensamento · `ideias/db428612c3`
+- e recomeça · `ideias/e219ce14f1`
+- Eu não quero que a realidade sirva apenas como exemplo para as minhas ideias. · `ideias/fd463bbd04`
+- Quero que ela tenha o direito de mudá-las. · `ideias/70227f8f0c`
+- O pensamento não termina quando o texto é publicado. · `ideias/669e6b8aeb`
+- Às vezes, é ali que ele finalmente encontra alguma coisa capaz de contradizê-lo. · `ideias/136dcf90a2`
+
+## IdeiasConversa
+
+_Tags da seção: fechamento; fundido em I03/I05_
+
+- Quero continuar lendo · `ideias/950ed097ab`
+- Explore Ideias · `ideias/c291bd1dc1`
+- Para artigos, ensaios, investigações e perguntas que merecem mais tempo. · `ideias/ec8487149e`
+- Explore todas as ideias · `ideias/29c5346ad4`
+- [imagem] `/images/ensaio/ju-leitura-anotacoes.webp` · `ideias/fd168827ea`
+- Quero continuar essa conversa · `ideias/417f9ecb6b`
+- Uma Terça-feira Qualquer · `ideias/d61d82f306`
+- Uma conversa semanal, mais próxima e cotidiana, sobre aquilo que estamos construindo enquanto a vida acontece. · `ideias/6022e21f2b`
+- Assine a newsletter · `ideias/af4380eb69`
+- [imagem] `/images/ensaio/home-06-ideias-horizontal.webp` · `ideias/cf55ef7770`
+- Quero entender a tese por trás de muitas dessas perguntas · `ideias/a0d442c8fd`
+- Futuros Humanos · `ideias/c648e4277a`
+- O território onde possibilidade, agência, tecnologia, humanidade, direção e construção de futuros se encontram de maneira mais estruturada. · `ideias/ef8f2223b6`
+- Conheça Futuros Humanos · `ideias/df40fd5c3c`
+- [imagem] `/images/ensaio/home-01-abertura-horizontal.webp` · `ideias/c25005cb3d`
+- Uma frase? · `ideias/eff8feceed`
+- Uma dúvida? · `ideias/2ec998e6be`
+- Uma discordância? · `ideias/fc5252a309`
+- Uma possibilidade? · `ideias/c273e9ae48`
+- Uma coisa que você ainda não sabe nomear? · `ideias/07123a06b8`
+- Continue a conversa · `ideias/c10bf6e08e`
+- Se alguma pergunta ficou, · `ideias/91e4e11b45`
+- talvez este espaço já tenha cumprido seu papel. · `ideias/44aee59087`
+- Não quero que cada texto termine dizendo exatamente o que você deve pensar. Nem que toda investigação produza uma resposta limpa. · `ideias/660f612145`
+- Às vezes, o que uma ideia pode fazer de mais interessante é deslocar um pouco aquilo que parecia óbvio. Fazer você voltar para alguma coisa. Perceber uma contradição. Discordar. Relacionar duas coisas que antes pareciam separadas. Ou simplesmente carregar uma pergunta diferente quando sair daqui. · `ideias/134e30b5c6`
+- Porque pensar também é uma forma de participar. · `ideias/54018e9546`
+- O que acontece depois de uma ideia? · `ideias/1810da194b`
+- Talvez nada imediatamente. E tudo bem. · `ideias/dc7fe98b92`
+- Algumas ideias mudam uma decisão. Outras mudam uma conversa. Algumas viram ação. Outras precisam de tempo. · `ideias/ad4d485f57`
+- Algumas nos acompanham durante meses até encontrarem uma situação na qual finalmente fazem sentido. · `ideias/5e9e702c32`
+- E existem aquelas que só servem para mostrar que aquilo que parecia tão simples talvez não fosse. · `ideias/7e1430501f`
+- Nem toda ideia precisa dizer o que fazer depois. Algumas precisam apenas mudar aquilo que conseguimos enxergar. · `ideias/37b02ded2b`
+- O que ficou com você? · `ideias/a706944949`
+- Talvez seja exatamente daí que valha continuar. · `ideias/5f49526950`
+- Uma boa ideia não precisa encerrar uma conversa. · `ideias/35159e3f1f`
+- Às vezes, ela existe para mudar a pergunta com que a gente continua. · `ideias/9b280276d1`
+- Eu continuo lendo. Escrevendo. Mudando de ideia. Tentando entender melhor. Testando algumas coisas no mundo real. E descobrindo novas perguntas no caminho. · `ideias/e7214df314`
+- Nem tudo aqui está resolvido. · `ideias/542b68be9c`
+- Ainda bem. · `ideias/36740574fb`
+- Primeiro vem a pergunta. · `ideias/b047313c1f`
+- Depois, a gente vê onde ela leva. · `ideias/bbbaceb3ee`
+

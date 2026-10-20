@@ -1,13 +1,14 @@
 /**
- * Rotas do formulário adaptativo de Contato.
- * Os ids precisam bater com os valores de `?rota=` em CONTACT_ROUTES (src/lib/site.ts).
+ * Assuntos (rotas) do formulário de Contato.
+ * Os ids precisam bater com os valores de `?rota=` em CONTACT_ROUTES (src/lib/site.ts) e com o enum da API
+ * (src/app/api/contato/route.ts). Não renomear ids: links de outras páginas e e-mails antigos dependem deles.
  */
 export const ROUTES = [
-  { id: "palestras", label: "Palestras & Workshops", icon: "mic" },
-  { id: "organizacoes", label: "Organizações & Projetos", icon: "people" },
-  { id: "futuros-aplicados", label: "Futuros Aplicados / What The Future?!", icon: "telescope" },
-  { id: "parcerias", label: "Parcerias, Imprensa & Convites", icon: "chat" },
-  { id: "epic247", label: "EPIC247 & Pessoas", icon: "heart" },
+  { id: "palestras", label: "Palestras e workshops", icon: "mic" },
+  { id: "organizacoes", label: "Organizações e projetos", icon: "people" },
+  { id: "futuros-aplicados", label: "Futuros aplicados", icon: "telescope" },
+  { id: "parcerias", label: "Parcerias e imprensa", icon: "chat" },
+  { id: "epic247", label: "EPIC247", icon: "heart" },
   { id: "nao-sei", label: "Ainda não sei", icon: "question" },
 ] as const;
 
@@ -18,13 +19,20 @@ export function isRouteId(v: string | null | undefined): v is RouteId {
   return ROUTES.some((r) => r.id === v);
 }
 
-/** Opções do assunto EPIC247 (Bloco 3) — `?assunto=` pré-seleciona a partir dos atalhos do Bloco 4. */
+/** Opções do assunto EPIC247. `?assunto=` pré-seleciona uma delas. */
 export const EPIC_TOPICS = [
-  { id: "conhecer", label: "Quero entender melhor o EPIC247" },
-  { id: "antes-de-comprar", label: "Tenho uma dúvida antes de comprar" },
-  { id: "suporte", label: "Já tenho acesso e preciso de ajuda" },
-  { id: "outro", label: "Outro assunto" },
+  { id: "conhecer", label: "Quero conhecer" },
+  { id: "suporte", label: "Preciso de suporte" },
 ] as const;
 
-export const epicHref = (assunto: (typeof EPIC_TOPICS)[number]["id"]) =>
-  `/contato?rota=epic247&assunto=${assunto}#formulario`;
+export type EpicTopicId = (typeof EPIC_TOPICS)[number]["id"];
+
+/** Valores antigos de `?assunto=` (v1) que continuam funcionando. */
+const EPIC_ALIASES: Record<string, EpicTopicId> = { "antes-de-comprar": "conhecer" };
+
+export function epicTopicLabel(assunto: string | null | undefined) {
+  const id = assunto ? (EPIC_ALIASES[assunto] ?? assunto) : null;
+  return EPIC_TOPICS.find((t) => t.id === id)?.label;
+}
+
+export const epicHref = (assunto: EpicTopicId) => `/contato?rota=epic247&assunto=${assunto}#formulario`;

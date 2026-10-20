@@ -18,7 +18,7 @@ export const PAGES = [
   { id: "home", name: "Home", path: "/" },
   { id: "ju", name: "Ju", path: "/ju" },
   { id: "futuros-humanos", name: "Futuros Humanos", path: "/futuros-humanos" },
-  { id: "palestras-workshops", name: "Palestras & Workshops", path: "/palestras" },
+  { id: "palestras-workshops", name: "Palestras", path: "/palestras" },
   { id: "organizacoes", name: "Para Organizações", path: "/organizacoes" },
   { id: "pessoas", name: "Para Pessoas", path: "/pessoas" },
   { id: "ideias", name: "Ideias", path: "/ideias" },
@@ -42,6 +42,12 @@ export function sectionLabel(section: string, order: number) {
     .replace(/Organizacoes/, "Organizações")
     .replace(/Tensoes/, "Tensões")
     .replace(/Trajetoria/, "Trajetória")
+    .replace(/Ouca ?Veja/, "Ouça e veja")
+    .replace(/Como ?Comeca/, "Como começa")
+    .replace(/Situacoes/, "Situações")
+    .replace(/Contratacao/, "Contratação")
+    .replace(/Experiencias?/, (m) => m.replace("Experiencia", "Experiência"))
+    .replace(/Conversa/, "Conversa")
     .trim();
   return order < 999 ? `Bloco ${order + 1} · ${name || "Abertura"}` : "Outros";
 }

@@ -1,0 +1,641 @@
+# Cofre editorial · Organizações v1 — textos da v1 (tag v1.0-site) guardados antes da reescrita; material interno
+
+Nada aqui está publicado na v2. Ordem = ordem no código da v1. Chave = identificador do texto no painel (/admin).
+Tags (Contexto Mestre §21–22): [PALESTRA 2] [ARTIGO] [POST] [WORKSHOP] [PESQUISAR] [FRASE-ASSINATURA] [MATAR].
+Itens sem tag: texto comprimido ou absorvido pela v2; consultar `registro-*.md` para o destino de cada bloco.
+
+## OrgHero
+
+Destino na v2: O01 (preservado e comprimido).
+
+- Decisões `organizacoes/cbb06b8548`
+- O que priorizamos hoje molda possibilidades amanhã. `organizacoes/ee2fe9ca81`
+- Tecnologia `organizacoes/e5b9b620b1`
+- Cada tecnologia adotada cria novas dinâmicas e novas perguntas. `organizacoes/30f6c50513`
+- Pessoas `organizacoes/dacad784f4`
+- As capacidades das pessoas ampliam ou limitam o que é possível. `organizacoes/6616692cd5`
+- Cultura `organizacoes/58d2e09d7b`
+- O que é valorizado hoje torna alguns futuros mais prováveis. `organizacoes/175d7b7138`
+- Estratégia `organizacoes/9d237b7d4b`
+- Toda estratégia é também uma escolha de futuros. `organizacoes/12216a16b3`
+- Abertura `organizacoes/4b2522a71b`
+- Para Organizações `organizacoes/3de762407d`
+- Sua organização já está construindo futuros. `organizacoes/4ed9ddba80`
+- A questão é: quais? `organizacoes/40545265e1`
+- Cada investimento cria possibilidades. `organizacoes/26a657d33e`
+- Cada tecnologia adotada muda alguma coisa. `organizacoes/273002ec8e`
+- Cada comportamento recompensado fortalece uma cultura. `organizacoes/550fa49450`
+- Cada decisão estratégica torna alguns caminhos mais prováveis e outros menos. `organizacoes/704fd43b99`
+- Nem tudo está sob nosso controle. `organizacoes/c755851e59`
+- Mas isso não significa que as organizações apenas assistem ao que vem depois. `organizacoes/985c1b5fe2`
+- Trabalho com organizações que querem ampliar sua capacidade de enxergar possibilidades, discutir direção, desenvolver capacidades e transformar reflexão em movimento. `organizacoes/08485ccb16`
+- Conte o que sua organização está tentando construir `organizacoes/b919b28b44`
+- Conheça as formas de trabalhar juntos `organizacoes/15b52af784`
+- [imagem] `/images/ensaio/palestras-workshop-02.webp` (organizacoes/3b6210b214)
+- Cena ilustrativa de Juliana facilitando uma atividade com post-its. `organizacoes/957f22df8f`
+- O futuro não acontece apenas com a organização. A organização também participa daquilo que acontece depois. `organizacoes/f345006ab2`
+
+## OrgMudanca
+
+Destino na v2: O02 (uma frase de abertura das situações). Tags do bloco: [ARTIGO]
+
+- Mudança `organizacoes/6ad403fa5c`
+- Aquilo que está acontecendo. `organizacoes/c5c8109cb9`
+- Mercado muda. `organizacoes/15867c8f84`
+- Tecnologia muda. `organizacoes/06d149a281`
+- Comportamentos mudam. `organizacoes/247fa5480d`
+- Concorrência muda. `organizacoes/83e87c36e8`
+- Expectativas mudam. `organizacoes/228e916f26`
+- A organização também precisa responder. `organizacoes/cd9f630f5c`
+- Adaptação `organizacoes/6ecd3dad11`
+- Aquilo que fazemos para continuar funcionando diante da mudança. `organizacoes/abb39958c9`
+- Aprendemos. `organizacoes/652b734ab7`
+- Reorganizamos. `organizacoes/5e56f57199`
+- Automatizamos. `organizacoes/2b3ad525c7`
+- Mudamos processos. `organizacoes/3264cb5652`
+- Desenvolvemos novas capacidades. `organizacoes/cee35d58e6`
+- Adaptar-se importa. `organizacoes/5a8181457a`
+- Mas adaptação responde principalmente: `organizacoes/7df936134a`
+- “Como continuamos funcionando nesse novo contexto?” `organizacoes/0914dd87af`
+- Direção `organizacoes/6c8c7ecdb8`
+- Aquilo que escolhemos ajudar a construir. `organizacoes/e3d5e8a32b`
+- Direção acrescenta outras perguntas: `organizacoes/fa1e138b3d`
+- O que queremos preservar? `organizacoes/5da847d59f`
+- O que precisamos abandonar? `organizacoes/ff81fac421`
+- O que vale a pena ampliar? `organizacoes/6646bf7966`
+- Que capacidades queremos desenvolver? `organizacoes/e4858e6301`
+- Que futuro queremos ajudar a tornar possível? `organizacoes/c52e268317`
+- É aqui que estratégia encontra futuros. `organizacoes/5f39154e2c`
+- Mudança não é direção `organizacoes/9fffc3560b`
+- Mudar não é a mesma coisa que saber `organizacoes/e049adcd01`
+- para onde ir. `organizacoes/1c99ac4c06`
+- Organizações mudam o tempo inteiro. Adotam novas tecnologias. Redesenham processos. Reorganizam estruturas. Criam novas áreas. Automatizam decisões. Alteram modelos de trabalho. Lançam produtos. Revisam estratégias. Desenvolvem novas capacidades. `organizacoes/5462c1543d`
+- Tudo isso pode ser necessário. `organizacoes/41a27f5ce3`
+- Mas existe uma pergunta anterior: `organizacoes/4e0f49b665`
+- necessário para quê? `organizacoes/3b92bfd840`
+- [imagem] `/images/ensaio/organizacoes-conversa-lideranca.webp` (organizacoes/ceab1d8812)
+- Cena ilustrativa de Juliana em conversa individual com uma liderança. `organizacoes/a3e641ee91`
+- Porque uma organização pode se tornar mais rápida sem se tornar mais consciente. `organizacoes/930e381a21`
+- Mais eficiente sem estar indo na direção certa. `organizacoes/4fb5e43d36`
+- Mais tecnológica sem ter clareza sobre aquilo que não deseja terceirizar. `organizacoes/2a33edc2aa`
+- Mais adaptável sem saber o que pretende preservar. `organizacoes/9c6451db06`
+- Mais inovadora sem perguntar: `organizacoes/6f8d51c1b8`
+- que futuro essa inovação está ajudando a tornar mais provável? `organizacoes/2a27f4b1e7`
+- Eficiência também pode acelerar a direção errada. `organizacoes/fda09dc16f`
+- Ser capaz de fazer mais, mais rápido e em maior escala continua exigindo uma pergunta: `organizacoes/03cf77609a`
+- mais de quê e para quê? `organizacoes/f59201f8bd`
+- Uma organização pode automatizar um processo. Mas isso não responde se o processo merece continuar existindo. `organizacoes/a12b5e33e3`
+- Pode usar IA para acelerar uma decisão. Mas ainda precisa discutir os critérios dessa decisão. `organizacoes/9852617178`
+- Pode aumentar produtividade. Mas precisa decidir que tipo de trabalho, cultura e relação deseja produzir enquanto faz isso. `organizacoes/3b6b3667bd`
+- Pode coletar mais dados. Mas continua responsável por decidir o que fará com aquilo que passou a enxergar. `organizacoes/c9bb4fe1b9`
+- Capacidade não é direção. `organizacoes/a0a63c861e`
+- Muitas vezes, organizações tratam determinados futuros como inevitáveis: `organizacoes/2c4bd459d1`
+- “Todo mundo vai fazer.” `organizacoes/9c3f78557f`
+- “O mercado exige.” `organizacoes/21652748b2`
+- “Não temos escolha.” `organizacoes/ca1a1e456d`
+- “A tecnologia está indo para lá.” `organizacoes/5acbf157f0`
+- Às vezes, essas forças são realmente muito fortes. `organizacoes/aa21f2abb9`
+- Mas tratá-las como destino cedo demais pode eliminar escolhas que ainda existem. `organizacoes/aa3d6d88ed`
+- Por isso, pensar futuros não serve apenas para identificar aquilo que está chegando. Serve também para perguntar: `organizacoes/97cf301761`
+- O que ainda está em aberto? `organizacoes/4e37ad4c35`
+- Onde ainda existe espaço para escolha? `organizacoes/df94bb7ef0`
+- A organização não precisa escolher entre mudar e permanecer. `organizacoes/021bda4bbc`
+- Precisa aprender a distinguir: `organizacoes/acc07e4b5a`
+- o que precisa acompanhar; `organizacoes/4ab141dce0`
+- o que precisa questionar; `organizacoes/207687ff86`
+- o que precisa preservar; `organizacoes/a3500c23ad`
+- o que precisa desenvolver; `organizacoes/badc623a8c`
+- e o que deseja ajudar a construir. `organizacoes/941a091cc1`
+- Mudança é condição. Direção é escolha. `organizacoes/ac020fd1ab`
+- Ler menos `organizacoes/f6e0963ca5`
+
+## OrgPerguntas
+
+Destino na v2: O02/O03 (perguntas distribuídas nos cartões). Tags do bloco: [ARTIGO] [WORKSHOP]
+
+- O que estamos ajudando a tornar mais provável? `organizacoes/1a3f6048bb`
+- Toda organização já produz futuro antes mesmo de escrever uma estratégia de futuro. `organizacoes/a7c51b002c`
+- Pelas metas que define. `organizacoes/dbe2472f81`
+- Pelos comportamentos que recompensa. `organizacoes/f36227822e`
+- Pelas tecnologias que adota. `organizacoes/69abaa0fcd`
+- Pelas pessoas que promove. `organizacoes/4cd59cbe2e`
+- Pelos projetos que financia. `organizacoes/379f7e8857`
+- Pelas decisões que automatiza. `organizacoes/dbca3f6d93`
+- Pelo que tolera. `organizacoes/46d17d1d8b`
+- Pelo que repete. `organizacoes/e51a40875e`
+- A pergunta não é apenas: “Qual futuro esperamos?” `organizacoes/b05e88158f`
+- É também: `organizacoes/9601e55fd6`
+- “Que futuro nossas práticas atuais já estão favorecendo?” `organizacoes/5fa0aa6cab`
+- O que estamos tratando como inevitável? `organizacoes/05ab776807`
+- Dentro das organizações, algumas frases ganham rapidamente aparência de verdade: `organizacoes/c8709663be`
+- “O mercado vai para lá.” `organizacoes/a591893b61`
+- “Todo mundo terá que fazer isso.” `organizacoes/98b09f2d5d`
+- “A IA vai substituir.” `organizacoes/c27a50f265`
+- “O cliente exige.” `organizacoes/d2e8d63553`
+- “Não temos escolha.” `organizacoes/063a45659e`
+- Algumas dessas forças são reais. `organizacoes/dc2c1631de`
+- Mas transformar tendência em destino elimina escolhas antes da hora. `organizacoes/5e27d28719`
+- Pensar futuros também significa perguntar: `organizacoes/c8d476a1cb`
+- onde ainda existe espaço para decisão? `organizacoes/00ad38a9ac`
+- O que queremos ajudar a tornar possível? `organizacoes/0ee85b0239`
+- Não basta entender para onde o mundo pode ir. Uma organização também precisa discutir: `organizacoes/ecb95398a0`
+- que tipo de relação quer construir com seus clientes; `organizacoes/0fdf492ff0`
+- que cultura deseja fortalecer; `organizacoes/d5fb7fe520`
+- que papel pretende ter no mercado; `organizacoes/70d0f0fff3`
+- que uso deseja fazer da tecnologia; `organizacoes/9023aee16e`
+- que tipo de liderança quer desenvolver; `organizacoes/f1cf86f998`
+- e quais futuros considera dignos de investimento. `organizacoes/bed322b152`
+- Aqui entramos em direção. `organizacoes/35813e7dfa`
+- Não: “O que acontecerá?” `organizacoes/172dc77d24`
+- Mas: `organizacoes/ec8e1c2e96`
+- “Do que queremos participar?” `organizacoes/8ae094e32f`
+- Do que precisamos nos tornar capazes? `organizacoes/0b813f80d6`
+- Uma escolha estratégica pode ser boa e ainda assim ser impossível de sustentar com as capacidades atuais. `organizacoes/e6f3120cd8`
+- Talvez a organização precise desenvolver: `organizacoes/8e3e0d86e0`
+- discernimento; `organizacoes/fad2a246c5`
+- novas competências; `organizacoes/a297c25109`
+- lideranças diferentes; `organizacoes/9fdd6c0a09`
+- novos modelos de colaboração; `organizacoes/a570d48c38`
+- alfabetização tecnológica; `organizacoes/6d8cacc72c`
+- capacidade de experimentar; `organizacoes/8e1e84aaaf`
+- maior tolerância à incerteza; `organizacoes/59ff829923`
+- novas formas de tomar decisões. `organizacoes/ccfc2d5838`
+- Porque existe uma diferença entre `organizacoes/d42924270e`
+- querer determinado futuro `organizacoes/e03e5b14bb`
+- e `organizacoes/1f0cd15bec`
+- estar preparado para construí-lo. `organizacoes/6e43a08cc4`
+- O que podemos começar a mover agora? `organizacoes/a9400a52aa`
+- Futuros podem parecer distantes. Mas participação sempre começa no presente. `organizacoes/5c45fa9cd5`
+- Com uma decisão. `organizacoes/c4f0b27665`
+- Um experimento. `organizacoes/fafc1060d1`
+- Uma conversa. `organizacoes/1c652331db`
+- Uma mudança de critério. `organizacoes/2310faeea3`
+- Uma hipótese colocada à prova. `organizacoes/a8e08b9acd`
+- Um comportamento que deixa de ser recompensado. `organizacoes/68894cd7ec`
+- Uma capacidade que começa a ser desenvolvida. `organizacoes/2e2aa56f05`
+- Um movimento não determina o futuro. Mas muda aquilo que pode acontecer depois. `organizacoes/e16425eb4e`
+- As perguntas que importam `organizacoes/868fb65162`
+- A qualidade das decisões começa na qualidade `organizacoes/a208bb4ebb`
+- das perguntas. `organizacoes/66a8619bb7`
+- Grande parte da vida organizacional é construída para responder. `organizacoes/5f58075029`
+- Responder ao mercado. `organizacoes/0a54f2eb34`
+- Responder ao cliente. `organizacoes/ea15fb678b`
+- Responder à concorrência. `organizacoes/040a58e5f0`
+- Responder à tecnologia. `organizacoes/143ad7256c`
+- Responder a metas. `organizacoes/2e50eda7b5`
+- Responder a problemas. `organizacoes/faa318d7c7`
+- E responder rápido importa. `organizacoes/2804c7ec75`
+- Mas, às vezes, a diferença não está em responder mais depressa. Está em conseguir parar tempo suficiente para perguntar: `organizacoes/229cf8fb0e`
+- Estamos respondendo à pergunta certa? `organizacoes/0becf35777`
+- Porque uma pergunta diferente muda aquilo que conseguimos enxergar. E aquilo que conseguimos enxergar muda as escolhas disponíveis. `organizacoes/468b3fdd54`
+- [imagem] `/images/ensaio/home-04c-quadro-post-its.webp` (organizacoes/b6671b45a7)
+- Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its. `organizacoes/1a2fd5ae2f`
+- Uma organização não constrói futuro apenas quando cria uma estratégia de futuro. `organizacoes/2965201ee5`
+- Constrói futuro toda vez que escolhe o que priorizar hoje. `organizacoes/fe8becbad4`
+- Perguntas melhores não significam paralisia. Não significa substituir ação por reflexão. `organizacoes/7c28f08218`
+- O objetivo é melhorar a relação entre as duas. `organizacoes/16c47baf1e`
+- Refletir melhor para escolher melhor. `organizacoes/fe1f2c9366`
+- Escolher melhor para construir com mais intenção. `organizacoes/25b175b1e8`
+- Antes de perguntar “qual é a estratégia?”, talvez valha perguntar: `organizacoes/d608dfd3f5`
+- Que futuro essa estratégia está ajudando a tornar mais provável? `organizacoes/ca473a03f8`
+- Estratégia também é uma escolha de futuros. `organizacoes/a44752c2e1`
+
+## OrgTerritorios
+
+Destino na v2: O02 (territórios rotulam os três cartões). Tags do bloco: [WORKSHOP]
+
+- Futuros `organizacoes/22e0dc37b7`
+- & Estratégia `organizacoes/06d060248d`
+- Quando a organização precisa ampliar o campo antes de escolher direção. `organizacoes/a12597727d`
+- Esse território entra quando a pergunta é: `organizacoes/405e1ab8a4`
+- Para onde podemos ir — e que parte desse caminho ainda podemos escolher? `organizacoes/b881986734`
+- Não se trata de prever com precisão aquilo que vai acontecer. `organizacoes/9553c6e512`
+- Trata-se de enxergar: `organizacoes/9facc9511e`
+- forças de mudança; tensões; possibilidades; suposições; riscos; oportunidades; e futuros que hoje ainda não parecem dominantes. `organizacoes/1e06aad380`
+- Para então discutir: `organizacoes/024d32b832`
+- O que queremos ajudar a tornar possível? `organizacoes/eeb8121a44`
+- Que futuros estamos assumindo sem questionar? `organizacoes/f0a80b6647`
+- O que consideramos inevitável, mas talvez ainda esteja em aberto? `organizacoes/9daec6a10e`
+- Que possibilidades estamos deixando de enxergar porque estamos olhando apenas para o provável? `organizacoes/ac2bdf0a02`
+- Que futuro nossa estratégia atual está favorecendo? `organizacoes/a032d87b1e`
+- O que merece investimento agora? `organizacoes/78752f35a9`
+- Tecnologia `organizacoes/03e0f36970`
+- & Humanidade `organizacoes/241f9c90cd`
+- Quando novas capacidades exigem novas escolhas. `organizacoes/d4d0ac65d9`
+- Tecnologia amplia aquilo que uma organização consegue fazer. IA. Automação. Dados. Novos sistemas. Novas formas de trabalhar. `organizacoes/ab0e8c3c74`
+- Mas toda ampliação de capacidade traz uma questão de direção. `organizacoes/dd67aacba6`
+- O que queremos fazer com aquilo que agora conseguimos fazer? `organizacoes/a1a0b637d8`
+- Aqui, a conversa pode envolver: `organizacoes/1d9916ec40`
+- tecnologia e trabalho; IA e liderança; automação e decisão; produtividade e autoria; dados e responsabilidade; inovação e consequências humanas. `organizacoes/9475db1f69`
+- Não para demonizar tecnologia. Nem para celebrá-la sem questionamento. `organizacoes/951f64d9ca`
+- Mas para manter pessoas presentes nas escolhas que as ferramentas tornam possíveis. `organizacoes/7eda908f16`
+- Quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas. [FRASE-ASSINATURA] `organizacoes/037ed56dc3`
+- O que faz sentido delegar? `organizacoes/7841d9868e`
+- O que não queremos terceirizar? `organizacoes/d16bab56e4`
+- Que critérios continuam precisando de julgamento humano? `organizacoes/6c45911a15`
+- Que capacidades ganham importância quando a tecnologia assume outras? `organizacoes/a671ef4dee`
+- Para quê estamos ampliando capacidade? `organizacoes/816e7703de`
+- Transformação `organizacoes/088b0159f0`
+- & Capacidades `organizacoes/a13f887141`
+- Quando saber que é preciso mudar já não é suficiente. `organizacoes/3d7549508f`
+- Talvez a organização já tenha estratégia. Já tenha tecnologia. Já tenha comunicado a mudança. `organizacoes/c57a4c5847`
+- E, ainda assim, alguma coisa não acontece. `organizacoes/432add0839`
+- Porque transformação não depende apenas de compreender racionalmente uma nova direção. `organizacoes/9dd21225e8`
+- Pessoas precisam: `organizacoes/8213cf06e0`
+- perceber; escolher; aprender; desaprender; experimentar; sustentar desconforto; desenvolver novas capacidades; e agir de maneiras diferentes. `organizacoes/a268364739`
+- É aqui que entram perguntas sobre: `organizacoes/f4c2d3b73a`
+- liderança; cultura; comportamento; participação; capacidade; aprendizado; mudança; e movimento. `organizacoes/b8853f4fab`
+- Do que nossas pessoas precisam se tornar capazes? `organizacoes/661deb397d`
+- Que comportamentos a organização diz querer, mas não recompensa? `organizacoes/826ddefc84`
+- O que estamos tentando mudar sem mudar as condições que produziram o comportamento atual? `organizacoes/832ee2124f`
+- Que capacidade falta entre a estratégia definida e a transformação desejada? `organizacoes/aa95011573`
+- Como fazer as pessoas participarem da mudança em vez de apenas recebê-la? `organizacoes/f063626249`
+- Três territórios de atuação `organizacoes/11f2c07301`
+- Três territórios. `organizacoes/c9b92c20e0`
+- Muitas portas de entrada. `organizacoes/43e8ac91a1`
+- As organizações normalmente não chegam dizendo: “Temos um problema de futuros.” Elas chegam com questões muito mais concretas. `organizacoes/fa524f22bf`
+- Uma tecnologia que está mudando o trabalho. `organizacoes/2d91eaaf07`
+- Uma estratégia que precisa ser revista. `organizacoes/8599f3d35b`
+- Uma liderança tentando conduzir transformação. `organizacoes/f95d855e05`
+- Uma cultura que diz uma coisa e recompensa outra. `organizacoes/c01d1a22d3`
+- Uma equipe que precisa desenvolver novas capacidades. `organizacoes/3bf0e4f5a9`
+- Uma decisão importante cercada de incerteza. `organizacoes/db84796eb6`
+- É a partir dessas questões que meu trabalho pode entrar. Hoje, grande parte das conversas com organizações acontece no encontro entre `organizacoes/7c1f9cb4a5`
+- três territórios `organizacoes/d0cef3978c`
+- [imagem] `/images/ensaio/palestras-workshop-01.webp` (organizacoes/4e5d60225a)
+- Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa. `organizacoes/3cb141553d`
+- Perguntas que podem aparecer `organizacoes/829217ff4a`
+- Na prática, eles quase sempre se encontram. `organizacoes/cc44ad9865`
+- Uma estratégia de futuros pode exigir novas capacidades. `organizacoes/a6ca35b1ea`
+- Uma transformação tecnológica pode exigir uma nova forma de liderar. `organizacoes/03ba6fd447`
+- Uma discussão sobre cultura pode revelar escolhas estratégicas. `organizacoes/73281b1351`
+- Uma conversa sobre IA pode terminar numa discussão sobre autoria, responsabilidade e direção. `organizacoes/6f09d878b4`
+- O problema real define a combinação. `organizacoes/3048c06678`
+- Esses três campos são `organizacoes/8bb7393556`
+- territórios de atuação [MATAR] regra interna explicada ao visitante `organizacoes/47915433b7`
+- , não produtos, unidades de negócio ou soluções fechadas. A oferta concreta pode assumir a forma de palestra, workshop, experiência, projeto de futuros aplicados, jornada ou outra construção. [MATAR] regra interna explicada ao visitante `organizacoes/26846e0679`
+- A organização não precisa descobrir em qual caixa o problema cabe. `organizacoes/033cbad9c4`
+- Nosso trabalho é entender que perguntas ele está trazendo. `organizacoes/dd847f2b12`
+- Às vezes, começamos pelo futuro. `organizacoes/1320500cc5`
+- Às vezes, pela tecnologia. `organizacoes/31e6d86198`
+- Às vezes, pelas pessoas. `organizacoes/2a0b0cd809`
+- Quase nunca terminamos falando de apenas uma dessas coisas. `organizacoes/e4f18f0576`
+- Conte o desafio da sua organização `organizacoes/6df91fa8e2`
+
+## OrgFormatos
+
+Destino na v2: O03 (tabela necessidade / formato / saída). Tags do bloco: [WORKSHOP]
+
+- Abrir `organizacoes/8f6757dc6c`
+- [imagem] `/images/ensaio/palestras-palco-frente.webp` (organizacoes/9a0bdc5c3e)
+- Cena ilustrativa de Juliana falando no palco, vista de frente. `organizacoes/1c81dd8915`
+- Palestras `organizacoes/7d17829069`
+- Para abrir campo. `organizacoes/a061780cd0`
+- Uma palestra pode colocar uma pergunta importante na sala de forma rápida, provocadora e acessível. Funciona especialmente bem quando a organização precisa: `organizacoes/20b08fa0b3`
+- ampliar perspectiva; `organizacoes/d4a29c27fb`
+- inaugurar uma conversa; `organizacoes/95d682a10c`
+- conectar temas que estavam separados; `organizacoes/efcb18e95e`
+- provocar lideranças; `organizacoes/1ca4f9a488`
+- criar linguagem comum; `organizacoes/0905558c03`
+- ou marcar um momento importante. `organizacoes/c1df09baff`
+- Futuros Humanos `organizacoes/39f49b22d9`
+- é a palestra-mãe. Mas outras conversas podem nascer do contexto. `organizacoes/f3ac8e6aee`
+- Conheça Palestras & Workshops `organizacoes/06aa3ac4fc`
+- Trabalhar `organizacoes/184ccc42f9`
+- [imagem] `/images/ensaio/palestras-workshop-01.webp` (organizacoes/00aad0014e)
+- Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa. `organizacoes/65040e4490`
+- Workshops `organizacoes/6cd067c3c6`
+- Para transformar reflexão em participação. `organizacoes/af93528e84`
+- Quando não basta ouvir. Quando as pessoas precisam trabalhar sobre a questão. `organizacoes/e0b688f716`
+- Discutir. `organizacoes/de2413d764`
+- Escolher. `organizacoes/987a704d83`
+- Confrontar pressupostos. `organizacoes/a35166ef3d`
+- Explorar possibilidades. `organizacoes/2b5011b4e6`
+- Traduzir reflexão em movimento. `organizacoes/6287c003c8`
+- O workshop pode nascer de: futuros; tecnologia; estratégia; liderança; transformação; cultura; capacidades. `organizacoes/988d7f8e50`
+- A palestra pode abrir a conversa. O workshop permite trabalhá-la. `organizacoes/c6ca7ad7e3`
+- Mas um não depende obrigatoriamente do outro. `organizacoes/4e0b49981a`
+- Aprofundar `organizacoes/4cc07d77d2`
+- experiência customizada `organizacoes/a33f83734c`
+- [imagem] `/images/ensaio/contexto-planejamento-equipe.webp` (organizacoes/7831b6e8d0)
+- Mãos organizando post-its e ideias em uma mesa de trabalho. `organizacoes/afabdc229e`
+- Experiências customizadas `organizacoes/42e5224024`
+- Para perguntas que não cabem num formato pronto. `organizacoes/a139f896c3`
+- Algumas situações pedem uma construção própria. Pode ser: `organizacoes/eb7757f45d`
+- um encontro de liderança; `organizacoes/5b781c1b0f`
+- uma convenção; `organizacoes/04177f167d`
+- uma discussão estratégica; `organizacoes/404193deef`
+- uma experiência sobre futuros; `organizacoes/5f4675f3aa`
+- um processo de transformação; `organizacoes/2afb9e567b`
+- uma combinação de palestra, facilitação e trabalho em grupo; `organizacoes/8234412601`
+- ou outra arquitetura criada especificamente para aquela organização. `organizacoes/a9131c4003`
+- Não começamos pelo formato. Começamos pelo desafio. `organizacoes/f76c3904b4`
+- Explorar `organizacoes/a928f5bcde`
+- futuros aplicados `organizacoes/fb1350eb99`
+- [imagem] `/images/ensaio/home-04c-quadro-post-its.webp` (organizacoes/f2655c88a3)
+- Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its. `organizacoes/2b1445b260`
+- Futuros aplicados `organizacoes/fac80ae95e`
+- Quando a organização precisa explorar possibilidades com mais profundidade. `organizacoes/ed72ec4d0f`
+- Nem toda questão de futuro pode ser resolvida numa conversa inspiracional. Às vezes é necessário: `organizacoes/46d5267e53`
+- mapear mudanças; `organizacoes/df07360e7c`
+- explorar cenários; `organizacoes/ee2ff7f9e2`
+- questionar pressupostos; `organizacoes/713f2d22a1`
+- imaginar futuros alternativos; `organizacoes/07ee1e104a`
+- examinar implicações; `organizacoes/8abac81c7d`
+- e transformar possibilidades em insumos estratégicos. `organizacoes/129c9082de`
+- É aqui que o trabalho pode se conectar ao ecossistema da `organizacoes/82a19b66d2`
+- What The Future?! `organizacoes/497d688e8b`
+- e a abordagens de futuros aplicados, quando fizer sentido. Quando a pergunta pede outras competências, podemos ampliar a mesa. `organizacoes/48a3d8da2d`
+- Sustentar `organizacoes/b0ca440497`
+- jornada / programa `organizacoes/b40d500ed0`
+- [imagem] `/images/ensaio/organizacoes-conversa-lideranca.webp` (organizacoes/a723f2c1dd)
+- Cena ilustrativa de Juliana em conversa individual com uma liderança. `organizacoes/c09d9b8705`
+- Jornadas e programas `organizacoes/700927203c`
+- Quando o problema não termina num encontro. `organizacoes/42fb29473a`
+- Algumas mudanças pedem continuidade. Nesse caso, pode fazer sentido combinar diferentes momentos: `organizacoes/64aeac32f7`
+- provocação; `organizacoes/bfbc8b7289`
+- exploração; `organizacoes/9baef17ecd`
+- escolha; `organizacoes/3262a77252`
+- desenvolvimento de capacidades; `organizacoes/8e930196f8`
+- experimentação; `organizacoes/954feb3409`
+- movimento. `organizacoes/9aa9046153`
+- Não como programa engessado. Como uma jornada desenhada a partir do que a organização precisa sustentar ao longo do tempo. `organizacoes/ef909eb84b`
+- Como podemos trabalhar juntos `organizacoes/b4d40b828e`
+- O formato é uma consequência `organizacoes/967aa248e6`
+- da pergunta. `organizacoes/b6cb914b32`
+- Uma mesma organização pode chegar com questões muito diferentes. Pode precisar abrir uma conversa. Alinhar lideranças. Explorar futuros. Discutir implicações de uma tecnologia. Desenvolver novas capacidades. Revisitar uma escolha estratégica. Ou construir uma experiência que ainda nem existe. `organizacoes/85f2cc3ad9`
+- Por isso, meu trabalho com organizações pode assumir formas diferentes. `organizacoes/b8905166a3`
+- Arquitetura de leitura dos formatos `organizacoes/f7be9008d6`
+- Não é uma escada obrigatória. `organizacoes/44de41ee47`
+- Você não precisa saber o que contratar antes de falar com a gente. `organizacoes/4b012a2475`
+- Pode chegar com: uma pergunta; um desafio; um momento estratégico; uma mudança; uma tecnologia; uma tensão; uma decisão importante. `organizacoes/8ddd77506e`
+- A partir daí, encontramos juntos: `organizacoes/43fb0ad8cd`
+- qual profundidade faz sentido, quem precisa estar na sala e que tipo de experiência pode produzir a conversa necessária. `organizacoes/d6de34d566`
+- Não vendemos profundidade desnecessária. `organizacoes/e426cf7ff0`
+- Nem simplificamos um problema só para fazê-lo caber num formato. `organizacoes/9a006ca087`
+- A pergunta não é “qual serviço você quer contratar?”. `organizacoes/b53ccf7460`
+- É `organizacoes/d2506e4c61`
+- “o que precisa acontecer para essa organização conseguir avançar?” `organizacoes/7748a149d1`
+- Conte o desafio da sua organização `organizacoes/ee777eb069`
+- Conheça Palestras & Workshops `organizacoes/0ecdc7cede`
+
+## OrgFuturosAplicados
+
+Destino na v2: O04 (comprimido). Tags do bloco: [PESQUISAR]
+
+- Estratégia em contextos de incerteza `organizacoes/9524ed6320`
+- Quando a organização precisa pensar além de um único cenário provável. `organizacoes/ed5dcc8f9f`
+- Não para escolher “o futuro certo”. Mas para construir estratégias mais conscientes das alternativas. `organizacoes/17d3f87c9f`
+- Inovação e novas possibilidades `organizacoes/2895dd00e5`
+- Quando a equipe está presa ao que já existe. `organizacoes/3a4b7b44bb`
+- Futuros aplicados podem ampliar o repertório de possibilidades antes de começar a desenhar soluções. `organizacoes/1671af61da`
+- Imaginação é instrumento estratégico. `organizacoes/b03689b67d`
+- Tecnologia e transformação `organizacoes/cfb5947303`
+- Quando uma nova tecnologia traz perguntas que ultrapassam implementação. `organizacoes/b7a6800345`
+- Como muda o trabalho? `organizacoes/d24c82b3a3`
+- Que comportamentos aparecem? `organizacoes/f1ac02d363`
+- Que relações podem mudar? `organizacoes/31422a9657`
+- Que capacidades serão necessárias? `organizacoes/9c35823514`
+- Que consequências ainda não estamos enxergando? `organizacoes/028186c690`
+- Liderança e tomada de decisão `organizacoes/44cb8bf5b0`
+- Quando líderes precisam desenvolver maior capacidade de pensar diante de incerteza, ambiguidade e futuros múltiplos. `organizacoes/e14c36e76b`
+- Não para eliminar incerteza. Mas para: `organizacoes/f111817f5f`
+- decidir melhor dentro dela. `organizacoes/0b0ad962d3`
+- Futuros aplicados e What The Future?! `organizacoes/32a4cceb6f`
+- Algumas perguntas pedem `organizacoes/311fff8bb7`
+- mais do que uma voz. `organizacoes/67d6a5087e`
+- Existem desafios que começam numa conversa com a Ju e rapidamente mostram que precisam de outras lentes. `organizacoes/7f98d9a970`
+- Mais pesquisa. `organizacoes/91fef38bd8`
+- Mais perspectivas. `organizacoes/8e272ec90e`
+- Outras disciplinas. `organizacoes/927fd03540`
+- Novas formas de imaginar. `organizacoes/bc10dbd878`
+- Mais espaço para explorar aquilo que ainda não existe. `organizacoes/00a86c02a0`
+- É nesses casos que o trabalho pode se conectar à `organizacoes/7159214c45`
+- What The Future?! `organizacoes/281b25348e`
+- A WTF é um `organizacoes/504c06837a`
+- coletivo de futuristas `organizacoes/5578550f5a`
+- dedicado a tornar o pensamento de futuros mais acessível, aplicado e útil para pessoas e organizações. `organizacoes/0b07c2e451`
+- Ju integra esse coletivo a partir especialmente de sua lente de `organizacoes/211600c045`
+- Futurismo Humanista `organizacoes/a9818953ed`
+- [imagem] `/images/ensaio/home-04c-quadro-post-its.webp` (organizacoes/2a5cf8af23)
+- Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its. `organizacoes/650fdaf826`
+- Mas existe uma distinção importante: `organizacoes/b865d344cb`
+- Futuros Humanos não é WTF. [MATAR] substituído por descrição positiva `organizacoes/bba0534dad`
+- WTF não é Futuros Humanos. [MATAR] substituído por descrição positiva `organizacoes/68e1c5ab7a`
+- São construções diferentes. Elas se encontram quando o problema pede. `organizacoes/5283600e0d`
+- Ju Ferreira `organizacoes/7c3c2c1157`
+- Futurismo Humanista `organizacoes/01d40e588c`
+- Futuros Humanos `organizacoes/ab59c5f788`
+- Palestras / Workshops / Experiências `organizacoes/83eb83f83b`
+- What The Future?! `organizacoes/85a3eb03b4`
+- Coletivo de futuristas `organizacoes/ac1400b95f`
+- Futuros aplicados `organizacoes/531188cb73`
+- SciFiXD [PESQUISAR] descrição e disponibilidade a confirmar com a WTF `organizacoes/cb85a9b424`
+- Futurismo Pessoal [PESQUISAR] descrição e disponibilidade a confirmar com a WTF `organizacoes/91a689e6bc`
+- Projetos multidisciplinares `organizacoes/2d35510e66`
+- Sem hierarquia entre os dois ecossistemas. `organizacoes/bfd2fbd9f7`
+- O que significa futuros aplicados `organizacoes/852167c501`
+- Não é tentar adivinhar o que acontecerá. `organizacoes/fec9aa3469`
+- É criar condições para uma organização explorar: `organizacoes/ffc45fa49c`
+- mudanças em curso; sinais emergentes; tensões; possibilidades; cenários; implicações; escolhas; e respostas estratégicas. `organizacoes/dabb457212`
+- Pensar futuros, nesse contexto, pode ajudar uma organização a ampliar o campo antes de tomar uma decisão. `organizacoes/1abe04d412`
+- A pergunta deixa de ser apenas: “O que provavelmente vai acontecer?” `organizacoes/b8233157ee`
+- E passa a incluir: `organizacoes/65608d62bd`
+- O que também poderia acontecer? `organizacoes/85b682567d`
+- O que mudaria para nós em cada cenário? `organizacoes/ab367a5377`
+- Que pressupostos estamos carregando sem perceber? `organizacoes/0a0f3b03cb`
+- Que oportunidades ou riscos aparecem quando olhamos de outro lugar? `organizacoes/4e51e92b39`
+- O que queremos começar a construir antes que alguma dessas possibilidades se torne dominante? `organizacoes/5d7f43e037`
+- Pensar futuros não serve para reduzir o mundo a uma previsão. Serve para aumentar a quantidade e a qualidade das possibilidades que conseguimos considerar antes de escolher. `organizacoes/bf0a963fa7`
+- Quando essa abordagem pode fazer sentido `organizacoes/869770fd59`
+- Projetos do ecossistema `organizacoes/16145440a9`
+- Projetos do ecossistema `organizacoes/238ef26c72`
+- SciFiXD [PESQUISAR] descrição e disponibilidade a confirmar com a WTF `organizacoes/08e2023dfb`
+- Uma das abordagens que pode entrar quando a organização quer explorar possibilidades de futuro por meio da ficção, imaginação e design. Não como exercício de entretenimento. Mas como forma de tornar futuros abstratos `organizacoes/1676cec060`
+- visíveis, discutíveis e experimentáveis `organizacoes/98b8c56708`
+- Futurismo Pessoal [PESQUISAR] descrição e disponibilidade a confirmar com a WTF `organizacoes/5e4e252eb2`
+- Pode aparecer especialmente em contextos de liderança e carreira, levando pensamento de futuros para a escala das escolhas, trajetórias e capacidades individuais. `organizacoes/01f53ad254`
+- Futurismo Pessoal pertence ao ecossistema WTF. Não é parte da palestra Futuros Humanos. [PESQUISAR] descrição e disponibilidade a confirmar com a WTF `organizacoes/53a5cb9975`
+- Nem todo projeto precisa envolver a WTF. `organizacoes/ba9b399255`
+- Nem toda questão precisa de cenários. `organizacoes/f7be39081f`
+- Nem toda conversa sobre futuro precisa virar um projeto de foresight. `organizacoes/06e1508e93`
+- Quando uma palestra resolve, fazemos uma palestra. `organizacoes/b616cc2aae`
+- Quando um workshop resolve, fazemos um workshop. `organizacoes/f4e54ff3e0`
+- Quando a pergunta exige outra profundidade, ampliamos a abordagem. `organizacoes/5bd3011ad9`
+- Quando a pergunta fica maior, a mesa também pode ficar. `organizacoes/c2e444a509`
+- Profundidade não é um objetivo. `organizacoes/8b75e3d8a6`
+- É uma resposta à complexidade do problema. `organizacoes/df6ac47682`
+- Nem toda organização precisa de um projeto de futuros. `organizacoes/92db244190`
+- Mas, quando precisa, não precisamos limitar a pergunta ao repertório de uma única pessoa. `organizacoes/4237c1361c`
+- Quero explorar um projeto de futuros `organizacoes/3d292ba146`
+- Conheça a What The Future?! `organizacoes/d04cac496d`
+
+## OrgMundoReal
+
+Destino na v2: O05 (resumo e link para /ju). Tags do bloco: [ARTIGO] [PESQUISAR]
+
+- Tecnologia e mercado `organizacoes/8b141d1dad`
+- Onde capacidade encontra decisão. `organizacoes/0bc942a550`
+- Minha trajetória começou e amadureceu dentro de tecnologia enterprise. EMC. Oracle. Grandes clientes. Projetos complexos. Metas. Negociação. Infraestrutura. Transformação. [PESQUISAR] confirmar o que pode ser apresentado publicamente `organizacoes/c77c0d188d`
+- Hoje continuo próxima desse mercado e das decisões comerciais e tecnológicas que organizações precisam tomar no presente. `organizacoes/7e3f06d558`
+- Ali, uma ideia deixa rapidamente de ser abstrata. Ela precisa funcionar diante de: cliente; orçamento; prazo; concorrência; resultado. `organizacoes/ea217877ac`
+- Construção empresarial `organizacoes/f18f908411`
+- Onde estratégia encontra consequência. `organizacoes/0de1e51663`
+- Cofundei e liderei a A2F por mais de 13 anos. [PESQUISAR] confirmar recorte temporal e papel [PESQUISAR] confirmar o que pode ser apresentado publicamente `organizacoes/011c6d85dd`
+- Construir uma empresa me ensinou algo que nenhum framework consegue ensinar sozinho: `organizacoes/228d77599f`
+- toda escolha estratégica produz uma realidade operacional. `organizacoes/bedb8b0768`
+- Posicionamento vira venda. Venda vira entrega. Crescimento vira contratação. Decisão vira consequência. `organizacoes/adcfaa6c8e`
+- E aquilo que parece óbvio na estratégia raramente continua tão simples quando encontra mercado, gente e execução. Hoje continuo contribuindo com a A2F pela perspectiva estratégica. [PESQUISAR] confirmar o que pode ser apresentado publicamente `organizacoes/bcffb70a14`
+- HomeCare+ e Ayumana [PESQUISAR] confirmar o que pode ser apresentado publicamente `organizacoes/1a8e43e8f0`
+- Onde tecnologia encontra problemas profundamente humanos. `organizacoes/4dc6fd513f`
+- Saúde domiciliar. Saúde mental. Profissionais. Pacientes. Famílias. Plataforma. Modelo de negócio. Aquisição. Confiança. Autonomia. `organizacoes/afdb7bb622`
+- São negócios diferentes, mas ambos colocam uma questão central diante de mim: `organizacoes/3b98c2daed`
+- como usamos tecnologia para ampliar possibilidades sem esquecer para quem estamos construindo? `organizacoes/a1fac4af56`
+- Na HomeCare+, isso significa transformar um problema humano real de cuidado em uma operação capaz de funcionar e crescer. [PESQUISAR] confirmar o que pode ser apresentado publicamente `organizacoes/e16767ef7c`
+- Na Ayumana, significa pensar tecnologia, visibilidade e modelo de negócio sem retirar dos psicólogos autonomia sobre sua relação com pacientes e sobre a própria carreira. [PESQUISAR] confirmar o que pode ser apresentado publicamente `organizacoes/a04095732e`
+- Essas empresas não são ilustrações de Futuros Humanos. São lugares onde perguntas parecidas precisam sobreviver à prática. `organizacoes/1784ded687`
+- O mercado continua respondendo `organizacoes/0921974589`
+- Você pode imaginar um modelo perfeito. O cliente pode não querer. `organizacoes/ea979b9cdf`
+- Pode definir uma estratégia clara. O mercado pode mudar. `organizacoes/07efb33038`
+- Pode construir uma tecnologia incrível. As pessoas podem não adotá-la. `organizacoes/f149cbd3c1`
+- Pode acreditar numa hipótese. Os dados podem devolvê-la quebrada. `organizacoes/140826f4e3`
+- E então você escolhe: defender a ideia; escutar; adaptar; persistir; abandonar; ou construir outra coisa. `organizacoes/868f7a0d49`
+- É nesse movimento que estratégia deixa de ser apresentação. `organizacoes/b9c7518fe4`
+- A realidade é uma interlocutora inconveniente. E exatamente por isso ela é indispensável. `organizacoes/c295171ea7`
+- O mundo real como laboratório `organizacoes/6bb2851205`
+- Eu não penso organizações de fora. `organizacoes/e03e5c72b0`
+- Continuo dentro delas. `organizacoes/b3222c9557`
+- É fácil falar sobre transformação quando não se precisa entregar o trimestre. Sobre inovação quando não existe cliente esperando. Sobre liderança quando nenhuma decisão difícil está sobre a mesa. Sobre futuros quando não há orçamento, concorrência, equipe, risco e consequência. `organizacoes/a6ea9b9781`
+- Minha relação com organizações nunca foi apenas de observadora. Passei mais de duas décadas entre tecnologia, vendas, grandes empresas, liderança e empreendedorismo. `organizacoes/ef18bb9d04`
+- E continuo nesse mundo. Continuo construindo. Vendendo. Liderando. Tomando decisões. Mudando de direção quando a realidade exige. `organizacoes/2b4d6f6bb7`
+- É por isso que, para mim, estratégia, tecnologia, transformação e futuros precisam sobreviver ao encontro com o mundo real. `organizacoes/c046a71e28`
+- [imagem] `/images/ensaio/ju-trabalho-tecnologia.webp` (organizacoes/951275f686)
+- Juliana concentrada no trabalho em um notebook. `organizacoes/9d1b015056`
+- Possibilidade sem realidade vira fantasia. `organizacoes/aa3e3c2ead`
+- Realidade sem possibilidade vira resignação. `organizacoes/e6f72a3ba7`
+- O trabalho com organizações acontece exatamente no espaço entre as duas. Não ignoramos limites. Mas também não tratamos o presente como única configuração possível. `organizacoes/044a437bee`
+- É por isso que não entro numa organização prometendo ensinar “como será o futuro”. `organizacoes/acb1cb889e`
+- Entro trazendo: repertório; perguntas; experiência; tensão; ferramentas de futuros; e disposição para confrontar tudo isso com o contexto real daquela organização. `organizacoes/32cb4990f3`
+- Porque: `organizacoes/da396165a6`
+- uma boa estratégia não precisa apenas parecer inteligente. Precisa continuar fazendo sentido quando encontra o mundo. `organizacoes/fd5fc8b3ad`
+- O mundo real não é o lugar onde a tese termina. `organizacoes/2f19f10505`
+- É o lugar onde ela é testada. `organizacoes/a1b6fce5ad`
+- É desse encontro entre possibilidade e realidade que eu gosto de trabalhar com organizações. `organizacoes/857a18acb8`
+
+## OrgDepois
+
+Destino na v2: O03 (uma ressalva integrada aos formatos). Tags do bloco: [ARTIGO] [POST]
+
+- Mais clareza `organizacoes/ce8dfcbc67`
+- Nomear melhor o que realmente está em jogo. `organizacoes/85f930ef35`
+- Muitas vezes, o problema inicial chega como: “IA”. “mudança”. “cultura”. “inovação”. “futuro”. `organizacoes/98f410b383`
+- Mas, durante a conversa, a organização percebe que a questão real é outra: direção; autoria; capacidade; prioridade; escolha; liderança; ou consequência. `organizacoes/df15438ed7`
+- Melhores perguntas `organizacoes/85f1fa3ee3`
+- Perguntas capazes de abrir mais do que fechar. `organizacoes/e39387b912`
+- Talvez a organização entre perguntando: “Como acompanhar essa mudança?” e saia perguntando: `organizacoes/808b261440`
+- “Que parte dessa mudança queremos realmente ampliar?” `organizacoes/caf15b9099`
+- Entre perguntando: “Como usar IA?” e saia com: `organizacoes/5dd4d43b7a`
+- “Para quê queremos ampliar capacidade e que decisões não queremos terceirizar?” `organizacoes/0dca07a99d`
+- Mais possibilidades `organizacoes/869f5967ac`
+- Sair do provável como único caminho. `organizacoes/ccb041189e`
+- Quando existe apenas um futuro imaginável, estratégia vira adaptação. `organizacoes/dee75a6fa3`
+- O trabalho pode ajudar a organização a perceber: outros caminhos; novas hipóteses; combinações antes invisíveis; riscos ignorados; oportunidades ainda não nomeadas. `organizacoes/10dae20e99`
+- Não para gerar cinquenta cenários. Mas para evitar que `organizacoes/b3ce866d4e`
+- “isso provavelmente vai acontecer” `organizacoes/3498fd2ef2`
+- se transforme cedo demais em: `organizacoes/125599dd24`
+- “não temos escolha”. `organizacoes/7153196fbd`
+- Mais direção `organizacoes/66fb3cc1d4`
+- Escolher o que merece ser ampliado. `organizacoes/9d5d25a208`
+- Possibilidade sem direção pode virar dispersão. Por isso, uma conversa boa não serve apenas para abrir. Ela também pode ajudar a fechar algumas escolhas. `organizacoes/a50b563770`
+- O que queremos preservar? `organizacoes/db4060065a`
+- O que precisamos abandonar? `organizacoes/04afeb8fe8`
+- O que vale a pena desenvolver? `organizacoes/16396251b9`
+- O que não queremos construir, mesmo sendo capazes? `organizacoes/49b25b7b88`
+- Linguagem comum `organizacoes/b1225c9447`
+- Às vezes, diferentes pessoas estão tentando discutir o mesmo problema usando palavras diferentes. Ou usando a mesma palavra para falar de coisas completamente distintas. `organizacoes/e6ad1a8660`
+- “Futuro”. “Transformação”. “IA”. “Inovação”. “Autonomia”. “Liderança”. `organizacoes/23bc827507`
+- Uma experiência bem construída pode criar algumas referências compartilhadas. Não para todo mundo pensar igual. Mas para que a discordância aconteça `organizacoes/ccf54c0a4c`
+- sobre a mesma conversa `organizacoes/2bb1a005e7`
+- Alinhamento não é concordância. É conseguir enxergar juntos aquilo sobre o que estamos escolhendo. `organizacoes/372e867dc2`
+- Movimento `organizacoes/3d078bddbe`
+- Alguma coisa precisa conseguir acontecer depois. `organizacoes/e40a8e1393`
+- Nem sempre é um projeto. Nem sempre é uma decisão final. Pode ser: um experimento; uma conversa com outro grupo; uma hipótese a testar; um critério a revisar; uma capacidade a desenvolver; uma decisão que finalmente precisa ser tomada. `organizacoes/414fa0adb7`
+- O que muda depois da conversa `organizacoes/56b55b975b`
+- O valor da conversa `organizacoes/566516f3e5`
+- aparece no que ela muda depois. `organizacoes/471651f282`
+- Nem toda experiência precisa terminar com uma lista de respostas. Algumas precisam terminar com: `organizacoes/0424d13d81`
+- mais clareza; melhores perguntas; novas possibilidades; escolhas mais conscientes; linguagem comum; e movimentos possíveis. `organizacoes/d33d6b4845`
+- O objetivo não é sair da sala acreditando que o futuro ficou previsível. É sair da sala mais capaz de perceber: `organizacoes/bdf59ba894`
+- o que está mudando; `organizacoes/8b165e9bbd`
+- o que ainda está em aberto; `organizacoes/a93a4d6469`
+- o que merece ser escolhido; `organizacoes/caedcab411`
+- e o que precisa começar a se mover. `organizacoes/a4b1e9e4ff`
+- [imagem] `/images/ensaio/organizacoes-conversa-lideranca.webp` (organizacoes/06f8adb6d0)
+- Cena ilustrativa de Juliana em conversa individual com uma liderança. `organizacoes/ffb80ae1a5`
+- O que a conversa pode deixar na organização `organizacoes/ef6ad62f45`
+- O objetivo não é sair com certeza sobre o futuro. `organizacoes/c6db7ccf57`
+- É sair com mais qualidade para participar dele. `organizacoes/1ee85d5066`
+- O que acontece depois não depende apenas da experiência. Depende também da organização. Do contexto. Das lideranças. Das estruturas. Dos incentivos. Da capacidade de sustentar decisões. `organizacoes/53bfb018bf`
+- Nenhuma palestra, workshop ou projeto transforma uma organização sozinho. `organizacoes/a2abb19b28`
+- Mas pode: abrir uma conversa que não existia; tornar uma escolha visível; criar linguagem; ampliar possibilidades; e ajudar um grupo a iniciar movimentos que antes não conseguia iniciar. `organizacoes/692096ad63`
+- A conversa não precisa resolver tudo. `organizacoes/0b50f0e165`
+- Precisa mudar o que a organização consegue enxergar e fazer depois dela. `organizacoes/9f618610e1`
+- Se alguma coisa mudou na forma como enxergamos o problema, talvez outras coisas possam mudar na forma como escolhemos o caminho. `organizacoes/09f36898ae`
+- Um movimento muda o que pode acontecer depois. [FRASE-ASSINATURA] `organizacoes/fa26fbfac8`
+
+## OrgFechamento
+
+Destino na v2: O06 (CTA para /contato?rota=organizacoes).
+
+- Fechamento e conversão `organizacoes/e842589177`
+- Você não precisa chegar com a solução. `organizacoes/31bf84389e`
+- Pode chegar com a pergunta. `organizacoes/a928ce3cd4`
+- Talvez você já saiba exatamente o que precisa. `organizacoes/f3226cc5c1`
+- Talvez exista uma transformação em curso. `organizacoes/bc734bba14`
+- Uma decisão estratégica. `organizacoes/c33cbf194d`
+- Uma tecnologia criando novas tensões. `organizacoes/9d9f420f23`
+- Uma liderança tentando encontrar direção. `organizacoes/2eff9875e7`
+- Uma convenção que precisa abrir uma conversa. `organizacoes/bddd74cfe7`
+- Ou talvez exista apenas a sensação de que `organizacoes/8fe3e58cf9`
+- alguma coisa importante precisa ser pensada de outro jeito `organizacoes/78f8891422`
+- Os dois pontos de partida servem. `organizacoes/21aa9bdf26`
+- Não precisamos começar escolhendo um produto. Precisamos começar entendendo o contexto. `organizacoes/932cff9205`
+- [imagem] `/images/ensaio/contato-sorriso-horizontal.webp` (organizacoes/2a46c363b7)
+- Juliana sorrindo para a câmera à mesa, com notebook aberto. `organizacoes/30d9e42510`
+- Meu trabalho com organizações geralmente começa antes do formato. Começa tentando compreender: `organizacoes/9e0a44e7b6`
+- O que está acontecendo agora? `organizacoes/6e680160bc`
+- O que está mudando? `organizacoes/a34441df34`
+- Onde existe tensão? `organizacoes/9e3ff3a831`
+- Que decisão precisa ser tomada? `organizacoes/b79b7cc51b`
+- O que parece inevitável, mas talvez ainda esteja em aberto? `organizacoes/bb82d7e29e`
+- E o que essa organização está tentando ajudar a tornar possível? `organizacoes/f67e6ba127`
+- A partir daí, conseguimos descobrir juntos se essa conversa pede uma palestra, um workshop, uma experiência, um projeto de futuros aplicados, uma jornada — ou simplesmente uma primeira conversa para entender melhor a pergunta. `organizacoes/0243d7ddcb`
+- Qual futuro sua organização está ajudando a tornar mais provável hoje? `organizacoes/775b231cde`
+- Talvez essa não seja a pergunta com que você chegou. `organizacoes/0f7ce0ffbc`
+- Mas pode ser uma das perguntas que vale a pena levar para a conversa. `organizacoes/46750d0e89`
+- Nenhum formato será sugerido antes de entendermos o contexto. `organizacoes/69a3fd6377`
+- Se uma palestra resolver, ótimo. `organizacoes/e4a86659d0`
+- Se a pergunta pedir mais profundidade, desenhamos outra abordagem. `organizacoes/d66c411b82`
+- Se não houver encaixe, é melhor descobrir isso no começo. `organizacoes/e60ab4b40f`
+- Prefere começar por e-mail? `organizacoes/346eebaa17`
+- WhatsApp: `organizacoes/878fe212cd`
+- Temos futuros para construir. [FRASE-ASSINATURA] `organizacoes/0f9d88d7a5`
+- Toda organização já participa daquilo que vem depois. `organizacoes/542d062a7b`
+- A questão é como escolhe participar. `organizacoes/7d9cce1429`
+## Textos da v1 fora do painel (não editáveis)
+
+Frases-chave dos cartões de OrgDepois (strings literais no código v1):
+
+- Clareza não resolve tudo. Mas muda o problema que estamos tentando resolver. [POST]
+- Mudar a pergunta pode mudar completamente a decisão seguinte. [POST]
+- Quando surgem alternativas, volta a existir escolha. [POST]
+- Direção é transformar possibilidade em escolha.
+- Porque reflexão sem nenhuma capacidade de produzir movimento corre o risco de virar apenas uma boa experiência. E esse não é o objetivo.
+
+Formulário próprio da página (OrgContactForm, v1). Na v2 o bloco O06 leva ao formulário único de Contato (`/contato?rota=organizacoes`); o componente continua no repositório, sem uso, com o mesmo envio para `/api/contato` (origin/rota "organizacoes").
+
+- Título do cartão: Qual futuro sua organização está ajudando a tornar mais provável hoje? [FRASE-ASSINATURA]
+- Opções de momento: Estamos discutindo estratégia ou futuros · Estamos vivendo uma transformação · Tecnologia / IA está criando novas perguntas · Precisamos desenvolver lideranças ou capacidades · Temos um evento ou convenção · Existe um desafio específico · Ainda não sei como nomear
+- Campos: O que está acontecendo? · O que você gostaria que pudesse ser diferente depois? · Existe algum prazo ou momento importante?
+- Botão: Vamos entender essa pergunta
+- Confirmação: Obrigada por contar o contexto. Nenhum formato será sugerido antes de entendermos o contexto.

@@ -34,7 +34,9 @@ type Props = Omit<ComponentProps<typeof Link>, "className"> & {
   children: ReactNode;
 };
 
-export function ButtonLink({ variant = "primary", size = "md", className = "", children, ...rest }: Props) {
+export function ButtonLink({ variant = "primary", size = "md", className = "", children, ...props }: Props) {
+  // /ir/* redireciona para sites externos: prefetch geraria erro de CORS
+  const rest = typeof props.href === "string" && props.href.startsWith("/ir/") ? { ...props, prefetch: false } : props;
   if (variant === "link") {
     return (
       <Link

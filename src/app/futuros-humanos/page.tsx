@@ -1,41 +1,40 @@
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import {
-  FHAgencia,
   FHAutomatico,
   FHFerramentas,
   FHHero,
   FHTese,
 } from "@/components/sections/futuros-humanos/FuturosHumanosBlocksA";
 import {
-  FHAutoria,
+  FHAgencia,
   FHEncerramento,
+  FHEscalas,
   FHEspiral,
-  FHProvoca,
 } from "@/components/sections/futuros-humanos/FuturosHumanosBlocksB";
 
 const DEFAULT_META: Metadata = {
   title: "Futuros Humanos",
   description:
-    "Uma investigação sobre futuros, tecnologia, escolhas e as capacidades humanas necessárias para participar conscientemente da construção daquilo que ainda pode existir.",
+    "O futuro mais provável não é o único futuro possível. Perguntas sobre o que ainda pode existir, o que vale a pena construir e do que precisamos nos tornar capazes para participar dessa construção.",
 };
 
 export async function generateMetadata(): Promise<Metadata> {
   return seoFor("/futuros-humanos", DEFAULT_META);
 }
 
+/** Site 2.0 · F01–F08 (docs/v2/registro-futuros-humanos.md). */
 export default async function FuturosHumanosPage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
       <FHHero />
-      <FHFerramentas />
-      <FHTese />
-      <FHAgencia />
       <FHAutomatico />
+      <FHTese />
+      <FHFerramentas />
+      <FHAgencia />
       <FHEspiral />
-      <FHAutoria />
-      <FHProvoca />
+      <FHEscalas />
       <FHEncerramento />
     </>
   );

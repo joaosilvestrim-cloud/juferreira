@@ -1,0 +1,504 @@
+# Cofre editorial · Palestras v1 — textos da v1 (tag v1.0-site) guardados antes da reescrita; material interno
+
+Nada aqui está publicado na v2. Ordem = ordem no código da v1. Chave = identificador do texto no painel (/admin).
+Tags (Contexto Mestre §21–22): [PALESTRA 2] [ARTIGO] [POST] [WORKSHOP] [PESQUISAR] [FRASE-ASSINATURA] [MATAR].
+Itens sem tag: texto comprimido ou absorvido pela v2; consultar `registro-*.md` para o destino de cada bloco.
+
+## PalestrasHero
+
+Destino na v2: P01 (reescrito).
+
+- O que está mudando? `palestras-workshops/ba5bb20948`
+- O que estamos tratando como inevitável? `palestras-workshops/c00512da09`
+- Que futuro nossas decisões estão ajudando a tornar mais provável? `palestras-workshops/362923ec17`
+- Do que nossas pessoas precisam se tornar capazes? `palestras-workshops/d7045e6ffc`
+- E o que vale a pena começar a construir agora? `palestras-workshops/f9c45e3376`
+- Palestras `palestras-workshops/5de3e29b81`
+- Para abrir perspectivas, provocar perguntas e deslocar conversas. `palestras-workshops/646e7a7eb3`
+- Workshops `palestras-workshops/352a353a8e`
+- Para transformar reflexão em escolha, participação e movimento. `palestras-workshops/13eddbb03a`
+- Experiências customizadas `palestras-workshops/6e705d68b8`
+- Para desafios que pedem profundidade e não cabem num formato pronto. `palestras-workshops/ac617dccd2`
+- Abertura `palestras-workshops/9abfbb43fe`
+- Leve essa conversa para `palestras-workshops/b91914750b`
+- sua organização. `palestras-workshops/9548537469`
+- Palestras, workshops e experiências para organizações que querem pensar `palestras-workshops/2f80846677`
+- futuros, tecnologia, liderança e transformação humana `palestras-workshops/6f1dcb222c`
+- de forma conectada à realidade. `palestras-workshops/badf0bb331`
+- Cada trabalho começa com perguntas que importam. `palestras-workshops/847ebac733`
+- Futuros Humanos é a palestra-mãe. `palestras-workshops/63adc5b4b0`
+- Mas a conversa não precisa ser sempre a mesma. `palestras-workshops/f89e4fb24c`
+- Quero levar a Ju para minha organização `palestras-workshops/6b261545fd`
+- Conheça Futuros Humanos `palestras-workshops/a348f8d164`
+- [imagem] `/images/ensaio/home-03-palco-vertical.webp` (palestras-workshops/3a9b665976)
+- Cena ilustrativa de Juliana no palco, em enquadramento vertical. `palestras-workshops/19316be803`
+
+## PalestrasPorQue
+
+Destino na v2: P02 (fundido com a palestra-mãe). Tags do bloco: [ARTIGO] [POST]
+
+- Pensamento `palestras-workshops/760127b037`
+- Não entregar respostas fáceis. Abrir perguntas melhores. `palestras-workshops/728849edae`
+- A palestra não tenta prever o futuro para a plateia. `palestras-workshops/df34ce55cb`
+- Ela oferece lentes para perceber: `palestras-workshops/2217437afb`
+- o que está mudando; `palestras-workshops/6111e74a2f`
+- o que estamos naturalizando; `palestras-workshops/0b75993b34`
+- que possibilidades estamos ignorando; `palestras-workshops/9831edf2f1`
+- que escolhas ainda existem; `palestras-workshops/45fbb83044`
+- e que futuro nossas decisões já estão ajudando a construir. `palestras-workshops/f3f8596565`
+- Experiência real `palestras-workshops/b7d3ac690b`
+- Teoria que passou pelo mundo real. `palestras-workshops/a0c85aebe7`
+- Minha visão não nasceu apenas de pesquisa. `palestras-workshops/9e060ff9f9`
+- Nasceu também de mais de duas décadas entre tecnologia, grandes empresas, vendas, liderança, empreendedorismo, clientes, risco, erros, construção e recomeços. `palestras-workshops/b58aa6e589`
+- Quando falo sobre transformação, conheço o peso de tentar transformar. `palestras-workshops/441a8ea255`
+- Quando falo sobre liderança, continuo liderando. `palestras-workshops/3ad5c98744`
+- Quando falo sobre tecnologia, continuo próxima dela. `palestras-workshops/2d7f730ce5`
+- Quando falo sobre possibilidade, sei que algumas sobrevivem ao mundo real e outras não. `palestras-workshops/2ff81700d1`
+- Humanidade `palestras-workshops/c3de4b5520`
+- Tecnologia sem perder pessoas de vista. `palestras-workshops/8df4420388`
+- A tecnologia aparece nas minhas conversas. `palestras-workshops/b461ac67f9`
+- Mas não como espetáculo. `palestras-workshops/9c02b1ac28`
+- Ela entra porque muda capacidades, relações, decisões, trabalho, poder e possibilidades. `palestras-workshops/7654f4c2ca`
+- E isso traz perguntas que são, no fim, profundamente humanas: `palestras-workshops/98d5ec8cec`
+- Para quê? Com quais consequências? Quem queremos continuar sendo? O que vale a pena construir? `palestras-workshops/de343f777e`
+- Movimento `palestras-workshops/d09d580976`
+- A palestra precisa continuar depois do aplauso. `palestras-workshops/bb85a35b49`
+- Eu não quero que alguém saia apenas pensando: `palestras-workshops/331ab81929`
+- “Que palestra interessante.” `palestras-workshops/56bd9d0208`
+- Quero que alguma pergunta continue trabalhando. Que uma conversa comece. Que uma decisão seja revista. Que alguma coisa antes tratada como inevitável passe a ser percebida como escolha. `palestras-workshops/8e4b6de510`
+- Que alguém consiga identificar: `palestras-workshops/49d81ea4b2`
+- qual movimento pode mudar o que acontece depois? `palestras-workshops/6b4b42520e`
+- Convenções e encontros de liderança `palestras-workshops/9ea806447b`
+- quando a organização precisa ampliar perspectiva e direção. `palestras-workshops/abd2454a8b`
+- Eventos de tecnologia e inovação `palestras-workshops/55e65e2029`
+- quando a conversa precisa ir além da ferramenta. `palestras-workshops/bfef351729`
+- Transformação e mudança organizacional `palestras-workshops/656d229ad6`
+- quando existe necessidade de envolver pessoas naquilo que está sendo construído. `palestras-workshops/87549f9796`
+- Estratégia e futuro `palestras-workshops/4288a313ab`
+- quando o desafio é discutir possibilidades sem confundir previsão com destino. `palestras-workshops/046957b9d5`
+- Cultura e desenvolvimento humano `palestras-workshops/638611bd05`
+- quando a mudança exige mais do que processos. `palestras-workshops/bdf7c67209`
+- Por que uma palestra da Ju `palestras-workshops/50b3e82f0f`
+- Não é uma palestra sobre o futuro. `palestras-workshops/d953a0d34a`
+- É uma conversa sobre o que fazemos diante dele. `palestras-workshops/d42df348f9`
+- Falar sobre futuro pode ser fascinante. Novas tecnologias. Mudanças no trabalho. Transformações sociais. Possibilidades que há pouco tempo pareciam improváveis. `palestras-workshops/9d3607946a`
+- Mas, para mim, a pergunta mais importante nunca é apenas: `palestras-workshops/fc5fc63e7e`
+- “O que está vindo?” `palestras-workshops/763ee40f34`
+- É: `palestras-workshops/3a49e04363`
+- “O que fazemos com aquilo que está vindo?” `palestras-workshops/6008083356`
+- Porque tendências não tomam decisões. Pessoas tomam. Organizações tomam. Lideranças tomam. E cada escolha ajuda a ampliar, restringir ou tornar mais provável determinado caminho. `palestras-workshops/8bd71bc366`
+- É aí que minhas palestras começam. `palestras-workshops/20d8fb67b7`
+- [imagem] `/images/ensaio/palestras-interacao-plateia.webp` (palestras-workshops/93417814e2)
+- Cena ilustrativa de Juliana interagindo com participantes de uma palestra. `palestras-workshops/985b2df8a3`
+- A boa palestra não termina quando a luz do palco apaga. `palestras-workshops/1c59b029af`
+- Ela muda a conversa que acontece depois. `palestras-workshops/330c5cab0f`
+- Para quem essa conversa faz especialmente sentido `palestras-workshops/e7578d2a60`
+- Meu trabalho no palco não é dizer à plateia qual futuro vai acontecer. `palestras-workshops/f8b1b9902f`
+- É ajudá-la a perceber: `palestras-workshops/877e91c1ed`
+- o que ainda pode existir; `palestras-workshops/4378ef1890`
+- o que está sendo escolhido sem perceber; `palestras-workshops/99f0e7bad8`
+- do que precisamos nos tornar capazes; `palestras-workshops/01c2807ec1`
+- e o que vale a pena começar a construir agora. `palestras-workshops/d692c66650`
+- É por isso que futuro, para mim, sempre termina no presente. `palestras-workshops/af67306913`
+
+## PalestrasFuturosHumanos
+
+Destino na v2: P02 (síntese); Espiral fica em /futuros-humanos. Tags do bloco: [ARTIGO]
+
+- E se pudesse ser diferente? `palestras-workshops/333d663dd3`
+- O que queremos ajudar a tornar possível? `palestras-workshops/b544606e95`
+- Do que precisamos nos tornar capazes? `palestras-workshops/cc76af012d`
+- O que podemos fazer agora para tornar esse futuro um pouco mais possível? `palestras-workshops/997831fecb`
+- Não como método linear. `palestras-workshops/069fac66e3`
+- Como movimento. `palestras-workshops/5206fc18c4`
+- Amplia o campo `palestras-workshops/58b106f9c7`
+- Ajuda a plateia a enxergar além do caminho mais provável. `palestras-workshops/22d950dbcd`
+- Expõe escolhas `palestras-workshops/29c43d1ab4`
+- Torna visível aquilo que estava sendo tratado como inevitável. `palestras-workshops/c17fea228f`
+- Conecta tecnologia e humanidade `palestras-workshops/d2f15b3d5b`
+- Sem demonizar ferramentas nem perder pessoas de vista. `palestras-workshops/ac92ef042c`
+- Devolve futuro ao presente `palestras-workshops/89d53fd99a`
+- Mostra que participação acontece nas decisões e movimentos de agora. `palestras-workshops/35195bb81c`
+- Convenções corporativas `palestras-workshops/4f44ff01ee`
+- quando a organização quer abrir um novo ciclo de reflexão e direção. `palestras-workshops/09d28a754d`
+- Encontros de liderança `palestras-workshops/ee57d258b3`
+- quando decisões sobre tecnologia, pessoas e futuro precisam ser conectadas. `palestras-workshops/f327378e95`
+- Eventos de inovação e tecnologia `palestras-workshops/c0721e6f09`
+- quando a conversa precisa ir além da ferramenta. `palestras-workshops/38386fe514`
+- Transformação organizacional `palestras-workshops/18c0b236b8`
+- quando mudança exige participação, não apenas comunicação. `palestras-workshops/ea597dcef6`
+- Fóruns de estratégia e futuro `palestras-workshops/5c566527b1`
+- quando o objetivo é discutir possibilidades sem confundir previsão com destino. `palestras-workshops/54af1599b7`
+- Futuros Humanos, a palestra-mãe `palestras-workshops/d80cdc2da5`
+- Futuros Humanos `palestras-workshops/d04f1e3186`
+- Futuros Humanos é a palestra-mãe. `palestras-workshops/c09433ec14`
+- Mas é, antes de tudo, uma tese. `palestras-workshops/9411ad77ac`
+- Vivemos num tempo em que nossas ferramentas ficam mais poderosas, nossas decisões mais rápidas e as possibilidades mais amplas. `palestras-workshops/5b94ddd162`
+- Mas capacidade não é direção. O fato de conseguirmos fazer alguma coisa não responde, sozinho, se ela vale a pena ser feita. `palestras-workshops/d100ef2151`
+- É desse ponto que nasce `palestras-workshops/8fa9d03e31`
+- Futuros Humanos `palestras-workshops/829c68d82a`
+- Uma conversa sobre: `palestras-workshops/f27368d568`
+- futuros; `palestras-workshops/1909148c99`
+- tecnologia; `palestras-workshops/a53e514a32`
+- agência; `palestras-workshops/a564617e86`
+- escolhas; `palestras-workshops/f72d57bcfd`
+- capacidades humanas; `palestras-workshops/11dc47224b`
+- e construção. `palestras-workshops/7bb27a9bd1`
+- Não para responder: `palestras-workshops/b6bfb37843`
+- “qual será o futuro?” `palestras-workshops/f17776f954`
+- Mas para abrir perguntas como: `palestras-workshops/86eba14ab9`
+- O que estamos tratando como inevitável? `palestras-workshops/1379b9f4b6`
+- Que futuro nossas decisões de hoje ajudam a tornar mais provável? `palestras-workshops/25258e0685`
+- O que queremos ajudar a tornar possível? `palestras-workshops/cc37e6ccdf`
+- Do que precisamos nos tornar capazes para sustentar essa escolha? `palestras-workshops/6ebfc0fb2f`
+- E o que podemos começar a construir agora? `palestras-workshops/423a069395`
+- [imagem] `/images/ensaio/palestras-palco-frente.webp` (palestras-workshops/29ccb45b0a)
+- Cena ilustrativa de Juliana falando no palco, vista de frente. `palestras-workshops/92a37c439d`
+- A tese em quatro movimentos `palestras-workshops/36bc516349`
+- O que a palestra provoca `palestras-workshops/3d77b5024d`
+- Para quais contextos faz mais sentido `palestras-workshops/01214af7f2`
+- O futuro mais provável não é o único futuro possível. `palestras-workshops/80f9f42125`
+- Mas futuros diferentes não acontecem apenas porque conseguimos imaginá-los. `palestras-workshops/4eed18eacd`
+- A palestra termina no palco. `palestras-workshops/c14f5ba523`
+- A pergunta, não. `palestras-workshops/909c2b526d`
+- Se ela funcionar, alguma coisa continua trabalhando depois: `palestras-workshops/627f36b7a1`
+- uma decisão; uma conversa; uma escolha; uma possibilidade antes invisível. `palestras-workshops/c08526eea8`
+- Quero levar essa palestra para minha organização `palestras-workshops/69abf3b3e9`
+- Conheça Futuros Humanos em profundidade `palestras-workshops/63f9caf98c`
+
+## PalestrasOutrasConversas
+
+Destino na v2: P04 (contexto); os cinco temas não viram catálogo. Tags do bloco: [PALESTRA 2] [WORKSHOP]
+
+- Futuros, tecnologia e humanidade `palestras-workshops/0279d06b9a`
+- Quando o desafio é discutir como tecnologias cada vez mais poderosas mudam decisões, trabalho, liderança e responsabilidade. `palestras-workshops/f37d4a2a1e`
+- Perguntas possíveis `palestras-workshops/a2891d5080`
+- O que devemos continuar decidindo? `palestras-workshops/4973a30a06`
+- Que capacidades humanas ganham importância? `palestras-workshops/6669643ae4`
+- Como usar tecnologia sem terceirizar direção? `palestras-workshops/19088b4e6b`
+- Liderança em tempos de mudança `palestras-workshops/c911ef5bb9`
+- Quando liderar exige mais do que executar um plano. `palestras-workshops/30a90d4815`
+- Uma conversa sobre incerteza, escolhas, capacidade, contexto e responsabilidade. `palestras-workshops/8799087a34`
+- Não sobre “o líder do futuro”. Mas sobre: `palestras-workshops/5c94d9a8c0`
+- o que significa liderar quando o caminho ainda não está pronto? `palestras-workshops/0d34af6c79`
+- Transformação que não fica no PowerPoint `palestras-workshops/8be5dc8ade`
+- Quando a organização já sabe que precisa mudar, mas a mudança ainda não chegou ao comportamento, às decisões ou à prática. `palestras-workshops/03b576d21d`
+- Aqui entram temas como: `palestras-workshops/7f88907b34`
+- participação; cultura; escolhas; resistência; capacidade; movimento. `palestras-workshops/c89a2952e0`
+- Possibilidade, estratégia e direção `palestras-workshops/af1ab6fa2c`
+- Quando o desafio é sair da pergunta: `palestras-workshops/cc932551bf`
+- “o que provavelmente vai acontecer?” `palestras-workshops/0900692aa3`
+- e entrar em: `palestras-workshops/d56d802c4f`
+- “o que ainda pode existir e o que queremos ajudar a tornar possível?” `palestras-workshops/bfab80724d`
+- Uma conversa especialmente útil para estratégia, planejamento, inovação e liderança. `palestras-workshops/f31424a4cf`
+- O humano diante da IA `palestras-workshops/79af94a13d`
+- Quando a discussão sobre IA precisa ir além de eficiência, ferramenta e adoção. `palestras-workshops/6b7f1ad575`
+- Perguntas como `palestras-workshops/e03cacff22`
+- O que delegamos? `palestras-workshops/a6aee83167`
+- O que não queremos terceirizar? `palestras-workshops/d863413e50`
+- Que parte da autoria queremos manter? `palestras-workshops/71d5e14f31`
+- Para quê estamos ampliando capacidade? `palestras-workshops/e2a21fec91`
+- IA entra como uma tensão contemporânea dentro da tese maior, não como eixo isolado da atuação da Ju. [MATAR] regra interna explicada ao visitante `palestras-workshops/670e37f8b8`
+- Outras conversas possíveis `palestras-workshops/704fcd5b42`
+- A tese dá direção. `palestras-workshops/8821167a26`
+- O contexto define a conversa. `palestras-workshops/4b9cc7d2bf`
+- Futuros Humanos é a palestra-mãe. Mas organizações diferentes vivem tensões diferentes. `palestras-workshops/b2e51e7ca2`
+- Algumas estão tentando entender o impacto da tecnologia sobre trabalho e liderança. Outras precisam discutir mudança, cultura e capacidade de adaptação. Algumas estão olhando para inovação. Outras, para estratégia. `palestras-workshops/db61ad76bb`
+- Outras estão simplesmente diante de uma pergunta difícil demais para caber numa palestra pronta. `palestras-workshops/c43829e04f`
+- Por isso, eu não gosto de começar pelo título da palestra. Prefiro começar por perguntas como: `palestras-workshops/7bd351bae3`
+- O que está acontecendo nessa organização agora? `palestras-workshops/1cf59388e2`
+- Que conversa ainda não está acontecendo e precisa acontecer? `palestras-workshops/43045fa274`
+- O que essa plateia precisa enxergar de outro jeito quando sair da sala? `palestras-workshops/9a68b1081e`
+- A partir daí, a conversa pode assumir caminhos diferentes. `palestras-workshops/3592249464`
+- [imagem] `/images/ensaio/palestras-interacao-plateia.webp` (palestras-workshops/6735a83acb)
+- Cena ilustrativa de Juliana interagindo com participantes de uma palestra. `palestras-workshops/a90473355c`
+- Nem toda conversa precisa existir antes do briefing. `palestras-workshops/af072a49ee`
+- Algumas palestras podem nascer especificamente de: `palestras-workshops/a5c69a207d`
+- um momento estratégico; `palestras-workshops/51f206a189`
+- uma convenção; `palestras-workshops/9e692e6598`
+- uma transformação; `palestras-workshops/d21c437199`
+- um lançamento; `palestras-workshops/7f4271310b`
+- uma mudança cultural; `palestras-workshops/62300ebba9`
+- uma provocação da liderança; `palestras-workshops/c4776881d6`
+- uma tensão específica da organização. `palestras-workshops/6960f9ef5f`
+- Nesse caso, eu construo a palestra a partir do encontro entre: `palestras-workshops/59c4232fe2`
+- minha lente `palestras-workshops/3532e47550`
+- o contexto da organização `palestras-workshops/c95970375a`
+- a experiência da plateia. `palestras-workshops/9f79086353`
+- Customizar não é trocar o logo na apresentação. É compreender por que essa conversa precisa acontecer para aquelas pessoas, naquele momento. [FRASE-ASSINATURA] mantida na v2 (P04) `palestras-workshops/2607f653d1`
+- A conversa certa não começa no meu repertório. `palestras-workshops/27d14e0b4c`
+- Começa no problema que vale a pena colocar na sala. `palestras-workshops/dbdb78d805`
+- Conte o que sua organização está tentando resolver `palestras-workshops/dd26351225`
+
+## PalestrasWorkshops
+
+Destino na v2: P05 (resumo com link para /organizacoes). Tags do bloco: [WORKSHOP]
+
+- Enxergar `palestras-workshops/7c986053eb`
+- O que está acontecendo de verdade? `palestras-workshops/037eb41de8`
+- Antes de decidir, precisamos ampliar percepção. `palestras-workshops/e6f5328fc6`
+- Que forças estão atuando? `palestras-workshops/ec55a7ee9c`
+- Que pressupostos estamos tratando como fatos? `palestras-workshops/eb7970e433`
+- Que futuro nossas práticas atuais tornam mais provável? `palestras-workshops/2be7b3b738`
+- Escolher `palestras-workshops/dfd78e10fb`
+- O que queremos ajudar a tornar possível? `palestras-workshops/64bef6c189`
+- Aqui a conversa deixa de ser apenas análise. Entram direção, prioridade e responsabilidade. `palestras-workshops/d2e3e1b162`
+- O que merece continuar? `palestras-workshops/35ba71e61c`
+- O que precisa mudar? `palestras-workshops/8d1b54642e`
+- O que não queremos ampliar? `palestras-workshops/99f12f3286`
+- Tornar-se capaz `palestras-workshops/9a2d086216`
+- Do que precisamos para sustentar essa escolha? `palestras-workshops/702fb70c51`
+- Novas capacidades? `palestras-workshops/cbd2c50fec`
+- Novos comportamentos? `palestras-workshops/44c4e18752`
+- Outro modelo de liderança? `palestras-workshops/7c3fac91c3`
+- Mais discernimento? `palestras-workshops/6c161ba704`
+- Novas formas de colaboração? `palestras-workshops/4751377d91`
+- Uma escolha sem capacidade vira intenção. `palestras-workshops/5a391c3f4a`
+- Mover `palestras-workshops/7b7836ba27`
+- Qual é o próximo movimento real? `palestras-workshops/4f99515cd1`
+- Não um plano perfeito. Um movimento possível. `palestras-workshops/2b8773da08`
+- Uma decisão. `palestras-workshops/158dbb9927`
+- Um experimento. `palestras-workshops/7718de7e69`
+- Uma conversa. `palestras-workshops/9ad847e800`
+- Uma mudança de processo. `palestras-workshops/a405baa43f`
+- Algo suficientemente concreto para alterar o que pode acontecer depois. `palestras-workshops/fe2a6c134e`
+- Times de liderança `palestras-workshops/4625979f2f`
+- quando o desafio pede alinhamento e direção. `palestras-workshops/5ce0ea4e3b`
+- Transformações organizacionais `palestras-workshops/4e15f07fdb`
+- quando pessoas precisam participar da mudança, não apenas recebê-la. `palestras-workshops/ab5ce9b505`
+- Estratégia e futuros `palestras-workshops/7b8fb73564`
+- quando é necessário explorar possibilidades e implicações antes de escolher. `palestras-workshops/88cda76b3d`
+- Tecnologia e IA `palestras-workshops/9808a4be53`
+- quando a organização precisa discutir capacidade, critérios, impacto e autoria. `palestras-workshops/da911775e5`
+- Cultura e comportamento `palestras-workshops/0099a3a44d`
+- quando aquilo que a empresa diz querer construir não aparece ainda na prática. `palestras-workshops/e631f4e8ab`
+- Workshops `palestras-workshops/f483c81f78`
+- Quando a conversa precisa sair da reflexão e `palestras-workshops/d93fd34676`
+- entrar em movimento. `palestras-workshops/de8eaf15bd`
+- Uma palestra pode abrir novas perguntas. Um workshop cria espaço para que as pessoas trabalhem sobre elas. `palestras-workshops/221d7892f9`
+- Por isso, eu não penso workshop como “palestra com dinâmica”. Penso como uma experiência em que a organização pode transformar reflexão em: `palestras-workshops/f578b3c2b7`
+- percepção; conversa; escolha; capacidade; movimento. `palestras-workshops/6a913a2169`
+- O ponto de partida pode ser Futuros Humanos. Pode ser uma questão de liderança. Uma transformação em curso. Uma tensão trazida pela tecnologia. Uma decisão estratégica. Ou um problema específico que a organização ainda não conseguiu colocar na mesa da maneira certa. `palestras-workshops/e18299e267`
+- [imagem] `/images/ensaio/palestras-workshop-02.webp` (palestras-workshops/b41ee54129)
+- Cena ilustrativa de Juliana facilitando uma atividade com post-its. `palestras-workshops/d2fc523d89`
+- Workshop bom não termina com post-its organizados na parede. `palestras-workshops/54cf453fa3`
+- Termina com alguma coisa que mudou na maneira como o grupo percebe, escolhe ou age. `palestras-workshops/09eecb1546`
+- Para quais situações faz mais sentido `palestras-workshops/abcfde43fc`
+- Um formato desenhado para o seu contexto `palestras-workshops/ef65cd48d2`
+- O formato, duração e dinâmica dependem da pergunta. `palestras-workshops/aed6a18a11`
+- Podemos trabalhar com uma equipe de liderança, um grupo menor, uma área específica ou uma audiência maior dividida em mesas de trabalho. `palestras-workshops/2a2f81cc33`
+- O workshop é desenhado a partir do resultado de reflexão e movimento que precisamos produzir — não a partir de uma agenda padrão. `palestras-workshops/2a4a711148`
+- Às vezes, a palestra abre a conversa. `palestras-workshops/f9e2fab0cb`
+- O workshop permite trabalhá-la. `palestras-workshops/3c86fb8693`
+- Um não depende obrigatoriamente do outro. A organização pode contratar apenas uma palestra. Apenas um workshop. Ou usar os dois formatos como partes de uma mesma jornada. `palestras-workshops/037702ba5a`
+- Refletir é importante. `palestras-workshops/e69abf4407`
+- Mas, em algum momento, precisamos escolher o que fazer com aquilo que percebemos. `palestras-workshops/10fcb63ca6`
+- Quero construir um workshop para minha organização `palestras-workshops/a2f2ec4d38`
+- Conte o desafio `palestras-workshops/3588e36562`
+
+## PalestrasExperiencias
+
+Destino na v2: P05 (incorporado). Tags do bloco: [WORKSHOP]
+
+- Experiência para lideranças `palestras-workshops/97de6af01a`
+- Quando um grupo precisa parar, enxergar o contexto e discutir escolhas difíceis com mais profundidade. `palestras-workshops/f6a8543f8f`
+- Pode combinar: `palestras-workshops/60ba81cb2a`
+- palestra; `palestras-workshops/a06ee463df`
+- conversa facilitada; `palestras-workshops/4c0432f98d`
+- exercícios; `palestras-workshops/18c25a9dc6`
+- cenários; `palestras-workshops/0ccdbbfd6a`
+- perguntas estratégicas; `palestras-workshops/e6e8ab62f3`
+- decisões de movimento. `palestras-workshops/a015ead519`
+- Jornada sobre futuros e tecnologia `palestras-workshops/3b9975bcfd`
+- Quando a organização quer ir além de uma palestra pontual e construir uma conversa mais contínua sobre: `palestras-workshops/0b9ee2f017`
+- futuros; tecnologia; IA; liderança; capacidades humanas; direção. `palestras-workshops/414573025d`
+- Pode acontecer em encontros sucessivos, com diferentes níveis de profundidade. `palestras-workshops/14b4faa802`
+- Experiência de futuros aplicados `palestras-workshops/e72f667e3e`
+- Quando o desafio é explorar possibilidades, tensões e implicações de um tema específico. `palestras-workshops/0f189fb1ce`
+- Aqui pode haver conexão com abordagens e projetos do ecossistema da `palestras-workshops/3c9b0cb0b8`
+- What The Future?! `palestras-workshops/fdb0aee4f7`
+- , quando fizer sentido. `palestras-workshops/cdb7a76db8`
+- Experiência de transformação `palestras-workshops/15634aab85`
+- Quando a questão não é apenas compreender o que está mudando. É ajudar pessoas a perceber: `palestras-workshops/09e5768277`
+- o que precisa mudar; `palestras-workshops/405bdda2ab`
+- o que precisa ser desenvolvido; `palestras-workshops/763a1ed2d8`
+- o que precisa ser abandonado; `palestras-workshops/02e6ae2bc9`
+- e o que precisa começar. `palestras-workshops/f361a7400c`
+- Dependendo do contexto, essa conversa pode se conectar a elementos do universo EPIC ou a outras construções específicas. Mas sempre com separação clara entre tese, produto e projeto. `palestras-workshops/abf6a33fef`
+- Experiências customizadas `palestras-workshops/d8277e966e`
+- Alguns desafios `palestras-workshops/922ef6a023`
+- não cabem num formato pronto. `palestras-workshops/d257c67d7a`
+- Às vezes, a organização não precisa de uma palestra. Nem de um workshop. `palestras-workshops/b925e194f0`
+- Precisa construir uma experiência capaz de provocar uma conversa específica, para pessoas específicas, num momento específico. `palestras-workshops/1941eb632f`
+- Pode ser uma mudança estratégica. Uma discussão sobre tecnologia e futuro. Uma transição de liderança. Um processo de transformação. Uma convenção que precisa marcar um novo ciclo. Uma tensão cultural. Uma pergunta ainda mal formulada, mas importante demais para ser ignorada. `palestras-workshops/5005be6fb5`
+- Nesses casos, eu prefiro não começar pelo formato. `palestras-workshops/cdc64f971b`
+- Prefiro começar pelo desafio. `palestras-workshops/efc2dbf648`
+- [imagem] `/images/ensaio/palestras-workshop-01.webp` (palestras-workshops/8c4ba35c4f)
+- Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa. `palestras-workshops/be43628fe6`
+- A experiência não nasce da quantidade de horas. Nasce da pergunta que precisa ser trabalhada. `palestras-workshops/2ba286c389`
+- O objetivo é criar as condições para que uma conversa importante aconteça com mais profundidade, clareza e participação. `palestras-workshops/3de4def21a`
+- Às vezes, o trabalho não é levar uma resposta para a sala. É construir a sala certa para que a pergunta possa ser enfrentada. `palestras-workshops/51661e6724`
+- Você não precisa chegar sabendo qual formato contratar. `palestras-workshops/fe45da6dbc`
+- Pode chegar com: `palestras-workshops/3fdccce663`
+- uma pergunta; `palestras-workshops/f46ef8b414`
+- um desafio; `palestras-workshops/a82f176992`
+- um evento; `palestras-workshops/eaad8b72e5`
+- uma mudança; `palestras-workshops/86dc89100e`
+- uma tensão; `palestras-workshops/2dfa3fcd24`
+- uma decisão importante. `palestras-workshops/048114f3b3`
+- A partir daí, desenhamos a experiência. `palestras-workshops/314b177d0c`
+- O formato vem depois. `palestras-workshops/815654b67e`
+- Primeiro precisamos entender o que vale a pena colocar na sala. `palestras-workshops/f72767cf64`
+- Conte o desafio `palestras-workshops/d8bc39e83e`
+- Fale com a Ju `palestras-workshops/b2feb26161`
+
+## PalestrasLastro
+
+Destino na v2: P03 (somente provas reais do painel); lastro biográfico mora em /ju. Tags do bloco: [PESQUISAR]
+
+- Ju em ação `palestras-workshops/127e7bde47`
+- Tecnologia e grandes empresas `palestras-workshops/3a2dc72940`
+- Mais de duas décadas de trajetória entre tecnologia, vendas complexas e organizações de grande porte. `palestras-workshops/a3334ec773`
+- Passagens por empresas como `palestras-workshops/aedc3a2644`
+- EMC e Oracle [PESQUISAR] confirmar o que pode ser apresentado publicamente `palestras-workshops/a4ba2c2bb0`
+- , trabalhando com projetos, clientes e decisões que precisavam funcionar fora do PowerPoint. `palestras-workshops/f1627eaf3a`
+- 486 [PESQUISAR] métrica não confirmada; não usar em público `palestras-workshops/d0802a3b59`
+- % da meta anual `palestras-workshops/64303fe322`
+- +US$ [PESQUISAR] métrica não confirmada; não usar em público `palestras-workshops/1628aaca82`
+- 20 [PESQUISAR] métrica não confirmada; não usar em público `palestras-workshops/05bd3fd7db`
+- milhões em receita [PESQUISAR] métrica não confirmada; não usar em público `palestras-workshops/20d0bb065b`
+- Empreendedorismo e construção `palestras-workshops/9471e5f046`
+- +13 anos construindo e liderando a A2F [PESQUISAR] confirmar recorte temporal e papel [PESQUISAR] confirmar o que pode ser apresentado publicamente `palestras-workshops/182a448036`
+- Do lado de quem precisava vender, entregar, contratar, liderar, crescer, corrigir e sustentar uma empresa de tecnologia. `palestras-workshops/a069c76a6d`
+- Depois vieram outras construções e novos problemas: HomeCare+. Ayumana. Projetos. Produtos. Experimentos. [PESQUISAR] confirmar o que pode ser apresentado publicamente `palestras-workshops/68d4ee9b3b`
+- Alguns funcionaram como imaginado. Outros exigiram reconstrução. Isso também é parte do lastro. `palestras-workshops/3b4d4fa29f`
+- Mercado no presente `palestras-workshops/940e079a70`
+- A Ju não conta apenas histórias de uma carreira passada. Ela continua próxima de: `palestras-workshops/b232bc3a99`
+- clientes; negócios; vendas; tecnologia; estratégia; operação. `palestras-workshops/eec111a1a0`
+- Não deixei o mercado para falar sobre ele. Continuo dentro dele. `palestras-workshops/07622dc841`
+- Pessoas e futuros `palestras-workshops/32a2bde890`
+- À experiência de negócios se somaram anos investigando transformação humana, escolhas, capacidade e mudança. `palestras-workshops/8c7dfecaee`
+- E, mais recentemente, Estudos de Futuros e Futurismo Humanista. `palestras-workshops/33e2a083c0`
+- É dessa combinação menos óbvia que nasce a conversa atual: `palestras-workshops/46e33173dc`
+- tecnologia sem esquecer gente; humanidade sem ignorar realidade; futuros sem abandonar o presente. `palestras-workshops/494996dced`
+- Ju no palco `palestras-workshops/ea759d34e3`
+- O palco é onde a conversa acontece. `palestras-workshops/2dcea6eefd`
+- O lastro vem de muito antes. `palestras-workshops/96bf703f3a`
+- Eu não falo sobre tecnologia depois de observá-la de longe. Passei boa parte da minha carreira dentro dela. `palestras-workshops/aa0b50801d`
+- Não falo sobre empresas apenas a partir de modelos. Construí negócios, liderei equipes, vendi, tomei decisões, perdi dinheiro, mudei de direção e comecei novamente. `palestras-workshops/612aae025c`
+- Não falo sobre transformação como uma ideia abstrata. Passei anos tentando compreender como pessoas, empresas e sistemas realmente mudam — e o que acontece quando não mudam. `palestras-workshops/254d03210b`
+- E não estudo futuros porque deixei o mundo real para trás. `palestras-workshops/cb2895ec99`
+- Continuo dentro dele. `palestras-workshops/9dc199bbdd`
+- Mercado · Clientes · Tecnologia · Liderança · Empresas · Decisões · Consequências `palestras-workshops/547e9b1732`
+- É desse lugar que eu subo ao palco. `palestras-workshops/ec45772aef`
+- [imagem] `/images/ensaio/home-03-palco-vertical.webp` (palestras-workshops/fbab4516e3)
+- Cena ilustrativa de Juliana no palco, em enquadramento vertical. `palestras-workshops/28d5e701eb`
+- Autoridade, para mim, não é parecer ter todas as respostas. É ter vivido perguntas suficientes para saber quais merecem entrar na sala. `palestras-workshops/ea337e00c8`
+- Quando falo sobre transformação, conheço o peso de tentar transformar. `palestras-workshops/769fd13d12`
+- Quando falo sobre tecnologia, conheço o mundo que existe por trás da ferramenta. `palestras-workshops/d51b7de3b3`
+- Quando falo sobre futuros, continuo lidando com o presente. `palestras-workshops/d12e854546`
+- A palestra acontece no palco. `palestras-workshops/ded8c50e8b`
+- A credibilidade começa muito antes dele. `palestras-workshops/e3781428a6`
+- Veja a Ju em ação `palestras-workshops/0e83986998`
+- Quero levar essa conversa para meu evento `palestras-workshops/ecb477169a`
+
+## PalestrasProcesso
+
+Destino na v2: P06 (três momentos). Tags do bloco: [WORKSHOP] [POST]
+
+- Escutar `palestras-workshops/9d708fc951`
+- O que está acontecendo de verdade? `palestras-workshops/b80e049194`
+- Antes de pensar em título, roteiro ou dinâmica, precisamos compreender o contexto. `palestras-workshops/62b63757da`
+- Aqui entram perguntas como: `palestras-workshops/8c94152033`
+- Qual é o momento da organização? `palestras-workshops/1844d636aa`
+- Quem estará na sala? `palestras-workshops/445d772149`
+- O que aconteceu antes desse encontro? `palestras-workshops/03273dba6d`
+- Que decisão, mudança ou tensão está por trás dele? `palestras-workshops/4b2e60e458`
+- O que o contratante espera que as pessoas percebam, sintam ou discutam depois? `palestras-workshops/aede07d17b`
+- O briefing, para mim, não serve apenas para coletar informação. `palestras-workshops/bd53684206`
+- Serve para descobrir qual é a conversa real. `palestras-workshops/f655528a55`
+- Encontrar a pergunta certa `palestras-workshops/762b316274`
+- Às vezes, o pedido chega como: `palestras-workshops/64f3982b13`
+- “Queremos uma palestra sobre IA.” `palestras-workshops/e31a8e4dce`
+- Mas a pergunta real pode ser: `palestras-workshops/55964045b9`
+- “Como queremos liderar num mundo em que parte do trabalho será automatizada?” `palestras-workshops/26143b9069`
+- Ou o pedido chega como: `palestras-workshops/7eeb1d818d`
+- “Precisamos falar de mudança.” `palestras-workshops/8610eba6c0`
+- E a tensão pode ser: `palestras-workshops/48efa23e0c`
+- “Por que todo mundo sabe que precisa mudar, mas nada muda na prática?” `palestras-workshops/eae55351b3`
+- É aqui que personalização começa de verdade. Não em trocar exemplos. Em encontrar a pergunta capaz de organizar a experiência. `palestras-workshops/14d311c194`
+- Desenhar a experiência `palestras-workshops/c33efde486`
+- Qual formato serve melhor à pergunta? `palestras-workshops/531a3f45f0`
+- A partir do contexto, definimos: palestra; workshop; conversa; experiência híbrida; sequência de encontros; ou outra construção. `palestras-workshops/e96bf9f4d5`
+- Também ajustamos: profundidade; linguagem; exemplos; ritmo; participação; duração; e nível de provocação. `palestras-workshops/c1feebf4c0`
+- Uma convenção de 1.000 pessoas não pede a mesma arquitetura de uma reunião com 15 executivos. E não deveria parecer que pede. `palestras-workshops/517ed7afbb`
+- Customizar sem perder a tese `palestras-workshops/9180014576`
+- Customização não significa dizer o que a organização quer ouvir. `palestras-workshops/0798df9b4a`
+- A tese continua existindo. As perguntas continuam tendo tensão. A Ju não entra na sala para validar automaticamente aquilo em que todos já acreditam. `palestras-workshops/5b799b6cba`
+- O trabalho é encontrar o ponto de encontro entre: `palestras-workshops/2bac9de4fd`
+- a lente da Ju; o contexto da organização; e aquilo que a plateia precisa ser capaz de enxergar. `palestras-workshops/194810ce24`
+- A experiência acontece `palestras-workshops/eecea95788`
+- No dia, a entrega não é apenas “seguir slides”. `palestras-workshops/8424a8d714`
+- Existe: presença; escuta; ritmo; leitura da sala; espaço para silêncio; humor quando cabe; pergunta; adaptação. `palestras-workshops/2bdbb39aa4`
+- Especialmente em workshops e experiências menores, o que surge na sala também participa do trabalho. `palestras-workshops/ed690525c3`
+- Existe roteiro. Mas existe gente. `palestras-workshops/f9ebefaab8`
+- E depois? `palestras-workshops/7f7a46266e`
+- Nem todo trabalho precisa continuar. Às vezes, uma palestra cumpre perfeitamente sua função e termina ali. `palestras-workshops/1fba4bfd18`
+- Outras vezes, ela abre uma questão que merece aprofundamento. Daí podem nascer: `palestras-workshops/e06c97a392`
+- workshops; encontros de liderança; experiências customizadas; programas; projetos com a WTF; ou outras construções adequadas ao problema. `palestras-workshops/fad49b0e06`
+- O próximo passo só existe se fizer sentido para aquilo que a conversa abriu. `palestras-workshops/a64e93bb23`
+- Como construímos cada trabalho `palestras-workshops/f059b72436`
+- Não começamos pelo slide. `palestras-workshops/c89e815e0e`
+- Começamos pelo contexto. `palestras-workshops/b6d104617c`
+- Uma palestra pode ter uma tese forte. Um workshop pode ter uma arquitetura consistente. Uma experiência pode ter perguntas poderosas. `palestras-workshops/10788a8612`
+- Mas nada disso substitui entender: `palestras-workshops/4a9c568907`
+- quem estará na sala; `palestras-workshops/392b388157`
+- por que aquelas pessoas estarão juntas; `palestras-workshops/17baba7f43`
+- o que a organização está vivendo; `palestras-workshops/1f071a840e`
+- o que já foi dito; `palestras-workshops/bd0251cb26`
+- o que ainda não foi dito; `palestras-workshops/ae4b2d402d`
+- e por que essa conversa precisa acontecer agora. `palestras-workshops/6edb571970`
+- É a partir daí que o trabalho começa. `palestras-workshops/11a633260c`
+- [imagem] `/images/ensaio/organizacoes-conversa-lideranca.webp` (palestras-workshops/3f35a3a213)
+- Cena ilustrativa de Juliana em conversa individual com uma liderança. `palestras-workshops/99a6fff207`
+- Customização não é adaptar uma apresentação. `palestras-workshops/f91f4b02a8`
+- É construir relevância. `palestras-workshops/2b1ef2186a`
+- A melhor experiência não parece ter sido adaptada para aquela organização. `palestras-workshops/54c9c90c7e`
+- Parece ter nascido para ela. `palestras-workshops/6240f8861e`
+- Vamos construir essa conversa `palestras-workshops/a5adb84b1e`
+
+## PalestrasConversao
+
+Destino na v2: P07 (contratação).
+
+- Quero uma palestra `palestras-workshops/850a526b79`
+- Para evento, convenção ou encontro de liderança. `palestras-workshops/8e5847dd25`
+- Quero um workshop `palestras-workshops/ab04273eca`
+- Para uma equipe que precisa trabalhar sobre uma questão. `palestras-workshops/240c64f531`
+- Ainda não sei o formato `palestras-workshops/de80e5bd01`
+- Tenho um desafio e quero conversar. `palestras-workshops/a9118257fa`
+- Contratação `palestras-workshops/8e4b544952`
+- [imagem] `/images/ensaio/contato-sorriso-vertical.webp` (palestras-workshops/813ecbe2fb)
+- Retrato acolhedor de Juliana com notebook à mesa. `palestras-workshops/3492b073bf`
+- Se essa conversa precisa acontecer na sua organização, `palestras-workshops/83155bfcb7`
+- vamos começar por aqui. `palestras-workshops/a1e6f0deb1`
+- Talvez você já saiba exatamente o que procura. `palestras-workshops/1cae2d2a2d`
+- Uma palestra para uma convenção. Um workshop para lideranças. Uma experiência para uma transformação em curso. `palestras-workshops/67c36af134`
+- Ou talvez você só saiba que existe uma conversa que precisa acontecer. `palestras-workshops/97b68d57c1`
+- Os dois pontos de partida funcionam. `palestras-workshops/7ed6da5d11`
+- O primeiro passo é entender: `palestras-workshops/3756d2beb8`
+- o que está acontecendo; `palestras-workshops/33abef8279`
+- quem estará na sala; `palestras-workshops/c382479285`
+- por que esse encontro importa; `palestras-workshops/e2a757f599`
+- e o que você gostaria que pudesse ser diferente depois dele. `palestras-workshops/588dc704e3`
+- A partir daí, conseguimos pensar juntos no formato que faz mais sentido. `palestras-workshops/1dc7725945`
+- Três pontos de partida. O mesmo destino: a conversa certa. `palestras-workshops/bb53922632`
+- Qual conversa precisa acontecer `palestras-workshops/7b4e598124`
+- agora? `palestras-workshops/95655f8bfa`
+- O que está acontecendo na sua organização e que conversa você acredita que precisa acontecer agora? `palestras-workshops/1370e63d1d`
+- Vamos construir essa conversa `palestras-workshops/70fc213211`
+- Cada conversa começa pelo contexto. Nenhum formato é empurrado antes de entendermos a necessidade. `palestras-workshops/f78d18e4b8`
+- Prefere falar direto? `palestras-workshops/c8eb2b60bd`
+- WhatsApp comercial `palestras-workshops/280964141c`
+- Temos futuros para construir. [FRASE-ASSINATURA] `palestras-workshops/9230b4e41f`
+- Talvez essa conversa seja um dos lugares por onde começar. `palestras-workshops/8249219898`
