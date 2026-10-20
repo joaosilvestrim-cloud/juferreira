@@ -1,5 +1,5 @@
 /** Endereço público do site (trocar pelo domínio próprio quando existir, via NEXT_PUBLIC_SITE_URL). */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://juferreira.vercel.app").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.juferreira.com.br").replace(/\/$/, "");
 
 /** Navegação global (Site Master §7) e destinos padrão de CTA (Site Master §16–17). */
 export const NAV = [
