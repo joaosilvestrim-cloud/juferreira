@@ -1,3 +1,4 @@
+import { getExternal } from "@/lib/content";
 import { photoPosition } from "@/lib/photo-position";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
 import { Body, Display, Em, Eyebrow, HandNote, Lead, StickyNote, Title } from "@/components/ui/Typography";
-import { CONTACT_ROUTES, EXTERNAL } from "@/lib/site";
+import { CONTACT_ROUTES } from "@/lib/site";
 import { ContactForm } from "./ContactForm";
 import { ContatoIcon, IconDisc } from "./Icons";
 import { epicHref, type IconName } from "./routes";
@@ -588,7 +589,8 @@ function ExternalCta({ href, children, variant = "primary" }: { href: string; ch
   );
 }
 
-export function ContatoCanais() {
+export async function ContatoCanais() {
+  const EXTERNAL = await getExternal();
   const email = EXTERNAL.email;
   const whatsapp = EXTERNAL.whatsapp;
   return (

@@ -1,10 +1,11 @@
+import { getExternal } from "@/lib/content";
 import type { ReactNode } from "react";
 import { ButtonLink } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
 import { Body, Dash, Display, Em, NumberBadge, QuoteCard } from "@/components/ui/Typography";
-import { CONTACT_ROUTES, EXTERNAL, LINKS } from "@/lib/site";
+import { CONTACT_ROUTES, LINKS } from "@/lib/site";
 import { FORM_ANCHOR } from "./OrgBlocksA";
 import { OrgContactForm } from "./OrgContactForm";
 import { DotList, IconBubble, Lines, type OrgIconName, Pull, ReadMore } from "./parts";
@@ -726,7 +727,8 @@ export function OrgDepois() {
 }
 
 /* ───────────────────────── BLOCO 9 — FECHAMENTO E CONVERSÃO ───────────────────────── */
-export function OrgFechamento() {
+export async function OrgFechamento() {
+  const EXTERNAL = await getExternal();
   return (
     <Section tone="wine" padded={false} label="Fechamento e conversão" id={FORM_ANCHOR.slice(1)}>
       <Stroke shape="orbit" className="absolute -left-24 top-10 hidden h-[70%] w-[45%] opacity-60 lg:block" width={2.5} color="var(--jf-red-400)" />

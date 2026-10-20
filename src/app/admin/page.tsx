@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import { CONTACT_STATUS, CONTACT_STATUS_LABEL, FIELD_LABEL, NEWS_STATUS, ROUTE_LABEL } from "@/lib/admin";
 import { isValidSession, SESSION_COOKIE } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { logout, setContactStatus, setNewsletterStatus } from "./actions";
+import { setContactStatus, setNewsletterStatus } from "./actions";
 import { StatusSelect } from "./StatusSelect";
 
 type Search = Promise<Record<string, string | string[] | undefined>>;
@@ -66,21 +66,9 @@ async function Dashboard({ searchParams }: { searchParams: Search }) {
 
   return (
     <div className="mx-auto max-w-[1200px] px-5 py-8 sm:px-8 sm:py-12">
-      <header className="flex flex-wrap items-end justify-between gap-6">
-        <div>
-          <p className="jf-eyebrow text-red-brand">Ju Ferreira · Painel</p>
-          <h1 className="jf-display mt-2 text-[44px]">Conversas</h1>
-        </div>
-        <div className="flex flex-wrap items-center gap-3">
-          <Link href="/" className="text-[14px] text-ink-500 underline-offset-4 hover:underline">
-            Ver site
-          </Link>
-          <form action={logout}>
-            <button className="min-h-10 rounded-full border border-ink-900/25 px-4 text-[14px] hover:bg-ink-900 hover:text-cream-50">
-              Sair
-            </button>
-          </form>
-        </div>
+      <header>
+        <h1 className="jf-display text-[44px]">Conversas</h1>
+        <p className="mt-1 text-[15px] text-ink-500">Contatos recebidos pelo site e inscritos da newsletter.</p>
       </header>
 
       <dl className="mt-8 grid gap-4 sm:grid-cols-3">

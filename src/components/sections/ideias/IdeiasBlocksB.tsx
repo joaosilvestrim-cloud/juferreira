@@ -1,3 +1,4 @@
+import { getReadingRefs } from "@/lib/content";
 import { photoPosition } from "@/lib/photo-position";
 import Image from "next/image";
 import { ButtonLink } from "@/components/ui/Button";
@@ -193,7 +194,17 @@ export function IdeiasTerca() {
 }
 
 /* ───────────────────────── BLOCO 7 — LEITURAS, REFERÊNCIAS E REPERTÓRIO ───────────────────────── */
-export function IdeiasRepertorio() {
+export async function IdeiasRepertorio() {
+  // referências cadastradas no painel; sem cadastro, mostra os espaços "a definir"
+  const refs = await getReadingRefs();
+  const mesaDb = refs.filter((r) => r.section === "mesa");
+  const voltamDb = refs.filter((r) => r.section === "voltam");
+  const mesa = mesaDb.length
+    ? mesaDb.slice(0, 3).map((r, i) => ({ id: `db-${r.id}`, placeholder: false, title: r.title, author: r.author ?? "", note: r.note ?? "", img: r.cover ?? NA_MESA_AGORA[i % NA_MESA_AGORA.length].img, link: r.link }))
+    : NA_MESA_AGORA.map((r) => ({ ...r, link: null as string | null }));
+  const voltam = voltamDb.length
+    ? voltamDb.map((r) => ({ id: `db-${r.id}`, placeholder: false, title: r.title, author: r.author ?? "", note: r.note ?? "", link: r.link }))
+    : REFERENCIAS_QUE_VOLTAM.map((r) => ({ ...r, link: null as string | null }));
   return (
     <Section id="repertorio" label="Leituras, referências e repertório">
       <Container className="grid gap-10 lg:grid-cols-[1fr_1.05fr_0.9fr] lg:gap-8">
@@ -223,22 +234,30 @@ export function IdeiasRepertorio() {
 
       <Container className="mt-16 grid gap-12 lg:grid-cols-[1.25fr_1fr_1fr] lg:gap-0 lg:divide-x lg:divide-red-brand/40">
         {/* NA MESA AGORA — 3 referências, área que gira com mais frequência. PLACEHOLDER. */}
-        <div id="na-mesa-agora" className="lg:pr-8" data-placeholder="referencias">
+        <div id="na-mesa-agora" className="lg:pr-8" data-placeholder={mesaDb.length ? undefined : "referencias"}>
           <Title as="h3" className="uppercase">
             Na mesa agora
           </Title>
           <p className="mt-1 text-[15px] text-ink-700">O que estou lendo, estudando ou investigando neste momento.</p>
           <ul className="mt-6 grid gap-4 sm:grid-cols-3">
-            {NA_MESA_AGORA.map((r) => (
-              <li key={r.id} className="overflow-hidden rounded-[var(--jf-radius-sm)] border border-dashed border-ink-900/30 bg-cream-50">
+            {mesa.map((r) => (
+              <li key={r.id} className={`overflow-hidden rounded-[var(--jf-radius-sm)] border bg-cream-50 ${r.placeholder ? "border-dashed border-ink-900/30" : "border-ink-900/10"}`}>
                 {r.img && (
                   <div className="relative aspect-[5/3]">
-                    <Image src={r.img} alt="" fill sizes="(min-width:640px) 14vw, 100vw" className="object-cover opacity-80 grayscale-[30%]" style={{ objectPosition: photoPosition(r.img) }} />
+                    <Image src={r.img} alt="" fill sizes="(min-width:640px) 14vw, 100vw" className={`object-cover ${r.placeholder ? "opacity-80 grayscale-[30%]" : ""}`} style={{ objectPosition: photoPosition(r.img) }} />
                   </div>
                 )}
                 <div className="p-4">
-                  <p className="jf-eyebrow text-[10px] text-red-brand">Placeholder</p>
-                  <p className="mt-1 font-serif text-[19px] leading-tight">{r.title}</p>
+                  {r.placeholder && <p className="jf-eyebrow text-[10px] text-red-brand">Placeholder</p>}
+                  <p className="mt-1 font-serif text-[19px] leading-tight">
+                    {r.link ? (
+                      <a href={r.link} target="_blank" rel="noopener noreferrer" className="hover:text-red-brand">
+                        {r.title}
+                      </a>
+                    ) : (
+                      r.title
+                    )}
+                  </p>
                   <p className="text-[13px] text-ink-500">{r.author}</p>
                   <p className="mt-2 text-[13px] italic leading-snug text-ink-700">{r.note}</p>
                 </div>
@@ -250,14 +269,14 @@ export function IdeiasRepertorio() {
           </p>
         </div>
 
-        <div className="lg:px-8" data-placeholder="referencias">
+        <div className="lg:px-8" data-placeholder={voltamDb.length ? undefined : "referencias"}>
           <Title as="h3" className="uppercase">
             Referências que voltam
           </Title>
           <p className="mt-1 text-[15px] text-ink-700">Algumas ideias não ficam na estante. Continuam reaparecendo.</p>
           <ul className="mt-6 space-y-2">
-            {REFERENCIAS_QUE_VOLTAM.map((r, i) => (
-              <li key={r.id} className="flex items-baseline gap-3 rounded-[var(--jf-radius-sm)] border border-dashed border-ink-900/30 px-4 py-3">
+            {voltam.map((r, i) => (
+              <li key={r.id} className={`flex items-baseline gap-3 rounded-[var(--jf-radius-sm)] border px-4 py-3 ${r.placeholder ? "border-dashed border-ink-900/30" : "border-ink-900/10 bg-cream-50"}`}>
                 <span className="font-serif text-[18px] text-red-brand">{String(i + 1).padStart(2, "0")}</span>
                 <span className="font-serif text-[18px]">{r.title}</span>
                 <span className="ml-auto text-[12px] text-ink-500">{r.author}</span>

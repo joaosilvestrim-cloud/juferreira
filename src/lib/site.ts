@@ -22,21 +22,11 @@ export const CONTACT_ROUTES = {
 } as const;
 
 /**
- * Destinos externos ainda PENDENTES (PENDING_ASSETS P2).
- * Enquanto vazios, os CTAs apontam para Contato com a rota correspondente.
+ * Links externos: cadastrados no painel /admin (Configurações). Para valores no HTML use getExternal() de
+ * @/lib/content; para botões, os redirecionadores /ir/<destino> abaixo.
  */
-export const EXTERNAL = {
-  epic247: "", // URL final do EPIC247
-  wtf: "", // URL What The Future?!
-  linkedin: "", // perfil LinkedIn da Ju
-  linkedinPage: "", // página Ju Ferreira no LinkedIn
-  instagram: "",
-  email: "", // e-mail oficial de contato
-  whatsapp: "", // só publicar quando existir número comercial dedicado
-} as const;
-
 export const LINKS = {
-  epic247: EXTERNAL.epic247 || CONTACT_ROUTES.epic,
-  wtf: EXTERNAL.wtf || CONTACT_ROUTES.futuros,
+  epic247: "/ir/epic247",
+  wtf: "/ir/wtf",
   newsletter: "/ideias#uma-terca-feira-qualquer",
 } as const;

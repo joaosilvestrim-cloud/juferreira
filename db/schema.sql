@@ -47,3 +47,76 @@ create table if not exists public.admin_login_attempts (
 );
 create index if not exists admin_login_attempts_ip_idx on public.admin_login_attempts (ip_hash, created_at);
 alter table public.admin_login_attempts enable row level security;
+
+-- ===================== CONTEÚDO EDITÁVEL PELO /admin =====================
+
+-- Configurações do site (chave → valor). Ex.: email, whatsapp, linkedin, instagram, epic247_url, wtf_url, notify_to
+create table if not exists public.site_settings (
+  key        text primary key,
+  value      text not null default '',
+  updated_at timestamptz not null default now()
+);
+
+-- Imagens enviadas pelo painel (servidas em /midia/<id>)
+create table if not exists public.media (
+  id           uuid primary key default gen_random_uuid(),
+  created_at   timestamptz not null default now(),
+  filename     text,
+  content_type text not null,
+  bytes        bytea not null,
+  size         int not null
+);
+
+-- Artigos de Ideias (página própria em /ideias/<slug>)
+create table if not exists public.articles (
+  id           bigint generated always as identity primary key,
+  created_at   timestamptz not null default now(),
+  updated_at   timestamptz not null default now(),
+  slug         text not null unique,
+  title        text not null,
+  subtitle     text,
+  excerpt      text,
+  question     text,                       -- "pergunta de entrada"
+  body         text not null default '',   -- texto do artigo (parágrafos separados por linha em branco)
+  territories  text[] not null default '{}',
+  epistemic    text,                       -- tese | sintese | hipotese | investigacao
+  cover_id     uuid references public.media(id) on delete set null,
+  featured     boolean not null default false,
+  status       text not null default 'rascunho' check (status in ('rascunho','publicado')),
+  published_at timestamptz
+);
+create index if not exists articles_pub_idx on public.articles (status, published_at desc);
+
+-- Referências / repertório (Ideias — bloco 7)
+create table if not exists public.reading_refs (
+  id         bigint generated always as identity primary key,
+  created_at timestamptz not null default now(),
+  section    text not null check (section in ('mesa','voltam')),
+  title      text not null,
+  author     text,
+  note       text,                          -- "por que isso está na minha mesa agora?"
+  territory  text,
+  link       text,
+  cover_id   uuid references public.media(id) on delete set null,
+  sort       int not null default 0,
+  visible    boolean not null default true
+);
+
+-- Edições da newsletter "Uma Terça-feira Qualquer"
+create table if not exists public.newsletter_issues (
+  id         bigint generated always as identity primary key,
+  created_at timestamptz not null default now(),
+  subject    text not null,
+  preheader  text,
+  body       text not null,
+  status     text not null default 'rascunho' check (status in ('rascunho','enviando','enviada')),
+  sent_at    timestamptz,
+  sent_count int not null default 0,
+  fail_count int not null default 0
+);
+
+alter table public.site_settings     enable row level security;
+alter table public.media             enable row level security;
+alter table public.articles          enable row level security;
+alter table public.reading_refs      enable row level security;
+alter table public.newsletter_issues enable row level security;

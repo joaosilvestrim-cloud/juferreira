@@ -1,4 +1,5 @@
 import { FIELD_LABEL, ROUTE_LABEL } from "@/lib/admin";
+import { readSettings } from "@/lib/content";
 import { SITE_URL } from "@/lib/site";
 
 /**
@@ -43,7 +44,9 @@ type Contact = {
 /** Avisa a equipe que chegou um contato novo (com resposta direta para a pessoa). */
 export async function notifyNewContact(c: Contact) {
   if (isTestAddress(c.email)) return;
-  const to = (process.env.CONTACT_NOTIFY_TO ?? "").split(",").map((s) => s.trim()).filter(Boolean);
+  // destinatários: painel (Configurações → "Avisos de contato para") ou variável de ambiente
+  const s = await readSettings();
+  const to = (s.notify_to || process.env.CONTACT_NOTIFY_TO || "").split(/[,;\s]+/).map((x) => x.trim()).filter((x) => x.includes("@"));
   if (!to.length) return;
   const rota = c.route ? ROUTE_LABEL[c.route] ?? c.route : "Sem rota";
   const rows = [
@@ -78,7 +81,10 @@ export async function notifyNewContact(c: Contact) {
 
 /** Confirmação para quem escreveu (texto da copy de Contato). Ativada com CONTACT_AUTOREPLY=1. */
 export async function confirmToSender(c: Pick<Contact, "name" | "email">) {
-  if (process.env.CONTACT_AUTOREPLY !== "1" || isTestAddress(c.email)) return;
+  if (isTestAddress(c.email)) return;
+  const s = await readSettings();
+  const on = s.autoreply ? s.autoreply === "1" : process.env.CONTACT_AUTOREPLY === "1";
+  if (!on) return;
   const first = c.name.split(" ")[0];
   await send({
     from: from(),

@@ -1,3 +1,4 @@
+import { getPublishedArticles } from "@/lib/content";
 import { photoPosition } from "@/lib/photo-position";
 import Image from "next/image";
 import Link from "next/link";
@@ -554,13 +555,18 @@ export function HomePessoas() {
 }
 
 /* ───────────────────────── BLOCO 8 — IDEIAS ───────────────────────── */
-export function HomeIdeias() {
-  // ATENÇÃO: artigos ilustrativos (títulos do mockup). Exibir apenas artigos reais publicados antes do go-live.
-  const articles = [
+export async function HomeIdeias() {
+  // artigos publicados no painel; sem publicações, mostra a arquitetura editorial ilustrativa
+  const published = (await getPublishedArticles()).slice(0, 3);
+  const TAG: Record<string, string> = { futuros: "Futuros", tecnologia: "Tecnologia", escolhas: "Escolhas", lideranca: "Liderança", "vida-real": "Vida real" };
+  const illustrative = [
     { img: "/images/ensaio/contexto-tecnologia-humana.webp", tag: "Tecnologia", t: "Qual futuro estamos construindo quando tudo fica mais fácil?" },
     { img: "/images/ensaio/ju-caminhada-movimento.webp", tag: "Humanidade", t: "O que a vida real nos ensina sobre transformação?" },
     { img: "/images/ensaio/contexto-caderno-escolhas.webp", tag: "Escolhas", t: "Disciplina não é rigidez. É cuidado com o futuro que importa." },
   ];
+  const articles = published.length
+    ? published.map((a, i) => ({ img: a.cover ?? illustrative[i % 3].img, tag: TAG[a.territories[0]] ?? "Ideias", t: a.title, href: `/ideias/${a.slug}` }))
+    : illustrative.map((a) => ({ ...a, href: "/ideias" }));
   return (
     <Section label="Ideias" className="pt-0 lg:pt-0">
       <div className="grid lg:grid-cols-[55%_45%]">
@@ -600,10 +606,10 @@ export function HomeIdeias() {
           <p className="mt-2 text-ink-700">
             Ensaios e investigações sobre futuros, tecnologia, humanidade, escolhas, liderança e transformação.
           </p>
-          <ul className="mt-8 grid gap-8 sm:grid-cols-3 sm:gap-6" data-placeholder="artigos">
+          <ul className="mt-8 grid gap-8 sm:grid-cols-3 sm:gap-6" data-placeholder={published.length ? undefined : "artigos"}>
             {articles.map((a) => (
               <li key={a.t}>
-                <Link href="/ideias" className="group block">
+                <Link href={a.href} className="group block">
                   <div className="relative aspect-[12/5] overflow-hidden rounded-sm">
                     <Image src={a.img} alt="" fill sizes="(min-width:640px) 20vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" style={{ objectPosition: photoPosition(a.img) }} />
                   </div>

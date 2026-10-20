@@ -1,3 +1,4 @@
+import { getPublishedArticles, type Article as DbArticle } from "@/lib/content";
 import { photoPosition } from "@/lib/photo-position";
 import Image from "next/image";
 import Link from "next/link";
@@ -307,8 +308,32 @@ function ArticleCard({ a }: { a: Artigo }) {
   );
 }
 
-export function IdeiasDestaque() {
-  const p = ARTIGO_PROTAGONISTA;
+const TERR_NAME: Record<string, string> = { futuros: "Futuros", tecnologia: "Tecnologia & Humanidade", escolhas: "Escolhas & Agência", lideranca: "Liderança & Organizações", "vida-real": "Transformação & Vida Real" };
+
+/** Converte um artigo publicado no painel para o formato dos cards desta página. */
+function fromDb(a: DbArticle, i: number, protagonista: boolean): Artigo {
+  const fallbackImg = (protagonista ? ARTIGO_PROTAGONISTA : ARTIGOS[i % ARTIGOS.length]).img;
+  return {
+    slug: a.slug,
+    status: "publicado",
+    href: `/ideias/${a.slug}`,
+    cta: protagonista ? "Leia o ensaio" : "Ler",
+    kicker: protagonista ? "Artigo protagonista" : a.territories.map((t) => TERR_NAME[t] ?? t).join(" · ") || "Ideias",
+    territorios: a.territories as Artigo["territorios"],
+    title: a.title,
+    sub: a.subtitle ?? undefined,
+    body: a.excerpt ? [a.excerpt] : [],
+    question: a.question ?? undefined,
+    img: a.cover ?? fallbackImg,
+    alt: "",
+  };
+}
+
+export async function IdeiasDestaque() {
+  // artigos publicados no painel substituem a arquitetura editorial ("a confirmar")
+  const published = await getPublishedArticles();
+  const p = published.length ? fromDb(published[0], 0, true) : ARTIGO_PROTAGONISTA;
+  const cards = published.length ? published.slice(1, 6).map((a, i) => fromDb(a, i, false)) : ARTIGOS;
   return (
     <Section id="ideias-em-destaque" label="Ideias em destaque">
       <Container className="grid gap-10 lg:grid-cols-[0.8fr_1fr_1.1fr] lg:gap-8">
@@ -334,7 +359,7 @@ export function IdeiasDestaque() {
         </div>
         <article className="rounded-[var(--jf-radius-sm)] bg-blush-100/60 p-7 lg:p-9" data-status={p.status}>
           <p className="jf-eyebrow text-[11px] text-red-brand">
-            {p.kicker} <span className="text-ink-500">| Futuros</span>
+            {p.kicker} <span className="text-ink-500">| {p.territorios.map((t) => TERR_NAME[t] ?? t).join(" · ") || "Ideias"}</span>
           </p>
           <h3 className="jf-display jf-display-sm mt-4">{p.title}</h3>
           <Stroke shape="underline" className="mt-2 h-3 w-[70%]" width={2.5} />
@@ -344,7 +369,7 @@ export function IdeiasDestaque() {
               <p key={t}>{t}</p>
             ))}
           </div>
-          <p className="mt-4 font-semibold">{p.highlight}</p>
+          {p.highlight && <p className="mt-4 font-semibold">{p.highlight}</p>}
           <ButtonLink href={p.href} variant="secondary" size="sm" className="mt-7 w-fit border-red-brand text-red-brand">
             {p.cta}
           </ButtonLink>
@@ -353,7 +378,7 @@ export function IdeiasDestaque() {
 
       <Container className="mt-16">
         <ul className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
-          {ARTIGOS.map((a) => (
+          {cards.map((a) => (
             <ArticleCard key={a.slug} a={a} />
           ))}
         </ul>

@@ -1,3 +1,4 @@
+import { getExternal } from "@/lib/content";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ButtonLink, ButtonRow } from "@/components/ui/Button";
@@ -5,7 +6,7 @@ import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
 import { Body, DashList, Display, Em, QuoteCard } from "@/components/ui/Typography";
-import { CONTACT_ROUTES, EXTERNAL } from "@/lib/site";
+import { CONTACT_ROUTES } from "@/lib/site";
 import { Icon, IconBubble, type IconName } from "./Icons";
 
 /* ───────────────────────── BLOCO 7 — JU NO PALCO / PROVA E LASTRO ───────────────────────── */
@@ -417,7 +418,8 @@ export function PalestrasProcesso() {
 }
 
 /* ───────────────────────── BLOCO 9 — CONVERSÃO FINAL / CONTRATAÇÃO ───────────────────────── */
-export function PalestrasConversao() {
+export async function PalestrasConversao() {
+  const EXTERNAL = await getExternal();
   // Os 3 pontos de partida levam ao formulário adaptativo de Contato na rota de palestras.
   const starts: { icon: IconName; t: string; d: string }[] = [
     { icon: "mic", t: "Quero uma palestra", d: "Para evento, convenção ou encontro de liderança." },

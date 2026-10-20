@@ -588,3 +588,9 @@ main a:not(.rounded-full):not([class*="block"]) {
     translate: none;
   }
 }
+
+/* Painel /admin: sem header/footer do site público */
+body:has([data-admin]) > header,
+body:has([data-admin]) > footer {
+  display: none;
+}

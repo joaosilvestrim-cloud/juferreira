@@ -1,8 +1,10 @@
+import { getExternal } from "@/lib/content";
 import Link from "next/link";
-import { EXTERNAL, NAV } from "@/lib/site";
+import { NAV } from "@/lib/site";
 import { Logo } from "./Logo";
 
-export function SiteFooter() {
+export async function SiteFooter() {
+  const EXTERNAL = await getExternal();
   const social = [
     { label: "LinkedIn", href: EXTERNAL.linkedin },
     { label: "Instagram", href: EXTERNAL.instagram },
@@ -31,10 +33,9 @@ export function SiteFooter() {
       </div>
       <div className="mx-auto flex max-w-[calc(var(--jf-container)+2*var(--jf-gutter))] flex-col gap-4 border-t border-ink-900/10 px-[var(--jf-gutter)] py-6 text-sm text-ink-500 sm:flex-row sm:items-center sm:justify-between">
         <ul className="flex flex-wrap gap-x-6 gap-y-2">
-          {social.map((s) => (
+          {social.filter((s) => s.href).map((s) => (
             <li key={s.label}>
-              {/* URL oficial pendente (PENDING_ASSETS P2) */}
-              <a href={s.href || "#"} className="hover:text-red-brand" data-placeholder={s.href ? undefined : "url"}>
+              <a href={s.href} target="_blank" rel="noopener noreferrer" className="hover:text-red-brand">
                 {s.label}
               </a>
             </li>

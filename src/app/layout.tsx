@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Caveat, Cormorant_Garamond, Jost } from "next/font/google";
 import { SiteFooter } from "@/components/global/SiteFooter";
 import { Analytics } from "@vercel/analytics/next";
 import { Motion } from "@/components/global/Motion";
-import { PublicChrome } from "@/components/global/PublicChrome";
 import { SiteHeader } from "@/components/global/SiteHeader";
-import { EXTERNAL, SITE_URL } from "@/lib/site";
+import { getExternal } from "@/lib/content";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 // FONTES PROVISÓRIAS (OFL, Google Fonts) — trocar pelas famílias licenciadas definitivas.
@@ -40,7 +41,8 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const EXTERNAL = await getExternal();
   return (
     <html
       lang="pt-BR"
@@ -63,16 +65,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Pular para o conteúdo
         </a>
-        <PublicChrome>
-          <SiteHeader />
-        </PublicChrome>
+        <SiteHeader />
         <main id="conteudo" className="flex-1">
           {children}
         </main>
-        <PublicChrome>
-          <SiteFooter />
-        </PublicChrome>
-        <Motion />
+        <SiteFooter />
+        <Suspense fallback={null}>
+          <Motion />
+        </Suspense>
         <Analytics />
         <script
           type="application/ld+json"

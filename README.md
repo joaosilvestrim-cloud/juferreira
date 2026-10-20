@@ -31,6 +31,21 @@ Variáveis de ambiente (local em `.env.local`, na Vercel em *Settings → Enviro
 
 Scripts: `node --env-file=.env.local scripts/db-migrate.mjs` (aplica o esquema), `scripts/db-peek.mjs` (lista registros).
 
+## Painel /admin
+
+Login com `ADMIN_PASSWORD` (sessão assinada com `ADMIN_SECRET`). Seções:
+
+- **Conversas** — contatos e inscritos, status, busca, CSV.
+- **Artigos** — textos de Ideias com página própria em `/ideias/<slug>` (aparecem em Ideias e na Home quando publicados).
+- **Referências** — "Na mesa agora" e "Referências que voltam".
+- **Newsletter** — escrever edição, prévia, envio de teste e disparo para os inscritos (Resend; descadastro em `/newsletter/sair`).
+- **Configurações** — e-mail, WhatsApp, LinkedIn, Instagram, links EPIC247/WTF, quem recebe avisos de contato.
+
+Imagens enviadas ficam no banco (`media`) e são servidas em `/midia/<id>`. Botões externos usam `/ir/<destino>`.
+E-mails: `RESEND_API_KEY` (domínio juferreira.com.br verificado).
+
+QA completo: `BASE_URL=http://localhost:3000 npm run qa`.
+
 ## Estrutura
 
 - `docs/` — pacote canônico (Site Master, copies, Design System, briefs). **A copy `.md` é a fonte do texto.**

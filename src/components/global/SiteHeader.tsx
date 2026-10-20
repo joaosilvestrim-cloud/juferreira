@@ -2,13 +2,25 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { NAV } from "@/lib/site";
 import { ArrowIcon } from "@/components/ui/Button";
 import { Logo } from "./Logo";
 
+/** Rotas dinâmicas leem o caminho só no cliente; o fallback é o mesmo header sem item ativo. */
 export function SiteHeader() {
-  const pathname = usePathname();
+  return (
+    <Suspense fallback={<SiteHeaderView pathname="" />}>
+      <SiteHeaderWithPath />
+    </Suspense>
+  );
+}
+
+function SiteHeaderWithPath() {
+  return <SiteHeaderView pathname={usePathname()} />;
+}
+
+function SiteHeaderView({ pathname }: { pathname: string }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
