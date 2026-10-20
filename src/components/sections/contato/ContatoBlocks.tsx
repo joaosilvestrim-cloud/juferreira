@@ -785,7 +785,7 @@ export function ContatoFechamento() {
             <p className="jf-display jf-display-sm">
               Você não precisa saber onde a conversa vai terminar para saber que <Em>vale a pena começá-la.</Em>
             </p>
-            <ButtonLink href={FORM} size="lg" className="mt-10 w-fit bg-red-bright">
+            <ButtonLink href={FORM} size="lg" className="mt-10 w-fit">
               Começar a conversa
             </ButtonLink>
             <p className="mt-5 flex items-center gap-4 text-[15px] text-cream-50/80">

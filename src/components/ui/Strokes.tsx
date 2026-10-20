@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useId } from "react";
 
 /**
  * Kit de gestos vermelhos (DS §11). PROVISÓRIO até chegar o kit SVG oficial (PENDING_ASSETS P0).
@@ -59,7 +58,6 @@ export function Stroke({
   draw?: boolean;
   color?: string;
 }) {
-  const id = useId().replace(/:/g, "");
   const s = SHAPES[shape];
   return (
     <svg
@@ -70,13 +68,7 @@ export function Stroke({
       data-stroke=""
       preserveAspectRatio="none"
     >
-      <defs>
-        <filter id={`rough-${id}`} x="-5%" y="-5%" width="110%" height="110%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="3" />
-          <feDisplacementMap in="SourceGraphic" scale="3" />
-        </filter>
-      </defs>
-      <g filter={`url(#rough-${id})`} stroke={color} strokeLinecap="round" strokeLinejoin="round">
+      <g stroke={color} strokeLinecap="round" strokeLinejoin="round">
         {s.paths.map((d, i) => (
           <g key={i}>
             <path d={d} strokeWidth={width} vectorEffect="non-scaling-stroke" />

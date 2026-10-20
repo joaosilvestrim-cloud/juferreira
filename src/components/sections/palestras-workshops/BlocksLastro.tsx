@@ -494,7 +494,7 @@ export function PalestrasConversao() {
             <p className="mt-4 max-w-[520px] text-cream-50/80">
               O que está acontecendo na sua organização e que conversa você acredita que precisa acontecer agora?
             </p>
-            <ButtonLink href="/contato" size="lg" className="mt-8 bg-red-bright">
+            <ButtonLink href="/contato" size="lg" className="mt-8">
               Vamos construir essa conversa
             </ButtonLink>
           </div>

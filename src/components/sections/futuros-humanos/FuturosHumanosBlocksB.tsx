@@ -542,7 +542,7 @@ export function FHEncerramento() {
               </h3>
             </div>
             <ButtonRow className="mt-10">
-              <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg" className="bg-red-bright">
+              <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg">
                 Leve Futuros Humanos para sua organização
               </ButtonLink>
               <ButtonLink href="/ideias" variant="ghost-light" size="lg">

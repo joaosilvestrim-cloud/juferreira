@@ -24,6 +24,7 @@ const hand = Caveat({
   variable: "--font-handwritten",
   subsets: ["latin"],
   weight: ["500", "600"],
+  preload: false, // manuscrita aparece abaixo da dobra: não disputa banda com o conteúdo inicial
 });
 
 export const metadata: Metadata = {

@@ -25,15 +25,15 @@ console.log("senha errada → mensagem ok");
 await page.fill("#password", pwd);
 await page.click("button[type=submit]");
 await page.waitForURL(`${B}/admin`);
-await page.getByText("TESTE AUTOMATICO ADMIN").waitFor();
+await page.getByText("TESTE AUTOMATICO ADMIN").first().waitFor();
 console.log("login → painel com o contato de teste");
 await page.screenshot({ path: "screenshots/admin.png", fullPage: true });
 
-const card = page.locator("li", { hasText: "TESTE AUTOMATICO ADMIN" });
+const card = page.locator("li", { hasText: "TESTE AUTOMATICO ADMIN" }).first();
 await card.locator("select").selectOption("respondido");
 await page.waitForTimeout(1500);
 await page.reload();
-console.log("status após salvar →", await page.locator("li", { hasText: "TESTE AUTOMATICO ADMIN" }).locator("select").inputValue());
+console.log("status após salvar →", await page.locator("li", { hasText: "TESTE AUTOMATICO ADMIN" }).first().locator("select").inputValue());
 
 const [dl] = await Promise.all([page.waitForEvent("download"), page.click("text=Exportar CSV")]);
 const csv = readFileSync(await dl.path(), "utf8");

@@ -1,5 +1,7 @@
 import { z } from "zod";
+import { after } from "next/server";
 import { clientIp, db, hashIp, recentCount } from "@/lib/db";
+import { confirmToSender, notifyNewContact } from "@/lib/notify";
 
 const ROUTES = ["palestras", "organizacoes", "futuros-aplicados", "parcerias", "epic247", "nao-sei"] as const;
 const text = (max: number) => z.string().trim().max(max);
@@ -73,6 +75,11 @@ export async function POST(req: Request) {
         ipHash,
       ],
     );
+    // e-mails depois da resposta: não atrasam nem derrubam o envio do formulário
+    after(async () => {
+      const c = { origin: d.origin, route: d.rota, name: d.nome, email: d.email, organization: d.organizacao, phone: d.telefone, message, fields };
+      await Promise.allSettled([notifyNewContact(c), confirmToSender(c)]);
+    });
     return Response.json({ ok: true });
   } catch (err) {
     console.error("[api/contato]", err);

@@ -679,7 +679,7 @@ export function HomeEncerramento() {
             <p className="mt-3 text-cream-50/80">
               Leve essa conversa para onde decisões, pessoas e futuros estão sendo construídos todos os dias.
             </p>
-            <ButtonLink href={CONTACT_ROUTES.organizacoes} className="mt-8 bg-red-bright">
+            <ButtonLink href={CONTACT_ROUTES.organizacoes} className="mt-8">
               Leve a Ju para sua organização
             </ButtonLink>
           </div>
