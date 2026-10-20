@@ -120,3 +120,23 @@ alter table public.media             enable row level security;
 alter table public.articles          enable row level security;
 alter table public.reading_refs      enable row level security;
 alter table public.newsletter_issues enable row level security;
+
+-- Ajustes de textos/imagens das páginas feitos no /admin (chave → valor). Sem linha = vale o original do código.
+create table if not exists public.content_overrides (
+  key        text primary key,
+  value      text not null,
+  updated_at timestamptz not null default now(),
+  updated_by text
+);
+alter table public.content_overrides enable row level security;
+
+-- SEO por página (título, descrição e imagem de compartilhamento), editável no /admin
+create table if not exists public.page_seo (
+  path        text primary key,
+  title       text,
+  description text,
+  og_image_id uuid references public.media(id) on delete set null,
+  noindex     boolean not null default false,
+  updated_at  timestamptz not null default now()
+);
+alter table public.page_seo enable row level security;

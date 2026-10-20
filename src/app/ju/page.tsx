@@ -1,3 +1,4 @@
+import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import {
   JuConstruir,
@@ -11,13 +12,18 @@ import {
   JuTrajetoria,
 } from "@/components/sections/ju/JuBlocks";
 
-export const metadata: Metadata = {
+const DEFAULT_META: Metadata = {
   title: "Primeiro de tudo, eu sou a Ju",
   description:
     "Engenheira por formação. Empreendedora por insistência. Futurista por inquietação. Mãe por transformação. Hoje, grande parte do meu trabalho nasce do encontro entre futuros, tecnologia e humanidade.",
 };
 
-export default function JuPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  return seoFor("/ju", DEFAULT_META);
+}
+
+export default async function JuPage() {
+  await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
       <JuHero />

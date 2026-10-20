@@ -157,3 +157,70 @@ export function parseBody(body: string) {
       return { type: "p" as const, text: b };
     });
 }
+
+/* ───────────── Textos e imagens editáveis das páginas ───────────── */
+export async function getOverrides(): Promise<Record<string, string>> {
+  "use cache";
+  cacheTag("content");
+  cacheLife("max");
+  try {
+    const { rows } = await db.query<{ key: string; value: string }>("select key, value from public.content_overrides");
+    return Object.fromEntries(rows.map((r) => [r.key, r.value]));
+  } catch (err) {
+    console.error("[content] overrides", err);
+    return {};
+  }
+}
+
+/** Chamar no início de cada página, antes de renderizar as seções. */
+export async function loadOverrides() {
+  const { setOverrides } = await import("@/lib/editable");
+  setOverrides(await getOverrides());
+}
+
+/* ───────────── SEO por página ───────────── */
+export const SEO_PAGES = [
+  { path: "/", name: "Home" },
+  { path: "/ju", name: "Ju" },
+  { path: "/futuros-humanos", name: "Futuros Humanos" },
+  { path: "/palestras", name: "Palestras & Workshops" },
+  { path: "/organizacoes", name: "Para Organizações" },
+  { path: "/pessoas", name: "Para Pessoas" },
+  { path: "/ideias", name: "Ideias" },
+  { path: "/contato", name: "Contato" },
+] as const;
+
+type SeoRow = { path: string; title: string | null; description: string | null; og_image_id: string | null; noindex: boolean };
+
+export async function getSeo(): Promise<Record<string, SeoRow>> {
+  "use cache";
+  cacheTag("seo");
+  cacheLife("max");
+  try {
+    const { rows } = await db.query<SeoRow>("select path, title, description, og_image_id, noindex from public.page_seo");
+    return Object.fromEntries(rows.map((r) => [r.path, r]));
+  } catch (err) {
+    console.error("[content] seo", err);
+    return {};
+  }
+}
+
+/** Mescla o SEO cadastrado no painel com os valores padrão da página. */
+export async function seoFor(path: string, defaults: import("next").Metadata): Promise<import("next").Metadata> {
+  const s = (await getSeo())[path];
+  if (!s) return defaults;
+  const title = s.title || defaults.title;
+  const description = s.description || defaults.description;
+  return {
+    ...defaults,
+    title: path === "/" && s.title ? { absolute: s.title } : title,
+    description,
+    openGraph: {
+      ...(defaults.openGraph ?? {}),
+      ...(s.title ? { title: s.title } : {}),
+      ...(description ? { description: description as string } : {}),
+      ...(s.og_image_id ? { images: [{ url: `/midia/${s.og_image_id}`, width: 1200, height: 630 }] } : {}),
+    },
+    ...(s.noindex ? { robots: { index: false, follow: true } } : {}),
+  };
+}

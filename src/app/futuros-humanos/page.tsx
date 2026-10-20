@@ -1,3 +1,4 @@
+import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import {
   FHAgencia,
@@ -13,13 +14,18 @@ import {
   FHProvoca,
 } from "@/components/sections/futuros-humanos/FuturosHumanosBlocksB";
 
-export const metadata: Metadata = {
+const DEFAULT_META: Metadata = {
   title: "Futuros Humanos",
   description:
     "Uma investigação sobre futuros, tecnologia, escolhas e as capacidades humanas necessárias para participar conscientemente da construção daquilo que ainda pode existir.",
 };
 
-export default function FuturosHumanosPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  return seoFor("/futuros-humanos", DEFAULT_META);
+}
+
+export default async function FuturosHumanosPage() {
+  await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
       <FHHero />

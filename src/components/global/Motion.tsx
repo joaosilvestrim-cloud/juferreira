@@ -9,7 +9,9 @@ import { useEffect } from "react";
  * Os contadores só começam depois que a página hidratou e o número entra na tela.
  */
 function countUp(el: HTMLElement) {
-  const target = Number(el.dataset.count);
+  // o número exibido (editável no painel) é o alvo; data-count é só o marcador
+  const shown = Number((el.textContent ?? "").replace(/\D/g, ""));
+  const target = Number.isFinite(shown) && shown > 0 ? shown : Number(el.dataset.count);
   if (!Number.isFinite(target) || el.dataset.counted) return;
   el.dataset.counted = "1";
   const start = performance.now();

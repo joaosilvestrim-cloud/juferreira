@@ -1,12 +1,13 @@
 import type { ReactNode } from "react";
 import { EPISTEMIC, EPISTEMIC_ORDER, type Epistemic } from "./data";
 
+import { tx } from "@/lib/editable";
 /** Rótulo de bloco em "pincelada" rosa (eyebrow manuscrito dos mockups). */
 export function BrushLabel({ children, className = "" }: { children: ReactNode; className?: string }) {
   return (
     <p
       className={`jf-hand inline-block -rotate-2 bg-blush-100 px-4 py-1 text-[22px] uppercase tracking-[0.12em] text-ink-900 ${className}`}
-      style={{ clipPath: "polygon(1% 8%, 99% 0, 100% 88%, 3% 100%)" }}
+      style={{ clipPath: tx("ideias/2af9bc9537", "polygon(1% 8%, 99% 0, 100% 88%, 3% 100%)") }}
     >
       {children}
     </p>

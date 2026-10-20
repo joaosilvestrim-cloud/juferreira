@@ -1,3 +1,4 @@
+import { tx } from "@/lib/editable";
 /**
  * Diagrama dos tipos de futuro (BLOCO 3).
  * Corrige o mockup: círculos concêntricos — Possível ⊃ Plausível ⊃ Provável —
@@ -12,11 +13,9 @@ export function FuturesDiagram({ className = "" }: { className?: string }) {
       role="img"
       aria-labelledby="futuros-diagrama-t futuros-diagrama-d"
     >
-      <title id="futuros-diagrama-t">Prováveis, plausíveis, possíveis, preferíveis</title>
+      <title id="futuros-diagrama-t">{tx("futuros-humanos/c5b94a1ab0", "Prováveis, plausíveis, possíveis, preferíveis")}</title>
       <desc id="futuros-diagrama-d">
-        Círculos concêntricos: o possível contém o plausível, que contém o provável. O preferível aparece como um recorte
-        dentro do possível.
-      </desc>
+        {tx("futuros-humanos/e1c048a990", "Círculos concêntricos: o possível contém o plausível, que contém o provável. O preferível aparece como um recorte dentro do possível.")}</desc>
       <defs>
         <radialGradient id="fh-possivel" cx="45%" cy="50%" r="60%">
           <stop offset="0%" stopColor="var(--jf-blush-100)" />
@@ -49,17 +48,13 @@ export function FuturesDiagram({ className = "" }: { className?: string }) {
 
       <g fontFamily="var(--font-serif)" textAnchor="middle" letterSpacing="0.08em">
         <text x="255" y="62" fontSize="20" fill="var(--jf-ink-900)">
-          POSSÍVEL
-        </text>
+          {tx("futuros-humanos/0613848ffe", "POSSÍVEL")}</text>
         <text x="190" y="166" fontSize="18" fill="var(--jf-ink-800)">
-          PLAUSÍVEL
-        </text>
+          {tx("futuros-humanos/4c46885697", "PLAUSÍVEL")}</text>
         <text x="205" y="301" fontSize="18" fill="var(--jf-cream-50)">
-          PROVÁVEL
-        </text>
+          {tx("futuros-humanos/8b80331178", "PROVÁVEL")}</text>
         <text x="365" y="201" fontSize="18" fill="var(--jf-red-500)">
-          PREFERÍVEL
-        </text>
+          {tx("futuros-humanos/48517f9103", "PREFERÍVEL")}</text>
       </g>
     </svg>
   );

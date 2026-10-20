@@ -7,86 +7,84 @@ import { SpiralDiagram } from "@/components/sections/home/HomeBlocks";
 import { CONTACT_ROUTES } from "@/lib/site";
 import { Lines, Pull } from "./FuturosHumanosBlocksA";
 
+import { tx, img, lazy } from "@/lib/editable";
 /* ───────────────────────── BLOCO 6 — A ESPIRAL ───────────────────────── */
-const MOVEMENTS = [
+const MOVEMENTS = lazy(() => ([
   {
     n: 1,
-    t: "Imaginar",
-    q: "E se pudesse ser diferente?",
+    t: tx("futuros-humanos/f4c6ad2f59", "Imaginar"),
+    q: tx("futuros-humanos/43f6f42eec", "E se pudesse ser diferente?"),
     body: [
-      "Imaginar interrompe o automático.",
-      "Abre espaço para alternativas.",
-      "Permite olhar para aquilo que existe sem tratá-lo como a única configuração possível.",
-      "Não é fantasiar que não existem limites.",
-      "É ampliar o campo antes de decidir.",
+      tx("futuros-humanos/d92a95fe43", "Imaginar interrompe o automático."),
+      tx("futuros-humanos/f291311aff", "Abre espaço para alternativas."),
+      tx("futuros-humanos/7801eb86f5", "Permite olhar para aquilo que existe sem tratá-lo como a única configuração possível."),
+      tx("futuros-humanos/13b6a96b3d", "Não é fantasiar que não existem limites."),
+      tx("futuros-humanos/1e82d4c841", "É ampliar o campo antes de decidir."),
     ],
   },
   {
     n: 2,
-    t: "Escolher",
-    q: "O que queremos ajudar a tornar possível?",
+    t: tx("futuros-humanos/6942a4ca15", "Escolher"),
+    q: tx("futuros-humanos/a7085f06b2", "O que queremos ajudar a tornar possível?"),
     body: [
-      "Nem todo futuro possível é desejável.",
-      "Nem toda inovação merece ser construída.",
-      "Nem toda oportunidade precisa ser perseguida.",
-      "Escolher é introduzir direção.",
-      "É explicitar valores, prioridades e responsabilidade.",
+      tx("futuros-humanos/7627e28d89", "Nem todo futuro possível é desejável."),
+      tx("futuros-humanos/9273b8d5bf", "Nem toda inovação merece ser construída."),
+      tx("futuros-humanos/0feb3e0777", "Nem toda oportunidade precisa ser perseguida."),
+      tx("futuros-humanos/87c896bb73", "Escolher é introduzir direção."),
+      tx("futuros-humanos/5a47bae110", "É explicitar valores, prioridades e responsabilidade."),
     ],
   },
   {
     n: 3,
-    t: "Tornar-se",
-    q: "Do que precisamos nos tornar capazes?",
+    t: tx("futuros-humanos/0448c8ff62", "Tornar-se"),
+    q: tx("futuros-humanos/58b1079734", "Do que precisamos nos tornar capazes?"),
     body: [
-      "Escolher um futuro não significa estar pronto para sustentá-lo.",
-      "Talvez precisemos aprender. Mudar comportamento. Desenvolver discernimento. Criar novas capacidades. Abandonar algumas formas de pensar. Construir outras.",
+      tx("futuros-humanos/39404b478d", "Escolher um futuro não significa estar pronto para sustentá-lo."),
+      tx("futuros-humanos/b410856d00", "Talvez precisemos aprender. Mudar comportamento. Desenvolver discernimento. Criar novas capacidades. Abandonar algumas formas de pensar. Construir outras."),
     ],
-    note: "não basta querer um futuro diferente. precisamos nos tornar capazes de habitá-lo e construí-lo.",
+    note: tx("futuros-humanos/6b2382d298", "não basta querer um futuro diferente. precisamos nos tornar capazes de habitá-lo e construí-lo."),
   },
   {
     n: 4,
-    t: "Construir",
-    q: "O que podemos fazer agora para tornar esse futuro um pouco mais possível?",
+    t: tx("futuros-humanos/f8e0a8b87c", "Construir"),
+    q: tx("futuros-humanos/71391b5371", "O que podemos fazer agora para tornar esse futuro um pouco mais possível?"),
     body: [
-      "Construção devolve a conversa ao presente.",
-      "Uma decisão. Um experimento. Uma conversa. Uma mudança de processo. Um protótipo. Uma nova pergunta.",
-      "Um pequeno movimento que altera o que pode acontecer depois.",
-      "Não precisa começar grande. Precisa começar real.",
+      tx("futuros-humanos/a14ffb53f1", "Construção devolve a conversa ao presente."),
+      tx("futuros-humanos/c7bcc57217", "Uma decisão. Um experimento. Uma conversa. Uma mudança de processo. Um protótipo. Uma nova pergunta."),
+      tx("futuros-humanos/49a2a44b40", "Um pequeno movimento que altera o que pode acontecer depois."),
+      tx("futuros-humanos/a46ed5cf86", "Não precisa começar grande. Precisa começar real."),
     ],
   },
-];
+]));
 
 export function FHEspiral() {
   return (
-    <Section label="A Espiral" id="espiral">
+    <Section label={tx("futuros-humanos/7f3da3ba1e", "A Espiral")} id="espiral">
       <Container className="grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10">
         <div>
           <Display size="lg">
-            Pensar futuros não termina <Em>em imaginar.</Em>
+            {tx("futuros-humanos/f130bafc05", "Pensar futuros não termina")} <Em>{tx("futuros-humanos/1e6c0cf267", "em imaginar.")}</Em>
           </Display>
           <Stroke shape="underline" className="mt-3 h-4 w-56" width={4} />
           <Body className="mt-10 max-w-[560px] text-ink-700">
             <p>
-              Imaginar possibilidades é importante.
-              <br />
-              Mas possibilidades, sozinhas, não mudam nada.
-            </p>
-            <p>Em algum momento precisamos perguntar:</p>
+              {tx("futuros-humanos/f03fde8588", "Imaginar possibilidades é importante.")}<br />
+              {tx("futuros-humanos/527017a277", "Mas possibilidades, sozinhas, não mudam nada.")}</p>
+            <p>{tx("futuros-humanos/3c4c01d5b7", "Em algum momento precisamos perguntar:")}</p>
           </Body>
-          <p className="mt-2 font-serif text-[21px] font-medium">qual delas queremos ajudar a tornar possível?</p>
-          <p className="jf-body mt-4 text-ink-700">Depois vem outra questão:</p>
-          <p className="mt-2 font-serif text-[21px] font-medium">do que precisamos nos tornar capazes para sustentar essa escolha?</p>
-          <p className="jf-body mt-4 text-ink-700">E então:</p>
+          <p className="mt-2 font-serif text-[21px] font-medium">{tx("futuros-humanos/30880759c7", "qual delas queremos ajudar a tornar possível?")}</p>
+          <p className="jf-body mt-4 text-ink-700">{tx("futuros-humanos/bafa446897", "Depois vem outra questão:")}</p>
+          <p className="mt-2 font-serif text-[21px] font-medium">{tx("futuros-humanos/ce9713a26f", "do que precisamos nos tornar capazes para sustentar essa escolha?")}</p>
+          <p className="jf-body mt-4 text-ink-700">{tx("futuros-humanos/8b39584ac4", "E então:")}</p>
           <p className="mt-2 font-serif text-[21px] font-medium">
-            o que conseguimos fazer agora para mover essa possibilidade um pouco mais para perto da realidade?
-          </p>
-          <p className="jf-body mt-6 text-ink-700">Foi assim que essas quatro perguntas começaram a se organizar para mim.</p>
+            {tx("futuros-humanos/1d6e5f01fd", "o que conseguimos fazer agora para mover essa possibilidade um pouco mais para perto da realidade?")}</p>
+          <p className="jf-body mt-6 text-ink-700">{tx("futuros-humanos/c0e8c48889", "Foi assim que essas quatro perguntas começaram a se organizar para mim.")}</p>
           <p className="jf-eyebrow mt-10 flex flex-wrap items-center gap-x-3 gap-y-2 text-[14px] text-red-brand">
-            Imaginar <span aria-hidden>→</span> Escolher <span aria-hidden>→</span> Tornar-se <span aria-hidden>→</span>{" "}
-            Construir <span aria-hidden>↻</span>
+            {tx("futuros-humanos/f272974898", "Imaginar")} <span aria-hidden>→</span> {tx("futuros-humanos/543f2afeaf", "Escolher")} <span aria-hidden>→</span> {tx("futuros-humanos/49692ad552", "Tornar-se")} <span aria-hidden>→</span>{" "}
+            {tx("futuros-humanos/3594fbf27d", "Construir")} <span aria-hidden>↻</span>
           </p>
           <p className="mt-3 font-serif text-[22px]">
-            Não é uma linha reta. <Em>É uma espiral.</Em>
+            {tx("futuros-humanos/c20820d2b7", "Não é uma linha reta.")} <Em>{tx("futuros-humanos/8a9a595a15", "É uma espiral.")}</Em>
           </p>
         </div>
         <SpiralDiagram className="mx-auto w-full max-w-[620px]" />
@@ -116,57 +114,49 @@ export function FHEspiral() {
         <div className="grid gap-12 border-t border-ink-900/15 pt-12 lg:grid-cols-3 lg:gap-0 lg:divide-x lg:divide-ink-900/15">
           <div className="lg:pr-10">
             <Body className="text-ink-700">
-              <p>Depois de construir, não terminamos.</p>
+              <p>{tx("futuros-humanos/f02f3f4338", "Depois de construir, não terminamos.")}</p>
               <p>
-                O mundo responde. A realidade devolve informação. Algumas hipóteses sobrevivem. Outras quebram. Nós
-                aprendemos. Mudamos.
-              </p>
-              <p>E aquilo que somos capazes de imaginar também muda.</p>
+                {tx("futuros-humanos/cbf96741fd", "O mundo responde. A realidade devolve informação. Algumas hipóteses sobrevivem. Outras quebram. Nós aprendemos. Mudamos.")}</p>
+              <p>{tx("futuros-humanos/6e4f54ceaf", "E aquilo que somos capazes de imaginar também muda.")}</p>
             </Body>
             <Title as="h3" className="mt-8 border-l-[3px] border-red-brand pl-4 text-[clamp(24px,2vw,30px)]">
-              A Espiral não fecha.
-            </Title>
+              {tx("futuros-humanos/b04c9edac1", "A Espiral não fecha.")}</Title>
             <p className="jf-body mt-4 text-ink-700">
-              Voltamos a imaginar.
-              <br />
-              Mas não somos mais exatamente os mesmos.
-            </p>
+              {tx("futuros-humanos/57adeaed61", "Voltamos a imaginar.")}<br />
+              {tx("futuros-humanos/174dacdae6", "Mas não somos mais exatamente os mesmos.")}</p>
           </div>
           <div className="lg:px-10">
-            <Pull>Nós construímos futuros e somos construídos enquanto os construímos.</Pull>
-            <p className="jf-body mt-6 text-ink-700">Enquanto construímos alguma coisa no mundo:</p>
+            <Pull>{tx("futuros-humanos/e944f41db3", "Nós construímos futuros e somos construídos enquanto os construímos.")}</Pull>
+            <p className="jf-body mt-6 text-ink-700">{tx("futuros-humanos/33af40b9ed", "Enquanto construímos alguma coisa no mundo:")}</p>
             <Lines
               dash
               className="mt-3 font-semibold text-ink-900"
-              items={["aprendemos;", "mudamos;", "ganhamos capacidades;", "perdemos certezas;", "transformamos a nós mesmos."]}
+              items={[tx("futuros-humanos/a5592d5751", "aprendemos;"), tx("futuros-humanos/8ec7b21a45", "mudamos;"), tx("futuros-humanos/4752d8d1fd", "ganhamos capacidades;"), tx("futuros-humanos/db57f232a3", "perdemos certezas;"), tx("futuros-humanos/74c42db2ce", "transformamos a nós mesmos.")]}
             />
           </div>
           <div className="lg:pl-10">
             <HandNote className="text-red-brand" rotate={-3}>
-              A Espiral precisa sobreviver a uma terça-feira qualquer.
-            </HandNote>
-            <p className="jf-body mt-5 text-ink-700">Reunião. Cliente. Medo. Filhos. Cansaço. Boletos. Decisão difícil.</p>
-            <p className="jf-body mt-3 text-ink-700">Se ela só funciona num workshop de estratégia, não serve.</p>
-            <p className="jf-body mt-3 text-ink-700">Por isso o movimento precisa caber também em perguntas pequenas:</p>
+              {tx("futuros-humanos/94f45faa87", "A Espiral precisa sobreviver a uma terça-feira qualquer.")}</HandNote>
+            <p className="jf-body mt-5 text-ink-700">{tx("futuros-humanos/d0f2b84d13", "Reunião. Cliente. Medo. Filhos. Cansaço. Boletos. Decisão difícil.")}</p>
+            <p className="jf-body mt-3 text-ink-700">{tx("futuros-humanos/42b49449a3", "Se ela só funciona num workshop de estratégia, não serve.")}</p>
+            <p className="jf-body mt-3 text-ink-700">{tx("futuros-humanos/1966298a97", "Por isso o movimento precisa caber também em perguntas pequenas:")}</p>
             <Lines
               dash
               className="mt-3 font-serif text-[19px] leading-snug"
               items={[
-                "O que estou vendo?",
-                "O que estou escolhendo?",
-                "Do que preciso me tornar capaz?",
-                "Qual movimento consigo fazer agora?",
+                tx("futuros-humanos/088ea821a9", "O que estou vendo?"),
+                tx("futuros-humanos/f9c7caeeaa", "O que estou escolhendo?"),
+                tx("futuros-humanos/dcd86cd674", "Do que preciso me tornar capaz?"),
+                tx("futuros-humanos/f59ceb4ed2", "Qual movimento consigo fazer agora?"),
               ]}
             />
           </div>
         </div>
         <p className="mt-12 max-w-[860px] border-t border-ink-900/15 pt-6 text-[14px] leading-relaxed text-ink-500">
-          A Espiral é apresentada aqui como{" "}
+          {tx("futuros-humanos/17252a936b", "A Espiral é apresentada aqui como")}{" "}
           <strong className="font-semibold text-ink-700">
-            uma arquitetura de pensamento e movimento que organiza Futuros Humanos
-          </strong>
-          , não como método proprietário fechado ou metodologia comprovada.
-        </p>
+            {tx("futuros-humanos/bc62347beb", "uma arquitetura de pensamento e movimento que organiza Futuros Humanos")}</strong>
+          {tx("futuros-humanos/587c719df8", ", não como método proprietário fechado ou metodologia comprovada.")}</p>
       </Container>
     </Section>
   );
@@ -174,42 +164,38 @@ export function FHEspiral() {
 
 /* ───────────────────────── BLOCO 7 — HUMANIDADE, TECNOLOGIA E AUTORIA ───────────────────────── */
 export function FHAutoria() {
-  const questions = ["Para quê?", "Em nome de quê?", "Com quais consequências?", "Para quem?", "O que queremos ajudar a tornar possível?"];
+  const questions = [tx("futuros-humanos/81c01dc031", "Para quê?"), tx("futuros-humanos/0fd116e6a9", "Em nome de quê?"), tx("futuros-humanos/7f0500379a", "Com quais consequências?"), tx("futuros-humanos/d6d44ac3f2", "Para quem?"), tx("futuros-humanos/72e288c835", "O que queremos ajudar a tornar possível?")];
   return (
-    <Section tone="dark" padded={false} label="Humanidade, tecnologia e autoria">
+    <Section tone="dark" padded={false} label={tx("futuros-humanos/c803275ec6", "Humanidade, tecnologia e autoria")}>
       <div className="grid lg:grid-cols-[55%_45%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[820px] lg:pr-10">
           <Display size="md">
-            O desafio não é escolher entre humanos e tecnologia.{" "}
-            <Em>É decidir que parte da autoria queremos manter.</Em>
+            {tx("futuros-humanos/daa6265b05", "O desafio não é escolher entre humanos e tecnologia.")}{" "}
+            <Em>{tx("futuros-humanos/928cb43eee", "É decidir que parte da autoria queremos manter.")}</Em>
           </Display>
           <Stroke shape="underline" className="mt-3 h-4 w-56" width={4} color="var(--jf-red-400)" />
           <Body className="mt-10 max-w-[620px] text-cream-50/85">
-            <p>Eu não acredito numa disputa entre pessoas e ferramentas.</p>
+            <p>{tx("futuros-humanos/2500ce2687", "Eu não acredito numa disputa entre pessoas e ferramentas.")}</p>
             <p>
-              Tecnologia sempre ampliou aquilo que conseguimos fazer. Ela nos permite enxergar mais longe. Processar mais
-              informação. Executar mais rápido. Criar coisas que antes pareciam impossíveis.
-            </p>
-            <p>E isso pode ser extraordinário.</p>
+              {tx("futuros-humanos/086c04fcdc", "Tecnologia sempre ampliou aquilo que conseguimos fazer. Ela nos permite enxergar mais longe. Processar mais informação. Executar mais rápido. Criar coisas que antes pareciam impossíveis.")}</p>
+            <p>{tx("futuros-humanos/bd4a12cb4b", "E isso pode ser extraordinário.")}</p>
             <p>
-              O problema começa quando, junto com a execução, começamos a terceirizar também aquilo que deveria continuar
-              exigindo presença humana.
-            </p>
+              {tx("futuros-humanos/ee32e744f1", "O problema começa quando, junto com a execução, começamos a terceirizar também aquilo que deveria continuar exigindo presença humana.")}</p>
           </Body>
           <p className="mt-4 font-serif text-[22px] leading-snug text-cream-50">
-            Julgamento. Direção. Responsabilidade. <Em>Sentido.</Em>
+            {tx("futuros-humanos/0332cbe954", "Julgamento. Direção. Responsabilidade.")} <Em>{tx("futuros-humanos/531730c719", "Sentido.")}</Em>
           </p>
         </Container>
         <div className="relative min-h-[460px]">
           <Photo
-            src="/images/ensaio/contato-noite-abajur.webp"
-            alt="Juliana à mesa à noite, iluminada por um abajur de luz quente."
+            src={img("futuros-humanos/f7f108b2d2", "/images/ensaio/contato-noite-abajur.webp")}
+            alt={tx("futuros-humanos/f28f00c8d8", "Juliana à mesa à noite, iluminada por um abajur de luz quente.")}
             sizes="(min-width:1024px) 45vw, 100vw"
             className="absolute inset-0 jf-fade-left"
             imgClassName="object-[50%_40%]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-ink-900 via-ink-900/10 to-transparent max-lg:bg-gradient-to-b" aria-hidden />
-          <ul className="absolute right-8 bottom-10 hidden w-[220px] space-y-3 lg:block" aria-label="Perguntas que nenhuma eficiência resolve por nós">
+          <ul className="absolute right-8 bottom-10 hidden w-[220px] space-y-3 lg:block" aria-label={tx("futuros-humanos/a47bf3a373", "Perguntas que nenhuma eficiência resolve por nós")}>
             {questions.map((q, i) => (
               <li
                 key={q}
@@ -228,53 +214,43 @@ export function FHAutoria() {
           <div>
             <div className="space-y-5 text-cream-50/85">
               <p className="jf-body">
-                Porque uma ferramenta pode produzir uma resposta.
-                <br />
-                <strong className="font-semibold text-cream-50">Mas não vive as consequências dela.</strong>
+                {tx("futuros-humanos/5861df1b98", "Porque uma ferramenta pode produzir uma resposta.")}<br />
+                <strong className="font-semibold text-cream-50">{tx("futuros-humanos/c2a113bcae", "Mas não vive as consequências dela.")}</strong>
               </p>
               <p className="jf-body">
-                Pode recomendar uma decisão.
-                <br />
-                Mas não carrega a responsabilidade pelo mundo que essa decisão ajuda a produzir.
-              </p>
+                {tx("futuros-humanos/c70e700fde", "Pode recomendar uma decisão.")}<br />
+                {tx("futuros-humanos/df828007eb", "Mas não carrega a responsabilidade pelo mundo que essa decisão ajuda a produzir.")}</p>
               <p className="jf-body">
-                Pode otimizar um objetivo.
-                <br />
-                Mas não pergunta, sozinha, se aquele objetivo deveria continuar sendo perseguido.
-              </p>
+                {tx("futuros-humanos/281e43482a", "Pode otimizar um objetivo.")}<br />
+                {tx("futuros-humanos/4171ef3de1", "Mas não pergunta, sozinha, se aquele objetivo deveria continuar sendo perseguido.")}</p>
               <p className="jf-body">
-                Pode ampliar nossa capacidade de construir.
-                <br />
-                Mas não decide:
-              </p>
+                {tx("futuros-humanos/ac15c82961", "Pode ampliar nossa capacidade de construir.")}<br />
+                {tx("futuros-humanos/6445a2ba21", "Mas não decide:")}</p>
             </div>
-            <p className="mt-3 font-serif text-[clamp(22px,2vw,28px)] text-red-bright">o que vale a pena construir?</p>
+            <p className="mt-3 font-serif text-[clamp(22px,2vw,28px)] text-red-bright">{tx("futuros-humanos/9e70eeed88", "o que vale a pena construir?")}</p>
           </div>
           <div>
             <div className="grid items-center gap-4 sm:grid-cols-[1fr_auto_1fr]">
               <div className="border border-cream-50/25 bg-cream-50/5 p-6">
-                <h3 className="jf-eyebrow text-[13px] text-cream-50">Delegar execução</h3>
-                <p className="mt-2 text-cream-50/80">pode ampliar capacidade.</p>
+                <h3 className="jf-eyebrow text-[13px] text-cream-50">{tx("futuros-humanos/5aa0974cb2", "Delegar execução")}</h3>
+                <p className="mt-2 text-cream-50/80">{tx("futuros-humanos/bd0388482f", "pode ampliar capacidade.")}</p>
               </div>
-              <span className="text-center font-serif text-[40px] leading-none text-red-bright" aria-label="é diferente de">
+              <span className="text-center font-serif text-[40px] leading-none text-red-bright" aria-label={tx("futuros-humanos/ad1a7a6715", "é diferente de")}>
                 ≠
               </span>
               <div className="bg-cream-50 p-6 text-ink-900">
-                <h3 className="jf-eyebrow text-[13px]">Terceirizar autoria</h3>
-                <p className="mt-2 text-ink-700">pode diminuir presença.</p>
+                <h3 className="jf-eyebrow text-[13px]">{tx("futuros-humanos/de70948ba7", "Terceirizar autoria")}</h3>
+                <p className="mt-2 text-ink-700">{tx("futuros-humanos/ece3718c5f", "pode diminuir presença.")}</p>
               </div>
             </div>
             <p className="jf-body mt-6 text-cream-50/80">
-              Usar uma ferramenta para ampliar aquilo que fazemos não exige abandonar nossa participação naquilo que ela
-              produz.
-            </p>
+              {tx("futuros-humanos/48b9042c27", "Usar uma ferramenta para ampliar aquilo que fazemos não exige abandonar nossa participação naquilo que ela produz.")}</p>
             <h3 className="jf-lead mt-10 border-l-[3px] border-red-bright pl-5">
-              Quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas.
-            </h3>
+              {tx("futuros-humanos/e314a2eee9", "Quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas.")}</h3>
             <Body className="mt-6 text-cream-50/80">
-              <p>“Mais humanos” não significa rejeitar tecnologia.</p>
-              <p>Também não significa que seres humanos serão sempre melhores executores.</p>
-              <p>Significa preservar nossa presença nas perguntas que nenhuma eficiência resolve por nós:</p>
+              <p>{tx("futuros-humanos/f7c60c043a", "“Mais humanos” não significa rejeitar tecnologia.")}</p>
+              <p>{tx("futuros-humanos/abfba74306", "Também não significa que seres humanos serão sempre melhores executores.")}</p>
+              <p>{tx("futuros-humanos/3352cc4f3a", "Significa preservar nossa presença nas perguntas que nenhuma eficiência resolve por nós:")}</p>
             </Body>
             <ul className="mt-4 space-y-1 font-serif text-[20px] text-cream-50 lg:hidden">
               {questions.map((q) => (
@@ -287,52 +263,43 @@ export function FHAutoria() {
         <div className="mt-16 grid gap-12 border-t border-cream-50/20 pt-12 lg:grid-cols-[1fr_1.2fr_1fr] lg:gap-0 lg:divide-x lg:divide-cream-50/20">
           <div className="lg:pr-10">
             <h3 className="border-l-[3px] border-red-bright pl-4 font-serif text-[clamp(22px,1.9vw,27px)] leading-snug">
-              Autoria, para mim, é <Em>permanecer presente naquilo que ajudamos a construir.</Em>
+              {tx("futuros-humanos/d42daba2e9", "Autoria, para mim, é")} <Em>{tx("futuros-humanos/9e672b5d47", "permanecer presente naquilo que ajudamos a construir.")}</Em>
             </h3>
             <Lines
               className="mt-5 text-[15px] leading-relaxed text-cream-50/80"
               items={[
-                "Não significa fazer tudo pessoalmente.",
-                "Não significa controlar todos os resultados.",
-                "Significa não desaparecer da escolha de direção.",
-                "Não terceirizar completamente o julgamento.",
-                "Não entregar a outra pessoa, sistema ou ferramenta a responsabilidade por decidir que mundo merece ser construído.",
+                tx("futuros-humanos/d1281fbf50", "Não significa fazer tudo pessoalmente."),
+                tx("futuros-humanos/b5fc43fa66", "Não significa controlar todos os resultados."),
+                tx("futuros-humanos/8fd313a571", "Significa não desaparecer da escolha de direção."),
+                tx("futuros-humanos/33e7a4b4c2", "Não terceirizar completamente o julgamento."),
+                tx("futuros-humanos/bd29a7700b", "Não entregar a outra pessoa, sistema ou ferramenta a responsabilidade por decidir que mundo merece ser construído."),
               ]}
             />
           </div>
           <div className="lg:px-10">
             <Display as="h3" size="sm" caps className="border-l-[3px] border-red-bright pl-5">
-              Para não entregar às nossas ferramentas a autoria da nossa humanidade.
-            </Display>
+              {tx("futuros-humanos/3ee7c28d98", "Para não entregar às nossas ferramentas a autoria da nossa humanidade.")}</Display>
             <Stroke shape="underline" className="ml-5 mt-3 h-4 w-48" width={4} color="var(--jf-red-400)" />
             <p className="mt-8 font-serif text-[clamp(22px,1.9vw,28px)] text-red-bright">
-              Humanidade não é automaticamente virtude.
-            </p>
+              {tx("futuros-humanos/aae046f596", "Humanidade não é automaticamente virtude.")}</p>
             <Body className="mt-4 text-cream-50/80">
               <p>
-                Nós também somos capazes de errar, excluir, reproduzir preconceitos, agir por medo, buscar poder e tomar
-                decisões ruins.
-              </p>
-              <p>Portanto, “manter humanos na decisão” não resolve tudo.</p>
-              <p>O desafio é maior:</p>
+                {tx("futuros-humanos/356c9a9647", "Nós também somos capazes de errar, excluir, reproduzir preconceitos, agir por medo, buscar poder e tomar decisões ruins.")}</p>
+              <p>{tx("futuros-humanos/23a353bd93", "Portanto, “manter humanos na decisão” não resolve tudo.")}</p>
+              <p>{tx("futuros-humanos/a3588e228e", "O desafio é maior:")}</p>
             </Body>
             <p className="mt-3 font-semibold leading-relaxed text-cream-50">
-              precisamos desenvolver qualidade humana suficiente para usar capacidades cada vez maiores com discernimento,
-              responsabilidade e direção.
-            </p>
+              {tx("futuros-humanos/ff1c853f8e", "precisamos desenvolver qualidade humana suficiente para usar capacidades cada vez maiores com discernimento, responsabilidade e direção.")}</p>
           </div>
           <div className="lg:pl-10">
             <h3 className="font-serif text-[clamp(22px,1.9vw,27px)] leading-snug">
-              A pergunta nunca foi apenas o que nossas ferramentas serão capazes de fazer.
-            </h3>
-            <p className="jf-body mt-4 text-cream-50/80">É também:</p>
+              {tx("futuros-humanos/e6db35ca91", "A pergunta nunca foi apenas o que nossas ferramentas serão capazes de fazer.")}</h3>
+            <p className="jf-body mt-4 text-cream-50/80">{tx("futuros-humanos/ae83649a8c", "É também:")}</p>
             <p className="mt-2 font-serif text-[20px] leading-snug">
-              Quem queremos continuar sendo quando elas forem capazes de fazer cada vez mais?
-            </p>
-            <p className="jf-body mt-4 text-cream-50/80">E:</p>
+              {tx("futuros-humanos/03c01a983c", "Quem queremos continuar sendo quando elas forem capazes de fazer cada vez mais?")}</p>
+            <p className="jf-body mt-4 text-cream-50/80">{tx("futuros-humanos/c930e75f69", "E:")}</p>
             <p className="mt-2 font-serif text-[20px] leading-snug text-red-bright">
-              Que parte da decisão sobre o que vem depois ainda queremos assumir como nossa?
-            </p>
+              {tx("futuros-humanos/4dc2ecaf9b", "Que parte da decisão sobre o que vem depois ainda queremos assumir como nossa?")}</p>
           </div>
         </div>
       </Container>
@@ -344,72 +311,69 @@ export function FHAutoria() {
 export function FHProvoca() {
   const audiences = [
     {
-      t: "Para pessoas",
-      lead: "Pode ajudar alguém a perguntar:",
-      img: "/images/ensaio/pessoas-janela.webp",
-      alt: "Juliana olhando pela janela, com expressão contemplativa.",
+      t: tx("futuros-humanos/1d6f62b917", "Para pessoas"),
+      lead: tx("futuros-humanos/b495701295", "Pode ajudar alguém a perguntar:"),
+      img: img("futuros-humanos/4ca361d7a7", "/images/ensaio/pessoas-janela.webp"),
+      alt: tx("futuros-humanos/71c80ac5e1", "Juliana olhando pela janela, com expressão contemplativa."),
       items: [
-        "Que futuro estou ajudando a tornar mais provável com aquilo que repito hoje?",
-        "O que ainda pode ser diferente?",
-        "Que escolhas estou adiando?",
-        "Do que preciso me tornar capaz?",
-        "Que parte da minha vida está sendo construída no automático?",
-        "Qual movimento consigo fazer agora?",
+        tx("futuros-humanos/7162746050", "Que futuro estou ajudando a tornar mais provável com aquilo que repito hoje?"),
+        tx("futuros-humanos/1fe8177329", "O que ainda pode ser diferente?"),
+        tx("futuros-humanos/f0dfb05a63", "Que escolhas estou adiando?"),
+        tx("futuros-humanos/30f472c9b8", "Do que preciso me tornar capaz?"),
+        tx("futuros-humanos/3ee36476da", "Que parte da minha vida está sendo construída no automático?"),
+        tx("futuros-humanos/a5feda5613", "Qual movimento consigo fazer agora?"),
       ],
     },
     {
-      t: "Para lideranças",
-      lead: "Pode provocar perguntas como:",
-      img: "/images/ensaio/organizacoes-conversa-lideranca.webp",
-      alt: "Cena ilustrativa de Juliana em conversa individual com uma liderança.",
+      t: tx("futuros-humanos/42154f1e3a", "Para lideranças"),
+      lead: tx("futuros-humanos/04debd13ac", "Pode provocar perguntas como:"),
+      img: img("futuros-humanos/7b71f1118c", "/images/ensaio/organizacoes-conversa-lideranca.webp"),
+      alt: tx("futuros-humanos/1f8ede020d", "Cena ilustrativa de Juliana em conversa individual com uma liderança."),
       items: [
-        "Que comportamentos estamos recompensando?",
-        "Que decisões estamos automatizando sem revisar seus critérios?",
-        "Que capacidades nossas equipes precisarão desenvolver?",
-        "Que futuro nossa estratégia está tornando mais provável?",
-        "O que estamos ampliando sem perguntar se vale a pena ampliar?",
+        tx("futuros-humanos/82dc5eaefe", "Que comportamentos estamos recompensando?"),
+        tx("futuros-humanos/8e5b88831b", "Que decisões estamos automatizando sem revisar seus critérios?"),
+        tx("futuros-humanos/da98c04167", "Que capacidades nossas equipes precisarão desenvolver?"),
+        tx("futuros-humanos/aed15837b1", "Que futuro nossa estratégia está tornando mais provável?"),
+        tx("futuros-humanos/22a1f44e0f", "O que estamos ampliando sem perguntar se vale a pena ampliar?"),
       ],
     },
     {
-      t: "Para organizações",
-      lead: "Pode ajudar a enxergar:",
-      img: "/images/ensaio/home-04c-quadro-post-its.webp",
-      alt: "Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its.",
+      t: tx("futuros-humanos/e186a73dff", "Para organizações"),
+      lead: tx("futuros-humanos/114fcf5827", "Pode ajudar a enxergar:"),
+      img: img("futuros-humanos/69aa9789f8", "/images/ensaio/home-04c-quadro-post-its.webp"),
+      alt: tx("futuros-humanos/724e1e3f20", "Cena ilustrativa de Juliana junto a um quadro com diagrama e post-its."),
       items: [
-        "tensões antes de virarem crise;",
-        "possibilidades antes de virarem tendência dominante;",
-        "efeitos humanos de decisões tecnológicas;",
-        "capacidades que ainda precisam ser desenvolvidas;",
-        "e escolhas que estavam sendo tratadas como inevitáveis.",
+        tx("futuros-humanos/8ca36bb4b3", "tensões antes de virarem crise;"),
+        tx("futuros-humanos/560899e42b", "possibilidades antes de virarem tendência dominante;"),
+        tx("futuros-humanos/6d5dadf55e", "efeitos humanos de decisões tecnológicas;"),
+        tx("futuros-humanos/c4d2109677", "capacidades que ainda precisam ser desenvolvidas;"),
+        tx("futuros-humanos/9d4992e76b", "e escolhas que estavam sendo tratadas como inevitáveis."),
       ],
     },
   ];
   const formats = [
-    { t: "Palestras", d: "para abrir perspectiva." },
-    { t: "Workshops", d: "para transformar reflexão em escolha e movimento." },
-    { t: "Experiências customizadas", d: "quando a pergunta pede mais profundidade." },
+    { t: tx("futuros-humanos/b5bba8d62a", "Palestras"), d: tx("futuros-humanos/6e53b42f12", "para abrir perspectiva.") },
+    { t: tx("futuros-humanos/cd129ee028", "Workshops"), d: tx("futuros-humanos/508a1c68ff", "para transformar reflexão em escolha e movimento.") },
+    { t: tx("futuros-humanos/504e96b600", "Experiências customizadas"), d: tx("futuros-humanos/7555d06cf4", "quando a pergunta pede mais profundidade.") },
   ];
   return (
-    <Section label="O que Futuros Humanos provoca">
+    <Section label={tx("futuros-humanos/7a7c869ca0", "O que Futuros Humanos provoca")}>
       <Container className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:gap-14">
         <div>
           <Display size="lg">
-            Futuros Humanos não entrega respostas prontas. <Em>Ele muda a qualidade das perguntas.</Em>
+            {tx("futuros-humanos/a74d473e9b", "Futuros Humanos não entrega respostas prontas.")} <Em>{tx("futuros-humanos/c2ea83bbea", "Ele muda a qualidade das perguntas.")}</Em>
           </Display>
           <Stroke shape="underline" className="mt-3 h-4 w-56" width={4} />
         </div>
         <div className="lg:pt-4">
           <Body className="text-ink-700">
             <p>
-              Porque uma boa pergunta pode mudar aquilo que uma pessoa percebe. Pode revelar uma escolha que estava
-              escondida. Pode expor uma contradição. Pode deslocar uma conversa. Pode tornar visível aquilo que o automático
-              estava normalizando.
-            </p>
-            <p>E, às vezes, pode abrir um caminho que antes nem parecia existir.</p>
+              {tx("futuros-humanos/7ebaa8b448", "Porque uma boa pergunta pode mudar aquilo que uma pessoa percebe. Pode revelar uma escolha que estava escondida. Pode expor uma contradição. Pode deslocar uma conversa. Pode tornar visível aquilo que o automático estava normalizando.")}</p>
+            <p>{tx("futuros-humanos/2a3748b586", "E, às vezes, pode abrir um caminho que antes nem parecia existir.")}</p>
           </Body>
           <Lines
             className="jf-body mt-6 border-l-[3px] border-red-brand pl-5 font-medium text-ink-900"
-            items={["Futuros Humanos entra justamente aí.", "Não para prever.", "Não para prescrever.", "Mas para provocar movimento."]}
+            items={[tx("futuros-humanos/b95d0bc391", "Futuros Humanos entra justamente aí."), tx("futuros-humanos/81f170ef29", "Não para prever."), tx("futuros-humanos/83cb043597", "Não para prescrever."), tx("futuros-humanos/af0e1326da", "Mas para provocar movimento.")]}
           />
         </div>
       </Container>
@@ -435,22 +399,18 @@ export function FHProvoca() {
           <div>
             <Body className="text-ink-700">
               <p>
-                A conversa pode começar no futuro.
-                <br />
-                Mas quase sempre termina no presente.
-              </p>
+                {tx("futuros-humanos/3509e70929", "A conversa pode começar no futuro.")}<br />
+                {tx("futuros-humanos/122c24d737", "Mas quase sempre termina no presente.")}</p>
               <p>
-                Porque é aqui que escolhas viram prática.
-                <br />E prática começa a construir consequência.
-              </p>
+                {tx("futuros-humanos/7c7fe9880f", "Porque é aqui que escolhas viram prática.")}<br />{tx("futuros-humanos/929f0faf95", "E prática começa a construir consequência.")}</p>
             </Body>
             <Display as="h3" size="sm" className="mt-8 border-l-[3px] border-red-brand pl-5">
-              O objetivo não é sair sabendo o que vai acontecer.{" "}
-              <Em>É sair mais capaz de participar do que pode acontecer.</Em>
+              {tx("futuros-humanos/f3e65bcbed", "O objetivo não é sair sabendo o que vai acontecer.")}{" "}
+              <Em>{tx("futuros-humanos/3d779983bf", "É sair mais capaz de participar do que pode acontecer.")}</Em>
             </Display>
           </div>
           <div>
-            <p className="jf-title">Essa conversa pode assumir formatos diferentes.</p>
+            <p className="jf-title">{tx("futuros-humanos/b1dcea31e9", "Essa conversa pode assumir formatos diferentes.")}</p>
             <ul className="mt-6 grid gap-6 sm:grid-cols-3">
               {formats.map((f) => (
                 <li key={f.t}>
@@ -462,21 +422,19 @@ export function FHProvoca() {
             </ul>
             <div className="mt-10 rounded-[var(--jf-radius-sm)] bg-blush-100/70 p-7">
               <p className="font-serif text-[clamp(22px,1.9vw,28px)] leading-snug">
-                A pergunta nunca é apenas “o que vem depois?”.
-              </p>
-              <p className="jf-body mt-3 text-ink-700">É também:</p>
+                {tx("futuros-humanos/9c962b4343", "A pergunta nunca é apenas “o que vem depois?”.")}</p>
+              <p className="jf-body mt-3 text-ink-700">{tx("futuros-humanos/677f105d51", "É também:")}</p>
               <Lines
                 dash
                 className="mt-2 font-serif text-[19px] leading-snug"
                 items={[
-                  "o que queremos ajudar a tornar possível?",
-                  "quem precisamos nos tornar para sustentar essa escolha?",
-                  "e o que podemos começar a construir agora?",
+                  tx("futuros-humanos/1f7a311c03", "o que queremos ajudar a tornar possível?"),
+                  tx("futuros-humanos/2a494752b9", "quem precisamos nos tornar para sustentar essa escolha?"),
+                  tx("futuros-humanos/10f0954904", "e o que podemos começar a construir agora?"),
                 ]}
               />
               <ButtonLink href={CONTACT_ROUTES.organizacoes} className="mt-8">
-                Leve Futuros Humanos para sua organização
-              </ButtonLink>
+                {tx("futuros-humanos/4daa16a862", "Leve Futuros Humanos para sua organização")}</ButtonLink>
             </div>
           </div>
         </div>
@@ -488,43 +446,40 @@ export function FHProvoca() {
 /* ───────────────────────── BLOCO 9 — ENCERRAMENTO ───────────────────────── */
 export function FHEncerramento() {
   return (
-    <Section tone="wine" padded={false} label="Encerramento">
+    <Section tone="wine" padded={false} label={tx("futuros-humanos/762075d255", "Encerramento")}>
       <div className="grid lg:grid-cols-[60%_40%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[900px] lg:pr-10">
           <Display size="xl" caps>
-            Temos futuros <Em>para construir.</Em>
+            {tx("futuros-humanos/383b84db0b", "Temos futuros")} <Em>{tx("futuros-humanos/85d3d13865", "para construir.")}</Em>
           </Display>
           <Stroke shape="underline" className="mt-3 h-4 w-64" width={4} color="var(--jf-red-400)" />
           <div className="mt-12 grid gap-12 md:grid-cols-2 md:gap-10">
             <div>
               <Body className="text-cream-50/85">
                 <p>
-                  Não porque controlamos o que vem depois.
-                  <br />
-                  Não porque qualquer coisa seja possível.
-                  <br />
-                  Não porque imaginar seja suficiente.
-                </p>
-                <p>Mas porque existe um espaço entre aquilo que existe e aquilo que ainda pode existir.</p>
-                <p>Um espaço de:</p>
+                  {tx("futuros-humanos/383ca11bc0", "Não porque controlamos o que vem depois.")}<br />
+                  {tx("futuros-humanos/50034a8b61", "Não porque qualquer coisa seja possível.")}<br />
+                  {tx("futuros-humanos/d1f856753a", "Não porque imaginar seja suficiente.")}</p>
+                <p>{tx("futuros-humanos/c637b12bd9", "Mas porque existe um espaço entre aquilo que existe e aquilo que ainda pode existir.")}</p>
+                <p>{tx("futuros-humanos/27096d9e73", "Um espaço de:")}</p>
               </Body>
               <ul className="jf-body mt-3 border-l-[3px] border-red-bright pl-5 font-medium text-cream-50">
-                {["possibilidade.", "escolha.", "capacidade.", "participação.", "construção."].map((w) => (
+                {[tx("futuros-humanos/75787c5dc2", "possibilidade."), tx("futuros-humanos/ba4b8e35eb", "escolha."), tx("futuros-humanos/dc4f32b00a", "capacidade."), tx("futuros-humanos/d9337bc24f", "participação."), tx("futuros-humanos/de92f35c37", "construção.")].map((w) => (
                   <li key={w}>{w}</li>
                 ))}
               </ul>
-              <p className="jf-body mt-5 text-cream-50/85">E é nesse espaço que Futuros Humanos acontece.</p>
+              <p className="jf-body mt-5 text-cream-50/85">{tx("futuros-humanos/6220f3f153", "E é nesse espaço que Futuros Humanos acontece.")}</p>
             </div>
             <div>
-              <p className="font-serif text-[24px] leading-tight">Ao longo dessa conversa, falamos sobre:</p>
+              <p className="font-serif text-[24px] leading-tight">{tx("futuros-humanos/1e3bc767dc", "Ao longo dessa conversa, falamos sobre:")}</p>
               <ul className="mt-4 space-y-2.5 text-[15px] leading-relaxed text-cream-50/85">
                 {[
-                  "O futuro mais provável não é o único possível.",
-                  "Capacidade não é direção.",
-                  "Agência não é controle.",
-                  "O automático também constrói futuros.",
-                  "Nós construímos futuros e somos construídos enquanto os construímos.",
-                  "E, quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas.",
+                  tx("futuros-humanos/2660a90b57", "O futuro mais provável não é o único possível."),
+                  tx("futuros-humanos/3e5ccebd6a", "Capacidade não é direção."),
+                  tx("futuros-humanos/68902dd33c", "Agência não é controle."),
+                  tx("futuros-humanos/7d266a4134", "O automático também constrói futuros."),
+                  tx("futuros-humanos/1d9a697864", "Nós construímos futuros e somos construídos enquanto os construímos."),
+                  tx("futuros-humanos/d665e756c6", "E, quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas."),
                 ].map((x) => (
                   <li key={x} className="flex gap-3">
                     <span className="mt-[0.8em] h-px w-5 shrink-0 bg-red-bright" aria-hidden />
@@ -536,25 +491,22 @@ export function FHEncerramento() {
           </div>
           <div className="mt-14 border-t border-cream-50/25 pt-10">
             <div className="border-l-[3px] border-red-bright pl-5">
-              <h3 className="font-serif text-[clamp(26px,2.6vw,40px)] leading-tight">O que queremos ajudar a tornar possível?</h3>
+              <h3 className="font-serif text-[clamp(26px,2.6vw,40px)] leading-tight">{tx("futuros-humanos/ae68d01c0a", "O que queremos ajudar a tornar possível?")}</h3>
               <h3 className="mt-2 font-serif text-[clamp(26px,2.6vw,40px)] leading-tight text-red-bright">
-                Quem precisamos nos tornar para construir futuros diferentes?
-              </h3>
+                {tx("futuros-humanos/327094b6ec", "Quem precisamos nos tornar para construir futuros diferentes?")}</h3>
             </div>
             <ButtonRow className="mt-10">
               <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg">
-                Leve Futuros Humanos para sua organização
-              </ButtonLink>
+                {tx("futuros-humanos/c3d9fee9ee", "Leve Futuros Humanos para sua organização")}</ButtonLink>
               <ButtonLink href="/ideias" variant="ghost-light" size="lg">
-                Explore as ideias
-              </ButtonLink>
+                {tx("futuros-humanos/a895d65cfc", "Explore as ideias")}</ButtonLink>
             </ButtonRow>
           </div>
         </Container>
         <div className="relative min-h-[480px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
-            src="/images/ensaio/contato-sorriso-vertical.webp"
-            alt="Retrato acolhedor de Juliana com notebook à mesa."
+            src={img("futuros-humanos/2fc1d57829", "/images/ensaio/contato-sorriso-vertical.webp")}
+            alt={tx("futuros-humanos/7c034827fa", "Retrato acolhedor de Juliana com notebook à mesa.")}
             sizes="(min-width:1024px) 40vw, 100vw"
             className="absolute inset-0 jf-fade-left"
             imgClassName="object-[50%_40%]"

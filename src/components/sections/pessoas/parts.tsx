@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Photo } from "@/components/ui/Photo";
 import { Stroke } from "@/components/ui/Strokes";
 
+import { tx, lazy } from "@/lib/editable";
 /**
  * Peças locais da página "Para Pessoas" — estética mais íntima (papéis, fitas, post-its).
  * Rotação só a partir de md: no mobile tudo fica alinhado e linear.
@@ -134,13 +135,13 @@ export function CheckList({ items, className = "" }: { items: string[]; classNam
   );
 }
 
-const icon = {
+const icon = lazy(() => ({
   fill: "none",
-  stroke: "currentColor",
+  stroke: tx("pessoas/72d94fa635", "currentColor"),
   strokeWidth: 1.5,
   strokeLinecap: "round" as const,
   strokeLinejoin: "round" as const,
-};
+}));
 
 export type IconName =
   | "sprout"
