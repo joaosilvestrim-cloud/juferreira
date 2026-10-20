@@ -167,6 +167,46 @@ for (const file of walk(SECTIONS)) {
   console.log(`${rel}: ${edits.length} edições`);
 }
 
+// Associa cada item à seção da página onde aparece (ordem = ordem de renderização em page.tsx)
+const PAGE_FILE = { home: "src/app/page.tsx", "palestras-workshops": "src/app/palestras/page.tsx" };
+const sourceOf = new Map();
+const wordRe = (w) => new RegExp(String.raw`\b` + w + String.raw`\b`);
+const fnBody = (file, name) => {
+  const key = file + "#" + name;
+  if (sourceOf.has(key)) return sourceOf.get(key);
+  const src = readFileSync(join(ROOT, file), "utf8");
+  const m = src.match(new RegExp(String.raw`(?:function|const)\s+` + name + String.raw`\b[\s\S]*?(?=\n(?:export )?(?:async )?(?:function|const) |$)`));
+  sourceOf.set(key, m ? m[0] : "");
+  return sourceOf.get(key);
+};
+const pages = [...new Set(registry.map((r) => r.page))];
+for (const page of pages) {
+  const pf = PAGE_FILE[page] ?? `src/app/${page}/page.tsx`;
+  const pageSrc = readFileSync(join(ROOT, pf), "utf8");
+  const sections = [...pageSrc.matchAll(/<([A-Z][A-Za-z0-9]+)\s*\/>/g)].map((m) => m[1]);
+  const files = [...new Set(registry.filter((r) => r.page === page).map((r) => r.file))];
+  const findSection = (block, seen = new Set()) => {
+    if (sections.includes(block)) return block;
+    if (seen.has(block)) return null;
+    seen.add(block);
+    for (const f of files)
+      for (const sec of sections) if (wordRe(block).test(fnBody(f, sec))) return sec;
+    // usado por outro bloco auxiliar que, por sua vez, está numa seção
+    for (const f of files) {
+      const helpers = [...readFileSync(join(ROOT, f), "utf8").matchAll(/(?:function|const)\s+([A-Za-z0-9_]+)/g)].map((m) => m[1]);
+      for (const h of helpers) if (h !== block && wordRe(block).test(fnBody(f, h))) {
+        const s = findSection(h, seen);
+        if (s) return s;
+      }
+    }
+    return null;
+  };
+  for (const r of registry.filter((x) => x.page === page)) {
+    r.section = findSection(r.block) ?? "Outros";
+    r.order = sections.indexOf(r.section) === -1 ? 999 : sections.indexOf(r.section);
+  }
+}
+
 if (!DRY) {
   mkdirSync(join(ROOT, "src", "content"), { recursive: true });
   writeFileSync(join(ROOT, "src", "content", "editable-registry.json"), JSON.stringify(registry, null, 1));

@@ -6,9 +6,13 @@ import { logout } from "../actions";
 
 const ITEMS = [
   { href: "/admin", label: "Conversas" },
+  { href: "/admin/paginas", label: "Páginas" },
   { href: "/admin/artigos", label: "Artigos" },
   { href: "/admin/referencias", label: "Referências" },
+  { href: "/admin/provas", label: "Provas" },
   { href: "/admin/newsletter", label: "Newsletter" },
+  { href: "/admin/seo", label: "SEO" },
+  { href: "/admin/usuarios", label: "Usuários" },
   { href: "/admin/configuracoes", label: "Configurações" },
 ];
 

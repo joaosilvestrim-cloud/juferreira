@@ -1,4 +1,4 @@
-import { getExternal } from "@/lib/content";
+import { getExternal, getProof, videoEmbed, type ProofItem } from "@/lib/content";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ButtonLink, ButtonRow } from "@/components/ui/Button";
@@ -13,63 +13,83 @@ import { tx, img } from "@/lib/editable";
 /* ───────────────────────── BLOCO 7 — JU NO PALCO / PROVA E LASTRO ───────────────────────── */
 
 /*
- * JU EM AÇÃO — somente ativos REAIS. Nenhuma evidência fictícia deve ser publicada (copy Bloco 7).
- * Cada sub-seção só é renderizada quando o array correspondente tiver itens.
+ * JU EM AÇÃO — somente ativos REAIS, cadastrados no painel (/admin → Provas).
+ * Cada sub-seção só aparece quando houver itens daquele tipo.
  */
-// TODO(PENDING_ASSETS): reel de 60–90 s mostrando palco, voz, movimento, plateia, pausas, perguntas e reação.
-const VIDEOS: { src: string; poster: string; title: string }[] = [];
-// TODO(PENDING_ASSETS): 2 a 4 fotos reais e fortes de eventos, workshops ou palco.
-const STAGE_PHOTOS: { src: string; alt: string }[] = [];
-// TODO(PENDING_ASSETS): 2 ou 3 depoimentos verificáveis (contratante, liderança, participante).
-const TESTIMONIALS: { quote: string; name: string; role: string }[] = [];
-// TODO(PENDING_ASSETS): organizações/contextos — apenas com autorização e histórico adequado.
-const ORGANIZATIONS: { name: string; logo?: string }[] = [];
-
-const HAS_MEDIA = VIDEOS.length > 0 || STAGE_PHOTOS.length > 0;
-const HAS_ACTION = HAS_MEDIA || TESTIMONIALS.length > 0 || ORGANIZATIONS.length > 0;
-
-function JuEmAcao() {
-  if (!HAS_ACTION) return null;
+function JuEmAcao({ proof }: { proof: ProofItem[] }) {
+  const videos = proof.filter((p) => p.kind === "video" && p.url).map((p) => ({ ...p, embed: videoEmbed(p.url!) })).filter((v) => v.embed);
+  const photos = proof.filter((p) => p.kind === "foto" && p.image);
+  const testimonials = proof.filter((p) => p.kind === "depoimento" && p.quote);
+  const orgs = proof.filter((p) => p.kind === "logo" && (p.title || p.image));
+  if (!videos.length && !photos.length && !testimonials.length && !orgs.length) return null;
   return (
     <div id="ju-em-acao" className="mt-16 border-t border-ink-900/15 pt-10">
       <h3 className="jf-display jf-display-sm">{tx("palestras-workshops/127e7bde47", "Ju em ação")}</h3>
-      {HAS_MEDIA && (
-        <div className="mt-8 grid gap-4 md:grid-cols-[2fr_1fr]">
-          {VIDEOS.map((v) => (
-            <video key={v.src} src={v.src} poster={v.poster} controls preload="none" className="w-full rounded-[var(--jf-radius-sm)]" title={v.title} />
-          ))}
-          <div className="grid gap-4">
-            {STAGE_PHOTOS.map((p) => (
-              <div key={p.src} className="relative aspect-[16/10] overflow-hidden rounded-sm">
-                <Photo src={p.src} alt={p.alt} sizes="(min-width:768px) 30vw, 100vw" className="absolute inset-0" />
-              </div>
-            ))}
-          </div>
+      {(videos.length > 0 || photos.length > 0) && (
+        <div className={`mt-8 grid gap-4 ${videos.length && photos.length ? "md:grid-cols-[2fr_1fr]" : ""}`}>
+          {videos.length > 0 && (
+            <div className="grid gap-4">
+              {videos.map((v) =>
+                v.embed!.type === "iframe" ? (
+                  <div key={v.id} className="relative aspect-video overflow-hidden rounded-[var(--jf-radius-sm)] bg-ink-900">
+                    <iframe
+                      src={v.embed!.src}
+                      title={v.title ?? "Vídeo"}
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute inset-0 h-full w-full"
+                    />
+                  </div>
+                ) : (
+                  <video key={v.id} src={v.embed!.src} poster={v.image ?? undefined} controls preload="none" className="w-full rounded-[var(--jf-radius-sm)]" title={v.title ?? undefined} />
+                ),
+              )}
+            </div>
+          )}
+          {photos.length > 0 && (
+            <div className={`grid gap-4 ${videos.length ? "" : "sm:grid-cols-2 lg:grid-cols-4"}`}>
+              {photos.map((p) => (
+                <figure key={p.id}>
+                  <div className="relative aspect-[16/10] overflow-hidden rounded-sm">
+                    <Photo src={p.image!} alt={p.title ?? "Ju Ferreira em ação"} sizes="(min-width:768px) 30vw, 100vw" className="absolute inset-0" />
+                  </div>
+                  {p.title && <figcaption className="mt-2 text-[13px] text-ink-500">{p.title}</figcaption>}
+                </figure>
+              ))}
+            </div>
+          )}
         </div>
       )}
-      {TESTIMONIALS.length > 0 && (
+      {testimonials.length > 0 && (
         <ul className="mt-10 grid gap-5 md:grid-cols-3">
-          {TESTIMONIALS.map((t) => (
-            <li key={t.name}>
-              <QuoteCard cite={`${t.name} — ${t.role}`}>{t.quote}</QuoteCard>
+          {testimonials.map((t) => (
+            <li key={t.id}>
+              <QuoteCard cite={[t.title, t.role].filter(Boolean).join(" — ")}>{t.quote}</QuoteCard>
             </li>
           ))}
         </ul>
       )}
-      {ORGANIZATIONS.length > 0 && (
-        <ul className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-ink-500">
-          {ORGANIZATIONS.map((o) => (
-            <li key={o.name} className="text-[15px] font-medium uppercase tracking-[0.14em]">
-              {o.name}
-            </li>
-          ))}
+      {orgs.length > 0 && (
+        <ul className="mt-10 flex flex-wrap items-center gap-x-10 gap-y-6 text-ink-500">
+          {orgs.map((o) => {
+            const inner = o.image ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={o.image} alt={o.title ?? ""} className="h-10 w-auto max-w-[160px] object-contain opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0" />
+            ) : (
+              <span className="text-[15px] font-medium uppercase tracking-[0.14em]">{o.title}</span>
+            );
+            return <li key={o.id}>{o.url ? <a href={o.url} target="_blank" rel="noopener noreferrer">{inner}</a> : inner}</li>;
+          })}
         </ul>
       )}
     </div>
   );
 }
 
-export function PalestrasLastro() {
+export async function PalestrasLastro() {
+  const proof = await getProof();
+  const HAS_MEDIA = proof.some((p) => (p.kind === "video" && p.url) || (p.kind === "foto" && p.image));
   const columns: { icon: IconName; t: string; body: ReactNode }[] = [
     {
       icon: "laptop",
@@ -174,7 +194,7 @@ export function PalestrasLastro() {
           ))}
         </ul>
 
-        <JuEmAcao />
+        <JuEmAcao proof={proof} />
 
         <div className="mt-16 grid gap-10 border-t border-ink-900/15 pt-10 lg:grid-cols-[1.1fr_1fr_1fr] lg:gap-12">
           <QuoteCard>

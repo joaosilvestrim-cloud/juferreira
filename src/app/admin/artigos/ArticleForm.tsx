@@ -2,6 +2,8 @@
 
 import { saveArticle } from "../content-actions";
 import { ActionForm, Field, fieldCls, ImageInput } from "../_ui/form";
+import { RichEditor } from "../_ui/RichEditor";
+import { plainToHtmlClient } from "../_ui/plain";
 
 export type ArticleData = {
   id?: number;
@@ -48,12 +50,10 @@ export function ArticleForm({ a = {} }: { a?: ArticleData }) {
         <Field label="Pergunta de entrada" hint="Opcional. Aparece em destaque no card e no topo do artigo.">
           <input name="question" defaultValue={a.question ?? ""} className={fieldCls} />
         </Field>
-        <Field
-          label="Texto do artigo"
-          hint="Separe parágrafos com uma linha em branco. Comece a linha com ## para um subtítulo e com > para uma citação."
-        >
-          <textarea name="body" rows={18} defaultValue={a.body ?? ""} className={`${fieldCls} font-serif text-[17px] leading-relaxed`} />
-        </Field>
+        <div>
+          <p className="text-[14px] font-medium text-ink-900">Texto do artigo</p>
+          <RichEditor name="body" initialHtml={plainToHtmlClient(a.body ?? "")} placeholder="Escreva o artigo. Use a barra acima para títulos, negrito, listas, citações, links e imagens." />
+        </div>
       </div>
 
       <div className={`${box} grid gap-5 space-y-0 sm:grid-cols-2`}>

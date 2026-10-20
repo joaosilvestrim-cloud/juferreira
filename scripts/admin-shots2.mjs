@@ -1,0 +1,13 @@
+import { chromium } from "@playwright/test";
+import { readFileSync } from "node:fs";
+const B = process.env.BASE_URL ?? "http://localhost:3000";
+const pwd = readFileSync(".env.local", "utf8").match(/^ADMIN_PASSWORD=(.*)$/m)[1];
+const b = await chromium.launch({ channel: "msedge" });
+const p = await b.newPage({ viewport: { width: 1280, height: 900 } });
+await p.goto(`${B}/admin/login`); await p.fill("#password", pwd); await p.click("button[type=submit]"); await p.waitForURL(`${B}/admin`);
+await p.goto(`${B}/admin/paginas/home`); await p.waitForTimeout(600); await p.screenshot({ path: "screenshots/adm-paginas-home.png" });
+await p.goto(`${B}/admin/artigos/novo`); await p.waitForTimeout(800);
+await p.locator(".ProseMirror").click(); await p.keyboard.type("Texto de exemplo no editor.");
+await p.locator(".ProseMirror").scrollIntoViewIfNeeded(); await p.screenshot({ path: "screenshots/adm-editor.png" });
+await p.goto(`${B}/admin/provas`); await p.waitForTimeout(500); await p.screenshot({ path: "screenshots/adm-provas.png" });
+await b.close();

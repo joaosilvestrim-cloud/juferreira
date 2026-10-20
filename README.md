@@ -39,7 +39,18 @@ Login com `ADMIN_PASSWORD` (sessão assinada com `ADMIN_SECRET`). Seções:
 - **Artigos** — textos de Ideias com página própria em `/ideias/<slug>` (aparecem em Ideias e na Home quando publicados).
 - **Referências** — "Na mesa agora" e "Referências que voltam".
 - **Newsletter** — escrever edição, prévia, envio de teste e disparo para os inscritos (Resend; descadastro em `/newsletter/sair`).
+- **Páginas** — todos os textos (3.300+) e imagens (136) das 8 páginas, bloco a bloco, com busca e "voltar ao original".
+- **Provas** — depoimentos, vídeos (YouTube/Vimeo/.mp4), fotos de palco e organizações (seção "Ju em ação").
+- **SEO** — título, descrição, imagem de compartilhamento e "esconder do Google" por página.
+- **Usuários** — cada pessoa com e-mail e senha; desativar/excluir; senha mestra (login sem e-mail) para recuperação.
 - **Configurações** — e-mail, WhatsApp, LinkedIn, Instagram, links EPIC247/WTF, quem recebe avisos de contato.
+
+Artigos e newsletter usam editor de texto completo (títulos, negrito, itálico, sublinhado, listas, citação, links,
+imagens, alinhamento); o HTML é higienizado no servidor (`src/lib/rich-text.ts`).
+
+**Ao mudar textos no código**: rode `node scripts/codemod-editable.mjs` — marca textos/imagens novos como editáveis e
+atualiza `src/content/editable-registry.json`. Textos alterados no código ganham chave nova (ajustes antigos daquele
+texto deixam de valer).
 
 Imagens enviadas ficam no banco (`media`) e são servidas em `/midia/<id>`. Botões externos usam `/ir/<destino>`.
 E-mails: `RESEND_API_KEY` (domínio juferreira.com.br verificado).

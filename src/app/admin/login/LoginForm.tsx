@@ -8,6 +8,18 @@ export function LoginForm() {
   return (
     <form action={action} className="mt-8 space-y-5">
       <div>
+        <label htmlFor="email" className="block text-[15px] font-medium">
+          E-mail <span className="font-normal text-ink-500">(vazio = senha mestra)</span>
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autoComplete="username"
+          className="mt-2 min-h-[52px] w-full rounded-[10px] border border-ink-900/20 bg-cream-50 px-4 text-[16px] focus:border-red-brand focus:outline-none"
+        />
+      </div>
+      <div>
         <label htmlFor="password" className="block text-[15px] font-medium">
           Senha
         </label>
@@ -16,7 +28,6 @@ export function LoginForm() {
           name="password"
           type="password"
           required
-          autoFocus
           autoComplete="current-password"
           className="mt-2 min-h-[52px] w-full rounded-[10px] border border-ink-900/20 bg-cream-50 px-4 text-[16px] focus:border-red-brand focus:outline-none"
         />

@@ -224,3 +224,39 @@ export async function seoFor(path: string, defaults: import("next").Metadata): P
     ...(s.noindex ? { robots: { index: false, follow: true } } : {}),
   };
 }
+
+/* ───────────── Provas (Ju em ação) ───────────── */
+export type ProofItem = {
+  id: number;
+  kind: "depoimento" | "logo" | "foto" | "video";
+  title: string | null;
+  role: string | null;
+  quote: string | null;
+  url: string | null;
+  image: string | null;
+};
+
+export async function getProof(): Promise<ProofItem[]> {
+  "use cache";
+  cacheTag("proof");
+  cacheLife("max");
+  try {
+    const { rows } = await db.query(
+      "select id, kind, title, role, quote, url, media_id from public.proof_items where visible order by sort, id",
+    );
+    return rows.map((r) => ({ ...r, id: Number(r.id), image: mediaUrl(r.media_id) }));
+  } catch (err) {
+    console.error("[content] proof", err);
+    return [];
+  }
+}
+
+/** Converte link de YouTube/Vimeo em endereço de incorporação; .mp4 fica como vídeo direto. */
+export function videoEmbed(url: string): { type: "iframe" | "video"; src: string } | null {
+  const yt = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([\w-]{11})/);
+  if (yt) return { type: "iframe", src: `https://www.youtube-nocookie.com/embed/${yt[1]}` };
+  const vm = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if (vm) return { type: "iframe", src: `https://player.vimeo.com/video/${vm[1]}` };
+  if (/^https?:\/\/.+\.(mp4|webm)(\?.*)?$/i.test(url)) return { type: "video", src: url };
+  return null;
+}

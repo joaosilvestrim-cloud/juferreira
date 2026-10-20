@@ -1,5 +1,6 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
-import { parseBody, readSettings } from "@/lib/content";
+import { readSettings } from "@/lib/content";
+import { richHtml } from "@/lib/rich-text";
 import { SITE_URL } from "@/lib/site";
 
 /** Envio da newsletter "Uma Terça-feira Qualquer" via Resend (lotes de até 100). */
@@ -20,15 +21,19 @@ export const unsubscribeUrl = (email: string) =>
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 export function renderIssue(issue: { subject: string; preheader?: string | null; body: string }, email: string) {
-  const blocks = parseBody(issue.body)
-    .map((b) =>
-      b.type === "h2"
-        ? `<h2 style="font-family:Georgia,serif;font-weight:500;font-size:24px;margin:32px 0 8px;color:#181411">${esc(b.text)}</h2>`
-        : b.type === "quote"
-          ? `<blockquote style="margin:24px 0;padding-left:16px;border-left:3px solid #b80c10;font-family:Georgia,serif;font-size:21px;line-height:1.4;color:#181411">${esc(b.text)}</blockquote>`
-          : `<p style="margin:0 0 16px;font:17px/1.7 Georgia,serif;color:#332925;white-space:pre-line">${esc(b.text)}</p>`,
-    )
-    .join("");
+  // HTML do editor, higienizado, com estilos inline (clientes de e-mail ignoram CSS externo)
+  const abs = (u: string) => (u.startsWith("/") ? SITE_URL + u : u);
+  const blocks = richHtml(issue.body)
+    .replace(/<p(\s[^>]*)?>/g, (_m, a = "") => `<p${a} style="margin:0 0 16px;font:17px/1.7 Georgia,serif;color:#332925">`)
+    .replace(/<h2(\s[^>]*)?>/g, '<h2 style="font-family:Georgia,serif;font-weight:500;font-size:24px;margin:32px 0 8px;color:#181411">')
+    .replace(/<h3(\s[^>]*)?>/g, '<h3 style="font-family:Georgia,serif;font-weight:500;font-size:20px;margin:24px 0 8px;color:#181411">')
+    .replace(/<h4(\s[^>]*)?>/g, '<h4 style="font:600 16px Arial,sans-serif;margin:20px 0 6px;color:#181411">')
+    .replace(/<blockquote>/g, '<blockquote style="margin:24px 0;padding-left:16px;border-left:3px solid #b80c10;font-family:Georgia,serif;font-size:21px;line-height:1.4;color:#181411">')
+    .replace(/<ul>/g, '<ul style="margin:0 0 16px;padding-left:22px;font:17px/1.7 Georgia,serif;color:#332925">')
+    .replace(/<ol>/g, '<ol style="margin:0 0 16px;padding-left:22px;font:17px/1.7 Georgia,serif;color:#332925">')
+    .replace(/<a /g, '<a style="color:#b80c10" ')
+    .replace(/<hr>/g, '<hr style="border:0;border-top:1px solid #e6ddd2;margin:28px 0">')
+    .replace(/<img ([^>]*?)src="([^"]+)"/g, (_m, pre, src) => `<img ${pre}style="max-width:100%;height:auto;border-radius:8px;margin:8px 0" src="${abs(src)}"`);
   const unsub = unsubscribeUrl(email);
   const html = `<!doctype html><html lang="pt-BR"><body style="margin:0;background:#faf7f2">
   <span style="display:none!important;opacity:0;color:transparent;height:0;width:0;overflow:hidden">${esc(issue.preheader ?? "")}</span>

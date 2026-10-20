@@ -2,6 +2,8 @@
 
 import { saveIssue, sendIssueAll, sendIssueTest } from "../content-actions";
 import { ActionForm, Field, fieldCls } from "../_ui/form";
+import { RichEditor } from "../_ui/RichEditor";
+import { plainToHtmlClient } from "../_ui/plain";
 
 export function IssueEditor({ issue }: { issue?: { id: number; subject: string; preheader: string | null; body: string } }) {
   return (
@@ -14,9 +16,10 @@ export function IssueEditor({ issue }: { issue?: { id: number; subject: string; 
         <Field label="Texto de pré-visualização" hint="Aparece ao lado do assunto na caixa de entrada.">
           <input name="preheader" defaultValue={issue?.preheader ?? ""} className={fieldCls} />
         </Field>
-        <Field label="Texto *" hint="Parágrafos separados por linha em branco. ## para subtítulo, > para citação.">
-          <textarea name="body" required rows={16} defaultValue={issue?.body} className={`${fieldCls} font-serif text-[17px] leading-relaxed`} />
-        </Field>
+        <div>
+          <p className="text-[14px] font-medium text-ink-900">Texto *</p>
+          <RichEditor name="body" initialHtml={plainToHtmlClient(issue?.body ?? "")} placeholder="Escreva a edição desta terça-feira…" />
+        </div>
       </div>
     </ActionForm>
   );

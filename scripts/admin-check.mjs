@@ -39,7 +39,7 @@ const [dl] = await Promise.all([page.waitForEvent("download"), page.click("text=
 const csv = readFileSync(await dl.path(), "utf8");
 console.log("CSV:", dl.suggestedFilename(), "| linhas:", csv.trim().split("\r\n").length, "| tem teste:", csv.includes("TESTE AUTOMATICO ADMIN"));
 
-await page.click("text=Newsletter");
+await page.click(`a[href="/admin?tab=newsletter"]`);
 await page.waitForURL(/tab=newsletter/);
 console.log("aba newsletter ok");
 await page.click("text=Sair");

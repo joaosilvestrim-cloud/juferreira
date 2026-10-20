@@ -44,7 +44,18 @@ try {
   await page.fill('input[name="title"]', "TESTE CMS Artigo publicado");
   await page.fill('input[name="slug"]', "teste-cms-artigo");
   await page.fill('textarea[name="excerpt"]', "Resumo do artigo de teste.");
-  await page.fill('textarea[name="body"]', "Primeiro parágrafo.\n\n## Um subtítulo\n\n> Uma citação forte.\n\nÚltimo parágrafo.");
+  // editor de texto completo
+  await page.locator(".ProseMirror").first().click();
+  await page.keyboard.type("Primeiro parágrafo com ");
+  await page.getByRole("button", { name: "Negrito" }).first().click();
+  await page.keyboard.type("negrito");
+  await page.getByRole("button", { name: "Negrito" }).first().click();
+  await page.keyboard.press("Enter");
+  await page.getByRole("button", { name: "Título", exact: true }).first().click();
+  await page.keyboard.type("Um subtítulo");
+  await page.keyboard.press("Enter");
+  await page.getByRole("button", { name: "Citação" }).first().click();
+  await page.keyboard.type("Uma citação forte.");
   await page.check('input[name="territories"][value="futuros"]');
   await page.check('input[name="status"][value="publicado"]');
   await page.check('input[name="featured"]');
@@ -56,6 +67,9 @@ try {
   await page.goto(`${B}/ideias/teste-cms-artigo`);
   await page.getByRole("heading", { name: "TESTE CMS Artigo publicado" }).waitFor();
   await page.getByText("Uma citação forte.").waitFor();
+  if (!(await page.locator("article strong", { hasText: "negrito" }).count())) throw new Error("negrito não renderizado");
+  if (!(await page.locator("article h2", { hasText: "Um subtítulo" }).count())) throw new Error("subtítulo não renderizado");
+  if (!(await page.locator("article blockquote", { hasText: "Uma citação forte." }).count())) throw new Error("citação não renderizada");
   const cover = await page.locator('article img').first().getAttribute("src");
   const coverRes = await page.request.get(B + (cover?.startsWith("/") ? cover : new URL(cover).pathname + new URL(cover).search));
   if (!cover?.includes("midia") || coverRes.status() !== 200) throw new Error("capa enviada não carregou: " + cover);
@@ -81,7 +95,8 @@ try {
   // Newsletter
   await page.goto(`${B}/admin/newsletter/nova`);
   await page.fill('input[name="subject"]', "TESTE CMS Edição");
-  await page.fill('textarea[name="body"]', "Olá.\n\nEsta é uma edição de teste.");
+  await page.locator(".ProseMirror").first().click();
+  await page.keyboard.type("Olá. Esta é uma edição de teste.");
   await page.click("text=Criar rascunho");
   await page.waitForURL(/\/admin\/newsletter\/\d+/);
   await page.locator('iframe[title="Prévia do e-mail"]').waitFor();

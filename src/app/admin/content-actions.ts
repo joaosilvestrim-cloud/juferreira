@@ -1,14 +1,16 @@
 "use server";
 
-import { cookies } from "next/headers";
 import { updateTag } from "next/cache";
 import { redirect } from "next/navigation";
-import { isValidSession, SESSION_COOKIE } from "@/lib/auth";
+import { sessionUser } from "@/lib/auth";
 import { SETTING_KEYS } from "@/lib/content";
 import { db } from "@/lib/db";
+import { sanitizeRich } from "@/lib/rich-text";
 
 async function requireAdmin() {
-  if (!isValidSession((await cookies()).get(SESSION_COOKIE)?.value)) redirect("/admin/login");
+  const user = await sessionUser();
+  if (!user) redirect("/admin/login");
+  return user;
 }
 
 export type FormState = { ok?: boolean; error?: string; message?: string };
@@ -89,7 +91,7 @@ export async function saveArticle(_: FormState, f: FormData): Promise<FormState>
     str(f, "subtitle", 600) || null,
     str(f, "excerpt", 1200) || null,
     str(f, "question", 600) || null,
-    str(f, "body", 200000),
+    sanitizeRich(str(f, "body", 400000)),
     territories,
     EPISTEMIC.includes(epistemic) && epistemic ? epistemic : null,
     featured,
@@ -175,7 +177,7 @@ export async function saveIssue(_: FormState, f: FormData): Promise<FormState> {
   await requireAdmin();
   const id = Number(f.get("id")) || null;
   const subject = str(f, "subject", 200);
-  const body = str(f, "body", 100000);
+  const body = sanitizeRich(str(f, "body", 200000));
   if (!subject || !body) return { error: "Preencha o assunto e o texto." };
   const preheader = str(f, "preheader", 200) || null;
   if (id) {
@@ -232,4 +234,166 @@ export async function deleteIssue(f: FormData) {
   await requireAdmin();
   await db.query("delete from public.newsletter_issues where id = $1 and status = 'rascunho'", [Number(f.get("id"))]);
   redirect("/admin/newsletter");
+}
+
+/* ───────────── Textos e imagens das páginas ───────────── */
+export async function savePageBlock(_: FormState, f: FormData): Promise<FormState> {
+  await requireAdmin();
+  const registry = (await import("@/content/editable-registry.json")).default as { key: string; kind: string; text: string }[];
+  const byKey = new Map(registry.map((r) => [r.key, r]));
+  let changed = 0;
+  try {
+    for (const [name, value] of f.entries()) {
+      const [prefix, key] = [name.slice(0, 2), name.slice(2)];
+      const item = byKey.get(key);
+      if (!item) continue;
+      if (prefix === "t:" && item.kind === "text" && typeof value === "string") {
+        const v = value.replace(/\r\n/g, "\n").trim();
+        if (!v || v === item.text) {
+          const r = await db.query("delete from public.content_overrides where key = $1", [key]);
+          changed += r.rowCount ?? 0;
+        } else {
+          const r = await db.query(
+            "insert into public.content_overrides (key, value, updated_at, updated_by) values ($1,$2,now(),$3) on conflict (key) do update set value = excluded.value, updated_at = now(), updated_by = excluded.updated_by where content_overrides.value is distinct from excluded.value",
+            [key, v.slice(0, 5000), await currentUserLabel()],
+          );
+          changed += r.rowCount ?? 0;
+        }
+      } else if (prefix === "i:" && item.kind === "image") {
+        const id = await storeImage(value);
+        if (id) {
+          await db.query(
+            "insert into public.content_overrides (key, value, updated_at, updated_by) values ($1,$2,now(),$3) on conflict (key) do update set value = excluded.value, updated_at = now(), updated_by = excluded.updated_by",
+            [key, `/midia/${id}`, await currentUserLabel()],
+          );
+          changed++;
+        }
+      } else if (prefix === "r:" && value === "1") {
+        const r = await db.query("delete from public.content_overrides where key = $1", [key]);
+        changed += r.rowCount ?? 0;
+      }
+    }
+  } catch (e) {
+    return { error: (e as Error).message };
+  }
+  updateTag("content");
+  return { ok: true, message: changed ? `${changed} alteração(ões) salva(s). O site já foi atualizado.` : "Nada mudou." };
+}
+
+/** Quem fez a alteração (preenchido quando houver usuários; senão "admin"). */
+async function currentUserLabel() {
+  const { sessionUser } = await import("@/lib/auth");
+  return (await sessionUser())?.email ?? "admin";
+}
+
+/* ───────────── Usuários do painel ───────────── */
+export async function saveUser(_: FormState, f: FormData): Promise<FormState> {
+  await requireAdmin();
+  const { hashPassword } = await import("@/lib/auth");
+  const id = Number(f.get("id")) || null;
+  const email = str(f, "email", 254).toLowerCase();
+  const name = str(f, "name", 120) || null;
+  const password = String(f.get("password") ?? "");
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return { error: "E-mail inválido." };
+  if ((!id || password) && password.length < 10) return { error: "A senha precisa ter pelo menos 10 caracteres." };
+  try {
+    if (id) {
+      await db.query("update public.admin_users set email=$1, name=$2 where id=$3", [email, name, id]);
+      if (password) await db.query("update public.admin_users set password_hash=$1 where id=$2", [hashPassword(password), id]);
+      return { ok: true, message: password ? "Usuário e senha atualizados." : "Usuário atualizado." };
+    }
+    await db.query("insert into public.admin_users (email, name, password_hash) values ($1,$2,$3)", [email, name, hashPassword(password)]);
+    return { ok: true, message: `Usuário ${email} criado. Ele já pode entrar com e-mail e senha.` };
+  } catch (e) {
+    if ((e as { code?: string }).code === "23505") return { error: "Já existe um usuário com esse e-mail." };
+    throw e;
+  }
+}
+
+export async function toggleUser(f: FormData) {
+  const me = await requireAdmin();
+  const id = Number(f.get("id"));
+  if (id === me.id) return; // não desativa a si mesmo
+  await db.query("update public.admin_users set active = not active where id = $1", [id]);
+  const { revalidatePath } = await import("next/cache");
+  revalidatePath("/admin/usuarios");
+}
+
+export async function deleteUser(f: FormData) {
+  const me = await requireAdmin();
+  const id = Number(f.get("id"));
+  if (id === me.id) return;
+  await db.query("delete from public.admin_users where id = $1", [id]);
+  const { revalidatePath } = await import("next/cache");
+  revalidatePath("/admin/usuarios");
+}
+
+/* ───────────── SEO por página ───────────── */
+export async function saveSeo(_: FormState, f: FormData): Promise<FormState> {
+  await requireAdmin();
+  const { SEO_PAGES } = await import("@/lib/content");
+  const path = str(f, "path", 100);
+  if (!SEO_PAGES.some((p) => p.path === path)) return { error: "Página inválida." };
+  let og: string | null = null;
+  try {
+    og = await storeImage(f.get("og_image"));
+  } catch (e) {
+    return { error: (e as Error).message };
+  }
+  await db.query(
+    `insert into public.page_seo (path, title, description, noindex, og_image_id, updated_at) values ($1,$2,$3,$4,$5,now())
+     on conflict (path) do update set title=excluded.title, description=excluded.description, noindex=excluded.noindex,
+       og_image_id = coalesce(excluded.og_image_id, case when $6 then null else page_seo.og_image_id end), updated_at=now()`,
+    [path, str(f, "title", 120) || null, str(f, "description", 320) || null, Boolean(f.get("noindex")), og, Boolean(f.get("remove_og"))],
+  );
+  updateTag("seo");
+  return { ok: true, message: "SEO salvo." };
+}
+
+/* ───────────── Provas (Ju em ação) ───────────── */
+export async function saveProof(_: FormState, f: FormData): Promise<FormState> {
+  await requireAdmin();
+  const id = Number(f.get("id")) || null;
+  const kind = str(f, "kind", 20);
+  if (!["depoimento", "logo", "foto", "video"].includes(kind)) return { error: "Tipo inválido." };
+  const url = str(f, "url", 500);
+  if (!urlOk(url)) return { error: "Link inválido — use o endereço completo, com https://" };
+  if (kind === "video") {
+    const { videoEmbed } = await import("@/lib/content");
+    if (!url || !videoEmbed(url)) return { error: "Use um link do YouTube, do Vimeo ou de um arquivo .mp4." };
+  }
+  if (kind === "depoimento" && !str(f, "quote")) return { error: "Escreva o depoimento." };
+  let mediaId: string | null = null;
+  try {
+    mediaId = await storeImage(f.get("image"));
+  } catch (e) {
+    return { error: (e as Error).message };
+  }
+  if (kind === "foto" && !id && !mediaId) return { error: "Envie a foto." };
+  const vals = [kind, str(f, "title", 200) || null, str(f, "role", 200) || null, str(f, "quote", 1500) || null, url || null, Number(f.get("sort")) || 0, Boolean(f.get("visible"))];
+  if (id) {
+    await db.query("update public.proof_items set kind=$1, title=$2, role=$3, quote=$4, url=$5, sort=$6, visible=$7 where id=$8", [...vals, id]);
+    if (mediaId) await db.query("update public.proof_items set media_id=$1 where id=$2", [mediaId, id]);
+  } else {
+    await db.query("insert into public.proof_items (kind, title, role, quote, url, sort, visible, media_id) values ($1,$2,$3,$4,$5,$6,$7,$8)", [...vals, mediaId]);
+  }
+  updateTag("proof");
+  return { ok: true, message: "Salvo. A página Palestras já foi atualizada." };
+}
+
+export async function deleteProof(f: FormData) {
+  await requireAdmin();
+  await db.query("delete from public.proof_items where id = $1", [Number(f.get("id"))]);
+  updateTag("proof");
+}
+
+/** Imagem colada/inserida no editor de texto: devolve o endereço para usar no conteúdo. */
+export async function uploadInlineImage(f: FormData): Promise<{ url?: string; error?: string }> {
+  await requireAdmin();
+  try {
+    const id = await storeImage(f.get("file"));
+    return id ? { url: `/midia/${id}` } : { error: "Nenhum arquivo." };
+  } catch (e) {
+    return { error: (e as Error).message };
+  }
 }

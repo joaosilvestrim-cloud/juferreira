@@ -1,11 +1,10 @@
-import { cookies } from "next/headers";
 import { CONTACT_STATUS, FIELD_LABEL, NEWS_STATUS, ROUTE_LABEL } from "@/lib/admin";
-import { isValidSession, SESSION_COOKIE } from "@/lib/auth";
+import { sessionUser } from "@/lib/auth";
 import { db } from "@/lib/db";
 
 /** Exporta contatos ou inscritos em CSV (UTF-8 com BOM, separador ";" — abre direto no Excel em português). */
 export async function GET(req: Request) {
-  if (!isValidSession((await cookies()).get(SESSION_COOKIE)?.value)) {
+  if (!(await sessionUser())) {
     return Response.json({ ok: false, error: "Não autorizado." }, { status: 401 });
   }
   const url = new URL(req.url);

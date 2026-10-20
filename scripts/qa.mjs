@@ -6,6 +6,7 @@ const steps = [
   ["Formulários (Contato, Organizações, newsletter)", "scripts/forms-check.mjs"],
   ["Painel /admin", "scripts/admin-check.mjs"],
   ["Painel de conteúdo (configurações, artigos, referências, newsletter)", "scripts/cms-check.mjs"],
+  ["Painel avançado (textos e fotos das páginas, provas, SEO, usuários)", "scripts/cms2-check.mjs"],
 ];
 let fail = 0;
 for (const [name, file] of steps) {

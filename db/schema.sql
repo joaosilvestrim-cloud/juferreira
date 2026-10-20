@@ -140,3 +140,31 @@ create table if not exists public.page_seo (
   updated_at  timestamptz not null default now()
 );
 alter table public.page_seo enable row level security;
+
+-- Usuários do painel /admin (além da senha mestra ADMIN_PASSWORD)
+create table if not exists public.admin_users (
+  id            bigint generated always as identity primary key,
+  created_at    timestamptz not null default now(),
+  email         text not null,
+  name          text,
+  password_hash text not null,
+  active        boolean not null default true,
+  last_login_at timestamptz
+);
+create unique index if not exists admin_users_email_uidx on public.admin_users (lower(email));
+alter table public.admin_users enable row level security;
+
+-- Provas (Palestras → "Ju em ação"): depoimentos, logos de organizações, fotos de palco e vídeos
+create table if not exists public.proof_items (
+  id         bigint generated always as identity primary key,
+  created_at timestamptz not null default now(),
+  kind       text not null check (kind in ('depoimento','logo','foto','video')),
+  title      text,          -- nome (depoimento/logo), legenda (foto), título (vídeo)
+  role       text,          -- cargo — organização (depoimento)
+  quote      text,          -- texto do depoimento
+  url        text,          -- link do vídeo (YouTube, Vimeo ou .mp4) ou site da organização
+  media_id   uuid references public.media(id) on delete set null,
+  sort       int not null default 0,
+  visible    boolean not null default true
+);
+alter table public.proof_items enable row level security;

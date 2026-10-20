@@ -7,7 +7,8 @@ import { ButtonLink, ButtonRow } from "@/components/ui/Button";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
 import { Display, Em, QuoteCard } from "@/components/ui/Typography";
-import { getArticle, getPublishedArticles, parseBody } from "@/lib/content";
+import { getArticle, getPublishedArticles } from "@/lib/content";
+import { richHtml, richToText } from "@/lib/rich-text";
 import { LINKS } from "@/lib/site";
 
 const TERR: Record<string, string> = {
@@ -54,8 +55,8 @@ export default function ArticlePage({ params }: Props) {
 async function ArticleContent({ params }: Props) {
   const a = await getArticle((await params).slug);
   if (!a) notFound();
-  const blocks = parseBody(a.body);
-  const words = a.body.split(/\s+/).filter(Boolean).length;
+  const html = richHtml(a.body);
+  const words = richToText(a.body).split(/\s+/).filter(Boolean).length;
   const minutes = Math.max(1, Math.round(words / 220));
   const date = a.publishedAt
     ? new Intl.DateTimeFormat("pt-BR", { dateStyle: "long", timeZone: "America/Sao_Paulo" }).format(new Date(a.publishedAt))
@@ -96,23 +97,8 @@ async function ArticleContent({ params }: Props) {
               <span className="text-red-brand">Pergunta de entrada:</span> {a.question}
             </QuoteCard>
           )}
-          <div className="jf-body text-[18px] leading-[1.8] text-ink-800">
-            {blocks.map((b, i) =>
-              b.type === "h2" ? (
-                <h2 key={i} className="jf-display jf-display-sm mb-4 mt-12 text-ink-900">
-                  {b.text}
-                </h2>
-              ) : b.type === "quote" ? (
-                <blockquote key={i} className="my-10 border-l-[3px] border-red-brand pl-6 font-serif text-[clamp(22px,2vw,28px)] leading-snug text-ink-900">
-                  {b.text}
-                </blockquote>
-              ) : (
-                <p key={i} className="mt-6 whitespace-pre-line first:mt-0">
-                  {b.text}
-                </p>
-              ),
-            )}
-          </div>
+          {/* conteúdo do editor do painel, higienizado no servidor */}
+          <div className="jf-rich jf-article text-ink-800" dangerouslySetInnerHTML={{ __html: html }} />
         </Container>
       </Section>
       <Section tone="dark" label="Continue a conversa">

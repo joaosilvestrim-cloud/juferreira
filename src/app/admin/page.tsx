@@ -1,10 +1,7 @@
-import { cookies } from "next/headers";
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import { connection } from "next/server";
 import { Suspense } from "react";
 import { CONTACT_STATUS, CONTACT_STATUS_LABEL, FIELD_LABEL, NEWS_STATUS, ROUTE_LABEL } from "@/lib/admin";
-import { isValidSession, SESSION_COOKIE } from "@/lib/auth";
+import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
 import { setContactStatus, setNewsletterStatus } from "./actions";
 import { StatusSelect } from "./StatusSelect";
@@ -40,8 +37,7 @@ type Contact = {
 type Subscriber = { id: string; created_at: Date; email: string; source: string | null; status: string };
 
 async function Dashboard({ searchParams }: { searchParams: Search }) {
-  await connection(); // painel sempre dinâmico (sessão, dados ao vivo)
-  if (!isValidSession((await cookies()).get(SESSION_COOKIE)?.value)) redirect("/admin/login");
+  await requireAdminPage(); // painel sempre dinâmico (sessão, dados ao vivo)
   const sp = await searchParams;
   const tab = one(sp.tab) === "newsletter" ? "newsletter" : "contatos";
   const status = one(sp.status);
