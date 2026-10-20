@@ -1,3 +1,4 @@
+import { shown } from "@/lib/editable";
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import { PessoasFechamento } from "@/components/sections/pessoas/PessoasFechamento";
@@ -21,11 +22,11 @@ export default async function PessoasPage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
-      <PessoasHero />
-      <PessoasMargem />
-      <PessoasPergunta />
-      <PessoasPortas />
-      <PessoasFechamento />
+      {shown("PessoasHero") && <PessoasHero />}
+      {shown("PessoasMargem") && <PessoasMargem />}
+      {shown("PessoasPergunta") && <PessoasPergunta />}
+      {shown("PessoasPortas") && <PessoasPortas />}
+      {shown("PessoasFechamento") && <PessoasFechamento />}
     </>
   );
 }

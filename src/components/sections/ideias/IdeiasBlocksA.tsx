@@ -1,3 +1,5 @@
+import type { MediaItem } from "@/lib/content";
+import { MediaPlayer } from "@/components/ui/MediaPlayer";
 import type { Article } from "@/lib/content";
 import { photoPosition } from "@/lib/photo-position";
 import { ButtonLink, ButtonRow } from "@/components/ui/Button";
@@ -79,9 +81,9 @@ function toItem(a: Article): AcervoItem {
   };
 }
 
-/** Só aparece com conteúdo publicado no painel. Sem publicação, a seção é omitida (sem cartões de exemplo). */
-export function IdeiasAcervo({ articles }: { articles: Article[] }) {
-  if (!articles.length) return null;
+/** Só aparece com conteúdo publicado no painel (artigos e/ou vídeos e áudios marcados para Ideias). Sem nada, a seção é omitida. */
+export function IdeiasAcervo({ articles, media = [] }: { articles: Article[]; media?: MediaItem[] }) {
+  if (!articles.length && !media.length) return null;
   return (
     <Section id="acervo" label={tx("ideias/85963644ef", "Acervo")}>
       <Container>
@@ -90,9 +92,23 @@ export function IdeiasAcervo({ articles }: { articles: Article[] }) {
             {tx("ideias/e65e5f2c9b", "Por onde você quer")} <Em>{tx("ideias/e7b81e5b60", "entrar?")}</Em>
           </span>
         </Display>
-        <div className="mt-12">
-          <AcervoList items={articles.map(toItem)} labelledBy="acervo-titulo" />
-        </div>
+        {articles.length > 0 && (
+          <div className="mt-12">
+            <AcervoList items={articles.map(toItem)} labelledBy="acervo-titulo" />
+          </div>
+        )}
+        {media.length > 0 && (
+          <div className="mt-16">
+            <h3 className="jf-eyebrow text-[14px] text-red-brand">{tx("ideias/3c5257fb37", "Para ouvir e assistir")}</h3>
+            <ul className="mt-6 grid gap-10 lg:grid-cols-2">
+              {media.map((m) => (
+                <li key={m.id}>
+                  <MediaPlayer m={m} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </Container>
     </Section>
   );

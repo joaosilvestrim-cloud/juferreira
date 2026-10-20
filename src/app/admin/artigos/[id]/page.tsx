@@ -5,6 +5,7 @@ import { mediaUrl } from "@/lib/content";
 import { db } from "@/lib/db";
 import { deleteArticle } from "../../content-actions";
 import { ArticleForm, type ArticleData } from "../ArticleForm";
+import { ConfirmSubmit } from "../../_ui/ConfirmSubmit";
 
 export default async function EditArticle({ params }: { params: Promise<{ id: string }> }) {
   await requireAdminPage();
@@ -48,7 +49,9 @@ export default async function EditArticle({ params }: { params: Promise<{ id: st
       {a.id && (
         <form action={deleteArticle} className="mt-10 border-t border-ink-900/10 pt-6">
           <input type="hidden" name="id" value={a.id} />
-          <button className="text-[14px] text-red-deep underline-offset-4 hover:underline">Excluir este artigo</button>
+          <ConfirmSubmit message="Excluir este artigo? Ele sai do site na hora." className="text-[14px] text-red-deep underline-offset-4 hover:underline">
+            Excluir este artigo
+          </ConfirmSubmit>
         </form>
       )}
     </div>

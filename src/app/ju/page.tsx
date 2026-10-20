@@ -1,3 +1,4 @@
+import { shown } from "@/lib/editable";
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import {
@@ -6,6 +7,7 @@ import {
   JuFuturos,
   JuHero,
   JuHoje,
+  JuMidia,
   JuMaternidade,
   JuTecnologia,
 } from "@/components/sections/ju/JuBlocks";
@@ -25,13 +27,14 @@ export default async function JuPage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
-      <JuHero />
-      <JuTecnologia />
-      <JuEscolher />
-      <JuMaternidade />
-      <JuFuturos />
-      <JuHoje />
-      <JuEncerramento />
+      {shown("JuHero") && <JuHero />}
+      {shown("JuTecnologia") && <JuTecnologia />}
+      {shown("JuEscolher") && <JuEscolher />}
+      {shown("JuMaternidade") && <JuMaternidade />}
+      {shown("JuFuturos") && <JuFuturos />}
+      {shown("JuMidia") && <JuMidia />}
+      {shown("JuHoje") && <JuHoje />}
+      {shown("JuEncerramento") && <JuEncerramento />}
     </>
   );
 }

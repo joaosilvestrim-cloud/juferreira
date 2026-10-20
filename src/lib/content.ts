@@ -1,5 +1,6 @@
 import { cacheLife, cacheTag } from "next/cache";
 import { db } from "@/lib/db";
+import { MEDIA_FORMATS, type MediaFormat, type MediaPlacement } from "@/lib/media-meta";
 
 /**
  * Conteúdo editável pelo /admin, lido com cache (tags) e invalidado pelas ações do painel.
@@ -251,12 +252,90 @@ export async function getProof(): Promise<ProofItem[]> {
   }
 }
 
-/** Converte link de YouTube/Vimeo em endereço de incorporação; .mp4 fica como vídeo direto. */
-export function videoEmbed(url: string): { type: "iframe" | "video"; src: string } | null {
-  const yt = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([\w-]{11})/);
-  if (yt) return { type: "iframe", src: `https://www.youtube-nocookie.com/embed/${yt[1]}` };
-  const vm = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
-  if (vm) return { type: "iframe", src: `https://player.vimeo.com/video/${vm[1]}` };
-  if (/^https?:\/\/.+\.(mp4|webm)(\?.*)?$/i.test(url)) return { type: "video", src: url };
+export type Embed =
+  | { type: "iframe"; src: string; kind: "video" | "audio"; height?: number }
+  | { type: "video"; src: string }
+  | { type: "audio"; src: string };
+
+/**
+ * Reconhece o link e devolve como incorporar: YouTube, Vimeo, Spotify, Apple Podcasts e SoundCloud viram player;
+ * .mp4/.webm viram vídeo; .mp3/.m4a/.ogg viram áudio. Outro link (Instagram, LinkedIn, Globoplay…) → null (cartão com link).
+ */
+export function mediaEmbed(url: string): Embed | null {
+  const u = url.trim();
+  const yt = u.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([\w-]{11})/);
+  if (yt) return { type: "iframe", kind: "video", src: `https://www.youtube-nocookie.com/embed/${yt[1]}` };
+  const vm = u.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if (vm) return { type: "iframe", kind: "video", src: `https://player.vimeo.com/video/${vm[1]}` };
+  const sp = u.match(/open\.spotify\.com\/(?:intl-[\w-]+\/)?(episode|show|track|playlist)\/([A-Za-z0-9]+)/);
+  if (sp) return { type: "iframe", kind: "audio", src: `https://open.spotify.com/embed/${sp[1]}/${sp[2]}`, height: sp[1] === "episode" || sp[1] === "track" ? 152 : 232 };
+  if (/^https?:\/\/podcasts\.apple\.com\//.test(u))
+    return { type: "iframe", kind: "audio", src: u.replace("://podcasts.apple.com/", "://embed.podcasts.apple.com/"), height: /[?&]i=/.test(u) ? 175 : 450 };
+  if (/^https?:\/\/(www\.)?soundcloud\.com\//.test(u))
+    return { type: "iframe", kind: "audio", src: `https://w.soundcloud.com/player/?url=${encodeURIComponent(u)}&color=%23b80c10&visual=false`, height: 166 };
+  if (/^https?:\/\/.+\.(mp4|webm|mov)(\?.*)?$/i.test(u)) return { type: "video", src: u };
+  if (/^https?:\/\/.+\.(mp3|m4a|ogg|wav)(\?.*)?$/i.test(u)) return { type: "audio", src: u };
   return null;
+}
+
+/** Compatibilidade: só links que viram vídeo. */
+export function videoEmbed(url: string): { type: "iframe" | "video"; src: string } | null {
+  const e = mediaEmbed(url);
+  if (!e) return null;
+  if (e.type === "video") return e;
+  if (e.type === "iframe" && e.kind === "video") return { type: "iframe", src: e.src };
+  return null;
+}
+
+/* ───────────── Vídeos e áudios (palestras, entrevistas, podcasts) ───────────── */
+export { MEDIA_FORMATS, MEDIA_PLACEMENTS, type MediaFormat, type MediaPlacement } from "@/lib/media-meta";
+
+export type MediaItem = {
+  id: number;
+  format: MediaFormat;
+  title: string;
+  outlet: string | null;
+  recordedOn: string | null; // AAAA-MM-DD
+  description: string | null;
+  url: string;
+  thumb: string | null;
+  placements: MediaPlacement[];
+};
+
+/** Todos os vídeos e áudios visíveis; filtre por onde aparecem com `.filter(m => m.placements.includes("home"))`. */
+export async function getMediaItems(): Promise<MediaItem[]> {
+  "use cache";
+  cacheTag("media-items");
+  cacheLife("max");
+  try {
+    const { rows } = await db.query(
+      "select id, format, title, outlet, to_char(recorded_on, 'YYYY-MM-DD') as recorded_on, description, url, thumb_id, placements from public.media_items where visible order by sort, recorded_on desc nulls last, id desc",
+    );
+    return rows.map((r) => ({
+      id: Number(r.id),
+      format: r.format,
+      title: r.title,
+      outlet: r.outlet,
+      recordedOn: r.recorded_on,
+      description: r.description,
+      url: r.url,
+      thumb: mediaUrl(r.thumb_id),
+      placements: r.placements ?? [],
+    }));
+  } catch (err) {
+    console.error("[content] media items", err);
+    return [];
+  }
+}
+
+export async function getMediaFor(placement: MediaPlacement): Promise<MediaItem[]> {
+  return (await getMediaItems()).filter((m) => m.placements.includes(placement));
+}
+
+/** "Entrevista · Programa X · mar. 2026" */
+export function mediaCaption(m: Pick<MediaItem, "format" | "outlet" | "recordedOn">) {
+  const date = m.recordedOn
+    ? new Date(m.recordedOn + "T12:00:00").toLocaleDateString("pt-BR", { month: "short", year: "numeric" })
+    : null;
+  return [MEDIA_FORMATS[m.format], m.outlet, date].filter(Boolean).join(" · ");
 }

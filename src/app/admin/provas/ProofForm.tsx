@@ -32,8 +32,8 @@ export function ProofForm({ d }: { d: ProofData }) {
             <Field label="Nome">
               <input name="title" defaultValue={d.title ?? ""} className={fieldCls} />
             </Field>
-            <Field label="Cargo — Organização">
-              <input name="role" defaultValue={d.role ?? ""} className={fieldCls} placeholder="Diretora de Pessoas — Empresa" />
+            <Field label="Cargo e organização">
+              <input name="role" defaultValue={d.role ?? ""} className={fieldCls} placeholder="Diretora de Pessoas, Empresa" />
             </Field>
           </>
         )}
@@ -53,7 +53,7 @@ export function ProofForm({ d }: { d: ProofData }) {
               <ImageInput name="image" current={d.image} />
             </Field>
             <Field label="Legenda / descrição">
-              <input name="title" defaultValue={d.title ?? ""} className={fieldCls} placeholder="Palestra Futuros Humanos — Evento X, 2026" />
+              <input name="title" defaultValue={d.title ?? ""} className={fieldCls} placeholder="Palestra Futuros Humanos, Evento X, 2026" />
             </Field>
           </>
         )}

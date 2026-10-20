@@ -8,6 +8,7 @@ const ctx = await browser.newContext({ acceptDownloads: true, viewport: { width:
 const page = await ctx.newPage();
 const errs = [];
 page.on("pageerror", (e) => errs.push(e.message));
+page.on("dialog", (d) => d.accept()); // confirmações de excluir
 
 // contato de teste
 await page.request.post(`${B}/api/contato`, { data: { origin: "contato", rota: "palestras", nome: "TESTE AUTOMATICO ADMIN", email: "teste-admin@example.com", contexto: "mensagem de teste do admin", evento: "Convenção X", publico: "300" } });

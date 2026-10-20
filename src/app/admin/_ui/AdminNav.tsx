@@ -5,11 +5,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { logout } from "../actions";
 
-type IconName = "chat" | "pages" | "article" | "book" | "star" | "mail" | "search" | "users" | "gear" | "out" | "exit";
+type IconName = "home" | "video" | "image" | "chat" | "pages" | "article" | "book" | "star" | "mail" | "search" | "users" | "gear" | "out" | "exit";
 
 /** Ícones de traço simples (24×24), herdam a cor do texto. */
 function Icon({ name }: { name: IconName }) {
   const d: Record<IconName, string> = {
+    home: "M3 11 12 4l9 7M5 10v10h14V10M10 20v-6h4v6",
+    video: "M3 6h13v12H3zM16 10l5-3v10l-5-3",
+    image: "M4 5h16v14H4zM4 16l5-5 4 4 3-3 4 4M15 8.5a1 1 0 1 0 0 .01",
     chat: "M4 5h16v11H8l-4 4zM8 9h8M8 12h5",
     pages: "M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7",
     article: "M4 5h16M4 10h16M4 15h10M4 20h7",
@@ -30,12 +33,20 @@ function Icon({ name }: { name: IconName }) {
 }
 
 const GROUPS: { title: string; items: { href: string; label: string; icon: IconName }[] }[] = [
-  { title: "Atendimento", items: [{ href: "/admin", label: "Conversas", icon: "chat" }] },
+  {
+    title: "Atendimento",
+    items: [
+      { href: "/admin/visao-geral", label: "Visão geral", icon: "home" },
+      { href: "/admin", label: "Conversas", icon: "chat" },
+    ],
+  },
   {
     title: "Conteúdo",
     items: [
       { href: "/admin/paginas", label: "Páginas", icon: "pages" },
       { href: "/admin/artigos", label: "Artigos", icon: "article" },
+      { href: "/admin/videos", label: "Vídeos e áudios", icon: "video" },
+      { href: "/admin/imagens", label: "Imagens", icon: "image" },
       { href: "/admin/referencias", label: "Referências", icon: "book" },
       { href: "/admin/provas", label: "Provas", icon: "star" },
       { href: "/admin/newsletter", label: "Newsletter", icon: "mail" },

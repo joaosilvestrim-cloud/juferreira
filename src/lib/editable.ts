@@ -42,3 +42,8 @@ export function lazy<T extends object>(factory: () => T): T {
     },
   });
 }
+
+/** Bloco oculto no painel (Páginas → "Mostrar no site" desmarcado). O nome é o do componente da seção. */
+export function shown(section: string): boolean {
+  return overrides[`hide:${section}`] !== "1";
+}

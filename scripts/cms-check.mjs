@@ -11,6 +11,7 @@ const browser = await chromium.launch({ channel: "msedge" });
 const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
 const errs = [];
 page.on("pageerror", (e) => errs.push(e.message));
+page.on("dialog", (d) => d.accept()); // confirmações de excluir
 const ok = (m) => console.log("✓", m);
 
 // guarda configurações atuais para restaurar

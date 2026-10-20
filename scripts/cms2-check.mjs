@@ -12,6 +12,7 @@ const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } })
 const page = await ctx.newPage();
 const errs = [];
 page.on("pageerror", (e) => errs.push(e.message));
+page.on("dialog", (d) => d.accept()); // confirmações de excluir
 const ok = (m) => console.log("✓", m);
 const db = new pg.Client({ ssl: { rejectUnauthorized: false } });
 await db.connect();
@@ -63,11 +64,13 @@ try {
   await dep.locator('input[name="role"]').fill("Diretora — Empresa Teste");
   await dep.getByRole("button", { name: "Adicionar" }).click();
   await dep.getByText(/Palestras já foi atualizada/).waitFor();
-  const vid = page.locator("div.border-dashed", { hasText: "Adicionar em “Vídeos”" });
+  await page.goto(`${B}/admin/videos`);
+  const vid = page.locator("section.border-dashed");
   await vid.locator('input[name="url"]').fill("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
   await vid.locator('input[name="title"]').fill("TESTE PAINEL vídeo");
+  await vid.locator('input[name="placements"][value="palestras"]').check();
   await vid.getByRole("button", { name: "Adicionar" }).click();
-  await vid.getByText(/Palestras já foi atualizada/).waitFor();
+  await vid.getByText(/Já aparece em: Palestras/).waitFor();
   await page.goto(`${B}/palestras`);
   await page.getByText("TESTE PAINEL depoimento verificável.").waitFor({ timeout: 20000 });
   if (!(await page.locator('iframe[src*="youtube-nocookie.com/embed/dQw4w9WgXcQ"]').count())) throw new Error("vídeo não incorporado");
@@ -119,13 +122,20 @@ try {
     await heroBlock().getByRole("button", { name: "Salvar bloco" }).click();
     await heroBlock().getByText(/salva|Nada mudou/).waitFor();
     await page.goto(`${B}/admin/provas`);
-    for (const label of ["Pessoa Teste", "TESTE PAINEL vídeo"]) {
+    for (const label of ["Pessoa Teste"]) {
       const li = page.locator("li", { hasText: label }).first();
       if (await li.count()) {
         await li.locator("summary").click();
         await li.getByRole("button", { name: "Excluir" }).click();
         await page.waitForTimeout(1500);
       }
+    }
+    await page.goto(`${B}/admin/videos`);
+    const v = page.locator("li", { hasText: "TESTE PAINEL vídeo" }).first();
+    if (await v.count()) {
+      await v.locator("summary").click();
+      await v.getByRole("button", { name: "Excluir" }).click();
+      await page.waitForTimeout(1500);
     }
     await page.goto(`${B}/admin/seo`);
     const ju = page.locator("details").nth(1);
@@ -141,6 +151,7 @@ try {
   await db.query("delete from public.content_overrides where key = $1 or value like 'TESTE PAINEL%'", [hero.key]);
   await db.query("delete from public.content_overrides where key like 'home/%' and value like '/midia/%' and updated_at > now() - interval '1 hour'");
   await db.query("delete from public.proof_items where title in ('Pessoa Teste','TESTE PAINEL vídeo')");
+  await db.query("delete from public.media_items where title like 'TESTE PAINEL%'");
   await db.query("delete from public.page_seo where path = '/ju' and coalesce(title,'') in ('', 'TESTE PAINEL título SEO')");
   await db.query("delete from public.admin_users where email = 'teste-painel@juferreira.com.br'");
   await db.end();

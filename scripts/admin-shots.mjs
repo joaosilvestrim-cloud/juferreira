@@ -5,7 +5,7 @@ import { mkdirSync, readFileSync } from "node:fs";
 const B = process.env.BASE_URL ?? "http://localhost:3000";
 const pwd = readFileSync(".env.local", "utf8").match(/^ADMIN_PASSWORD=(.*)$/m)[1];
 const ROUTES = [
-  "", "paginas", "paginas/home", "paginas/futuros-humanos", "artigos", "artigos/novo", "referencias", "provas",
+  "", "visao-geral", "videos", "imagens", "paginas", "paginas/home", "paginas/futuros-humanos", "artigos", "artigos/novo", "referencias", "provas",
   "newsletter", "newsletter/nova", "seo", "usuarios", "configuracoes",
 ];
 mkdirSync("screenshots/admin", { recursive: true });

@@ -787,7 +787,7 @@
   "kind": "text",
   "text": "O que queremos ampliar?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 201,
+  "line": 200,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -798,7 +798,7 @@
   "kind": "text",
   "text": "O que precisamos preservar?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 201,
+  "line": 200,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -809,7 +809,7 @@
   "kind": "text",
   "text": "Quem será afetado?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 201,
+  "line": 200,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -820,7 +820,7 @@
   "kind": "text",
   "text": "Capacidade, direção e autoria",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 203,
+  "line": 202,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -831,7 +831,7 @@
   "kind": "text",
   "text": "Quanto mais podemos fazer,",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 207,
+  "line": 206,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -842,7 +842,7 @@
   "kind": "text",
   "text": "mais importa perguntar para quê.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 207,
+  "line": 206,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -853,7 +853,7 @@
   "kind": "text",
   "text": "Eu gosto de tecnologia. Ela amplia nossa capacidade de criar, compreender e colocar ideias no mundo.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 211,
+  "line": 210,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -864,7 +864,7 @@
   "kind": "text",
   "text": "Mas fazer algo com mais rapidez não resolve a escolha do objetivo. Automatizar uma decisão não elimina a responsabilidade pelos critérios e pelas consequências.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 213,
+  "line": 212,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -875,7 +875,7 @@
   "kind": "text",
   "text": "Quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 224,
+  "line": 223,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -886,7 +886,7 @@
   "kind": "text",
   "text": "Autoria, para mim, é",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 228,
+  "line": 227,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -897,7 +897,7 @@
   "kind": "text",
   "text": "permanecer presente naquilo que ajudamos a construir.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 228,
+  "line": 227,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -908,7 +908,7 @@
   "kind": "text",
   "text": "Podemos delegar trabalho e contar com outras pessoas e ferramentas, mantendo atenção à direção, ao julgamento e à responsabilidade.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 231,
+  "line": 230,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -919,7 +919,7 @@
   "kind": "image",
   "text": "/images/ensaio/ju-estudo-fones.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 236,
+  "line": 235,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -930,7 +930,7 @@
   "kind": "text",
   "text": "Juliana estudando com fones de ouvido, livro e notebook.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 237,
+  "line": 236,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -1722,7 +1722,7 @@
   "kind": "text",
   "text": "Abertura",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 17,
+  "line": 18,
   "section": "HomeHero",
   "order": 0
  },
@@ -1733,7 +1733,7 @@
   "kind": "image",
   "text": "/images/ensaio/home-01-abertura-vertical.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 20,
+  "line": 21,
   "section": "HomeHero",
   "order": 0
  },
@@ -1744,7 +1744,7 @@
   "kind": "text",
   "text": "Juliana no mirante, em enquadramento vertical ao entardecer.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 21,
+  "line": 22,
   "section": "HomeHero",
   "order": 0
  },
@@ -1755,7 +1755,7 @@
   "kind": "text",
   "text": "E se pudesse",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 32,
+  "line": 33,
   "section": "HomeHero",
   "order": 0
  },
@@ -1766,7 +1766,7 @@
   "kind": "text",
   "text": "ser",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 33,
+  "line": 34,
   "section": "HomeHero",
   "order": 0
  },
@@ -1777,7 +1777,7 @@
   "kind": "text",
   "text": "diferente?",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 33,
+  "line": 34,
   "section": "HomeHero",
   "order": 0
  },
@@ -1788,7 +1788,7 @@
   "kind": "text",
   "text": "Aquilo que existe não esgota aquilo que pode existir.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 36,
+  "line": 37,
   "section": "HomeHero",
   "order": 0
  },
@@ -1799,7 +1799,7 @@
   "kind": "text",
   "text": "Sou Ju Ferreira. Investigo futuros, tecnologia e transformação humana e levo essas perguntas para palestras, organizações e a vida de todos os dias.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 38,
+  "line": 39,
   "section": "HomeHero",
   "order": 0
  },
@@ -1810,7 +1810,7 @@
   "kind": "text",
   "text": "Leve a Ju para sua organização",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 41,
+  "line": 42,
   "section": "HomeHero",
   "order": 0
  },
@@ -1821,7 +1821,7 @@
   "kind": "text",
   "text": "Conheça Futuros Humanos",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 43,
+  "line": 44,
   "section": "HomeHero",
   "order": 0
  },
@@ -1832,7 +1832,7 @@
   "kind": "image",
   "text": "/images/ensaio/home-01-abertura-horizontal.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 48,
+  "line": 49,
   "section": "HomeHero",
   "order": 0
  },
@@ -1843,7 +1843,7 @@
   "kind": "text",
   "text": "Juliana de preto diante de uma paisagem ampla ao entardecer.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 48,
+  "line": 49,
   "section": "HomeHero",
   "order": 0
  },
@@ -1854,7 +1854,7 @@
   "kind": "text",
   "text": "A tensão",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 57,
+  "line": 58,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1865,7 +1865,7 @@
   "kind": "text",
   "text": "O mundo está mudando.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 61,
+  "line": 62,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1876,7 +1876,7 @@
   "kind": "text",
   "text": "Mas",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 62,
+  "line": 63,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1887,7 +1887,7 @@
   "kind": "text",
   "text": "mudança",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 62,
+  "line": 63,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1898,7 +1898,7 @@
   "kind": "text",
   "text": "não é",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 62,
+  "line": 63,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1909,7 +1909,7 @@
   "kind": "text",
   "text": "direção.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 62,
+  "line": 63,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1920,7 +1920,7 @@
   "kind": "text",
   "text": "Uma equipe pode adotar IA e continuar premiando os mesmos comportamentos. Uma pessoa pode entregar tudo o que esperam dela e passar meses sem tocar no que deseja construir.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 66,
+  "line": 67,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1931,7 +1931,7 @@
   "kind": "text",
   "text": "Estamos fazendo mais. A pergunta é para onde isso nos leva.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 67,
+  "line": 68,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1942,7 +1942,7 @@
   "kind": "text",
   "text": "O que estamos ajudando a tornar mais provável",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 71,
+  "line": 72,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1953,7 +1953,7 @@
   "kind": "text",
   "text": "com aquilo que repetimos hoje?",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 71,
+  "line": 72,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1964,7 +1964,7 @@
   "kind": "image",
   "text": "/images/ensaio/contexto-luz-direcao.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 76,
+  "line": 77,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1975,7 +1975,7 @@
   "kind": "text",
   "text": "Luz natural atravessando um ambiente escuro de concreto.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 77,
+  "line": 78,
   "section": "HomeTensao",
   "order": 1
  },
@@ -1986,7 +1986,7 @@
   "kind": "text",
   "text": "Imaginar",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 90,
+  "line": 91,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -1997,7 +1997,7 @@
   "kind": "text",
   "text": "Escolher",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 90,
+  "line": 91,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2008,7 +2008,7 @@
   "kind": "text",
   "text": "Tornar-se",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 90,
+  "line": 91,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2019,7 +2019,7 @@
   "kind": "text",
   "text": "Construir",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 90,
+  "line": 91,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2030,7 +2030,7 @@
   "kind": "text",
   "text": "Futuros Humanos",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 92,
+  "line": 93,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2041,7 +2041,7 @@
   "kind": "text",
   "text": "Futuros",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 96,
+  "line": 97,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2052,7 +2052,7 @@
   "kind": "text",
   "text": "Humanos",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 96,
+  "line": 97,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2063,7 +2063,7 @@
   "kind": "text",
   "text": "O futuro mais provável não é o único possível. Entre aquilo que existe e aquilo que ainda pode existir, há espaço para imaginar, escolher, desenvolver capacidades e construir.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 100,
+  "line": 101,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2074,7 +2074,7 @@
   "kind": "text",
   "text": "Não controlamos o resultado inteiro. Podemos participar das escolhas e condições que ajudam a produzi-lo.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 101,
+  "line": 102,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2085,7 +2085,7 @@
   "kind": "text",
   "text": "Explore essa visão",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 104,
+  "line": 105,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2096,7 +2096,7 @@
   "kind": "text",
   "text": "O mundo responde. A gente aprende. E volta à pergunta de outro lugar.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 120,
+  "line": 121,
   "section": "HomeFuturos",
   "order": 2
  },
@@ -2107,7 +2107,7 @@
   "kind": "text",
   "text": "Ju Ferreira",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 131,
+  "line": 134,
   "section": "HomeJu",
   "order": 3
  },
@@ -2118,7 +2118,7 @@
   "kind": "text",
   "text": "Essa pergunta também atravessa",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 135,
+  "line": 138,
   "section": "HomeJu",
   "order": 3
  },
@@ -2129,7 +2129,7 @@
   "kind": "text",
   "text": "a minha vida.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 135,
+  "line": 138,
   "section": "HomeJu",
   "order": 3
  },
@@ -2140,7 +2140,7 @@
   "kind": "text",
   "text": "Sou engenheira, trabalhei com tecnologia, liderei e construí empresas. Acertei, errei e precisei mudar de direção. A maternidade ampliou a pergunta: o futuro passou a ser também o mundo onde minhas filhas vão viver.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 139,
+  "line": 142,
   "section": "HomeJu",
   "order": 3
  },
@@ -2151,7 +2151,7 @@
   "kind": "text",
   "text": "Continuo trabalhando, construindo e tentando fazer essas ideias sobreviverem a uma terça-feira qualquer.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 140,
+  "line": 143,
   "section": "HomeJu",
   "order": 3
  },
@@ -2162,7 +2162,7 @@
   "kind": "text",
   "text": "Conheça minha trajetória",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 143,
+  "line": 146,
   "section": "HomeJu",
   "order": 3
  },
@@ -2173,7 +2173,7 @@
   "kind": "image",
   "text": "/images/ju/retrato-biblioteca.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 147,
+  "line": 155,
   "section": "HomeJu",
   "order": 3
  },
@@ -2184,7 +2184,7 @@
   "kind": "text",
   "text": "Juliana sorrindo diante de sua biblioteca.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 148,
+  "line": 156,
   "section": "HomeJu",
   "order": 3
  },
@@ -2195,7 +2195,7 @@
   "kind": "text",
   "text": "Palestras",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 163,
+  "line": 171,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2206,7 +2206,7 @@
   "kind": "text",
   "text": "Uma provocação para abrir perspectivas e colocar uma questão em comum.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 163,
+  "line": 171,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2217,7 +2217,7 @@
   "kind": "text",
   "text": "Workshops",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 164,
+  "line": 172,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2228,7 +2228,7 @@
   "kind": "text",
   "text": "Tempo de trabalho conjunto para examinar escolhas e definir movimentos possíveis.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 164,
+  "line": 172,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2239,7 +2239,7 @@
   "kind": "text",
   "text": "Projetos e experiências",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 165,
+  "line": 173,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2250,7 +2250,7 @@
   "kind": "text",
   "text": "Uma construção a partir de um desafio que pede continuidade ou outras competências.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 165,
+  "line": 173,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2261,7 +2261,7 @@
   "kind": "text",
   "text": "Para organizações",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 168,
+  "line": 176,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2272,7 +2272,7 @@
   "kind": "text",
   "text": "Algumas perguntas precisam",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 172,
+  "line": 180,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2283,7 +2283,7 @@
   "kind": "text",
   "text": "entrar na sala.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 172,
+  "line": 180,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2294,7 +2294,7 @@
   "kind": "text",
   "text": "Levo essa conversa para eventos, lideranças e equipes que estão decidindo como trabalhar, usar tecnologia e construir o que vem depois.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 176,
+  "line": 184,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2305,7 +2305,7 @@
   "kind": "text",
   "text": "Conheça as palestras",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 188,
+  "line": 196,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2316,7 +2316,7 @@
   "kind": "text",
   "text": "Conheça o trabalho com organizações",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 190,
+  "line": 198,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2327,7 +2327,7 @@
   "kind": "image",
   "text": "/images/ensaio/home-03-palco-vertical.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 195,
+  "line": 203,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2338,7 +2338,7 @@
   "kind": "text",
   "text": "Cena ilustrativa de Juliana no palco, em enquadramento vertical.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 196,
+  "line": 204,
   "section": "HomeOrganizacoes",
   "order": 4
  },
@@ -2349,7 +2349,7 @@
   "kind": "text",
   "text": "Para pessoas",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 211,
+  "line": 219,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2360,7 +2360,7 @@
   "kind": "image",
   "text": "/images/ensaio/home-05-escrita-vertical.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 215,
+  "line": 223,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2371,7 +2371,7 @@
   "kind": "text",
   "text": "Juliana com caderno, caneta e café à mesa, em retrato vertical.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 216,
+  "line": 224,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2382,7 +2382,7 @@
   "kind": "text",
   "text": "E se essa conversa for sobre a",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 224,
+  "line": 232,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2393,7 +2393,7 @@
   "kind": "text",
   "text": "sua própria vida?",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 224,
+  "line": 232,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2404,7 +2404,7 @@
   "kind": "text",
   "text": "Há coisas que continuamos fazendo porque importam. Outras permanecem porque ainda não as revimos ou não encontramos condições para mudar.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 227,
+  "line": 235,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2415,7 +2415,7 @@
   "kind": "text",
   "text": "Você pode começar por uma pergunta, uma leitura ou uma prática que caiba na vida de hoje.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 228,
+  "line": 236,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2426,7 +2426,7 @@
   "kind": "text",
   "text": "Encontre um começo",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 231,
+  "line": 239,
   "section": "HomePessoas",
   "order": 5
  },
@@ -2437,7 +2437,7 @@
   "kind": "text",
   "text": "Ideias",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 243,
+  "line": 251,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2448,7 +2448,7 @@
   "kind": "text",
   "text": "Para continuar",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 246,
+  "line": 254,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2459,7 +2459,7 @@
   "kind": "text",
   "text": "pensando.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 246,
+  "line": 254,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2470,7 +2470,7 @@
   "kind": "text",
   "text": "Ensaio",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 260,
+  "line": 268,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2481,7 +2481,7 @@
   "kind": "text",
   "text": "Explore as ideias",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 268,
+  "line": 276,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2492,7 +2492,7 @@
   "kind": "image",
   "text": "/images/ensaio/home-06-ideias-horizontal.webp",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 273,
+  "line": 281,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2503,7 +2503,7 @@
   "kind": "text",
   "text": "Livros, caderno aberto, caneta e café sobre uma mesa de madeira.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 274,
+  "line": 282,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2514,7 +2514,7 @@
   "kind": "text",
   "text": "Uma Terça-feira Qualquer",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 283,
+  "line": 291,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2525,7 +2525,7 @@
   "kind": "text",
   "text": "Uma carta por semana sobre futuros, tecnologia e aquilo que estamos construindo enquanto damos conta da vida.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 285,
+  "line": 293,
   "section": "HomeIdeias",
   "order": 6
  },
@@ -2536,7 +2536,7 @@
   "kind": "text",
   "text": "Encerramento",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 297,
+  "line": 305,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2547,7 +2547,7 @@
   "kind": "text",
   "text": "Temos futuros para",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 303,
+  "line": 311,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2558,7 +2558,7 @@
   "kind": "text",
   "text": "construir.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 303,
+  "line": 311,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2569,7 +2569,7 @@
   "kind": "text",
   "text": "Qual conversa merece começar agora?",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 305,
+  "line": 313,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2580,7 +2580,7 @@
   "kind": "text",
   "text": "Vamos conversar",
   "file": "src/components/sections/home/HomeBlocks.tsx",
-  "line": 307,
+  "line": 315,
   "section": "HomeEncerramento",
   "order": 7
  },
@@ -2734,7 +2734,7 @@
   "kind": "text",
   "text": "Ideias",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 24,
+  "line": 26,
   "section": "Outros",
   "order": 999
  },
@@ -2745,7 +2745,7 @@
   "kind": "text",
   "text": "Ideias",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 28,
+  "line": 30,
   "section": "Outros",
   "order": 999
  },
@@ -2756,7 +2756,7 @@
   "kind": "text",
   "text": "Algumas ideias",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 30,
+  "line": 32,
   "section": "Outros",
   "order": 999
  },
@@ -2767,7 +2767,7 @@
   "kind": "text",
   "text": "merecem mais tempo.",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 30,
+  "line": 32,
   "section": "Outros",
   "order": 999
  },
@@ -2778,7 +2778,7 @@
   "kind": "text",
   "text": "Textos e conversas sobre futuros, tecnologia, escolhas e aquilo que estamos construindo enquanto a vida acontece.",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 34,
+  "line": 36,
   "section": "Outros",
   "order": 999
  },
@@ -2789,7 +2789,7 @@
   "kind": "text",
   "text": "Comece a ler",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 37,
+  "line": 39,
   "section": "Outros",
   "order": 999
  },
@@ -2800,7 +2800,7 @@
   "kind": "text",
   "text": "Assine Uma Terça-feira Qualquer",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 39,
+  "line": 41,
   "section": "Outros",
   "order": 999
  },
@@ -2811,7 +2811,7 @@
   "kind": "image",
   "text": "/images/ensaio/home-05-escrita-vertical.webp",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 46,
+  "line": 48,
   "section": "Outros",
   "order": 999
  },
@@ -2822,7 +2822,7 @@
   "kind": "text",
   "text": "Juliana com caderno, caneta e café à mesa, em retrato vertical.",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 47,
+  "line": 49,
   "section": "Outros",
   "order": 999
  },
@@ -2833,7 +2833,7 @@
   "kind": "text",
   "text": "Nem tudo aqui está resolvido.",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 54,
+  "line": 56,
   "section": "Outros",
   "order": 999
  },
@@ -2844,7 +2844,7 @@
   "kind": "text",
   "text": "America/Sao_Paulo",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 63,
+  "line": 65,
   "section": "Outros",
   "order": 999
  },
@@ -2855,7 +2855,7 @@
   "kind": "text",
   "text": "Acervo",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 86,
+  "line": 88,
   "section": "Outros",
   "order": 999
  },
@@ -2866,7 +2866,7 @@
   "kind": "text",
   "text": "Por onde você quer",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 90,
+  "line": 92,
   "section": "Outros",
   "order": 999
  },
@@ -2877,7 +2877,18 @@
   "kind": "text",
   "text": "entrar?",
   "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
-  "line": 90,
+  "line": 92,
+  "section": "Outros",
+  "order": 999
+ },
+ {
+  "key": "ideias/3c5257fb37",
+  "page": "ideias",
+  "block": "IdeiasAcervo",
+  "kind": "text",
+  "text": "Para ouvir e assistir",
+  "file": "src/components/sections/ideias/IdeiasBlocksA.tsx",
+  "line": 102,
   "section": "Outros",
   "order": 999
  },
@@ -3350,7 +3361,7 @@
   "kind": "text",
   "text": "Primeiro de tudo, eu sou a Ju",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 27,
+  "line": 28,
   "section": "JuHero",
   "order": 0
  },
@@ -3361,7 +3372,7 @@
   "kind": "image",
   "text": "/images/ensaio/home-02-biblioteca-vertical.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 30,
+  "line": 31,
   "section": "JuHero",
   "order": 0
  },
@@ -3372,7 +3383,7 @@
   "kind": "text",
   "text": "Retrato de Juliana em uma poltrona na biblioteca.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 31,
+  "line": 32,
   "section": "JuHero",
   "order": 0
  },
@@ -3383,7 +3394,7 @@
   "kind": "text",
   "text": "Primeiro de tudo,",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 42,
+  "line": 43,
   "section": "JuHero",
   "order": 0
  },
@@ -3394,7 +3405,7 @@
   "kind": "text",
   "text": "eu sou a Ju.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 42,
+  "line": 43,
   "section": "JuHero",
   "order": 0
  },
@@ -3405,7 +3416,7 @@
   "kind": "text",
   "text": "Sou engenheira, empreendedora, mãe e futurista. Mas os títulos explicam menos do que uma inquietação que atravessa minha vida:",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 47,
+  "line": 48,
   "section": "JuHero",
   "order": 0
  },
@@ -3416,7 +3427,7 @@
   "kind": "text",
   "text": "o que ainda pode existir quando a gente deixa de tratar o caminho mais provável como o único disponível?",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 50,
+  "line": 51,
   "section": "JuHero",
   "order": 0
  },
@@ -3427,7 +3438,7 @@
   "kind": "text",
   "text": "Passei por tecnologia, vendas, liderança e construção de empresas. Hoje, essas experiências encontram os Estudos de Futuros e as perguntas sobre transformação humana que continuo perseguindo.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 53,
+  "line": 54,
   "section": "JuHero",
   "order": 0
  },
@@ -3438,7 +3449,7 @@
   "kind": "text",
   "text": "Conheça essa trajetória",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 57,
+  "line": 58,
   "section": "JuHero",
   "order": 0
  },
@@ -3449,7 +3460,7 @@
   "kind": "image",
   "text": "/images/ensaio/home-02-biblioteca-horizontal.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 62,
+  "line": 63,
   "section": "JuHero",
   "order": 0
  },
@@ -3460,7 +3471,7 @@
   "kind": "text",
   "text": "Juliana sentada em uma poltrona na biblioteca.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 62,
+  "line": 63,
   "section": "JuHero",
   "order": 0
  },
@@ -3471,7 +3482,7 @@
   "kind": "text",
   "text": "Tecnologia e construção",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 71,
+  "line": 72,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3482,7 +3493,7 @@
   "kind": "text",
   "text": "A tecnologia sempre chegou",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 75,
+  "line": 76,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3493,7 +3504,7 @@
   "kind": "text",
   "text": "acompanhada de gente.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 75,
+  "line": 76,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3504,7 +3515,7 @@
   "kind": "text",
   "text": "Na minha trajetória em empresas como EMC e Oracle, tecnologia vinha com",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 80,
+  "line": 81,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3515,7 +3526,7 @@
   "kind": "text",
   "text": "cliente, orçamento, pressão, negociação, risco e consequência.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 81,
+  "line": 82,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3526,7 +3537,7 @@
   "kind": "text",
   "text": "Ao cofundar e liderar a A2F, passei a lidar também com o que é preciso para uma empresa existir: vender, entregar, contratar, decidir, corrigir e sustentar escolhas quando a realidade muda.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 84,
+  "line": 85,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3537,7 +3548,7 @@
   "kind": "text",
   "text": "Nesse caminho, acertei, errei, perdi dinheiro, recomecei e mudei de direção.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 85,
+  "line": 86,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3548,7 +3559,7 @@
   "kind": "text",
   "text": "Foi nesse percurso que uma ideia ganhou força para mim:",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 86,
+  "line": 87,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3559,7 +3570,7 @@
   "kind": "text",
   "text": "nenhuma transformação tecnológica é apenas tecnológica.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 89,
+  "line": 90,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3570,7 +3581,7 @@
   "kind": "text",
   "text": "Ela muda como pessoas trabalham, decidem e se relacionam.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 91,
+  "line": 92,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3581,7 +3592,7 @@
   "kind": "text",
   "text": "Por isso, diante de uma nova ferramenta, minha pergunta raramente é apenas:",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 93,
+  "line": 94,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3592,7 +3603,7 @@
   "kind": "text",
   "text": "“O que essa ferramenta será capaz de fazer?”",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 95,
+  "line": 96,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3603,7 +3614,7 @@
   "kind": "text",
   "text": "O que acontece com a gente quando ela consegue?",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 97,
+  "line": 98,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3614,7 +3625,7 @@
   "kind": "image",
   "text": "/images/ensaio/ju-trabalho-tecnologia.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 102,
+  "line": 103,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3625,7 +3636,7 @@
   "kind": "text",
   "text": "Juliana concentrada no trabalho em um notebook.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 103,
+  "line": 104,
   "section": "JuTecnologia",
   "order": 1
  },
@@ -3636,7 +3647,7 @@
   "kind": "text",
   "text": "Capacidade e direção",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 121,
+  "line": 122,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3647,7 +3658,7 @@
   "kind": "text",
   "text": "Ser boa num caminho não decide",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 125,
+  "line": 126,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3658,7 +3669,7 @@
   "kind": "text",
   "text": "se quero continuar nele.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 125,
+  "line": 126,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3669,7 +3680,7 @@
   "kind": "text",
   "text": "Na escola, um professor chamado Wilker me disse que eu seria boa em qualquer coisa que escolhesse. Guardei a frase. Demorei mais para escutar uma palavra dentro dela: escolher.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 130,
+  "line": 131,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3680,7 +3691,7 @@
   "kind": "text",
   "text": "Gostar de muitas coisas e encontrar portas abertas pode ser maravilhoso. Também pode nos manter entrando na próxima oportunidade sem perguntar para onde o conjunto das escolhas está levando.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 132,
+  "line": 133,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3691,7 +3702,7 @@
   "kind": "text",
   "text": "Essa pergunta continua comigo:",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 133,
+  "line": 134,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3702,7 +3713,7 @@
   "kind": "text",
   "text": "onde estou colocando minha potência?",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 136,
+  "line": 137,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3713,7 +3724,7 @@
   "kind": "text",
   "text": "escolher.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 140,
+  "line": 141,
   "section": "JuEscolher",
   "order": 2
  },
@@ -3724,7 +3735,7 @@
   "kind": "text",
   "text": "Maternidade",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 150,
+  "line": 151,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3735,7 +3746,7 @@
   "kind": "text",
   "text": "Quando virei mãe, o futuro",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 154,
+  "line": 155,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3746,7 +3757,7 @@
   "kind": "text",
   "text": "mudou de escala.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 154,
+  "line": 155,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3757,7 +3768,7 @@
   "kind": "text",
   "text": "O futuro passou a ser também o mundo onde minhas filhas vão viver. Isso tornou algumas perguntas muito próximas: o que ensino, o que sustento, o que questiono e o que ajudo a construir?",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 159,
+  "line": 160,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3768,7 +3779,7 @@
   "kind": "text",
   "text": "eu não controlo o futuro delas.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 162,
+  "line": 163,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3779,7 +3790,7 @@
   "kind": "text",
   "text": "Posso participar do presente e ajudar a criar condições para que elas também façam suas escolhas.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 165,
+  "line": 166,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3790,7 +3801,7 @@
   "kind": "image",
   "text": "/images/ju/retrato-sorriso-tijolos.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 169,
+  "line": 170,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3801,7 +3812,7 @@
   "kind": "text",
   "text": "Retrato de Juliana sorrindo diante de uma parede de tijolos brancos.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 170,
+  "line": 171,
   "section": "JuMaternidade",
   "order": 3
  },
@@ -3812,7 +3823,7 @@
   "kind": "text",
   "text": "A lente atual",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 185,
+  "line": 186,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3823,7 +3834,7 @@
   "kind": "text",
   "text": "As perguntas sobre transformação",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 189,
+  "line": 190,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3834,7 +3845,7 @@
   "kind": "text",
   "text": "ficaram maiores.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 189,
+  "line": 190,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3845,7 +3856,7 @@
   "kind": "text",
   "text": "Meu interesse por escolhas, capacidades e mudança encontrou nos Estudos de Futuros um campo mais amplo. Pessoas se transformam dentro de famílias, organizações, culturas e tecnologias. Esses mundos também podem mudar.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 194,
+  "line": 195,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3856,7 +3867,7 @@
   "kind": "text",
   "text": "Futuros Humanos nasceu nesse encontro. É onde organizo perguntas sobre possibilidade, direção, humanidade e aquilo que podemos começar a construir.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 196,
+  "line": 197,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3867,7 +3878,7 @@
   "kind": "text",
   "text": "Eu estudo futuros porque me interesso profundamente por",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 199,
+  "line": 200,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3878,7 +3889,7 @@
   "kind": "text",
   "text": "pessoas.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 199,
+  "line": 200,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3889,7 +3900,7 @@
   "kind": "text",
   "text": "Conheça Futuros Humanos",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 202,
+  "line": 203,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3900,7 +3911,7 @@
   "kind": "image",
   "text": "/images/ensaio/ju-leitura-anotacoes.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 206,
+  "line": 207,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3911,7 +3922,7 @@
   "kind": "text",
   "text": "Juliana lendo um livro e fazendo anotações em um caderno.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 207,
+  "line": 208,
   "section": "JuFuturos",
   "order": 4
  },
@@ -3922,9 +3933,9 @@
   "kind": "text",
   "text": "Conversas com eventos, lideranças e equipes sobre futuros, tecnologia e transformação.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 236,
+  "line": 237,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/55ec6e9b56",
@@ -3933,9 +3944,9 @@
   "kind": "text",
   "text": "Conheça as palestras",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 237,
+  "line": 238,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/8385cb1d24",
@@ -3944,9 +3955,9 @@
   "kind": "text",
   "text": "Coletivo de futuristas do qual participo, com trabalhos de futuros aplicados.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 242,
+  "line": 243,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/62f394d042",
@@ -3955,9 +3966,9 @@
   "kind": "text",
   "text": "Conheça a WTF",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 244,
+  "line": 245,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/11c961d112",
@@ -3966,9 +3977,9 @@
   "kind": "text",
   "text": "Converse sobre futuros aplicados",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 245,
+  "line": 246,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/3836a57fec",
@@ -3977,9 +3988,9 @@
   "kind": "text",
   "text": "EPIC",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 251,
+  "line": 252,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/f0dc08e0c7",
@@ -3988,9 +3999,9 @@
   "kind": "text",
   "text": "247",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 251,
+  "line": 252,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/fe5b21b07c",
@@ -3999,9 +4010,9 @@
   "kind": "text",
   "text": "Experiências de transformação pessoal para aproximar o que você quer mudar daquilo que consegue praticar no cotidiano.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 254,
+  "line": 255,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/3672bdba1f",
@@ -4010,9 +4021,9 @@
   "kind": "text",
   "text": "Conheça o EPIC247",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 256,
+  "line": 257,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/52c88aff00",
@@ -4021,9 +4032,9 @@
   "kind": "text",
   "text": "Tire uma dúvida sobre o EPIC247",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 257,
+  "line": 258,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/17052137bc",
@@ -4032,9 +4043,9 @@
   "kind": "text",
   "text": "O que construo hoje",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 261,
+  "line": 262,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/d1bff588a7",
@@ -4043,9 +4054,9 @@
   "kind": "text",
   "text": "Essa visão encontra",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 264,
+  "line": 265,
   "section": "JuHoje",
-  "order": 5
+  "order": 6
  },
  {
   "key": "ju/c81cfa1d9a",
@@ -4054,8 +4065,41 @@
   "kind": "text",
   "text": "trabalhos diferentes.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 264,
+  "line": 265,
   "section": "JuHoje",
+  "order": 6
+ },
+ {
+  "key": "ju/b98d24fd7c",
+  "page": "ju",
+  "block": "JuMidia",
+  "kind": "text",
+  "text": "Ouça a Ju",
+  "file": "src/components/sections/ju/JuBlocks.tsx",
+  "line": 296,
+  "section": "JuMidia",
+  "order": 5
+ },
+ {
+  "key": "ju/2d7016bf19",
+  "page": "ju",
+  "block": "JuMidia",
+  "kind": "text",
+  "text": "Para ouvir a Ju",
+  "file": "src/components/sections/ju/JuBlocks.tsx",
+  "line": 299,
+  "section": "JuMidia",
+  "order": 5
+ },
+ {
+  "key": "ju/054ad0eb83",
+  "page": "ju",
+  "block": "JuMidia",
+  "kind": "text",
+  "text": "pensando em voz alta.",
+  "file": "src/components/sections/ju/JuBlocks.tsx",
+  "line": 299,
+  "section": "JuMidia",
   "order": 5
  },
  {
@@ -4065,9 +4109,9 @@
   "kind": "text",
   "text": "Encerramento",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 293,
+  "line": 316,
   "section": "JuEncerramento",
-  "order": 6
+  "order": 7
  },
  {
   "key": "ju/88446f0e80",
@@ -4076,9 +4120,9 @@
   "kind": "text",
   "text": "Eu não quero menos vida.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 297,
+  "line": 320,
   "section": "JuEncerramento",
-  "order": 6
+  "order": 7
  },
  {
   "key": "ju/1b57174dac",
@@ -4087,9 +4131,9 @@
   "kind": "text",
   "text": "Eu quero mais vida.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 297,
+  "line": 320,
   "section": "JuEncerramento",
-  "order": 6
+  "order": 7
  },
  {
   "key": "ju/cb40d85596",
@@ -4098,9 +4142,9 @@
   "kind": "text",
   "text": "Quero construir, aprender, criar e continuar encontrando coisas que me façam mudar de ideia. Quero estar presente na vida enquanto isso acontece.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 302,
+  "line": 325,
   "section": "JuEncerramento",
-  "order": 6
+  "order": 7
  },
  {
   "key": "ju/589522b975",
@@ -4109,9 +4153,9 @@
   "kind": "text",
   "text": "Não terminei de me tornar.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 305,
+  "line": 328,
   "section": "JuEncerramento",
-  "order": 6
+  "order": 7
  },
  {
   "key": "ju/0ac4e6a799",
@@ -4120,9 +4164,9 @@
   "kind": "text",
   "text": "Não terminei de construir.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 306,
+  "line": 329,
   "section": "JuEncerramento",
-  "order": 6
+  "order": 7
  },
  {
   "key": "ju/0460b36b28",
@@ -4131,9 +4175,9 @@
   "kind": "text",
   "text": "Vamos conversar",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 309,
+  "line": 332,
   "section": "JuEncerramento",
-  "order": 6
+  "order": 7
  },
  {
   "key": "ju/efbf615e4b",
@@ -4142,9 +4186,9 @@
   "kind": "image",
   "text": "/images/ensaio/ju-caminhada-movimento.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 314,
+  "line": 337,
   "section": "JuEncerramento",
-  "order": 6
+  "order": 7
  },
  {
   "key": "ju/6ebc79672b",
@@ -4153,9 +4197,9 @@
   "kind": "text",
   "text": "Juliana caminhando na calçada, em enquadramento de corpo inteiro.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 315,
+  "line": 338,
   "section": "JuEncerramento",
-  "order": 6
+  "order": 7
  },
  {
   "key": "organizacoes/4b2522a71b",
@@ -4769,7 +4813,7 @@
   "kind": "text",
   "text": "Conheça a palestra Futuros Humanos",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
-  "line": 204,
+  "line": 203,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -5297,7 +5341,7 @@
   "kind": "text",
   "text": "Veja o trabalho com organizações",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
-  "line": 86,
+  "line": 85,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5308,7 +5352,7 @@
   "kind": "image",
   "text": "/images/ensaio/palestras-workshop-01.webp",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
-  "line": 90,
+  "line": 89,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5319,7 +5363,7 @@
   "kind": "text",
   "text": "Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
-  "line": 91,
+  "line": 90,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5561,7 +5605,7 @@
   "kind": "text",
   "text": "A proposta é ampliar perspectivas, reconhecer critérios que orientam decisões e encontrar um primeiro movimento possível no contexto de cada pessoa ou equipe.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 80,
+  "line": 79,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5572,7 +5616,7 @@
   "kind": "text",
   "text": "Três perguntas atravessam a palestra",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 83,
+  "line": 81,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5583,7 +5627,7 @@
   "kind": "text",
   "text": "No caminho, a conversa passa por imaginar, escolher, tornar-se e construir. Não como etapas a cumprir: depois de construir, a pergunta volta, mas de outro lugar.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 95,
+  "line": 93,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5594,7 +5638,7 @@
   "kind": "text",
   "text": "Conheça a tese em profundidade",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 97,
+  "line": 95,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5605,7 +5649,7 @@
   "kind": "image",
   "text": "/images/ensaio/palestras-interacao-plateia.webp",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 101,
+  "line": 99,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5616,7 +5660,7 @@
   "kind": "text",
   "text": "Cena ilustrativa de Juliana interagindo com participantes de uma palestra.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 102,
+  "line": 100,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5627,7 +5671,7 @@
   "kind": "text",
   "text": "Onde essa conversa costuma fazer sentido",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 116,
+  "line": 114,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5638,7 +5682,7 @@
   "kind": "text",
   "text": "Cada público pede ênfases próprias. Por isso a adequação é conversada a partir do briefing de cada evento.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 127,
+  "line": 125,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5649,7 +5693,7 @@
   "kind": "text",
   "text": "Ouça e veja Ju",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 34,
+  "line": 26,
   "section": "PalestrasOucaVeja",
   "order": 2
  },
@@ -5660,7 +5704,7 @@
   "kind": "text",
   "text": "Conheça a conversa",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 37,
+  "line": 29,
   "section": "PalestrasOucaVeja",
   "order": 2
  },
@@ -5671,7 +5715,7 @@
   "kind": "text",
   "text": "antes de levá-la ao seu evento.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 37,
+  "line": 29,
   "section": "PalestrasOucaVeja",
   "order": 2
  },
@@ -5682,7 +5726,7 @@
   "kind": "text",
   "text": "Organizações e eventos",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 108,
+  "line": 72,
   "section": "PalestrasOucaVeja",
   "order": 2
  },
@@ -5693,7 +5737,7 @@
   "kind": "text",
   "text": "Conversa inicial",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 138,
+  "line": 102,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5704,7 +5748,7 @@
   "kind": "text",
   "text": "Público, momento do evento e a pergunta que merece entrar na sala.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 138,
+  "line": 102,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5715,7 +5759,7 @@
   "kind": "text",
   "text": "Proposta",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 139,
+  "line": 103,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5726,7 +5770,7 @@
   "kind": "text",
   "text": "Formato, escopo e condições adequados à necessidade.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 139,
+  "line": 103,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5737,7 +5781,7 @@
   "kind": "text",
   "text": "Preparação",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 140,
+  "line": 104,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5748,7 +5792,7 @@
   "kind": "text",
   "text": "Alinhamento de exemplos, linguagem e organização da experiência.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 140,
+  "line": 104,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5759,7 +5803,7 @@
   "kind": "text",
   "text": "Como começa",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 143,
+  "line": 107,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5770,7 +5814,7 @@
   "kind": "text",
   "text": "Começamos",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 146,
+  "line": 110,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5781,7 +5825,7 @@
   "kind": "text",
   "text": "pelo contexto.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 146,
+  "line": 110,
   "section": "PalestrasComoComeca",
   "order": 5
  },
@@ -5792,7 +5836,7 @@
   "kind": "text",
   "text": "Contratação",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 169,
+  "line": 133,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5803,7 +5847,7 @@
   "kind": "image",
   "text": "/images/ensaio/contato-sorriso-vertical.webp",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 172,
+  "line": 136,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5814,7 +5858,7 @@
   "kind": "text",
   "text": "Qual conversa precisa acontecer",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 184,
+  "line": 148,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5825,7 +5869,7 @@
   "kind": "text",
   "text": "no seu evento?",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 184,
+  "line": 148,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5836,7 +5880,7 @@
   "kind": "text",
   "text": "Conte o público, a data se já existir e o que motivou o encontro. A partir daí, podemos avaliar o formato.",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 187,
+  "line": 151,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5847,7 +5891,7 @@
   "kind": "text",
   "text": "Falar sobre uma palestra",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 190,
+  "line": 154,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5858,7 +5902,7 @@
   "kind": "text",
   "text": "Prefere falar direto?",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 193,
+  "line": 157,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5869,7 +5913,7 @@
   "kind": "text",
   "text": "WhatsApp comercial",
   "file": "src/components/sections/palestras-workshops/BlocksLastro.tsx",
-  "line": 205,
+  "line": 169,
   "section": "PalestrasContratacao",
   "order": 6
  },
@@ -5968,7 +6012,7 @@
   "kind": "image",
   "text": "/images/ensaio/pessoas-janela.webp",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
-  "line": 33,
+  "line": 32,
   "section": "PessoasFechamento",
   "order": 4
  },
@@ -5979,7 +6023,7 @@
   "kind": "text",
   "text": "Juliana olhando pela janela, com expressão contemplativa.",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
-  "line": 34,
+  "line": 33,
   "section": "PessoasFechamento",
   "order": 4
  },

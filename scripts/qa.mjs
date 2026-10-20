@@ -7,6 +7,7 @@ const steps = [
   ["Painel /admin", "scripts/admin-check.mjs"],
   ["Painel de conteúdo (configurações, artigos, referências, newsletter)", "scripts/cms-check.mjs"],
   ["Painel avançado (textos e fotos das páginas, provas, SEO, usuários)", "scripts/cms2-check.mjs"],
+  ["Vídeos e áudios, blocos ocultos, histórico e imagens", "scripts/media-check.mjs"],
   ["Todas as telas e o menu do painel (desktop e celular)", "scripts/admin-shots.mjs"],
 ];
 let fail = 0;

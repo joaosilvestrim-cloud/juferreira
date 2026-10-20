@@ -1,3 +1,4 @@
+import { shown } from "@/lib/editable";
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import {
@@ -28,14 +29,14 @@ export default async function FuturosHumanosPage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
-      <FHHero />
-      <FHAutomatico />
-      <FHTese />
-      <FHFerramentas />
-      <FHAgencia />
-      <FHEspiral />
-      <FHEscalas />
-      <FHEncerramento />
+      {shown("FHHero") && <FHHero />}
+      {shown("FHAutomatico") && <FHAutomatico />}
+      {shown("FHTese") && <FHTese />}
+      {shown("FHFerramentas") && <FHFerramentas />}
+      {shown("FHAgencia") && <FHAgencia />}
+      {shown("FHEspiral") && <FHEspiral />}
+      {shown("FHEscalas") && <FHEscalas />}
+      {shown("FHEncerramento") && <FHEncerramento />}
     </>
   );
 }

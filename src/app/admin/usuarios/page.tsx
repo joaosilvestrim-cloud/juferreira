@@ -2,6 +2,7 @@ import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
 import { deleteUser, toggleUser } from "../content-actions";
 import { UserForm } from "./UserForm";
+import { ConfirmSubmit } from "../_ui/ConfirmSubmit";
 
 export default async function UsersPage() {
   const me = await requireAdminPage();
@@ -40,7 +41,9 @@ export default async function UsersPage() {
                     </form>
                     <form action={deleteUser}>
                       <input type="hidden" name="id" value={u.id} />
-                      <button className="text-[13px] text-red-deep hover:underline">Excluir usuário</button>
+                      <ConfirmSubmit message="Excluir este usuário? Ele perde o acesso ao painel." className="text-[13px] text-red-deep hover:underline">
+                        Excluir usuário
+                      </ConfirmSubmit>
                     </form>
                   </div>
                 )}

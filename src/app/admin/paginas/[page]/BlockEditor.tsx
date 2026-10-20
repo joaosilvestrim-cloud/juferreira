@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { savePageBlock } from "../../content-actions";
 import { ActionForm, fieldCls, ImageInput } from "../../_ui/form";
+import { LibraryPicker } from "../../_ui/LibraryPicker";
 
 type Item = { key: string; kind: "text" | "image"; original: string; value: string | null };
 
@@ -35,13 +36,15 @@ function TextItem({ it }: { it: Item }) {
 
 function ImageItem({ it }: { it: Item }) {
   const [restore, setRestore] = useState(false);
+  const [lib, setLib] = useState<string | null>(null);
   return (
     <div className="flex flex-wrap items-center gap-4 rounded-[10px] border border-ink-900/10 bg-cream-100 p-3">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={restore ? it.original : (it.value ?? it.original)} alt="" className="h-24 w-36 rounded-md object-cover" />
+      <img src={restore ? it.original : (lib ?? it.value ?? it.original)} alt="" className="h-24 w-36 rounded-md object-cover" />
       <div className="space-y-2 text-[13px]">
-        <p className="text-ink-500">{it.value ? "Imagem trocada no painel" : "Imagem original"}</p>
+        <p className="text-ink-500">{lib ? "Escolhida da biblioteca (clique em Salvar bloco)" : it.value ? "Imagem trocada no painel" : "Imagem original"}</p>
         <ImageInput name={`i:${it.key}`} />
+        <LibraryPicker name={`m:${it.key}`} onPick={setLib} />
         {it.value && (
           <label className="flex items-center gap-2">
             <input type="checkbox" name={`r:${it.key}`} value="1" checked={restore} onChange={(e) => setRestore(e.target.checked)} />

@@ -1,4 +1,5 @@
-import { getPublishedArticles } from "@/lib/content";
+import { getMediaFor, getPublishedArticles } from "@/lib/content";
+import { MediaPlayer } from "@/components/ui/MediaPlayer";
 import { photoPosition } from "@/lib/photo-position";
 import Image from "next/image";
 import Link from "next/link";
@@ -126,7 +127,9 @@ export function HomeFuturos() {
 }
 
 /* ───────────────────────── H04 — A PESSOA ───────────────────────── */
-export function HomeJu() {
+export async function HomeJu() {
+  // vídeo ou áudio marcado para a Home no painel (Vídeos e áudios); sem nenhum, o bloco fica só com texto
+  const [media] = await getMediaFor("home");
   return (
     <Section padded={false} tone="cream" label={tx("home/df4a46c48a", "Ju Ferreira")}>
       <div className="grid lg:grid-cols-[56%_44%]">
@@ -141,6 +144,11 @@ export function HomeJu() {
           </Body>
           <ButtonLink href="/ju" className="mt-10">
             {tx("home/d4cfc4e8d1", "Conheça minha trajetória")}</ButtonLink>
+          {media && (
+            <div className="mt-12 max-w-[620px]">
+              <MediaPlayer m={media} />
+            </div>
+          )}
         </Container>
         <div className="relative min-h-[520px]">
           <Photo

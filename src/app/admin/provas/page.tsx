@@ -2,11 +2,11 @@ import { requireAdminPage } from "@/lib/admin-guard";
 import { mediaUrl } from "@/lib/content";
 import { db } from "@/lib/db";
 import { deleteProof } from "../content-actions";
+import { ConfirmSubmit } from "../_ui/ConfirmSubmit";
 import { ProofForm, type ProofData } from "./ProofForm";
 
 const KINDS = [
   { id: "depoimento", title: "Depoimentos", hint: "2 ou 3 depoimentos verificáveis (contratante, liderança, participante)." },
-  { id: "video", title: "Vídeos", hint: "Link do YouTube, do Vimeo ou de um arquivo .mp4 (ideal: trecho de 60 a 90 segundos)." },
   { id: "foto", title: "Fotos de palco e eventos", hint: "2 a 4 fotos reais de palestras e workshops." },
   { id: "logo", title: "Organizações atendidas", hint: "Somente com autorização. Com logo (imagem) ou só o nome." },
 ] as const;
@@ -18,7 +18,7 @@ export default async function ProofAdmin() {
     <div className="mx-auto max-w-[1000px] px-5 py-10 sm:px-8">
       <h1 className="jf-display text-[44px]">Provas</h1>
       <p className="mt-1 max-w-[680px] text-[15px] text-ink-500">
-        Seção “Ouça e veja a Ju” da página Palestras. Só aparece no site o que for cadastrado aqui; sem itens, a seção fica oculta.
+        Seção “Ouça e veja a Ju” da página Palestras. Depoimentos, fotos de palco e organizações. Vídeos agora ficam em “Vídeos e áudios”. Só aparece no site o que for cadastrado aqui; sem itens, a seção fica oculta.
       </p>
       {KINDS.map((k) => {
         const list = rows.filter((r) => r.kind === k.id);
@@ -41,7 +41,9 @@ export default async function ProofAdmin() {
                         <ProofForm d={d} />
                         <form action={deleteProof} className="mt-4">
                           <input type="hidden" name="id" value={r.id} />
-                          <button className="text-[13px] text-red-deep hover:underline">Excluir</button>
+                          <ConfirmSubmit message="Excluir este item? Ele sai do site na hora." className="text-[13px] text-red-deep hover:underline">
+                            Excluir
+                          </ConfirmSubmit>
                         </form>
                       </div>
                     </details>

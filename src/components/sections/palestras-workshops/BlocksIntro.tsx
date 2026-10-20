@@ -1,18 +1,18 @@
-import { getProof } from "@/lib/content";
+import { getMediaFor } from "@/lib/content";
 import { ButtonLink, ButtonRow } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
 import { Body, Display, Em, Eyebrow, Lead } from "@/components/ui/Typography";
 import { CONTACT_ROUTES } from "@/lib/site";
-import { OUCA_ANCHOR, proofVideos } from "./BlocksLastro";
+import { OUCA_ANCHOR } from "./BlocksLastro";
 
 import { tx, img } from "@/lib/editable";
 
 /* ───────────────────────── P01 — ABERTURA ───────────────────────── */
 export async function PalestrasHero() {
   // o convite para ouvir a Ju só aparece quando existe vídeo real cadastrado no painel (/admin → Provas)
-  const hasVideo = proofVideos(await getProof()).length > 0;
+  const hasVideo = (await getMediaFor("palestras")).length > 0;
   return (
     <Section padded={false} label={tx("palestras-workshops/9abfbb43fe", "Abertura")}>
       <div className="grid lg:grid-cols-[58%_42%]">

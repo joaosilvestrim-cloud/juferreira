@@ -1,3 +1,4 @@
+import { shown } from "@/lib/editable";
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import {
@@ -21,14 +22,14 @@ export default async function HomePage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
-      <HomeHero />
-      <HomeTensao />
-      <HomeFuturos />
-      <HomeJu />
-      <HomeOrganizacoes />
-      <HomePessoas />
-      <HomeIdeias />
-      <HomeEncerramento />
+      {shown("HomeHero") && <HomeHero />}
+      {shown("HomeTensao") && <HomeTensao />}
+      {shown("HomeFuturos") && <HomeFuturos />}
+      {shown("HomeJu") && <HomeJu />}
+      {shown("HomeOrganizacoes") && <HomeOrganizacoes />}
+      {shown("HomePessoas") && <HomePessoas />}
+      {shown("HomeIdeias") && <HomeIdeias />}
+      {shown("HomeEncerramento") && <HomeEncerramento />}
     </>
   );
 }

@@ -4,7 +4,8 @@ import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
 import { Body, Dash, Display, Em, StickyNote, Title } from "@/components/ui/Typography";
-import { getExternal } from "@/lib/content";
+import { getExternal, getMediaFor } from "@/lib/content";
+import { MediaPlayer } from "@/components/ui/MediaPlayer";
 import { CONTACT_ROUTES, LINKS } from "@/lib/site";
 
 import { tx, img } from "@/lib/editable";
@@ -279,6 +280,28 @@ export async function JuHoje() {
                   </ButtonLink>
                 )}
               </PaperCard>
+            </li>
+          ))}
+        </ul>
+      </Container>
+    </Section>
+  );
+}
+
+/* ───────────────────────── J05b — OUÇA A JU (só com vídeo/áudio marcado para a página Ju) ───────────────────────── */
+export async function JuMidia() {
+  const items = await getMediaFor("ju");
+  if (!items.length) return null;
+  return (
+    <Section label={tx("ju/b98d24fd7c", "Ouça a Ju")}>
+      <Container>
+        <Display size="md">
+          {tx("ju/2d7016bf19", "Para ouvir a Ju")} <Em>{tx("ju/054ad0eb83", "pensando em voz alta.")}</Em>
+        </Display>
+        <ul className={`mt-10 grid gap-10 ${items.length > 1 ? "lg:grid-cols-2" : "max-w-[900px]"}`}>
+          {items.map((m) => (
+            <li key={m.id}>
+              <MediaPlayer m={m} />
             </li>
           ))}
         </ul>

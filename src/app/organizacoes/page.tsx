@@ -1,3 +1,4 @@
+import { shown } from "@/lib/editable";
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import { OrgFormatos, OrgHero, OrgSituacoes } from "@/components/sections/organizacoes/OrgBlocksA";
@@ -18,12 +19,12 @@ export default async function OrganizacoesPage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
-      <OrgHero />
-      <OrgSituacoes />
-      <OrgFormatos />
-      <OrgColetivo />
-      <OrgExperiencia />
-      <OrgContato />
+      {shown("OrgHero") && <OrgHero />}
+      {shown("OrgSituacoes") && <OrgSituacoes />}
+      {shown("OrgFormatos") && <OrgFormatos />}
+      {shown("OrgColetivo") && <OrgColetivo />}
+      {shown("OrgExperiencia") && <OrgExperiencia />}
+      {shown("OrgContato") && <OrgContato />}
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { shown } from "@/lib/editable";
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import { ContatoCanais, ContatoConversa } from "@/components/sections/contato/ContatoBlocks";
@@ -16,8 +17,8 @@ export default async function ContatoPage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
-      <ContatoConversa />
-      <ContatoCanais />
+      {shown("ContatoConversa") && <ContatoConversa />}
+      {shown("ContatoCanais") && <ContatoCanais />}
     </>
   );
 }

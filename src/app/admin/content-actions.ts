@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { sessionUser } from "@/lib/auth";
 import { SETTING_KEYS } from "@/lib/content";
 import { db } from "@/lib/db";
+import { storeImage } from "@/lib/media-store";
 import { sanitizeRich } from "@/lib/rich-text";
 
 async function requireAdmin() {
@@ -35,22 +36,6 @@ export async function saveSettings(_: FormState, f: FormData): Promise<FormState
   }
   updateTag("settings");
   return { ok: true, message: "Configurações salvas. O site já foi atualizado." };
-}
-
-/* ───────────── Imagens ───────────── */
-const IMAGE_TYPES = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif"];
-
-/** Salva a imagem enviada e devolve o id (ou null se não veio arquivo). */
-async function storeImage(file: FormDataEntryValue | null): Promise<string | null> {
-  if (!(file instanceof File) || file.size === 0) return null;
-  if (!IMAGE_TYPES.includes(file.type)) throw new Error("Formato de imagem não suportado (use JPG, PNG ou WebP).");
-  if (file.size > 3.8 * 1024 * 1024) throw new Error("Imagem muito grande (máx. 3,8 MB).");
-  const bytes = Buffer.from(await file.arrayBuffer());
-  const { rows } = await db.query<{ id: string }>(
-    "insert into public.media (filename, content_type, bytes, size) values ($1,$2,$3,$4) returning id",
-    [file.name.slice(0, 200), file.type, bytes, bytes.length],
-  );
-  return rows[0].id;
 }
 
 /* ───────────── Artigos ───────────── */
@@ -241,7 +226,22 @@ export async function savePageBlock(_: FormState, f: FormData): Promise<FormStat
   await requireAdmin();
   const registry = (await import("@/content/editable-registry.json")).default as { key: string; kind: string; text: string }[];
   const byKey = new Map(registry.map((r) => [r.key, r]));
+  const by = await currentUserLabel();
   let changed = 0;
+  // grava o valor novo (null = volta ao original) e registra no histórico para poder desfazer
+  const apply = async (key: string, next: string | null) => {
+    const { rows } = await db.query<{ value: string }>("select value from public.content_overrides where key = $1", [key]);
+    const old = rows[0]?.value ?? null;
+    if (old === next) return;
+    if (next === null) await db.query("delete from public.content_overrides where key = $1", [key]);
+    else
+      await db.query(
+        "insert into public.content_overrides (key, value, updated_at, updated_by) values ($1,$2,now(),$3) on conflict (key) do update set value = excluded.value, updated_at = now(), updated_by = excluded.updated_by",
+        [key, next, by],
+      );
+    await db.query("insert into public.content_history (key, old_value, new_value, changed_by) values ($1,$2,$3,$4)", [key, old, next, by]);
+    changed++;
+  };
   try {
     for (const [name, value] of f.entries()) {
       const [prefix, key] = [name.slice(0, 2), name.slice(2)];
@@ -249,28 +249,14 @@ export async function savePageBlock(_: FormState, f: FormData): Promise<FormStat
       if (!item) continue;
       if (prefix === "t:" && item.kind === "text" && typeof value === "string") {
         const v = value.replace(/\r\n/g, "\n").trim();
-        if (!v || v === item.text) {
-          const r = await db.query("delete from public.content_overrides where key = $1", [key]);
-          changed += r.rowCount ?? 0;
-        } else {
-          const r = await db.query(
-            "insert into public.content_overrides (key, value, updated_at, updated_by) values ($1,$2,now(),$3) on conflict (key) do update set value = excluded.value, updated_at = now(), updated_by = excluded.updated_by where content_overrides.value is distinct from excluded.value",
-            [key, v.slice(0, 5000), await currentUserLabel()],
-          );
-          changed += r.rowCount ?? 0;
-        }
+        await apply(key, !v || v === item.text ? null : v.slice(0, 5000));
       } else if (prefix === "i:" && item.kind === "image") {
         const id = await storeImage(value);
-        if (id) {
-          await db.query(
-            "insert into public.content_overrides (key, value, updated_at, updated_by) values ($1,$2,now(),$3) on conflict (key) do update set value = excluded.value, updated_at = now(), updated_by = excluded.updated_by",
-            [key, `/midia/${id}`, await currentUserLabel()],
-          );
-          changed++;
-        }
+        if (id) await apply(key, `/midia/${id}`);
+      } else if (prefix === "m:" && item.kind === "image" && typeof value === "string" && /^\/midia\/[0-9a-f-]{36}$/.test(value)) {
+        await apply(key, value); // imagem escolhida da biblioteca
       } else if (prefix === "r:" && value === "1") {
-        const r = await db.query("delete from public.content_overrides where key = $1", [key]);
-        changed += r.rowCount ?? 0;
+        await apply(key, null);
       }
     }
   } catch (e) {

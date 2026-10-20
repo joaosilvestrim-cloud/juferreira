@@ -3,6 +3,7 @@ import { mediaUrl } from "@/lib/content";
 import { db } from "@/lib/db";
 import { deleteRef } from "../content-actions";
 import { RefForm } from "./RefForm";
+import { ConfirmSubmit } from "../_ui/ConfirmSubmit";
 
 type Row = {
   id: string;
@@ -50,7 +51,9 @@ export default async function RefsAdmin() {
                       <RefForm r={{ ...r, id: Number(r.id), cover: mediaUrl(r.cover_id) }} />
                       <form action={deleteRef} className="mt-4">
                         <input type="hidden" name="id" value={r.id} />
-                        <button className="text-[13px] text-red-deep hover:underline">Excluir</button>
+                        <ConfirmSubmit message="Excluir esta referência?" className="text-[13px] text-red-deep hover:underline">
+                          Excluir
+                        </ConfirmSubmit>
                       </form>
                     </div>
                   </details>

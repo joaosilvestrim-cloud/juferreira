@@ -5,6 +5,7 @@ import { db } from "@/lib/db";
 import { renderIssue } from "@/lib/newsletter";
 import { deleteIssue } from "../../content-actions";
 import { IssueEditor, IssueSend } from "../IssueForms";
+import { ConfirmSubmit } from "../../_ui/ConfirmSubmit";
 
 export default async function IssuePage({ params }: { params: Promise<{ id: string }> }) {
   await requireAdminPage();
@@ -41,7 +42,9 @@ export default async function IssuePage({ params }: { params: Promise<{ id: stri
               <IssueSend id={issue.id} subscribers={c[0]?.n ?? 0} />
               <form action={deleteIssue} className="mt-6">
                 <input type="hidden" name="id" value={issue.id} />
-                <button className="text-[13px] text-red-deep hover:underline">Excluir rascunho</button>
+                <ConfirmSubmit message="Excluir este rascunho?" className="text-[13px] text-red-deep hover:underline">
+                  Excluir rascunho
+                </ConfirmSubmit>
               </form>
             </>
           )}

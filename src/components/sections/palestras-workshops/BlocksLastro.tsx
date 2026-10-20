@@ -1,4 +1,5 @@
-import { getExternal, getProof, videoEmbed, type ProofItem } from "@/lib/content";
+import { getExternal, getMediaFor, getProof } from "@/lib/content";
+import { MediaPlayer } from "@/components/ui/MediaPlayer";
 import { ButtonLink } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
@@ -10,22 +11,13 @@ import { tx, img } from "@/lib/editable";
 
 export const OUCA_ANCHOR = "#ouca-e-veja";
 
-/** Vídeos reais cadastrados no painel (/admin → Provas) com link reconhecido (YouTube, Vimeo ou arquivo de vídeo). */
-export function proofVideos(proof: ProofItem[]) {
-  return proof
-    .filter((p) => p.kind === "video" && p.url)
-    .map((p) => ({ ...p, embed: videoEmbed(p.url!) }))
-    .filter((v): v is typeof v & { embed: NonNullable<typeof v.embed> } => v.embed !== null);
-}
-
 /* ───────────────────────── P03 — OUÇA E VEJA JU ───────────────────────── */
 /*
  * Somente ativos REAIS do painel. Título = o que é (ex.: "Entrevista sobre Futuros Humanos");
  * "cargo/contexto" = veículo ou evento e data. Sem nenhum item, a seção não aparece.
  */
 export async function PalestrasOucaVeja() {
-  const proof = await getProof();
-  const videos = proofVideos(proof);
+  const [proof, videos] = await Promise.all([getProof(), getMediaFor("palestras")]);
   const photos = proof.filter((p) => p.kind === "foto" && p.image);
   const testimonials = proof.filter((p) => p.kind === "depoimento" && p.quote);
   const orgs = proof.filter((p) => p.kind === "logo" && (p.title || p.image));
@@ -39,37 +31,9 @@ export async function PalestrasOucaVeja() {
 
         {videos.length > 0 && (
           <ul className={`mt-12 grid gap-10 ${videos.length > 1 ? "lg:grid-cols-2" : "max-w-[960px]"}`}>
-            {videos.map((v) => (
-              <li key={v.id}>
-                <figure>
-                  {v.embed.type === "iframe" ? (
-                    <div className="relative aspect-video overflow-hidden rounded-[var(--jf-radius-sm)] bg-ink-900">
-                      <iframe
-                        src={v.embed.src}
-                        title={v.title ?? "Vídeo com Ju Ferreira"}
-                        loading="lazy"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="absolute inset-0 h-full w-full"
-                      />
-                    </div>
-                  ) : (
-                    <video
-                      src={v.embed.src}
-                      poster={v.image ?? undefined}
-                      controls
-                      preload="none"
-                      className="w-full rounded-[var(--jf-radius-sm)] bg-ink-900"
-                      title={v.title ?? undefined}
-                    />
-                  )}
-                  {(v.title || v.role) && (
-                    <figcaption className="mt-4">
-                      {v.title && <span className="block font-serif text-[22px] leading-snug">{v.title}</span>}
-                      {v.role && <span className="mt-1 block text-[14px] text-ink-500">{v.role}</span>}
-                    </figcaption>
-                  )}
-                </figure>
+            {videos.map((m) => (
+              <li key={m.id}>
+                <MediaPlayer m={m} />
               </li>
             ))}
           </ul>

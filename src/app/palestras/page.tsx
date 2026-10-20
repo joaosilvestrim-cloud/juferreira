@@ -1,3 +1,4 @@
+import { shown } from "@/lib/editable";
 import { loadOverrides, seoFor } from "@/lib/content";
 import type { Metadata } from "next";
 import { PalestrasAprofundamento, PalestrasContexto } from "@/components/sections/palestras-workshops/BlocksFormatos";
@@ -23,13 +24,13 @@ export default async function PalestrasPage() {
   await loadOverrides(); // textos/imagens ajustados no painel
   return (
     <>
-      <PalestrasHero />
-      <PalestrasExperiencia />
-      <PalestrasOucaVeja />
-      <PalestrasContexto />
-      <PalestrasAprofundamento />
-      <PalestrasComoComeca />
-      <PalestrasContratacao />
+      {shown("PalestrasHero") && <PalestrasHero />}
+      {shown("PalestrasExperiencia") && <PalestrasExperiencia />}
+      {shown("PalestrasOucaVeja") && <PalestrasOucaVeja />}
+      {shown("PalestrasContexto") && <PalestrasContexto />}
+      {shown("PalestrasAprofundamento") && <PalestrasAprofundamento />}
+      {shown("PalestrasComoComeca") && <PalestrasComoComeca />}
+      {shown("PalestrasContratacao") && <PalestrasContratacao />}
     </>
   );
 }

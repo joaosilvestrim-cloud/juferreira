@@ -168,3 +168,39 @@ create table if not exists public.proof_items (
   visible    boolean not null default true
 );
 alter table public.proof_items enable row level security;
+
+-- Vídeos e áudios (palestras, entrevistas, podcasts) com escolha de onde aparecem no site
+create table if not exists public.media_items (
+  id          bigint generated always as identity primary key,
+  created_at  timestamptz not null default now(),
+  updated_at  timestamptz not null default now(),
+  format      text not null default 'video' check (format in ('palestra','entrevista','podcast','video','outro')),
+  title       text not null,
+  outlet      text,                          -- veículo, programa ou evento
+  recorded_on date,                          -- data da gravação/publicação
+  description text,
+  url         text not null,                 -- YouTube, Vimeo, Spotify, Apple Podcasts, SoundCloud, .mp4/.mp3 ou outro link
+  thumb_id    uuid references public.media(id) on delete set null,
+  placements  text[] not null default '{}',  -- home | ju | palestras | ideias
+  sort        int not null default 0,
+  visible     boolean not null default true
+);
+alter table public.media_items enable row level security;
+
+-- vídeos que estavam em Provas passam para Vídeos e áudios (aparecendo em Palestras, como antes)
+insert into public.media_items (format, title, outlet, url, thumb_id, placements, sort, visible)
+select 'video', coalesce(nullif(title, ''), 'Vídeo'), role, url, media_id, '{palestras}', sort, visible
+from public.proof_items where kind = 'video' and url is not null;
+delete from public.proof_items where kind = 'video';
+
+-- Histórico das edições de textos e imagens das páginas (para desfazer)
+create table if not exists public.content_history (
+  id         bigint generated always as identity primary key,
+  changed_at timestamptz not null default now(),
+  key        text not null,
+  old_value  text,                           -- null = era o original do site
+  new_value  text,                           -- null = voltou ao original
+  changed_by text
+);
+create index if not exists content_history_key_idx on public.content_history (key, changed_at desc);
+alter table public.content_history enable row level security;
