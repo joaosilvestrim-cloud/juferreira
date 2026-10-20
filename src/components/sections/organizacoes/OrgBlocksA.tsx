@@ -146,17 +146,17 @@ export function OrgFormatos() {
     {
       need: tx("organizacoes/410d5b293e", "Trabalhar uma questão em conjunto"),
       format: tx("organizacoes/ea6feb49bf", "Workshop"),
-      output: tx("organizacoes/e4520fe384", "Pressupostos explicitados, escolhas discutidas e hipóteses de próximos movimentos."),
+      output: tx("organizacoes/c29827b975", "Suposições colocadas em discussão, escolhas examinadas e próximos movimentos a testar."),
     },
     {
       need: tx("organizacoes/8bfea40e8f", "Explorar incertezas e possibilidades"),
       format: tx("organizacoes/84d8dc0fca", "Projeto de futuros aplicados"),
-      output: tx("organizacoes/7957ad5b15", "Cenários, implicações ou insumos de decisão, conforme a abordagem acordada."),
+      output: tx("organizacoes/56804efb9e", "Cenários e suas implicações para apoiar decisões, conforme o escopo."),
     },
     {
       need: tx("organizacoes/359cbb12e2", "Sustentar desenvolvimento ao longo do tempo"),
       format: tx("organizacoes/8cea176a4e", "Jornada customizada"),
-      output: tx("organizacoes/7123abb1f7", "Encontros, experimentação e revisões definidos em proposta própria."),
+      output: tx("organizacoes/a3dcba395f", "Uma sequência de encontros e experiências, com espaço para testar, aprender e rever o caminho."),
     },
   ];
   const head = "jf-eyebrow text-[12px] text-ink-500";
@@ -196,13 +196,8 @@ export function OrgFormatos() {
         </div>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-end lg:gap-14">
-          <div className="border-l-2 border-red-brand pl-6">
-            <p className="font-serif text-[clamp(22px,2vw,30px)] leading-snug">
-              {tx("organizacoes/a2abb19b28", "Nenhuma palestra, workshop ou projeto transforma uma organização sozinho.")}
-            </p>
-            <p className="mt-4 max-w-[600px] text-[15px] leading-relaxed text-ink-700">
-              {tx("organizacoes/7c88a3608a", "O escopo de cada formato é definido em proposta. Lideranças, condições internas e continuidade também fazem parte do resultado.")}</p>
-          </div>
+          <p className="max-w-[620px] text-[16px] leading-relaxed text-ink-700">
+            {tx("organizacoes/6545a516f2", "O trabalho é construído com as lideranças e equipes. Escopo, condições internas e continuidade fazem parte do resultado.")}</p>
           <div className="lg:justify-self-end">
             <ButtonLink href="/palestras" variant="secondary">
               {tx("organizacoes/fff8c3ffee", "Conheça a palestra Futuros Humanos")}</ButtonLink>

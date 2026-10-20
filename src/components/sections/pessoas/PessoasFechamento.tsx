@@ -25,8 +25,7 @@ export function PessoasFechamento() {
             {tx("pessoas/fa20097b2c", "Você pode começar de onde está.")} <span className="text-red-bright">{tx("pessoas/918e91eb74", "E pode precisar de companhia para isso.")}</span>
           </p>
           <p className="jf-eyebrow mt-12 text-[clamp(13px,1.2vw,16px)] tracking-[0.35em] text-red-bright">
-            {tx("pessoas/e4562062fa", "Temos futuros para construir.")}
-          </p>
+            {tx("pessoas/4b17f23837", "O futuro não pode custar o presente.")}</p>
         </div>
 
         <Photo

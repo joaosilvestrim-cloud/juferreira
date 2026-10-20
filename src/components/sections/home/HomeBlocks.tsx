@@ -187,7 +187,7 @@ export function HomeOrganizacoes() {
           <ButtonRow className="mt-12">
             <ButtonLink href="/palestras">{tx("home/5c3f6fc6d1", "Conheça as palestras")}</ButtonLink>
             <ButtonLink href="/organizacoes" variant="secondary">
-              {tx("home/79b2390923", "Converse sobre um desafio")}</ButtonLink>
+              {tx("home/e4cb62ba6c", "Conheça o trabalho com organizações")}</ButtonLink>
           </ButtonRow>
         </Container>
         <div className="relative min-h-[480px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
@@ -224,7 +224,7 @@ export function HomePessoas() {
             {tx("home/a545e45982", "E se essa conversa for sobre a")} <Em>{tx("home/6368c874aa", "sua própria vida?")}</Em>
           </Display>
           <Body className="mt-8 max-w-[600px] text-ink-700">
-            <p>{tx("home/5cfac1d49a", "Há coisas que continuamos fazendo porque importam. Outras permanecem porque nunca paramos para escolher de novo.")}</p>
+            <p>{tx("home/638635c549", "Há coisas que continuamos fazendo porque importam. Outras permanecem porque ainda não as revimos ou não encontramos condições para mudar.")}</p>
             <p>{tx("home/d0e2dd2fad", "Você pode começar por uma pergunta, uma leitura ou uma prática que caiba na vida de hoje.")}</p>
           </Body>
           <ButtonLink href="/pessoas" size="lg" className="mt-10 w-fit">

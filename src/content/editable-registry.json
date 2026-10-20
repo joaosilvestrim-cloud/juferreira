@@ -231,11 +231,11 @@
   "order": 2
  },
  {
-  "key": "futuros-humanos/cbff363c84",
+  "key": "futuros-humanos/2aed755f72",
   "page": "futuros-humanos",
   "block": "FuturesDiagram",
   "kind": "text",
-  "text": "Círculos encaixados: o possível contém o plausível, que contém o provável. O preferível aparece como um recorte tracejado dentro do possível, que cruza o plausível e não coincide com o provável.",
+  "text": "Círculos encaixados: o possível contém o plausível, que contém o provável. O preferível aparece como um círculo tracejado que se sobrepõe às três regiões, inclusive a parte do provável, sem coincidir com nenhuma delas. As áreas não representam probabilidades medidas.",
   "file": "src/components/sections/futuros-humanos/FuturesDiagram.tsx",
   "line": 18,
   "section": "FHTese",
@@ -583,11 +583,11 @@
   "order": 2
  },
  {
-  "key": "futuros-humanos/8de61c44b7",
+  "key": "futuros-humanos/35405f07af",
   "page": "futuros-humanos",
   "block": "FHTese",
   "kind": "text",
-  "text": "Futuros que parecem mais prováveis à luz das evidências e premissas consideradas.",
+  "text": "Futuros considerados mais propensos a acontecer, segundo as evidências e premissas adotadas.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 125,
   "section": "FHTese",
@@ -704,11 +704,11 @@
   "order": 2
  },
  {
-  "key": "futuros-humanos/2f88820a7f",
+  "key": "futuros-humanos/dc0dffa6a9",
   "page": "futuros-humanos",
   "block": "FHTese",
   "kind": "text",
-  "text": "O possível contém o plausível, que contém o provável. O preferível é um recorte dentro do possível: pode cruzar o plausível e não coincide com o provável.",
+  "text": "Possível, plausível e provável organizam diferentes avaliações sobre o que pode acontecer. Preferível expressa o que desejamos: pode se sobrepor a essas regiões, inclusive ao provável. O desenho é uma simplificação para apoiar a conversa.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
   "line": 160,
   "section": "FHTese",
@@ -759,13 +759,35 @@
   "order": 2
  },
  {
+  "key": "futuros-humanos/c1e9362824",
+  "page": "futuros-humanos",
+  "block": "FHTese",
+  "kind": "text",
+  "text": "Fonte:",
+  "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
+  "line": 182,
+  "section": "FHTese",
+  "order": 2
+ },
+ {
+  "key": "futuros-humanos/91c1b585a4",
+  "page": "futuros-humanos",
+  "block": "FHTese",
+  "kind": "text",
+  "text": "Joseph Voros, “The Futures Cone, use and history”",
+  "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
+  "line": 189,
+  "section": "FHTese",
+  "order": 2
+ },
+ {
   "key": "futuros-humanos/251a90907e",
   "page": "futuros-humanos",
   "block": "FHFerramentas",
   "kind": "text",
   "text": "O que queremos ampliar?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 190,
+  "line": 201,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -776,7 +798,7 @@
   "kind": "text",
   "text": "O que precisamos preservar?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 190,
+  "line": 201,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -787,7 +809,7 @@
   "kind": "text",
   "text": "Quem será afetado?",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 190,
+  "line": 201,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -798,7 +820,7 @@
   "kind": "text",
   "text": "Capacidade, direção e autoria",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 192,
+  "line": 203,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -809,7 +831,7 @@
   "kind": "text",
   "text": "Quanto mais podemos fazer,",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 196,
+  "line": 207,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -820,7 +842,7 @@
   "kind": "text",
   "text": "mais importa perguntar para quê.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 196,
+  "line": 207,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -831,7 +853,7 @@
   "kind": "text",
   "text": "Eu gosto de tecnologia. Ela amplia nossa capacidade de criar, compreender e colocar ideias no mundo.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 200,
+  "line": 211,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -842,7 +864,7 @@
   "kind": "text",
   "text": "Mas fazer algo com mais rapidez não resolve a escolha do objetivo. Automatizar uma decisão não elimina a responsabilidade pelos critérios e pelas consequências.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 202,
+  "line": 213,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -853,7 +875,7 @@
   "kind": "text",
   "text": "Quanto mais poderosas ficam nossas ferramentas, mais humanos precisamos ser para decidir o que fazer com elas.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 213,
+  "line": 224,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -864,7 +886,7 @@
   "kind": "text",
   "text": "Autoria, para mim, é",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 217,
+  "line": 228,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -875,7 +897,7 @@
   "kind": "text",
   "text": "permanecer presente naquilo que ajudamos a construir.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 217,
+  "line": 228,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -886,7 +908,7 @@
   "kind": "text",
   "text": "Podemos delegar trabalho e contar com outras pessoas e ferramentas, mantendo atenção à direção, ao julgamento e à responsabilidade.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 220,
+  "line": 231,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -897,7 +919,7 @@
   "kind": "image",
   "text": "/images/ensaio/ju-estudo-fones.webp",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 225,
+  "line": 236,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -908,7 +930,7 @@
   "kind": "text",
   "text": "Juliana estudando com fones de ouvido, livro e notebook.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksA.tsx",
-  "line": 226,
+  "line": 237,
   "section": "FHFerramentas",
   "order": 3
  },
@@ -1166,11 +1188,11 @@
   "order": 5
  },
  {
-  "key": "futuros-humanos/0736bf5676",
+  "key": "futuros-humanos/f6e44ccd8f",
   "page": "futuros-humanos",
   "block": "MOVEMENTS",
   "kind": "text",
-  "text": "Aprender, pedir ajuda e desenvolver as condições necessárias para sustentar essa direção.",
+  "text": "Aprender, pedir ajuda e aceitar ainda não saber. Desenvolver capacidades e condições para sustentar essa direção. A escolha pode chegar antes da capacidade.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 72,
   "section": "FHEspiral",
@@ -1562,22 +1584,22 @@
   "order": 7
  },
  {
-  "key": "futuros-humanos/383b84db0b",
+  "key": "futuros-humanos/0822b53521",
   "page": "futuros-humanos",
   "block": "FHEncerramento",
   "kind": "text",
-  "text": "Temos futuros",
+  "text": "É sobre não desistir",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 204,
   "section": "FHEncerramento",
   "order": 7
  },
  {
-  "key": "futuros-humanos/85d3d13865",
+  "key": "futuros-humanos/31b92dca1c",
   "page": "futuros-humanos",
   "block": "FHEncerramento",
   "kind": "text",
-  "text": "para construir.",
+  "text": "da vida que ainda pode existir.",
   "file": "src/components/sections/futuros-humanos/FuturosHumanosBlocksB.tsx",
   "line": 204,
   "section": "FHEncerramento",
@@ -2288,11 +2310,11 @@
   "order": 4
  },
  {
-  "key": "home/79b2390923",
+  "key": "home/e4cb62ba6c",
   "page": "home",
   "block": "HomeOrganizacoes",
   "kind": "text",
-  "text": "Converse sobre um desafio",
+  "text": "Conheça o trabalho com organizações",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 190,
   "section": "HomeOrganizacoes",
@@ -2376,11 +2398,11 @@
   "order": 5
  },
  {
-  "key": "home/5cfac1d49a",
+  "key": "home/638635c549",
   "page": "home",
   "block": "HomePessoas",
   "kind": "text",
-  "text": "Há coisas que continuamos fazendo porque importam. Outras permanecem porque nunca paramos para escolher de novo.",
+  "text": "Há coisas que continuamos fazendo porque importam. Outras permanecem porque ainda não as revimos ou não encontramos condições para mudar.",
   "file": "src/components/sections/home/HomeBlocks.tsx",
   "line": 227,
   "section": "HomePessoas",
@@ -3168,11 +3190,11 @@
   "order": 1
  },
  {
-  "key": "ideias/1c620060a7",
+  "key": "ideias/bf6acbfbeb",
   "page": "ideias",
   "block": "IdeiasInvestigacao",
   "kind": "text",
-  "text": "Algumas ideias ainda estão em construção. Aqui compartilho a pergunta, as referências que estou considerando e o que pode mudar meu entendimento.",
+  "text": "Algumas ideias ainda estão em construção. Estas são perguntas que estou tentando compreender melhor.",
   "file": "src/components/sections/ideias/IdeiasBlocksB.tsx",
   "line": 121,
   "section": "IdeiasInvestigacao",
@@ -3971,11 +3993,11 @@
   "order": 5
  },
  {
-  "key": "ju/64ec01e5b3",
+  "key": "ju/fe5b21b07c",
   "page": "ju",
   "block": "JuHoje",
   "kind": "text",
-  "text": "Uma frente de transformação pessoal voltada à prática no cotidiano.",
+  "text": "Experiências de transformação pessoal para aproximar o que você quer mudar daquilo que consegue praticar no cotidiano.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
   "line": 254,
   "section": "JuHoje",
@@ -4004,24 +4026,13 @@
   "order": 5
  },
  {
-  "key": "ju/c6ca51a44b",
-  "page": "ju",
-  "block": "JuHoje",
-  "kind": "text",
-  "text": "Sigo próxima de clientes, tecnologia e decisões que precisam funcionar na realidade.",
-  "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 262,
-  "section": "JuHoje",
-  "order": 5
- },
- {
   "key": "ju/17052137bc",
   "page": "ju",
   "block": "JuHoje",
   "kind": "text",
   "text": "O que construo hoje",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 266,
+  "line": 261,
   "section": "JuHoje",
   "order": 5
  },
@@ -4032,7 +4043,7 @@
   "kind": "text",
   "text": "Essa visão encontra",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 269,
+  "line": 264,
   "section": "JuHoje",
   "order": 5
  },
@@ -4043,7 +4054,7 @@
   "kind": "text",
   "text": "trabalhos diferentes.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 269,
+  "line": 264,
   "section": "JuHoje",
   "order": 5
  },
@@ -4054,7 +4065,7 @@
   "kind": "text",
   "text": "Encerramento",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 298,
+  "line": 293,
   "section": "JuEncerramento",
   "order": 6
  },
@@ -4065,7 +4076,7 @@
   "kind": "text",
   "text": "Eu não quero menos vida.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 302,
+  "line": 297,
   "section": "JuEncerramento",
   "order": 6
  },
@@ -4076,7 +4087,7 @@
   "kind": "text",
   "text": "Eu quero mais vida.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 302,
+  "line": 297,
   "section": "JuEncerramento",
   "order": 6
  },
@@ -4087,7 +4098,7 @@
   "kind": "text",
   "text": "Quero construir, aprender, criar e continuar encontrando coisas que me façam mudar de ideia. Quero estar presente na vida enquanto isso acontece.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 307,
+  "line": 302,
   "section": "JuEncerramento",
   "order": 6
  },
@@ -4098,7 +4109,7 @@
   "kind": "text",
   "text": "Não terminei de me tornar.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 310,
+  "line": 305,
   "section": "JuEncerramento",
   "order": 6
  },
@@ -4109,7 +4120,7 @@
   "kind": "text",
   "text": "Não terminei de construir.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 311,
+  "line": 306,
   "section": "JuEncerramento",
   "order": 6
  },
@@ -4120,7 +4131,7 @@
   "kind": "text",
   "text": "Vamos conversar",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 314,
+  "line": 309,
   "section": "JuEncerramento",
   "order": 6
  },
@@ -4131,7 +4142,7 @@
   "kind": "image",
   "text": "/images/ensaio/ju-caminhada-movimento.webp",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 319,
+  "line": 314,
   "section": "JuEncerramento",
   "order": 6
  },
@@ -4142,7 +4153,7 @@
   "kind": "text",
   "text": "Juliana caminhando na calçada, em enquadramento de corpo inteiro.",
   "file": "src/components/sections/ju/JuBlocks.tsx",
-  "line": 320,
+  "line": 315,
   "section": "JuEncerramento",
   "order": 6
  },
@@ -4565,11 +4576,11 @@
   "order": 2
  },
  {
-  "key": "organizacoes/e4520fe384",
+  "key": "organizacoes/c29827b975",
   "page": "organizacoes",
   "block": "OrgFormatos",
   "kind": "text",
-  "text": "Pressupostos explicitados, escolhas discutidas e hipóteses de próximos movimentos.",
+  "text": "Suposições colocadas em discussão, escolhas examinadas e próximos movimentos a testar.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 149,
   "section": "OrgFormatos",
@@ -4598,11 +4609,11 @@
   "order": 2
  },
  {
-  "key": "organizacoes/7957ad5b15",
+  "key": "organizacoes/56804efb9e",
   "page": "organizacoes",
   "block": "OrgFormatos",
   "kind": "text",
-  "text": "Cenários, implicações ou insumos de decisão, conforme a abordagem acordada.",
+  "text": "Cenários e suas implicações para apoiar decisões, conforme o escopo.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 154,
   "section": "OrgFormatos",
@@ -4631,11 +4642,11 @@
   "order": 2
  },
  {
-  "key": "organizacoes/7123abb1f7",
+  "key": "organizacoes/a3dcba395f",
   "page": "organizacoes",
   "block": "OrgFormatos",
   "kind": "text",
-  "text": "Encontros, experimentação e revisões definidos em proposta própria.",
+  "text": "Uma sequência de encontros e experiências, com espaço para testar, aprender e rever o caminho.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
   "line": 159,
   "section": "OrgFormatos",
@@ -4741,24 +4752,13 @@
   "order": 2
  },
  {
-  "key": "organizacoes/a2abb19b28",
+  "key": "organizacoes/6545a516f2",
   "page": "organizacoes",
   "block": "OrgFormatos",
   "kind": "text",
-  "text": "Nenhuma palestra, workshop ou projeto transforma uma organização sozinho.",
+  "text": "O trabalho é construído com as lideranças e equipes. Escopo, condições internas e continuidade fazem parte do resultado.",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
-  "line": 201,
-  "section": "OrgFormatos",
-  "order": 2
- },
- {
-  "key": "organizacoes/7c88a3608a",
-  "page": "organizacoes",
-  "block": "OrgFormatos",
-  "kind": "text",
-  "text": "O escopo de cada formato é definido em proposta. Lideranças, condições internas e continuidade também fazem parte do resultado.",
-  "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
-  "line": 204,
+  "line": 200,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -4769,7 +4769,7 @@
   "kind": "text",
   "text": "Conheça a palestra Futuros Humanos",
   "file": "src/components/sections/organizacoes/OrgBlocksA.tsx",
-  "line": 208,
+  "line": 204,
   "section": "OrgFormatos",
   "order": 2
  },
@@ -5258,35 +5258,35 @@
   "order": 4
  },
  {
-  "key": "palestras-workshops/f9e2fab0cb",
+  "key": "palestras-workshops/e35c70f85d",
   "page": "palestras-workshops",
   "block": "PalestrasAprofundamento",
   "kind": "text",
-  "text": "Às vezes, a palestra abre a conversa.",
+  "text": "Às vezes, a palestra abre uma conversa",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
   "line": 78,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
  {
-  "key": "palestras-workshops/3c86fb8693",
+  "key": "palestras-workshops/59a9a297c4",
   "page": "palestras-workshops",
   "block": "PalestrasAprofundamento",
   "kind": "text",
-  "text": "O workshop permite trabalhá-la.",
+  "text": "que pede continuidade.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
-  "line": 80,
+  "line": 78,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
  {
-  "key": "palestras-workshops/dbb1796fc2",
+  "key": "palestras-workshops/e1159b17c7",
   "page": "palestras-workshops",
   "block": "PalestrasAprofundamento",
   "kind": "text",
-  "text": "Workshops e experiências permitem que o grupo trabalhe sobre uma questão, examine escolhas e desenhe movimentos possíveis. Podem ser contratados por si ou dar continuidade a uma palestra.",
+  "text": "Em workshops, o grupo examina uma questão e desenha movimentos possíveis. Eles podem acontecer de forma independente ou depois da palestra.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
-  "line": 84,
+  "line": 82,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5297,7 +5297,7 @@
   "kind": "text",
   "text": "Veja o trabalho com organizações",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
-  "line": 87,
+  "line": 86,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5308,7 +5308,7 @@
   "kind": "image",
   "text": "/images/ensaio/palestras-workshop-01.webp",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
-  "line": 91,
+  "line": 90,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5319,7 +5319,7 @@
   "kind": "text",
   "text": "Cena ilustrativa de Juliana e um grupo discutindo ideias ao redor de uma mesa.",
   "file": "src/components/sections/palestras-workshops/BlocksFormatos.tsx",
-  "line": 92,
+  "line": 91,
   "section": "PalestrasAprofundamento",
   "order": 4
  },
@@ -5544,24 +5544,24 @@
   "order": 1
  },
  {
-  "key": "palestras-workshops/1422928d1e",
+  "key": "palestras-workshops/e250f4771b",
   "page": "palestras-workshops",
   "block": "PalestrasExperiencia",
   "kind": "text",
-  "text": "Histórias da vida, experiência em tecnologia e Estudos de Futuros se encontram numa conversa sobre o que tratamos como inevitável e o que ainda podemos escolher.",
+  "text": "Histórias da vida, experiência em tecnologia e Estudos de Futuros se encontram para tornar visíveis escolhas que passam por inevitáveis.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
   "line": 77,
   "section": "PalestrasExperiencia",
   "order": 1
  },
  {
-  "key": "palestras-workshops/0d0fb64eac",
+  "key": "palestras-workshops/9ae7618d63",
   "page": "palestras-workshops",
   "block": "PalestrasExperiencia",
   "kind": "text",
-  "text": "A intenção é que a plateia saia com uma pergunta mais concreta sobre aquilo que está construindo e um movimento possível para continuar a conversa.",
+  "text": "A proposta é ampliar perspectivas, reconhecer critérios que orientam decisões e encontrar um primeiro movimento possível no contexto de cada pessoa ou equipe.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 79,
+  "line": 80,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5572,7 +5572,7 @@
   "kind": "text",
   "text": "Três perguntas atravessam a palestra",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 81,
+  "line": 83,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5583,7 +5583,7 @@
   "kind": "text",
   "text": "No caminho, a conversa passa por imaginar, escolher, tornar-se e construir. Não como etapas a cumprir: depois de construir, a pergunta volta, mas de outro lugar.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 93,
+  "line": 95,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5594,7 +5594,7 @@
   "kind": "text",
   "text": "Conheça a tese em profundidade",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 95,
+  "line": 97,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5605,7 +5605,7 @@
   "kind": "image",
   "text": "/images/ensaio/palestras-interacao-plateia.webp",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 99,
+  "line": 101,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5616,7 +5616,7 @@
   "kind": "text",
   "text": "Cena ilustrativa de Juliana interagindo com participantes de uma palestra.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 100,
+  "line": 102,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5627,7 +5627,7 @@
   "kind": "text",
   "text": "Onde essa conversa costuma fazer sentido",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 114,
+  "line": 116,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5638,7 +5638,7 @@
   "kind": "text",
   "text": "Cada público pede ênfases próprias. Por isso a adequação é conversada a partir do briefing de cada evento.",
   "file": "src/components/sections/palestras-workshops/BlocksIntro.tsx",
-  "line": 125,
+  "line": 127,
   "section": "PalestrasExperiencia",
   "order": 1
  },
@@ -5951,11 +5951,11 @@
   "order": 4
  },
  {
-  "key": "pessoas/e4562062fa",
+  "key": "pessoas/4b17f23837",
   "page": "pessoas",
   "block": "PessoasFechamento",
   "kind": "text",
-  "text": "Temos futuros para construir.",
+  "text": "O futuro não pode custar o presente.",
   "file": "src/components/sections/pessoas/PessoasFechamento.tsx",
   "line": 28,
   "section": "PessoasFechamento",
@@ -6600,11 +6600,11 @@
   "order": 3
  },
  {
-  "key": "pessoas/fd4c9dc013",
+  "key": "pessoas/0640ebc135",
   "page": "pessoas",
   "block": "DOORS",
   "kind": "text",
-  "text": "Uma frente de transformação pessoal voltada à prática no cotidiano.",
+  "text": "Experiências de transformação pessoal para aproximar o que você quer mudar daquilo que consegue praticar no cotidiano.",
   "file": "src/components/sections/pessoas/PessoasPortas.tsx",
   "line": 40,
   "section": "PessoasPortas",

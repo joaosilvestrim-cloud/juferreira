@@ -70,8 +70,8 @@ export default async function PrivacidadePage() {
 
         <Block id="coleta" title="O que coletamos">
           <p>
-            <strong className="font-medium text-ink-900">Formulários de contato</strong> (página Contato e página Para
-            Organizações):
+            <strong className="font-medium text-ink-900">Formulário de contato</strong> (página Contato; as demais páginas
+            levam até ele):
           </p>
           <ul>
             <li>nome e e-mail;</li>

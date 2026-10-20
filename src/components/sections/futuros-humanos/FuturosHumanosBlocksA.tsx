@@ -122,7 +122,7 @@ export function FHTese() {
   const types = [
     {
       t: tx("futuros-humanos/ed5d4ef4ec", "Prováveis"),
-      d: tx("futuros-humanos/8de61c44b7", "Futuros que parecem mais prováveis à luz das evidências e premissas consideradas."),
+      d: tx("futuros-humanos/35405f07af", "Futuros considerados mais propensos a acontecer, segundo as evidências e premissas adotadas."),
       dot: "bg-wine-700",
     },
     {
@@ -157,7 +157,7 @@ export function FHTese() {
           <figure className="relative mx-auto mt-12 max-w-[480px]">
             <FuturesDiagram />
             <figcaption className="mt-4 text-[14px] leading-relaxed text-ink-500">
-              {tx("futuros-humanos/2f88820a7f", "O possível contém o plausível, que contém o provável. O preferível é um recorte dentro do possível: pode cruzar o plausível e não coincide com o provável.")}</figcaption>
+              {tx("futuros-humanos/dc0dffa6a9", "Possível, plausível e provável organizam diferentes avaliações sobre o que pode acontecer. Preferível expressa o que desejamos: pode se sobrepor a essas regiões, inclusive ao provável. O desenho é uma simplificação para apoiar a conversa.")}</figcaption>
           </figure>
         </div>
 
@@ -178,7 +178,17 @@ export function FHTese() {
             {tx("futuros-humanos/f3d415bddb", "Preferível para quem? Com quais consequências?")}</p>
           <p className="jf-body mt-3 text-ink-700">{tx("futuros-humanos/e74fda4710", "Pensar possibilidades também exige discutir valores.")}</p>
           <p className="mt-10 max-w-[620px] border-t border-ink-900/15 pt-5 text-[14px] leading-relaxed text-ink-500">
-            {tx("futuros-humanos/42b546086a", "Essas categorias não são criação minha. São referências dos Estudos de Futuros, muitas vezes representadas no desenho conhecido como cone de futuros. Uso essas distinções para organizar a conversa.")}</p>
+            {tx("futuros-humanos/42b546086a", "Essas categorias não são criação minha. São referências dos Estudos de Futuros, muitas vezes representadas no desenho conhecido como cone de futuros. Uso essas distinções para organizar a conversa.")}{" "}
+            {tx("futuros-humanos/c1e9362824", "Fonte:")}{" "}
+            <a
+              href="https://thevoroscope.com/2017/02/24/the-futures-cone-use-and-history/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-brand underline underline-offset-2"
+            >
+              {tx("futuros-humanos/91c1b585a4", "Joseph Voros, “The Futures Cone, use and history”")}</a>
+            .
+          </p>
         </div>
       </Container>
     </Section>

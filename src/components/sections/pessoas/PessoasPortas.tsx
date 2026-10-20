@@ -37,7 +37,7 @@ const DOORS: Door[] = lazy(() => [
   {
     k: tx("pessoas/c871befbdb", "Quero colocar mudança em prática"),
     t: tx("pessoas/f4b2f0b844", "EPIC247"),
-    d: tx("pessoas/fd4c9dc013", "Uma frente de transformação pessoal voltada à prática no cotidiano."),
+    d: tx("pessoas/0640ebc135", "Experiências de transformação pessoal para aproximar o que você quer mudar daquilo que consegue praticar no cotidiano."),
     cta: tx("pessoas/443904c3db", "Conheça o EPIC247"),
     href: LINKS.epic247,
     extra: { label: tx("pessoas/2e7ba5fa30", "Tire uma dúvida sobre o EPIC247"), href: CONTACT_ROUTES.epic },

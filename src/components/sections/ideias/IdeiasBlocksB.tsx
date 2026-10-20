@@ -118,7 +118,7 @@ export function IdeiasInvestigacao() {
           </Display>
           <Body className="mt-6 max-w-[580px] text-ink-700">
             <p>
-              {tx("ideias/1c620060a7", "Algumas ideias ainda estão em construção. Aqui compartilho a pergunta, as referências que estou considerando e o que pode mudar meu entendimento.")}</p>
+              {tx("ideias/bf6acbfbeb", "Algumas ideias ainda estão em construção. Estas são perguntas que estou tentando compreender melhor.")}</p>
           </Body>
         </div>
         <div className="relative min-h-[320px] overflow-hidden rounded-sm lg:min-h-[380px]">

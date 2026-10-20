@@ -251,15 +251,10 @@ export async function JuHoje() {
           {tx("ju/3836a57fec", "EPIC")}<Em>{tx("ju/f0dc08e0c7", "247")}</Em>
         </>
       ),
-      body: tx("ju/64ec01e5b3", "Uma frente de transformação pessoal voltada à prática no cotidiano."),
+      body: tx("ju/fe5b21b07c", "Experiências de transformação pessoal para aproximar o que você quer mudar daquilo que consegue praticar no cotidiano."),
       cta: ext.epic247
         ? { href: LINKS.epic247, label: tx("ju/3672bdba1f", "Conheça o EPIC247") }
         : { href: CONTACT_ROUTES.epic, label: tx("ju/52c88aff00", "Tire uma dúvida sobre o EPIC247") },
-    },
-    {
-      key: "empresas",
-      name: "Empresas e projetos",
-      body: tx("ju/c6ca51a44b", "Sigo próxima de clientes, tecnologia e decisões que precisam funcionar na realidade."),
     },
   ];
   return (
@@ -269,7 +264,7 @@ export async function JuHoje() {
           {tx("ju/d1bff588a7", "Essa visão encontra")} <Em>{tx("ju/c81cfa1d9a", "trabalhos diferentes.")}</Em>
         </Display>
         <Stroke shape="underline" className="mt-2 h-4 w-[min(260px,60%)] sm:ml-[30%]" width={4} />
-        <ul className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <ul className="mt-12 grid gap-6 md:grid-cols-3">
           {fronts.map((f, i) => (
             <li key={f.key}>
               <PaperCard className={i % 2 ? "md:rotate-[0.4deg]" : "md:-rotate-[0.4deg]"}>

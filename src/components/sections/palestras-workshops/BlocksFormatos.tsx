@@ -75,13 +75,11 @@ export function PalestrasAprofundamento() {
             {tx("palestras-workshops/eb464ab9e2", "Quando a pergunta pede")} <Em>{tx("palestras-workshops/92e60f9ff1", "trabalho conjunto.")}</Em>
           </Display>
           <p className="mt-8 max-w-[560px] font-serif text-[clamp(22px,2vw,28px)] leading-snug">
-            {tx("palestras-workshops/f9e2fab0cb", "Às vezes, a palestra abre a conversa.")}
-            <br />
-            <Em>{tx("palestras-workshops/3c86fb8693", "O workshop permite trabalhá-la.")}</Em>
+            {tx("palestras-workshops/e35c70f85d", "Às vezes, a palestra abre uma conversa")} <Em>{tx("palestras-workshops/59a9a297c4", "que pede continuidade.")}</Em>
           </p>
           <Body className="mt-6 max-w-[600px] text-ink-700">
             <p>
-              {tx("palestras-workshops/dbb1796fc2", "Workshops e experiências permitem que o grupo trabalhe sobre uma questão, examine escolhas e desenhe movimentos possíveis. Podem ser contratados por si ou dar continuidade a uma palestra.")}</p>
+              {tx("palestras-workshops/e1159b17c7", "Em workshops, o grupo examina uma questão e desenha movimentos possíveis. Eles podem acontecer de forma independente ou depois da palestra.")}</p>
           </Body>
           <ButtonLink href="/organizacoes" variant="secondary" className="mt-10">
             {tx("palestras-workshops/c3db2bb8b7", "Veja o trabalho com organizações")}</ButtonLink>

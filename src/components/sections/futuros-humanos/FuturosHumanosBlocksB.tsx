@@ -69,7 +69,7 @@ const MOVEMENTS = lazy(() => ([
   {
     t: tx("futuros-humanos/0448c8ff62", "Tornar-se"),
     q: tx("futuros-humanos/58b1079734", "Do que precisamos nos tornar capazes?"),
-    d: tx("futuros-humanos/0736bf5676", "Aprender, pedir ajuda e desenvolver as condições necessárias para sustentar essa direção."),
+    d: tx("futuros-humanos/f6e44ccd8f", "Aprender, pedir ajuda e aceitar ainda não saber. Desenvolver capacidades e condições para sustentar essa direção. A escolha pode chegar antes da capacidade."),
   },
   {
     t: tx("futuros-humanos/f8e0a8b87c", "Construir"),
@@ -201,7 +201,7 @@ export function FHEncerramento() {
           </Display>
           <Stroke shape="underline" className="mt-3 h-4 w-64" width={4} color="var(--jf-red-400)" />
           <p className="jf-lead mt-10 text-cream-50/90">
-            {tx("futuros-humanos/383b84db0b", "Temos futuros")} <Em>{tx("futuros-humanos/85d3d13865", "para construir.")}</Em>
+            {tx("futuros-humanos/0822b53521", "É sobre não desistir")} <Em>{tx("futuros-humanos/31b92dca1c", "da vida que ainda pode existir.")}</Em>
           </p>
           <ButtonRow className="mt-10">
             <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg">

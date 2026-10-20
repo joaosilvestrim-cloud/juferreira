@@ -74,9 +74,9 @@ export function PalestrasExperiencia() {
           </Display>
           <Body className="mt-10 max-w-[600px] text-cream-50/85">
             <p>
-              {tx("palestras-workshops/1422928d1e", "Histórias da vida, experiência em tecnologia e Estudos de Futuros se encontram numa conversa sobre o que tratamos como inevitável e o que ainda podemos escolher.")}</p>
+              {tx("palestras-workshops/e250f4771b", "Histórias da vida, experiência em tecnologia e Estudos de Futuros se encontram para tornar visíveis escolhas que passam por inevitáveis.")}</p>
             <p>
-              {tx("palestras-workshops/0d0fb64eac", "A intenção é que a plateia saia com uma pergunta mais concreta sobre aquilo que está construindo e um movimento possível para continuar a conversa.")}</p>
+              {tx("palestras-workshops/9ae7618d63", "A proposta é ampliar perspectivas, reconhecer critérios que orientam decisões e encontrar um primeiro movimento possível no contexto de cada pessoa ou equipe.")}</p>
           </Body>
           <h3 className="jf-eyebrow mt-12 text-cream-50/70">{tx("palestras-workshops/da8c50334c", "Três perguntas atravessam a palestra")}</h3>
           <ol className="mt-6 space-y-5">
