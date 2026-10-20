@@ -57,7 +57,7 @@ export default async function ConfigPage() {
               <input type="checkbox" name="autoreply" defaultChecked={s.autoreply ? s.autoreply === "1" : true} className="mt-1 h-5 w-5 accent-[var(--jf-red-500)]" />
               <span>
                 Enviar confirmação automática para quem escreveu
-                <span className="block text-[13px] text-ink-500">“Recebemos. Obrigada por começar a conversa.”</span>
+                <span className="block text-[13px] text-ink-500">“Mensagem recebida. Obrigado por contar o contexto. A equipe dará continuidade por este e-mail.”</span>
               </span>
             </label>
           </div>

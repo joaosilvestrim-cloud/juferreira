@@ -595,6 +595,47 @@ body:has([data-admin]) > footer {
   display: none;
 }
 
+/* Painel: itens que abrem ao clicar (details/summary) com seta, realce ao passar o mouse e foco visível */
+[data-admin] summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-right: 48px;
+  min-height: 36px;
+}
+[data-admin] summary::-webkit-details-marker { display: none; }
+[data-admin] summary::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 34px;
+  height: 34px;
+  margin-top: -17px;
+  border-radius: 999px;
+  border: 1px solid rgb(24 20 17 / 0.18);
+  background: var(--jf-cream-50) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23181411' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center / 16px no-repeat;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+[data-admin] details[open] > summary::after { transform: rotate(180deg); }
+[data-admin] summary:hover::after {
+  border-color: var(--jf-red-500);
+  background-color: var(--jf-blush-100);
+}
+[data-admin] summary:focus-visible {
+  outline: 2px solid var(--jf-red-500);
+  outline-offset: 6px;
+  border-radius: 8px;
+}
+[data-admin] :is(li, details):has(> summary:hover),
+[data-admin] li:has(> details > summary:hover) {
+  border-color: rgb(184 12 16 / 0.45);
+  box-shadow: 0 10px 30px -22px rgb(24 20 17 / 0.45);
+}
+[data-admin] :is(li, details) {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
 /* Texto rico (editor do painel e páginas de artigo) */
 .jf-rich > * + * { margin-top: 1.1em; }
 .jf-rich h2 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 2.6vw, 38px); line-height: 1.15; margin-top: 1.6em; color: var(--jf-ink-900); }

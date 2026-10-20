@@ -63,13 +63,18 @@ export default async function PagesAdmin({ searchParams }: { searchParams: Searc
             <li key={p.id}>
               <Link
                 href={`/admin/paginas/${p.id}`}
-                className="block rounded-[14px] border border-ink-900/10 bg-cream-50 p-6 transition-colors hover:border-red-brand"
+                className="group flex items-center gap-4 rounded-[14px] border border-ink-900/10 bg-cream-50 p-6 transition hover:border-red-brand hover:shadow-[0_10px_30px_-22px_rgba(24,20,17,0.45)]"
               >
+                <div className="flex-1">
                 <p className="font-serif text-[26px]">{p.name}</p>
                 <p className="mt-1 text-[14px] text-ink-500">
                   {items.filter((i) => i.kind === "text").length} textos · {items.filter((i) => i.kind === "image").length} imagens
                   {edited > 0 && <span className="text-red-brand"> · {edited} ajustado(s)</span>}
                 </p>
+                </div>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink-900/15 transition group-hover:border-red-brand group-hover:bg-red-brand group-hover:text-cream-50" aria-hidden>
+                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                </span>
               </Link>
             </li>
           );

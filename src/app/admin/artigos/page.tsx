@@ -32,7 +32,7 @@ export default async function ArticlesAdmin() {
       </div>
       {rows.length === 0 ? (
         <p className="mt-16 text-center text-ink-500">
-          Nenhum artigo ainda. Enquanto não houver publicados, o site mostra os títulos provisórios.
+          Nenhum artigo ainda. Enquanto não houver artigo publicado, o acervo fica oculto no site.
         </p>
       ) : (
         <ul className="mt-8 divide-y divide-ink-900/10 rounded-[14px] border border-ink-900/10 bg-cream-50">

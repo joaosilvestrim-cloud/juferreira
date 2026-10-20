@@ -21,13 +21,14 @@ export default async function UsersPage() {
         {rows.map((u) => (
           <li key={u.id} className="rounded-[14px] border border-ink-900/10 bg-cream-50 p-5">
             <details>
-              <summary className="flex cursor-pointer flex-wrap items-center gap-3">
+              <summary className="flex flex-wrap items-center gap-3">
                 <span className="font-serif text-[20px]">{u.name || u.email}</span>
                 <span className="text-[14px] text-ink-500">{u.email}</span>
                 {!u.active && <span className="rounded-full bg-cream-200 px-2.5 py-0.5 text-[12px]">Desativado</span>}
                 <span className="ml-auto text-[13px] text-ink-500">
                   {u.last_login_at ? `último acesso ${fmt(u.last_login_at)}` : "nunca entrou"}
                 </span>
+                <span className="text-[13px] font-medium text-red-brand">Editar</span>
               </summary>
               <div className="mt-5">
                 <UserForm u={{ id: Number(u.id), email: u.email, name: u.name }} />

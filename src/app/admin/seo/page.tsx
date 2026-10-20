@@ -14,19 +14,23 @@ export default async function SeoPage() {
     <div className="mx-auto max-w-[900px] px-5 py-10 sm:px-8">
       <h1 className="jf-display text-[44px]">SEO</h1>
       <p className="mt-1 max-w-[640px] text-[15px] text-ink-500">
-        Como cada página aparece no Google e quando é compartilhada (LinkedIn, WhatsApp). Campos vazios usam o padrão do site.
+        Como cada página aparece no Google e quando é compartilhada (LinkedIn, WhatsApp). Clique numa página para editar título, descrição e imagem de compartilhamento. Campos vazios usam o padrão do site.
       </p>
       <div className="mt-8 space-y-4">
         {SEO_PAGES.map((p) => {
           const s = byPath[p.path];
           return (
-            <details key={p.path} className="rounded-[14px] border border-ink-900/10 bg-cream-50 p-5">
-              <summary className="flex cursor-pointer flex-wrap items-center gap-3">
+            <details key={p.path} className="rounded-[14px] border border-ink-900/10 bg-cream-50 px-5 py-4">
+              <summary className="flex flex-wrap items-center gap-x-3 gap-y-1">
                 <span className="font-serif text-[21px]">{p.name}</span>
-                <span className="text-[13px] text-ink-500">{SITE_URL.replace(/^https?:\/\//, "")}{p.path}</span>
-                {s && (s.title || s.description || s.og_image_id) && (
+                {s && (s.title || s.description || s.og_image_id) ? (
                   <span className="rounded-full bg-blush-100 px-2.5 py-0.5 text-[12px] text-red-deep">Personalizado</span>
+                ) : (
+                  <span className="rounded-full bg-cream-200 px-2.5 py-0.5 text-[12px] text-ink-700">Padrão do site</span>
                 )}
+                {s?.noindex && <span className="rounded-full bg-ink-900 px-2.5 py-0.5 text-[12px] text-cream-50">Fora do Google</span>}
+                <span className="ml-auto text-[13px] font-medium text-red-brand">Editar</span>
+                <span className="basis-full text-[13px] text-ink-500">{SITE_URL.replace(/^https?:\/\//, "")}{p.path}</span>
               </summary>
               <div className="mt-5">
                 <SeoForm

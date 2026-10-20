@@ -18,7 +18,7 @@ export default async function ProofAdmin() {
     <div className="mx-auto max-w-[1000px] px-5 py-10 sm:px-8">
       <h1 className="jf-display text-[44px]">Provas</h1>
       <p className="mt-1 max-w-[680px] text-[15px] text-ink-500">
-        Seção “Ju em ação” da página Palestras. Só aparece no site o que for cadastrado aqui — nenhuma prova fictícia.
+        Seção “Ouça e veja a Ju” da página Palestras. Só aparece no site o que for cadastrado aqui; sem itens, a seção fica oculta.
       </p>
       {KINDS.map((k) => {
         const list = rows.filter((r) => r.kind === k.id);
@@ -32,10 +32,10 @@ export default async function ProofAdmin() {
                 return (
                   <li key={r.id} className="rounded-[14px] border border-ink-900/10 bg-cream-50 p-5">
                     <details>
-                      <summary className="flex cursor-pointer flex-wrap items-center gap-3">
+                      <summary className="flex flex-wrap items-center gap-3">
                         <span className="font-serif text-[19px]">{r.title || r.quote?.slice(0, 60) || r.url}</span>
                         {!r.visible && <span className="rounded-full bg-cream-200 px-2.5 py-0.5 text-[12px]">Oculto</span>}
-                        <span className="ml-auto text-[13px] text-red-brand">Editar</span>
+                        <span className="ml-auto text-[13px] font-medium text-red-brand">Editar</span>
                       </summary>
                       <div className="mt-5">
                         <ProofForm d={d} />
