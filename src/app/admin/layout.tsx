@@ -9,11 +9,13 @@ export const metadata: Metadata = {
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-dvh bg-cream-100" data-admin="">
+    <div className="min-h-dvh bg-cream-100 lg:flex" data-admin="">
       <Suspense fallback={null}>
         <AdminNav />
       </Suspense>
-      <Suspense fallback={<p className="p-10 text-ink-500">Carregando…</p>}>{children}</Suspense>
+      <div className="min-w-0 flex-1">
+        <Suspense fallback={<p className="p-10 text-ink-500">Carregando…</p>}>{children}</Suspense>
+      </div>
     </div>
   );
 }
