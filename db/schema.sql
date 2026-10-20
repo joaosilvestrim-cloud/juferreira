@@ -204,3 +204,13 @@ create table if not exists public.content_history (
 );
 create index if not exists content_history_key_idx on public.content_history (key, changed_at desc);
 alter table public.content_history enable row level security;
+
+-- Supabase Storage: bucket público "midia" para vídeos, áudios e imagens enviados pelo painel.
+-- Leitura pública (o site exibe); envio só com URL assinada gerada pelo servidor (chave service_role).
+insert into storage.buckets (id, name, public, allowed_mime_types)
+values ('midia', 'midia', true, array[
+  'video/mp4','video/quicktime','video/webm',
+  'audio/mpeg','audio/mp4','audio/x-m4a','audio/wav','audio/ogg',
+  'image/jpeg','image/png','image/webp','image/gif','image/avif'
+])
+on conflict (id) do update set public = excluded.public, allowed_mime_types = excluded.allowed_mime_types;

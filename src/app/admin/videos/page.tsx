@@ -1,6 +1,7 @@
 import { requireAdminPage } from "@/lib/admin-guard";
 import { MEDIA_FORMATS, MEDIA_PLACEMENTS, mediaEmbed, mediaUrl, type MediaItem } from "@/lib/content";
 import { db } from "@/lib/db";
+import { uploadProvider } from "@/lib/storage";
 import { MediaPlayer } from "@/components/ui/MediaPlayer";
 import { deleteMediaItem, toggleMediaVisible } from "../more-actions";
 import { ConfirmSubmit } from "../_ui/ConfirmSubmit";
@@ -25,7 +26,7 @@ export default async function VideosAdmin() {
   const { rows } = await db.query<Row>(
     "select id, format, title, outlet, to_char(recorded_on,'YYYY-MM-DD') recorded_on, description, url, thumb_id, placements, sort, visible from public.media_items order by sort, recorded_on desc nulls last, id desc",
   );
-  const uploadEnabled = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+  const provider = uploadProvider();
   const count = (p: string) => rows.filter((r) => r.visible && r.placements.includes(p)).length;
 
   return (
@@ -46,7 +47,7 @@ export default async function VideosAdmin() {
 
       <section className="mt-8 rounded-[14px] border border-dashed border-ink-900/25 p-5">
         <h2 className="mb-4 text-[17px] font-medium">Adicionar vídeo ou áudio</h2>
-        <MediaForm d={{ placements: [] }} uploadEnabled={uploadEnabled} />
+        <MediaForm d={{ placements: [] }} provider={provider} />
       </section>
 
       {rows.length > 0 && (
@@ -84,7 +85,7 @@ export default async function VideosAdmin() {
                     </summary>
                     <div className="mt-5 grid gap-8 lg:grid-cols-[1fr_340px]">
                       <MediaForm
-                        uploadEnabled={uploadEnabled}
+                        provider={provider}
                         d={{ ...m, sort: r.sort, visible: r.visible, placements: r.placements }}
                       />
                       <div>

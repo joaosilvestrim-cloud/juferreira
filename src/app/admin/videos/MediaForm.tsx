@@ -19,14 +19,14 @@ export type MediaData = {
   visible?: boolean;
 };
 
-export function MediaForm({ d, uploadEnabled }: { d: MediaData; uploadEnabled: boolean }) {
+export function MediaForm({ d, provider }: { d: MediaData; provider: "supabase" | null }) {
   return (
     <ActionForm action={saveMediaItem} submit={d.id ? "Salvar" : "Adicionar"} resetOnSuccess={!d.id}>
       {d.id && <input type="hidden" name="id" value={d.id} />}
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="sm:col-span-2">
           <FieldGroup label="Link ou arquivo *" hint="YouTube, Vimeo, Spotify, Apple Podcasts, SoundCloud viram player. Outros links (Instagram, LinkedIn, Globoplay) aparecem como botão para abrir.">
-            <MediaUrlField defaultValue={d.url ?? ""} uploadEnabled={uploadEnabled} />
+            <MediaUrlField defaultValue={d.url ?? ""} provider={provider} />
           </FieldGroup>
         </div>
         <Field label="Formato *">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { requireAdminPage } from "@/lib/admin-guard";
 import { MEDIA_PLACEMENTS, readSettings } from "@/lib/content";
 import { db } from "@/lib/db";
+import { uploadProvider } from "@/lib/storage";
 import { PAGES, REGISTRY, sectionLabel } from "@/lib/page-registry";
 
 type Check = { ok: boolean; label: string; detail: string; href: string; action: string };
@@ -27,7 +28,7 @@ export default async function Overview() {
     ),
   ]);
   const mediaIn = (p: string) => media.rows.filter((m) => m.placements.includes(p)).length;
-  const blob = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+  const provider = uploadProvider();
 
   const checks: Check[] = [
     { ok: Boolean(s.email), label: "E-mail de contato", detail: s.email || "Não preenchido", href: "/admin/configuracoes", action: "Preencher" },
@@ -53,7 +54,7 @@ export default async function Overview() {
     { ok: sent > 0, label: "Newsletter", detail: `${subs} inscrito(s) ativo(s) · ${sent} edição(ões) enviada(s)`, href: "/admin/newsletter", action: "Abrir" },
     { ok: testimonials > 0, label: "Depoimentos", detail: testimonials ? `${testimonials} visível(is)` : "Nenhum (a seção só aparece com itens reais)", href: "/admin/provas", action: "Adicionar" },
     { ok: refs > 0, label: "Referências de leitura", detail: refs ? `${refs} visível(is)` : "Nenhuma (a lista fica oculta)", href: "/admin/referencias", action: "Adicionar" },
-    { ok: blob, label: "Envio de arquivos de vídeo e áudio", detail: blob ? "Ligado (até 500 MB por arquivo)" : "Desligado: só links funcionam até ligar o Vercel Blob", href: "/admin/videos", action: "Ver" },
+    { ok: provider !== null, label: "Envio de arquivos de vídeo e áudio", detail: provider === "supabase" ? "Ligado (Supabase Storage)" : "Desligado: falta a chave do Supabase Storage; links funcionam", href: "/admin/videos", action: "Ver" },
   ];
   const pending = checks.filter((c) => !c.ok).length;
   const hidden = hiddenRows.rows.map((r) => r.key.slice(5));

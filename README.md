@@ -55,6 +55,11 @@ texto deixam de valer).
 Imagens enviadas ficam no banco (`media`) e são servidas em `/midia/<id>`. Botões externos usam `/ir/<destino>`.
 E-mails: `RESEND_API_KEY` (domínio juferreira.com.br verificado).
 
+Vídeos e áudios enviados como arquivo (painel → Vídeos e áudios) vão para o Supabase Storage, bucket público `midia`
+(criado por `db/schema.sql`). Precisa de `SUPABASE_SERVICE_ROLE_KEY` (Supabase → Project Settings → API Keys → service_role)
+no `.env.local` e na Vercel; o endereço do projeto é deduzido do `PGUSER` (ou `SUPABASE_URL`). Sem a chave, o painel aceita só
+links (YouTube, Vimeo, Spotify…). Nenhum recurso pago da Vercel é usado.
+
 QA completo: `BASE_URL=http://localhost:3000 npm run qa`.
 
 ## Estrutura
