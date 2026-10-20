@@ -2,7 +2,7 @@ import { db } from "@/lib/db";
 
 /** Diagnóstico da conexão com o banco. Não expõe valores — só presença das variáveis e o código do erro. */
 export async function GET() {
-  const vars = ["PGHOST", "PGPORT", "PGDATABASE", "PGUSER", "PGPASSWORD"] as const;
+  const vars = ["PGHOST", "PGPORT", "PGDATABASE", "PGUSER", "PGPASSWORD", "ADMIN_PASSWORD", "ADMIN_SECRET", "RESEND_API_KEY"] as const;
   const env = Object.fromEntries(vars.map((v) => [v, Boolean(process.env[v])]));
   try {
     await db.query("select 1");
