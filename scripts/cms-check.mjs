@@ -95,12 +95,41 @@ try {
   const bad = await page.request.get(`${B}/newsletter/sair?e=x@y.com&t=errado`);
   ok(`descadastro com token inválido → ${bad.status()} (página de link inválido)`);
 } finally {
+  // limpeza pelo próprio painel (as ações invalidam o cache do site); o banco é a garantia final
+  try {
+    const art = (await db.query("select id from public.articles where slug = 'teste-cms-artigo'")).rows[0];
+    if (art) {
+      await page.goto(`${B}/admin/artigos/${art.id}`);
+      await page.click("text=Excluir este artigo");
+      await page.waitForURL(`${B}/admin/artigos`);
+    }
+    await page.goto(`${B}/admin/referencias`);
+    const ref = page.locator("li", { hasText: "TESTE CMS Livro" }).first();
+    if (await ref.count()) {
+      await ref.locator("summary").click();
+      await ref.locator("button", { hasText: "Excluir" }).click();
+      await page.waitForTimeout(1500);
+    }
+    const iss = (await db.query("select id from public.newsletter_issues where subject = 'TESTE CMS Edição'")).rows[0];
+    if (iss) {
+      await page.goto(`${B}/admin/newsletter/${iss.id}`);
+      await page.click("text=Excluir rascunho");
+      await page.waitForURL(`${B}/admin/newsletter`);
+    }
+    // restaura configurações e salva pelo painel
+    await db.query("delete from public.site_settings");
+    for (const r of before) await db.query("insert into public.site_settings (key, value) values ($1,$2)", [r.key, r.value]);
+    await page.goto(`${B}/admin/configuracoes`);
+    await page.click("text=Salvar configurações");
+    await page.getByText("Configurações salvas").waitFor();
+    console.log("✓ limpeza pelo painel");
+  } catch (e) {
+    console.log("limpeza pelo painel falhou:", e.message);
+  }
   await db.query("delete from public.media where id in (select cover_id from public.articles where slug = 'teste-cms-artigo')");
   await db.query("delete from public.articles where slug = 'teste-cms-artigo'");
   await db.query("delete from public.reading_refs where title = 'TESTE CMS Livro'");
   await db.query("delete from public.newsletter_issues where subject = 'TESTE CMS Edição'");
-  await db.query("delete from public.site_settings");
-  for (const r of before) await db.query("insert into public.site_settings (key, value) values ($1,$2)", [r.key, r.value]);
   await db.end();
   console.log("erros:", errs);
   await browser.close();
