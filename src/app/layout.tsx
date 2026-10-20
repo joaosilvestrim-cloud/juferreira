@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Suspense } from "react";
 import { Caveat, Cormorant_Garamond, Jost } from "next/font/google";
 import { SiteFooter } from "@/components/global/SiteFooter";
@@ -28,6 +28,9 @@ const hand = Caveat({
   preload: false, // manuscrita aparece abaixo da dobra: não disputa banda com o conteúdo inicial
 });
 
+// cor da barra do navegador no celular (creme do site)
+export const viewport: Viewport = { themeColor: "#faf7f2" };
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: "./" },
@@ -38,6 +41,8 @@ export const metadata: Metadata = {
   description:
     "Futuros, tecnologia e transformação humana para quem não quer apenas assistir ao que vem depois.",
   openGraph: { locale: "pt_BR", type: "website", siteName: "Ju Ferreira" },
+  applicationName: "Ju Ferreira",
+  appleWebApp: { title: "Ju Ferreira", capable: true, statusBarStyle: "default" },
   twitter: { card: "summary_large_image" },
 };
 
