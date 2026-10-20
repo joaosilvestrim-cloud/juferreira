@@ -88,7 +88,7 @@ try {
   ok("edição criada com prévia");
   await page.fill('input[name="test_to"]', "delivered@resend.dev");
   await page.getByRole("button", { name: "Enviar teste" }).click();
-  await page.getByText(/Teste enviado|Não foi possível/).waitFor({ timeout: 20000 });
+  await page.getByText(/Teste enviado|Não foi possível/).waitFor({ timeout: 60000 });
   console.log("  envio de teste:", await page.getByText(/Teste enviado|Não foi possível/).first().textContent());
 
   // descadastro com token inválido
