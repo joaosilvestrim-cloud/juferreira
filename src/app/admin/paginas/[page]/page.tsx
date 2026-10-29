@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
 import { PAGES, REGISTRY, sectionLabel } from "@/lib/page-registry";
+import { richToPlain } from "@/lib/rich-inline";
 import { restoreHistory, toggleBlock } from "../../more-actions";
 import { BlockEditor } from "./BlockEditor";
 import { AdminButton, PageHeader } from "../../_ui/PageHeader";
@@ -32,7 +33,7 @@ export default async function PageEditor({ params }: { params: Promise<{ page: s
   const fmt = (d: Date) => d.toLocaleString("pt-BR", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "America/Sao_Paulo" });
   const short = (v: string | null, key: string) => {
     if (key.startsWith("hide:")) return v === "1" ? "oculto" : "visível";
-    const t = v ?? `${originalOf.get(key) ?? ""} (original)`;
+    const t = richToPlain(v ?? `${originalOf.get(key) ?? ""} (original)`);
     return t.startsWith("/midia/") ? "imagem enviada" : t.length > 90 ? t.slice(0, 90) + "…" : t;
   };
 

@@ -1,5 +1,6 @@
 import { mediaCaption, mediaEmbed, type MediaItem } from "@/lib/content";
 import { ArrowIcon } from "@/components/ui/Button";
+import { VideoFacade } from "@/components/ui/VideoFacade";
 
 /**
  * Vídeo ou áudio cadastrado no painel (Vídeos e áudios). Player quando o link é reconhecido;
@@ -7,6 +8,9 @@ import { ArrowIcon } from "@/components/ui/Button";
  */
 export function MediaPlayer({ m, tone = "light", showDescription = true }: { m: MediaItem; tone?: "light" | "dark"; showDescription?: boolean }) {
   const e = mediaEmbed(m.url);
+  // capa: a escolhida no painel; sem ela, a do próprio YouTube (Vimeo sem capa usa o player direto)
+  const yt = e?.type === "iframe" ? e.src.match(/youtube-nocookie\.com\/embed\/([\w-]{11})/)?.[1] : undefined;
+  const cover = m.thumb ?? (yt ? `https://i.ytimg.com/vi/${yt}/hqdefault.jpg` : null);
   const muted = tone === "dark" ? "text-cream-50/70" : "text-ink-500";
   const host = (() => {
     try {
@@ -17,7 +21,8 @@ export function MediaPlayer({ m, tone = "light", showDescription = true }: { m: 
   })();
   return (
     <figure>
-      {e?.type === "iframe" && e.kind === "video" && (
+      {e?.type === "iframe" && e.kind === "video" && cover && <VideoFacade src={e.src} cover={cover} title={m.title} />}
+      {e?.type === "iframe" && e.kind === "video" && !cover && (
         <div className="relative aspect-video overflow-hidden rounded-[var(--jf-radius-sm)] bg-ink-900">
           <iframe
             src={e.src}

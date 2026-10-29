@@ -3,12 +3,12 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
-import { Body, Display, Em, StickyNote, Title } from "@/components/ui/Typography";
+import { Body, Display, StickyNote, Title } from "@/components/ui/Typography";
 import { NewsletterForm } from "./NewsletterForm";
 import { BrushLabel, EpistemicTag, QBox } from "./Parts";
 import type { Epistemic } from "./data";
 
-import { tx, img, lazy } from "@/lib/editable";
+import { tx, img, lazy, rx } from "@/lib/editable";
 
 /* ───────────────────────── I03 — NEWSLETTER ───────────────────────── */
 /** Amostra do formato (o que pode chegar numa edição). Não é edição publicada. */
@@ -29,11 +29,17 @@ export function IdeiasTerca() {
     <Section id="uma-terca-feira-qualquer" tone="cream" label={tx("ideias/4e2442595c", "Uma Terça-feira Qualquer")}>
       <Container className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
         <div>
-          <Display size="md">{tx("ideias/0ce7ca7586", "Uma Terça-feira Qualquer")}</Display>
+          <Display size="md">
+{rx("ideias/r2d83fb566", "Uma Terça-feira Qualquer")}
+</Display>
           <Stroke shape="underline" className="mt-2 h-4 w-[min(380px,70%)]" width={3} />
           <Body className="mt-8 max-w-[560px] text-ink-700">
-            <p>{tx("ideias/674e16a45f", "Uma conversa semanal sobre aquilo que estamos construindo enquanto trabalhamos, escolhemos, erramos e recomeçamos.")}</p>
-            <p>{tx("ideias/4cc07d4709", "Uma ideia, uma história ou uma pergunta para continuar pensando depois.")}</p>
+            <p>
+{rx("ideias/rc2a3f4f59", "Uma conversa semanal sobre aquilo que estamos construindo enquanto trabalhamos, escolhemos, erramos e recomeçamos.")}
+</p>
+            <p>
+{rx("ideias/re9f018a99", "Uma ideia, uma história ou uma pergunta para continuar pensando depois.")}
+</p>
           </Body>
 
           <ul className="mt-10 grid gap-6 sm:grid-cols-3">
@@ -56,7 +62,9 @@ export function IdeiasTerca() {
             />
           </div>
           <div className="rounded-[var(--jf-radius-md)] bg-blush-100/70 p-7 lg:p-8">
-            <h3 className="text-[17px] font-semibold uppercase tracking-wide">{tx("ideias/f0a23b9a69", "Receber por e-mail")}</h3>
+            <h3 className="text-[17px] font-semibold uppercase tracking-wide">
+{rx("ideias/ra6cbffb95", "Receber por e-mail")}
+</h3>
             <NewsletterForm className="mt-5" source="ideias" submitLabel="Receber por e-mail" />
           </div>
         </div>
@@ -81,27 +89,30 @@ function PerguntaBody({ id }: { id: string }) {
       return (
         <div className={cls}>
           <p>
-            {tx("ideias/5941e77336", "Uma escolha pode parecer nossa e ainda ser organizada por medo, aprovação, hábito ou conveniência. Tenho usado provisoriamente essa expressão para investigar como percebemos essas influências e continuamos presentes nas escolhas. Tecnologia participa dessa questão, mas não a esgota.")}</p>
+{rx("ideias/re894ae4d4", "Uma escolha pode parecer nossa e ainda ser organizada por medo, aprovação, hábito ou conveniência. Tenho usado provisoriamente essa expressão para investigar como percebemos essas influências e continuamos presentes nas escolhas. Tecnologia participa dessa questão, mas não a esgota.")}
+</p>
         </div>
       );
     case "capacidade-responsabilidade":
       return (
         <div className={cls}>
           <p>
-            {tx("ideias/6ae824d5d7", "A ferramenta responde:")} <strong className="font-semibold text-ink-900">{tx("ideias/970c292b50", "“É possível.”")}</strong>
-          </p>
+{rx("ideias/r2813f067c", "A ferramenta responde: <strong>“É possível.”</strong>")}
+</p>
           <QBox lead={tx("ideias/aab8668615", "Mas alguém ainda precisa responder")}>
-            {tx("ideias/32b435b07b", "“Devemos?” “Para quê?” “Sob quais critérios?” “Com quais consequências?” “Quem responde por isso?”")}
-          </QBox>
+{rx("ideias/r0736dba25", "“Devemos?” “Para quê?” “Sob quais critérios?” “Com quais consequências?” “Quem responde por isso?”")}
+</QBox>
         </div>
       );
     default:
       return (
         <div className={cls}>
-          <p className="font-medium text-ink-900">{tx("ideias/d8d949eea0", "“Humanidade” pode facilmente virar um slogan vazio.")}</p>
+          <p className="font-medium text-ink-900">
+{rx("ideias/rb07ecd744", "“Humanidade” pode facilmente virar um slogan vazio.")}
+</p>
           <QBox lead={tx("ideias/9c98db4a87", "A pergunta é")}>
-            {tx("ideias/1ad03e9d84", "Que partes da nossa humanidade queremos cultivar deliberadamente quando nossas ferramentas ampliam tanto nossa capacidade de agir?")}
-          </QBox>
+{rx("ideias/r23cd2ee5e", "Que partes da nossa humanidade queremos cultivar deliberadamente quando nossas ferramentas ampliam tanto nossa capacidade de agir?")}
+</QBox>
         </div>
       );
   }
@@ -112,13 +123,16 @@ export function IdeiasInvestigacao() {
     <Section id="em-investigacao" label={tx("ideias/c87d029ab6", "Em investigação")}>
       <Container className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
         <div>
-          <BrushLabel>{tx("ideias/b2546f7e73", "Em investigação")}</BrushLabel>
+          <BrushLabel>
+{rx("ideias/r4cf0ce06e", "Em investigação")}
+</BrushLabel>
           <Display size="md" className="mt-6">
-            {tx("ideias/553db56229", "Perguntas que continuam")} <Em>{tx("ideias/e6ee5d3649", "abertas.")}</Em>
-          </Display>
+{rx("ideias/r736743104", "Perguntas que continuam <em>abertas.</em>")}
+</Display>
           <Body className="mt-6 max-w-[580px] text-ink-700">
             <p>
-              {tx("ideias/bf6acbfbeb", "Algumas ideias ainda estão em construção. Estas são perguntas que estou tentando compreender melhor.")}</p>
+{rx("ideias/rac0c5a747", "Algumas ideias ainda estão em construção. Estas são perguntas que estou tentando compreender melhor.")}
+</p>
           </Body>
         </div>
         <div className="relative min-h-[320px] overflow-hidden rounded-sm lg:min-h-[380px]">
@@ -129,9 +143,9 @@ export function IdeiasInvestigacao() {
             className="absolute inset-0"
             imgClassName="object-[50%_40%]"
           />
-          <StickyNote className="absolute left-4 top-4" rotate={-5} tone="paper">
-            {tx("ideias/4ff22283e0", "Ainda não sei exatamente onde elas terminam.")}
-          </StickyNote>
+          <StickyNote className="absolute bottom-4 right-4" rotate={-4} tone="paper" size="sm">
+{rx("ideias/r7b79ac841", "Ainda não sei exatamente onde elas terminam.")}
+</StickyNote>
         </div>
       </Container>
 
@@ -165,14 +179,16 @@ export function IdeiasNota({ refs }: { refs: ReadingRef[] }) {
       <Container className={`grid gap-12 ${groups.length ? "lg:grid-cols-[1fr_1fr] lg:gap-16" : ""}`}>
         <div className={groups.length ? "" : "max-w-[760px]"}>
           <Display size="md">
-            {tx("ideias/f50a6d3a0d", "Pensar também é")} <Em>{tx("ideias/990c2496a1", "mudar de ideia.")}</Em>
-          </Display>
+{rx("ideias/r46b404f58", "Pensar também é <em>mudar de ideia.</em>")}
+</Display>
           <Body className="mt-8 max-w-[600px] text-ink-700">
             <p>
-              {tx("ideias/6539bcce48", "Algumas ideias vêm da experiência. Outras, de autores e campos que estudo. Procuro tornar essa origem visível e distinguir o que proponho do que continuo investigando.")}</p>
+{rx("ideias/r1c3b9643a", "Algumas ideias vêm da experiência. Outras, de autores e campos que estudo. Procuro tornar essa origem visível e distinguir o que proponho do que continuo investigando.")}
+</p>
           </Body>
           <p className="mt-8 max-w-[600px] border-l-2 border-red-brand pl-5 font-serif text-[clamp(21px,1.8vw,26px)] leading-snug text-ink-900">
-            {tx("ideias/de11ea3fd5", "Uma boa pergunta pode sobreviver por bastante tempo. Uma boa ideia também precisa poder ser contrariada.")}</p>
+{rx("ideias/rf95a206a3", "Uma boa pergunta pode sobreviver por bastante tempo. Uma boa ideia também precisa poder ser contrariada.")}
+</p>
           <ButtonLink href="/futuros-humanos" variant="secondary" className="mt-10 w-fit">
             {tx("ideias/df40fd5c3c", "Conheça Futuros Humanos")}
           </ButtonLink>

@@ -6,7 +6,7 @@ import { Body, Display, Em, Eyebrow } from "@/components/ui/Typography";
 import { CONTACT_ROUTES } from "@/lib/site";
 import { DotList, IconBubble, type OrgIconName } from "./parts";
 
-import { tx, img } from "@/lib/editable";
+import { tx, img, rx } from "@/lib/editable";
 
 export const FORMATS_ANCHOR = "#formatos";
 
@@ -17,7 +17,9 @@ export function OrgHero() {
       <div className="grid lg:grid-cols-[54%_46%]">
         <Container className="py-16 lg:ml-auto lg:mr-0 lg:max-w-[820px] lg:py-24 lg:pr-10">
           <div className="jf-reveal">
-            <Eyebrow>{tx("organizacoes/3de762407d", "Para Organizações")}</Eyebrow>
+            <Eyebrow>
+{rx("organizacoes/r62b0521b4", "Para Organizações")}
+</Eyebrow>
             <Display as="h1" size="lg" className="mt-6">
               {tx("organizacoes/4ed9ddba80", "Sua organização já está construindo futuros.")}{" "}
               <span className="relative inline-block">
@@ -27,9 +29,11 @@ export function OrgHero() {
             </Display>
             <Body className="mt-10 max-w-[600px] text-ink-700">
               <p>
-                {tx("organizacoes/f63bbb5620", "Nas tecnologias que adota, nas pessoas que promove e nos comportamentos que recompensa, a organização ajuda alguns caminhos a ganhar força.")}</p>
+{rx("organizacoes/r2220aff91", "Nas tecnologias que adota, nas pessoas que promove e nos comportamentos que recompensa, a organização ajuda alguns caminhos a ganhar força.")}
+</p>
               <p>
-                {tx("organizacoes/1bb450c26b", "Trabalho com lideranças e equipes para examinar essas escolhas, ampliar possibilidades e identificar o que pode começar a mudar no presente.")}</p>
+{rx("organizacoes/r4db059d60", "Trabalho com lideranças e equipes para examinar essas escolhas, ampliar possibilidades e identificar o que pode começar a mudar no presente.")}
+</p>
             </Body>
             <ButtonRow className="mt-10">
               <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg">
@@ -95,13 +99,15 @@ export function OrgSituacoes() {
       <div className="grid lg:grid-cols-[52%_48%]">
         <Container className="pt-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[760px] lg:pb-16 lg:pr-10">
           <Display size="lg">
-            {tx("organizacoes/264ffd440a", "Talvez a pergunta tenha chegado")} <Em>{tx("organizacoes/b2d8f74acc", "de outro jeito.")}</Em>
-          </Display>
+{rx("organizacoes/r7559269a5", "Talvez a pergunta tenha chegado <em>de outro jeito.</em>")}
+</Display>
           <Body className="mt-10 max-w-[600px] text-cream-50/85">
             <p>
-              {tx("organizacoes/4b6f5b4367", "Organizações mudam o tempo inteiro. Adotam tecnologias, redesenham processos, revisam estratégias. Tudo isso pode ser necessário.")}</p>
+{rx("organizacoes/r165e760c0", "Organizações mudam o tempo inteiro. Adotam tecnologias, redesenham processos, revisam estratégias. Tudo isso pode ser necessário.")}
+</p>
             <p>
-              {tx("organizacoes/10ce478401", "Mas mudança não é direção. E a pergunta que importa costuma chegar como um pedido urgente.")}</p>
+{rx("organizacoes/rb041466ca", "Mas mudança não é direção. E a pergunta que importa costuma chegar como um pedido urgente.")}
+</p>
           </Body>
         </Container>
         <div className="relative mt-10 min-h-[320px] lg:mt-0">
@@ -129,7 +135,9 @@ export function OrgSituacoes() {
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-[13px] text-cream-50/60">{tx("organizacoes/1603d6ee9a", "Situações ilustrativas.")}</p>
+        <p className="mt-6 text-[13px] text-cream-50/60">
+{rx("organizacoes/rd8cbd8813", "Situações ilustrativas.")}
+</p>
       </Container>
     </Section>
   );
@@ -164,8 +172,8 @@ export function OrgFormatos() {
     <Section label={tx("organizacoes/eb6ec8da35", "Formatos e profundidade")} id={FORMATS_ANCHOR.slice(1)}>
       <Container>
         <Display size="lg">
-          {tx("organizacoes/aefb1515fc", "O trabalho depende")} <Em>{tx("organizacoes/b6cb914b32", "da pergunta.")}</Em>
-        </Display>
+{rx("organizacoes/rd874249b2", "O trabalho depende <em>da pergunta.</em>")}
+</Display>
 
         <div className="mt-12">
           <div className="hidden grid-cols-[1fr_0.8fr_1.4fr] gap-8 border-b border-ink-900/20 pb-3 md:grid" aria-hidden>
@@ -178,15 +186,21 @@ export function OrgFormatos() {
               <li key={r.format} className="border-b border-ink-900/15 py-6">
                 <dl className="grid gap-3 md:grid-cols-[1fr_0.8fr_1.4fr] md:gap-8">
                   <div>
-                    <dt className={`${head} md:sr-only`}>{tx("organizacoes/2b22ab76b2", "Necessidade")}</dt>
+                    <dt className={`${head} md:sr-only`}>
+{rx("organizacoes/rea8f028c0", "Necessidade")}
+</dt>
                     <dd className="mt-1 text-[17px] leading-snug text-ink-900 md:mt-0">{r.need}</dd>
                   </div>
                   <div>
-                    <dt className={`${head} md:sr-only`}>{tx("organizacoes/a777ddc879", "Formato possível")}</dt>
+                    <dt className={`${head} md:sr-only`}>
+{rx("organizacoes/rbb7a89d79", "Formato possível")}
+</dt>
                     <dd className="mt-1 font-serif text-[clamp(22px,2vw,28px)] leading-tight text-red-brand md:mt-0">{r.format}</dd>
                   </div>
                   <div>
-                    <dt className={`${head} md:sr-only`}>{tx("organizacoes/423bec665d", "O que pode ser produzido")}</dt>
+                    <dt className={`${head} md:sr-only`}>
+{rx("organizacoes/rfab474cf0", "O que pode ser produzido")}
+</dt>
                     <dd className="mt-1 text-[16px] leading-relaxed text-ink-700 md:mt-0">{r.output}</dd>
                   </div>
                 </dl>
@@ -197,7 +211,8 @@ export function OrgFormatos() {
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-end lg:gap-14">
           <p className="max-w-[620px] text-[16px] leading-relaxed text-ink-700">
-            {tx("organizacoes/6545a516f2", "O trabalho é construído com as lideranças e equipes. Escopo, condições internas e continuidade fazem parte do resultado.")}</p>
+{rx("organizacoes/r0ba254e85", "O trabalho é construído com as lideranças e equipes. Escopo, condições internas e continuidade fazem parte do resultado.")}
+</p>
           <div className="lg:justify-self-end">
             <ButtonLink href="/palestras" variant="secondary">
               {tx("organizacoes/fff8c3ffee", "Conheça a palestra Futuros Humanos")}</ButtonLink>

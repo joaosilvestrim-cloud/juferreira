@@ -2,12 +2,12 @@ import { getExternal } from "@/lib/content";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
-import { Display, Em, Eyebrow, Lead, Title } from "@/components/ui/Typography";
+import { Display, Eyebrow, Lead, Title } from "@/components/ui/Typography";
 import { ContactForm } from "./ContactForm";
 import { IconDisc } from "./Icons";
 import type { IconName } from "./routes";
 
-import { tx, img } from "@/lib/editable";
+import { tx, img, rx } from "@/lib/editable";
 
 /*
  * Contato · Site 2.0 (direção editorial §15).
@@ -22,13 +22,16 @@ export function ContatoConversa() {
     <Section id="formulario" label={tx("contato/f0c94a0270", "Vamos conversar")} className="scroll-mt-[var(--jf-header-h)]">
       <Container className="grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-14">
         <div className="flex flex-col">
-          <Eyebrow>{tx("contato/1a21acedd3", "Contato")}</Eyebrow>
+          <Eyebrow>
+{rx("contato/r7e7fd23ad", "Contato")}
+</Eyebrow>
           <Display as="h1" size="lg" className="mt-6">
-            {tx("contato/0dd6600b17", "Vamos")} <Em>{tx("contato/93fb960f43", "conversar.")}</Em>
-          </Display>
+{rx("contato/r907216845", "Vamos <em>conversar.</em>")}
+</Display>
           <Stroke shape="underline" className="mt-2 h-4 w-[min(320px,70%)]" width={3} />
           <Lead className="mt-6 max-w-[520px]">
-            {tx("contato/f601d4564d", "Conte o que você está tentando construir, resolver ou compreender. Se ainda não souber o formato, comece pelo contexto.")}</Lead>
+{rx("contato/rfbbfa9e6d", "Conte o que você está tentando construir, resolver ou compreender. Se ainda não souber o formato, comece pelo contexto.")}
+</Lead>
           <div className="relative mt-10 hidden min-h-[420px] flex-1 lg:block">
             <Photo
               src={img("contato/1df4ff1c3d", "/images/ensaio/contato-sorriso-vertical.webp")}
@@ -86,8 +89,8 @@ export async function ContatoCanais() {
         {channels.length > 0 && (
           <div className="grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-14">
             <Display size="md">
-              {tx("contato/a9c21a9293", "Prefere outro")} <Em>{tx("contato/cec8f45aba", "caminho?")}</Em>
-            </Display>
+{rx("contato/rffe17001f", "Prefere outro <em>caminho?</em>")}
+</Display>
             <ul className="grid gap-5 sm:grid-cols-2">
               {channels.map((c) => (
                 <ChannelItem key={c.key} c={c} />
@@ -98,8 +101,8 @@ export async function ContatoCanais() {
 
         <div className={`text-center ${channels.length ? "mt-16 border-t border-ink-900/15 pt-12" : ""}`}>
           <p className="font-serif text-[clamp(24px,2.3vw,34px)] uppercase leading-tight">
-            <Em>{tx("contato/b1e7453163", "Temos futuros para construir.")}</Em>
-          </p>
+{rx("contato/ra6aeb49af", "<em>Temos futuros para construir.</em>")}
+</p>
           <Stroke shape="scribble" className="mx-auto mt-2 h-6 w-40" color="var(--jf-red-400)" width={3} />
         </div>
       </Container>

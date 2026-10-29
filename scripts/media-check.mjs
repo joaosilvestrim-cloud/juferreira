@@ -49,9 +49,12 @@ try {
   for (const path of ["/", "/ju", "/palestras", "/ideias"]) {
     await page.goto(`${B}${path}`);
     await page.getByText(`${T} entrevista`).first().waitFor({ timeout: 20000 });
-    if (!(await page.locator('iframe[src*="youtube-nocookie.com/embed/dQw4w9WgXcQ"]').count())) throw new Error(`sem player em ${path}`);
+    const play = page.getByRole("button", { name: `Assistir: ${T} entrevista` }).first();
+    if (!(await play.locator('img[src*="i.ytimg.com/vi/dQw4w9WgXcQ"]').count())) throw new Error(`sem capa em ${path}`);
+    await play.click();
+    await page.locator('iframe[src*="youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1"]').first().waitFor({ timeout: 10000 });
   }
-  ok("player aparece em Home, Ju, Palestras e Ideias");
+  ok("capa com play em Home, Ju, Palestras e Ideias; ao clicar, o vídeo toca");
 
   // 2. podcast do Spotify só em Ideias
   await page.goto(`${B}/admin/videos`);
@@ -70,7 +73,7 @@ try {
   ok("podcast do Spotify só em Ideias, com player");
 
   // 3. ocultar e mostrar um bloco
-  await page.goto(`${B}/admin/paginas/home`);
+  await page.goto(`${B}/admin/paginas/home`, { waitUntil: "networkidle" });
   const tensao = page.locator("#bloco-HomeTensao");
   await tensao.getByRole("button", { name: "Ocultar este bloco" }).click();
   await tensao.getByText("Oculto no site").waitFor();
@@ -81,7 +84,7 @@ try {
   }
   if (await page.locator('section[aria-label="A tensão"]').count()) throw new Error("bloco oculto continua na Home");
   ok("bloco ocultado some da Home");
-  await page.goto(`${B}/admin/paginas/home`);
+  await page.goto(`${B}/admin/paginas/home`, { waitUntil: "networkidle" });
   await tensao.getByRole("button", { name: "Mostrar no site" }).click();
   await tensao.getByRole("button", { name: "Ocultar este bloco" }).waitFor();
   await page.goto(`${B}/`);
@@ -90,14 +93,16 @@ try {
 
   // 4. editar um texto e desfazer pelo histórico
   const hero = reg.find((r) => r.page === "home" && r.section === "HomeHero" && r.text === "Aquilo que existe não esgota aquilo que pode existir.");
-  await page.goto(`${B}/admin/paginas/home`);
-  await page.locator(`#t-${hero.key.split("/")[1]} textarea`).fill(`${T} frase editada.`);
+  await page.goto(`${B}/admin/paginas/home`, { waitUntil: "networkidle" });
+  await page.locator(`#t-${hero.key.split("/")[1]} [contenteditable]`).click();
+  await page.keyboard.press("Control+A");
+  await page.keyboard.type(`${T} frase editada.`);
   const heroBlock = page.locator("#bloco-HomeHero");
   await heroBlock.getByRole("button", { name: "Salvar bloco" }).click();
   await heroBlock.getByText(/alteração\(ões\) salva/).waitFor();
   await page.goto(`${B}/`);
   await page.getByText(`${T} frase editada.`).first().waitFor({ timeout: 20000 });
-  await page.goto(`${B}/admin/paginas/home`);
+  await page.goto(`${B}/admin/paginas/home`, { waitUntil: "networkidle" });
   await heroBlock.locator("summary", { hasText: "Histórico" }).click();
   await heroBlock.locator("li", { hasText: `${T} frase editada.` }).first().getByRole("button", { name: "Desfazer" }).click();
   await page.waitForTimeout(1500);
@@ -105,6 +110,37 @@ try {
   await page.getByText("Aquilo que existe não esgota aquilo que pode existir.").first().waitFor({ timeout: 20000 });
   if (await page.getByText(`${T} frase editada.`).count()) throw new Error("desfazer não restaurou o texto");
   ok("texto editado e desfeito pelo histórico");
+
+  // 4b. selecionar uma palavra e deixar em vermelho pelo editor de frase
+  await page.goto(`${B}/admin/paginas/home`, { waitUntil: "networkidle" });
+  const field = page.locator(`#t-${hero.key.split("/")[1]}`);
+  const ed = field.locator("[contenteditable]");
+  await ed.click();
+  await page.keyboard.press("Control+A");
+  await page.keyboard.type(`${T} destaque aqui.`);
+  await ed.evaluate((el) => {
+    const t = el.firstChild;
+    const i = t.textContent.indexOf("destaque");
+    const r = document.createRange();
+    r.setStart(t, i);
+    r.setEnd(t, i + "destaque".length);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(r);
+  });
+  await field.getByRole("button", { name: "Vermelho" }).click();
+  const val = await field.locator("input[type=hidden]").inputValue();
+  if (!val.includes("<em>destaque</em>")) throw new Error("editor não marcou o vermelho: " + val);
+  await heroBlock.getByRole("button", { name: "Salvar bloco" }).click();
+  await heroBlock.getByText(/alteração\(ões\) salva/).waitFor();
+  await page.goto(`${B}/`);
+  await page.locator(".jf-em", { hasText: "destaque" }).first().waitFor({ timeout: 20000 });
+  ok("palavra selecionada fica em vermelho no site");
+  await page.goto(`${B}/admin/paginas/home`, { waitUntil: "networkidle" });
+  await field.getByRole("button", { name: "Voltar ao original" }).click();
+  await heroBlock.getByRole("button", { name: "Salvar bloco" }).click();
+  await heroBlock.getByText(/alteração\(ões\) salva/).waitFor();
+  ok("voltar ao original");
 
   // 5. biblioteca de imagens
   await page.goto(`${B}/admin/imagens`, { waitUntil: "networkidle" });

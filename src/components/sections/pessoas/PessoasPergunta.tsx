@@ -1,9 +1,9 @@
 import { ButtonLink } from "@/components/ui/Button";
 import { Container, Section } from "@/components/ui/Section";
-import { Display, Em } from "@/components/ui/Typography";
+import { Display } from "@/components/ui/Typography";
 import { Snapshot } from "./parts";
 
-import { tx, img, lazy } from "@/lib/editable";
+import { tx, img, lazy, rx } from "@/lib/editable";
 
 /**
  * Exercício breve, estático e legível. Sem coleta de resposta, score, diagnóstico ou recomendação automática.
@@ -23,10 +23,12 @@ export function PessoasPergunta() {
       <Container className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <div>
           <Display size="md">
-            {tx("pessoas/5ff4cf3028", "Uma pergunta para a")} <Em>{tx("pessoas/3d47a2b80a", "sua terça-feira.")}</Em>
-          </Display>
+{rx("pessoas/rc8f702842", "Uma pergunta para a <em>sua terça-feira.</em>")}
+</Display>
           <div className="jf-body mt-8 max-w-[520px] text-ink-700">
-            <p>{tx("pessoas/9eb88f9e8f", "Pense numa situação que vem se repetindo. Pode ser pequena. Você não precisa registrar sua resposta aqui.")}</p>
+            <p>
+{rx("pessoas/rfc263604c", "Pense numa situação que vem se repetindo. Pode ser pequena. Você não precisa registrar sua resposta aqui.")}
+</p>
           </div>
           <Snapshot
             src={img("pessoas/7a8481c07b", "/images/ensaio/contexto-caderno-escolhas.webp")}
@@ -59,7 +61,8 @@ export function PessoasPergunta() {
               ↻
             </span>
             <p className="font-serif text-[clamp(20px,1.7vw,25px)] leading-snug text-ink-900">
-              {tx("pessoas/67bb03a5e2", "Depois de tentar, olhe de novo. O que aconteceu pode mudar a pergunta.")}</p>
+{rx("pessoas/rd4892668a", "Depois de tentar, olhe de novo. O que aconteceu pode mudar a pergunta.")}
+</p>
           </div>
 
           <ButtonLink href="/futuros-humanos#espiral" variant="link" className="mt-8">

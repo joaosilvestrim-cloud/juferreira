@@ -3,10 +3,10 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
-import { Body, Display, Em } from "@/components/ui/Typography";
+import { Body, Display } from "@/components/ui/Typography";
 import { CONTACT_ROUTES, LINKS } from "@/lib/site";
 
-import { tx, img } from "@/lib/editable";
+import { tx, img, rx } from "@/lib/editable";
 
 /** Mantido para links antigos que apontavam para o formulário da v1 (/organizacoes#conversa). */
 export const CONTACT_ANCHOR = "#conversa";
@@ -21,12 +21,15 @@ export async function OrgColetivo() {
       <div className="grid lg:grid-cols-[50%_50%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[720px] lg:pr-10">
           <Display size="lg">
-            {tx("organizacoes/311fff8bb7", "Algumas perguntas pedem")} <Em>{tx("organizacoes/0d1206a26d", "mais gente à mesa.")}</Em>
-          </Display>
+{rx("organizacoes/re7833bcc3", "Algumas perguntas pedem <em>mais gente à mesa.</em>")}
+</Display>
           <Body className="mt-8 max-w-[600px] text-ink-700">
             <p>
-              {tx("organizacoes/b670884f5c", "Integro a")} <strong className="font-semibold text-ink-900">{tx("organizacoes/281b25348e", "What The Future?!")}</strong>{tx("organizacoes/d81acaf6bd", ", um coletivo de futuristas. Quando o desafio pede outras competências e perspectivas, essa colaboração pode ampliar o trabalho.")}</p>
-            <p>{tx("organizacoes/f374614fe1", "Projetos, abordagens e parceiros são definidos conforme a necessidade.")}</p>
+{rx("organizacoes/rf5e24ce7d", "Integro a <strong>What The Future?!</strong>, um coletivo de futuristas. Quando o desafio pede outras competências e perspectivas, essa colaboração pode ampliar o trabalho.")}
+</p>
+            <p>
+{rx("organizacoes/ra4d930d0b", "Projetos, abordagens e parceiros são definidos conforme a necessidade.")}
+</p>
           </Body>
           {hasWtf ? (
             <ButtonLink href={LINKS.wtf} variant="secondary" className="mt-10" target="_blank" rel="noopener noreferrer">
@@ -57,18 +60,17 @@ export function OrgExperiencia() {
       <div className="grid lg:grid-cols-[1fr_0.8fr]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[820px] lg:pr-12">
           <Display size="lg">
-            {tx("organizacoes/66c409d856", "As ideias precisam sobreviver")} <Em>{tx("organizacoes/d596a5e63f", "ao trabalho real.")}</Em>
-          </Display>
+{rx("organizacoes/r86c617e97", "As ideias precisam sobreviver <em>ao trabalho real.</em>")}
+</Display>
           <Body className="mt-8 max-w-[620px] text-ink-700">
             <p>
-              {tx("organizacoes/b8c6cbe984", "Minha trajetória em tecnologia, vendas, liderança e construção de empresas me mantém próxima de orçamento, cliente, equipe e consequência. Esse encontro ajuda a testar as perguntas que levo para as organizações.")}</p>
+{rx("organizacoes/rbc4ff2c20", "Minha trajetória em tecnologia, vendas, liderança e construção de empresas me mantém próxima de orçamento, cliente, equipe e consequência. Esse encontro ajuda a testar as perguntas que levo para as organizações.")}
+</p>
           </Body>
           <div className="mt-10 max-w-[560px] border-l-2 border-red-brand pl-6">
             <p className="font-serif text-[clamp(22px,2vw,30px)] leading-snug">
-              {tx("organizacoes/aa3e3c2ead", "Possibilidade sem realidade vira fantasia.")}
-              <br />
-              {tx("organizacoes/e6f72a3ba7", "Realidade sem possibilidade vira resignação.")}
-            </p>
+{rx("organizacoes/rf9b2698e1", "Possibilidade sem realidade vira fantasia.<br>Realidade sem possibilidade vira resignação.")}
+</p>
             <Stroke shape="underline" className="mt-2 h-3 w-48" width={2.5} />
           </div>
           <ButtonLink href="/ju" variant="link" className="mt-10">
@@ -99,10 +101,12 @@ export async function OrgContato() {
         <div className="grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
           <div>
             <Display size="lg">
-              {tx("organizacoes/df77db115f", "O que sua organização")} <Em>{tx("organizacoes/dac6621c98", "está tentando construir?")}</Em>
-            </Display>
+{rx("organizacoes/r553741e4a", "O que sua organização <em>está tentando construir?</em>")}
+</Display>
             <Body className="mt-8 max-w-[600px] text-cream-50/85">
-              <p>{tx("organizacoes/c3f92f050f", "Conte o que está acontecendo, quem está envolvido e por que essa conversa importa agora.")}</p>
+              <p>
+{rx("organizacoes/r9dd5564bc", "Conte o que está acontecendo, quem está envolvido e por que essa conversa importa agora.")}
+</p>
             </Body>
             <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg" className="mt-10">
               {tx("organizacoes/9848b72620", "Conversar sobre o desafio")}</ButtonLink>
@@ -110,7 +114,9 @@ export async function OrgContato() {
               <div className="mt-12 border-t border-cream-50/20 pt-8 text-[15px] leading-relaxed text-cream-50/80">
                 {EXTERNAL.email && (
                   <>
-                    <p className="font-semibold text-cream-50">{tx("organizacoes/346eebaa17", "Prefere começar por e-mail?")}</p>
+                    <p className="font-semibold text-cream-50">
+{rx("organizacoes/r651106857", "Prefere começar por e-mail?")}
+</p>
                     <a href={`mailto:${EXTERNAL.email}`} className="mt-2 inline-block font-medium text-red-bright underline underline-offset-4">
                       {EXTERNAL.email}
                     </a>

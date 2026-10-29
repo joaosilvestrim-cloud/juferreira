@@ -121,12 +121,12 @@ for (const file of walk(SECTIONS)) {
 
   const visit = (node) => {
     // já marcado: só registra
-    if (ts.isCallExpression(node) && ts.isIdentifier(node.expression) && (node.expression.text === "tx" || node.expression.text === "img")) {
+    if (ts.isCallExpression(node) && ts.isIdentifier(node.expression) && ["tx", "img", "rx"].includes(node.expression.text)) {
       const [k, v] = node.arguments;
       if (k && v && ts.isStringLiteral(k) && ts.isStringLiteral(v)) {
         const text = v.text;
         seen.set(text, (seen.get(text) ?? 0) + 1);
-        const kind = node.expression.text === "img" ? "image" : "text";
+        const kind = node.expression.text === "img" ? "image" : node.expression.text === "rx" ? "rich" : "text";
         const r = kind === "image" ? { role: "Imagem", group: null, em: false } : roleOf(node);
         registry.push({ key: k.text, page, block: blockOf(node), kind, text, file: rel, line: sf.getLineAndCharacterOfPosition(node.getStart()).line + 1, ...r });
         total++;

@@ -651,3 +651,8 @@ body:has([data-admin]) > footer {
 .jf-rich mark { background: var(--jf-blush-100); }
 .jf-rich p.is-editor-empty:first-child::before { content: attr(data-placeholder); color: var(--jf-ink-500); opacity: 0.6; float: left; height: 0; pointer-events: none; }
 .jf-article { font-size: 19px; line-height: 1.8; }
+
+/* Editor de frases do painel: mostra os destaques como no site */
+.jf-rich-line em { color: var(--jf-red-500); font-style: normal; }
+.jf-rich-line em i, .jf-rich-line i { font-style: italic; }
+.jf-rich-line strong, .jf-rich-line b { font-weight: 600; }

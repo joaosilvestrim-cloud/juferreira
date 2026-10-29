@@ -1,8 +1,8 @@
 import { Container, Section } from "@/components/ui/Section";
-import { Display, Em } from "@/components/ui/Typography";
+import { Display } from "@/components/ui/Typography";
 import { Ask, Paper, Snapshot, Underline } from "./parts";
 
-import { tx, img, lazy } from "@/lib/editable";
+import { tx, img, lazy, rx } from "@/lib/editable";
 
 /** Três observações do automático (v1 · "O automático"), mantidas como notas curtas. */
 const NOTES = lazy(() => [
@@ -39,17 +39,23 @@ export function PessoasMargem() {
       <Container className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16">
         <div>
           <Display size="lg">
-            {tx("pessoas/2706345026", "Limites existem.")} <Em>{tx("pessoas/02bb92733b", "Potência também.")}</Em>
-          </Display>
+{rx("pessoas/redcd1b6a3", "Limites existem. <em>Potência também.</em>")}
+</Display>
           <Underline />
           <div className="jf-body mt-8 max-w-[620px] text-ink-700">
             <p>
-              {tx("pessoas/384e4030e0", "Nem toda circunstância foi escolhida. Nem toda mudança está disponível agora. Tempo, recursos, apoio e outras pessoas participam do que podemos fazer.")}</p>
+{rx("pessoas/rf1e8e7a8f", "Nem toda circunstância foi escolhida. Nem toda mudança está disponível agora. Tempo, recursos, apoio e outras pessoas participam do que podemos fazer.")}
+</p>
             <p>
-              {tx("pessoas/0c331daf28", "Ainda assim, vale investigar: o que posso rever? De que ajuda preciso? Que condição precisa mudar para que outra escolha se torne possível?")}</p>
-            <p>{tx("pessoas/bd818a621e", "Há hábitos que sustentam cuidado e confiança. E há repetições que merecem voltar à nossa atenção.")}</p>
+{rx("pessoas/reae0ee2c4", "Ainda assim, vale investigar: o que posso rever? De que ajuda preciso? Que condição precisa mudar para que outra escolha se torne possível?")}
+</p>
+            <p>
+{rx("pessoas/r3af8e4c2b", "Há hábitos que sustentam cuidado e confiança. E há repetições que merecem voltar à nossa atenção.")}
+</p>
           </div>
-          <Ask className="mt-8 max-w-[620px]">{tx("pessoas/cd9c4dcfb0", "O que você continua fazendo que já não escolheria da mesma forma hoje?")}</Ask>
+          <Ask className="mt-8 max-w-[620px]">
+{rx("pessoas/r44d025591", "O que você continua fazendo que já não escolheria da mesma forma hoje?")}
+</Ask>
         </div>
 
         <Snapshot

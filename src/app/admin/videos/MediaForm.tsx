@@ -68,7 +68,7 @@ export function MediaForm({ d, provider }: { d: MediaData; provider: "supabase" 
           </div>
         </fieldset>
 
-        <FieldGroup label="Capa (opcional)" hint="Usada quando o link não tem player e como capa de arquivos de vídeo.">
+        <FieldGroup label="Capa (opcional)" hint="Aparece no lugar da capa do YouTube/Vimeo (e de arquivos de vídeo); ao clicar, o vídeo começa a tocar. Sem capa, usa a do próprio YouTube.">
           <ImageInput name="thumb" current={d.thumb} />
           {d.thumb && (
             <label className="mt-2 flex items-center gap-2 text-[13px]">

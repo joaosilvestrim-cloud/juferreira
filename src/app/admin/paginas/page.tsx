@@ -2,6 +2,7 @@ import Link from "next/link";
 import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
 import { PAGES, REGISTRY, sectionLabel } from "@/lib/page-registry";
+import { richToPlain } from "@/lib/rich-inline";
 import { PageHeader } from "../_ui/PageHeader";
 
 type Search = Promise<Record<string, string | string[] | undefined>>;
@@ -13,7 +14,7 @@ export default async function PagesAdmin({ searchParams }: { searchParams: Searc
   const ov = new Map(rows.map((r) => [r.key, r.value]));
   const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const hits = q
-    ? REGISTRY.filter((r) => r.kind === "text" && (norm(r.text).includes(norm(q)) || norm(ov.get(r.key) ?? "").includes(norm(q)))).slice(0, 80)
+    ? REGISTRY.filter((r) => r.kind !== "image" && (norm(richToPlain(r.text)).includes(norm(q)) || norm(richToPlain(ov.get(r.key) ?? "")).includes(norm(q)))).slice(0, 80)
     : [];
 
   return (
@@ -44,7 +45,7 @@ export default async function PagesAdmin({ searchParams }: { searchParams: Searc
                     <span className="text-[12px] uppercase tracking-[0.12em] text-ink-500">
                       {page.name} · {sectionLabel(h.section, h.order)}
                     </span>
-                    <span className="mt-0.5 line-clamp-2 block text-[15px]">{ov.get(h.key) ?? h.text}</span>
+                    <span className="mt-0.5 line-clamp-2 block text-[15px]">{richToPlain(ov.get(h.key) ?? h.text)}</span>
                   </Link>
                 </li>
               );
@@ -66,7 +67,7 @@ export default async function PagesAdmin({ searchParams }: { searchParams: Searc
                 <div className="flex-1">
                 <p className="font-serif text-[26px]">{p.name}</p>
                 <p className="mt-1 text-[14px] text-ink-500">
-                  {items.filter((i) => i.kind === "text").length} textos · {items.filter((i) => i.kind === "image").length} imagens
+                  {items.filter((i) => i.kind !== "image").length} textos · {items.filter((i) => i.kind === "image").length} imagens
                   {edited > 0 && <span className="text-red-brand"> · {edited} ajustado(s)</span>}
                 </p>
                 </div>

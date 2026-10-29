@@ -1,6 +1,6 @@
 import { SpiralMark } from "@/components/ui/Strokes";
 
-import { tx, lazy } from "@/lib/editable";
+import { tx, lazy, rx } from "@/lib/editable";
 const MOVES = lazy(() => ([tx("futuros-humanos/2377706959", "Imaginar"), tx("futuros-humanos/6fec948e79", "Escolher"), tx("futuros-humanos/a44c4d1e9e", "Tornar-se"), tx("futuros-humanos/7d802668d0", "Construir")]));
 
 /**
@@ -26,7 +26,8 @@ export function SpiralDiagram({ className = "" }: { className?: string }) {
           </p>
         ))}
         <p className="jf-hand absolute bottom-[2%] left-[18%] rotate-[-3deg] bg-cream-50/85 px-2 text-[26px] text-ink-900">
-          {tx("futuros-humanos/dbb013073c", "↻ e a pergunta volta, de outro lugar")}</p>
+{rx("futuros-humanos/r0b3351022", "↻ e a pergunta volta, de outro lugar")}
+</p>
       </div>
       <ul className="relative space-y-4 border-l border-red-brand/40 pl-7 md:hidden" aria-hidden>
         {MOVES.map((m) => (
@@ -35,10 +36,13 @@ export function SpiralDiagram({ className = "" }: { className?: string }) {
             {m}
           </li>
         ))}
-        <li className="jf-hand text-[24px] text-ink-900">{tx("futuros-humanos/4b49d88a19", "↻ e a pergunta volta, de outro lugar")}</li>
+        <li className="jf-hand text-[24px] text-ink-900">
+{rx("futuros-humanos/r07df473c0", "↻ e a pergunta volta, de outro lugar")}
+</li>
       </ul>
       <figcaption className="sr-only">
-        {tx("futuros-humanos/1a46a38445", "Desenho da Espiral: imaginar, escolher, tornar-se e construir. Depois de construir, a linha não volta ao ponto de partida; a pergunta retorna de outro lugar.")}</figcaption>
+{rx("futuros-humanos/r0d7da9d75", "Desenho da Espiral: imaginar, escolher, tornar-se e construir. Depois de construir, a linha não volta ao ponto de partida; a pergunta retorna de outro lugar.")}
+</figcaption>
     </figure>
   );
 }

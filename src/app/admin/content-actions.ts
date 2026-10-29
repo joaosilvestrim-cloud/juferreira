@@ -6,6 +6,7 @@ import { sessionUser } from "@/lib/auth";
 import { SETTING_KEYS } from "@/lib/content";
 import { db } from "@/lib/db";
 import { storeImage } from "@/lib/media-store";
+import { cleanRich } from "@/lib/rich-inline";
 import { sanitizeRich } from "@/lib/rich-text";
 
 async function requireAdmin() {
@@ -247,7 +248,11 @@ export async function savePageBlock(_: FormState, f: FormData): Promise<FormStat
       const [prefix, key] = [name.slice(0, 2), name.slice(2)];
       const item = byKey.get(key);
       if (!item) continue;
-      if (prefix === "t:" && item.kind === "text" && typeof value === "string") {
+      if (prefix === "t:" && item.kind === "rich" && typeof value === "string") {
+        // frase com destaques: só <em>, <i>, <strong> e <br> passam
+        const v = cleanRich(value);
+        await apply(key, !v || v === cleanRich(item.text) ? null : v.slice(0, 8000));
+      } else if (prefix === "t:" && item.kind === "text" && typeof value === "string") {
         const v = value.replace(/\r\n/g, "\n").trim();
         await apply(key, !v || v === item.text ? null : v.slice(0, 5000));
       } else if (prefix === "i:" && item.kind === "image") {

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container, Section } from "@/components/ui/Section";
-import { Display, Em } from "@/components/ui/Typography";
+import { Display } from "@/components/ui/Typography";
 import { CONTACT_ROUTES, LINKS } from "@/lib/site";
 
-import { tx, lazy } from "@/lib/editable";
+import { tx, lazy, rx } from "@/lib/editable";
 
 type Door = {
   k: string;
@@ -50,8 +50,8 @@ export function PessoasPortas() {
     <Section id="proximo-passo" label={tx("pessoas/e606b78d3f", "Próximo passo")}>
       <Container>
         <Display size="md" className="max-w-[860px]">
-          {tx("pessoas/c2fc42f198", "O próximo passo depende do")} <Em>{tx("pessoas/8d76df9ab9", "que você precisa.")}</Em>
-        </Display>
+{rx("pessoas/rc5fecb021", "O próximo passo depende do <em>que você precisa.</em>")}
+</Display>
 
         <ul className="mt-12 grid gap-5 md:grid-cols-3">
           {DOORS.map((d) => (

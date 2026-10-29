@@ -4,10 +4,10 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
-import { Body, Display, Em, NumberBadge, QuoteCard } from "@/components/ui/Typography";
+import { Body, Display, NumberBadge, QuoteCard } from "@/components/ui/Typography";
 import { CONTACT_ROUTES } from "@/lib/site";
 
-import { tx, img } from "@/lib/editable";
+import { tx, img, rx } from "@/lib/editable";
 
 export const OUCA_ANCHOR = "#ouca-e-veja";
 
@@ -26,8 +26,8 @@ export async function PalestrasOucaVeja() {
     <Section label={tx("palestras-workshops/9fcc5f8f39", "Ouça e veja Ju")} id={OUCA_ANCHOR.slice(1)}>
       <Container>
         <Display size="lg" className="max-w-[900px]">
-          {tx("palestras-workshops/b45035ff7f", "Conheça a conversa")} <Em>{tx("palestras-workshops/3b83138bf6", "antes de levá-la ao seu evento.")}</Em>
-        </Display>
+{rx("palestras-workshops/r6a90e9241", "Conheça a conversa <em>antes de levá-la ao seu evento.</em>")}
+</Display>
 
         {videos.length > 0 && (
           <ul className={`mt-12 grid gap-10 ${videos.length > 1 ? "lg:grid-cols-2" : "max-w-[960px]"}`}>
@@ -107,8 +107,8 @@ export function PalestrasComoComeca() {
     <Section tone="cream" label={tx("palestras-workshops/f0fb1051fe", "Como começa")} id="como-comeca">
       <Container>
         <Display size="lg">
-          {tx("palestras-workshops/0605b2000a", "Começamos")} <Em>{tx("palestras-workshops/8a2dfdcdd8", "pelo contexto.")}</Em>
-        </Display>
+{rx("palestras-workshops/rc12f41b82", "Começamos <em>pelo contexto.</em>")}
+</Display>
         <ol className="mt-12 grid gap-8 md:grid-cols-3 md:gap-10">
           {steps.map((s, i) => (
             <li key={s.t} className="border-t border-ink-900/15 pt-6">
@@ -145,16 +145,20 @@ export async function PalestrasContratacao() {
       <Container className="relative">
         <div className="max-w-[720px]">
           <Display size="lg">
-            {tx("palestras-workshops/7b4e598124", "Qual conversa precisa acontecer")} <Em>{tx("palestras-workshops/cea586d307", "no seu evento?")}</Em>
-          </Display>
+{rx("palestras-workshops/r64f7b5fdf", "Qual conversa precisa acontecer <em>no seu evento?</em>")}
+</Display>
           <Body className="mt-10 max-w-[600px] text-cream-50/85">
-            <p>{tx("palestras-workshops/8d9b738762", "Conte o público, a data se já existir e o que motivou o encontro. A partir daí, podemos avaliar o formato.")}</p>
+            <p>
+{rx("palestras-workshops/rc5730a4a4", "Conte o público, a data se já existir e o que motivou o encontro. A partir daí, podemos avaliar o formato.")}
+</p>
           </Body>
           <ButtonLink href={CONTACT_ROUTES.palestras} size="lg" className="mt-10">
             {tx("palestras-workshops/84027745a8", "Falar sobre uma palestra")}</ButtonLink>
           {hasDirect && (
             <div className="mt-12 border-t border-cream-50/20 pt-8 text-[15px]">
-              <p className="font-semibold">{tx("palestras-workshops/c8eb2b60bd", "Prefere falar direto?")}</p>
+              <p className="font-semibold">
+{rx("palestras-workshops/r027815616", "Prefere falar direto?")}
+</p>
               <ul className="mt-2 space-y-1">
                 {EXTERNAL.email && (
                   <li>

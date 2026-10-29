@@ -1,7 +1,7 @@
 import type { ElementType, ReactNode } from "react";
 
 /** Palavra/trecho em vermelho de ênfase (RedEmphasis). */
-export function Em({ children, italic = false }: { children: ReactNode; italic?: boolean }) {
+export function Em({ children, italic = false }: { children?: ReactNode; italic?: boolean }) {
   return <span className={`jf-em ${italic ? "italic" : ""}`}>{children}</span>;
 }
 
@@ -73,21 +73,23 @@ export function StickyNote({
   className = "",
   rotate = -2,
   tone = "blush",
+  size = "md",
 }: {
   children: ReactNode;
   className?: string;
   rotate?: number;
   tone?: "blush" | "paper";
+  size?: "sm" | "md";
 }) {
   return (
     <div
-      className={`relative w-fit max-w-[280px] px-6 pb-5 pt-7 shadow-[0_8px_24px_-12px_rgba(24,20,17,0.35)] ${
+      className={`relative w-fit ${size === "sm" ? "max-w-[210px] px-4 pb-3 pt-5" : "max-w-[280px] px-6 pb-5 pt-7"} shadow-[0_8px_24px_-12px_rgba(24,20,17,0.35)] ${
         tone === "blush" ? "bg-blush-100" : "bg-cream-50"
       } ${className}`}
       style={{ transform: `rotate(${rotate}deg)` }}
     >
       <span className="absolute -top-3 left-1/2 h-6 w-20 -translate-x-1/2 rotate-[-3deg] bg-cream-200/80" aria-hidden />
-      <p className="jf-hand text-[24px] text-ink-900">{children}</p>
+      <p className={`jf-hand text-ink-900 ${size === "sm" ? "text-[19px] leading-snug" : "text-[24px]"}`}>{children}</p>
     </div>
   );
 }

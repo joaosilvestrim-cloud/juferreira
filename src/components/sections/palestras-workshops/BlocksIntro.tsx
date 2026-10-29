@@ -3,11 +3,11 @@ import { ButtonLink, ButtonRow } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
-import { Body, Display, Em, Eyebrow, Lead } from "@/components/ui/Typography";
+import { Body, Display, Eyebrow, Lead } from "@/components/ui/Typography";
 import { CONTACT_ROUTES } from "@/lib/site";
 import { OUCA_ANCHOR } from "./BlocksLastro";
 
-import { tx, img } from "@/lib/editable";
+import { tx, img, rx } from "@/lib/editable";
 
 /* ───────────────────────── P01 — ABERTURA ───────────────────────── */
 export async function PalestrasHero() {
@@ -18,15 +18,19 @@ export async function PalestrasHero() {
       <div className="grid lg:grid-cols-[58%_42%]">
         <Container className="py-16 lg:ml-auto lg:mr-0 lg:max-w-[820px] lg:py-24 lg:pr-12">
           <div className="jf-reveal">
-            <Eyebrow>{tx("palestras-workshops/2c34bae926", "Futuros Humanos | Palestra com Ju Ferreira")}</Eyebrow>
+            <Eyebrow>
+{rx("palestras-workshops/r59e24b5c8", "Futuros Humanos | Palestra com Ju Ferreira")}
+</Eyebrow>
             <Display as="h1" size="xl" className="mt-6">
-              {tx("palestras-workshops/06caf78b99", "Estamos ficando mais capazes.")} <Em>{tx("palestras-workshops/cf8020c4e4", "Para construir o quê?")}</Em>
-            </Display>
+{rx("palestras-workshops/re327b5c5a", "Estamos ficando mais capazes. <em>Para construir o quê?</em>")}
+</Display>
             <Stroke shape="underline" draw className="mt-2 h-4 w-[min(420px,70%)]" width={4} />
             <Lead className="mt-8 max-w-[660px] text-[clamp(22px,2vw,30px)]">
-              {tx("palestras-workshops/cb91f6f68c", "Uma palestra sobre as escolhas que fazemos quando tecnologia, trabalho e vida abrem novas possibilidades.")}</Lead>
+{rx("palestras-workshops/rb3f2ff5e1", "Uma palestra sobre as escolhas que fazemos quando tecnologia, trabalho e vida abrem novas possibilidades.")}
+</Lead>
             <p className="jf-body mt-6 max-w-[620px] text-ink-700">
-              {tx("palestras-workshops/314187a74f", "Futuros Humanos conecta essas mudanças às capacidades humanas necessárias para participar do que vem depois.")}</p>
+{rx("palestras-workshops/r44d87411b", "Futuros Humanos conecta essas mudanças às capacidades humanas necessárias para participar do que vem depois.")}
+</p>
             <ButtonRow className="mt-10">
               <ButtonLink href={CONTACT_ROUTES.palestras} size="lg">
                 {tx("palestras-workshops/13e625b780", "Conversar sobre meu evento")}</ButtonLink>
@@ -70,15 +74,19 @@ export function PalestrasExperiencia() {
       <div className="grid lg:grid-cols-[52%_48%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[720px] lg:pr-10">
           <Display size="lg">
-            {tx("palestras-workshops/c902a06966", "Uma pergunta para levar")} <Em>{tx("palestras-workshops/574d4fc790", "além do evento.")}</Em>
-          </Display>
+{rx("palestras-workshops/raf9ec0b7c", "Uma pergunta para levar <em>além do evento.</em>")}
+</Display>
           <Body className="mt-10 max-w-[600px] text-cream-50/85">
             <p>
-              {tx("palestras-workshops/e250f4771b", "Histórias da vida, experiência em tecnologia e Estudos de Futuros se encontram para tornar visíveis escolhas que passam por inevitáveis.")}</p>
+{rx("palestras-workshops/r2bd7753b3", "Histórias da vida, experiência em tecnologia e Estudos de Futuros se encontram para tornar visíveis escolhas que passam por inevitáveis.")}
+</p>
             <p>
-              {tx("palestras-workshops/9ae7618d63", "A proposta é ampliar perspectivas, reconhecer critérios que orientam decisões e encontrar um primeiro movimento possível no contexto de cada pessoa ou equipe.")}</p>
+{rx("palestras-workshops/r222e5a26f", "A proposta é ampliar perspectivas, reconhecer critérios que orientam decisões e encontrar um primeiro movimento possível no contexto de cada pessoa ou equipe.")}
+</p>
           </Body>
-          <h3 className="jf-eyebrow mt-12 text-cream-50/70">{tx("palestras-workshops/da8c50334c", "Três perguntas atravessam a palestra")}</h3>
+          <h3 className="jf-eyebrow mt-12 text-cream-50/70">
+{rx("palestras-workshops/r595b5be6a", "Três perguntas atravessam a palestra")}
+</h3>
           <ol className="mt-6 space-y-5">
             {questions.map((q, i) => (
               <li key={q} className="flex gap-5 border-l-2 border-red-bright pl-5">
@@ -90,7 +98,8 @@ export function PalestrasExperiencia() {
             ))}
           </ol>
           <p className="jf-body mt-10 max-w-[600px] text-cream-50/80">
-            {tx("palestras-workshops/9b60a5d4d7", "No caminho, a conversa passa por imaginar, escolher, tornar-se e construir. Não como etapas a cumprir: depois de construir, a pergunta volta, mas de outro lugar.")}</p>
+{rx("palestras-workshops/r35be0cfd6", "No caminho, a conversa passa por imaginar, escolher, tornar-se e construir. Não como etapas a cumprir: depois de construir, a pergunta volta, mas de outro lugar.")}
+</p>
           <ButtonLink href="/futuros-humanos" variant="ghost-light" className="mt-6">
             {tx("palestras-workshops/fccb7ca923", "Conheça a tese em profundidade")}</ButtonLink>
         </Container>
@@ -111,7 +120,9 @@ export function PalestrasExperiencia() {
 
       <Container className="pb-[var(--jf-section-y)]">
         <div className="grid gap-8 border-t border-cream-50/20 pt-10 lg:grid-cols-[minmax(220px,0.8fr)_2fr] lg:gap-12">
-          <h3 className="jf-display jf-display-sm">{tx("palestras-workshops/93c3f6d681", "Onde essa conversa costuma fazer sentido")}</h3>
+          <h3 className="jf-display jf-display-sm">
+{rx("palestras-workshops/rd7c80808a", "Onde essa conversa costuma fazer sentido")}
+</h3>
           <div>
             <ul className="grid gap-4 sm:grid-cols-3">
               {contexts.map((c) => (
@@ -122,7 +133,8 @@ export function PalestrasExperiencia() {
               ))}
             </ul>
             <p className="mt-6 max-w-[640px] text-[15px] leading-relaxed text-cream-50/75">
-              {tx("palestras-workshops/9808b9804f", "Cada público pede ênfases próprias. Por isso a adequação é conversada a partir do briefing de cada evento.")}</p>
+{rx("palestras-workshops/r5137bd5de", "Cada público pede ênfases próprias. Por isso a adequação é conversada a partir do briefing de cada evento.")}
+</p>
           </div>
         </div>
       </Container>

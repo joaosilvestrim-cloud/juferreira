@@ -2,12 +2,12 @@ import { ButtonLink, ButtonRow } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
-import { Body, Dash, Display, Em, HandNote } from "@/components/ui/Typography";
+import { Body, Dash, Display, HandNote } from "@/components/ui/Typography";
 import { CONTACT_ROUTES } from "@/lib/site";
 import { Pull } from "./FuturosHumanosBlocksA";
 import { SpiralDiagram } from "./SpiralDiagram";
 
-import { tx, img, lazy } from "@/lib/editable";
+import { tx, img, lazy, rx } from "@/lib/editable";
 
 /* ───────────────────────── F05 — AGÊNCIA ───────────────────────── */
 export function FHAgencia() {
@@ -17,13 +17,16 @@ export function FHAgencia() {
       <div className="grid lg:grid-cols-[62%_38%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[940px] lg:pr-12">
           <Display size="lg">
-            {tx("futuros-humanos/20bbb4269d", "Limites existem.")} <Em>{tx("futuros-humanos/afc373dbf4", "Potência também.")}</Em>
-          </Display>
+{rx("futuros-humanos/r5c1693d52", "Limites existem. <em>Potência também.</em>")}
+</Display>
           <Stroke shape="underline" className="mt-3 h-4 w-56" width={4} />
           <Body className="mt-10 max-w-[600px] text-ink-700">
             <p>
-              {tx("futuros-humanos/b8f8199d23", "Participamos a partir de condições reais: tempo, recursos, corpo, história, relações e estruturas. Algumas margens de escolha estão disponíveis. Outras precisam ser construídas com apoio e ação coletiva.")}</p>
-            <p>{tx("futuros-humanos/b94e9f9efc", "Agência pode começar:")}</p>
+{rx("futuros-humanos/r648b42551", "Participamos a partir de condições reais: tempo, recursos, corpo, história, relações e estruturas. Algumas margens de escolha estão disponíveis. Outras precisam ser construídas com apoio e ação coletiva.")}
+</p>
+            <p>
+{rx("futuros-humanos/r90e56fb0c", "Agência pode começar:")}
+</p>
           </Body>
           <ul className="jf-body mt-3 max-w-[600px] space-y-1 border-l-[3px] border-red-brand pl-5 text-ink-800">
             {starts.map((s) => (
@@ -32,12 +35,12 @@ export function FHAgencia() {
           </ul>
           <div className="mt-12 max-w-[640px] bg-blush-100/70 px-7 py-6">
             <p className="font-serif text-[clamp(24px,2.1vw,32px)] leading-snug">
-              {tx("futuros-humanos/a15beb4140", "Agência não é controle.")} <Em>{tx("futuros-humanos/8732fd970a", "É participação.")}</Em>
-            </p>
+{rx("futuros-humanos/r18b9e7f62", "Agência não é controle. <em>É participação.</em>")}
+</p>
           </div>
           <h3 className="mt-10 max-w-[640px] font-serif text-[clamp(22px,1.9vw,28px)] leading-snug">
-            {tx("futuros-humanos/23dec49475", "Onde existe margem para agir")} <Em>{tx("futuros-humanos/fd45209740", "e de que precisamos para ampliá-la?")}</Em>
-          </h3>
+{rx("futuros-humanos/rd6cf0e51b", "Onde existe margem para agir <em>e de que precisamos para ampliá-la?</em>")}
+</h3>
         </Container>
         <div className="relative min-h-[480px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
           <Photo
@@ -92,12 +95,13 @@ export function FHEspiral() {
       <Container className="grid items-center gap-14 lg:grid-cols-[1fr_1fr] lg:gap-12">
         <div>
           <Display size="lg">
-            {tx("futuros-humanos/1460c02047", "Imaginar. Escolher.")} <Em>{tx("futuros-humanos/ec08d17155", "Tornar")}{"‑"}{tx("futuros-humanos/5162eb62f1", "se. Construir.")}</Em>
-          </Display>
+{rx("futuros-humanos/r3ed4d4a5e", "Imaginar. Escolher. <em>Tornar‑se. Construir.</em>")}
+</Display>
           <Stroke shape="underline" className="mt-3 h-4 w-56" width={4} />
           <Body className="mt-10 max-w-[580px] text-ink-700">
             <p>
-              {tx("futuros-humanos/95cadfe9ab", "Imaginar já muda o que conseguimos perceber. Escolher dá direção. Desenvolver capacidades permite sustentar escolhas. Construir coloca alguma coisa em contato com a realidade.")}</p>
+{rx("futuros-humanos/r682cfb4ef", "Imaginar já muda o que conseguimos perceber. Escolher dá direção. Desenvolver capacidades permite sustentar escolhas. Construir coloca alguma coisa em contato com a realidade.")}
+</p>
           </Body>
         </div>
         <SpiralDiagram className="mx-auto w-full max-w-[560px]" />
@@ -120,24 +124,33 @@ export function FHEspiral() {
         <div className="grid gap-12 border-t border-ink-900/15 pt-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
           <div>
             <h3 className="font-serif text-[clamp(24px,2vw,30px)] leading-snug">
-              {tx("futuros-humanos/b04c9edac1", "A Espiral não fecha.")}
-            </h3>
+{rx("futuros-humanos/r450f638ce", "A Espiral não fecha.")}
+</h3>
             <Body className="mt-5 text-ink-700">
               <p>
-                {tx("futuros-humanos/9b871093f2", "O mundo responde. Algumas hipóteses se sustentam, outras precisam mudar. Nós aprendemos e voltamos à pergunta com novas condições e outro olhar.")}</p>
+{rx("futuros-humanos/rffa8f1c9b", "O mundo responde. Algumas hipóteses se sustentam, outras precisam mudar. Nós aprendemos e voltamos à pergunta com novas condições e outro olhar.")}
+</p>
             </Body>
-            <Pull className="mt-8">{tx("futuros-humanos/e944f41db3", "Nós construímos futuros e somos construídos enquanto os construímos.")}</Pull>
+            <Pull className="mt-8">
+{rx("futuros-humanos/rb6d907f6e", "Nós construímos futuros e somos construídos enquanto os construímos.")}
+</Pull>
             <HandNote className="mt-10 text-red-brand" rotate={-3}>
-              {tx("futuros-humanos/94f45faa87", "A Espiral precisa sobreviver a uma terça-feira qualquer.")}</HandNote>
+{rx("futuros-humanos/ra55041f6c", "A Espiral precisa sobreviver a uma terça-feira qualquer.")}
+</HandNote>
           </div>
           <div>
             <table className="w-full border-collapse text-left">
               <caption className="jf-eyebrow pb-4 text-left text-[13px] text-red-brand">
-                {tx("futuros-humanos/94acf0c1c8", "Uma situação hipotética: uma equipe que deseja mais autonomia")}</caption>
+{rx("futuros-humanos/rb8f8a0afd", "Uma situação hipotética: uma equipe que deseja mais autonomia")}
+</caption>
               <thead className="sr-only">
                 <tr>
-                  <th scope="col">{tx("futuros-humanos/7d0c39944e", "Movimento")}</th>
-                  <th scope="col">{tx("futuros-humanos/a2a297d872", "O que acontece")}</th>
+                  <th scope="col">
+{rx("futuros-humanos/ra1b7a6958", "Movimento")}
+</th>
+                  <th scope="col">
+{rx("futuros-humanos/r232ebff01", "O que acontece")}
+</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-ink-900/15 border-y border-ink-900/15">
@@ -152,11 +165,13 @@ export function FHEspiral() {
               </tbody>
             </table>
             <p className="jf-body mt-6 text-ink-700">
-              {tx("futuros-humanos/8899f19049", "Uma escolha pode revelar uma capacidade que falta. Uma experiência pode mudar a direção. Os movimentos se encontram e voltam a acontecer.")}</p>
+{rx("futuros-humanos/rf58abe9f6", "Uma escolha pode revelar uma capacidade que falta. Uma experiência pode mudar a direção. Os movimentos se encontram e voltam a acontecer.")}
+</p>
           </div>
         </div>
         <p className="mt-12 max-w-[860px] border-t border-ink-900/15 pt-6 text-[14px] leading-relaxed text-ink-500">
-          {tx("futuros-humanos/bfda2c6d1c", "A Espiral organiza meu modo de pensar e trabalhar sobre essas perguntas. Não oferece garantia de resultado.")}</p>
+{rx("futuros-humanos/r9685d65e5", "A Espiral organiza meu modo de pensar e trabalhar sobre essas perguntas. Não oferece garantia de resultado.")}
+</p>
       </Container>
     </Section>
   );
@@ -169,14 +184,15 @@ export function FHEscalas() {
       <Container className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-16">
         <div>
           <Display size="md">
-            {tx("futuros-humanos/c8cebe3d5b", "A pergunta muda")} <Em>{tx("futuros-humanos/c54a90841c", "de escala.")}</Em>
-          </Display>
+{rx("futuros-humanos/reba98e0c5", "A pergunta muda <em>de escala.</em>")}
+</Display>
           <Stroke shape="underline" className="mt-3 h-4 w-48" width={4} />
         </div>
         <div>
           <Body className="text-ink-700">
             <p>
-              {tx("futuros-humanos/d23d227051", "Na vida pessoal, pode aparecer numa escolha que deixou de parecer escolha. Numa organização, nos incentivos, tecnologias e prioridades que moldam o trabalho.")}</p>
+{rx("futuros-humanos/rdd6f870ea", "Na vida pessoal, pode aparecer numa escolha que deixou de parecer escolha. Numa organização, nos incentivos, tecnologias e prioridades que moldam o trabalho.")}
+</p>
           </Body>
           <ButtonRow className="mt-8">
             <ButtonLink href="/pessoas" variant="secondary">
@@ -197,12 +213,12 @@ export function FHEncerramento() {
       <div className="grid lg:grid-cols-[60%_40%]">
         <Container className="flex flex-col justify-center py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[900px] lg:pr-10">
           <Display size="lg">
-            {tx("futuros-humanos/ae68d01c0a", "O que queremos ajudar a tornar possível?")}
-          </Display>
+{rx("futuros-humanos/r22dc5fae5", "O que queremos ajudar a tornar possível?")}
+</Display>
           <Stroke shape="underline" className="mt-3 h-4 w-64" width={4} color="var(--jf-red-400)" />
           <p className="jf-lead mt-10 text-cream-50/90">
-            {tx("futuros-humanos/0822b53521", "É sobre não desistir")} <Em>{tx("futuros-humanos/31b92dca1c", "da vida que ainda pode existir.")}</Em>
-          </p>
+{rx("futuros-humanos/r26efa9f42", "É sobre não desistir <em>da vida que ainda pode existir.</em>")}
+</p>
           <ButtonRow className="mt-10">
             <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg">
               {tx("futuros-humanos/21ce2aebbe", "Leve essa conversa para sua organização")}</ButtonLink>

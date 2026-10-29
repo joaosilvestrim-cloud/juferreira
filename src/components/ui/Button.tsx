@@ -35,8 +35,11 @@ type Props = Omit<ComponentProps<typeof Link>, "className"> & {
 };
 
 export function ButtonLink({ variant = "primary", size = "md", className = "", children, ...props }: Props) {
-  // /ir/* redireciona para sites externos: prefetch geraria erro de CORS
-  const rest = typeof props.href === "string" && props.href.startsWith("/ir/") ? { ...props, prefetch: false } : props;
+  // /ir/* leva a sites externos (EPIC247, WTF): abre em nova aba e sem prefetch (geraria erro de CORS)
+  const rest =
+    typeof props.href === "string" && props.href.startsWith("/ir/")
+      ? { target: "_blank", rel: "noopener noreferrer", ...props, prefetch: false }
+      : props;
   if (variant === "link") {
     return (
       <Link

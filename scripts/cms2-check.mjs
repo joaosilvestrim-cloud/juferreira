@@ -46,8 +46,10 @@ try {
   ok("login com senha mestra");
 
   // textos das páginas
-  await page.goto(`${B}/admin/paginas/home`);
-  await page.locator(`${heroAnchor} textarea`).fill("TESTE PAINEL frase editada pelo admin.");
+  await page.goto(`${B}/admin/paginas/home`, { waitUntil: "networkidle" });
+  await page.locator(`${heroAnchor} [contenteditable]`).click();
+  await page.keyboard.press("Control+A");
+  await page.keyboard.type("TESTE PAINEL frase editada pelo admin.");
   await heroBlock().getByRole("button", { name: "Salvar bloco" }).click();
   await heroBlock().getByText(/alteração\(ões\) salva/).waitFor();
   await page.goto(`${B}/`);
@@ -58,7 +60,7 @@ try {
   ok("busca de frases no painel");
 
   // imagem
-  await page.goto(`${B}/admin/paginas/home`);
+  await page.goto(`${B}/admin/paginas/home`, { waitUntil: "networkidle" });
   await heroBlock().locator('input[type="file"]').first().setInputFiles("public/images/ju/palco.webp");
   await page.waitForTimeout(800);
   await heroBlock().getByRole("button", { name: "Salvar bloco" }).click();
@@ -85,7 +87,9 @@ try {
   await vid.getByText(/Já aparece em: Palestras/).waitFor();
   await page.goto(`${B}/palestras`);
   await page.getByText("TESTE PAINEL depoimento verificável.").waitFor({ timeout: 20000 });
-  if (!(await page.locator('iframe[src*="youtube-nocookie.com/embed/dQw4w9WgXcQ"]').count())) throw new Error("vídeo não incorporado");
+  // capa com play: ao clicar, o player do YouTube entra tocando
+  await page.getByRole("button", { name: "Assistir: TESTE PAINEL vídeo" }).click();
+  await page.locator('iframe[src*="youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1"]').waitFor({ timeout: 10000 });
   ok("depoimento e vídeo aparecem em Palestras (Ju em ação)");
 
   // SEO
@@ -127,8 +131,10 @@ try {
 } finally {
   // restauração pelo painel (invalida o cache do site)
   try {
-    await page.goto(`${B}/admin/paginas/home`);
-    await page.locator(`${heroAnchor} textarea`).fill(hero.text);
+    await page.goto(`${B}/admin/paginas/home`, { waitUntil: "networkidle" });
+    await page.locator(`${heroAnchor} [contenteditable]`).click();
+    await page.keyboard.press("Control+A");
+    await page.keyboard.type(hero.text);
     const restore = heroBlock().locator('input[type="checkbox"][name^="r:"]');
     for (const cb of await restore.all()) await cb.check();
     await heroBlock().getByRole("button", { name: "Salvar bloco" }).click();

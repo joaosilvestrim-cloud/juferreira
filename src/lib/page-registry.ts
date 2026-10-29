@@ -6,7 +6,7 @@ export type RegistryItem = {
   block: string;
   section: string;
   order: number;
-  kind: "text" | "image";
+  kind: "text" | "image" | "rich";
   text: string;
   file: string;
   line: number;

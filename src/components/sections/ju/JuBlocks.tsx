@@ -8,7 +8,7 @@ import { getExternal, getMediaFor } from "@/lib/content";
 import { MediaPlayer } from "@/components/ui/MediaPlayer";
 import { CONTACT_ROUTES, LINKS } from "@/lib/site";
 
-import { tx, img } from "@/lib/editable";
+import { tx, img, rx } from "@/lib/editable";
 /** Linha vertical vermelha + frase de fechamento (padrão de citação dos mockups). */
 function BarQuote({ children, className = "", dark = false }: { children: ReactNode; className?: string; dark?: boolean }) {
   return (
@@ -40,23 +40,22 @@ export function JuHero() {
       <Container className="flex min-h-[calc(100svh-var(--jf-header-h))] flex-col justify-center py-16 lg:py-20">
         <div className="jf-reveal max-w-[680px]">
           <Display as="h1" size="xl">
-            {tx("ju/e1c88b78a4", "Primeiro de tudo,")} <Em>{tx("ju/a1e34c32ca", "eu sou a Ju.")}</Em>
-          </Display>
+{rx("ju/rec2ecebfb", "Primeiro de tudo, <em>eu sou a Ju.</em>")}
+</Display>
           <Stroke shape="underline" draw className="mt-2 h-4 w-[min(340px,70%)] sm:ml-[30%]" width={4} />
           <Body className="mt-8 max-w-[580px] text-ink-700">
             <p>
-              {tx("ju/ed668dae64", "Sou engenheira, empreendedora, mãe e futurista. Mas os títulos explicam menos do que uma inquietação que atravessa minha vida:")}</p>
+{rx("ju/r67e4e2852", "Sou engenheira, empreendedora, mãe e futurista. Mas os títulos explicam menos do que uma inquietação que atravessa minha vida:")}
+</p>
           </Body>
           <p className="mt-3 max-w-[580px] font-serif text-[clamp(21px,1.8vw,27px)] leading-snug text-red-brand">
-            {tx("ju/025cb8e8d7", "o que ainda pode existir quando a gente deixa de tratar o caminho mais provável como o único disponível?")}</p>
+{rx("ju/r44e749ef5", "o que ainda pode existir quando a gente deixa de tratar o caminho mais provável como o único disponível?")}
+</p>
           <Body className="mt-6 max-w-[580px] text-ink-700">
             <p>
-              {tx("ju/c15f4427e4", "Passei por tecnologia, vendas, liderança e construção de empresas. Hoje, essas experiências encontram os Estudos de Futuros e as perguntas sobre transformação humana que continuo perseguindo.")}</p>
+{rx("ju/r0ec88e16f", "Passei por tecnologia, vendas, liderança e construção de empresas. Hoje, essas experiências encontram os Estudos de Futuros e as perguntas sobre transformação humana que continuo perseguindo.")}
+</p>
           </Body>
-          <ButtonRow className="mt-10">
-            <ButtonLink href="#trajetoria" size="lg">
-              {tx("ju/e942d5ec54", "Conheça essa trajetória")}</ButtonLink>
-          </ButtonRow>
         </div>
       </Container>
       <div className="relative h-[90vw] max-h-[560px] lg:hidden">
@@ -73,29 +72,39 @@ export function JuTecnologia() {
       <div className="grid lg:grid-cols-[58%_42%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[820px] lg:pr-12">
           <Display size="lg">
-            {tx("ju/17571edd79", "A tecnologia sempre chegou")} <Em>{tx("ju/5027ff477a", "acompanhada de gente.")}</Em>
-          </Display>
+{rx("ju/r37f21b044", "A tecnologia sempre chegou <em>acompanhada de gente.</em>")}
+</Display>
           <Stroke shape="underline" className="mt-3 h-4 w-[min(300px,70%)]" width={4} color="var(--jf-red-400)" />
           <Body className="mt-10 max-w-[640px] text-cream-50/85">
             <p>
-              {tx("ju/89afe1bd7c", "Na minha trajetória em empresas como EMC e Oracle, tecnologia vinha com")}{" "}
-              <strong className="font-semibold text-cream-50">{tx("ju/25a807c6dc", "cliente, orçamento, pressão, negociação, risco e consequência.")}</strong>
-            </p>
+{rx("ju/r1e126e47a", "Na minha trajetória em empresas como EMC e Oracle, tecnologia vinha com <strong>cliente, orçamento, pressão, negociação, risco e consequência.</strong>")}
+</p>
             <p>
-              {tx("ju/d7f3603a79", "Ao cofundar e liderar a A2F, passei a lidar também com o que é preciso para uma empresa existir: vender, entregar, contratar, decidir, corrigir e sustentar escolhas quando a realidade muda.")}</p>
-            <p>{tx("ju/488d87afad", "Nesse caminho, acertei, errei, perdi dinheiro, recomecei e mudei de direção.")}</p>
-            <p>{tx("ju/959cacf0a2", "Foi nesse percurso que uma ideia ganhou força para mim:")}</p>
+{rx("ju/r8ec5859a5", "Ao cofundar e liderar a A2F, passei a lidar também com o que é preciso para uma empresa existir: vender, entregar, contratar, decidir, corrigir e sustentar escolhas quando a realidade muda.")}
+</p>
+            <p>
+{rx("ju/r8d9e03c09", "Nesse caminho, acertei, errei, perdi dinheiro, recomecei e mudei de direção.")}
+</p>
+            <p>
+{rx("ju/r1f05cc2cd", "Foi nesse percurso que uma ideia ganhou força para mim:")}
+</p>
           </Body>
           <BarQuote dark className="mt-6 max-w-[640px]">
-            {tx("ju/95c032dcf4", "nenhuma transformação tecnológica é apenas tecnológica.")}
-          </BarQuote>
-          <p className="jf-body mt-6 max-w-[640px] text-cream-50/85">{tx("ju/7514f8e57c", "Ela muda como pessoas trabalham, decidem e se relacionam.")}</p>
+{rx("ju/re557e1e6a", "nenhuma transformação tecnológica é apenas tecnológica.")}
+</BarQuote>
+          <p className="jf-body mt-6 max-w-[640px] text-cream-50/85">
+{rx("ju/r916eef660", "Ela muda como pessoas trabalham, decidem e se relacionam.")}
+</p>
           <div className="mt-12 max-w-[640px] border-t border-cream-50/20 pt-10">
-            <p className="jf-body text-cream-50/80">{tx("ju/317da0bf80", "Por isso, diante de uma nova ferramenta, minha pergunta raramente é apenas:")}</p>
+            <p className="jf-body text-cream-50/80">
+{rx("ju/r38cf3fc42", "Por isso, diante de uma nova ferramenta, minha pergunta raramente é apenas:")}
+</p>
             <p className="mt-3 font-serif text-[clamp(21px,1.8vw,27px)] italic leading-snug text-cream-50/90">
-              {tx("ju/71d16cc997", "“O que essa ferramenta será capaz de fazer?”")}</p>
+{rx("ju/r3c46d6888", "“O que essa ferramenta será capaz de fazer?”")}
+</p>
             <Display as="h3" size="sm" className="mt-6 text-red-bright">
-              {tx("ju/969eec2868", "O que acontece com a gente quando ela consegue?")}</Display>
+{rx("ju/r676f5e497", "O que acontece com a gente quando ela consegue?")}
+</Display>
           </div>
         </Container>
         <div className="relative min-h-[420px]">
@@ -123,22 +132,28 @@ export function JuEscolher() {
       <Container className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-16">
         <div>
           <Display size="lg">
-            {tx("ju/845089e5e6", "Ser boa num caminho não decide")} <Em>{tx("ju/29d955da32", "se quero continuar nele.")}</Em>
-          </Display>
+{rx("ju/ra4805c570", "Ser boa num caminho não decide <em>se quero continuar nele.</em>")}
+</Display>
           <Stroke shape="underline" className="mt-2 h-4 w-[min(320px,60%)] sm:ml-[40%]" width={4} />
           <Body className="mt-10 max-w-[620px] text-ink-700">
             <p>
-              {tx("ju/63f790c2a4", "Na escola, um professor chamado Wilker me disse que eu seria boa em qualquer coisa que escolhesse. Guardei a frase. Demorei mais para escutar uma palavra dentro dela: escolher.")}</p>
+{rx("ju/r4fb878c34", "Na escola, um professor chamado Wilker me disse que eu seria boa em qualquer coisa que escolhesse. Guardei a frase. Demorei mais para escutar uma palavra dentro dela: escolher.")}
+</p>
             <p>
-              {tx("ju/89a89cd634", "Gostar de muitas coisas e encontrar portas abertas pode ser maravilhoso. Também pode nos manter entrando na próxima oportunidade sem perguntar para onde o conjunto das escolhas está levando.")}</p>
-            <p>{tx("ju/17cbc0716b", "Essa pergunta continua comigo:")}</p>
+{rx("ju/rf067f9d8e", "Gostar de muitas coisas e encontrar portas abertas pode ser maravilhoso. Também pode nos manter entrando na próxima oportunidade sem perguntar para onde o conjunto das escolhas está levando.")}
+</p>
+            <p>
+{rx("ju/r8f1d8f78c", "Essa pergunta continua comigo:")}
+</p>
           </Body>
           <p className="mt-3 font-serif text-[clamp(24px,2.2vw,32px)] font-medium leading-tight text-red-brand">
-            {tx("ju/90dd71241b", "onde estou colocando minha potência?")}</p>
+{rx("ju/r2394a2788", "onde estou colocando minha potência?")}
+</p>
         </div>
         <div className="flex justify-center lg:justify-end">
           <StickyNote tone="blush" rotate={-4} className="max-w-[300px]">
-            {tx("ju/30eb5e06c3", "escolher.")}</StickyNote>
+{rx("ju/r28a3b2ddc", "escolher.")}
+</StickyNote>
         </div>
       </Container>
     </Section>
@@ -152,18 +167,20 @@ export function JuMaternidade() {
       <div className="grid lg:grid-cols-[56%_44%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[780px] lg:pr-12">
           <Display size="lg">
-            {tx("ju/73e09cce47", "Quando virei mãe, o futuro")} <Em>{tx("ju/73812407b0", "mudou de escala.")}</Em>
-          </Display>
+{rx("ju/rd5609817f", "Quando virei mãe, o futuro <em>mudou de escala.</em>")}
+</Display>
           <Stroke shape="underline" className="mt-2 h-4 w-[min(300px,60%)] sm:ml-[30%]" width={4} />
           <Body className="mt-8 max-w-[600px] text-ink-700">
             <p>
-              {tx("ju/a16c109441", "O futuro passou a ser também o mundo onde minhas filhas vão viver. Isso tornou algumas perguntas muito próximas: o que ensino, o que sustento, o que questiono e o que ajudo a construir?")}</p>
+{rx("ju/r87dc7c3f4", "O futuro passou a ser também o mundo onde minhas filhas vão viver. Isso tornou algumas perguntas muito próximas: o que ensino, o que sustento, o que questiono e o que ajudo a construir?")}
+</p>
           </Body>
           <Display as="h3" size="sm" className="mt-10 max-w-[600px]">
-            <Em>{tx("ju/39efe381f5", "eu não controlo o futuro delas.")}</Em>
-          </Display>
+{rx("ju/r9c46724ce", "<em>eu não controlo o futuro delas.</em>")}
+</Display>
           <p className="jf-body mt-4 max-w-[600px] text-ink-700">
-            {tx("ju/09889fbcf8", "Posso participar do presente e ajudar a criar condições para que elas também façam suas escolhas.")}</p>
+{rx("ju/r59453ab4c", "Posso participar do presente e ajudar a criar condições para que elas também façam suas escolhas.")}
+</p>
         </Container>
         <div className="relative min-h-[520px] lg:min-h-[640px]">
           <Photo
@@ -187,18 +204,20 @@ export function JuFuturos() {
       <Container className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-12">
         <div>
           <Display size="lg">
-            {tx("ju/aae80b8efe", "As perguntas sobre transformação")} <Em>{tx("ju/bf98839293", "ficaram maiores.")}</Em>
-          </Display>
+{rx("ju/rb1b4c89b3", "As perguntas sobre transformação <em>ficaram maiores.</em>")}
+</Display>
           <Stroke shape="underline" className="mt-2 h-4 w-[min(300px,60%)] sm:ml-[35%]" width={4} />
           <Body className="mt-8 max-w-[600px] text-ink-700">
             <p>
-              {tx("ju/f963424eb0", "Meu interesse por escolhas, capacidades e mudança encontrou nos Estudos de Futuros um campo mais amplo. Pessoas se transformam dentro de famílias, organizações, culturas e tecnologias. Esses mundos também podem mudar.")}</p>
+{rx("ju/r97d336ca1", "Meu interesse por escolhas, capacidades e mudança encontrou nos Estudos de Futuros um campo mais amplo. Pessoas se transformam dentro de famílias, organizações, culturas e tecnologias. Esses mundos também podem mudar.")}
+</p>
             <p>
-              {tx("ju/c99340fc14", "Futuros Humanos nasceu nesse encontro. É onde organizo perguntas sobre possibilidade, direção, humanidade e aquilo que podemos começar a construir.")}</p>
+{rx("ju/rd420de828", "Futuros Humanos nasceu nesse encontro. É onde organizo perguntas sobre possibilidade, direção, humanidade e aquilo que podemos começar a construir.")}
+</p>
           </Body>
           <BarQuote className="mt-10 max-w-[600px]">
-            {tx("ju/0ba8b3ca76", "Eu estudo futuros porque me interesso profundamente por")} <Em>{tx("ju/3cfc7afe5f", "pessoas.")}</Em>
-          </BarQuote>
+{rx("ju/rffe84d31d", "Eu estudo futuros porque me interesso profundamente por <em>pessoas.</em>")}
+</BarQuote>
           <ButtonLink href="/futuros-humanos" className="mt-10">
             {tx("ju/73150f043f", "Conheça Futuros Humanos")}</ButtonLink>
         </div>
@@ -262,8 +281,8 @@ export async function JuHoje() {
     <Section tone="cream" label={tx("ju/17052137bc", "O que construo hoje")}>
       <Container>
         <Display size="md">
-          {tx("ju/d1bff588a7", "Essa visão encontra")} <Em>{tx("ju/c81cfa1d9a", "trabalhos diferentes.")}</Em>
-        </Display>
+{rx("ju/ra52415c72", "Essa visão encontra <em>trabalhos diferentes.</em>")}
+</Display>
         <Stroke shape="underline" className="mt-2 h-4 w-[min(260px,60%)] sm:ml-[30%]" width={4} />
         <ul className="mt-12 grid gap-6 md:grid-cols-3">
           {fronts.map((f, i) => (
@@ -296,8 +315,8 @@ export async function JuMidia() {
     <Section label={tx("ju/b98d24fd7c", "Ouça a Ju")}>
       <Container>
         <Display size="md">
-          {tx("ju/2d7016bf19", "Para ouvir a Ju")} <Em>{tx("ju/054ad0eb83", "pensando em voz alta.")}</Em>
-        </Display>
+{rx("ju/r4627da361", "Para ouvir a Ju <em>pensando em voz alta.</em>")}
+</Display>
         <ul className={`mt-10 grid gap-10 ${items.length > 1 ? "lg:grid-cols-2" : "max-w-[900px]"}`}>
           {items.map((m) => (
             <li key={m.id}>
@@ -317,16 +336,17 @@ export function JuEncerramento() {
       <div className="grid lg:grid-cols-[60%_40%]">
         <Container className="flex flex-col justify-center py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[860px] lg:pr-12">
           <Display size="lg">
-            {tx("ju/88446f0e80", "Eu não quero menos vida.")} <Em>{tx("ju/1b57174dac", "Eu quero mais vida.")}</Em>
-          </Display>
+{rx("ju/r4a519a6ea", "Eu não quero menos vida. <em>Eu quero mais vida.</em>")}
+</Display>
           <Stroke shape="underline" className="mt-2 h-4 w-[min(260px,50%)] sm:ml-[28%]" width={4} />
           <Body className="mt-10 max-w-[620px] text-ink-700">
             <p>
-              {tx("ju/cb40d85596", "Quero construir, aprender, criar e continuar encontrando coisas que me façam mudar de ideia. Quero estar presente na vida enquanto isso acontece.")}</p>
+{rx("ju/r6530d09f2", "Quero construir, aprender, criar e continuar encontrando coisas que me façam mudar de ideia. Quero estar presente na vida enquanto isso acontece.")}
+</p>
           </Body>
           <BarQuote className="mt-12">
-            {tx("ju/589522b975", "Não terminei de me tornar.")}<br />
-            {tx("ju/0ac4e6a799", "Não terminei de construir.")}</BarQuote>
+{rx("ju/r36b524ba1", "Não terminei de me tornar.<br>Não terminei de construir.")}
+</BarQuote>
           <ButtonRow className="mt-12">
             <ButtonLink href="/contato" size="lg">
               {tx("ju/0460b36b28", "Vamos conversar")}</ButtonLink>

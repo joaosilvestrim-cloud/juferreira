@@ -4,10 +4,11 @@ import { useState } from "react";
 import { savePageBlock } from "../../content-actions";
 import { ActionForm, fieldCls, ImageInput } from "../../_ui/form";
 import { LibraryPicker } from "../../_ui/LibraryPicker";
+import { RichLine } from "../../_ui/RichLine";
 
 export type Item = {
   key: string;
-  kind: "text" | "image";
+  kind: "text" | "image" | "rich";
   original: string;
   value: string | null;
   role?: string;
@@ -52,6 +53,17 @@ function TextField({ it }: { it: Item }) {
           Original: <span className="italic">{it.original.length > 160 ? it.original.slice(0, 160) + "…" : it.original}</span>
         </p>
       )}
+    </div>
+  );
+}
+
+/** Frase com destaques: texto livre, com vermelho, itálico, negrito e quebras escolhidos no próprio editor. */
+function RichField({ it }: { it: Item }) {
+  const [changed, setChanged] = useState(it.value !== null);
+  return (
+    <div id={`t-${it.key.split("/")[1]}`} className="scroll-mt-28">
+      <Label role={it.role ?? "Texto"} changed={changed} />
+      <RichLine name={`t:${it.key}`} original={it.original} value={it.value} big={it.role === "Título" || it.role === "Subtítulo"} onDirty={setChanged} />
     </div>
   );
 }
@@ -128,13 +140,17 @@ function ImageField({ it, alt }: { it: Item; alt?: Item }) {
   );
 }
 
-type Row = { type: "text"; it: Item } | { type: "phrase"; parts: Item[] } | { type: "image"; it: Item; alt?: Item };
+type Row = { type: "rich"; it: Item } | { type: "text"; it: Item } | { type: "phrase"; parts: Item[] } | { type: "image"; it: Item; alt?: Item };
 
 function toRows(items: Item[]) {
   const rows: Row[] = [];
   const a11y: Item[] = [];
   for (let i = 0; i < items.length; i++) {
     const it = items[i];
+    if (it.kind === "rich") {
+      rows.push({ type: "rich", it });
+      continue;
+    }
     if (it.kind === "text" && A11Y.test(it.role ?? "")) {
       a11y.push(it);
       continue;
@@ -164,7 +180,9 @@ export function BlockEditor({ items }: { items: Item[] }) {
     <ActionForm action={savePageBlock} submit="Salvar bloco" className="mt-5">
       <div className="space-y-5">
         {rows.map((r) =>
-          r.type === "image" ? (
+          r.type === "rich" ? (
+            <RichField key={r.it.key} it={r.it} />
+          ) : r.type === "image" ? (
             <ImageField key={r.it.key} it={r.it} alt={r.alt} />
           ) : r.type === "phrase" ? (
             <PhraseField key={r.parts[0].key} parts={r.parts} />

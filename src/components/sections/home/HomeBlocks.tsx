@@ -7,11 +7,11 @@ import { ButtonLink, ButtonRow } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { SpiralMark, Stroke } from "@/components/ui/Strokes";
-import { Body, Dash, Display, Em, Lead, Title } from "@/components/ui/Typography";
+import { Body, Dash, Display, Lead, Title } from "@/components/ui/Typography";
 import { NewsletterForm } from "@/components/sections/ideias/NewsletterForm";
 import { CONTACT_ROUTES } from "@/lib/site";
 
-import { tx, img } from "@/lib/editable";
+import { tx, img, rx } from "@/lib/editable";
 /* ───────────────────────── H01 — ABERTURA ───────────────────────── */
 export function HomeHero() {
   return (
@@ -30,13 +30,14 @@ export function HomeHero() {
       <Container className="z-10 flex min-h-[calc(100svh-var(--jf-header-h))] flex-col justify-center py-16 lg:py-24">
         <div className="max-w-[860px]">
           <Display as="h1" size="xl" caps>
-            {tx("home/ab905ce539", "E se pudesse")}<br />
-            {tx("home/dfdcd69d81", "ser")} <Em>{tx("home/0a32d32fae", "diferente?")}</Em>
-          </Display>
+{rx("home/rd0a644100", "E se pudesse<br>ser <em>diferente?</em>")}
+</Display>
           <Lead className="mt-8 max-w-[640px] text-[clamp(26px,2.6vw,42px)]">
-            {tx("home/593da7c513", "Aquilo que existe não esgota aquilo que pode existir.")}</Lead>
+{rx("home/r25ef41727", "Aquilo que existe não esgota aquilo que pode existir.")}
+</Lead>
           <p className="jf-body mt-6 max-w-[560px] text-ink-700">
-            {tx("home/7d832cc350", "Sou Ju Ferreira. Investigo futuros, tecnologia e transformação humana e levo essas perguntas para palestras, organizações e a vida de todos os dias.")}</p>
+{rx("home/re8a621689", "Sou Ju Ferreira. Investigo futuros, tecnologia e transformação humana e levo essas perguntas para palestras, organizações e a vida de todos os dias.")}
+</p>
           <ButtonRow className="mt-10">
             <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg">
               {tx("home/f2419ab417", "Leve a Ju para sua organização")}</ButtonLink>
@@ -59,18 +60,20 @@ export function HomeTensao() {
       <div className="grid lg:grid-cols-[52%_48%]">
         <Container className="relative z-10 py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[720px] lg:pr-6">
           <Display as="h2" caps size="md">
-            {tx("home/91e55a89bd", "O mundo está mudando.")}<br />
-            {tx("home/49c6d000dc", "Mas")} <Em>{tx("home/20d926220a", "mudança")}</Em> {tx("home/2e8aad7bb5", "não é")} <Em>{tx("home/72d1a6e7a0", "direção.")}</Em>
-          </Display>
+{rx("home/r0379d2e7e", "O mundo está mudando.<br>Mas <em>mudança</em> não é <em>direção.</em>")}
+</Display>
           <Body className="mt-10 max-w-[560px] text-cream-50/85">
             <p>
-              {tx("home/9c03dcb25d", "Uma equipe pode adotar IA e continuar premiando os mesmos comportamentos. Uma pessoa pode entregar tudo o que esperam dela e passar meses sem tocar no que deseja construir.")}</p>
-            <p>{tx("home/84619c7c81", "Estamos fazendo mais. A pergunta é para onde isso nos leva.")}</p>
+{rx("home/r4a9e91831", "Uma equipe pode adotar IA e continuar premiando os mesmos comportamentos. Uma pessoa pode entregar tudo o que esperam dela e passar meses sem tocar no que deseja construir.")}
+</p>
+            <p>
+{rx("home/r53df1dd50", "Estamos fazendo mais. A pergunta é para onde isso nos leva.")}
+</p>
           </Body>
           <span className="mt-10 block h-px w-20 bg-red-bright" aria-hidden />
           <Lead as="p" className="mt-8 max-w-[560px] text-[clamp(28px,2.8vw,42px)]">
-            {tx("home/8870d40c81", "O que estamos ajudando a tornar mais provável")} <Em>{tx("home/031c6f3d21", "com aquilo que repetimos hoje?")}</Em>
-          </Lead>
+{rx("home/rda2bb2c41", "O que estamos ajudando a tornar mais provável <em>com aquilo que repetimos hoje?</em>")}
+</Lead>
         </Container>
         <div className="relative min-h-[380px] lg:min-h-full">
           <Photo
@@ -94,12 +97,15 @@ export function HomeFuturos() {
       <Container className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
         <div>
           <Display as="h2" size="lg">
-            {tx("home/6822fca0ab", "Futuros")} <Em italic>{tx("home/f8e735d0f3", "Humanos")}</Em>
-          </Display>
+{rx("home/rc570cc7c1", "Futuros <em><i>Humanos</i></em>")}
+</Display>
           <Body className="mt-8 max-w-[600px] font-serif text-[20px] text-ink-800">
             <p>
-              {tx("home/df4697d6fc", "O futuro mais provável não é o único possível. Entre aquilo que existe e aquilo que ainda pode existir, há espaço para imaginar, escolher, desenvolver capacidades e construir.")}</p>
-            <p>{tx("home/9733976589", "Não controlamos o resultado inteiro. Podemos participar das escolhas e condições que ajudam a produzi-lo.")}</p>
+{rx("home/r9beaf2377", "O futuro mais provável não é o único possível. Entre aquilo que existe e aquilo que ainda pode existir, há espaço para imaginar, escolher, desenvolver capacidades e construir.")}
+</p>
+            <p>
+{rx("home/r6f9d35cc1", "Não controlamos o resultado inteiro. Podemos participar das escolhas e condições que ajudam a produzi-lo.")}
+</p>
           </Body>
           <ButtonLink href="/futuros-humanos" className="mt-10">
             {tx("home/e708254df4", "Explore essa visão")}</ButtonLink>
@@ -118,7 +124,8 @@ export function HomeFuturos() {
               ))}
             </p>
             <p className="mt-4 font-serif text-[20px] leading-snug text-ink-800">
-              {tx("home/946548222a", "O mundo responde. A gente aprende. E volta à pergunta de outro lugar.")}</p>
+{rx("home/r35b06d8d4", "O mundo responde. A gente aprende. E volta à pergunta de outro lugar.")}
+</p>
           </figcaption>
         </figure>
       </Container>
@@ -135,12 +142,15 @@ export async function HomeJu() {
       <div className="grid lg:grid-cols-[56%_44%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[780px] lg:pr-12">
           <Display as="h2" size="lg">
-            {tx("home/3b38bc492c", "Essa pergunta também atravessa")} <Em>{tx("home/139fef76a9", "a minha vida.")}</Em>
-          </Display>
+{rx("home/re17cc00fb", "Essa pergunta também atravessa <em>a minha vida.</em>")}
+</Display>
           <Body className="mt-8 max-w-[620px] text-ink-700">
             <p>
-              {tx("home/d9fe9035ca", "Sou engenheira, trabalhei com tecnologia, liderei e construí empresas. Acertei, errei e precisei mudar de direção. A maternidade ampliou a pergunta: o futuro passou a ser também o mundo onde minhas filhas vão viver.")}</p>
-            <p>{tx("home/c91e0b08d5", "Continuo trabalhando, construindo e tentando fazer essas ideias sobreviverem a uma terça-feira qualquer.")}</p>
+{rx("home/r7b6b3796c", "Sou engenheira, trabalhei com tecnologia, liderei e construí empresas. Acertei, errei e precisei mudar de direção. A maternidade ampliou a pergunta: o futuro passou a ser também o mundo onde minhas filhas vão viver.")}
+</p>
+            <p>
+{rx("home/re42ed5dca", "Continuo trabalhando, construindo e tentando fazer essas ideias sobreviverem a uma terça-feira qualquer.")}
+</p>
           </Body>
           <ButtonLink href="/ju" className="mt-10">
             {tx("home/d4cfc4e8d1", "Conheça minha trajetória")}</ButtonLink>
@@ -177,11 +187,12 @@ export function HomeOrganizacoes() {
       <div className="grid lg:grid-cols-[58%_42%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[820px] lg:pr-12">
           <Display as="h2" size="lg">
-            {tx("home/42474c0a5e", "Algumas perguntas precisam")} <Em>{tx("home/e2fde2d915", "entrar na sala.")}</Em>
-          </Display>
+{rx("home/r13dc9e947", "Algumas perguntas precisam <em>entrar na sala.</em>")}
+</Display>
           <Body className="mt-8 max-w-[620px] text-ink-700">
             <p>
-              {tx("home/b169df3e2d", "Levo essa conversa para eventos, lideranças e equipes que estão decidindo como trabalhar, usar tecnologia e construir o que vem depois.")}</p>
+{rx("home/r91c7bb2b3", "Levo essa conversa para eventos, lideranças e equipes que estão decidindo como trabalhar, usar tecnologia e construir o que vem depois.")}
+</p>
           </Body>
           <ul className="mt-12 grid gap-10 sm:grid-cols-3 sm:gap-8">
             {formats.map((f) => (
@@ -229,11 +240,15 @@ export function HomePessoas() {
         </div>
         <Container className="flex flex-col justify-center py-[var(--jf-section-y)] lg:ml-0 lg:max-w-[820px] lg:pl-14">
           <Display as="h2" size="lg">
-            {tx("home/a545e45982", "E se essa conversa for sobre a")} <Em>{tx("home/6368c874aa", "sua própria vida?")}</Em>
-          </Display>
+{rx("home/r8afbb6b73", "E se essa conversa for sobre a <em>sua própria vida?</em>")}
+</Display>
           <Body className="mt-8 max-w-[600px] text-ink-700">
-            <p>{tx("home/638635c549", "Há coisas que continuamos fazendo porque importam. Outras permanecem porque ainda não as revimos ou não encontramos condições para mudar.")}</p>
-            <p>{tx("home/d0e2dd2fad", "Você pode começar por uma pergunta, uma leitura ou uma prática que caiba na vida de hoje.")}</p>
+            <p>
+{rx("home/ra148b7294", "Há coisas que continuamos fazendo porque importam. Outras permanecem porque ainda não as revimos ou não encontramos condições para mudar.")}
+</p>
+            <p>
+{rx("home/r51cddc061", "Você pode começar por uma pergunta, uma leitura ou uma prática que caiba na vida de hoje.")}
+</p>
           </Body>
           <ButtonLink href="/pessoas" size="lg" className="mt-10 w-fit">
             {tx("home/5e8fa15e6a", "Encontre um começo")}</ButtonLink>
@@ -251,8 +266,8 @@ export async function HomeIdeias() {
     <Section label={tx("home/5fd98951f5", "Ideias")}>
       <Container>
         <Display as="h2" size="lg">
-          {tx("home/01f4d8efe0", "Para continuar")} <Em>{tx("home/5226557e3d", "pensando.")}</Em>
-        </Display>
+{rx("home/rc432e673d", "Para continuar <em>pensando.</em>")}
+</Display>
         <div className={`mt-12 grid gap-14 ${published.length ? "lg:grid-cols-[1.45fr_1fr] lg:gap-0 lg:divide-x lg:divide-ink-900/15" : "lg:grid-cols-[1fr_1fr] lg:items-center"}`}>
           {published.length > 0 ? (
             <div className="lg:pr-12">
@@ -265,7 +280,9 @@ export async function HomeIdeias() {
                           <Image src={a.cover} alt="" fill sizes="(min-width:640px) 20vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" style={{ objectPosition: photoPosition(a.cover) }} />
                         </div>
                       )}
-                      <p className="jf-eyebrow mt-4 text-[11px] text-ink-500">{tx("home/2367978c74", "Ensaio")}</p>
+                      <p className="jf-eyebrow mt-4 text-[11px] text-ink-500">
+{rx("home/r747726545", "Ensaio")}
+</p>
                       <p className="mt-2 font-serif text-[21px] leading-snug group-hover:text-red-brand">{a.title}</p>
                       {a.excerpt && <p className="mt-2 line-clamp-3 text-[15px] text-ink-700">{a.excerpt}</p>}
                     </Link>
@@ -288,9 +305,11 @@ export async function HomeIdeias() {
           <div id="newsletter" className={published.length ? "lg:pl-12" : "lg:pl-4"}>
             <Dash />
             <Title as="h3" className="mt-3 text-[30px] uppercase">
-              {tx("home/ee1adfd09e", "Uma Terça-feira Qualquer")}</Title>
+{rx("home/r5792e4119", "Uma Terça-feira Qualquer")}
+</Title>
             <p className="mt-3 max-w-[480px] text-ink-700">
-              {tx("home/a70b13d59e", "Uma carta por semana sobre futuros, tecnologia e aquilo que estamos construindo enquanto damos conta da vida.")}</p>
+{rx("home/r0b0b9be5a", "Uma carta por semana sobre futuros, tecnologia e aquilo que estamos construindo enquanto damos conta da vida.")}
+</p>
             <NewsletterForm className="mt-6 max-w-[480px]" source="home" />
           </div>
         </div>
@@ -308,9 +327,11 @@ export function HomeEncerramento() {
       </div>
       <Container className="relative">
         <Display as="h2" size="xl" className="max-w-[900px]">
-          {tx("home/130bf9e337", "Temos futuros para")} <Em>{tx("home/9d01ec24ee", "construir.")}</Em>
-        </Display>
-        <p className="jf-lead mt-10 max-w-[620px] text-cream-50/95">{tx("home/029320a323", "Qual conversa merece começar agora?")}</p>
+{rx("home/rbd31190e6", "Temos futuros para <em>construir.</em>")}
+</Display>
+        <p className="jf-lead mt-10 max-w-[620px] text-cream-50/95">
+{rx("home/r4e4beec65", "Qual conversa merece começar agora?")}
+</p>
         <ButtonLink href="/contato" size="lg" className="mt-10">
           {tx("home/99d76e1c3f", "Vamos conversar")}</ButtonLink>
       </Container>

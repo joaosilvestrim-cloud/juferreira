@@ -2,10 +2,10 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
-import { Body, Display, Em, QuoteCard } from "@/components/ui/Typography";
+import { Body, Display, QuoteCard } from "@/components/ui/Typography";
 import { IconBubble, type IconName } from "./Icons";
 
-import { tx, img } from "@/lib/editable";
+import { tx, img, rx } from "@/lib/editable";
 
 /* ───────────────────────── P04 — CONTEXTO ───────────────────────── */
 export function PalestrasContexto() {
@@ -27,10 +27,8 @@ export function PalestrasContexto() {
       <Container className="grid gap-14 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-16">
         <div>
           <Display size="lg">
-            {tx("palestras-workshops/8821167a26", "A tese dá direção.")}
-            <br />
-            <Em>{tx("palestras-workshops/4b9cc7d2bf", "O contexto define a conversa.")}</Em>
-          </Display>
+{rx("palestras-workshops/r23bf7f8a8", "A tese dá direção.<br><em>O contexto define a conversa.</em>")}
+</Display>
           <ul className="mt-10 grid gap-5 sm:grid-cols-2">
             {tensions.map((t) => (
               <li key={t.t} className="rounded-[var(--jf-radius-sm)] bg-cream-50 p-6 shadow-[0_10px_30px_-22px_rgba(24,20,17,.5)]">
@@ -41,14 +39,13 @@ export function PalestrasContexto() {
             ))}
           </ul>
           <Body className="mt-8 max-w-[600px] text-ink-700">
-            <p>{tx("palestras-workshops/96ddcb6e13", "Essas tensões orientam exemplos e ênfases da conversa, conforme o público e o momento.")}</p>
+            <p>
+{rx("palestras-workshops/rfbe7a1a6c", "Essas tensões orientam exemplos e ênfases da conversa, conforme o público e o momento.")}
+</p>
           </Body>
           <QuoteCard className="mt-10 max-w-[640px]">
-            {tx(
-              "palestras-workshops/2607f653d1",
-              "Customizar não é trocar o logo na apresentação. É compreender por que essa conversa precisa acontecer para aquelas pessoas, naquele momento.",
-            )}
-          </QuoteCard>
+{rx("palestras-workshops/r9af65e138", "Customizar não é trocar o logo na apresentação. É compreender por que essa conversa precisa acontecer para aquelas pessoas, naquele momento.")}
+</QuoteCard>
         </div>
         <div className="relative mx-auto aspect-square w-full max-w-[480px]">
           <Photo
@@ -72,14 +69,15 @@ export function PalestrasAprofundamento() {
       <div className="grid lg:grid-cols-[56%_44%]">
         <Container className="py-[var(--jf-section-y)] lg:ml-auto lg:mr-0 lg:max-w-[780px] lg:pr-12">
           <Display size="lg">
-            {tx("palestras-workshops/eb464ab9e2", "Quando a pergunta pede")} <Em>{tx("palestras-workshops/92e60f9ff1", "trabalho conjunto.")}</Em>
-          </Display>
+{rx("palestras-workshops/r1fcae91b1", "Quando a pergunta pede <em>trabalho conjunto.</em>")}
+</Display>
           <p className="mt-8 max-w-[560px] font-serif text-[clamp(22px,2vw,28px)] leading-snug">
-            {tx("palestras-workshops/e35c70f85d", "Às vezes, a palestra abre uma conversa")} <Em>{tx("palestras-workshops/59a9a297c4", "que pede continuidade.")}</Em>
-          </p>
+{rx("palestras-workshops/r1d08ee1ea", "Às vezes, a palestra abre uma conversa <em>que pede continuidade.</em>")}
+</p>
           <Body className="mt-6 max-w-[600px] text-ink-700">
             <p>
-              {tx("palestras-workshops/e1159b17c7", "Em workshops, o grupo examina uma questão e desenha movimentos possíveis. Eles podem acontecer de forma independente ou depois da palestra.")}</p>
+{rx("palestras-workshops/re090b5e25", "Em workshops, o grupo examina uma questão e desenha movimentos possíveis. Eles podem acontecer de forma independente ou depois da palestra.")}
+</p>
           </Body>
           <ButtonLink href="/organizacoes" variant="secondary" className="mt-10">
             {tx("palestras-workshops/c3db2bb8b7", "Veja o trabalho com organizações")}</ButtonLink>

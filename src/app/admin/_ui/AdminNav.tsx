@@ -70,7 +70,7 @@ export function AdminNav() {
   return (
     <aside className="sticky top-0 z-40 bg-ink-900 text-cream-50 lg:h-dvh lg:w-64 lg:shrink-0">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-3 px-5 pb-2 pt-3 lg:h-full lg:flex-col lg:flex-nowrap lg:items-stretch lg:gap-0 lg:px-4 lg:py-6">
-        <Link href="/admin" className="mr-auto flex items-center gap-3 lg:mr-0 lg:px-2">
+        <Link href="/admin" prefetch={false} className="mr-auto flex items-center gap-3 lg:mr-0 lg:px-2">
           <Image src="/brand/logo-ju-ferreira-light.svg" alt="Ju Ferreira" width={1040} height={720} unoptimized className="h-9 w-auto" />
           <span className="border-l border-cream-50/20 pl-3 text-[12px] uppercase tracking-[0.2em] text-cream-50/70">Painel</span>
         </Link>
@@ -88,6 +88,7 @@ export function AdminNav() {
                   <Link
                     key={i.href}
                     href={i.href}
+                    prefetch={false} // telas do painel leem o banco: carregar só ao clicar
                     aria-current={on ? "page" : undefined}
                     className={`flex items-center gap-3 whitespace-nowrap rounded-lg px-3 py-2.5 text-[14px] transition-colors ${
                       on ? "bg-red-brand font-medium text-cream-50" : "text-cream-50/75 hover:bg-cream-50/10 hover:text-cream-50"
@@ -106,6 +107,7 @@ export function AdminNav() {
           <Link
             href="/"
             target="_blank"
+            prefetch={false}
             className="flex items-center gap-3 rounded-lg px-3 py-2 text-[14px] text-cream-50/75 hover:bg-cream-50/10 hover:text-cream-50"
           >
             <Icon name="out" />
