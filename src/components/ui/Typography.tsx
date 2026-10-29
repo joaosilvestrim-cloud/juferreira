@@ -83,7 +83,7 @@ export function StickyNote({
 }) {
   return (
     <div
-      className={`relative w-fit ${size === "sm" ? "max-w-[210px] px-4 pb-3 pt-5" : "max-w-[280px] px-6 pb-5 pt-7"} shadow-[0_8px_24px_-12px_rgba(24,20,17,0.35)] ${
+      className={`${/\babsolute\b/.test(className) ? "" : "relative"} w-fit ${size === "sm" ? "max-w-[210px] px-4 pb-3 pt-5" : "max-w-[280px] px-6 pb-5 pt-7"} shadow-[0_8px_24px_-12px_rgba(24,20,17,0.35)] ${
         tone === "blush" ? "bg-blush-100" : "bg-cream-50"
       } ${className}`}
       style={{ transform: `rotate(${rotate}deg)` }}
