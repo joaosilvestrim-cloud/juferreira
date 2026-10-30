@@ -16,7 +16,7 @@ const EXCLUDED_PROPS = new Set([
   "id", "key", "href", "slug", "icon", "className", "imgClassName", "c", "cls", "pos", "tone", "variant", "size",
   "shape", "kind", "type", "status", "rota", "route", "value", "anchor", "as", "color", "sizes", "rel", "target",
   "territorio", "territorios", "name", "rotate", "side", "align", "layout", "accent", "assunto", "for", "htmlFor",
-  "autoComplete", "inputMode", "pattern", "mode", "form", "role", "group",
+  "autoComplete", "inputMode", "pattern", "mode", "form", "role", "group", "timeZone", "clipPath",
 ]);
 const JSX_TEXT_ATTRS = new Set(["alt", "placeholder", "title", "label", "hint", "caption", "aria-label", "question", "text", "cta", "lead"]);
 const JSX_IMG_ATTRS = new Set(["src", "img", "image", "poster"]);
@@ -29,6 +29,8 @@ function isProse(s) {
   // classes Tailwind / tokens CSS
   if (/^[a-z0-9\-:\[\]\/%._#()!>&,*~+=]+( [a-z0-9\-:\[\]\/%._#()!>&,*~+=]+)*$/.test(s) && /[-:\[]/.test(s)) return false;
   if (/^var\(|^\d+(px|%|rem|vw|vh)/.test(s)) return false;
+  if (/^(polygon|inset|circle|ellipse|url|rgba?|hsla?|calc|linear-gradient|radial-gradient)\(/.test(s)) return false; // valores de CSS
+  if (/^[A-Z][a-z]+\/[A-Za-z_]+$/.test(s)) return false; // fuso horário (America/Sao_Paulo)
   return true;
 }
 
@@ -94,7 +96,8 @@ for (const file of walk(SECTIONS)) {
     while (n && !ts.isSourceFile(n)) {
       if (ts.isJsxAttribute(n)) return { role: PROP_ROLE[n.name.getText()] ?? "Texto", group: null, em };
       if (ts.isPropertyAssignment(n) && n.name && (ts.isIdentifier(n.name) || ts.isStringLiteral(n.name)) && !ts.isJsxExpression(n.parent)) {
-        const r = PROP_ROLE[n.name.text];
+        // em listas de dados, "label" é o texto de um botão (no JSX, label= é o nome do bloco para leitores de tela)
+        const r = n.name.text === "label" ? "Botão ou link" : PROP_ROLE[n.name.text];
         if (r) return { role: r, group: null, em };
       }
       if (ts.isJsxElement(n) || ts.isJsxSelfClosingElement(n)) {
@@ -225,7 +228,9 @@ const pages = [...new Set(registry.map((r) => r.page))];
 for (const page of pages) {
   const pf = PAGE_FILE[page] ?? `src/app/${page}/page.tsx`;
   const pageSrc = readFileSync(join(ROOT, pf), "utf8");
-  const sections = [...pageSrc.matchAll(/<([A-Z][A-Za-z0-9]+)\s*\/>/g)].map((m) => m[1]);
+  // blocos na ordem em que a página os usa (com ou sem propriedades: <Bloco /> ou <Bloco dados={…} />)
+  const body = pageSrc.slice(pageSrc.indexOf("export default")); // só o corpo da página (não tipos como Promise<Metadata>)
+  const sections = [...new Set([...body.matchAll(/<([A-Z][A-Za-z0-9]+)(?=[\s/>])/g)].map((m) => m[1]))];
   const files = [...new Set(registry.filter((r) => r.page === page).map((r) => r.file))];
   const findSection = (block, seen = new Set()) => {
     if (sections.includes(block)) return block;

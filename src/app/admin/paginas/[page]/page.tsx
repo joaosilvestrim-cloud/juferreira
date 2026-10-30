@@ -3,6 +3,7 @@ import { requireAdminPage } from "@/lib/admin-guard";
 import { db } from "@/lib/db";
 import { PAGES, REGISTRY, sectionLabel } from "@/lib/page-registry";
 import { richToPlain } from "@/lib/rich-inline";
+import { blockConditions } from "@/lib/conditional-blocks";
 import { restoreHistory, toggleBlock } from "../../more-actions";
 import { BlockEditor } from "./BlockEditor";
 import { AdminButton, PageHeader } from "../../_ui/PageHeader";
@@ -19,6 +20,7 @@ export default async function PageEditor({ params }: { params: Promise<{ page: s
   );
   const ov = Object.fromEntries(rows.map((r) => [r.key, r.value]));
   const sectionNames = [...new Set(items.map((i) => i.section))];
+  const conditions = await blockConditions(page);
   const { rows: hiddenRows } = await db.query<{ key: string }>("select key from public.content_overrides where key = any($1)", [
     sectionNames.map((s) => `hide:${s}`),
   ]);
@@ -73,7 +75,7 @@ export default async function PageEditor({ params }: { params: Promise<{ page: s
                 {sectionLabel(s, o)}
                 {hidden.has(s) && <span className="ml-3 rounded-full bg-ink-900 px-2.5 py-0.5 align-middle font-sans text-[12px] text-cream-50">Oculto no site</span>}
               </h2>
-              <form action={toggleBlock}>
+              {s !== "Outros" && <form action={toggleBlock}>
                 <input type="hidden" name="section" value={s} />
                 <input type="hidden" name="hide" value={hidden.has(s) ? "0" : "1"} />
                 <button
@@ -83,8 +85,26 @@ export default async function PageEditor({ params }: { params: Promise<{ page: s
                 >
                   {hidden.has(s) ? "Mostrar no site" : "Ocultar este bloco"}
                 </button>
-              </form>
+              </form>}
             </div>
+            {conditions[s] && (
+              <div className={`mt-4 flex flex-wrap items-start gap-3 rounded-[10px] border px-4 py-3 text-[14px] ${conditions[s].showing ? "border-ink-900/10 bg-cream-100" : "border-amber-300 bg-amber-50"}`}>
+                <span aria-hidden className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[12px] ${conditions[s].showing ? "bg-green-700 text-cream-50" : "bg-amber-500 text-cream-50"}`}>
+                  {conditions[s].showing ? "✓" : "!"}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="text-ink-800">{conditions[s].note}</p>
+                  <p className="mt-0.5 text-[13px] text-ink-500">
+                    Agora: <strong className="font-medium text-ink-800">{conditions[s].now}</strong>.
+                  </p>
+                </div>
+                {conditions[s].fix && (
+                  <AdminButton href={conditions[s].fix!.href} variant="secondary">
+                    {conditions[s].fix!.label}
+                  </AdminButton>
+                )}
+              </div>
+            )}
             <BlockEditor
               items={items
                 .filter((i) => i.section === s)

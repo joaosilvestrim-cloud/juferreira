@@ -48,6 +48,8 @@ export function sectionLabel(section: string, order: number) {
     .replace(/Organizacoes/, "Organizações")
     .replace(/Tensoes/, "Tensões")
     .replace(/Trajetoria/, "Trajetória")
+    .replace(/Terca/, "Terça")
+    .replace(/Midia/, "Mídia")
     .replace(/Ouca ?Veja/, "Ouça e veja")
     .replace(/Como ?Comeca/, "Como começa")
     .replace(/Situacoes/, "Situações")
@@ -55,5 +57,5 @@ export function sectionLabel(section: string, order: number) {
     .replace(/Experiencias?/, (m) => m.replace("Experiencia", "Experiência"))
     .replace(/Conversa/, "Conversa")
     .trim();
-  return order < 999 ? `Bloco ${order + 1} · ${name || "Abertura"}` : "Outros";
+  return order < 999 ? `Bloco ${order + 1} · ${name || "Abertura"}` : "Textos auxiliares";
 }

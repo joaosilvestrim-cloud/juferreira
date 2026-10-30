@@ -66,7 +66,7 @@ export function IdeiasHero({ hasArticles }: { hasArticles: boolean }) {
 }
 
 /* ───────────────────────── I02 — ACERVO ───────────────────────── */
-const dateFmt = lazy(() => (new Intl.DateTimeFormat("pt-BR", { day: "numeric", month: "long", year: "numeric", timeZone: tx("ideias/ed867c7422", "America/Sao_Paulo") })));
+const dateFmt = lazy(() => (new Intl.DateTimeFormat("pt-BR", { day: "numeric", month: "long", year: "numeric", timeZone: "America/Sao_Paulo" })));
 
 function toItem(a: Article): AcervoItem {
   const cats = TERRITORIO_ORDER.filter((t) => a.territories.includes(t)).map((t: TerritorioId) => ({ id: t, name: TERRITORIO_NAME[t] }));
