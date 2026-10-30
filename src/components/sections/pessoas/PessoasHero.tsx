@@ -46,7 +46,8 @@ export function PessoasHero() {
 
           <ButtonRow className="mt-10">
             <ButtonLink href={PESSOAS_ANCHORS.pergunta} size="lg">
-              {tx("pessoas/13894d9153", "Comece por uma pergunta")}</ButtonLink>
+{rx("pessoas/r3b0525c8e", "Comece por uma pergunta")}
+</ButtonLink>
           </ButtonRow>
         </div>
       </Container>

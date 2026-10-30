@@ -1,3 +1,4 @@
+import { rich } from "@/lib/editable";
 import type { ReactNode } from "react";
 import { EPISTEMIC, EPISTEMIC_ORDER, type Epistemic } from "./data";
 
@@ -26,7 +27,7 @@ export function EpistemicTag({ kind, className = "" }: { kind: Epistemic; classN
     <span
       className={`inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] ${tagTone[kind]} ${className}`}
     >
-      [{EPISTEMIC[kind].label}]
+      [{rich(EPISTEMIC[kind].label)}]
     </span>
   );
 }
@@ -40,7 +41,7 @@ export function EpistemicLegend({ className = "", compact = false }: { className
           <dt>
             <EpistemicTag kind={k} />
           </dt>
-          <dd className="mt-3 text-[14px] leading-snug text-ink-700">{EPISTEMIC[k].desc}</dd>
+          <dd className="mt-3 text-[14px] leading-snug text-ink-700">{rich(EPISTEMIC[k].desc)}</dd>
         </div>
       ))}
     </dl>
@@ -51,7 +52,7 @@ export function EpistemicLegend({ className = "", compact = false }: { className
 export function QBox({ children, lead, className = "" }: { children: ReactNode; lead?: string; className?: string }) {
   return (
     <div className={`rounded-[var(--jf-radius-sm)] bg-blush-100/70 px-5 py-4 ${className}`}>
-      {lead && <p className="jf-eyebrow mb-2 text-[10px] text-ink-500">{lead}</p>}
+      {lead && <p className="jf-eyebrow mb-2 text-[10px] text-ink-500">{rich(lead)}</p>}
       <p className="font-serif text-[19px] leading-snug text-ink-900">{children}</p>
     </div>
   );

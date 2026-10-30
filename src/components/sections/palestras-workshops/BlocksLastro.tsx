@@ -7,7 +7,7 @@ import { Stroke } from "@/components/ui/Strokes";
 import { Body, Display, NumberBadge, QuoteCard } from "@/components/ui/Typography";
 import { CONTACT_ROUTES } from "@/lib/site";
 
-import { tx, img, rx } from "@/lib/editable";
+import { tx, img, rx, rich } from "@/lib/editable";
 
 export const OUCA_ANCHOR = "#ouca-e-veja";
 
@@ -62,7 +62,7 @@ export async function PalestrasOucaVeja() {
           <ul className="mt-12 grid gap-5 md:grid-cols-3">
             {testimonials.map((t) => (
               <li key={t.id}>
-                <QuoteCard cite={[t.title, t.role].filter(Boolean).join(" · ")}>{t.quote}</QuoteCard>
+                <QuoteCard cite={[t.title, t.role].filter(Boolean).join(" · ")}>{rich(t.quote)}</QuoteCard>
               </li>
             ))}
           </ul>
@@ -75,13 +75,13 @@ export async function PalestrasOucaVeja() {
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={o.image} alt={o.title ?? ""} className="h-10 w-auto max-w-[160px] object-contain opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0" />
               ) : (
-                <span className="text-[15px] font-medium uppercase tracking-[0.14em]">{o.title}</span>
+                <span className="text-[15px] font-medium uppercase tracking-[0.14em]">{rich(o.title)}</span>
               );
               return (
                 <li key={o.id}>
                   {o.url ? (
                     <a href={o.url} target="_blank" rel="noopener noreferrer">
-                      {inner}
+                      {rich(inner)}
                     </a>
                   ) : (
                     inner
@@ -114,9 +114,9 @@ export function PalestrasComoComeca() {
             <li key={s.t} className="border-t border-ink-900/15 pt-6">
               <div className="flex items-center gap-4">
                 <NumberBadge n={i + 1} className="shrink-0 bg-cream-50" />
-                <h3 className="font-serif text-[clamp(22px,2vw,28px)] leading-tight">{s.t}</h3>
+                <h3 className="font-serif text-[clamp(22px,2vw,28px)] leading-tight">{rich(s.t)}</h3>
               </div>
-              <p className="mt-4 text-[16px] leading-relaxed text-ink-700">{s.d}</p>
+              <p className="mt-4 text-[16px] leading-relaxed text-ink-700">{rich(s.d)}</p>
             </li>
           ))}
         </ol>
@@ -153,7 +153,8 @@ export async function PalestrasContratacao() {
 </p>
           </Body>
           <ButtonLink href={CONTACT_ROUTES.palestras} size="lg" className="mt-10">
-            {tx("palestras-workshops/84027745a8", "Falar sobre uma palestra")}</ButtonLink>
+{rx("palestras-workshops/r588486d85", "Falar sobre uma palestra")}
+</ButtonLink>
           {hasDirect && (
             <div className="mt-12 border-t border-cream-50/20 pt-8 text-[15px]">
               <p className="font-semibold">
@@ -163,15 +164,15 @@ export async function PalestrasContratacao() {
                 {EXTERNAL.email && (
                   <li>
                     <a href={`mailto:${EXTERNAL.email}`} className="text-red-bright underline underline-offset-4">
-                      {EXTERNAL.email}
+                      {rich(EXTERNAL.email)}
                     </a>
                   </li>
                 )}
                 {EXTERNAL.whatsapp && (
                   <li>
                     <a href={EXTERNAL.whatsapp} className="text-red-bright underline underline-offset-4">
-                      {tx("palestras-workshops/280964141c", "WhatsApp comercial")}
-                    </a>
+{rx("palestras-workshops/r415dc7d14", "WhatsApp comercial")}
+</a>
                   </li>
                 )}
               </ul>

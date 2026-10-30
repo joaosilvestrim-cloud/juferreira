@@ -63,12 +63,16 @@ try {
   await page.waitForURL(/\/admin\/artigos\/\d+/, { timeout: 20000 }).catch(async () => {
     console.log("  não salvou; mensagens:", await page.locator("[role=alert],[role=status]").allTextContents(), page.url());
   });
+  await page.getByRole("heading", { name: "Editar artigo" }).waitFor({ timeout: 20000 }).catch(() => {}); // tela do artigo carregada
   const slug = await page.locator('input[name="slug"]').first().inputValue();
   const id = page.url().match(/artigos\/(\d+)/)?.[1];
+  if (!slug || !id) console.log("  depois de salvar:", page.url(), "| slug:", JSON.stringify(slug), "| mensagens:", await page.locator("[role=alert],[role=status]").allTextContents());
   check(Boolean(slug && id), `artigo salvo e publicado (/ideias/${slug})`);
 
   // site
   await page.goto(`${B}/ideias/${slug}`, { waitUntil: "networkidle" });
+  if (!(await page.locator(".jf-article").count()))
+    console.log("  página do artigo sem conteúdo:", await page.title(), "|", (await page.evaluate(() => document.body.innerText)).slice(0, 300).replace(/\s+/g, " "));
   const r = await page.evaluate(() => {
     const art = document.querySelector(".jf-article");
     const cs = (sel, prop) => {

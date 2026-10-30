@@ -8,7 +8,7 @@ import { getExternal, getMediaFor } from "@/lib/content";
 import { MediaPlayer } from "@/components/ui/MediaPlayer";
 import { CONTACT_ROUTES, LINKS } from "@/lib/site";
 
-import { tx, img, rx } from "@/lib/editable";
+import { tx, img, rx, rich } from "@/lib/editable";
 /** Linha vertical vermelha + frase de fechamento (padrão de citação dos mockups). */
 function BarQuote({ children, className = "", dark = false }: { children: ReactNode; className?: string; dark?: boolean }) {
   return (
@@ -219,7 +219,8 @@ export function JuFuturos() {
 {rx("ju/rffe84d31d", "Eu estudo futuros porque me interesso profundamente por <em>pessoas.</em>")}
 </BarQuote>
           <ButtonLink href="/futuros-humanos" className="mt-10">
-            {tx("ju/73150f043f", "Conheça Futuros Humanos")}</ButtonLink>
+{rx("ju/r4e312de6a", "Conheça Futuros Humanos")}
+</ButtonLink>
         </div>
         <div className="relative aspect-[4/4.2] w-full">
           <Photo
@@ -289,13 +290,13 @@ export async function JuHoje() {
             <li key={f.key}>
               <PaperCard className={i % 2 ? "md:rotate-[0.4deg]" : "md:-rotate-[0.4deg]"}>
                 <Title as="h3" className="text-[clamp(24px,1.9vw,30px)] uppercase leading-[1.05]">
-                  {f.name}
+                  {rich(f.name)}
                 </Title>
                 <Dash className="mt-3" />
-                <p className="mt-4 flex-1 text-[15px] leading-relaxed text-ink-700">{f.body}</p>
+                <p className="mt-4 flex-1 text-[15px] leading-relaxed text-ink-700">{rich(f.body)}</p>
                 {f.cta && (
                   <ButtonLink href={f.cta.href} variant="secondary" size="sm" className="mt-6 self-start">
-                    {f.cta.label}
+                    {rich(f.cta.label)}
                   </ButtonLink>
                 )}
               </PaperCard>
@@ -349,7 +350,8 @@ export function JuEncerramento() {
 </BarQuote>
           <ButtonRow className="mt-12">
             <ButtonLink href="/contato" size="lg">
-              {tx("ju/0460b36b28", "Vamos conversar")}</ButtonLink>
+{rx("ju/r5757445fe", "Vamos conversar")}
+</ButtonLink>
           </ButtonRow>
         </Container>
         <div className="relative min-h-[480px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">

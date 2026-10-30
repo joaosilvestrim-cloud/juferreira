@@ -7,7 +7,7 @@ import { Body, Display, Eyebrow, Lead } from "@/components/ui/Typography";
 import { CONTACT_ROUTES } from "@/lib/site";
 import { OUCA_ANCHOR } from "./BlocksLastro";
 
-import { tx, img, rx } from "@/lib/editable";
+import { tx, img, rx, rich } from "@/lib/editable";
 
 /* ───────────────────────── P01 — ABERTURA ───────────────────────── */
 export async function PalestrasHero() {
@@ -33,14 +33,16 @@ export async function PalestrasHero() {
 </p>
             <ButtonRow className="mt-10">
               <ButtonLink href={CONTACT_ROUTES.palestras} size="lg">
-                {tx("palestras-workshops/13e625b780", "Conversar sobre meu evento")}</ButtonLink>
+{rx("palestras-workshops/r468898265", "Conversar sobre meu evento")}
+</ButtonLink>
               {hasVideo ? (
                 <ButtonLink href={OUCA_ANCHOR} variant="secondary" size="lg">
-                  {tx("palestras-workshops/b6cc4965d7", "Ouça e veja a Ju")}</ButtonLink>
+{rx("palestras-workshops/r0fb7b2fa7", "Ouça e veja a Ju")}
+</ButtonLink>
               ) : (
                 <ButtonLink href="/futuros-humanos" variant="secondary" size="lg">
-                  {tx("palestras-workshops/a348f8d164", "Conheça Futuros Humanos")}
-                </ButtonLink>
+{rx("palestras-workshops/r884900a46", "Conheça Futuros Humanos")}
+</ButtonLink>
               )}
             </ButtonRow>
           </div>
@@ -93,7 +95,7 @@ export function PalestrasExperiencia() {
                 <span className="jf-display text-[22px] leading-none text-red-bright" aria-hidden>
                   {i + 1}
                 </span>
-                <p className="font-serif text-[clamp(20px,1.8vw,26px)] leading-snug text-cream-50">{q}</p>
+                <p className="font-serif text-[clamp(20px,1.8vw,26px)] leading-snug text-cream-50">{rich(q)}</p>
               </li>
             ))}
           </ol>
@@ -101,7 +103,8 @@ export function PalestrasExperiencia() {
 {rx("palestras-workshops/r35be0cfd6", "No caminho, a conversa passa por imaginar, escolher, tornar-se e construir. Não como etapas a cumprir: depois de construir, a pergunta volta, mas de outro lugar.")}
 </p>
           <ButtonLink href="/futuros-humanos" variant="ghost-light" className="mt-6">
-            {tx("palestras-workshops/fccb7ca923", "Conheça a tese em profundidade")}</ButtonLink>
+{rx("palestras-workshops/r3df85b69d", "Conheça a tese em profundidade")}
+</ButtonLink>
         </Container>
         <div className="relative min-h-[380px]">
           <Photo
@@ -128,7 +131,7 @@ export function PalestrasExperiencia() {
               {contexts.map((c) => (
                 <li key={c} className="flex gap-3 text-[17px] font-medium leading-snug text-cream-50">
                   <span className="mt-[0.7em] h-px w-4 shrink-0 bg-red-bright" aria-hidden />
-                  {c}
+                  {rich(c)}
                 </li>
               ))}
             </ul>

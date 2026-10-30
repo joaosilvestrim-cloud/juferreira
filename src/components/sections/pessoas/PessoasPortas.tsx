@@ -4,7 +4,7 @@ import { Container, Section } from "@/components/ui/Section";
 import { Display } from "@/components/ui/Typography";
 import { CONTACT_ROUTES, LINKS } from "@/lib/site";
 
-import { tx, lazy, rx } from "@/lib/editable";
+import { tx, lazy, rx, rich } from "@/lib/editable";
 
 type Door = {
   k: string;
@@ -56,19 +56,19 @@ export function PessoasPortas() {
         <ul className="mt-12 grid gap-5 md:grid-cols-3">
           {DOORS.map((d) => (
             <li key={d.t} className="flex flex-col rounded-[var(--jf-radius-sm)] border border-ink-900/15 bg-cream-50 p-6 lg:p-7">
-              <p className="jf-eyebrow text-[11px] text-ink-500">{d.k}</p>
-              <h3 className="jf-display mt-4 text-[clamp(28px,2.3vw,34px)]">{d.t}</h3>
-              <p className="mt-3 text-[15.5px] leading-relaxed text-ink-700">{d.d}</p>
+              <p className="jf-eyebrow text-[11px] text-ink-500">{rich(d.k)}</p>
+              <h3 className="jf-display mt-4 text-[clamp(28px,2.3vw,34px)]">{rich(d.t)}</h3>
+              <p className="mt-3 text-[15.5px] leading-relaxed text-ink-700">{rich(d.d)}</p>
               <div className="mt-auto flex flex-col gap-4 pt-7">
                 <ButtonLink href={d.href} variant="secondary" size="sm" className="w-fit">
-                  {d.cta}
+                  {rich(d.cta)}
                 </ButtonLink>
                 {d.extra && (
                   <Link
                     href={d.extra.href}
                     className="w-fit text-[14px] text-ink-700 underline decoration-ink-900/30 underline-offset-4 transition-colors hover:text-red-brand hover:decoration-red-brand"
                   >
-                    {d.extra.label}
+                    {rich(d.extra.label)}
                   </Link>
                 )}
               </div>

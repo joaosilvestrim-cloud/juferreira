@@ -3,7 +3,7 @@ import { Container, Section } from "@/components/ui/Section";
 import { Display } from "@/components/ui/Typography";
 import { Snapshot } from "./parts";
 
-import { tx, img, lazy, rx } from "@/lib/editable";
+import { tx, img, lazy, rx, rich } from "@/lib/editable";
 
 /**
  * Exercício breve, estático e legível. Sem coleta de resposta, score, diagnóstico ou recomendação automática.
@@ -50,7 +50,7 @@ export function PessoasPergunta() {
                   {i + 1}
                 </span>
                 <p className="font-serif text-[clamp(20px,1.7vw,25px)] leading-snug text-ink-900">
-                  <strong className="font-medium uppercase tracking-[0.06em] text-red-brand">{s.v}:</strong> {s.q}
+                  <strong className="font-medium uppercase tracking-[0.06em] text-red-brand">{rich(s.v)}:</strong> {rich(s.q)}
                 </p>
               </li>
             ))}
@@ -66,7 +66,8 @@ export function PessoasPergunta() {
           </div>
 
           <ButtonLink href="/futuros-humanos#espiral" variant="link" className="mt-8">
-            {tx("pessoas/70b7bfe6a2", "Entenda a Espiral")}</ButtonLink>
+{rx("pessoas/rc4a432bbc", "Entenda a Espiral")}
+</ButtonLink>
         </div>
       </Container>
     </Section>

@@ -225,7 +225,7 @@ export async function deleteIssue(f: FormData) {
 /* ───────────── Textos e imagens das páginas ───────────── */
 export async function savePageBlock(_: FormState, f: FormData): Promise<FormState> {
   await requireAdmin();
-  const registry = (await import("@/content/editable-registry.json")).default as { key: string; kind: string; text: string }[];
+  const registry = (await import("@/content/editable-registry.json")).default as { key: string; kind: string; text: string; role?: string }[];
   const byKey = new Map(registry.map((r) => [r.key, r]));
   const by = await currentUserLabel();
   let changed = 0;
@@ -250,6 +250,10 @@ export async function savePageBlock(_: FormState, f: FormData): Promise<FormStat
       if (!item) continue;
       if (prefix === "t:" && item.kind === "rich" && typeof value === "string") {
         // frase com destaques: só <em>, <i>, <strong> e <br> passam
+        const v = cleanRich(value);
+        await apply(key, !v || v === cleanRich(item.text) ? null : v.slice(0, 8000));
+      } else if (prefix === "t:" && item.kind === "text" && typeof value === "string" && !/leitores de tela|Descrição da imagem|Texto de exemplo/.test(item.role ?? "")) {
+        // texto de lista/cartão com destaques: mesma marcação das frases
         const v = cleanRich(value);
         await apply(key, !v || v === cleanRich(item.text) ? null : v.slice(0, 8000));
       } else if (prefix === "t:" && item.kind === "text" && typeof value === "string") {

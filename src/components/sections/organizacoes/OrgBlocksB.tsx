@@ -6,7 +6,7 @@ import { Stroke } from "@/components/ui/Strokes";
 import { Body, Display } from "@/components/ui/Typography";
 import { CONTACT_ROUTES, LINKS } from "@/lib/site";
 
-import { tx, img, rx } from "@/lib/editable";
+import { tx, img, rx, rich } from "@/lib/editable";
 
 /** Mantido para links antigos que apontavam para o formulário da v1 (/organizacoes#conversa). */
 export const CONTACT_ANCHOR = "#conversa";
@@ -33,10 +33,12 @@ export async function OrgColetivo() {
           </Body>
           {hasWtf ? (
             <ButtonLink href={LINKS.wtf} variant="secondary" className="mt-10" target="_blank" rel="noopener noreferrer">
-              {tx("organizacoes/d04cac496d", "Conheça a What The Future?!")}</ButtonLink>
+{rx("organizacoes/r284a889a0", "Conheça a What The Future?!")}
+</ButtonLink>
           ) : (
             <ButtonLink href={CONTACT_ROUTES.futuros} variant="secondary" className="mt-10">
-              {tx("organizacoes/feb4a8c336", "Converse sobre futuros aplicados")}</ButtonLink>
+{rx("organizacoes/r963921ea6", "Converse sobre futuros aplicados")}
+</ButtonLink>
           )}
         </Container>
         <div className="relative min-h-[320px]">
@@ -74,7 +76,8 @@ export function OrgExperiencia() {
             <Stroke shape="underline" className="mt-2 h-3 w-48" width={2.5} />
           </div>
           <ButtonLink href="/ju" variant="link" className="mt-10">
-            {tx("organizacoes/fcb5b6255b", "Conheça minha trajetória")}</ButtonLink>
+{rx("organizacoes/r1f84a15d6", "Conheça minha trajetória")}
+</ButtonLink>
         </Container>
         <div className="relative min-h-[320px]">
           <Photo
@@ -109,7 +112,8 @@ export async function OrgContato() {
 </p>
             </Body>
             <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg" className="mt-10">
-              {tx("organizacoes/9848b72620", "Conversar sobre o desafio")}</ButtonLink>
+{rx("organizacoes/rdc900bf69", "Conversar sobre o desafio")}
+</ButtonLink>
             {(EXTERNAL.email || EXTERNAL.whatsapp) && (
               <div className="mt-12 border-t border-cream-50/20 pt-8 text-[15px] leading-relaxed text-cream-50/80">
                 {EXTERNAL.email && (
@@ -118,14 +122,15 @@ export async function OrgContato() {
 {rx("organizacoes/r651106857", "Prefere começar por e-mail?")}
 </p>
                     <a href={`mailto:${EXTERNAL.email}`} className="mt-2 inline-block font-medium text-red-bright underline underline-offset-4">
-                      {EXTERNAL.email}
+                      {rich(EXTERNAL.email)}
                     </a>
                   </>
                 )}
                 {EXTERNAL.whatsapp && (
                   <p className="mt-2">
                     <a href={EXTERNAL.whatsapp} className="font-medium text-red-bright underline underline-offset-4">
-                      {tx("organizacoes/361fcbefc5", "WhatsApp")}</a>
+{rx("organizacoes/r4bbf84aa2", "WhatsApp")}
+</a>
                   </p>
                 )}
               </div>

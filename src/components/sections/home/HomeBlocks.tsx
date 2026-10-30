@@ -11,7 +11,7 @@ import { Body, Dash, Display, Lead, Title } from "@/components/ui/Typography";
 import { NewsletterForm } from "@/components/sections/ideias/NewsletterForm";
 import { CONTACT_ROUTES } from "@/lib/site";
 
-import { tx, img, rx } from "@/lib/editable";
+import { tx, img, rx, rich } from "@/lib/editable";
 /* ───────────────────────── H01 — ABERTURA ───────────────────────── */
 export function HomeHero() {
   return (
@@ -40,9 +40,11 @@ export function HomeHero() {
 </p>
           <ButtonRow className="mt-10">
             <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg">
-              {tx("home/f2419ab417", "Leve a Ju para sua organização")}</ButtonLink>
+{rx("home/rf97962c36", "Leve a Ju para sua organização")}
+</ButtonLink>
             <ButtonLink href="/futuros-humanos" variant="secondary" size="lg">
-              {tx("home/abec1b8143", "Conheça Futuros Humanos")}</ButtonLink>
+{rx("home/r6e720cefc", "Conheça Futuros Humanos")}
+</ButtonLink>
           </ButtonRow>
         </div>
       </Container>
@@ -108,7 +110,8 @@ export function HomeFuturos() {
 </p>
           </Body>
           <ButtonLink href="/futuros-humanos" className="mt-10">
-            {tx("home/e708254df4", "Explore essa visão")}</ButtonLink>
+{rx("home/r42f5c5a70", "Explore essa visão")}
+</ButtonLink>
         </div>
         <figure className="relative mx-auto w-full max-w-[420px]">
           <div className="jf-breathe relative aspect-square" aria-hidden>
@@ -118,7 +121,7 @@ export function HomeFuturos() {
             <p className="jf-eyebrow flex flex-wrap items-center gap-x-3 gap-y-2 text-[14px] text-red-brand">
               {moves.map((m, i) => (
                 <span key={m} className="inline-flex items-center gap-3">
-                  {m}
+                  {rich(m)}
                   <span aria-hidden>{i < moves.length - 1 ? "→" : "↻"}</span>
                 </span>
               ))}
@@ -153,7 +156,8 @@ export async function HomeJu() {
 </p>
           </Body>
           <ButtonLink href="/ju" className="mt-10">
-            {tx("home/d4cfc4e8d1", "Conheça minha trajetória")}</ButtonLink>
+{rx("home/rc13ce4358", "Conheça minha trajetória")}
+</ButtonLink>
           {media && (
             <div className="mt-12 max-w-[620px]">
               <MediaPlayer m={media} />
@@ -198,15 +202,18 @@ export function HomeOrganizacoes() {
             {formats.map((f) => (
               <li key={f.t}>
                 <Dash />
-                <Title className="mt-4 uppercase">{f.t}</Title>
-                <p className="mt-3 text-[15px] leading-relaxed text-ink-700">{f.d}</p>
+                <Title className="mt-4 uppercase">{rich(f.t)}</Title>
+                <p className="mt-3 text-[15px] leading-relaxed text-ink-700">{rich(f.d)}</p>
               </li>
             ))}
           </ul>
           <ButtonRow className="mt-12">
-            <ButtonLink href="/palestras">{tx("home/5c3f6fc6d1", "Conheça as palestras")}</ButtonLink>
+            <ButtonLink href="/palestras">
+{rx("home/rc3ee3f3de", "Conheça as palestras")}
+</ButtonLink>
             <ButtonLink href="/organizacoes" variant="secondary">
-              {tx("home/e4cb62ba6c", "Conheça o trabalho com organizações")}</ButtonLink>
+{rx("home/r26d13329c", "Conheça o trabalho com organizações")}
+</ButtonLink>
           </ButtonRow>
         </Container>
         <div className="relative min-h-[480px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">
@@ -251,7 +258,8 @@ export function HomePessoas() {
 </p>
           </Body>
           <ButtonLink href="/pessoas" size="lg" className="mt-10 w-fit">
-            {tx("home/5e8fa15e6a", "Encontre um começo")}</ButtonLink>
+{rx("home/re1375be78", "Encontre um começo")}
+</ButtonLink>
         </Container>
       </div>
     </Section>
@@ -283,14 +291,15 @@ export async function HomeIdeias() {
                       <p className="jf-eyebrow mt-4 text-[11px] text-ink-500">
 {rx("home/r747726545", "Ensaio")}
 </p>
-                      <p className="mt-2 font-serif text-[21px] leading-snug group-hover:text-red-brand">{a.title}</p>
-                      {a.excerpt && <p className="mt-2 line-clamp-3 text-[15px] text-ink-700">{a.excerpt}</p>}
+                      <p className="mt-2 font-serif text-[21px] leading-snug group-hover:text-red-brand">{rich(a.title)}</p>
+                      {a.excerpt && <p className="mt-2 line-clamp-3 text-[15px] text-ink-700">{rich(a.excerpt)}</p>}
                     </Link>
                   </li>
                 ))}
               </ul>
               <ButtonLink href="/ideias" variant="secondary" className="mt-10">
-                {tx("home/3a27ba6939", "Explore as ideias")}</ButtonLink>
+{rx("home/raaa18e83d", "Explore as ideias")}
+</ButtonLink>
             </div>
           ) : (
             <div className="relative min-h-[300px] overflow-hidden rounded-sm lg:min-h-[420px]">
@@ -333,7 +342,8 @@ export function HomeEncerramento() {
 {rx("home/r4e4beec65", "Qual conversa merece começar agora?")}
 </p>
         <ButtonLink href="/contato" size="lg" className="mt-10">
-          {tx("home/99d76e1c3f", "Vamos conversar")}</ButtonLink>
+{rx("home/r682f5aa55", "Vamos conversar")}
+</ButtonLink>
       </Container>
     </Section>
   );

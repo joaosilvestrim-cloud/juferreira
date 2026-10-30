@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { tx } from "@/lib/editable";
+import { rx, rich } from "@/lib/editable";
 /** Ícones de linha (provisórios) usados na página Para Organizações. */
 export type OrgIconName =
   | "target"
@@ -100,7 +100,7 @@ export function OrgIcon({ name, className = "" }: { name: OrgIconName; className
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      {PATHS[name]}
+      {rich(PATHS[name])}
     </svg>
   );
 }
@@ -137,8 +137,10 @@ export function ReadMore({
           onDark ? "text-red-bright" : "text-red-brand"
         }`}
       >
-        <span className="group-open:hidden">{label}</span>
-        <span className="hidden group-open:inline">{tx("organizacoes/f6e0963ca5", "Ler menos")}</span>
+        <span className="group-open:hidden">{rich(label)}</span>
+        <span className="hidden group-open:inline">
+{rx("organizacoes/r870f82438", "Ler menos")}
+</span>
         <svg viewBox="0 0 12 12" className="h-3 w-3 transition-transform group-open:rotate-180" aria-hidden="true">
           <path d="M2 4.5l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
@@ -154,7 +156,7 @@ export function Lines({ items, className = "" }: { items: ReactNode[]; className
     <p className={className}>
       {items.map((it, i) => (
         <span key={i} className="block">
-          {it}
+          {rich(it)}
         </span>
       ))}
     </p>
@@ -171,7 +173,7 @@ export function DotList({ items, className = "", onDark = false }: { items: Reac
             className={`mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full ${onDark ? "bg-red-bright" : "bg-red-brand"}`}
             aria-hidden
           />
-          <span>{it}</span>
+          <span>{rich(it)}</span>
         </li>
       ))}
     </ul>

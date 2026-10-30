@@ -6,7 +6,7 @@ import { Stroke } from "@/components/ui/Strokes";
 import { Body, Display, StickyNote } from "@/components/ui/Typography";
 import { FuturesDiagram } from "./FuturesDiagram";
 
-import { tx, img, rx } from "@/lib/editable";
+import { tx, img, rx, rich } from "@/lib/editable";
 /** Sequência de frases curtas (uma por linha), com traço vermelho opcional. */
 export function Lines({ items, dash = false, className = "" }: { items: ReactNode[]; dash?: boolean; className?: string }) {
   return (
@@ -14,7 +14,7 @@ export function Lines({ items, dash = false, className = "" }: { items: ReactNod
       {items.map((it, i) => (
         <li key={i} className="flex gap-3">
           {dash && <span className="mt-[0.8em] h-px w-4 shrink-0 bg-red-brand" aria-hidden />}
-          <span>{it}</span>
+          <span>{rich(it)}</span>
         </li>
       ))}
     </ul>
@@ -63,9 +63,11 @@ export function FHHero() {
 </p>
           <ButtonRow className="mt-10">
             <ButtonLink href="#espiral" size="lg">
-              {tx("futuros-humanos/71badf37bb", "Explore a Espiral")}</ButtonLink>
+{rx("futuros-humanos/r4a970d17b", "Explore a Espiral")}
+</ButtonLink>
             <ButtonLink href="/palestras" variant="secondary" size="lg">
-              {tx("futuros-humanos/038bc597b8", "Conheça a palestra")}</ButtonLink>
+{rx("futuros-humanos/r282d11cb0", "Conheça a palestra")}
+</ButtonLink>
           </ButtonRow>
         </div>
       </Container>
@@ -183,9 +185,9 @@ export function FHTese() {
               <div key={x.t} className="grid gap-2 py-5 sm:grid-cols-[180px_1fr] sm:gap-6">
                 <dt className="flex items-center gap-3">
                   <span className={`h-4 w-4 shrink-0 rounded-full ${x.dot}`} aria-hidden />
-                  <span className="font-serif text-[22px] uppercase tracking-[0.06em]">{x.t}</span>
+                  <span className="font-serif text-[22px] uppercase tracking-[0.06em]">{rich(x.t)}</span>
                 </dt>
-                <dd className="text-ink-800">{x.d}</dd>
+                <dd className="text-ink-800">{rich(x.d)}</dd>
               </div>
             ))}
           </dl>
@@ -204,7 +206,8 @@ export function FHTese() {
               rel="noopener noreferrer"
               className="text-red-brand underline underline-offset-2"
             >
-              {tx("futuros-humanos/91c1b585a4", "Joseph Voros, “The Futures Cone, use and history”")}</a>
+{rx("futuros-humanos/r7845382d8", "Joseph Voros, “The Futures Cone, use and history”")}
+</a>
             .
           </p>
         </div>
@@ -236,7 +239,7 @@ export function FHFerramentas() {
             {questions.map((q) => (
               <li key={q} className="flex gap-3">
                 <span className="mt-[0.75em] h-px w-5 shrink-0 bg-red-bright" aria-hidden />
-                <span>{q}</span>
+                <span>{rich(q)}</span>
               </li>
             ))}
           </ul>

@@ -17,6 +17,8 @@ export type Item = {
 };
 
 const A11Y = /leitores de tela/;
+/** Papéis que não aparecem como texto formatado (descrição de foto, nomes para leitor de tela, exemplos de campo). */
+const PLAIN_ROLES = /leitores de tela|Descrição da imagem|Texto de exemplo/;
 
 /** Rótulo do campo: papel na página + marca de "alterado". */
 function Label({ role, changed, onReset }: { role: string; changed: boolean; onReset?: () => void }) {
@@ -147,7 +149,8 @@ function toRows(items: Item[]) {
   const a11y: Item[] = [];
   for (let i = 0; i < items.length; i++) {
     const it = items[i];
-    if (it.kind === "rich") {
+    // todo texto visível na página ganha o editor com destaques (vermelho, itálico, negrito, quebra)
+    if (it.kind === "rich" || (it.kind === "text" && !PLAIN_ROLES.test(it.role ?? "") && !it.group)) {
       rows.push({ type: "rich", it });
       continue;
     }

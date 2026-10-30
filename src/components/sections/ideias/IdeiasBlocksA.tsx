@@ -6,7 +6,7 @@ import { ButtonLink, ButtonRow } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Container, Section } from "@/components/ui/Section";
 import { Stroke } from "@/components/ui/Strokes";
-import { Body, Display, Em, StickyNote } from "@/components/ui/Typography";
+import { Body, Display, StickyNote } from "@/components/ui/Typography";
 import { LINKS } from "@/lib/site";
 import { AcervoList, type AcervoItem } from "./AcervoList";
 import { EPISTEMIC, TERRITORIO_NAME, TERRITORIO_ORDER, isEpistemic, type TerritorioId } from "./data";
@@ -40,10 +40,12 @@ export function IdeiasHero({ hasArticles }: { hasArticles: boolean }) {
 </p>
             </Body>
             <ButtonRow className="mt-10">
-              {hasArticles && <ButtonLink href={ANCHORS.acervo}>{tx("ideias/fac9733ac6", "Comece a ler")}</ButtonLink>}
+              {hasArticles && <ButtonLink href={ANCHORS.acervo}>
+{rx("ideias/red4389696", "Comece a ler")}
+</ButtonLink>}
               <ButtonLink href={LINKS.newsletter} variant={hasArticles ? "secondary" : "primary"}>
-                {tx("ideias/180922d5b4", "Assine Uma Terça-feira Qualquer")}
-              </ButtonLink>
+{rx("ideias/r543e9a79c", "Assine Uma Terça-feira Qualquer")}
+</ButtonLink>
             </ButtonRow>
           </div>
         </Container>
@@ -93,8 +95,8 @@ export function IdeiasAcervo({ articles, media = [] }: { articles: Article[]; me
       <Container>
         <Display size="md" className="max-w-[820px]">
           <span id="acervo-titulo">
-            {tx("ideias/e65e5f2c9b", "Por onde você quer")} <Em>{tx("ideias/e7b81e5b60", "entrar?")}</Em>
-          </span>
+{rx("ideias/r3ef8ccdb5", "Por onde você quer <em>entrar?</em>")}
+</span>
         </Display>
         {articles.length > 0 && (
           <div className="mt-12">

@@ -7,7 +7,7 @@ import { ContactForm } from "./ContactForm";
 import { IconDisc } from "./Icons";
 import type { IconName } from "./routes";
 
-import { tx, img, rx } from "@/lib/editable";
+import { tx, img, rx, rich } from "@/lib/editable";
 
 /*
  * Contato · Site 2.0 (direção editorial §15).
@@ -59,14 +59,16 @@ function ChannelItem({ c }: { c: Channel }) {
     <li className="flex items-start gap-5 rounded-[14px] border border-ink-900/10 bg-cream-50 p-6 shadow-[0_18px_50px_-40px_rgba(24,20,17,0.6)]">
       <IconDisc name={c.icon} />
       <div className="min-w-0 pt-1">
-        <Title as="h3">{c.name}</Title>
+        <Title as="h3">{rich(c.name)}</Title>
         <a
           href={c.href}
           {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
           className="mt-1 inline-block break-all text-[16px] font-medium text-red-brand underline-offset-4 hover:underline focus-visible:underline"
         >
-          {c.text}
-          {c.external && <span className="sr-only"> {tx("contato/b86d49fcbf", "(abre em nova aba)")}</span>}
+          {rich(c.text)}
+          {c.external && <span className="sr-only">
+{rx("contato/r68b39403e", "(abre em nova aba)")}
+</span>}
         </a>
       </div>
     </li>

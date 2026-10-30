@@ -7,7 +7,7 @@ import { CONTACT_ROUTES } from "@/lib/site";
 import { Pull } from "./FuturosHumanosBlocksA";
 import { SpiralDiagram } from "./SpiralDiagram";
 
-import { tx, img, lazy, rx } from "@/lib/editable";
+import { tx, img, lazy, rx, rich } from "@/lib/editable";
 
 /* ───────────────────────── F05 — AGÊNCIA ───────────────────────── */
 export function FHAgencia() {
@@ -30,7 +30,7 @@ export function FHAgencia() {
           </Body>
           <ul className="jf-body mt-3 max-w-[600px] space-y-1 border-l-[3px] border-red-brand pl-5 text-ink-800">
             {starts.map((s) => (
-              <li key={s}>{s}</li>
+              <li key={s}>{rich(s)}</li>
             ))}
           </ul>
           <div className="mt-12 max-w-[640px] bg-blush-100/70 px-7 py-6">
@@ -112,9 +112,9 @@ export function FHEspiral() {
           {MOVEMENTS.map((m) => (
             <li key={m.t} className="flex flex-col bg-cream-100 p-7 shadow-[0_10px_30px_-22px_rgba(24,20,17,.5)]">
               <Dash />
-              <h3 className="mt-4 font-serif text-[26px] uppercase tracking-[0.04em]">{m.t}</h3>
-              <p className="mt-3 font-semibold leading-snug text-red-brand">{m.q}</p>
-              <p className="mt-3 text-[15px] leading-relaxed text-ink-700">{m.d}</p>
+              <h3 className="mt-4 font-serif text-[26px] uppercase tracking-[0.04em]">{rich(m.t)}</h3>
+              <p className="mt-3 font-semibold leading-snug text-red-brand">{rich(m.q)}</p>
+              <p className="mt-3 text-[15px] leading-relaxed text-ink-700">{rich(m.d)}</p>
             </li>
           ))}
         </ul>
@@ -157,9 +157,9 @@ export function FHEspiral() {
                 {EXAMPLE.map((e) => (
                   <tr key={e.m} className="align-top">
                     <th scope="row" className="w-[34%] py-4 pr-4 font-serif text-[18px] font-normal uppercase tracking-[0.04em] sm:w-[30%]">
-                      {e.m}
+                      {rich(e.m)}
                     </th>
-                    <td className="py-4 text-[15px] leading-relaxed text-ink-700">{e.d}</td>
+                    <td className="py-4 text-[15px] leading-relaxed text-ink-700">{rich(e.d)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -196,9 +196,11 @@ export function FHEscalas() {
           </Body>
           <ButtonRow className="mt-8">
             <ButtonLink href="/pessoas" variant="secondary">
-              {tx("futuros-humanos/72d93589fc", "Na sua vida")}</ButtonLink>
+{rx("futuros-humanos/r1dbb7747a", "Na sua vida")}
+</ButtonLink>
             <ButtonLink href="/organizacoes" variant="secondary">
-              {tx("futuros-humanos/f013191620", "Na sua organização")}</ButtonLink>
+{rx("futuros-humanos/r13dae7aa7", "Na sua organização")}
+</ButtonLink>
           </ButtonRow>
         </div>
       </Container>
@@ -221,7 +223,8 @@ export function FHEncerramento() {
 </p>
           <ButtonRow className="mt-10">
             <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg">
-              {tx("futuros-humanos/21ce2aebbe", "Leve essa conversa para sua organização")}</ButtonLink>
+{rx("futuros-humanos/rcd15959c6", "Leve essa conversa para sua organização")}
+</ButtonLink>
           </ButtonRow>
         </Container>
         <div className="relative min-h-[480px] lg:aspect-[2/3] lg:w-full lg:min-h-0 lg:self-center">

@@ -8,7 +8,7 @@ import { NewsletterForm } from "./NewsletterForm";
 import { BrushLabel, EpistemicTag, QBox } from "./Parts";
 import type { Epistemic } from "./data";
 
-import { tx, img, lazy, rx } from "@/lib/editable";
+import { tx, img, lazy, rx, rich } from "@/lib/editable";
 
 /* ───────────────────────── I03 — NEWSLETTER ───────────────────────── */
 /** Amostra do formato (o que pode chegar numa edição). Não é edição publicada. */
@@ -45,8 +45,8 @@ export function IdeiasTerca() {
           <ul className="mt-10 grid gap-6 sm:grid-cols-3">
             {AMOSTRA.map((c) => (
               <li key={c.t} className="border-t border-red-brand/50 pt-4">
-                <h3 className="jf-hand text-[24px] uppercase leading-none">{c.t}</h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-ink-700">{c.d}</p>
+                <h3 className="jf-hand text-[24px] uppercase leading-none">{rich(c.t)}</h3>
+                <p className="mt-3 text-[15px] leading-relaxed text-ink-700">{rich(c.d)}</p>
               </li>
             ))}
           </ul>
@@ -154,7 +154,7 @@ export function IdeiasInvestigacao() {
           {PERGUNTAS.map((p) => (
             <li key={p.id} id={`investigacao-${p.id}`} className="flex flex-col border-t border-ink-900/15 pt-6">
               <EpistemicTag kind={p.label} className="w-fit" />
-              <Title className="mt-4 text-[23px]">{p.title}</Title>
+              <Title className="mt-4 text-[23px]">{rich(p.title)}</Title>
               <div className="mt-4">
                 <PerguntaBody id={p.id} />
               </div>
@@ -190,8 +190,8 @@ export function IdeiasNota({ refs }: { refs: ReadingRef[] }) {
 {rx("ideias/rf95a206a3", "Uma boa pergunta pode sobreviver por bastante tempo. Uma boa ideia também precisa poder ser contrariada.")}
 </p>
           <ButtonLink href="/futuros-humanos" variant="secondary" className="mt-10 w-fit">
-            {tx("ideias/df40fd5c3c", "Conheça Futuros Humanos")}
-          </ButtonLink>
+{rx("ideias/r7a0db3c80", "Conheça Futuros Humanos")}
+</ButtonLink>
         </div>
 
         {groups.length > 0 && (
@@ -199,7 +199,7 @@ export function IdeiasNota({ refs }: { refs: ReadingRef[] }) {
             {groups.map((g) => (
               <div key={g.id}>
                 <Title as="h3" className="uppercase">
-                  {g.title}
+                  {rich(g.title)}
                 </Title>
                 <ul className="mt-5 space-y-3">
                   {g.items.map((r) => (
@@ -207,15 +207,17 @@ export function IdeiasNota({ refs }: { refs: ReadingRef[] }) {
                       <p className="font-serif text-[19px] leading-tight">
                         {r.link && /^https?:\/\//i.test(r.link) ? (
                           <a href={r.link} target="_blank" rel="noopener noreferrer" className="underline decoration-ink-900/25 underline-offset-4 hover:text-red-brand">
-                            {r.title}
-                            <span className="sr-only"> {tx("ideias/cd3649ae31", "(abre em nova aba)")}</span>
+                            {rich(r.title)}
+                            <span className="sr-only">
+{rx("ideias/rdc3371323", "(abre em nova aba)")}
+</span>
                           </a>
                         ) : (
                           r.title
                         )}
                       </p>
-                      {r.author && <p className="mt-1 text-[13px] text-ink-500">{r.author}</p>}
-                      {r.note && <p className="mt-2 text-[14px] italic leading-snug text-ink-700">{r.note}</p>}
+                      {r.author && <p className="mt-1 text-[13px] text-ink-500">{rich(r.author)}</p>}
+                      {r.note && <p className="mt-2 text-[14px] italic leading-snug text-ink-700">{rich(r.note)}</p>}
                     </li>
                   ))}
                 </ul>

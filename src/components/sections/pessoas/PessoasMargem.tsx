@@ -2,7 +2,7 @@ import { Container, Section } from "@/components/ui/Section";
 import { Display } from "@/components/ui/Typography";
 import { Ask, Paper, Snapshot, Underline } from "./parts";
 
-import { tx, img, lazy, rx } from "@/lib/editable";
+import { tx, img, lazy, rx, rich } from "@/lib/editable";
 
 /** Três observações do automático (v1 · "O automático"), mantidas como notas curtas. */
 const NOTES = lazy(() => [
@@ -72,13 +72,13 @@ export function PessoasMargem() {
           {NOTES.map((n) => (
             <li key={n.t}>
               <Paper tone="paper" className={`h-full ${n.rotate}`}>
-                <h3 className="jf-eyebrow text-[12px] text-red-brand">{n.t}</h3>
+                <h3 className="jf-eyebrow text-[12px] text-red-brand">{rich(n.t)}</h3>
                 <div className="mt-4 space-y-1 font-serif text-[20px] leading-snug text-ink-900">
                   {n.body.map((p) => (
-                    <p key={p}>{p}</p>
+                    <p key={p}>{rich(p)}</p>
                   ))}
                 </div>
-                <p className="mt-5 border-t border-ink-900/10 pt-4 text-[15.5px] leading-relaxed text-ink-700">{n.q}</p>
+                <p className="mt-5 border-t border-ink-900/10 pt-4 text-[15.5px] leading-relaxed text-ink-700">{rich(n.q)}</p>
               </Paper>
             </li>
           ))}

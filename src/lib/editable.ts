@@ -96,3 +96,11 @@ function build(n: { tag: string; children: ReactNode[] }, key: number): ReactNod
   if (n.tag === "i") return createElement("i", { key }, ...n.children);
   return createElement("strong", { key, className: "font-semibold" }, ...n.children);
 }
+
+/**
+ * Texto que vem de listas/cartões (tx em dados): se tiver destaques do painel (<em>, <i>, <strong>, <br>),
+ * desenha formatado; senão devolve como está (strings comuns, números e elementos passam direto).
+ */
+export function rich(v: ReactNode): ReactNode {
+  return typeof v === "string" && /<(em|i|strong|br)\b/i.test(v) ? richNodes(v) : v;
+}

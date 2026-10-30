@@ -52,11 +52,19 @@ export default function ArticlePage({ params }: Props) {
   );
 }
 
+/**
+ * Limpa e conta o texto do artigo em cache: o higienizador de HTML usa valores aleatórios por dentro
+ * (ao ler estilos como alinhamento), o que não pode acontecer durante a pré-renderização.
+ */
+async function renderBody(body: string) {
+  "use cache";
+  return { html: richHtml(body), words: richToText(body).split(/\s+/).filter(Boolean).length };
+}
+
 async function ArticleContent({ params }: Props) {
   const a = await getArticle((await params).slug);
   if (!a) notFound();
-  const html = richHtml(a.body);
-  const words = richToText(a.body).split(/\s+/).filter(Boolean).length;
+  const { html, words } = await renderBody(a.body);
   const minutes = Math.max(1, Math.round(words / 220));
   const date = a.publishedAt
     ? new Intl.DateTimeFormat("pt-BR", { dateStyle: "long", timeZone: "America/Sao_Paulo" }).format(new Date(a.publishedAt))

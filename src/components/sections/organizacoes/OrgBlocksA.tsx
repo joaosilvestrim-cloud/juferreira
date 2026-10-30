@@ -6,7 +6,7 @@ import { Body, Display, Em, Eyebrow } from "@/components/ui/Typography";
 import { CONTACT_ROUTES } from "@/lib/site";
 import { DotList, IconBubble, type OrgIconName } from "./parts";
 
-import { tx, img, rx } from "@/lib/editable";
+import { tx, img, rx, rich } from "@/lib/editable";
 
 export const FORMATS_ANCHOR = "#formatos";
 
@@ -37,10 +37,11 @@ export function OrgHero() {
             </Body>
             <ButtonRow className="mt-10">
               <ButtonLink href={CONTACT_ROUTES.organizacoes} size="lg">
-                {tx("organizacoes/255b524b85", "Conte o desafio")}</ButtonLink>
+{rx("organizacoes/rd169da785", "Conte o desafio")}
+</ButtonLink>
               <ButtonLink href={FORMATS_ANCHOR} variant="secondary">
-                {tx("organizacoes/15b52af784", "Conheça as formas de trabalhar juntos")}
-              </ButtonLink>
+{rx("organizacoes/r458f89e77", "Conheça as formas de trabalhar juntos")}
+</ButtonLink>
             </ButtonRow>
           </div>
         </Container>
@@ -128,9 +129,9 @@ export function OrgSituacoes() {
             <li key={c.area} className="rounded-[var(--jf-radius-sm)] bg-cream-50/[0.04] p-8 ring-1 ring-cream-50/10">
               <div className="flex items-center gap-4">
                 <IconBubble name={c.icon} />
-                <p className="jf-eyebrow text-[12px] text-cream-50/70">{c.area}</p>
+                <p className="jf-eyebrow text-[12px] text-cream-50/70">{rich(c.area)}</p>
               </div>
-              <h3 className="mt-6 font-serif text-[clamp(24px,2.2vw,32px)] leading-tight text-cream-50">{c.ask}</h3>
+              <h3 className="mt-6 font-serif text-[clamp(24px,2.2vw,32px)] leading-tight text-cream-50">{rich(c.ask)}</h3>
               <DotList onDark items={c.qs} className="mt-5 text-[16px] leading-snug text-cream-50/85" />
             </li>
           ))}
@@ -177,9 +178,15 @@ export function OrgFormatos() {
 
         <div className="mt-12">
           <div className="hidden grid-cols-[1fr_0.8fr_1.4fr] gap-8 border-b border-ink-900/20 pb-3 md:grid" aria-hidden>
-            <span className={head}>{tx("organizacoes/1a572e703d", "Necessidade")}</span>
-            <span className={head}>{tx("organizacoes/162195d51b", "Formato possível")}</span>
-            <span className={head}>{tx("organizacoes/3457cae8f2", "O que pode ser produzido, conforme escopo")}</span>
+            <span className={head}>
+{rx("organizacoes/rea8f028c0", "Necessidade")}
+</span>
+            <span className={head}>
+{rx("organizacoes/rbb7a89d79", "Formato possível")}
+</span>
+            <span className={head}>
+{rx("organizacoes/r726d35951", "O que pode ser produzido, conforme escopo")}
+</span>
           </div>
           <ol>
             {rows.map((r) => (
@@ -189,19 +196,19 @@ export function OrgFormatos() {
                     <dt className={`${head} md:sr-only`}>
 {rx("organizacoes/rea8f028c0", "Necessidade")}
 </dt>
-                    <dd className="mt-1 text-[17px] leading-snug text-ink-900 md:mt-0">{r.need}</dd>
+                    <dd className="mt-1 text-[17px] leading-snug text-ink-900 md:mt-0">{rich(r.need)}</dd>
                   </div>
                   <div>
                     <dt className={`${head} md:sr-only`}>
 {rx("organizacoes/rbb7a89d79", "Formato possível")}
 </dt>
-                    <dd className="mt-1 font-serif text-[clamp(22px,2vw,28px)] leading-tight text-red-brand md:mt-0">{r.format}</dd>
+                    <dd className="mt-1 font-serif text-[clamp(22px,2vw,28px)] leading-tight text-red-brand md:mt-0">{rich(r.format)}</dd>
                   </div>
                   <div>
                     <dt className={`${head} md:sr-only`}>
 {rx("organizacoes/rfab474cf0", "O que pode ser produzido")}
 </dt>
-                    <dd className="mt-1 text-[16px] leading-relaxed text-ink-700 md:mt-0">{r.output}</dd>
+                    <dd className="mt-1 text-[16px] leading-relaxed text-ink-700 md:mt-0">{rich(r.output)}</dd>
                   </div>
                 </dl>
               </li>
@@ -215,7 +222,8 @@ export function OrgFormatos() {
 </p>
           <div className="lg:justify-self-end">
             <ButtonLink href="/palestras" variant="secondary">
-              {tx("organizacoes/fff8c3ffee", "Conheça a palestra Futuros Humanos")}</ButtonLink>
+{rx("organizacoes/r83a984cc2", "Conheça a palestra Futuros Humanos")}
+</ButtonLink>
           </div>
         </div>
       </Container>

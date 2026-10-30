@@ -5,7 +5,7 @@ import { Stroke } from "@/components/ui/Strokes";
 import { Body, Display, QuoteCard } from "@/components/ui/Typography";
 import { IconBubble, type IconName } from "./Icons";
 
-import { tx, img, rx } from "@/lib/editable";
+import { tx, img, rx, rich } from "@/lib/editable";
 
 /* ───────────────────────── P04 — CONTEXTO ───────────────────────── */
 export function PalestrasContexto() {
@@ -33,8 +33,8 @@ export function PalestrasContexto() {
             {tensions.map((t) => (
               <li key={t.t} className="rounded-[var(--jf-radius-sm)] bg-cream-50 p-6 shadow-[0_10px_30px_-22px_rgba(24,20,17,.5)]">
                 <IconBubble name={t.icon} />
-                <h3 className="mt-5 font-serif text-[22px] leading-tight">{t.t}</h3>
-                <p className="mt-2 text-[15px] leading-relaxed text-ink-700">{t.d}</p>
+                <h3 className="mt-5 font-serif text-[22px] leading-tight">{rich(t.t)}</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-ink-700">{rich(t.d)}</p>
               </li>
             ))}
           </ul>
@@ -80,7 +80,8 @@ export function PalestrasAprofundamento() {
 </p>
           </Body>
           <ButtonLink href="/organizacoes" variant="secondary" className="mt-10">
-            {tx("palestras-workshops/c3db2bb8b7", "Veja o trabalho com organizações")}</ButtonLink>
+{rx("palestras-workshops/r5ba449e8e", "Veja o trabalho com organizações")}
+</ButtonLink>
         </Container>
         <div className="relative min-h-[400px]">
           <Photo

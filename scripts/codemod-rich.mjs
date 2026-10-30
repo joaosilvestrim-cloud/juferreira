@@ -12,7 +12,7 @@ const SECTIONS = join(ROOT, "src", "components", "sections");
 const DRY = process.argv.includes("--dry");
 const INLINE = { Em: "em", strong: "strong", b: "strong", em: "i", i: "i" };
 // não converter: elementos que precisam de texto puro (SVG, campos) ou que são botões/links
-const SKIP_TAGS = new Set(["text", "tspan", "desc", "title", "option", "textarea", "ButtonLink", "Link", "a", "button", "Em", "strong", "span", "b", "i", "em", "br"]);
+const SKIP_TAGS = new Set(["text", "tspan", "desc", "title", "option", "textarea", "Em", "strong", "b", "i", "em", "br"]); // SVG e campos precisam de texto puro
 
 const walk = (d) => readdirSync(d).flatMap((f) => (statSync(join(d, f)).isDirectory() ? walk(join(d, f)) : /\.tsx$/.test(f) ? [join(d, f)] : []));
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");

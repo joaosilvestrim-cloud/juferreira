@@ -1,6 +1,6 @@
 import { SpiralMark } from "@/components/ui/Strokes";
 
-import { tx, lazy, rx } from "@/lib/editable";
+import { tx, lazy, rx, rich } from "@/lib/editable";
 const MOVES = lazy(() => ([tx("futuros-humanos/2377706959", "Imaginar"), tx("futuros-humanos/6fec948e79", "Escolher"), tx("futuros-humanos/a44c4d1e9e", "Tornar-se"), tx("futuros-humanos/7d802668d0", "Construir")]));
 
 /**
@@ -22,7 +22,7 @@ export function SpiralDiagram({ className = "" }: { className?: string }) {
             className={`absolute flex items-center gap-2 rounded-md bg-cream-50/85 px-2 py-1 font-serif text-[22px] uppercase tracking-[0.14em] text-red-brand backdrop-blur-[2px] ${pos[i]}`}
           >
             <span className="h-2.5 w-2.5 rounded-full bg-red-brand" />
-            {m}
+            {rich(m)}
           </p>
         ))}
         <p className="jf-hand absolute bottom-[2%] left-[18%] rotate-[-3deg] bg-cream-50/85 px-2 text-[26px] text-ink-900">
@@ -33,7 +33,7 @@ export function SpiralDiagram({ className = "" }: { className?: string }) {
         {MOVES.map((m) => (
           <li key={m} className="relative font-serif text-[20px] uppercase tracking-[0.14em] text-red-brand">
             <span className="absolute -left-[34px] top-1.5 h-3 w-3 rounded-full bg-red-brand" />
-            {m}
+            {rich(m)}
           </li>
         ))}
         <li className="jf-hand text-[24px] text-ink-900">
