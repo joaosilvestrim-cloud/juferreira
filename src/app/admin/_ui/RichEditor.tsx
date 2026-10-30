@@ -1,5 +1,6 @@
 "use client";
 
+import Highlight from "@tiptap/extension-highlight";
 import Image from "@tiptap/extension-image";
 import TextAlign from "@tiptap/extension-text-align";
 import { Placeholder, CharacterCount } from "@tiptap/extensions";
@@ -41,6 +42,7 @@ export function RichEditor({ name, initialHtml, placeholder = "Comece a escrever
         link: { openOnClick: false, autolink: true, HTMLAttributes: { rel: "noopener noreferrer" } },
       }),
       Image.configure({ inline: false }),
+      Highlight, // destaque em vermelho, como nos títulos do site (<mark>)
       TextAlign.configure({ types: ["heading", "paragraph"] }),
       Placeholder.configure({ placeholder }),
       CharacterCount,
@@ -49,7 +51,7 @@ export function RichEditor({ name, initialHtml, placeholder = "Comece a escrever
     editorProps: {
       attributes: {
         class:
-          "jf-rich min-h-[360px] px-5 py-4 font-serif text-[18px] leading-[1.75] text-ink-900 focus:outline-none",
+          "jf-rich jf-article min-h-[360px] px-5 py-4 text-ink-800 focus:outline-none",
       },
     },
     onUpdate: ({ editor }) => setHtml(editor.isEmpty ? "" : editor.getHTML()),
@@ -64,6 +66,7 @@ export function RichEditor({ name, initialHtml, placeholder = "Comece a escrever
             italic: e.isActive("italic"),
             underline: e.isActive("underline"),
             strike: e.isActive("strike"),
+            mark: e.isActive("highlight"),
             h2: e.isActive("heading", { level: 2 }),
             h3: e.isActive("heading", { level: 3 }),
             bullet: e.isActive("bulletList"),
@@ -86,6 +89,8 @@ export function RichEditor({ name, initialHtml, placeholder = "Comece a escrever
     if (url === "" || url === "https://") return editor.chain().focus().extendMarkRange("link").unsetLink().run();
     const href = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(url) ? `mailto:${url}` : url;
     editor.chain().focus().extendMarkRange("link").setLink({ href }).run();
+    // cursor logo depois do link: continuar digitando (ou Enter) não apaga a palavra que virou link
+    editor.chain().focus().setTextSelection(editor.state.selection.to).run();
   };
 
   const onImage = async (file?: File) => {
@@ -123,10 +128,10 @@ export function RichEditor({ name, initialHtml, placeholder = "Comece a escrever
         <Btn label="Refazer" on={() => c().redo().run()} disabled={!state?.canRedo}>↷</Btn>
         <Sep />
         <Btn label="Título" active={state?.h2} on={() => c().toggleHeading({ level: 2 }).run()}>
-          <span className="font-serif font-semibold">T</span>
+          <span className="font-serif text-[15px]">Título</span>
         </Btn>
         <Btn label="Subtítulo" active={state?.h3} on={() => c().toggleHeading({ level: 3 }).run()}>
-          <span className="font-serif text-[12px] font-semibold">T</span>
+          <span className="font-serif text-[13px]">Subtítulo</span>
         </Btn>
         <Sep />
         <Btn label="Negrito" active={state?.bold} on={() => c().toggleBold().run()}>
@@ -141,6 +146,12 @@ export function RichEditor({ name, initialHtml, placeholder = "Comece a escrever
         <Btn label="Riscado" active={state?.strike} on={() => c().toggleStrike().run()}>
           <span className="line-through">S</span>
         </Btn>
+        <Btn label="Vermelho (destaque)" active={state?.mark} on={() => c().toggleHighlight().run()}>
+          <span className="inline-flex items-center gap-1 text-red-brand">
+            <span className="h-2.5 w-2.5 rounded-full bg-red-brand" aria-hidden />
+            A
+          </span>
+        </Btn>
         <Sep />
         <Btn label="Lista com marcadores" active={state?.bullet} on={() => c().toggleBulletList().run()}>
           • ≡
@@ -149,14 +160,14 @@ export function RichEditor({ name, initialHtml, placeholder = "Comece a escrever
           1. ≡
         </Btn>
         <Btn label="Citação" active={state?.quote} on={() => c().toggleBlockquote().run()}>
-          <span className="font-serif text-[18px] leading-none">“</span>
+          <span className="font-serif text-[18px] leading-none">“</span> Citação
         </Btn>
         <Btn label="Linha divisória" on={() => c().setHorizontalRule().run()}>
-          ―
+          ― Linha
         </Btn>
         <Sep />
         <Btn label="Centralizar" active={state?.center} on={() => (state?.center ? c().setTextAlign("left").run() : c().setTextAlign("center").run())}>
-          ≡
+          Centralizar
         </Btn>
         <Btn label="Link" active={state?.link} on={setLink}>
           Link
@@ -165,10 +176,10 @@ export function RichEditor({ name, initialHtml, placeholder = "Comece a escrever
           {uploading ? "Enviando…" : "Imagem"}
         </Btn>
         <Btn label="Limpar formatação" on={() => c().unsetAllMarks().clearNodes().run()}>
-          ⌫
+          Limpar
         </Btn>
         <span className="ml-auto px-2 text-[12px] text-ink-500">{state?.words ?? 0} palavras</span>
-        <input ref={fileRef} type="file" accept="image/jpeg,image/png,image/webp" hidden onChange={(e) => onImage(e.target.files?.[0])} />
+        <input ref={fileRef} type="file" accept="image/jpeg,image/png,image/webp,image/gif,image/avif" hidden onChange={(e) => onImage(e.target.files?.[0])} />
       </div>
       <EditorContent editor={editor} />
     </div>

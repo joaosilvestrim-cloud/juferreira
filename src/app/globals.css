@@ -648,7 +648,7 @@ body:has([data-admin]) > footer {
 .jf-rich blockquote { border-left: 3px solid var(--jf-red-500); padding-left: 1.2em; font-family: var(--font-serif); font-size: clamp(22px, 2vw, 28px); line-height: 1.35; color: var(--jf-ink-900); margin-block: 1.6em; }
 .jf-rich hr { border: 0; border-top: 1px solid rgb(24 20 17 / 0.15); margin-block: 2em; }
 .jf-rich img { border-radius: 6px; margin-block: 1.4em; height: auto; max-width: 100%; }
-.jf-rich mark { background: var(--jf-blush-100); }
+.jf-rich mark { background: none; color: var(--jf-red-500); } /* destaque em vermelho, como nos títulos */
 .jf-rich p.is-editor-empty:first-child::before { content: attr(data-placeholder); color: var(--jf-ink-500); opacity: 0.6; float: left; height: 0; pointer-events: none; }
 .jf-article { font-size: 19px; line-height: 1.8; }
 
